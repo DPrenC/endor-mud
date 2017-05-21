@@ -1,0 +1,54 @@
+ -- Fri May 14 03:59:05 2010 --
+d/goldhai/comun/habitacion/puerto/puerto4.c line 44: Variable S_CLOSED_AT_NIGHT not declared !
+Compiling "/d/goldhai/comun/habitacion/puerto/puerto4.c", Line 44
+d/goldhai/comun/habitacion/puerto/puerto4.c line 47: Newline in string
+Compiling "/d/goldhai/comun/habitacion/puerto/puerto4.c", Line 47
+d/goldhai/comun/habitacion/puerto/puerto4.c line 48: syntax error
+Compiling "/d/goldhai/comun/habitacion/puerto/puerto4.c", Line 48
+ -- Fri May 14 04:02:35 2010 --
+d/goldhai/comun/habitacion/puerto/puerto4.c line 47: Newline in string
+Compiling "/d/goldhai/comun/habitacion/puerto/puerto4.c", Line 47
+d/goldhai/comun/habitacion/puerto/puerto4.c line 48: syntax error
+Compiling "/d/goldhai/comun/habitacion/puerto/puerto4.c", Line 48
+ -- Fri May 14 04:05:05 2010 --
+Obj: d/goldhai/comun/habitacion/puerto/puerto4, File: d/goldhai/comun/habitacion/puerto/puerto4.c, Line: 64:
+Created by /buh
+  Undefined function: removeExit
+ -- Thu Apr 27 08:59:43 2017 --
+Obj: d/goldhai/comun/pnj/puerto/gaena#144, File: std/room/items.c, Line: 77:
+/d/goldhai/comun/pnj/puerto/gaena#144 tried to load /obj/armas/vara.c
+Created by /d/goldhai/comun/habitacion/puerto/puerto1
+  Failed to load file: 'obj/armas/vara'.
+ -- Thu Apr 27 08:59:43 2017 --
+Obj: d/goldhai/comun/pnj/puerto/gaena#144, File: std/room/items.c, Line: 77:
+/d/goldhai/comun/pnj/puerto/gaena#144 tried to load /obj/armas/vara.c
+Created by /d/goldhai/comun/habitacion/puerto/puerto1
+  Failed to load file: 'obj/armas/vara'.
+ -- Sat May 06 20:35:16 2017 --
+Obj: d/goldhai/comun/pnj/puerto/gaena#622, File: std/room/items.c, Line: 77:
+/d/goldhai/comun/pnj/puerto/gaena#622 tried to load /obj/armas/vara.c
+Created by /d/goldhai/comun/habitacion/puerto/puerto1
+  Failed to load file: 'obj/armas/vara'.
+ -- Sat May 06 20:35:16 2017 --
+Obj: d/goldhai/comun/pnj/puerto/gaena#622, File: std/room/items.c, Line: 77:
+/d/goldhai/comun/pnj/puerto/gaena#622 tried to load /obj/armas/vara.c
+Created by /d/goldhai/comun/habitacion/puerto/puerto1
+  Failed to load file: 'obj/armas/vara'.
+ -- Sun May 07 07:58:12 2017 --
+Obj: d/goldhai/comun/pnj/puerto/gaena#148, File: std/room/items.c, Line: 77:
+/d/goldhai/comun/pnj/puerto/gaena#148 tried to load /obj/armas/vara.c
+Created by /d/goldhai/comun/habitacion/puerto/puerto1
+  Failed to load file: 'obj/armas/vara'.
+ -- Sun May 07 07:58:12 2017 --
+Obj: d/goldhai/comun/pnj/puerto/gaena#148, File: std/room/items.c, Line: 77:
+/d/goldhai/comun/pnj/puerto/gaena#148 tried to load /obj/armas/vara.c
+Created by /d/goldhai/comun/habitacion/puerto/puerto1
+  Failed to load file: 'obj/armas/vara'.
+ -- Sun May 07 08:08:47 2017 --
+Obj: d/goldhai/comun/pnj/glucksfall/drex, File: std/living/skills.c, Line: 113:
+Created by /d/goldhai/comun/habitacion/glucksfall/calle8
+  Too long evaluation. Execution aborted.
+ -- Sun May 07 08:08:47 2017 --
+Obj: d/goldhai/comun/pnj/glucksfall/drex, File: std/living/skills.c, Line: 113:
+Created by /d/goldhai/comun/habitacion/glucksfall/calle8
+  Too long evaluation. Execution aborted.

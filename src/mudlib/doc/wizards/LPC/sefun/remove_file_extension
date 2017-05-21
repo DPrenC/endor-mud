@@ -1,0 +1,12 @@
+SINOPSIS
+string remove_file_Extension(string file)
+
+DESCRIPCION
+Elimina la extensión del nombre del fichero pasado como parámetro, si es que la tiene.
+
+EJEMPLO
+string file = "prueba.wav";
+file = remove_file_extension(file);
+
+VER TAMBIEN
+get_file_extension(S)

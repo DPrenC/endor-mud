@@ -1,0 +1,16 @@
+AddDetail (({"espirales","luz","espiral"}),
+"Ves las espirales fosforescentes: \n"
+"              _____________      _____    \n"
+"	     / ________    \\    / ___ \\    \n"
+"           / /	 _____ \\    \\  / /___\\ \\   \n"
+"          | /  /  \\  \\ |    | | |     | |    \n"
+"          | |  \\__/  | |    | |  \\__/ | |    \n"
+"           \\ \\______/ /      \\ \\_____/ /    \n"
+"            \\________/        \\_______/     \n"
+"         \n"
+"          \n"
+"Las espirales son uno de los sistemas más antiguos empleados por los\n" 
+"elfos para iluminar las habitaciones. Están hechas con algun derivado\n"
+"del fósforo, aunque hay quien asegura que lo que en verdad las ilumina\n" 
+"es la presencia de algun tipo de magia.  \n"
+);

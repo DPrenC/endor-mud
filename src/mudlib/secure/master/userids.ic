@@ -1,0 +1,318 @@
+/**
+ * /secure/master/userids.ic
+ *
+ * Archivo para ser incluido por el master. Contiene tanto las funciones de
+ * manejo userids como las funciones que controlan los permisos que de ellas
+ * dependen.
+ */
+
+//===========================================================================
+//  Userids and depending Security
+//
+// For each object in the mud exists a string attribute which determines the
+// objects rights in security-sensitive matters. In compat muds this attribute
+// is called the "creator" of the object, in !compat muds the object's "userid"
+// ("uid" for short).
+//
+// "Effective Userids" are an extension of this system, to allow the easier
+// implementation of mudlib security by diffentiating between an objects
+// theoretical permissions (uid) and its current permissions (euid) (some
+// experts think that this attempt has failed (Heya Macbeth!)).
+//
+// The driver mainly implements the setting/querying of the (e)uids -- it is
+// task of the mudlib to give out the right (e)uid to the right object, and
+// to check them where necessary.
+//
+// If the driver is set to use 'strict euids', the loading and cloning
+// of objects requires the initiating object to have a non-zero euid.
+//
+// The main use for (e)uids is for determination of file access rights, but
+// you can of course use the (e)uids for other identification purposes as well.
+//===========================================================================
+
+string get_bb_uid(); // Return the string to be used as temporary euid by process_string().
+int valid_seteuid (object obj, string neweuid); // Validate the change of an objects euid by efun seteuid().
+mixed valid_read (string path, string euid, string fun, object caller); // Validate a reading file operation.
+mixed valid_write (string path, string euid, string fun, object caller); // Validate a writing file operation.
+
+//---------------------------------------------------------------------------
+string get_bb_uid()
+// [+] This method is called when efun process_string() is used without a
+// current object (e.g. from notify_fail method). The current object
+// will be set to the current command giver, and will receive the euid
+// returned from this function.
+//
+// If strict-euids, this function must exist and return a string.
+// Otherwise the function is optional and/or may return 0.
+{
+    return BACKBONEID;
+}
+
+//---------------------------------------------------------------------------
+/* - Root can do anything
+ * - object with can always change its euid to uid
+ * - object can always set its euid to its creatorname (normally==uid) */
+int valid_seteuid (object obj, string neweuid)
+// [+] Validate the change of an objects euid by efun seteuid().
+//
+// Arguments:
+//   obj    : The object requesting the new euid.
+//   neweuid: The new euid requested.
+//
+// Result:
+//   Return 1 to allow the change, any other value to disallow it.
+{
+  if (getuid(obj) == ROOTID) return 1;
+  if (getuid(obj) == neweuid) return 1;
+  if (get_wiz_name(object_name(obj)) == neweuid) return 1;
+  return 0;
+}
+
+//---------------------------------------------------------------------------
+mixed valid_read(string path, string euid, string fun, object caller)
+// [+] Validate a reading file operation.
+//
+// Arguments:
+//   path   : The (possibly partial) filename given to the operation.
+//   euid   : the euid of the caller (might be 0).
+//   fun    : The name of the operation requested (see below).
+//   caller : The calling object.
+//
+// Result:
+//   The full pathname of the file to operate on, or 0 if the action is not
+//   allowed.
+//   You can also return 1 to indicate that the path can be used unchanged.
+//
+// The returned pathname must not contain ``..'', a leading / will be stripped
+// by the interpreter. By default, the returned path must also not contain
+// space characters; if the driver is instructed to allow them, the
+// preprocessor macro __FILENAME_SPACES__ is defined.
+//
+// These are the central functions establishing the various file access
+// rights.
+//
+// Note that this function is called in compat mode as well!
+// If you need to be compatible with the old 2.4.5-mudlib, redirect these
+// calls to the valid_read in the player object.
+//
+// valid_read() is called for these operations:
+//   copy_file       (for the source file)
+//   ed_start        (when reading a file)
+//   file_size
+//   get_dir
+//   print_file
+//   read_bytes
+//   read_file
+//   restore_object
+//   tail
+//
+// For restore_object(), the <path> passed is the filename as given
+// in the efun call.
+{
+#ifdef LOG_VALID_READ
+  log_file("valid", sprintf("[%O] valid_read(%O, %O, %O, %O)\n", ctime(time()), path, euid, fun, caller));
+#endif
+
+  path = make_path_absolute(path, euid);
+#ifdef LOG_VALID_READ
+  log_file("valid", sprintf("\tpath = %O\n", path));
+#endif
+  if (strstr(upper_case(path), "/CVS" ) > -1) return 0; //El dir CVS es sagrado
+  if (strstr(upper_case(path), "/.SVN") > -1) return 0; //El dir .SVN es sagrado
+      if ( IS_ARCH(euid) || euid == ROOTID ) return path;
+  if (strstr(path, "/secure") == 0 ) return 0;
+    return path;
+}
+
+//---------------------------------------------------------------------------
+#ifdef LOG_VALID_WRITE
+private int _recall = 0;
+#endif
+mixed valid_write (string path, string euid, string fun, object caller)
+// [+] Validate a writing file operation.
+//
+// Arguments:
+//   path   : The (possibly partial) filename given to the operation.
+//   euid   : the euid of the caller (might be 0).
+//   fun    : The name of the operation requested (see below).
+//   caller : The calling object.
+//
+// Result:
+//   The full pathname of the file to operate on, or 0 if the action is not
+//   allowed.
+//   You can also return 1 to indicate that the path can be used unchanged.
+//
+// The returned pathname must not contain ``..'', a leading / will be stripped
+// by the interpreter. By default, the returned path must also not contain
+// space characters; if the driver is instructed to allow them, the
+// preprocessor macro __FILENAME_SPACES__ is defined.
+//
+// These are the central functions establishing the various file access
+// rights.
+//
+// Note that this function is called in compat mode as well!
+// If you need to be compatible with the old 2.4.5-mudlib, redirect these
+// calls to the valid_write in the player object.
+//
+// valid_write() is called for these operations:
+//   copy_file           (for the target file resp. directory name)
+//   ed_start            (when writing a file)
+//   garbage_collection  (for the log filename)
+//   rename_from         (for each the old name of a rename())
+//   rename_to           (for the new name of a rename())
+//   mkdir
+//   objdump
+//   opcdump
+//   save_object
+//   remove_file
+//   rmdir
+//   write_bytes
+//   write_file
+//
+// For save_object(), the <path> passed is the filename as given
+// in the efun call. If for this efun a filename ending in ".c" is
+// returned, the ".c" will be stripped from the filename.
+
+// euid puede escribir en XPATH + euid.* (manejo de las xtools)
+// / -> -> Solo ROOTID y God/Con
+// /save  -> Solo ROOTID y God/Con
+// /secure/save  -> Solo ROOTID y God/Con
+// LOGPATH -> Solo ROOTID y God/Con. save_object y write_file cualquiera
+//  SECURELOGPATH -> solo ROOTID y God/Con
+//  |- DOMAINLOGPATH -> Solo ROOTID y God/Con
+//  |   \- DOMAINLOGPATH/<dominio>/* -> Solo <dominio> y ROOTID y God/Con
+//  |- GUILDLOGPATH -> Solo ROOTID y God/Con
+//  |   \- GUILDLOGPATH/<guild>/* -> Pues ni idea y ROOTID y God/Con
+//  \- WIZARDSLOGPATH/<wizard>.* -> <wizard> y ROOTID y God/Con
+//
+// Meter al final todo en un /data??
+{
+    string *strs;
+    int s;
+    string caller_str;
+#ifdef LOG_VALID_WRITE
+  if (_recall == 0) { // Lo del recall es para evitar recursion infinita
+
+    if (fun == "write_file" || fun == "write_bytes") _recall = 1;
+
+    log_file("valid", sprintf("[%O] valid_write(%O, %O, %O, %O)\n", ctime(time()), path, euid, fun, caller));
+    _recall = 0;
+  }
+#endif
+
+    if (!euid) return 0; //Si no hay eiud no puedes hacer na de na
+
+    path = "/" + ARRAY_PATH(strs = full_path_array(path, euid));
+    if (strstr(upper_case(path), "/CVS") > -1) return 0;//El dir CVS es sagrado
+    s = sizeof(strs);
+
+    if (s < 2) { // En el directorio raiz solo pueden escribir Con y Root
+        if (IS_CON(euid) || euid == ROOTID) return path;
+        return 0;
+    }
+
+    if (strstr(path, XPATH) == 0) { // las XTOOLS
+        string file = path[sizeof(XPATH)..]; // el archivo
+        if (   sizeof(PATH_ARRAY(file)) == 1 // solo archivo, nada de dirs
+            && explode(file, ".")[0] == euid  // cada euid con sus archivos
+            || (IS_CON(euid) || euid == ROOTID)) // Estos siempre pueden
+            return path;
+        return 0;
+    } // End XTOOLS
+
+    if (strstr(path, SECURELOGPATH) == 0)
+        // es un log de secure
+    {
+        if (euid == ROOTID || IS_CON(euid)) return path;
+        return 0;
+    }
+    if (strstr(path, LOGPATH) == 0) { // Es un log
+        if (IS_CON(euid) || euid == ROOTID) return path;
+        if ( (s = sizeof(strs = strs[sizeof(PATH_ARRAY(LOGPATH))..])) < 1 ) return 0;
+        // No se pueden borrar logs, pero cualquiera puede añadir lineas
+        if (fun != "write_file" && fun != "save_object") return 0;
+        switch (s) {
+            case 1: // /log/<file>
+                return path;
+            case 2: // /log/<dir>/<file>
+                switch (strs[0]) {
+                    case DOMAINDIR: // /log/dominios/<file>
+                        break;
+                    case GUILDDIR: // /log/gremios/<file>
+                        break;
+                    case CHARACTERSDIR: // /log/nicks/<file>
+                        if (object_name(caller) == CHARMASTER) return path;
+                        break;
+                    case REGISTERDIR: // /log/register/<file>
+                        if (object_name(caller) == REGISTER) return path;
+                        break;
+                    case QUIZDIR: // /log/quiz/<file>
+                        if (object_name(caller) == QUIZMASTER) return path;
+                        break;
+                    case FINANCEDIR: // /log/finance/<file>
+                        if (   object_name(caller) == BANKOBJECT
+                            || object_name(caller) == MONEYLOGGER
+                           ) return path;
+                        break;
+                    case REPORTDIR: // /log/rep/<file>
+                        if (object_name(caller) == REPORTMASTER) return path;
+                        break;
+                    case WIZARDSDIR: // /log/wizards/<file>
+                        if (explode(strs[1], ".")[0] == euid) return path;
+                        break;
+                }
+            case 3: // /log/<dir1>/<dir2>/<file>
+            default: // ... etc
+                switch (strs[0])
+                {
+                    case SBOXDIR:
+                        if (   (caller_str = object_name(efun::blueprint(caller))) == SBOXOBJECT
+                            || caller_str == SBOXREGISTER) return path;
+                        break;
+                    case DOMAINDIR: // /log/dominios/<dominio>/<file>
+                        if (strs[1] == euid) return path;
+                        break;
+                    case GUILDDIR: // /log/gremios/<gremio>/<file>
+                        if (strs[1] == euid) return path;
+                        break;
+                    case REGISTERDIR: // /log/register/<dir>/<file>
+                        if (object_name(caller) == REGISTER) return path;
+                        break;
+                }
+        }
+        return 0;
+    } // End log
+
+    if (strstr(path, SAVEPATH) == 0) { // Es en los saves
+                if (   IS_CON(euid) || euid == ROOTID // Pueden todo
+            || (   fun == "save_object" // salvar un jugador?
+                && s == 3 && TP && PO == TP
+                && strs[1] == euid[0..0]
+                && strs[2] == euid
+               )
+           )
+            return path;
+        return 0;
+    } // End save
+
+    if (strstr(path, SECURESAVEPATH) == 0) { // Es en el secure/save
+        if (IS_CON(euid) || euid == ROOTID) return path;
+        return 0;
+    } // End securesave
+
+    if (strstr(path, SECUREBANPATH) == 0) { // Es en el secure/ban(eados)
+        if (IS_CON(euid) || euid == ROOTID) return path;
+        return 0;
+    } // End secure baneados
+
+    if (strstr(path, SECUREMUMMYPATH) == 0) { // Es en el secure/mummy(ficados)
+        if (IS_CON(euid) || euid == ROOTID) return path;
+        return 0;
+    } // End secure mummy
+
+    return 0;
+}
+
+//---------------------------------------------------------------------------
+// Fin de las funciones inherentes
+//---------------------------------------------------------------------------

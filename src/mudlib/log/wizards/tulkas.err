@@ -1,0 +1,5 @@
+ -- Sun Feb 19 16:56:43 2012 --
+log/xtools/tulkas.lpc.c line 11 before 'SetLevel>(': syntax error
+Compiling "/log/xtools/tulkas.lpc.c", Line 11
+log/xtools/tulkas.lpc.c line 11 before '100>);': syntax error
+Compiling "/log/xtools/tulkas.lpc.c", Line 11

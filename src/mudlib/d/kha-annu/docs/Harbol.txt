@@ -1,0 +1,48 @@
+/* SIMAURIA '/d/kha-annu/docs/Harbol.txt'
+*********************************************************************
+*   [o] Okkita                                                      *
+*                                                                   *
+*   Arbol jerarquico de includes del /sys y del kha-annu/sys,       *
+*   y lista de h's.   NOTA: 1 --> 2 = 1 esta incluido en 2          *
+*                                                                   *
+*   23/05/97  [o]  Taba harto de estar mirando: este incluye al     *
+*                  otro, el otro a aquel, etc.. :)                  *
+*                                                                   *
+*                  Echo con la ayudita de Tannis@Simauria           *
+*********************************************************************
+*/
+attributes --
+            |
+    config -|
+            |--> kha-annu
+    moving -|
+            |
+     rooms --
+
+                                --> npc
+            health ---> living -|
+                    |           --> player
+                    |
+                    |                          --> guild
+equipment -> combat --> magic ---> properties -|
+                    |          |               --> attributes -> scroll
+                    |          |
+                    --> doors -|-> rooms
+                               |
+                               |
+                       search --
+
+functionlist --> lpctypes
+
+nightday --> weather
+
+ansi.h                     lamp.h                 sent.h
+classes.h                  mail.h                 skillmaster.h
+combattune.h               mazemaster.h           skills.h
+config.h                   messages.h             shopkeeper.h
+debug.h                    money.h                stdrooms.h
+dirent.h                   moving.h               spellmoster.h
+domain.h                   mud.h                  util.h
+driver_hook.c              news.h                 wizlist.h
+erq.h                      races.h                
+houses.h                   rope.h

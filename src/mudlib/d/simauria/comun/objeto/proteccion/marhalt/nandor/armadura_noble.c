@@ -1,0 +1,28 @@
+/****************************************************************************
+Fichero: armadura_noble.c
+Autor: Ratwor
+Fecha: 25/11/2007
+Descripción: Una armadura para el noble de Nandor.
+****************************************************************************/
+
+#include <properties.h>
+#include <combat.h>
+inherit ARMOUR;
+create()
+{
+    ::create();
+    SetStandard(AT_CORAZA, 10, P_SIZE_LARGE, M_ACERO);
+    SetShort("una armadura corporal");
+    SetLong("Se trata de una armadura completa formada por peto, espaldar, hombreras,"
+    "guardabrazoss y brazales. Sus diversas piezas se unen mediante una serie de tiras de "
+    "cuero y hebillas de forma que se protege el cuerpo y los brazos. Está hecha de acero "
+    "y sobre la parte superior izquierda del peto aparece cincelada una flor de lis "
+    "dorada.\n "
+    "Pertenece desde hace generaciones a los señores feudales de Nandor que la mantienen "
+    "bien cuidada puesto que para la baja nobleza las mas apreciadas propiedades son sus "
+    "armas y armadura.\n");
+    AddId(({"armadura completa", "completa", "coraza", "armadura"}));
+    Set(P_GENDER, GENDER_FEMALE);
+    SetValue(5000);
+    SetWeight(20500);
+}

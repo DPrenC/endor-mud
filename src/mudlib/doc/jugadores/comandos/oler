@@ -1,0 +1,15 @@
+[1mCOMANDO[0m
+  oler [<arg>]
+
+[1mDESCRIPCION[0m
+  Con este comando podrás averiguar el olor característico de cualquier cosa.
+  Puedes oler o bien la habitación donde te encuentras, o bien un adversario,
+  o simplemente un objeto.
+   
+[1mEJEMPLOS[0m
+  oler            Hueles la habitación donde te encuentras
+  oler woo        Intentas averiguar a que huele woo
+  oler rosa       Descubres el aroma de la flor
+
+[1mTEMAS RELACIONADOS[0m
+  mirar, escuchar

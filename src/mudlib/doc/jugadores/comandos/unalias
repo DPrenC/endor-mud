@@ -1,0 +1,14 @@
+[1mCOMANDO[0m
+  dealias/unalias <alias>
+
+[1mDESCRIPCION[0m
+  Sirve para deshacer el alias <alias>. También puedes borrar todos
+  los aliases con 'dealias *'.
+   
+[1mEJEMPLOS[0m
+  dealias                   Muestra la ayuda.
+  dealias pollo		    Elimina el alias 'pollo'.
+  dealias *                 Elimina todos los aliases.  
+
+[1mTEMAS RELACIONADOS[0m
+  alias, hacer, historico

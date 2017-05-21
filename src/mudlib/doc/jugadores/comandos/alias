@@ -1,0 +1,38 @@
+[1mCOMANDO[0m
+  alias <alias> [comando]
+
+[1mDESCRIPCION[0m
+  Comando para la creación y visualización de los alias.
+  Si no escribes ningún argumento se visualizaran todos los alias que tengas
+  definidos. Si solo pones el primer argumento <alias> entonces se buscará
+  un alias con ese nombre y mostrará tan solo el [comando] asociado. 
+  Si quieres establecer un nuevo alias solo tienes que escribir la palabra 
+  <alias> que equivale a <comando>.
+  Tienes a tu disposicion varios comodines '!1, !2, !3... !*'.
+  !<num>   Es el numero del argumento
+  !*       Todos los argumentos.
+  !<num>*  Todos los argumentos a partir del argumento <num>
+  Puedes almacenar tantos alias como quieras.
+   
+[1mEJEMPLOS[0m
+  alias                     Con esto visualizas todos tus alias.
+  alias mo matar orco       Establece mo como alias de 'matar orco'
+  mo                        Ejecuta 'matar orco'.
+
+  Si tenemos como argumentos 'uno dos tres cuatro'
+  !1  es 'uno'
+  !2  es 'dos'
+  !3  es 'tres'
+  !*  es 'uno dos tres cuatro'
+  !2* es 'dos tres cuatro'
+  !3* es 'tres cuatro'
+
+  alias cg coger !*
+   ('cg espada negra' equivale a 'coger espada negra')
+  alias cgd coger !1 de !2
+   ('cgd espada mesa' equivale a 'coger espada de mesa')
+  alias t tel !1 Hola !2*
+   ('t woo que tal?' equivale a 'tel woo Hola que tal?')
+
+[1mTEMAS RELACIONADOS[0m
+  dealias, hacer, historico

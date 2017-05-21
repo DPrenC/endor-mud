@@ -1,0 +1,700 @@
+Dungeon de Cuatro Niveles.
+============================
+
+ LAS RUINAS DE DULAR.
+
+	[Ch] Chantiel.
+
+    25-4-1997  [Ch] Creacion.
+
+               <Facilmente adaptable para una partida de rol>
+	       <Necesita un nombre el lugar y un emplazamiento>
+               <Buen lugar para grupos>
+
+    28-5-1998 [Ch] Gente colaboradora.
+               <Parsifal>
+               <Sandalin>
+
+
+    06-10-1998 [Ch] Lugar y Emplazamiento
+               <Un buen lugar que le he encontrado es en las cordilleras que
+                estan al norte de la ciudad de Tiink. En los mapas aparece un
+                puntote negro y aprovechando que esta cerca de una zona de
+                influencia enana, pues toma dungeon chungo>
+
+               <Nombre del lugar: Las Ruinas de Dular.>
+
+
+    Historia:
+
+    	Hace ya muchos anyos, este lugar era el hogar de un clan enano que
+    residia en completa tranquilidad con su entorno, vigilando siempre los
+    furtivos ataques de los habitantes de la suboscuridad. Hasta que un dia,
+    un humano nigromante de alto nivel, llamado Dular el Rechazado, decidio
+    tomar ese lugar como guarida y realizar sus terribles experimentos, que
+    consistian en manipular la carne muerta para devolverla a la vida.
+
+        Su grandes avances sobre el tema los guardaba celosamente, por lo que
+    necesitaba un lugar donde estar a gusto y experimentar con algo o con
+    alguien que estuviese disponible con facilidad, y a la vez de facil
+    proteccion y dificil acceso.
+
+    Tras largo tiempo buscando tal ideal laboratorio, topo con un comerciante
+    de este clan. Despues de matarlo con sus propias manos y obligar al alma 
+    del pobre desgraciado a revelar el emplazamiento secreto del lugar y el
+    complejo sistema de portales, que usaba el clan para desplazarse desde un
+    nivel a otro, y de proteccion, reunio un ejercito de  muertos vivientes 
+    lo suficientemente grande como para acabar con la colonia enanil. Su 
+    ataque fue rapido y certero, tomando presos a la mayor cantidad de enanos 
+    que pudo.
+
+    	Despues de asentarse y poner a sus guardias a cargo de la proteccion
+    del lugar, se puso de lleno en su trabajo. Experimento con todos los
+    conejillos que habia conseguido y con los que iba recolectando de su
+    entorno.
+
+    	Mucho tiempo paso hasta que el lugar fuese descubierto por una
+    avanzadilla de elfos-oscuros, que se habian extraviado de una ruta
+    comercial hasta la superficie. Habian estado vagando por las grutas
+    cercanas, sin rumbo fijo, hasta que se toparon con los primeros indicios
+    de vida, mas bien de no-vida. Los guardias muertos-vivientes de Dular
+    fueron muy resistentes y rechazaron con suma facilidad el ataque intruso.
+
+    	Tan absorto estaba en sus terribles maquinaciones que, el dia en el
+    que regresaron aquellos elfos-oscuros, mejor preparados y con un numero
+    mayor de individuos, ni siquiera se dio cuenta que irrumpian en su
+    laboratorio y un limpio tiro de ballesta terminaba con su vida.
+
+	Como la muerte le era tan conocida y como habian terminado con el de
+    una forma tan precipitada, lucho con todo su odio y su conocimiento para
+    regresar de la muerte, y asi lo consiguio. Habia estado preparando un
+    recipiente tiempo atras para que lo albergara y asi huir del estado en el
+    que se encontraba. Pero lo habia dejado con un conjuro de contingencia y
+    apartado del resto de experimentos. Cuando su final llego, se activo
+    milagrosamente dicho recipiente.
+
+	Cuando consiguio regresar a la tierra de los vivos en su putrido
+    recipiente, su hermoso y magnifico laboratorio se habia convertido en un
+    puesto de avanzadilla de elfos-oscuros. Entrando en colera, acabo con
+    todo ser viviente y clausuro el lugar por el que habian llegado aquellos
+    inoportunos visitantes. Haciendo acopio de sus recientes materiales de
+    experimentacion, se volvio a retirar a su demacrado laboratorio para
+    reiniciar sus inconclusos experimentos, renovar todo su sequito personal
+    y colocar nuevas medidas de seguridad.
+
+    	Convertido en un Lich, sigue encerrado en su laboratorio y no le
+    gusta que nadie le moleste, tanto sea vivo como muerto.
+
+    	Muchos aguerridos aventureros se han adentrado en sus dominios, pero
+    pocos han salido con vida, siquiera decir que nadie ha visto a Dular ni
+    su magnifico laboratorio, todavia.
+
+Caracteristicas Especiales.
+-----------------------------
+
+	El lugar debido a que esta rodeado por una gran magia, todo tipo de
+hechizos de teleportacion o de seguimiento esta destinado al fracaso. Desde
+su interior no hay problema para irse a cualquier lado.
+
+(Nota.- En terminos de juego, solo se puede entrar a chola, pero se puede
+ salir pitando con magia)
+
+
+ * Vista Lateral de todo el Dungeon
+ ----------------------------------
+
+      ( Nivel 1 ) -> Por el portal se va al Nivel 2.  ) Superficie 0-5m.
+      |         |                                     |
+  (Bajada 1-1)  (Ruinas Enanas)                       | -5m.
+      |                                               |
+  (Bajada 1-2)                                        | -10m.
+      |                                               |
+  (Bajada 1-3)                                        ) -15m.
+
+
+  ( Nivel 2 )     ( Nivel 2 ) -> Se cambia de nivel   ) -30m.
+  |         |               |    por elevadores.      |
+  |   ( Nivel 3 )           |                         | -35m.
+  |         |               |                         |
+  |   (Bajada 3-1)          |                         | -40m.
+  |   |        | |          |                         |
+  (Bajada 3-2) | |          |                         | -45m.
+               | |          |                         |
+               | (Bajada 3-3)                         | -50m.
+               |                                      |
+          ( Nivel 4 )                                 ) -55m.
+
+
+  * Nivel de Bichos y Monstruos
+  -----------------------------
+
+  	El nivel que poseen los PNJs esta calculado en proporcion 1-20,
+    refiriendose 1 el nivel minimo de un PJ y 20 al nivel maximo. Despues de
+    haber hablado e informado del nivel maximo de un PJ en el Mud (max 50),
+    hare referencia a los niveles aconsejados. Hagase notar que los numeros
+    que aparecen en las descripciones de los niveles son los numeros sin
+    modificar, por lo que a la hora de la codificacion se deberia mirar la
+    tabla de conversiones que hay a continuacion.
+
+    Conversion:
+                       Nivel 1-20     Nivel 1-50   Pnt. Stats.  Especial.
+
+      Aranya negra          (3-4)        (7-10)      (28-40)       v(paraliz)*
+                                                                   v(+daño)*
+      Aranya pequenya       (1-2)         (2-5)       (8-20)       no
+      Aranya peluda           (2)           (5)         (20)       v(paraliz)*
+      Aranya peluda           (3)           (7)         (28)       v(paraliz)*
+      Balides               (2-3)         (5-7)      (20-28)       no
+      Bolergs                 (5)          (11)         (44)       no
+  (mv)Darg                    (5)          (12)         (48)       no
+  (mv)Darg                  (5-6)       (11-14)      (44-56)       no
+  (mv)Dular, Lich Nicromante (14)          (36)        (164)       m(mayor)**
+                                                                   m(menor)**
+                                                                   r***
+                                                                   p****
+  (mv)Durck, Golem Oscuro    (12)          (28)        (112)       m(mayor)**
+                                                                   m(menor)**
+                                                                   r***
+                                                                   p****
+  (mv)Golem Oscuro         (9-10)       (22-25)     (88-100)       m(mayor)**
+                                                                   m(menor)**
+                                                                   r***
+  (mv)Guardian Oscuro         (7)          (17)         (68)       m(menor)**
+                                                                   r***
+  (mv)Guardian Oscuro        (10)          (25)        (100)       m(menor)**
+                                                                   r***
+      Murcielagos           (1-2)         (2-5)       (8-20)       no
+      Rata gigante          (2-3)         (5-7)      (20-28)       no
+      Rata pequenya         (1-2)         (2-5)       (8-20)       no
+  (mv)Semi-Darg               (2)           (5)         (20)       no 
+  (mv)Semi-Darg               (3)           (7)         (28)       no
+  (mv)Semi-Darg             (3-4)        (7-10)      (28-40)       no 
+  (mv)Semi-Darg               (4)          (10)         (40)       no
+
+
+ 
+
+  (mv) Muerto Viviente.
+     * Veneno(tipo).
+    ** Magia(tipo).          
+   *** Resistencia(tipo).
+  **** Psionica(tipo).
+
+  * Objetos Especiales.
+  ---------------------
+    
+    Anillo de Huesos.     -> AC(2) +10SPreg. +2Int. -1Con.-1Str.
+                             +Resistencia Veneno.
+    Daga de Huesos.       -> WC(6) +2Dex. x1.5 Apuñalar(skill) 
+                             +Resistencia Veneno.
+    Escudo Oscuro.        -> AC(10) +15HPreg. +5Con. +3Str. -8Int.
+                             +Resistencia Veneno.
+    Llave Negra.          -> Abre la puerta de obsidiana.
+    Libro de Huesos.      -> AC(5) +20SPreg. +10Int. -5Str. -4Con.
+    Vara de Los Muertos.  -> WC(12) +10HPreg. +20SPreg  +5Int -10Con.-5Str
+                             Bonificadores a Hechizos/Skills Necromantes.
+
+
+Primer Nivel.
+---------------
+
+    Zona exterior de la guarida, es la que mas en contacto con la superficie
+se encuentra.
+
+	En este nivel lo que se pueden encontrar mas bien son monstruos de bajo
+nivel(1-2), tales como ratas pequenyas(1-2), murcielagos(1-2) y aranyas
+pequenyas(1-2), a escepcion de las aranyas peludas(3), tanto las del Nivel 1
+como la de la Bajada 1, que guardan en sus cubiles los fragmentos de la llave
+del Portal(Nivel 2).
+
+	Para abrir el Portal(Nivel 2) se necesita unir las tres partes de una
+llave, que se encuentran en cada cubil de las aranayas peludas. Una vez
+abierto lleva al segundo nivel del Dungeon.
+
+
+ * Vista lateral
+ ---------------
+
+      ( Nivel 1 )
+      |         |
+  (Bajada 1-1)  (Ruinas Enanas)
+      |
+  (Bajada 1-2)
+      |
+  (Bajada 1-3)
+
+
+	Aranya Pequenya: son las crias de la aranya peluda, no se alejan
+    mucho de la tela materna hasta que adquieren su veneno paralizante y
+    pueden vivir una vida independiente.
+
+	Aranya Peluda: se trata de una aranya de gran tamanyo, de unos
+    cincuenta o setenta centimetros de longuitud, poco agresiva, que puede
+    dejar paralizadas a sus victimas durante un largo periodo de tiempo
+    debido a su veneno paralizante. Tiempo que utiliza para reducir a sus
+    presas y alimentarse de ellas cuando lo necesite.
+
+
+                                           Leyenda
+         1   O                             ---------
+         | / |
+	 O   O - O                           1.- Portal (Nivel 2)
+         |   | /                             2.- Bajada 1 (Subnivel 1-1)
+         O - O - O   O   O                   3.- Entrada a Ruinas Enanas
+                 |   | / |                   4.- Aranya Peluda [3] + 
+             O - O - O   O                       Pieza llave.
+             |   |       |                   5.- Aranya Peluda [3] + 
+             O   O   O - O                       Pieza llave.
+               \ | /                         6.- Entrada Principal
+     2   O - O - O - O   3 - O - O
+       \ |     / | \           / |
+         O - O   O   O   O - O - O
+               /         | /   \
+     O - O - O   O - O   O - O - O
+     |   |   |   |   |       |   |
+     O - O   O   O   O   O   O   O - 4
+     | /   \ | \ |   | /   \ | /
+     O   5 - O   O - O       O
+                     |
+                     O
+                     |
+                     6
+                     |
+
+
+
+    Detallado:
+                                         Leyenda
+         1   2                           ---------
+         | / |
+	 3   4 - 5                         1.- portal1.c   31.- cueva28.c
+         |   | /                           2.- cueva1.c    32.- cueva29.c
+         6 - 7 - 8   9  10                 3.- cueva2.c    33.- cueva30.c
+                 |   | / |                 4.- cueva3.c    34.- cueva31.c
+            11 -12 -13  14                 5.- cueva4.c    35.- cueva32.c
+             |   |       |                 6.- cuave5.c    36.- cueva33.c
+            15   16 17 -18                 7.- cueva6.c    37.- cueva34.c
+               \ | /                       8.- cueva7.c    38.- cueva35.c
+     19 20 -21 -22 -23   24-25 -26         9.- cueva8.c    39.- cueva36.c
+       \ |     / | \           / |        10.- cueva9.c    40.- cueva37.c
+        27 -28  29  30   31-32 -33        11.- cueva10.c   41.- cueva38.c
+               /         | /   \          12.- cueva11.c   42.- cueva39.c
+    34 -35 -36  37 -38   39-40 -41        13.- cueva12.c   43.- cueva40.c
+     |   |   |   |   |       |   |        14.- cueva13.c   44.- cueva41.c
+    42 -43  44  45  46  47  48  49 -50    15.- cueva14.c   45.- cueva42.c
+     | /   \ | \ |   | /   \ | /          16.- cueva15.c   46.- cueva43.c
+    51  52 -53  54 - 55     56            17.- cueva16.c   47.- cueva44.c
+                     |                    18.- bajada1.c   48.- cueva45.c
+                     57                   19.- cueva17.c   49.- cueva46.c
+                     |                    20.- cueva18.c   50.- cubil1.c
+                     58                   21.- cueva19.c   51.- cueva47.c
+                     |                    22.- cueva20.c   52.- cubil2.c
+                                          23.- ruinas1.c   53.- cueva48.c
+                                          24.- cueva21.c   54.- cueva49.c
+                                          25.- cueva22.c   55.- cueva50.c
+                                          26.- cueva23.c   56.- cueva51.c
+                                          27.- cueva24.c   57.- cueva52.c
+                                          28.- cueva25.c   58.- entrada1.c
+                                          29.- cueva26.c
+                                          30.- cueva27.c
+
+
+     Bajada 1
+     ---------
+
+     	Aranya Negra: es una pariente cercana de la Aranya Peluda, su
+     principal diferencia es la agresividad. La Aranya Negra es muy
+     protectora de su espacio vital y lucha hasta la muerte por esta
+     cirscunstancia. Tambien dispone de una glandulas venenosas, que en
+     lugar de paralizar a su victima, lo que hace es intoxicar su riego
+     inoculando dicho veneno y produciendo grandes derrames internos, tanto
+     de vasos sanguineos como de organos interos. Suelen medir en torno al
+     metro, metro y medio de longuitud y algunas consiguen alcanzar el metro
+     de altura.
+
+
+       1   O - 2   3               Leyenda
+         \ |       |               --------
+           O   O   O
+             \ | / |                 1.- Entrada al nivel
+           O - O - O - O             2.- Aranya negra[3-4]
+               |   | \ |             3.- Aranya peluda[2] + Pieza llave.
+               O - O - O - 4         4.- Aranya negra [3-4]
+                 / | / |             5.- Bajada 2 (Subnivel 1-2)
+           5 - O - O - O
+
+
+
+
+     Detallado:
+
+       1   2 - 3 - 4               Leyenda
+         \ |       |               --------
+           5   6   7
+	     \ | / |                 1.- entrada2.c   11.-cueva8.c
+           8 - 9 -10 -11             2.- cueva1.c     12.-cueva9.c
+               |   | \ |             3.- cubil1.c     13.-cueva10.c
+              12 -13 -14 -15         4.- cubil2.c     14.-cueva11.c
+                 / | / |             5.- cueva2.c     15.-cubil3.c
+          16 -17 -18 -19             6.- cueva3.c     16.-bajada2.c
+                                     7.- cueva4.c     17.-cueva12.c
+                                     8.- cueva5.c     18.-cueva13.c
+                                     9.- cueva6.c     19.-cueva14.c
+                                    10.- cueva7.c
+
+
+
+    Bajada 2
+    ---------
+
+        Semi-Darg: son los experimentos fallidos de los necromantes que hacen
+    con los cuerpos muertos de razas de la superficie y con los habitantes
+    del submundo. Normalmente tienen forma amorfa, poseen pedazos de las
+    anatomias de sus cuerpos originales y son considerados un desecho por
+    sus creadores. No possen voluntad propia y simplemente se guian por sus
+    instintos mas primitivos de supervivencia. Son muy agresivos.
+
+
+
+       1 - O               Leyenda
+       | \ |               --------
+       O - O   O   2
+       | \ | \ |   |         1.- Entrada al nivel(Emboscada 4xSemi-Darg[2])
+       O - O   O   3         2.- Bajada 3 (Subnivel 1-3)
+           |   | /           3.- Semi-Darg[4]
+           O - 4             4.- Semi-Darg[2] + Semi-Darg[3]
+
+
+
+
+     Detallado:
+
+       1 - 2               Leyenda
+       | \ |               --------
+       3 - 4   5   6
+       | \ | \ |   |         1.- entrada3.c    11.-cueva9.c
+       7 - 8   9  10         2.- cueva1.c      12.-cueva10.c
+           |   | /           3.- cueva2.c
+          11 -12             4.- cueva3.c
+                             5.- cueva4.c
+                             6.- bajada3.c
+                             7.- cueva5.c
+                             8.- cueva6.c
+                             9.- cueva7.c
+                            10.- cueva8.c
+
+
+    Bajada 3
+    ---------
+
+	Darg: son guerreros muertos vivientes creados a partir de la union
+    de los cuerpos de varias razas, tanto de la superficie como de la
+    suboscuridad. Tiene aspecto humanoide, pero cuando se les observa de
+    cerca se puede apreciar las diferentes partes de las que se componen.
+    No tienen patron fijo, vale cualquier tipo de pieza para formarlos, son
+    como puzzles gigantescos. Tienen una limitada voluntad y se les puede dar
+    ordenes simples, tales como proteger algun lugar o realizar alguna tarea
+    simple. Son las tropas de choque en un ejercito comandado por un
+    necromante.
+
+
+     	Guardian Oscuro: es por asi decirlo un Darg de elite, realizado
+     integramente con restos de una sola raza en concreto. Dotados de una
+     gran fuerza de voluntad y con un solo objetivo, especificado en el
+     momento de su creacion, son los guardianes de algun poderoso necromante.
+     Son creados para proteger con sus vidas algun lugar u objeto considerado
+     importante por aquel que lo creo. Muchos de ellos poseen una maestria
+     en el arte de la lucha y el dominio de la magia menor.
+
+
+
+           1           Leyenda
+           |           --------
+           O
+           |             1.- Entrada
+           2             2.- 2xDarg[5]
+           |             3.- Guardian Oscuro[7] + Cofre (Anillo de Huesos)
+       3 - 4 - 5         4.- 2xDarg[5]
+                         5.- Guardian Oscuro[7] + Cofre (Daga de Huesos)
+
+
+
+     Detallado:
+
+           1           Leyenda
+           |           --------
+           2
+           |             1.- entrada4.c
+           3             2.- cueva1.c
+           |             3.- cueva2.c
+       4 - 5 - 6         4.- puesto1.c
+                         5.- cueva3.c
+                         6.- puesto2.c
+
+
+     Ruinas Enanas
+     --------------
+         
+         Antiguo emplazamiento enano que servia como puesto de guardia de la
+     superficie. Actualemente esta abandonado y tan solo merodean las almas en
+     pena de los enanos, que en su ansia de sangre reclaman venganza.
+
+          O       O 
+            \   / 
+      O       O       O 
+        \   / | \   /  
+          O - O - O    
+        /   \ | /   \   
+      O       O       O 
+            /   \     
+          O       O  
+
+      	<No mas de 20-25 rooms.>
+
+
+
+
+
+Segundo Nivel.
+----------------
+
+	Zona de cultivo y recoleccion. A partir de aqui, el acceso al siguente
+nivel se hace atraves de elevadores.
+
+	En este nivel los monstruos ya son mas duros que en el nivel anterio,
+de nivel(2-5), tales como ratas gigantes(2-3), balides(2-3), Semi-Dargs(3-4) y
+algun que otro Darg(5).
+
+	Seria interesante codificar una funcion que generase encuentros
+aleatorios al entrar en una habitacion. Tales como, derrumbamientos, ataques
+sorpresas, emboscadas, etc...
+
+
+
+ * Vista lateral
+ ---------------
+
+  ( Nivel 2 )     ( Nivel 2 )
+  |         |               |
+  |   ( Nivel 3 )           |
+  |         |               |
+  |         v               |
+  v         Sub 3-1         |
+  Sub 3-2                   |
+                            v
+                            Sub 3-3
+
+
+        Balides: son una raza parecida a los murcielagos, de envergadura
+    mayor y de color rojo. Suelen vivir en las cavernas profundas y nunca ven
+    la luz del sol. Otra de sus caracteristicas es su gran percepcion
+    auditiva, ya que viven en un entorno ausente de luz solar. Agresivos por
+    naturaleza.
+
+
+
+                                 Leyenda
+        O   O       O   O        --------
+        |   |       |   |
+    O - O - O - 1 - O - O - O      1.- Portal(Nivel 1)
+        |   |   |   |   |          2.- Elevador(Subnivel 3-2)
+        O   O   O   O   O          3.- 2xDarg[5]
+            |   |   |              4.- Elevador(Nivel 3) + Darg[5]
+        O - O   O   O - O          5.- Darg[5]
+            |   |   |              6.- Darg[5]
+        O - O   O   O - O          7.- Elevador(Subnivel 3-3)
+            |   |   |
+        O - O   O   O - O
+            |   |   |
+        2 - O - O - O - O
+                |
+            O - 3 - O
+            |       |
+        O - O   4   O
+            |   |   |
+            5 - O - 6 - 7
+            |       |
+            O       O
+
+
+    Detallado:
+
+
+        1   2       3   4
+        |   |       |   |
+    5 - 6 - 7 - 8 - 9 -10 -11
+        |   |   |   |   |
+       12  13  14  15  16     Leyenda
+            |   |   |         --------
+       17 -18  19  20 -21
+            |   |   |          1.- cultivo1.c     26.- cultivo12.c
+       22 -23  24  25 -26      2.- cultivo2.c     27.- cultivo13.c
+            |   |   |          3.- cultivo3.c     28.- pasillo12.c
+       27 -28  29  30 -31      4.- cultivo4.c     29.- pasillo13.c
+            |   |   |          5.- cultivo5.c     30.- pasillo14.c
+       32 -33 -34 -35 -36      6.- pasillo1.c     31.- cultivo14.c
+                |              7.- cruze1.c       32.- elevador3_3.c
+           37 -38 -39          8.- portal2.c      33.- cruce3.c
+            |       |          9.- cruce2.c       34.- cruce4.c
+       40 -41  42  43         10.- pasillo2.c     35.- cruce5.c
+            |   |   |         11.- cultivo6.c     36.- cultivo15.c
+           44 -45 -45 -46     12.- cultivo7.c     37.- pasillo15.c
+            |       |         13.- pasillo3.c     38.- puesto1.c
+           47      48         14.- pasillo4.c     39.- pasillo16.c
+                              15.- pasillo5.c     40.- almacen1.c
+                              16.- cultivo8.c     41.- pasillo17.c
+                              17.- cultivo9.c     42.- elevador3.c
+                              18.- pasillo6.c     43.- pasillo18.c
+                              19.- pasillo7.c     44.- puesto2.c
+                              20.- pasillo8.c     45.- puesto3.c
+                              21.- cultivo10.c    46.- elevador3_2.c
+                              22.- cultivo11.c    47.- almacen2.c
+                              23.- pasillo9.c     48.- almacen3.c
+                              24.- pasillo10.c
+                              25 - pasillo11.c
+
+
+Tercer Nivel.
+---------------
+
+    Nivel de vivienda y de desarrollo del clan.
+
+    Como ocurre en el nivel anterior, los guardias son mas duros y mas
+peligrosos, aproximadamente nivel(5-9). Los bichos mas frecuentes en estos
+niveles son Bolergs(5), Darg(5-6), Guardian Oscuro(7), y algun que otro
+Golem Oscuro(9).
+
+
+ * Vista lateral
+ ---------------
+
+  v   ( Nivel 3 )           v
+  |         |               |
+  |   (Bajada 3-1)          |
+  |   |        | |          |
+  (Bajada 3-2) | |          |
+               | |          |
+  	       | (Bajada 3-3)
+               |
+               v
+
+       Bolerg: son ratas de gran tamanyo y envergadura. Parecidas a las ratas
+       de la superficie en anatomia, las difieren sus enormes extremidades y
+       la ausencia de cola. Son agresivas por naturaleza y suelen estar cerca
+       de alguna guarida de Darg o Semi-Darg en busca de la carne putrefacta
+       que se les va callendo, para asi poder alimentarse.
+
+       Golem Oscuro: criaturas hechas a partir de la union de la carne muerta
+       de otras razas. Normalmente son la union y alteracion por medio de la
+       necromancia de cientos de kilos de carne y despojos. Tienen una forma
+       humanoide, aproximadamente de unos dos metros y medio o tres metros de
+       altura. Son inmunes a un gran numero de hechizos y armas, y suelen
+       estar apostados en lugares estrategicos para proteger a sus amos
+       nicromantes. A pesar de su aspecto, poseen una gran presteza en el
+       arte de la lucha y algunos, incluso, son aptos para el uso de la magia
+       menor y mayor.
+
+
+
+
+
+      O - O - O - O - O
+      |   |   |   |   |
+      O - O - O - O - O
+      |   |   |   |   |
+      O - O - O - O - O
+      |   |   |   |   |
+      O - O - O - O - O
+      |   |   |   |   |
+      O - O - O - O - O
+     
+
+      Bajada 3-1
+
+      O - O - O - O - O
+      |   |   |   |   |
+      O - O - O - O - O
+      |   |   |   |   |
+      O - O - O - O - O
+      |   |   |   |   |
+      O - O - O - O - O
+      |   |   |   |   |
+      O - O - O - O - O
+      
+
+      Bajada 3-2
+
+      O - O - O - O - O
+      |   |   |   |   |
+      O - O - O - O - O
+      |   |   |   |   |
+      O - O - O - O - O
+      |   |   |   |   |
+      O - O - O - O - O
+      |   |   |   |   |
+      O - O - O - O - O
+
+
+      Bajada 3-3
+
+      O - O - O - O - O
+      |   |   |   |   |
+      O - O - O - O - O
+      |   |   |   |   |
+      O - O - O - O - O
+      |   |   |   |   |
+      O - O - O - O - O
+      |   |   |   |   |
+      O - O - O - O - O
+
+
+Cuarto Nivel.
+---------------
+
+	Camara Real, ahora convertido en laboratorio por Dular. En este nivel 
+es donde mayor peligro corre la vida del aventurero, ya que se encuentra en 
+las cercanias del laboratorio de Dular. Este nivel es el que mas protegido esta
+de todos los niveles y deberia de venir un buen grupo para obtener algunos de
+los objetos interesantes del lugar.
+
+ * Vista lateral
+ ---------------
+
+            v
+            |
+       ( Nivel 4 )
+
+
+                               Leyenda
+          1 - O - 2            -------
+             [|]                [-] Acceso oculto, o atrancado por una serie
+              O                     de mecanismos. Hay que manipularlos para
+              |                     para poder abrilos.
+          3 - 4 - 5[-]6 - 7
+              |                  1.- Golem Oscuro[10]
+      O - 8   O   9[-]10         2.- Golem Oscuro[10]
+      |      [|]      |          3.- Guardian Oscuro[7]
+      O - O - O - O - O          4.- Guardian Oscuro[7] + Elevador(Nivel 3-1)
+                                 5.- 2xGuardian Oscuro[10]
+                                 6.- Durck, Golem Oscuro[12]
+				     (Escudo Oscuro, Llave Negra)
+                                 7.- Dular, Lich Nicromante[14]
+                                     (Vara de Los Muertos, Libro de Huesos)
+                                 8.- Golem Oscuro[10]
+                                 9.- Prisioneros de Dular.
+                                10.- Golem Oscuro[10]
+
+
+                               Leyenda
+          1 - 2 - 3            -------
+             [|]                
+              4                 1.- sala1.c          11.- sala6.c
+              |                 2.- pasillo1.c       12.- pasillo4.c
+          5 - 6 - 7[-]8 - 9     3.- sala2.c          13.- sala7.c
+              |                 4.- pasillo2.c       14.- pasillo5.c
+     10 -11  12  13[-]14        5.- sala3.c          15.- pasillo6.c
+      |      [|]      |         6.- elevador3_1.c    16.- pasillo7.c
+     15 -16 -17 -18 -19         7.- sala4.c          17.- pasillo8.c
+                                8.- sala5.c          18.- pasillo9.c
+                                9.- laboratorio.c    19.- pasillo10.c
+                               10.- pasillo3.c

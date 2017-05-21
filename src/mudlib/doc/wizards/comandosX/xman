@@ -1,0 +1,9 @@
+SINOPSIS
+    xman <comando>
+
+DESCRIPCION
+    Busca informacion acerca de un determinado comando X.
+
+EJEMPLOS
+    xman xman
+    xman xforall

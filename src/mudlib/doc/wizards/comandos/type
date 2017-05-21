@@ -1,0 +1,13 @@
+[1mCOMANDO[0m
+  type <fichero>
+
+[1mDESCRIPCION[0m
+  Visualiza el contenido de <fichero> de una sola vez y sin parar por
+  páginas. Si el fichero es demasiado extenso puede llegar el momento
+  en que la visualización se detenga.
+   
+[1mEJEMPLOS[0m
+  type iglesia.c
+
+[1mTEMAS RELACIONADOS[0m
+  tail, cat, more, ed

@@ -1,0 +1,6 @@
+SINOPSIS
+    xquit [here]
+
+DESCRIPCION
+    Otra forma de abandonar el mud. Si escribes 'here' como argumento entonces
+    almacenara la habitacion donde estes como Home.

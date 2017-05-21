@@ -1,0 +1,15 @@
+[1mCOMANDO[0m
+  cerrar <salida / puerta>
+
+[1mDESCRIPCION[0m
+  Cierras la puerta que se encuentra en la salida <salida>, o bien, también puedes
+especificar una puerta por sus identificadores.
+
+[1mEJEMPLOS[0m
+  cerrar norte: Cierras la puerta del norte.
+  cerrar puerta: Cierras la puerta con el identificador <puerta>.
+  cerrar puerta norte: Cierras la puerta con el identificador <puerta> de la
+salida <norte>.
+  
+[1mTEMAS RELACIONADOS[0m  
+  abrir, bloquear, desbloquear, llamar

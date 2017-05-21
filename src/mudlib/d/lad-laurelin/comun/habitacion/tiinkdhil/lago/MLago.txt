@@ -1,0 +1,238 @@
+Lago Dehim
+===========
+
+	[Ch] Chantiel.
+
+    08-5-1997  [Ch] Creacion.
+       <Facilmente adaptable para una partida de rol>
+       <En el centro del lago esta la isla>
+       <Los lugares que componen la isla son:
+	Playa: encuentros aleatorios muertos-vivientes[1].
+        Camposanto: dos niveles y muertos-vivientes[2-10].
+                    Radhul el vampiro[12].
+	Templo: ratas[1], insectos[1]. Guardian[8].
+	Bosque: encuentros aleatorios muertos-vivientes[2].> 
+       <Quest: Purificacion del Templo de Dehim.>
+
+
+Historia
+----------
+
+    Hace ya mucho tiempo, un elfo peregrino, seguidor de Dehim, dios elfico
+de la curacion, tuvo una revelacion de un emplazamiento. Largo tiempo estuvo
+viajando por el reino hasta que encontro dicho lugar. Se encontraba en medio
+de un lago, justo al norte de un gran arbol que los druidas del lugar
+cuidaban con mucho interes. Quisiendo demostrar su servidumbre y devocion,
+el peregrino decidio construir un templo dedicado a su deidad. Largos fueron
+los anyos de construccion. Con ayuda de un pueblo enano que se encontraba
+al noroeste del lago, cruzando el valle <nombre_valle>a varios dias de viaje,
+consiguio que el templo fuese una magnifica obra de arte y de culto.
+
+    Vivia feliz hasta que una visita inesperada cambio su vida. Un senyor
+de la noche aparecio y reclamo la isla para si. A partir de ese dia sus
+huestes de no-muertos fueron minando muy lentamente la isla y el terreno
+consagrado por el peregrino.
+
+    Durante un periodo, el peregrino y los pocos adeptos que pudo reunir con
+el paso del tiempo, hicieron frente a este problema. Muy a su pesar, el elfo
+sabia que algun dia tendria que enfrentarse directamente con el causante de
+todo aquel mal, y asi fue.
+
+    Los relatos y las cronicas que quedan de la fecha narran ese dia de una
+forma increible.
+
+	"    El cielo se oscurecio, los elementos, que tan allegados estan con
+     nuestro ser, se volvieron incontrolables. Sobre la isla surgio un gran
+     vortice del que bajaron seres que nunca antes habia visto. Poco mas
+     pude observar, una gran explosion hizo que nos pusieramos a refugio y
+     que cubriesemos nuestros oidos. Cuando consegui recobrar mis sentidos
+     dirigi mi mirada hacia el lago, un escalofrio recorrio mi cuerpo. No
+     he vuelto a dirigir mi vista hacia ese lugar."
+
+                                   Extracto de Cronicas de Maliun.
+				   Autor Maliun el Archidruida.
+
+     "    Un repentino relampago hizo que levantase la vista del papiro que
+      intentaba traducir. ¨Tormenta electrica, hoy?, pense. Me levante, me
+      asome a la calle y dirigi la vista al cielo. Estaba despejado y el
+      tiempo era agradable. Dulei toco a la puerta, abri y cogi la nueva
+      remesa de papiros que tenia que traducir. "
+
+                                   Extracto de un diaro.
+                                   Autor escribano de Simauria.
+
+     "    Todavia recuerdo cuando la viga del corredor principal le callo
+      a tu abuelo en toda la cabeza. Mira que el condenado la tenia muy dura.
+      Pero lo que mas me extranyo fue que hubiese un temblor de tierra, sobre
+      todo cuando estaba escondiendo su barril de emergencia."
+
+                                   Fragmento de una conversacion.
+                                   Enanos del valle <nombre_valle>
+
+
+Quest
+-------
+
+    Basicamente el quest consiste en:
+
+        - Llegar a la isla.
+        - Recuperar medallon. Lo tiene Radhul el vampiro.
+        - Encontrar el pasadizo secreto.
+        - Enfrentarse al guardian de la gruta. 
+	- Poner el medallon en la figura del dios Dehim.
+        - Coger pocima curativa y vara de curacion del pedestal del templo.
+    
+    Descripcion:
+
+        El jugador o jugadores interesados en llegar a la isla deberan coger
+    la barca que se encuentra al norte de la ciudad de Tiinkdhil. Una vez en
+    la isla podran realizar el quest. Los pasos que se deberian dar son como
+    se explican en la secuencia anterior, pero puede que no se desarrollen
+    tal cual se han mostrado. La secuencia logica seria, encontrar el camino
+    que sale de las dunas de la playa y dirigirse hasta el camposanto. Una
+    vez alli entrar a las catacumbas y enfrentarse a Radhul el vampiro, para
+    recuperar el Medallon de Dehim. Una vez con el medallon, retomar el camino
+    y llegar hasta el templo en ruinas, explorarlo minuciosamente y encontrar
+    indicios del lugar secreto. Una vez hallado y abierto el pasadizo, tendran
+    que pasar una ultima prueba, enfrentarse al guardian, antes de poder
+    continuar. El guardian es el espiritu del elfo peregrino que sigue 
+    guardando este lugar santo de posibles saqueadores de tumbas. Ya derrotado
+    hay que colocar el medallon en la pequenya figura tallada de la deidad, que
+    se encuentra en la estancia contigua a la del elfo. En ese momento se 
+    habrira otro pasaje directamente al interior del templo, y a los pies de
+    la gran estatua abran una pocima de curacion y en sus manos, antes vacias,
+    una vara de madera noble, finamente tallada.
+    
+    Objetos:
+
+        Medallon de Dehim -> AC(2) +15hpreg +3con -3fue +10 prot todas. 
+        Vara de Curacion (2h) -> WC(13) +25hpreg +5con -10fue +15 prot todas.
+	Pocima Curativa -> Restaura al maximo todos los hp/sp. Quita hambre,
+            sed, alcohol, cansancio, enfermedad, veneno y maldicion. Pero es
+            de un solo uso.
+
+Isla
+------
+
+	El unico transporte para la isla es por barca, la magia de teleportacion
+no funciona en este lugar. Al noreste se encuentra la playa, en ella deberian
+de haber encuentros aleatorios con muertos-vivientes, tales como esqueletos y
+zombies, pero de bajo nivel. La isla es mas accidentada hacia el sur, rodeando
+esa zona unos pequenyos acantilados.
+
+
+    La isla tiene tres lugares diferenciados, la playa, el bosque poco espeso,
+y el bosque espeso. La isla, segun se llega del norte hacia el sur tiene una
+pendiente ascendente bastante pronunciada, a esepcion de varias altiplanicies
+en las que se encuentran el templo, el camposanto y parte de la playa.
+
+    La parte Sur de la isla esta completamente rodeada de riscos, igual que la
+noroccidental, la este y la oeste, pero con mayor pronunciacion al sureste.
+
+
+
+
+              O - O   O - O - 1              Leyenda
+            / |   |   | X | X |              ---------
+          O - O - O   O - O - O
+          |   |   | \   \ | X | \             *.- Camino empedrado.
+          O - O - O - O - * - O - O           1.- Llegada de la barca.
+        /   \ |   |   | / |                   2.- Camposanto.
+      O   2 - * - O - * - O - O - O           3.- Templo.
+        \   / | \ | / | X | X | X |
+          O - O - * - O - O - O - O
+          | X | X | X | X | X | X |
+          O - O - * - O - O - O - O
+        / | X | X | X | X | X | X |
+      O - O - O - * - O - O - O - O
+      | X | X | / | \ | X | X | /
+      O - O - O   3   O - O - O
+        \ | X | \   / | X | X |
+          O - O - O - O - O - O
+              | X | X | /   \ |
+              O - O   O       O
+
+
+
+    Detallado:
+    ----------
+
+              1 - 2   3 - 4 - (1)            Leyenda
+            / |   |   | X | X |              ---------
+          6 - 7 - 8   9 -10 - 11               
+          |   |   | \   \ | X | \              .- Camino empedrado.
+         12 -13 -14 -15 -16 -17 -18           1.- Llegada de la barca.
+        /   \ |   |   | / |                   2.- Camposanto.
+     19 (2) -21 -22 -23 -24 -25 -26           3.- Templo.
+        \   / | \ | / | X | X | X |
+         27 -28 -29 -39 -31 -32 -33
+          | X | X | X | X | X | X |
+         34 -35 -36 -37 -38 -39 -40
+        / | X | X | X | X | X | X |
+      41-42 -43 -44 -45 -46 -47 -48
+      | X | X | / | \ | X | X | /
+      49-50 -51  (3) 53 -54 -55
+        \ | X | \   / | X | X |
+         56 -57 -58 -59 -60 -61
+              | X | X | /   \ |
+             62 -63  64      65
+
+
+
+
+
+Templo
+--------
+
+    El templo se encuentra completamente abandonado, a escepcion de algun que
+otro muerto viviente que merodee por su interior.
+
+
+
+              O - O - O - O
+              |             \
+          O - O - O       O   O - O - O
+        /           \     |           |
+      O       O       O   O   O   O   O
+      |     / | \     |   |   |   |   |
+      O - O - O - O - O[-]O[-]O - O   O
+      |     \ | /     |       |   |   |
+      O       O       O   O - O - O   O
+        \     |     /         |     /
+          O - O - O       O - O - O
+              |         /
+              O - O - O
+
+
+              1 - 2 - 3 - 4
+              |             \
+          5 - 6 - 7       8   9 -10 -11
+        /           \     |           |
+     12      13      14  15  16  17  18
+      |     / | \     |   |   |   |   |
+     19 -20 -21 -22 -23[-24-]25- 26  27
+      |     \ | /     |       |   |   |
+     28      29      30  31 -32 -33  34
+        \     |     /         |     /
+         35 -36 -37      38 -39 -40
+              |         /
+             41 -42 -43
+
+
+Cementerio
+------------
+
+    Nivel 1
+    -------
+
+
+              O       O
+              |       |
+          O - O - O - O - O
+              |           |
+      O - O - O - O - O - O - O
+          |       |       |
+          O - O - O - O - O
+              |           |
+              O           O
+

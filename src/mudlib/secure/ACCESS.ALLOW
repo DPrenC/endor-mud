@@ -1,0 +1,71 @@
+# SIMAURIA /ACCESS.ALLOW
+# ======================
+# [w] Woo@simauria
+#
+# ATENCION: Un fallo al modificar este archivo provoca que NADIE pueda entrar
+#           en Simauria, asi que, ¡¡ojito!!
+#
+# Este fichero se encarga de limitar el acceso al mud a ciertas maquinas o IPs
+# asi como el numero de usuarios conectados y las horas en las que esta
+# permitida esta conexion.
+#
+# Los cambios surgen efecto INMEDIATAMENTE, es decir, que una vez hayas
+# salvado los cambios de este archivo estos estan presentes en el mud sin
+# necesidad de reiniciar.
+#
+# numip:clase:maximo:hcomienzo:htermino:texto
+# 
+#    numip:      byte.byte.byte.byte      byte = * o numero
+#    clase:      numero
+#    maximo:     numero
+#    hcomienzo:  hora a partir de la cual esa IP es valida (0 ignora)
+#    htermino:   hora a partir de la cual esa IP deja de ser valida (0 ignora)
+#    texto:      texto
+#
+# o Una clase se define la primera vez que se usa
+# o El valor maximo es la cantidad de usuarios que desde ese lugar pueden
+#   estar conectados. Si el valor es -1 pueden entrar tantos como quieran,
+#   si el valor es 0 no puede entrar nadie desde ese lugar.
+# o El texto le aparece al usuario en el momento que no se le deja entrar al
+#   mud por cualquiera de las limitaciones, ya bien por horario, numero de
+#   gente conectada o porque el lugar desde donde se conecta esta baneado.
+# o Si por ejemplo permites la IP 129.*.*.* pero quieres restringir la entrada
+#   a todos aquellos que llaman desde 129.34.*.* entonces debes restringir
+#   ANTES de permitir, de la otra forma no se restringiria a 129.34.*.*.
+# o Si hcomienzo es 4 y htermino es 5 quiere decir que nadie desde ese lugar
+#   puede entrar desde las 4 hasta las 5 horas. Por supuesto, las 7 de la
+#   tarde son las 19 horas ya que las 7 serian las 7 AM.
+# o Existe otra forma de delimitar las horas o incluso los dias de la semana,
+#   que es usando :h para horas y :w para dias de la semana separado el rango
+#   por '-' y cada rango por ','. Domingo .. Sabado = 0-6.
+#
+# EJEMPLOS
+# Banea totalmente una determinada mascara de IP
+#   134.2.170.98:1:0:0:0:No se te permite el acceso a este mud.
+# Solo permite 5 usuarios conectados desde esa mascara.
+#   145.76.*.*:1:5:0:0:Ya hay demasiada gente conectada desde donde estas.
+# Restringe conectarse desde consola a las horas y dias laborales en este
+# caso desde lunes a viernes de 8 a 14 y desde 17 a 20 horas.
+#   127.0.0.1:1:0:h8-14,17-20:w1-5:No puedes conectarte en horario laboral.
+# Limita a 10 usuarios los viernes desde consola.
+#   127.0.0.1:1:10:0:w5:Hoy es viernes y ya hay 10 personas en la consola.
+# Nadie puede entrar.
+#   *.*.*.*:0:0:0:0:Lo siento el mud esta cerrado hasta nuevo aviso.
+# Permite entrar tantos usuarios como quieran desde donde quieran.
+#   *.*.*.*:0:-1:0:0:Nadie deberia ver este mensaje.
+#
+# [w] El mud esta limitado a 50 usuarios.
+#     Recuerda que las restricciones se definen ANTES.
+#
+#158.42.*.*:1:0:0:0:El politecnico esta baneado de este mud.
+#127.0.0.*:1:0:0:0:Jeeeeejejeje.. ta banea la makina de silvia :)))
+#158.42.96.*:1:2:0:0:Tu direccion IP ha sido baneada.. por culpa de un gilipollas
+#155.210.97.*:1:0:0:0:Se ha baneado esta direccion IP.
+#193.146.56.161:0:0:0:0:Esta molestando un rato
+#193.146.56.162:0:0:0:0:Florecita esta molestando un rato
+#193.146.56.*:0:0:0:0:Esta molestando un rato
+#*.*.*.*:0:1:0:0:Estamos de pruebas... inténtalo más tarde.
+#155.210.211.222:1:0:0:0:Vete a jugar a tu casa
+#81.202.96.156:1:0:0:0:No debiste hacerlo :)
+80.32.149.44:1:0:0:0:El acceso no está permitido desde esta IP
+*.*.*.*:0:50:0:0:Lo siento, el mud esta lleno, intentalo mas tarde.

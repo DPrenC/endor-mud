@@ -1,0 +1,59 @@
+ -- Sun Nov 09 18:49:32 2014 --
+d/eriador/path.h line 1: Cannot #include './sys/aman.h'
+Compiling "/d/eriador/path.h", Line 1
+ -- Sun Nov 09 19:03:09 2014 --
+Obj: d/eriador/comun/habitacion/caminos/bree_trasgos/bree_trasgos2_base, File: d/eriador/comun/habitacion/caminos/bree_trasgos/bree_trasgos2_base.c, Line: 19:
+Created by /orome
+  Undefined function: SetIndors
+ -- Tue Dec 02 05:56:35 2014 --
+Obj: d/eriador/comun/habitacion/caminos/posada_abandonada/hall, File: std/room/exits.c, Line: 514:
+Created by /orome
+  Aunque /d/eriador/comun/habitacion/caminos/camino_este/camino1_05 está cargada, no se encontró la puerta asociada a la salida de vuelta a esta habitación.
+ -- Tue Dec 02 05:59:21 2014 --
+d/eriador/comun/habitacion/caminos/posada_abandonada/despacho_anciano.c line 64: Variable CATP not declared !
+Compiling "/d/eriador/comun/habitacion/caminos/posada_abandonada/despacho_anciano.c", Line 64
+d/eriador/comun/habitacion/caminos/posada_abandonada/despacho_anciano.c line 70: Variable CATP not declared !
+Compiling "/d/eriador/comun/habitacion/caminos/posada_abandonada/despacho_anciano.c", Line 70
+d/eriador/comun/habitacion/caminos/posada_abandonada/cocina.c line 54: Variable CATP not declared !
+Compiling "/d/eriador/comun/habitacion/caminos/posada_abandonada/cocina.c", Line 54
+d/eriador/comun/habitacion/caminos/posada_abandonada/cocina.c line 72: Variable CATP not declared !
+Compiling "/d/eriador/comun/habitacion/caminos/posada_abandonada/cocina.c", Line 72
+d/eriador/comun/habitacion/caminos/posada_abandonada/cocina.c line 78: Variable CATP not declared !
+Compiling "/d/eriador/comun/habitacion/caminos/posada_abandonada/cocina.c", Line 78
+d/eriador/comun/habitacion/caminos/posada_abandonada/cocina.c line 90: Variable CATP not declared !
+Compiling "/d/eriador/comun/habitacion/caminos/posada_abandonada/cocina.c", Line 90
+ -- Tue Dec 02 06:05:03 2014 --
+d/eriador/comun/habitacion/caminos/posada_abandonada/despacho_anciano.c line 64: Variable CATP not declared !
+Compiling "/d/eriador/comun/habitacion/caminos/posada_abandonada/despacho_anciano.c", Line 64
+d/eriador/comun/habitacion/caminos/posada_abandonada/despacho_anciano.c line 70: Variable CATP not declared !
+Compiling "/d/eriador/comun/habitacion/caminos/posada_abandonada/despacho_anciano.c", Line 70
+d/eriador/comun/habitacion/caminos/posada_abandonada/cocina.c line 54: Variable CATP not declared !
+Compiling "/d/eriador/comun/habitacion/caminos/posada_abandonada/cocina.c", Line 54
+d/eriador/comun/habitacion/caminos/posada_abandonada/cocina.c line 72: Variable CATP not declared !
+Compiling "/d/eriador/comun/habitacion/caminos/posada_abandonada/cocina.c", Line 72
+d/eriador/comun/habitacion/caminos/posada_abandonada/cocina.c line 72: Variable CATP not declared !
+Compiling "/d/eriador/comun/habitacion/caminos/posada_abandonada/cocina.c", Line 72
+ -- Tue Dec 02 06:06:11 2014 --
+Obj: d/eriador/comun/habitacion/caminos/posada_abandonada/cocina, File: d/eriador/comun/habitacion/caminos/posada_abandonada/cocina.c, Line: 79:
+/d/eriador/comun/habitacion/caminos/posada_abandonada/cocina tried to load /d/eriador/comun/habitacion/caminos/posada_vieja/almacen_cocina.c
+Created by /orome
+  Failed to load file: 'd/eriador/comun/habitacion/caminos/posada_vieja/almacen_cocina'.
+ -- Tue Dec 02 06:07:23 2014 --
+Obj: d/eriador/comun/habitacion/caminos/posada_abandonada/cocina, File: d/eriador/comun/habitacion/caminos/posada_abandonada/cocina.c, Line: 79:
+/d/eriador/comun/habitacion/caminos/posada_abandonada/cocina tried to load /d/eriador/comun/habitacion/caminos/posada_vieja/almacen_cocina.c
+Created by /orome
+  Failed to load file: 'd/eriador/comun/habitacion/caminos/posada_vieja/almacen_cocina'.
+ -- Tue Dec 02 06:10:05 2014 --
+Obj: d/eriador/comun/habitacion/caminos/posada_abandonada/cocina, File: d/eriador/comun/habitacion/caminos/posada_abandonada/cocina.c, Line: 79:
+/d/eriador/comun/habitacion/caminos/posada_abandonada/cocina tried to load /d/eriador/comun/habitacion/caminos/posada_vieja/almacen_cocina.c
+Created by /orome
+  Failed to load file: 'd/eriador/comun/habitacion/caminos/posada_vieja/almacen_cocina'.
+Obj: d/eriador/comun/habitacion/caminos/posada_abandonada/cocina, File: d/eriador/comun/habitacion/caminos/posada_abandonada/cocina.c, Line: 79:
+/d/eriador/comun/habitacion/caminos/posada_abandonada/cocina tried to load /d/eriador/comun/habitacion/caminos/posada_vieja/almacen_cocina.c
+Created by /orome
+  Failed to load file: 'd/eriador/comun/habitacion/caminos/posada_vieja/almacen_cocina'.
+ -- Tue Dec 02 06:12:13 2014 --
+Obj: d/eriador/comun/habitacion/caminos/posada_abandonada/cocina, File: d/eriador/comun/habitacion/caminos/posada_abandonada/cocina.c, Line: 79:
+/d/eriador/comun/habitacion/caminos/posada_abandonada/cocina tried to load /d/eriador/comun/habitacion/caminos/posada_vieja/almacen_cocina.c
+Created by /orome
+  Failed to load file: 'd/eriador/comun/habitacion/caminos/posada_vieja/almacen_cocina'.

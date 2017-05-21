@@ -1,0 +1,8 @@
+SINOPSIS
+    xdupdate <nombre_fichero>
+
+DESCRIPCION
+    Actualiza un objeto incluyendo todos los objetos heredados.
+
+EJEMPLOS
+    xdupdate /std/player.c

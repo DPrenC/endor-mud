@@ -1,0 +1,23 @@
+Todos los Caminos llevan a Kha-annu
+                 Gorthem 30-7-98
+
+Vale explicacion de la falla:
+
+Aqui se debe referenciar todos los caminos que se implementen.
+
+Se pondran en un Subdirectorio dentro de Caminos:
+
+Pj: /caminos/kenton
+
+Con un fichero txt que explique el camino y su creador :-)
+Oviamente los caminos se implementaran con el permiso pertinente de Izet o
+mio (si me da el permiso) y el anterior acuerdo con el destino(si es otro
+dominio).
+
+Dudas Gorthem o Izet.
+
+/*********************************************************************/
+/ PARTIDA       | DESTINO       | CREADOR       | DIRECTORIO          /
+/---------------| --------------| --------------| --------------------/
+/                                                                     /
+/*********************************************************************/

@@ -1,0 +1,1195 @@
+#
+# Lista de direcciones IP reconocidas y su situacion geografica
+#
+# Formato de entrada IP : Ciudad, Pais
+#
+62.36	       : Wanadoo, España
+62.37	       : Wanadoo, España
+62.42	       : Ono, España
+62.43          : Ono, España
+81.202         : Ono, España
+62.57	       : Menta, España
+62.81          : Retevisión, España
+62.82          : Retevisión, España
+62.83	       : Retevisión, España
+62.175	       : Retevisión, España
+62.174         : Retevisión, España
+80.24          : TDATA, España
+80.25          : TDATA, España
+80.26          : TDATA, España
+80.36          : TDATA, España
+80.37          : TDATA, España
+80.38          : TDATA, España
+80.39          : TDATA, España
+80.59          : TDATA, España
+119.78         : Indiana, USA
+127.0.0.1      : Valencia, España
+128.100        : Toronto Ont, Canada
+128.101        : Minneapolis MN, USA
+128.103        : Cambridge MA, USA
+128.104        : Madison WI, USA
+128.104        : Madison WI, USA
+128.109        : Raleigh NC, USA
+128.110        : Salt Lake City UT, USA
+128.112        : Princeton NJ, USA
+128.113        : Troy NY, USA
+128.114        : San Diego CA, USA
+128.115        : Livermore CA, USA
+128.118        : State College PA, USA
+128.119        : Amherst MA, USA
+128.120        : Davis CA, USA
+128.121        : Princeton NJ, USA
+128.122        : New York City NY, USA
+128.123        : Fargo ND, USA
+128.125        : Los Angeles CA, USA
+128.130        : Vienna, Austria
+128.134        : Handysoft Corp., Korea
+128.135        : Chicago IL, USA
+128.138        : Boulder CO, USA
+128.140        : Atlanta GA, USA
+128.141        : Geneva, Suiza
+128.143        : Charlottesv. VA, USA
+128.146        : Columbus OH, USA
+128.148        : Providence RI, USA
+128.153        : Potsdam NY, USA
+128.157        : Houston TX, USA
+128.159        : Cape Canaveral FL, USA
+128.163        : Lexington KY, USA
+128.164        : Washington DC, USA
+128.167        : College Park MD, USA
+128.169        : Knoxville TN, USA
+128.171        : Honolulu HI, USA
+128.172        : Richmond VI, USA
+128.173        : Blacksburg VA, USA
+128.174        : Urbana IL, USA
+128.175        : Newark DE, USA
+128.176        : Muenster, Alemania
+128.178        : Lausanne, Suiza
+128.180        : Bethelehem PA, USA
+128.183        : Greenbelt MD, USA
+128.186        : Tallahassee FL, USA
+128.187        : Brigham Young UT, USA
+128.189        : Victoria BC, Canada
+128.192        : Athens GA, USA
+128.193        : Corvallis OR, USA
+128.194        : College Station TX, USA
+128.196        : Tucson AZ, USA
+128.197        : Boston MA, USA
+128.2          : Pittsburgh PA, USA
+128.200        : Irvine CA, USA
+128.204        : Albany NY, USA
+128.205        : Buffalo NY, USA
+128.206        : Columbia MI, USA
+128.210        : Purdue IN, USA
+128.213        : Troy NY, USA
+128.214        : Helsinki, Finlandia
+128.218        : San Francisco CA, USA
+128.220        : Baltimore MD, USA
+128.221        : Albany NY, USA
+128.223        : Eugene OR, USA
+128.227        : Gainesville FL, USA
+128.230        : Syracuse NY, USA
+128.231        : Washington DC, USA
+128.232        : Cambridge, Inglaterra
+128.233        : Saskatoon Sas, Canada
+128.238        : Brooklyn NY, USA
+128.239        : Williamsburg VA, USA
+128.240        : Newcastle, Inglaterra
+128.243        : Nottingham, Inglaterra
+128.248        : Chicago IL, USA
+128.249        : Houston TX, USA
+128.250        : Melbourne, Australia
+128.252        : St. Louis MO, USA
+128.253        : Ithaca NY, USA
+128.255        : Iowa City IA, USA
+128.32         : Berkeley CA, USA
+128.39         : Grimstad, Noruega
+128.40         : London, Inglaterra
+128.42         : Houston TX, USA
+128.46         : Lafayette IN, USA
+128.52         : Tulsa OK, USA
+128.54         : San Diego CA, USA
+128.55         : Cedar Rapids IA, USA
+128.59         : New York NY, USA
+128.6          : New Brunswick NJ, USA
+128.6.62       : Gauss NJ, USA
+128.6.8        : Lando NJ, USA
+128.60         : Washington D.C., USA
+128.61         : Atlanta GA, USA
+128.8          : Washington DC, USA
+128.83         : Austin TX, USA
+128.84         : Ithaca NY, USA
+128.91         : Philadelphia PA, USA
+128.95         : Seattle WA, USA
+128.97         : Los Angeles CA, USA
+129.1          : Bowling Green OH, USA
+129.10         : Boston MA, USA
+129.10.1       : Brockton MA, USA
+129.10.20      : Lynnfield MA, USA
+129.10.9       : Stoneham MA, USA
+129.101        : Moscow ID, USA
+129.105        : Chicago IL, USA
+129.106        : Houston TX, USA
+129.107        : Arlington TX, USA
+129.11         : Leeds, Inglaterra
+129.110        : Dallas TX, USA
+129.115        : San Antonio TX, USA
+129.116        : Austin TX, USA
+129.12         : Canterbury, Inglaterra
+129.120        : Denton TX, USA
+129.121        : Albuquerque NW, USA
+129.123        : Logan UT, USA
+129.125        : Groningen, Holanda
+129.127        : Adelaide, Australia
+129.128        : Edmonton AB, Canada
+129.13         : Karlsruhe, Alemania
+129.130        : Manhattan KS, USA
+129.132        : Zurich, Suiza
+129.133        : Middletown CT, USA
+129.137        : Cincinnati OH, USA
+129.138        : Soconorro NM, USA
+129.142        : Aarhus, Denmark
+129.15         : Oklahoma City OK, USA
+129.16         : Gothenburg, Suecia
+129.169        : Cambridge, Inglaterra
+129.170        : Hanover NH, USA
+129.173        : Nova Scotia, Canada
+129.174        : Burke VA, USA
+129.177        : Bergen, Noruega
+129.179        : Minneapolis MN, USA
+129.186        : Ames IA, USA
+129.187        : Munich, Alemania
+129.188        : Schaumburg IL, USA
+129.191        : Brooklyn Park MN, USA
+129.193        : Redondo Beach CA, USA
+129.2          : College Park MD, USA
+129.206        : Heidelberg, Alemania
+129.207        : Hempstead TX, USA
+129.21         : Rochester NY, USA
+129.215        : Edinburgh, Escocia
+129.215        : Edinburgh, Escocia
+129.217        : Dortmund, Alemania
+129.219        : Phoenix AZ, USA
+129.22         : Cleveland OH, USA
+129.229        : Champaign IL, USA
+129.234        : Durham, Inglaterra
+129.237        : Lawrence KS, USA
+129.24         : Albuquerque NM, USA
+129.240        : Oslo, Noruega
+129.241        : Trondheim, Noruega
+129.242        : Tromsoe, Noruega
+129.244        : Tulsa OK, USA
+129.247        : Goettingen, Alemania
+129.25         : Philadelphia PA, USA
+129.252        : Columbia SC, USA
+129.27         : Graz Stmk, Austria
+129.29         : West Point NY, USA
+129.31         : London, Inglaterra
+129.32         : Philadelphia PA, USA
+129.37         : Lexington MA, USA
+129.49         : Stony Brook NY, USA
+129.59         : Nashville TN, USA
+129.62         : Waco TX, USA
+129.63         : N. Andover MA, USA
+129.65         : San Luis Obispo CA, USA
+129.66         : Huntsville AL, USA
+129.67         : Kent, Inglaterra
+129.69         : Stuttgart, Alemania
+129.69.18      : ?? , España
+129.7          : Houston TX, USA
+129.70         : Bielefeld, Alemania
+129.71         : Philippi WV, USA
+129.72         : Laramie WY, USA
+129.74         : Notre Dame IN, USA
+129.78         : Sydney, Australia
+129.79         : Bloomington IN, USA
+129.8          : Fresno CA, USA
+129.81         : New Orleans LA, USA
+129.82         : Fort Collins CO, USA
+129.87         : Houston TX, USA
+129.89         : Milwaukee WI, USA
+129.93         : Lincoln NE, USA
+129.95         : Kent WA, USA
+129.96         : Adelaide, Australia
+129.97         : Waterloo, Canada
+130.102        : Brisbane, Australia
+130.108        : Dayton OH, USA
+130.111        : Orono ME, USA
+130.113        : Ontario, Canada
+130.115        : Rotterdam, Holanda
+130.127        : Clemson SC, USA
+130.130        : Sydney, Australia
+130.130.68     : Wollongong, Australia
+130.132        : New Haven CT, USA
+130.133        : Berlin, Alemania
+130.149        : Berlin, Alemania
+130.15         : Kingston Ont., Canada
+130.159        : Glasgow, Escocia
+130.160        : Tuscaloosa AL, USA
+130.161        : Delft, Holanda
+130.164        : Nat.Instr.Comp., USA
+130.17         : Turlock CA, USA
+130.179        : Winnipeg Man., Canada
+130.18         : Starkville MS, USA
+130.182        : Los Angeles CA, USA
+130.184        : Fayetteville AR, USA
+130.186        : Rimini, Italy
+130.191        : San Diego CA, USA
+130.192.41     : Turin, Italia
+130.194        : Melbourne, Australia
+130.199        : Upton NY, USA
+130.203        : Bethlehem PA, USA
+130.206.122    : Girona, España
+130.206.73     : Madrid, España
+130.206.72     : Madrid, España
+130.207        : Atlanta GA, USA
+130.208        : Reykjavik, Islandia
+130.209        : Glasgow, Escocia
+130.212        : Alameda CA, USA
+130.215        : Worcester MA, USA
+130.218        : Marietta GA, USA
+130.225        : Aalborg, Denmark
+130.230        : Tampere, Finlandia
+130.231        : Oulu, Finlandia
+130.232        : Turku/Abo, Finlandia
+130.233        : Otaniemi, Finlandia
+130.234        : Jyv{Skyl{, Finlandia
+130.235.139    : Lund, Suecia
+130.235.208    : Kalmar, Suecia
+130.235.225    : Ronneby, Suecia
+130.235.227    : Ronneby, Suecia
+130.235.24     : Lund, Suecia
+130.235.85     : Lund, Suecia
+130.236        : Link|Ping, Suecia
+130.237        : Stockholm, Suecia
+130.238.136    : Upsala, Suecia
+130.238.137    : Upsala, Suecia
+130.238.198    : Borl{Nge, Suecia
+130.238.204    : G{Vle/Sandviken, Suecia
+130.238.206    : G{Vle/Sandviken, Suecia
+130.238.214    : \Rebro, Suecia
+130.238.216    : \Rebro, Suecia
+130.238.64     : Upsala, Suecia
+130.238.9      : Upsala, Suecia
+130.239        : Sundsvall, Suecia
+130.239.16     : Ume}, Suecia
+130.239.201    : \Stersund, Suecia
+130.239.218    : \Rnsk|Lsdvik, Suecia
+130.239.220    : Sundsvall, Suecia
+130.240        : Lule}, Suecia
+130.241        : Boras, Suecia
+130.244        : <???>, Suecia
+130.253        : Denver TX, USA
+130.254        : Savannah GA, USA
+130.37         : Amsterdam, Holanda
+130.39         : Baton Rouge LA, USA
+130.41         : Melbourne FL, USA
+130.49         : Pittsburg PA, USA
+130.60         : Zurich, Suiza
+130.63         : Toronto, Canada
+130.64         : Boston MA, USA
+130.65         : San Jose CA, USA
+130.66         : Nantes, Francia
+130.68         : Montclair NJ, USA
+130.70         : Lafayette LA, USA
+130.74         : University MS, USA
+130.75         : Hannover, Alemania
+130.79         : Strasbourg, Francia
+130.82         : St. Gallen, Suiza
+130.83         : Darmstadt, Alemania
+130.85         : Baltimore MD, USA
+130.86         : Sacramento CA, USA
+130.88         : Manchester, Inglaterra
+130.91         : Philadelphia PA, USA
+131.104        : Guelph Ont, Canada
+131.108        : Mountain View CA, USA
+131.111        : Cambridge, Inglaterra
+131.118        : Towson MD, USA
+131.121        : Annapolis MD, USA
+131.123        : Kent OH, USA
+131.128        : Kingston RI, USA
+131.130        : Vienna, Austria
+131.144        : Cochran GA, USA
+131.151        : Rolla MO, USA
+131.155        : Eindhoven, Holanda
+131.156        : Dekalb IL, USA
+131.159        : Munich, Alemania
+131.16         : Ramstein, Alemania
+131.169        : Hamburg, Alemania
+131.172        : Melbourne, Australia
+131.174        : Nijmegen, Holanda
+131.178        : Monterrey, Méjico
+131.183        : Toledo OH, USA
+131.188        : Erlangen, Alemania
+131.194        : San Antonio TX, USA
+131.202        : Fredericton NB, Canada
+131.204        : Auburn AL, USA
+131.211        : Utrecht, Holanda
+131.212        : Duluth MN, USA
+131.215        : Pasadena CA, USA
+131.216        : Las Vegas NV, USA
+131.220        : Bonn, Alemania
+131.225        : Batavia IL, USA
+131.227        : Guildford, Inglaterra
+131.229        : Northampton MA, USA
+131.230        : Carbondale IL, USA
+131.231        : Plymouth, Inglaterra
+131.231.16.44  : Loughborough, Inglaterra
+131.234        : Paderborn, Alemania
+131.236        : Canberra, Australia
+131.238        : Dayton OH, USA
+131.246        : Kaiserslautern, Alemania
+131.251        : Cardiff, Wales
+131.252        : Reaverton OR, USA
+131.86         : Defense Logistics Agency, USA
+131.87         : Defense Logistics Agency, USA
+131.93         : Renssealer IN, USA
+131.94         : Carolina, Puerto Rico
+131.95         : Hattiesburg MS, USA
+132.162        : Oberlin OH, USA
+132.170        : Orlando FL, USA
+132.176        : Hagen, Alemania
+132.177        : Durham NH, USA
+132.178        : Boise ID, USA
+132.180        : Bayreuth, Alemania
+132.187        : Wuerzburg, Alemania
+132.194        : Denver CO, USA
+132.195        : Wuppertal, Alemania
+132.198        : Burlington VT, USA
+132.199        : Regensburg, Alemania
+132.204        : Montreal QC, Canada
+132.205        : Montreal QC, Canada
+132.206        : Montreal QC, Canada
+132.207        : Montreal QC, Canada
+132.227        : Versailles, Francia
+132.229        : Leiden, Holanda
+132.230        : Freiburg, Alemania
+132.231        : Passau, Alemania
+132.234        : Brisbane, Australia
+132.235        : Athens OH, USA
+132.236        : Ithaca NY, USA
+132.239        : San Diego CA, USA
+132.241        : Chico CA, USA
+132.248        : Cdad. de Méjico, Méjico
+132.252        : Essen, Alemania
+132.64         : Jerusalem, Israel
+132.67         : Tel Aviv, Israel
+132.68         : Haifa, Israel
+132.70         : Tel Aviv, Israel
+132.72         : Beer Sheva, Israel
+132.76         : Weizmann Inst. Of Science, Israel
+132.199        : Regensburg, Alemania
+134.100        : Hamburg, Alemania
+134.102        : Bremen, Alemania
+134.103        : Reutlingen, Alemania
+134.104        : Bonn, Alemania
+134.105        : Stuttgart, Alemania
+134.106        : Oldenburg, Alemania
+134.107        : Martinsried, Alemania
+134.109        : Chemnitz, Alemania
+134.115        : Perth, Australia
+134.117        : Ottawa Ont, Canada
+134.121        : Pullman WA, USA
+134.124        : St Louis MO, USA
+134.126        : Harrisonburg VA, USA
+134.129        : Fargo ND, USA
+134.130        : Aachen, Alemania
+134.139        : Long Beach CA, USA
+134.147        : Bochum, Alemania
+134.151        : Aston, Inglaterra
+134.153        : Mt. Pearl, Canada
+134.155        : Mannheim, Alemania
+134.161        : Cedar Falls IA, USA
+134.169        : Braunschweig, Alemania
+134.173        : Towson MD, USA
+134.176        : Giessen, Alemania
+134.184        : Brussels, Bélgica
+134.190        : Halifax NS, Canada
+134.193        : Kansas City MO, USA
+134.197        : Reno NV, USA
+134.198        : Scranton PA, USA
+134.2          : Tuebingen, Alemania
+134.214        : Lyon, Francia
+134.219        : London, Inglaterra
+134.220        : Wolverhampton, Inglaterra
+134.225        : Reading, Inglaterra
+134.226        : Dublin, Irlanda
+134.241        : Boston MA, USA
+134.245        : Kiel, Alemania
+134.250        : Logan UT, USA
+134.28         : Harburg, Alemania
+134.29         : Mankato MI, USA
+134.30         : Berlin, Alemania
+134.32         : Ferndown, Inglaterra
+134.34         : Konstanz, Alemania
+134.36         : Dundee, Escocia
+134.40         : Dundee, Escocia
+134.48         : Milwaukee WI, USA
+134.53         : Oxford OH, USA
+134.60         : Ulm, Alemania
+134.68         : Indianapolis IN, USA
+134.7          : Perth, Australia
+134.71         : Alhambra CA, USA
+134.76         : Goettingen, Alemania
+134.82         : Lewisburg PA, USA
+134.83         : London-Brunel, Inglaterra
+134.84         : Minneapolis MN, USA
+134.86         : Indianapolis IN, USA
+134.87         : Vancouver BC, Canada
+134.88         : ??? MA, USA
+134.93         : Mainz, Alemania
+134.94         : Juelich, Alemania
+134.95         : Cologne, Alemania
+134.96         : Saarbruecken, Alemania
+136.142        : Pittsburgh PA, USA
+136.145        : Mayaguez, Puerto Rico
+136.148        : London, Inglaterra
+136.163        : Link|Ping, Suecia
+136.165        : Louisville KY, USA
+136.167        : Boston MA, USA
+136.176        : Peoria IL, USA
+136.183        : Buffalo NY, USA
+136.186        : Melbourne, Australia
+136.199        : Trier, Alemania
+136.204        : Morrisville NY, USA
+136.224        : Alfred NY, USA
+136.227        : Springfield OH, USA
+137.104        : Platteville WI, USA
+137.108        : Maastricht, Holanda
+137.110        : San Diego CA, USA
+137.111        : Sydney, Australia
+137.112        : Terre Haute IN, USA
+137.113        : Lexington VI, USA
+137.120        : Maastricht, Holanda
+137.123        : Courtland NY, USA
+137.125        : Bayshore NY, USA
+137.132        : Unknown, Singapur
+137.141        : Oneonta NY, USA
+137.142        : Plattsburgh NY, USA
+137.143        : Potsdam NY, USA
+137.149        : Charlottetown, Canada
+137.151        : Los Angeles CA, USA
+137.165        : Williamstown MA, USA
+137.166        : Wagga, Australia
+137.174        : Clausthal, Alemania
+137.18         : Washington DC, USA
+137.189        : Hong Kong,  Hong Kong
+137.190        : Ogden UT, USA
+137.195        : Riccarton, Escocia
+137.204        : Rimini, Italy
+137.205        : Warwick, Inglaterra
+137.207        : Windsor Ont, Canada
+137.208        : Wien, Austria
+137.208.18.16  : Vienna, Austria
+137.208.3.2    : Winston Salem NC, USA
+137.215        : Pretoria,  South Africa
+137.22         : Northfield MN, USA
+137.222        : Bristol, Inglaterra
+137.224        : Wageningen, Holanda
+137.226        : Aachen, Alemania
+137.229        : Fairbanks AK, USA
+137.238        : Geneseo NY, USA
+137.248        : Marburg, Alemania
+137.36         : Cobelskill NY, USA
+137.39         : Hartford CT, USA
+137.44         : Swansea, Wales
+137.48         : Omaha NE, USA
+137.49         : West Hartford CT, USA
+137.53         : Portland OR, USA
+137.56         : Tilburg, Holanda
+137.73         : London-Westminster, Inglaterra
+137.81         : Superior WI, USA
+137.82         : Vancouver BC, Canada
+137.84         : Casper WY, USA
+137.88         : Powell WY, USA
+137.92         : Canberra, Australia
+138.100        : Madrid, España
+138.110        : South Hadley MA, USA
+138.129        : Morehead NM, USA
+138.143        : <???> VI, USA
+138.23         : Riverside CA, USA
+138.25         : Sydney, Australia
+138.251        : St. Andrews, Escocia
+138.253        : Liverpool, Inglaterra
+138.37         : London, Inglaterra
+138.38         : Bath, Inglaterra
+138.40         : London, Inglaterra
+138.49         : LaCrosse WI, USA
+138.80         : Darwin, Australia
+138.86         : Greeley CO, USA
+138.9          : Ventura CA, USA
+138.95         : Portland OR, USA
+139.103        : Moncton NB, Canada
+139.104        : Glendale CA, USA
+139.11         : Wien, Austria
+139.124        : Marseille, Francia
+139.133        : Aberdeen, Escocia
+139.153        : Stirling, Escocia
+139.174        : Clausthal, Alemania
+139.18         : Leipzig, Alemania
+139.230        : Perth, Australia
+139.30         : Rostock, Alemania
+139.80         : Dunedin,  New Zealand
+139.91         : Heraklion, Grecia
+139.94         : Kingsville TX, USA
+140.104        : Waukesha WI, USA
+140.113        : Lansing MI, USA
+140.115        : Manhattan KS, USA
+140.142        : Seattle, USA
+140.147        : Washington DC, USA
+140.156.30     : Hanau, Alemania
+140.160        : Bellingham WA, USA
+140.184        : Halifax NS, Canada
+140.190        : Winona MN, USA
+140.192        : Chicago IL, USA
+140.198        : Maricopa AZ, USA
+140.211        : Klamath Falls OR, USA
+140.225        : St. Paul MN, USA
+140.232        : Spencer MA, USA
+140.252        : Tucson AZ, USA
+140.77         : Lyon, Francia
+140.78         : Linz, Austria
+140.78.140     : Hagenberg, Austria
+141.107        : Fredonia NY, USA
+141.12         : Darmstadt, Alemania
+141.13         : Bamberg, Alemania
+141.133        : Waltham MA, USA
+141.139        : Philippi WV, USA
+141.140        : Minneapolis MN, USA
+141.142        : Seattle WA, USA
+141.19         : Mannheim, Alemania
+141.2          : Frankfurt, Alemania
+141.20         : Berlin, Alemania
+141.201        : Salzburg, Austria
+141.209        : Mount Pleasant MI, USA
+141.21         : Karlsruhe, Alemania
+141.210        : Rochester Hills MI, USA
+141.211        : Ann Arbor MI, USA
+141.212        : Ann Arbor MI, USA
+141.214        : Ann Arbor MI, USA
+141.215        : Ann Arbor MI, USA
+141.216        : Flint MI, USA
+141.217        : Dearborn MI, USA
+141.218        : Kalamazoo MI, USA
+141.225        : Memphis TN, USA
+141.233        : Fiskosh Okon WI, USA
+141.238        : Fredonia NY, USA
+141.24         : Ilmenau, Alemania
+141.241        : London-Kingston, Inglaterra
+141.249        : Zurich, Suiza
+141.26         : Koblenz, Alemania
+141.28         : Furtwangen, Alemania
+141.30         : Dresden, Alemania
+141.35         : Jena, Alemania
+141.37         : Konstanz, Alemania
+141.41         : Wolfenbuettel, Alemania
+141.44         : Magdeburg, Alemania
+141.45         : Berlin, Alemania
+141.48         : Halle, Alemania
+141.52         : Karlsruhe, Alemania
+141.53         : Greifswald, Alemania
+141.55         : Mittweida, Alemania
+141.61         : Martinsried, Alemania
+141.64         : Berlin, Alemania
+141.68         : Ravensburg, Alemania
+141.69         : Weingarten, Alemania
+141.7          : Heilbronn, Alemania
+141.70         : Tuebingen, Alemania
+141.72         : Mannheim, Alemania
+141.76         : Dresden, Alemania
+141.79         : Offenburg, Alemania
+141.82         : Augsburg, Alemania
+141.87         : Albstadt/Sigmaringen, Alemania
+141.99         : Siegen, Alemania
+142.103        : <???>, Canada
+142.13         : Brandon Man, Canada
+142.3          : Regina Sas, Canada
+142.31         : Vancouver BC, Canada
+142.32         : Vancouver BC, Canada
+142.77         : Toronto Ont, Canada
+143.105        : Cleveland OH, USA
+143.106        : Campinas, Brasil
+143.117        : Belfast,  N. Irlanda
+143.166        : Austin TX, USA
+143.167        : Sheffield, Inglaterra
+143.205        : Graz, Austria
+143.205.11.19  : Klagenfurt, Austria
+143.207        : Berrien Springs MI, USA
+143.233        : Athens, Grecia
+143.43         : Charleston IL, USA
+143.53         : Bradford, Inglaterra
+143.54         : Porto Alegre, Brasil
+144.124        : Manchester, Inglaterra
+144.173        : Exeter, Inglaterra
+144.174        : Tallahassee FL, USA
+144.175        : Frederick MD, USA
+144.32         : York, Inglaterra
+144.5          : Houston TX, USA
+144.62         : Cedar Rapids IA, USA
+144.82         : London, Inglaterra
+144.89         : Beloit WY, USA
+144.90         : Tucson AZ, USA
+144.92         : Madison WI, USA
+144.96         : Nacogdoches TX, USA
+145.18         : Amsterdam, Holanda
+145.19         : Vlissingen, Holanda
+145.24         : Rotterdam, Holanda
+145.51         : Rotterdam, Holanda
+146.101        : London-Surbiton, Inglaterra
+146.110        : Budapest, Hungria
+146.113        : Kalamazo MI, USA
+146.129        : Seattle WA, USA
+146.138        : Dep. Of Energy, USA
+146.169        : London, Inglaterra
+146.182        : Bloemfontein,  South Africa
+146.186        : University Park PA, USA
+146.229        : Huntsville AL, USA
+146.230        : Durban,  South Africa
+146.231        : Grahamstown,  South Africa
+146.232        : Stellenbosch,  South Africa
+146.50         : Amsterdam, Holanda
+146.7          : Springfield MO, USA
+146.86         : Salt Lake City UT, USA
+146.87         : Manchester, Inglaterra
+146.94         : Wilkes-Barre PA, USA
+147.102        : Athens, Grecia
+147.129        : Ithaca NY, USA
+147.134        : Omaha NE, USA
+147.143        : Bangor, Wales
+147.156        : Valencia, España
+147.162        : Padua, Italy
+147.172        : Hildesheim, Alemania
+147.174        : Hammond LA, USA
+147.175        : Bratislava, Slovakia
+147.188        : Birmingham, Inglaterra
+147.2          : Rotterdam, Holanda
+147.205        : Oneonta NY, USA
+147.210        : Bordeaux, Francia
+147.226        : Muncie IN, USA
+147.253        : Deland FL, USA
+147.26         : Houston TX, USA
+147.28         : Tigard OR, USA
+147.32         : Prague,  Czech Republic
+147.52         : Heraklion, Grecia
+147.83         : Barcelona, España
+147.96         : Madrid, España
+147.97         : Jonesboro AR, USA
+147.156.147    : Valencia, España
+148.100        : Poughkeepsie NY, USA
+148.234.15     : Nuevo Leon, Méjico
+148.241        : Monterrey, Méjico
+148.4          : Southhampton NY, USA
+148.59         : Ann Arbor MI, USA
+148.61         : Grand Rapids MI, USA
+148.81         : Warsaw, Polonia
+148.88         : Lancester, Inglaterra
+148.233.144    : TelMex, Méjico
+148.245.20     : ?, Méjico
+149.104        : Washington DC, USA
+149.132        : Milan, Italy
+149.144        : Newcastle, Australia
+149.149        : Cookeville TN, USA
+149.152        : Willimantic CT, USA
+149.155        : Harpenden, Inglaterra
+149.156        : Cracow, Polonia
+149.159        : Bloomington IN, USA
+149.160        : Bloomington IN, USA
+149.171        : Sydney, Australia
+149.205        : Merseburg, Alemania
+149.84         : Alfred NY, USA
+15.254         : Hewlet-Packard, Unknown
+150.108        : Bronx NY, USA
+150.128        : Castellón, España
+150.131        : Missoula MT, USA
+150.150.100    : <?>, USA
+150.203        : Canberra, Australia
+150.204        : ???, Reino Unido
+150.208        : Harrison AR, USA
+150.209        : Clinton NY, USA
+150.212        : Pittsburgh PA, USA
+150.214.70     : Cádiz, España
+150.214.73     : Cádiz, España
+150.214.110    : Córdoba, España
+150.214.129    : Córdoba, España
+150.214.231    : Cádiz, España
+150.243        : Kirksville MO, USA
+150.244        : Madrid, España
+150.252        : Abilene TX, USA
+151.100        : Roma, Italy
+151.103        : Troy NY, USA
+151.155        : Orem UT, USA
+151.160        : Jackson MS, USA
+152.1          : Raleigh NC, USA
+152.10         : Boone NC, USA
+152.13         : Greensboro NC, USA
+152.15         : Charlotte NC, USA
+152.17         : Winston-Salem NC, USA
+152.18         : Asheville NC, USA
+152.2          : Chapel Hill NC, USA
+152.228        : Valparaiso IN, USA
+152.3          : Durham NC, USA
+152.66         : Budapest, Hungria
+152.73         : Bagsvaerd, Denmark
+152.81         : Vandoeuvre, Francia
+152.94         : Stavanger, Noruega
+153.1          : Tampere, Finlandia
+153.106        : Fenton MI, USA
+153.36         : MSN-Cleveland OH, USA
+153.36.165.19  : Dayton OH, USA
+153.91         : Kansas City MO, USA
+155.138        : Saginaw MI, USA
+155.207        : Thessaloniki, Grecia
+155.210        : Zaragoza, España
+155.212        : Warwick State RI, USA
+155.225        : Charleston SC, USA
+155.245        : Essex, Inglaterra
+155.31         : Daytona Beach FL, USA
+155.68         : Lancaster PA, USA
+155.92         : Milwaukee WI, USA
+155.99         : Salt Lake City UT, USA
+156.17         : Wroclaw, Polonia
+156.151        : Cupertino CA, USA
+156.24         : Palo Alto CA, USA
+156.26         : Wichita KS, USA
+156.35	       : UNIOVI, España
+157.88         : Valladolid, España
+157.100        : Ecuanet, Ecuador
+157.142        : Oklahoma OK, USA
+157.151        : Memphis TN, USA
+157.159        : <???>, Francia
+157.181        : Budapest, Hungria
+157.24         : Lappeenranta, Finlandia
+157.242        : Los Angeles CA, USA
+157.252        : Hartford CT, USA
+158.104        : Salem OR, USA
+158.109        : Barcelona, España
+158.121        : North Reading MA, USA
+158.125        : Loughborough, Inglaterra
+158.135        : Huntsville TX, USA
+158.136        : Plymouth NH, USA
+158.142        : Pueblo CO, USA
+158.152        : Internet Services,  Reino Unido
+158.195        : Bratislava, Slovakia
+158.227        : Bilbao, España
+158.234        : London, Inglaterra
+158.38         : Trondheim, Noruega
+158.42         : UPVNET, España
+158.75         : Torun, Polonia
+158.83         : California PA, USA
+158.109.16     : Barcelona, España
+159.90	       : Caracas, Venezuela
+160.10         : Carrollton GA, USA
+160.45         : Berlin, Alemania
+160.91         : Knoxville TN, USA
+161.57         : Big Rapids MI, USA
+161.67.18      : Albacete, España
+161.73         : Oxford, Inglaterra
+161.116        : Barcelona, España
+162.127        : Crawford NE, USA
+162.148        : Seattle WA, USA
+162.48         : Ann Arbor MI, USA
+163.11         : Cedarville OH, USA
+163.117.12     : Madrid, España
+163.117.5      : Madrid, España
+163.120        : Greencastle IN, USA
+163.185        : Houston TX, USA
+164.109        : Greenbelt MD, USA
+164.11         : Bristol, Reino Unido
+164.54         : Argonne IL, USA
+164.76         : Ypsilanti MI, USA
+164.8          : Maribor, Slovenia
+172.16         : Tuebingen, Alemania
+18.186         : Indiana, USA
+18.187         : Cambridge MA, USA
+18.23          : Stoneham MA, USA
+18.23.0        : Swampscott MA, USA
+18.58          : Cambridge MA, USA
+18.62          : Cambridge MA, USA
+18.63          : Cambridge MA, USA
+18.70          : Cambridge MA, USA
+18.71          : Cambridge MA, USA
+18.74          : Cambridge MA, USA
+18.78          : Cambridge MA, USA
+18.80          : Cambridge MA, USA
+18.85          : Cambridge MA, USA
+18.88          : Cambridge MA, USA
+192.100.76     : Richmond VA, USA
+192.100.81.100 : San Jose CA, USA
+192.100.81.107 : Sunnyvale CA, USA
+192.100.81.108 : San Jose CA, USA
+192.100.81.113 : San Diego CA, USA
+192.100.81.114 : Washington DC, USA
+192.101.124    : Rota, España
+192.101.250    : Alma MI, USA
+192.102.170    : Rostock, Alemania
+192.102.223    : Natchitoches LA, USA
+192.102.5      : Vancouver WA, USA
+192.104.1      : Topeka KS, USA
+192.107.41     : Louisville KY, USA
+192.107.45     : San Juan, Puerto Rico
+192.108.160    : Prague, Czechia
+192.108.254    : Portland OR, USA
+192.109.159    : D-W-Kaarst, Alemania
+192.109.39     : Contributed Software, Alemania
+192.109.53     : Buebingen, Alemania
+192.109.83     : Hamburg, Alemania
+192.111.36     : River Forest IL, USA
+192.111.47     : Castrop-Rauxel, Alemania
+192.12.72      : London, Inglaterra
+192.121.221    : Sundsvall, Suecia
+192.124.153    : Smithfield RI, USA
+192.124.156    : Bergen, Noruega
+192.124.25     : MPI Tuebingen, German
+192.124.26     : MPI Tuebingen, Alemania
+192.124.28     : MPI Tuebingen, Alemania
+192.129.16     : Emden, Alemania
+192.131.123    : Lexington KY, USA
+192.132.29     : Hudson OH, USA
+192.138.137    : Flint MI, USA
+192.147.113    : East Stroudsburg PA, USA
+192.147.37     : Lublin, Polonia
+192.147.6      : Houston TX, USA
+192.148.218    : East Stroudsburg PA, USA
+192.149.203    : Clarion PA, USA
+192.153.35     : Swanton OH, USA
+192.156.214    : Riverside CA, USA
+192.156.215    : Billings MT, USA
+192.160.13     : San Jose CA, USA
+192.160.243    : Fairfield CT, USA
+192.165.122    : Link|ping, Suecia
+192.168        : Valencia, España
+192.169.33     : Technet Unit, Singapur
+192.187.159    : Union City CA, USA
+192.188.69     : London, Inglaterra
+192.188.72     : San Diego, USA
+192.189.180    : Madisob WI, USA
+192.190.173    : Budapest, Hungria
+192.197.121    : Quebec, Canada
+192.203.127    : Tuskegee AL, USA
+192.203.130    : Binghamton NY, USA
+192.203.249    : Cincinnati OH, USA
+192.211        : Olympia WA, USA
+192.231.171    : Columbus MS, USA
+192.231.221    : Pittsburgh PA, USA
+192.231.230    : Randolph NJ, USA
+192.245.137    : Dallas TX, USA
+192.251.2      : Houston TX, USA
+192.26.233     : Newark DE, USA
+192.31.126     : Delft, Holanda
+192.33.149     : Mines De Paris, Francia
+192.34.239     : Walla Walla WA, USA
+192.35.149     : Berlin, Alemania
+192.35.149     : Berlin, Alemania
+192.35.150     : Berlin, Alemania
+192.35.215     : Waipahu HI, USA
+192.35.242     : Vienna, Austria
+192.36.125     : Stockholm, Suecia
+192.41.245     : Chicago IL, USA
+192.42.143     : Tuebingen, Alemania
+192.43.199     : Commerce TX, USA
+192.48.211     : Seattle WA, USA
+192.54.165     : Mines De Paris, Francia
+192.54.242     : Waterloo Ont, Canada
+192.55.188     : Heidelberg, Alemania
+192.55.234     : Youngstown OH, USA
+192.58.127     : New York NY, USA
+192.58.194     : Ottawa, Canada
+192.58.242     : N. Andover MA, USA
+192.65.245     : Fredericksburg VA, USA
+192.67.218     : Mainz, Alemania
+192.67.238     : Princetown NJ, USA
+192.67.249     : Athens, Grecia
+192.68.221     : Lisbon, Portugal
+192.68.223     : Delaware OH, USA
+192.70.173     : Menlo Park CA, USA
+192.73         : Siemens Corp., Unknown
+192.73.64      : Purchase NY, USA
+192.73.75      : Ypsilanti MI, USA
+192.74.137     : Framingham MA, USA
+192.75.136     : <?> Ont., Canada
+192.75.25      : St. John'S NF, Canada
+192.75.62      : <?> Ont., Canada
+192.76.159     : Berlin, Alemania
+192.76.241     : Karlsruhe, Alemania
+192.77.49      : Montreal QC, Canada
+192.80.63      : Burlington MA, USA
+192.82.120     : Salem OR, USA
+192.83.250     : San Antonio TX, USA
+192.84.11      : Des Moines IA, USA
+192.88.242     : Traverse City MI, USA
+192.9.9        : Sun Microsystems Inc., Unknown
+192.92.115     : Huntsville TX, USA
+192.98.22      : Vaasa/Vasa, Finlandia
+192.98.43      : Helsinki, Finlandia
+192.98.49      : Tallinn, Estonia
+193.124.148    : St. Petersburg, Rusia
+193.141.139    : Duesseldorf, Alemania
+193.141.70     : Pfullingen, Alemania
+193.141.70.209 : Tuebingen, Alemania
+193.141.70.210 : Tuebingen, Alemania
+193.141.70.211 : Tuebingen, Alemania
+193.141.70.212 : Tuebingen, Alemania
+193.141.70.213 : Tuebingen, Alemania
+193.141.70.214 : Tuebingen, Alemania
+193.144.52     : Ferrol, España
+193.144.64     : Santiago de C., España
+193.145.35     : Barcelona, España
+193.145.136    : Las Palmas, España
+193.145.145    : Las Palmas, España
+193.145.62     : Barcelona, España
+193.145.100    : Tenerife, España
+193.145.101    : Tenerife, España
+193.145.113    : Tenerife, España
+193.146.91     : Red Canaria, España
+193.146.56     : Madrid, España
+193.152	       : Terra-TP, España
+193.153	       : Terra-TP, España
+193.170.36     : Hagenberg, Austria
+193.174.14     : Aachen, Alemania
+193.174.4      : Munich, Alemania
+193.174.6      : Bonn, Alemania
+193.174.64     : Berlin, Alemania
+193.175.27     : <???>, Alemania
+193.196        : Karlsruhe, Alemania
+193.4.210      : Reykjavik, Islandia
+193.44.72      : Stockholm, Suecia
+193.47         : <???>, Suiza
+193.6.10       : <???>, Hungria
+193.6.17       : Veszprem, Hungria
+193.54         : Paris, Francia
+193.59         : Lublin, Polonia
+193.60.160     : Dundee, Escocia
+193.64.6       : Helsinki, Finlandia
+193.78.33      : Amsterdam, Holanda
+193.78.34      : Amsterdam, Holanda
+193.96.24      : Berlin, Alemania
+194.97.84      : Munich, Alemania
+194.163.185    : Nufringen, Alemania
+194.163.77     : Stuttgart, Alemania
+194.19         : Tromsoe, Noruega
+194.25.2       : Ravensburg, Alemania
+194.25.3       : <???>, Alemania
+194.250.117    : Cannes, Francia
+194.50.7       : <???>, Chequia
+194.64.160     : Braunschweig, Alemania
+194.67         : Moscow, Rusia
+194.75.91      : Infovia, España
+194.140.32     : Desconocida
+194.140.164    : Infovia, España
+194.82         : <???>, Reino Unido
+194.87         : Moscow, Rusia
+194.88         : Sankt Petersburg, Rusia
+194.94.229     : Marburg, Alemania
+194.94.253     : Aachen, Alemania
+194.97.196     : Tuebingen SL, Alemania
+194.97.207.136 : Kirchentellinsfurt SL, Alemania
+194.97.207     : Tuebingen, Alemania
+194.140.60     : Infovia, España
+194.140.164    : Infovia, España
+194.179.21     : Intercom, España
+194.224        : TDATA, España
+195.53.204     : TSAI, España
+195.53.205     : TSAI, España
+195.53.206     : TSAI, España
+195.53.207     : TSAI, España
+195.55         : TDATA, España
+195.57.9       : Tenerife, España
+195.57.246     : InterpasNet, España
+195.57.247     : InterpasNet, España
+195.57.140     : Infovia, España
+195.57.141     : Infovia, España
+195.57.142     : Infovia, España
+195.57.189     : Valencia, España
+195.57.215     : Infovia, España
+195.57.216     : Infovia, España
+195.57.245     : Infovia, España
+195.57.230     : Valencia, España
+195.122.204    : Redestb, España
+195.5.70       : Arrakis, España
+195.5.71       : Arrakis, España
+195.5.72       : Arrakis, España
+195.5.73       : Arrakis, España
+195.5.74       : Arrakis, España
+195.5.75       : Arrakis, España
+195.5.76       : Arrakis, España
+195.5.77       : Arrakis, España
+195.5.78       : Arrakis, España
+195.5.79       : Arrakis, España
+195.5.235      : Marsella, Francia
+195.53.165     : Balearkom, España
+195.55.157     : CTV-Jet, España
+195.55.156     : CTV-Jet, España
+195.55.161     : CTV-Jet, España
+195.55.162     : CTV-Jet, España
+195.55.201     : CTV-Jet, España
+195.55.6       : ???, España
+195.76.64      : XUNTA, España
+195.76.65      : XUNTA, España
+195.76.66      : XUNTA, España
+195.76.67      : XUNTA, España
+195.76.180     : InterpasNet, España
+195.76.181     : InterpasNet, España
+195.76.198.230 : Barcelona, España
+195.77.26      : GVANET, España
+195.77.27      : GVANET, España
+195.77.220     : InterpasNet, España
+195.77.221     : InterpasNet, España
+195.77.222     : InterpasNet, España
+195.77.223     : InterpasNet, España
+195.77.224     : InterpasNet, España
+195.77.225     : InterpasNet, España
+195.77.226     : InterpasNet, España
+195.77.227     : InterpasNet, España
+195.77.228     : InterpasNet, España
+195.77.229     : InterpasNet, España
+195.77.230     : InterpasNet, España
+195.77.231     : InterpasNet, España
+195.77.232     : InterpasNet, España
+195.77.233     : InterpasNet, España
+195.77.234     : InterpasNet, España
+195.77.235     : InterpasNet, España
+195.77.236     : InterpasNet, España
+195.77.237     : InterpasNet, España
+195.77.238     : InterpasNet, España
+195.77.239     : InterpasNet, España
+195.77.240     : InterpasNet, España
+195.235.11     : Teleline, España
+195.235.22     : SantanderSuperNet, España
+196.6.121      : Cape Town, Sudáfrica
+198.108.130    : Kalamazoo MI, USA
+198.108.152    : Sturgis MI, USA
+198.108.170    : Kalamazoo MI, USA
+198.108.59     : Ypsilanti MI, USA
+198.109        : Detroit MI, USA
+198.110.98     : Holland MI, USA
+198.113        : Lexington MA, USA
+198.133.129    : Randolph NJ, USA
+198.133.36     : Ontario, Canada
+198.137.231    : Seattle WA, USA
+198.145.8      : Seattle WA, USA
+198.146.48     : Nashvilli TN, USA
+198.175.8      : Tyrell Corp. KS/MO, USA
+198.209.253    : Columbia MO, USA
+198.22.19      : ??? MN, USA
+198.252        : Boston MA, USA
+198.3.118      : Austin TX, USA
+198.3.127      : Long Islandia NY, USA
+198.3.254      : Sidwell Friends DC, USA
+198.30.13      : Cincinnati OH, USA
+198.41.0       : Internic, USA
+198.51.90      : Seattle WA, USA
+198.52.32      : Ontario, Canada
+198.62.98      : Angola IN, USA
+198.64.6       : Houston TX, USA
+198.64.81      : Houston TX, USA
+198.67.3       : New York City NY, USA
+198.7.0        : New York City NY, USA
+198.70         : Anchorage AL, USA
+198.77.1       : Morgantown WV, USA
+198.80         : Boston MA, USA
+199.171.167    : Oneonta NY, USA
+199.174.176    : <???>, USA
+199.174.186    : London, Inglaterra
+199.181.141    : <???>, USA
+199.173.194    : <???>, USA
+199.237.21     : <???> WA, USA
+199.79.146     : Kansas City KS, USA
+199.95         : Boston MA, USA
+200.11.224     : CANTV, Venezuela
+200.11.225     : CANTV, Venezuela
+200.11.226     : CANTV, Venezuela
+200.11.243     : CANTV, Venezuela
+200.30.232     : Metrópolis Intercom, Chile
+200.41.20      : IntraMed, Argentina
+200.42.6       : Ciudad.com, Argentina
+200.42.28      : Ciudad.com, Argentina
+200.43.60      : Ciudad.com, Argentina
+200.43.61      : Ciudad.com, Argentina
+200.44	       : CANTV, Venezuela
+202.239.176    : <???>, Japón
+204.112.20     : <???>, Canada
+204.149.230    : Palm Harbour FL, USA
+204.181.109    : Denton TX, USA
+204.225        : St. Thomas ON, Canada
+205.133.149    : Cincinnati OH, USA
+205.184        : <???>, USA?
+205.198        : Boston MA, USA
+205.230.144    : Denton TX, USA
+205.240.227    : Sarasota FL, USA
+206.49.165.96  : Caracas, Venezuela
+206.109.11     : <???>, USA
+206.137.204    : <???>, USA
+206.155.17     : <???>, USA
+206.228.8      : Shelby NC, USA
+206.97.73      : Bloomfield IN, USA
+206.99.123     : <???>, USA
+209.13.62      : IntraMed, Argentina
+212.25.128     : Wanadoo, España
+212.25.129     : Wanadoo, España
+212.25.130     : Wanadoo, España
+212.25.131     : Wanadoo, España
+212.25.132     : Wanadoo, España
+212.25.133     : Wanadoo, España
+212.25.134     : Wanadoo, España
+212.25.135     : Wanadoo, España
+212.25.136     : Wanadoo, España
+212.25.137     : Wanadoo, España
+212.25.138     : Wanadoo, España
+212.25.139     : Wanadoo, España
+212.25.140     : Wanadoo, España
+212.25.141     : Wanadoo, España
+212.25.142     : Wanadoo, España
+212.25.143     : Wanadoo, España
+212.25.144     : Wanadoo, España
+212.25.145     : Wanadoo, España
+212.49.142     : InforNet, España
+212.49.159     : BT, España
+212.55         : Euskadi, España
+212.142.164    : Euskadi, España
+212.142.165    : Euskadi, España
+212.142.166    : Euskadi, España
+212.142.167    : Euskadi, España
+212.142.168    : Euskadi, España
+212.142.169    : Euskadi, España
+212.142.170    : Euskadi, España
+212.142.171    : Euskadi, España
+212.142.172    : Euskadi, España
+212.142.173    : Euskadi, España
+212.142.174    : Euskadi, España
+212.142.175    : Euskadi, España
+212.73.45      : AirtelNet, España
+212.166.159    : AirtelNet, España
+212.170	       : Terra-TP, España
+213.0          : Terra-ADSL, España
+213.37	       : Madritel, España
+213.84         : Rotterdam, Holanda
+213.96         : Terra-ADSL, España
+213.97         : Terra-ADSL, España
+213.98	       : Terra-ADSL, España
+217.11.104.226 : Simauria Networks
+217.11.104.228 : Simauria Networks
+217.11.104.230 : Simauria Networks
+217.15         : BT, España
+217.127        : TDATA, España
+26.1           : United States Army, USA
+34.212         : Ann Arbor MI, USA
+35.1           : Ann Arbor MI, USA
+35.1.48        : Ypsilanti MI, USA
+35.133         : Ann Arbor MI, USA
+35.192         : Ann Arbor MI, USA
+35.195         : Westland MI, USA
+35.196         : Flint MI, USA
+35.197         : Sterling Heights MI, USA
+35.201         : Jackson MI, USA
+35.202         : Ann Arbor MI, USA
+35.204         : Augusta MI, USA
+35.211         : Grand Rapids MI, USA
+35.212         : Ann Arbor MI, USA
+35.214         : Muskegon MI, USA
+35.8           : East Lansing MI, USA
+36.167         : Palo Alto CA, USA
+36.21          : Stanford CA, USA
+36.28          : Stanford CA, USA
+36.54          : Stanford CA, USA
+38.10          : San Francisco CA, USA
+38.145         : Houston TX, USA

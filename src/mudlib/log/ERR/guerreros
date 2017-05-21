@@ -1,0 +1,59 @@
+/guilds/guerreros/drix#214: Error en el heartbeat
+Obj: aule in /guilds/guerreros/sedes/nandor/sede_nandor, File: std/player/config.c, Line: 210
+  Too deep recursion: depth 60, limit 60 user/65 max.
+/guilds/guerreros/drix#214: Error en el heartbeat
+Obj: buldbarg in /guilds/guerreros/sedes/nandor/sede_nandor, File: std/player/config.c, Line: 210
+  Too deep recursion: depth 60, limit 60 user/65 max.
+/guilds/guerreros/drix#214: Error en el heartbeat
+Obj: orome in /guilds/guerreros/sedes/nandor/sede_nandor, File: std/player/config.c, Line: 210
+  Too deep recursion: depth 60, limit 60 user/65 max.
+/guilds/guerreros/drix#214: Error en el heartbeat
+Obj: buldbarg in /guilds/guerreros/sedes/nandor/sede_nandor, File: std/player/config.c, Line: 210
+  Too deep recursion: depth 60, limit 60 user/65 max.
+/guilds/guerreros/drix#214: Error en el heartbeat
+Obj: buldbarg in /guilds/guerreros/sedes/nandor/sede_nandor, File: std/player/config.c, Line: 210
+  Too deep recursion: depth 60, limit 60 user/65 max.
+/guilds/guerreros/drix#214: Error en el heartbeat
+Obj: buldbarg in /guilds/guerreros/sedes/nandor/sede_nandor, File: std/player/config.c, Line: 210
+  Too deep recursion: depth 60, limit 60 user/65 max.
+ -- Sat Mar 03 22:15:15 2012 --
+Obj: guilds/guerreros/guercasco#140, File: std/thing/moving.c, Line: 139:
+Created by /buldbarg
+  Bad arg 1 to call_other(): got 'number', expected 'string/array/object'.
+ -- Sat Mar 03 22:19:33 2012 --
+Obj: guilds/guerreros/guercasco#143, File: std/thing/moving.c, Line: 139:
+Created by /buldbarg
+  Bad arg 1 to call_other(): got 'number', expected 'string/array/object'.
+ -- Sat Mar 03 22:20:37 2012 --
+Obj: guilds/guerreros/guercasco#146, File: std/thing/moving.c, Line: 139:
+Created by /buldbarg
+  Bad arg 1 to call_other(): got 'number', expected 'string/array/object'.
+ -- Mon Mar 05 21:52:07 2012 --
+Obj: guilds/guerreros/guercasco#16, File: std/thing/moving.c, Line: 139:
+Created by /buldbarg
+  Bad arg 1 to call_other(): got 'number', expected 'string/array/object'.
+ -- Mon Apr 30 19:53:17 2012 --
+Obj: guilds/guerreros/sedes/nandor/sede_nandor, File: std/guild/stats.c, Line: 66:
+  Bad arg 1 to call_other(): got 'number', expected 'string/array/object'.
+Obj: guilds/guerreros/sedes/nandor/sede_nandor, File: std/guild/stats.c, Line: 66:
+  Bad arg 1 to call_other(): got 'number', expected 'string/array/object'.
+Obj: guilds/guerreros/sedes/nandor/sede_nandor, File: std/guild/stats.c, Line: 66:
+  Bad arg 1 to call_other(): got 'number', expected 'string/array/object'.
+ -- Mon Apr 30 19:58:01 2012 --
+Obj: guilds/guerreros/sedes/nandor/sede_nandor, File: std/guild/stats.c, Line: 66:
+  Bad arg 1 to call_other(): got 'number', expected 'string/array/object'.
+Obj: guilds/guerreros/sedes/nandor/sede_nandor, File: std/guild/stats.c, Line: 66:
+  Bad arg 1 to call_other(): got 'number', expected 'string/array/object'.
+Obj: guilds/guerreros/sedes/nandor/sede_nandor, File: std/guild/stats.c, Line: 66:
+  Bad arg 1 to call_other(): got 'number', expected 'string/array/object'.
+ -- Mon Jul 23 23:18:02 2012 --
+Obj: /guilds/guerreros/guercasco#8, File: /guilds/guerreros/gguild, Line: 0:
+Created by /galadhil
+  No se puede cargar el gremio: *Error in loading object: 'std/guild/level' (inherited by 'std/guild' by 'guilds/guerreros/gremio_base' by 'guilds/guerreros/gguild').
+ -- Tue Jul 24 00:33:57 2012 --
+Obj: /guilds/guerreros/guercasco#97, File: /guilds/guerreros/gguild, Line: 0:
+Created by /galadhil
+  No se puede cargar el gremio: *Error in loading object: 'std/guild/level' (inherited by 'std/guild' by 'guilds/guerreros/gremio_base' by 'guilds/guerreros/gguild').
+/guilds/guerreros/drix#219: Error en el heartbeat
+Obj: aule in /guilds/guerreros/sedes/nandor/sede_nandor, File: std/player/config.c, Line: 210
+  Too deep recursion: depth 60, limit 60 user/65 max.

@@ -1,0 +1,25 @@
+/* Detalles comunes de las barcas
+   17-09-07 [Angor] Creacion
+*/
+
+
+AddDetail(({"foque"}),
+ "Es la vela triangular colocada entre el mastil y la proa.\n");
+
+AddDetail(({"mastil"}),
+ "Es tronco vertical del que cuelgan las velas.\n");
+
+AddDetail(({"timon","timón"}),
+ "Es una plancha de madera sumergida en el popa. A través de una barra de madera es "
+ "orientado por el pescador para cambiar la dirección de la barca.\n");
+ 
+AddDetail(({"botavara"}),
+ "Es una barra horizontal enganchada al a traves de un aro de metal que permite que "
+ "pueda girar. La vela mayor se ancla entre la botavara y el mastil.\n");
+ 
+AddDetail(({"vela mayor"}),
+ "Es una gran vela más o menos cuadrada atada al mastil y a la botavara. Es la principal "
+ "forma de propulsion de la barca.\n");
+
+AddDetail(({"muelle"}),
+ "Es parte del puerto. La barca esta amarrada al él por medio de un cabo.\n");

@@ -1,0 +1,16 @@
+                /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+                     DIRECTORIO DE GOLDHAI
+                \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+
+comun/         Directorio donde estan las habitaciones, objetos, etc.. 
+docs/          Documentacion tecnica acerca de goldhai.
+ejemplos/      Ejemplos de codigo: ayuda para wizards de goldhai.
+historia/      Documentos sobre la historia de goldhai y sus ciudades.
+logs/          Directorio donde se graban todos los logs de este dominio. 
+mapas/         Mapas ASCII o gráficos de goldhai y sus ciudades.
+miembros/      Donde estan los directorios de los miembros de este dominio. 
+std/           Inherits basicos utilizados en este dominio. 
+sys/           Includes usados en este dominio. 
+
+IMPORTANTE: Leeros las normas del directorio en .reglas
+

@@ -1,0 +1,16 @@
+[1mCOMANDO[0m
+  bug [<mensaje>]
+
+[1mDESCRIPCION[0m
+  Te permite enviar un mensaje de una linea a los wizards para que corrijan
+  algún bug (error de programación). Debes hacerlo desde la habitación donde
+  hayas encontrado el error, si puedes. Si no especificas el mensaje te
+  aparecerá una línea para que lo introduzcas.
+
+  Los wizards agradecen tu colaboración.
+
+[1mEJEMPLOS[0m
+  bug No puedo entrar a la habitacion del este
+
+[1mTEMAS RELACIONADOS[0m
+  idea

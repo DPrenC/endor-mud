@@ -1,0 +1,9 @@
+SINOPSIS
+    xupdate <fichero>
+
+DESCRIPCION
+    Actualiza un objeto llamando primero a la funcion "remove()" del
+    propio objeto y si aun continuara lo destruiria.
+
+EJEMPLOS
+    xupdate obj/arma/espada.c

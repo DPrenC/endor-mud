@@ -1,0 +1,11 @@
+SINOPSIS
+    xtrace <objeto>
+
+DESCRIPCION
+    Hace un seguimiento de todas las llamadas a funciones con argumentos
+    asi como de los valores que devuelven de un determinado <objeto>.
+    Sin argumentos para el seguimiento.
+
+EJEMPLOS
+    xtrace $me.objeto   (Comienza el seguimiento)
+    xtrace              (Lo detiene)

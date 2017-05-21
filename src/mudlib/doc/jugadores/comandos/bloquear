@@ -1,0 +1,19 @@
+[1mCOMANDO[0m
+  bloquear <salida / puerta> con <objeto>
+
+[1mDESCRIPCION[0m
+  Bloqueas, con <objeto>,  la puerta que se encuentra en la salida <salida>, o bien, también puedes
+especificar una puerta por sus identificadores.
+
+[1mEJEMPLOS[0m
+  bloquear norte con llave: Bloqueas la puerta del norte con el objeto
+<llave> de tu inventario.
+  bloquear puerta con llave roja: Bloqueas la puerta con el
+identificador <puerta> con el objeto con identificador <llave roja> de tu
+inventario.
+  bloquear puerta norte con llave azul: Bloqueas la puerta con el
+identificador <puerta> de la salida <norte>, con el objeto con identificador
+<llave azul> de tu inventario.
+  
+[1mTEMAS RELACIONADOS[0m
+  abrir, cerrar, desbloquear, llamar

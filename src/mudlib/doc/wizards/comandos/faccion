@@ -1,0 +1,15 @@
+[1mCOMANDO[0m
+  faccion [parar]
+
+[1mDESCRIPCION[0m
+  Sin argumento, faccion visualiza la accion asíncrona que se está
+  ejecutando en ese momento (si la hubiera). Si tuviera como argumento
+  'parar' entonces detendría la ejecución de dicha acción.
+
+  El motivo de que existan acciones asíncronas es debido a que algunas
+  acciones deben realizar más cálculos de los que permite el Driver del
+  mud, por lo tanto esta acción se debe dividir en distintas partes las
+  cuales se ejecutan mediante una cadena de call_outs.
+
+[1mTEMAS RELACIONADOS[0m
+  falias

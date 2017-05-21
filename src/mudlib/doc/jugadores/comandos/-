@@ -1,0 +1,22 @@
+[1mCOMANDO[0m
+  =<canal> <mensaje>
+
+[1mDESCRIPCION[0m
+  Con este comando podrás enviar mensajes a los distintos canales que estan
+  activos en Simauria. Si escribes solamente '=' enviará el mensaje al
+  canal general, si quieres enviar algo a otro canal simplemente debes
+  escribir '=' y a continuación, sin dejar espacios el nombre del canal.
+  También existe la posibilidad de escribir los mensajes usando distintos
+  colores mediante '##<numero_color>', a continuación viene una relación
+  de los colores que puedes usar:
+    ##0   Negro           ##3   Amarillo          ##6   Cian
+    ##1   Rojo            ##4   Azul              ##7   Blanco
+    ##2   Verde           ##5   Fucsia            ##8   Normal
+   
+[1mEJEMPLOS[0m
+  = Ya estoy aqui ............ [Woo] Ya estoy aqui
+  =#valencia Que tal? ........ [Woo:#valencia] Que tal?
+  = Esto es ##4azul .......... [Woo] Esto es azul <- y 'azul' en azul
+
+[1mTEMAS RELACIONADOS[0m
+  ==, canal, canales, decir, telepatia, color

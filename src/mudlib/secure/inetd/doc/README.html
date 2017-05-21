@@ -1,0 +1,35 @@
+<HTML>
+
+<!-- This is a hypertext file. -->
+<!-- Either view it using a hypertext browser, such as NCSA Mosaic, -->
+<!-- or ignore the html markup tags enclosed in angle-brackets -->
+
+<TITLE> Intermud README </TITLE>
+<H1> README </H1>
+
+<P> You are welcome to use and distribute this code freely as long as I
+am credited with it's creation.  This system is still under
+development.  Feel free to contact me if you have problems or ideas for
+improvements or additions to this package. </P>
+
+<ADDRESS> Mark / Nostradamus@Zebedee  (nostra@city.ac.uk) </ADDRESS>
+
+<P> The INSTALL file should contain all the information you need to set
+up the intermud system on your mud. </P>
+
+<P> I have tried to make this package very flexible and portable by
+using a modular format.  The inetd.c itself is the hard core of the
+system and you should not generally need to alter it in any way.  It
+handles the complexities of the encoding / decoding protocol, reply
+handling and time outs etc.  The udp directory contains files which
+handle specific incoming requests.  Each filename corresponds to the
+name of an intermud request.  The inetd will call a function
+udp_request() in the file udp/request.c, with a mapping containing the
+decoded data as the argument.  The request.c file should handle the
+data (see the supplied files for examples).  The inetd provides the
+tools you need to set up your own intermud commands for players, but
+none are included.  Look in the examples directory for some sample
+implementations of intermud commands.  Read the PROTOCOL file for
+information on writing commands. </P>
+
+</HTML>

@@ -1,0 +1,21 @@
+[1mCOMANDO[0m
+tiflo / ciego
+
+[1mDESCRIPCION[0m
+Con este comando activarás o desactivarás la modalidad de mensajes para
+ciegos.
+La diferencia entre tener este comando activado o desactivado, es que en
+caso de tenerlo activado, estos mensajes se verbalizarán incluso cuando en
+el cliente tengas la síntesis en modo "callate".
+Esto te puede ser útil durante los combates, para poder escuchar solo los
+mensajes esenciales: tus puntos de vida, de magia, el estado de tu enemigo, ETC.
+La lista de comandos que soportan esta modalidad es:
+
+alcohol       calcular      con          conj         dex          est
+fza           gxp           hab          hambre       int          jxp
+obj           pf            pm           pv           qp           sal
+sed.
+
+[1mEJEMPLOS[0m
+tiflo
+ciego

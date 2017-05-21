@@ -1,0 +1,253 @@
+ -- Sat Feb 18 21:40:17 2012 --
+log/xtools/orome.lpc.c line 11 before ';': Variable aman not declared !
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Sun Aug 19 10:58:02 2012 --
+log/xtools/orome.lpc.c line 4 before end of line: Variable master not declared !
+Compiling "/log/xtools/orome.lpc.c", Line 4
+log/xtools/orome.lpc.c line 4 before end of line: syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 4
+ -- Thu Nov 01 12:43:09 2012 --
+log/xtools/orome.lpc.c line 11 before '1);': Variable P_SLEEPING not declared !
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Thu Nov 01 12:44:41 2012 --
+log/xtools/orome.lpc.c line 11 before 'xcall pequ': Variable P_SLEEPING not declared !
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before '->SetStatu': syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before 'xcall pequ': Variable P_SLEEPING not declared !
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before '->SetStatu': syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Sun Dec 30 20:39:20 2012 --
+log/xtools/orome.lpc.c line 11 before 'me("mirar"': Bad type for struct lookup: object
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before '"mirar");': Undefined function 'me'
+
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before 'me("mirar"': Bad type for struct lookup: object
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before '"mirar");': Undefined function 'me'
+
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Sun Dec 30 20:42:22 2012 --
+log/xtools/orome.lpc.c line 11 before '?;': syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Sat Mar 30 23:49:14 2013 --
+log/xtools/orome.lpc.c line 4 before end of line: syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 4
+ -- Sat Mar 30 23:55:56 2013 --
+log/xtools/orome.lpc.c line 11 before ';': syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Thu Apr 04 15:33:27 2013 --
+log/xtools/orome.lpc.c line 4 near '“orome")):))': Illegal character (hex ffffff93) '“'
+Compiling "/log/xtools/orome.lpc.c", Line 4
+log/xtools/orome.lpc.c line 4 before 'orome")):)': syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 4
+log/xtools/orome.lpc.c line 4 near end of line: Newline in string
+Compiling "/log/xtools/orome.lpc.c", Line 4
+ -- Thu Apr 04 15:35:25 2013 --
+log/xtools/orome.lpc.c line 4 near '“orome")):))': Illegal character (hex ffffff93) '“'
+Compiling "/log/xtools/orome.lpc.c", Line 4
+log/xtools/orome.lpc.c line 4 before 'orome")):)': syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 4
+log/xtools/orome.lpc.c line 4 near end of line: Newline in string
+Compiling "/log/xtools/orome.lpc.c", Line 4
+ -- Thu Apr 04 15:38:32 2013 --
+log/xtools/orome.lpc.c line 4 near '“aule")):));': Illegal character (hex ffffff93) '“'
+Compiling "/log/xtools/orome.lpc.c", Line 4
+log/xtools/orome.lpc.c line 4 before 'aule")):))': syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 4
+log/xtools/orome.lpc.c line 4 near end of line: Newline in string
+Compiling "/log/xtools/orome.lpc.c", Line 4
+ -- Thu Apr 04 15:40:43 2013 --
+log/xtools/orome.lpc.c line 4 near '“orome")):))': Illegal character (hex ffffff93) '“'
+Compiling "/log/xtools/orome.lpc.c", Line 4
+log/xtools/orome.lpc.c line 4 before 'orome")):)': syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 4
+log/xtools/orome.lpc.c line 4 near end of line: Newline in string
+Compiling "/log/xtools/orome.lpc.c", Line 4
+ -- Thu Apr 04 18:25:04 2013 --
+log/xtools/orome.lpc.c line 11 before ';': Bad argument to unary '-': "string"
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Fri Apr 05 19:26:35 2013 --
+log/xtools/orome.lpc.c line 11 before 'me("este")': Bad type for struct lookup: object
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before '"este");': Undefined function 'me'
+
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before 'me("este")': Bad type for struct lookup: object
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before '"este");': Undefined function 'me'
+
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Fri Apr 05 19:28:19 2013 --
+log/xtools/orome.lpc.c line 11 before ';': syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Fri Apr 05 19:30:05 2013 --
+log/xtools/orome.lpc.c line 11 before ';': syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Fri Apr 05 19:33:59 2013 --
+log/xtools/orome.lpc.c line 11 before ';': syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Thu Sep 05 06:47:58 2013 --
+log/xtools/orome.lpc.c line 11 before 'me("desemp': Bad type for struct lookup: object
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before '"desempuña': Undefined function 'me'
+
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Sun Sep 08 06:31:21 2013 --
+log/xtools/orome.lpc.c line 11 before ';': Variable errante not declared !
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Sat Sep 21 12:53:51 2013 --
+log/xtools/orome.lpc.c line 4 before end of line: syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 4
+ -- Sat Sep 21 12:54:51 2013 --
+log/xtools/orome.lpc.c line 4 before end of line: syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 4
+ -- Sun Sep 22 15:08:52 2013 --
+log/xtools/orome.lpc.c line 11 near '¡);': Illegal character (hex ffffffa1) '¡'
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before ');': syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Sun Sep 22 20:14:56 2013 --
+log/xtools/orome.lpc.c line 11 before 'QueryMaxFo': Variable orome not declared !
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 near ');': Undefined function 'QueryMaxFood'
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Sat Jul 19 22:28:38 2014 --
+log/xtools/orome.lpc.c line 4 before '"/music/01': Variable $h not declared !
+Compiling "/log/xtools/orome.lpc.c", Line 4
+log/xtools/orome.lpc.c line 4 near end of line: Newline in string
+Compiling "/log/xtools/orome.lpc.c", Line 4
+log/xtools/orome.lpc.c line 5 before end of line: syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 5
+log/xtools/orome.lpc.c line 4 before '"/music/01': Variable $h not declared !
+Compiling "/log/xtools/orome.lpc.c", Line 4
+log/xtools/orome.lpc.c line 4 near end of line: Newline in string
+Compiling "/log/xtools/orome.lpc.c", Line 4
+log/xtools/orome.lpc.c line 5 before end of line: syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 5
+ -- Sat Jul 19 22:30:20 2014 --
+log/xtools/orome.lpc.c line 4 near end of line: Newline in string
+Compiling "/log/xtools/orome.lpc.c", Line 4
+log/xtools/orome.lpc.c line 5 before end of line: syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 5
+log/xtools/orome.lpc.c line 4 near end of line: Newline in string
+Compiling "/log/xtools/orome.lpc.c", Line 4
+log/xtools/orome.lpc.c line 5 before end of line: syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 5
+ -- Sun Jul 20 04:05:31 2014 --
+log/xtools/orome.lpc.c line 11 before 'me("sentar': Bad type for struct lookup: object
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before '"sentarse"': Undefined function 'me'
+
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Tue Jul 22 04:50:22 2014 --
+log/xtools/orome.lpc.c line 11 before end of line: syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Fri Jul 25 04:18:57 2014 --
+log/xtools/orome.lpc.c line 11 before '1);': Variable roto not declared !
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Sat Jul 26 08:02:50 2014 --
+log/xtools/orome.lpc.c line 11 before 'me("sentar': Bad type for struct lookup: object
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before '"sentarse"': Undefined function 'me'
+
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Sun Jul 27 07:21:47 2014 --
+log/xtools/orome.lpc.c line 11 before ';': syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Sun Aug 17 15:46:59 2014 --
+log/xtools/orome.lpc.c line 11 before ';': syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Sun Aug 17 18:17:22 2014 --
+log/xtools/orome.lpc.c line 11 before ' 10, P_SIZ': Variable WT_CIMITARRA not declared !
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before ' 10, P_SIZ': Variable WT_CIMITARRA not declared !
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Tue Aug 19 16:05:25 2014 --
+log/xtools/orome.lpc.c line 11 before ';': syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before ';': syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Tue Aug 19 16:10:51 2014 --
+log/xtools/orome.lpc.c line 11 near ';': Undefined function 'p_WeaponType'
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before end of line: syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 near ';': Undefined function 'pWeaponType'
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before end of line: syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Mon Sep 01 05:57:44 2014 --
+log/xtools/orome.lpc.c line 11 before 'me("dormir': Bad type for struct lookup: object
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before '"dormir");': Undefined function 'me'
+
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Sat Dec 20 08:35:41 2014 --
+log/xtools/orome.lpc.c line 4 before 'obj/chmast': syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 4
+ -- Thu Dec 25 10:44:13 2014 --
+log/xtools/orome.lpc.c line 11 before 'me("quitar': Bad type for struct lookup: object
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before '"quitarse ': Undefined function 'me'
+
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Thu Dec 25 10:45:57 2014 --
+log/xtools/orome.lpc.c line 11 before 'me("sonrei': Bad type for struct lookup: object
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before '"sonreir")': Undefined function 'me'
+
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before 'me("sonrei': Bad type for struct lookup: object
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before '"sonreir")': Undefined function 'me'
+
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Thu Dec 25 10:47:10 2014 --
+log/xtools/orome.lpc.c line 11 before 'me("mirar"': Bad type for struct lookup: object
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before '"mirar");': Undefined function 'me'
+
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before 'me("mirar"': Bad type for struct lookup: object
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before '"mirar");': Undefined function 'me'
+
+Compiling "/log/xtools/orome.lpc.c", Line 11
+ -- Thu Dec 25 10:49:59 2014 --
+log/xtools/orome.lpc.c line 11 before 'me("mirar"': Bad type for struct lookup: object
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before '"mirar");': Undefined function 'me'
+
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 4 before 'command-me': Variable doryn not declared !
+Compiling "/log/xtools/orome.lpc.c", Line 4
+log/xtools/orome.lpc.c line 4 before 'me("mirar"': No struct found for member 'command'
+Compiling "/log/xtools/orome.lpc.c", Line 4
+log/xtools/orome.lpc.c line 4 before '"mirar");}': Undefined function 'me'
+
+Compiling "/log/xtools/orome.lpc.c", Line 4
+log/xtools/orome.lpc.c line 4 before 'Command-me': Variable doryn not declared !
+Compiling "/log/xtools/orome.lpc.c", Line 4
+ -- Thu Dec 25 11:01:41 2014 --
+log/xtools/orome.lpc.c line 4 near '.humano,"mir': Illegal character (hex 2e) '.'
+Compiling "/log/xtools/orome.lpc.c", Line 4
+log/xtools/orome.lpc.c line 4 before 'humano,"mi': syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 4
+log/xtools/orome.lpc.c line 4 near '.humano,"mir': Illegal character (hex 2e) '.'
+Compiling "/log/xtools/orome.lpc.c", Line 4
+log/xtools/orome.lpc.c line 4 before 'humano,"mi': syntax error
+Compiling "/log/xtools/orome.lpc.c", Line 4
+ -- Thu Dec 25 11:09:09 2014 --
+log/xtools/orome.lpc.c line 11 before 'me("mirar"': Bad type for struct lookup: object
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before '"mirar");': Undefined function 'me'
+
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before 'me("mirar"': Bad type for struct lookup: object
+Compiling "/log/xtools/orome.lpc.c", Line 11
+log/xtools/orome.lpc.c line 11 before '"mirar");': Undefined function 'me'
+
+Compiling "/log/xtools/orome.lpc.c", Line 11

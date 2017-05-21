@@ -1,0 +1,81 @@
+/* calle41n: Plaza de Nandor. Aqui hay una pequenya fuente. 
+   
+   03/06/99 [Mirill@Simauria] Correcciones
+
+*/
+
+#include <properties.h>
+#include "./path.h"
+
+inherit SIM_ROOM;
+
+haz_beber(str)
+{
+ if (!str)
+ {
+ write ("Beber que?\n");
+ return 1;  
+ }
+ else
+  if(str!="agua"&&str!="agua de fuente"&&str!="de fuente") 
+  {
+   write("No encuentras "+str+" para beber.\n");
+   return 1;
+  }
+  else 
+ {
+  if (TP->QueryDrink()>=TP->QueryMaxDrink())
+   {
+    write("No puedes beber más.\n");
+    say (capitalize(TP->QueryName())+" intenta beber en la fuente, pero ya está lleno.\n");
+    return 1;
+   } 
+  TP->SetDrink(TP->QueryDrink()+5);
+ }
+ say(capitalize(TP->QueryName())+" bebe agua de la fuente. Parece refrescante...\n");
+ write("Bebes un buen trago de agua de la fuente.\n"
+       "Sabe un poco a metal, pero es refrescante...\n");
+ return 1;
+}
+
+
+init() {
+add_action("haz_beber","beber");
+::init();
+}
+
+
+
+create () {
+  ::create();
+    
+  Set(P_INT_SHORT,"la plaza de Nandor");
+  SetIntLong(W(
+ "Ésta parece ser la plaza del pueblo. El polvoriento firme del resto de la "
+ "calle es sustituido aquí por un pavimento de guijarros redondeados. Al este "
+ "hay una gran encina bajo cuyas ramas los lugareños se sientan a hablar "
+ "de sus cosas. Aquí hay una fuente donde la gente va a refrescarse y a calmar "
+ "su sed. Al sur hay un pozo donde las mujeres van a llenar sus cántaros.\n"
+ "Al norte hay una casa cerrada.\n"));
+  SetLocate("Villa de Nandor");
+  SetIndoors(0);
+AddDetail(({"encina","arbol","árbol"}),
+"Es enorme. Sus ramas deben dar buena sombra.\n");
+ AddDetail(({"pozo"}),
+"Es un pozo como otro cualquiera.\n");
+AddDetail(({"fuente"}),
+"Es una pequeña fuente. Quizá puedas beber agua de ella.\n");
+AddDetail(({"casa"}),
+"Es una casa cerrada. No podrás entrar en ella.\n");
+AddDetail(({"guijarros"}),
+"Pequeños guijarros redondeados. Es mejor que la tierra malamente apisonada que"
+"hay en el resto de la calle.\n");
+
+AddItem(PNJ("marhalt/viejo1"),REFRESH_DESTRUCT,1);
+AddItem(PNJ("marhalt/viejo2"),REFRESH_DESTRUCT,1);
+AddItem(PNJ("marhalt/viejo3"),REFRESH_DESTRUCT,1);
+AddExit("este","calle42n");
+AddExit("oeste", "./calle3");
+AddExit("sur","./calle41s");
+
+}

@@ -1,0 +1,52 @@
+<HTML>
+
+<!-- This is a hypertext file. -->
+<!-- Either view it using a hypertext browser, such as NCSA Mosaic, -->
+<!-- or ignore the html markup tags enclosed in angle-brackets -->
+
+<TITLE> Intermud TODO </TITLE>
+<H1> TODO (0.7a) </H1>
+<P>
+This file is a combination of a conventional TODO file and my ideas for
+possible future developments of the system.
+</P>
+<HR>
+<UL>
+<LI> Auto-update of the HOST_COMMANDS in the host list? : Failed
+     commands will be removed from the list and logged.
+<LI> System responses etc. (unknown queries) (See also above). This
+     really is necessary for a secure intermud mail system.
+<LI> Remote list updating?
+<LI> Reduce the amount of call_out's used ??? :<BR>
+     Timeout incoming_packets and received_ids with hb instead of call_out.
+     Only use call_out for externally visible calls, ie. timeouts (to
+     prevent problems with eval cost).
+     Perhaps use hb in all cases and then call external objects using
+     call_out.
+<LI> "Fake Mud" checking should be done against definitions in udp.h,
+     not date from the host list.
+<LI> The ftp protocol/reliability needs to be improved.
+<LI> Implement INETD_SAVE_FILE: file that hosts is stored in to allow last
+     access data etc. to be retained.
+<LI> Should a special mudname "*" be supported by send_udp() to make commands
+     such as channel commands more efficient?
+<LI> Should send_udp() be overloaded to accept an array of mudnames?
+<LI> Implement special "application" hosts ??? :<BR>
+     INETD_APPS file containing applications (stored separately from regular
+     hosts so they are not queried by query:hosts), which are referred to as
+     "app:name" via send_udp(), or maybe a seperate function providing a
+     more appropriate protocol ?
+<LI> When a new mud is detected, a system packet should be sent to all other
+     muds, notifying them?  At the moment a new mud may never be detected at
+     some sites which are not listed on the new muds host list.
+<LI> Add ierror.h file to allow users to configure their own error messages.
+     Or perhaps name it inetd.h and move all the inetd configuration options
+     to it.
+<LI> New-style packet encoding means the DATA field is effectively obsolete.
+     Change udp data-handling functions to use 2 arguments for intermud
+     data: (1) the "header" (a mapping as-per normal, excluding the DATA
+     field). (2) The "data" or "body" (what would have been in the DATA
+     field)
+</UL>
+
+</HTML>

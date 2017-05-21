@@ -1,0 +1,10 @@
+[1mCOMANDO[0m
+  tester <jugador>
+
+[1mDESCRIPCIÓN[0m
+  Hace tester al jugador <jugador>. Básicamente le añade el presay "tester".
+
+
+[1mEJEMPLOS[0m
+  tester manolito
+

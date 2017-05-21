@@ -1,0 +1,17 @@
+[1mCOMANDO[0m
+  fchk [<arg>]
+
+[1mDESCRIPCION[0m
+  Visualiza información acerca del archivo o directorio <arg>.
+  Si <arg> es un fichero fchk devuelve su tamaño en Bytes, si fuera un
+  directorio devolvería el número de archivos que lo forman. En caso
+  de que no se especificara ningún argumento mostraría información acerca
+  del directorio actual. Se pueden también usar lo comodines cómunes.
+   
+[1mEJEMPLOS[0m
+  fchk
+  fchk casa.c
+  fchk *       --> Actuaría igual que 'lls'
+
+[1mTEMAS RELACIONADOS[0m
+  lls, ls, falias

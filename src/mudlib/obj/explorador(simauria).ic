@@ -1,0 +1,101 @@
+/*
+ *	obj/explorador.ic
+ *
+ * La lista de habitaciones para explorar. Hay un #include en /obj/explorador.c
+ * de este archivo, de ahi la extranya extension ``.ic'' :-)
+ */
+
+/* ANTES DE NADA: Este archivo fue traducido por Nemesis@Simauria.
+                  Ademas, elimine todos los explorerpoints antiguos y anyadi
+		  los mios propios. Para mayor claridad, se ruega no borrar
+		  el archivo original, /obj/explorer.ic.NF, ya que contiene
+		  mas de 200 entradas con todo tipo de ejemplos. Y seria bueno
+		  tenerlo como referencia en le futuro, vamos, creo yo.
+/*
+
+/* 				INSTRUCCIONES                        */
+/* - La primera columna son las claves de las habitaciones dentro del mapping.
+ *   Estas son los nombres de los blueprints de los objetos explorados
+ *   (normalmente habitaciones).
+ *   NOTA: Si el nombre de un archivo/objeto que esta contenido en esta lista
+ *         se cambiase, DEBERA SER CAMBIADO EN ESTA LISTA,
+ *         NUNCA ELIMINADO O SIMPLEMENTE ANYADIDO AL FINAL DE LA LISTA
+ *	   ESTAMOS? Que ya nos conocemos...
+ * - La segunda columna contiene el primer valor de cada entrada del mapping.
+ *   Es el indice del objeto explorado, o sea,
+ *   el numero del bit correspondiente dentro de la cadena "explored" del
+ *   usuario. Este numero de indice DEBE ser UNICO dentro del vector de
+ *   habitaciones, y DEBE SEGUIR UNIDO al nombre de la habitacion.
+ *   NOTA: Por favor, seguid un orden correlativo (1,2,3,...). Se que sentireis
+ *         la tentacion de usar 1701 para una habitacion que estuviese en el
+ *         Enterprise, pero resistidla... Salvo que le toque el 1701, claro...
+ * - La tercera columna contiene el segundo valor de las entradas del mapping.
+ *   Describe la recompensa por explorar el objeto por primera vez. Puede ser
+ *   un int, denotando cuantos XP se le daran al jugador por explorar el objeto
+ *   por primera vez, o una lambda-clausura.
+ *
+ */
+
+/* Usad esta macro para desactivar los explorerpoints!
+ * El parametro 'n' es el numero del explorerpoint.
+ */
+
+#define DEACTIVATED(n) "/obj/explorer":n;0
+
+rooms =
+([
+  /* la primera entrada se usa para aquellas habitaciones que intentan poner a 1
+   * un bit de exploracion pero no estan en la lista. Recompensamos al jugador
+   * con 1 XP por encontrar una de estas habitaciones. :-)
+   */
+  ""						        :   0 ; 1,  /* nowhere */
+// Por mirar el hábito del esqueleto bajo el pequeño templo de Nandor.
+  "/d/simauria/comun/habitacion/marhalt/nandor/castillo/tunel/sal2" : 1; 1500,
+// woo: Entrada a la zona de batalla cruzando el puente del bosque Wald.
+  "/d/goldhai/comun/habitacion/bosque_wald/puente"        :   2 ; 1000,
+// woo: Cuando acaricias al loro fuft
+  "/d/goldhai/comun/pnj/crowy/fuft"                       :   3 ; 700,
+// woo: Cuando encuentras el barco pirata..
+  "/d/goldhai/comun/habitacion/acantilado/playa_barco"    :   4 ; 500,
+// woo: Cuando entras en la cueva de los trolls cerca de Nandor
+  "/d/simauria/comun/habitacion/marhalt/cueva/cueva06"    :   5 ; 1000,
+// nemesis: Por mirar tu propia tumba en el cementerio de Nandor
+  "/d/simauria/comun/habitacion/marhalt/nandor/cementerio/cemen4o": 6; 500,
+// nemesis: Por saltar por el precipicio de las montañas (posiblemente mortal)
+  "/d/simauria/comun/habitacion/betwa/psionics/cruce_nor": 7; 1000,
+// nemesis: Por tocar el Vórtice de las ruinas del gremio de psiónicos
+  "/d/simauria/comun/habitacion/betwa/psionics/psi_ruins14": 8; 1000,
+// nemesis: Por leer las runas en el templo de Dehim (No mortal, pero casi :)
+  "/d/lad-laurelin/comun/habitacion/tiinkdhil/lago/templo/tdhab8": 9; 500,
+// nemesis: Por contemplar el panorama que se ve desde la Torre de Gundistyr
+  "/d/simauria/comun/habitacion/simauria/gundistyr/superficie/ptoexp":10; 500,
+// nemesis: Por mirar algo que no existe y comprobar que como humorista no tengo
+// ningún futuro:
+  "/d/simauria/comun/habitacion/marhalt/nandor/cementerio/templo3o":11; 500,
+// nemesis (¿quién si no?): Por tocar la campana del Templo de Sharanna
+  "/d/simauria/comun/habitacion/marhalt/nandor/cementerio/templo6":12; 1000,
+// nemesis: Por caerte del campanario (quizá estoy sobrecargando el cementerio?)
+  "/d/simauria/comun/habitacion/marhalt/nandor/cementerio/templo7":13; 600,
+// nemesis: Por mirar un curioso perro de orejas puntiagudas en la posada de Berat
+  "/d/simauria/comun/habitacion/simauria/berat/room2":14; 1500,
+// [kastwey] Por entrar a la habitación oculta de las minas de Riberales...
+  "/d/kha-annu/comun/habitacion/kha-annu/minas/planta02/minas_oculta":15; 500,
+// [yalin] por salir del laberinto de Sherek...
+  "/d/simauria/comun/habitacion/sherek/cantera/fondo/salida" : 16; 500,
+// [Ratwor] por meter la mano en el agujero del tronco del bosque de Marhalt.
+  "/d/simauria/comun/habitacion/marhalt/nandor/bosque/bosque100" : 17; 1000,
+// [Ratwor] Por encender la chimenea de la cabaña del leñador del bosque de Marhalt.
+  "/d/simauria/comun/habitacion/marhalt/nandor/bosque/casa_leñador" : 18; 500,
+// [Ratwor] Por vaciar el cubo en el pozo del castillo de Nandor
+"/d/simauria/comun/habitacion/marhalt/nandor/castillo/patio/patio12" : 19; 800,
+// [Ratwor] Por mirar el defecto del tapiz 3.
+"/d/simauria/comun/habitacion/marhalt/nandor/castillo/planta1/gran_salon" : 20; 1000,
+// [Ratwor] Por entrar en una de las rooms secretas de las minas de azmodan.
+"/d/simauria/comun/habitacion/simauria/azmodan/mina_2-01" : 21; 900,
+// [Ratwor] por mirar el mosaico del suelo de la terraza de las rooms secretas del castillo de Nandor
+"/d/simauria/comun/habitacion/marhalt/nandor/castillo/planta1/terraza" : 22; 600
+
+
+  ]);
+
+

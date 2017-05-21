@@ -1,0 +1,16 @@
+SINOPSIS
+    xload <nombre_fichero>
+
+DESCRIPCION
+    Actualiza y carga el objeto con el <nombre_fichero> especifico. Si tu
+    actualizas la habitacion donde te encuentras todos los jugadores seran
+    teletransportados en silencio a "/std/void" y si la actualizacion se
+    realiza con exito volveran alli.
+
+EJEMPLOS
+    xload $here
+    Actualiza y recarga la habitacion donde estes, si hubiera algun bug
+    todos los PJ de la habitacion serian teletransportados al vacio.
+
+    xload obj/espada.c
+    Actualiza y carga 'obj/espada.'

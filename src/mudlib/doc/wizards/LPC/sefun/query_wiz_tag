@@ -1,0 +1,24 @@
+SYNOPSIS
+    string query_wiz_tag(object|string player, void|int flags)
+
+DESCRIPTION
+    Return a string describing the status of <player>, which may be
+    given as an actual object or by its name.
+    <flags> may be a combination of several bitflags. Currently
+    supported are:
+      1 : Return a long string instead of the normal short one.
+      2 : Don't count domainlords as normal wizards.
+    The result is a string of in short form up to four characters.
+    For players, 0 is returned.
+
+EXAMPLE
+    Assume that 'Deepthough' is (still) God, 'Dagobert' is Domainlord
+    and 'Ryuka' is a learner.
+
+      query_wiz_tag("deepthought") -> "God"
+      query_wiz_tag("dagobert")    -> "Wiz"
+      query_wiz_tag("dagobert", 2) -> "Lord"
+      query_wiz_tag("dagobert", 3) -> "Domainlord"
+      query_wiz_tag("ryuka")       -> "Appr"
+      query_wiz_tag("ryuka", 1)    -> "Apprentice Wizard"
+

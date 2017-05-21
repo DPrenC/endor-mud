@@ -1,0 +1,44 @@
+
+                                            
+
+                                           CMQ         CMQ ->Casa Maegrin Quest
+                                            |          Sxx ->Sendero
+                                           S13         CKxx->Calle de Krigor
+                                          /            Cxx ->Casa de Krigor 
+                                        S12            Pxx ->Pradera de krigor
+                                         |             A   ->Ayuntamiento 
+                                        S11            P   ->Posada
+                                          \            C   ->Comedor de la posada
+                                          S10 C10      F   ->Fuente
+                             C17   C09-P09 | \ |       MQ  ->Manantial del Quest
+                              |          \ |  P10--F   K   ->Tienda de Krigor
+                            CK07   C18    S09   
+                            /   \   |    /       
+                      C16-CK06   CK08--S08--CK09-C19   Para que no se solapen las 
+			   / \      A  /       |       habitaciones he tenido que
+			  /   \     | /        |       hacer los enlaces mas largos
+			 /C15-CK05--Plaza--P-C |       de la cuenta.
+			/         / |   \      |                     
+		       /   C14-CK04 K    S07--CK10-C20
+		  C08-P08        |         |             
+			   C13-CK03   C11  |
+				 |     |   |
+			   C12-CK02--CK01--S06--P07-C07
+					 /  \
+					/   P06-C06
+			     C04-P04  S05
+				   \ /
+				   S04--P05-C05
+				    |
+			      MQ   S03
+				\ /   \
+			      C03-P03  \
+			    C01-P01----S02------P02-C02
+				        |
+				       S01
+				        |
+			             Entrada
+				      Bosque
+				       Nynentrada
+				      Bosque
+				       Nyne

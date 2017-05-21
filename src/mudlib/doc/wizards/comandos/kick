@@ -1,0 +1,24 @@
+[1mCOMANDO[0m
+  kick <jugador>
+  kick <jugador> <minutos>
+  kick todos <jugador>
+  kick todos <jugador> <minutos>
+
+
+[1mDESCRIPCION[0m
+     Expulsas al jugador <jugador> durante <minutos>. Si no se introducen minutos, por defecto se consideran 10.
+Si se utiliza kick todos <jugador>, o kick todos <jugador> <minutos>, se expulsará al jugador <jugador>, y se restringirá el acceso a todos sus jugadores asociados, para el tiempo establecido en <minutos<, o 10 por defecto si no se introduce.
+El tiempo máximo de expulsión es de 24 horas.
+No podrás expulsar a wizards de nivel superior o igual a ti.
+
+Haz un uso responsable de este comando. Úsalo solo en caso realmente necesario.
+
+[1mEJEMPLOS[0m
+  kick pepito: Expulsas a Pepito durante 10 minutos.
+  kick Pepito 3: Expulsas a pepito durante 3 minutos.
+ kick todos pepito: Expulsas a Pepito y restringes el acceso a los demás jugadores asociados de Pepito, durante 10 minutos.
+  kick todos pepito 3: Expulsas a Pepito, y restringes el acceso a todos sus jugadores asociados, durante 3 minutos.
+
+
+[1mTEMAS RELACIONADOS[0m
+  nicks, email.

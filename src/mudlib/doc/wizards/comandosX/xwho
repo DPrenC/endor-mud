@@ -1,0 +1,13 @@
+SINOPSIS
+    xwho [mail|ip|race|guild|domain|job|stats|snoop]
+
+DESCRIPCION
+    Si no se introduce ningun argumento visualizaria todos los PJ que se
+    encuentren en ese instante conectados asi como una basica informacion
+    sobre ellos. En caso de introducir un argumento realizaria lo mismo
+    pero mostrando la informacion pedida de cada uno de los PJ.
+
+EJEMPLOS
+    xwho
+    xwho mail
+    xwho ip

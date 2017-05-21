@@ -1,0 +1,13 @@
+[1mCOMANDO[0m
+  espiar [<jugador>]
+
+[1mDESCRIPCION[0m
+  Espias a un jugador viendo todo lo que él escribe y recibe. Si escribes
+  el comando sin argumentos ves si estás espiando a alguien en ese
+  instante. Escribe 'parar de espiar' para detener tu espionaje.
+   
+[1mEJEMPLOS[0m
+  espiar woo
+
+[1mTEMAS RELACIONADOS[0m
+  parar, forzar

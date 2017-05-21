@@ -1,0 +1,19 @@
+[1mCOMANDO[0m
+  email [<nuevo_email>]
+
+[1mDESCRIPCION[0m
+  Si no le introduces ningún argumento este comando te visualizará el email
+  que tienes configurado en el mud. Si escribes después un nuevo email el
+  comando enviará un correo a la nueva dirección para proceder al cambio de la misma.
+   Para comprobar si una dirección de correo está baneada, escribe email comprobar <dirección>.
+
+Para arch o superiores:
+email banear <dirección> porque <razón> [hasta <fecha (DD/MM/AAAA [HH:MM:SS])>]: Baneas la dirección de correo <dirección>, hasta la fecha especificada, o si no pones nada, por tiempo indefinido.
+email desbanear <dirección>: Desbanea la dirección de correo <dirección>.
+
+[1mEJEMPLOS[0m
+  email                        Te muestra tu dirección actual.
+  email test@simauria.upv.es   Te cambia tu dirección por esta nueva.
+
+[1mTEMAS RELACIONADOS[0m
+  charset, stty, ficha

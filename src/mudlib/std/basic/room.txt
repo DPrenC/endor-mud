@@ -1,0 +1,193 @@
+BASIC ROOM
+==========
+
+[t] Theuzifan
+[h] Nyh@Simauria
+
+22-11-01 [t] Creación
+XX-XX-04 [h] Retoques mínimos.
+
+DESCRIPCION
+===========
+
+El objeto /std/basic/room ha sido creado para ser utilizado en lugar del
+/std/room, en la mayoría de los casos. Las diferencias entre ambos objetos son
+prácticamente nulas, por lo que cerca del 90% de las habitaciones podrían usarlo
+sin problemas. Todo lo que hay en la habitación básica es compatible a nivel de
+código con lo que hay en la habitación original, a excepción de las puertas. Por
+razones evidentes he elegido no usar puertas como objetos físicos. Son meras
+propiedades de las salidas. Así mismo la funcionalidad de estas pueras ha sido
+drásticamente reducida. Se pueden abrir y cerrar, y al abrirse puede ser
+necesario el uso de una llave. Sin embargo, el resto de acciones que se podían
+hacer con las puertas originales ha desaparecido: tan sólo se pueden mirar.
+
+
+FUNCIONES
+=========
+
+ROOM.C
+======
+Objeto básico, que hereda al resto de funcionalidades.
+
+public void AddRoomCmd(string|string* cmd, string|closure func)
+	Se usará para añadir acciones en una habitación. La diferencia con el add_action
+	es que se pueden definir closures como funciones.
+
+public void RemoveRoomCmd(string|string* cmd)
+	Elimina acciones en una habitación.
+
+EXITS.C
+=======
+Control de las salidas.
+
+public void AddExit(string|string* to, string|object dest)
+	Añade una o varias salidas a un destino determinado. El destino puede ser un
+	objeto o el path de un archivo.
+
+public void RemoveExit(string|string* to)
+	Elimina una o varias salidas.
+
+public int HideExit(string|string* to, int state)
+	Esconde una o varias salidas. Si existe una puerta en esa salida también se
+	esconderá, no pudiendo ser abierta. La salida que esté escondida no es utilizable;
+	si no se puede ver, no se puede usar.
+
+public int AddDoor(string dir, string|string*|void name, string|void desc, string|void key)
+	Añade una puerta a una dirección determinada. El nombre es el que aparecerá en
+	el volcado de puertas al examinar la habitación, o en caso de ser un vector,
+	será el primer elemento el que aparezca.
+
+	El único campo obligatorio es la dirección donde estará la puerta. Debe ser una
+	dirección válida, y ya existente añadida con la función AddExit.
+
+	La puerta será añadida como detalle de la habitación, por lo que podrá mirarse.
+	Cuando la puerta permanezca cerrada, el destino de la salida no será visible.
+
+	En caso de existir una llave, se buscará entre el inventario del personaje algún
+	objeto que tenga el identificador key. La utilización de la llave es automática,
+	cuando se ejecuta la acción abrir. La llave no es necesaria para cerrar una
+	puerta, y se usa de forma automática al abrir las puertas.
+
+	La habitación de destino no tiene por qué tener puerta, pero si la tiene se
+	abrirá y cerrará cuando se abra y se cierre la puerta de la habitación actual.
+
+public void RemoveDoor(string to)
+	Elimina una puerta.
+
+
+DETAILS.C
+=========
+Gestión de detalles y descripciones.
+
+Todos los objetos tiene su descripción corta, larga, y una serie de detalles,
+tales como el olor, ruido, etc...
+
+Además, las habitaciones, tienen otras descripciones internas, que son las que
+se ven. De esta forma, las habitaciones pueden estar dentro de otras
+habitaciones, y su descripción exterior diferirá en la interior. Esto realmente
+no se usa en casi ningun sitio, por lo que las descripciones internas y externas
+de una habitación son iguales. Por lo tanto, un QueryShort y un QueryIntShort es
+lo mismo para la habitación básica.
+
+public varargs string SetIntLong(string what)
+public varargs string SetIntShort(string what)
+public varargs string SetExaIntLong(string what)
+public varargs string SetIntNoise(string what)
+public varargs string SetIntSmell(string what)
+	Pone, respectivamente, la descripción larga, corta, la descripción al examinar,
+	el ruido y el olor general de la habitación. Para obtener los datos que contengan,
+	existen	también las funciones homólogas Query.
+
+public void AddDetail(string|string* det, string|closure desc, string|void exa)
+public void AddSmell(string|string* det, string|closure desc)
+public void AddNoise(string|string* det, string|closure desc)
+public void AddReadMsg(string|string* det, string|closure desc)
+	Añade uno o varios detalles a la habitación. Estos puede ser detalles visuales,
+	olores, sonidos o leídos. La descripción del detalle puede ser una función.
+
+public void RemoveDetail(mixed det)
+public void RemoveSmell(mixed det)
+public void RemoveNoise(mixed det)
+public void RemoveReadMsg(mixed det)
+	Elimina uno o varios detalles de la habitación.
+
+public mixed GetDetail(string str)
+public string GetSmell(string str)
+public string GetNoise(string str)
+public string GetReadMsg(string str)
+	Obtiene los detalles añadidos de la habitación.
+
+
+RESTRICTIONS.C
+==============
+Control de restricciones, variables lumínicas...
+
+
+public string QueryServer()
+	Obtiene el servidor climático (por defecto, /std/nightday).
+
+public string SetServer(mixed to)
+	Asigna un servidor climático.
+
+public int QueryIndoors()
+	Variable que indica si la habitación es una habitación que no esté al aire libre.
+
+public int SetIndoors(int i)
+	Indicar que una habitación está al aire libre o no.
+
+public mixed QueryOutdoors()
+    Indica si la habitacion está al aire libre o no. Devuelve o 0 o QueryServer().
+
+public mixed SetOutdoors(mixed i)
+    Indicar que una habitacion esta al aire libre o no.
+    Si i = 0 equivale a hacer un SetIndoors(1); SetServer(0);
+    Si i es un numero entero equivale ha hacer un SetIndoors(0); SetServer(NIGHTDAY);
+    En otro caso, equivale ha hacer un SetIndoors(0); SetServer(i);
+
+public string QueryDayDesc()
+	Obtiene la descripción climática.
+
+public string QueryDayState()
+	Obtiene el estado del día.
+
+public int QuerySunLight()
+	Obtiene la cantidad de luz que da el sol.
+
+public int QueryIntLight()
+	Obtiene la cantidad de luz de la habitación, dependiendo de su estado lumínico y
+	de si está al aire libre.
+
+public int SetIntLight(int to, int|void sun)
+	Indica la cantidad lumínica de la habitación, y si se debe usar la luz del sol
+	para el cómputo de la luz global.
+
+public int QueryTPort()
+	Obtiene la posibilidad de usar movimiento por teleportación.
+
+public int SetTPort(int t)
+	Define la posibilidad de usar movimiento por teleportación.
+
+public int allow_enter(int method, mixed extra)
+	Función que, dependiendo del método de entrada y de variables internas, permite
+	la entrada de nuevos objetos.
+
+public void notify_leave(mixed to, int method, mixed extra)
+	Notifica de la marcha de un objeto.
+
+public void notify_enter(mixed from, int method, mixed extra)
+	Notifica de la entrada de un objeto.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

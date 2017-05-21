@@ -1,0 +1,22 @@
+SINOPSIS
+void stop_music(object ob |object *ob)
+void stop_music(object ob | object *ob, object exclude | object *exclude)
+
+DESCRIPCIÓN
+Detiene cualquier fichero de música que esté reproduciéndose en los clientes de <ob>,
+excluyendo a los objetos especificados en <exclude>.
+
+DETALLE
+Esta función, envía un comando de detención de ficheros musicales a los jugadores
+especificados en <ob>.
+El parámetro <ob> puede ser tanto un array de objetos como un objeto único.
+En cualquier caso, la función buscará los jugadores contenidos en dicho array,
+y los jugadores contenidos en las habitaciones que también se pasen en ese
+array, enviándoseles el comando a todos ellos, escepto a los incluidos en <exclude>.
+El parámetro <exclude>, si se especifica, determina a qué objetos no se debe
+enviar la petición de interrupción de música. En caso de que en el
+parámetro <ob> se defina uno o varios objetos jugadores, se comprobará si
+alguno de ellos está en exclude, y no se enviará a esos objetos.
+
+VER TAMBIEN
+stop_sounds(E), play_music(E), play_sound(E).

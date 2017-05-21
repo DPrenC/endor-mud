@@ -1,0 +1,71 @@
+Para obtener información sobre tus puntos de vida máximos y los que te quedan escribe el comando <vida>.
+%%
+Los puntos de poder son los que tiene tu personaje para hacer algunas acciones donde se requiere el poder de la mente. Usa el comando <poder> para consultar tus puntos máximos de poder y los que te quedan.
+%%
+Con el comando <quien> o <conectados> puedes ver la lista de los jugadores y Ainur que están conectados en ese momento, así como otras informaciones como su estado o su bando.
+%%
+Puedes consultar el agotamiento de tu personaje con el comando <vigor>.
+%%
+Puedes escribir mensajes privados a otros jugadores conectados en ese momento con el comando <tel> o <telepatía> seguido del nick y del testo que quieres mandarle. En el caso del nick, es suficiente con que escribas solo las primeras letras.
+%%
+Es muy interesante el comando <ficha>, te muestra mucha información sobre tu personaje. Si le pones como argumento el nick de otro jugador te muestra información más limitada sobre ese jugador.
+%%
+Escribe <ayuda> para obtener una lista de comandos. <ayuda> seguido de un comando te da información sobre ese comando.
+%%
+En ocasiones, necesitarás buscar ciertas cosas como leña, árboles o caracoles... para ello tienes el comando <buscar>. Te será más o menos útil según tu oficio y tus habilidades.
+%%
+Puedes consultar el valor de cobardía de tu personaje con el comando <coraje>, si lo acompañas de un número lo ajustas a ese valor.
+%%
+Si consigues talar un árbol, o simplemente te lo encuentras ya talado, puedes cortarlo con el comando <cortar> en pequeñas secciones para trasportarlo, venderlo o simplemente utilizarlo en hogueras o para tallar figuritas con la habilidad correspondiente.
+%%
+Las puertas con cerradura puedes bloquearlas o desbloquearlas si tienes la llave de dicha cerradura.
+%%
+Puedes recuperar tus puntos de vida de distintas formas: descansando, durmiendo, curándote otro jugador o NPC que tenga esa habilidad, o incluso, tomando algún alimento que tenga esa propiedad.
+%%
+La forma más correcta de salir del juego es con los comandos <desconectar>, <quit> o <exit>. Si lo haces de cualquier otra forma se puede quedar el cuerpo de tu personaje en el juego o no guardarse bien los cambios. Acuérdate de <salvar> antes de salir.
+%%
+Si no te interesa lo que tenga que decir otro jugador es muy útil el comando <ignorar>. Si luego cambias de opinión usa <designorar>.
+%%
+<equipar> o <desequipar> son los comandos para ponerse o quitarse piezas de equipo. Estos comandos aceptan el argumento todo.
+%%
+En ocasiones habrán a tu alcance varios objetos iguales. Para interactuar con ellos (comer, dejar, coger...), puedes usar como argumento números o adjetivos. Por ejemplo, si tienes varias manzanas, puedes interactuar con la manzana 1, la manzana 2, la manzana 3... o si son de distintas caracteristicas: manzana verde, manzana pequeña, manzana podrida...
+%%
+Tienes a tu disposición  los comandos <fecha> y <hora>. Además de que también puedes mirar el tiempo o el clima.
+%%
+Si te pierdes y te buscan tus compañeros por la zona, sería muy útil si les gritas para que sepan por donde andas. Si acompañas el comando <gritar> de un texto se podrá escuchar en las proximidades.
+%%
+El comando <habilidades> te muestra la lista de tus habilidades. Para consultar una habilidad concreta usa el comando <hab> seguido del nombre de la habilidad.
+%%
+Con la habilidad necesaria, puedes identificar que tipo de arma tienes en tus manos y que necesitas para utilizarla.
+%%
+El comando <inspeccionar> se usa con la habilidad <inspeccionar atavíos>, que sirve para examinar y obtener información sobre piezas de armadura y ropajes.
+%%
+Si quieres mostrar educación para entrar en una room con la puerta cerrada tienes a tu disposición la posibilidad de llamar a la puerta.
+%%
+En Endor-Mud hay muchas formas de obtener XP, muévete por el mundo, inspecciona zonas, ten curiosidad y mira o lee todo lo que te encuentres, te puedes llevar sorpresas agradables.
+%%
+Matar no siempre ees la solución. Según a lo que se dedique tu personaje es posible que matando no consigas los xp que esperas.
+%%
+¿Tienes en tu inventario algo muy chulo y quieres que lo vean otros players?, usa el comando <mostrar>.
+%%
+Ten cuidado con las plantas, hierbas o setas que te encuentras por ahí. Tienes el comando <reconocer> y la habilidad de <reconocer plantas> para saber los efectos de lo que te encuentres por el bosque.
+%%
+No siempre está bien, pero en ocasiones es necesario <robar>.
+%%
+Si tu cliente de mud soporta MSP (Mud Sound Protocol), usa el comando <sonido> para activar los sonidos o configurar algunas características.
+%%
+¿Ya no quieres jugar más en Endor-Mud?, usa <suicidar>.
+%%
+Puedes <talar> árboles para conseguir madera para distintas utilidades. Por supuesto necesitas una herramienta adecuada y la habilidad de <talar>. Ten cuidado cuando caiga el tronco, podría caerte encima.
+%%
+El comando <textos> te sirve para configurar la información de texto que te aparece en pantalla, tanto en las descripciones y salidas como en los combates.
+%%
+Los comandos <alcohol>, <hambre> y <sed> te muestran esa información de tu personaje.
+%%
+Puedes consultar tus stats por separado con los comandos abreviados: <fue> para fuerza, <con> para constitución, <int> para inteligencia>, <sab> para sabiduría, <des> para destreza y <car> para carisma.
+%%
+Es muy útil el comando <est> para consultar rápidamente el estado de las cosas y personajes.
+%%
+El comando <obj> te muestra solamente los objetos y personajes que se encuentran en la misma room que tú.
+%%
+El comando <sal> solo te muestra las salidas disponibles.

@@ -1,0 +1,18 @@
+%^Bright%^CAMBIOS EN LAS DISTINTAS VERSIONES DE ENDOR-MUD%^Normal%^
+--------------------------------------
+    [ Febrero de 2012]  comenzamos a adaptar la base original del mud a Endor.
+
+Modificaciones de la versión 0.1:
+
+*
+* creado comando conectados para ainur que da más información que el quien para los players.
+* agrupados los comandos tiflo, ciego, breve y breve combate en un solo comando <textos>.
+* creados los bandos de luz, oscuridad y neutral.
+* Añadido el dominio de Aman, con una zona funcional.
+* Creadas y agregadas las nuevas razas de Endor para players, aislando las de la base antigua para las zonas antiguas que no vamos a usar.
+* Restaurado completamente el comando quien, añadiendo el conectados para la misma función.
+* Anulado los capamientos de PK y robar de la antigua base del mud.
+* Unión de los canales info y mud en uno solo, infomud.
+* Cambiados los textos del shoutdown.
+* Cambiado el comando lanzar, anulando capamiento y modificando textos.
+* Cambiado el comando abandonar por el de desconectar.

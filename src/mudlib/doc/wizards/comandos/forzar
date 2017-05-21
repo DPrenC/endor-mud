@@ -1,0 +1,13 @@
+[1mCOMANDO[0m
+  forzar <nombre> <comando>
+
+[1mDESCRIPCION[0m
+  Fuerzas a un jugador o monstruo a que haga alguna cosa. Este comando solo
+  se debe usar en situaciones muy puntuales y su utilización indebida está
+  penalizada. No se puede forzar a ningún wizard de nivel mayor o igual a ti.
+   
+[1mEJEMPLOS[0m
+  forzar woo mirar   --> Fuerzas a woo a que mire.
+
+[1mTEMAS RELACIONADOS[0m
+  espiar, parar

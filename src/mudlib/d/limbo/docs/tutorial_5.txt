@@ -1,0 +1,10 @@
+Asthar te dice: en caso de necesidad, podrías combatir o defenderte con tus 
+propias manos, pero no es la mejor opción... Yo te recomiendaría dos cosas 
+equipo y práctica. Hazte con un arma, como por ejemplo una espada, empúñala 
+para poder usarla ('empuñar lo_que_sea') y equipate con alguna protección, 
+como un escudo ('equipar lo_que_sea' o 'ponerse lo_que_sea'). Para comenzar
+un combate usa 'matar lo_que_sea' y hazlo lo mejor que sepas... Recuerda, en 
+caso de necesidad puedes usar 'huir' para escapar con vida. Tu técnica de 
+combate mejorará a medida que practiques. En la habitación al oeste de aquí 
+suele haber ratas: máta alguna y demuéstrame que has aprendido lo que te he 
+explicado.

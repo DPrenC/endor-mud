@@ -1,0 +1,47 @@
+Uso de las taquillas:
+
+La hermandad de consignas de simauria le agradece que confíe en nosotros.
+A continuación le explicaremos los comandos necesarios para el funcionamiento
+de las cajas de seguridad.
+Básicamente, los comandos que usará son los normales de los objetos
+contenedores, tales como mochilas y bolsas.
+
+·Mirar objetos:
+Para mirar los objetos que tiene en el interior de la caja use:
+-Mirar <nombreobjeto> de caja: Por ejemplo: mirar vial de caja.
+Visualizará el objeto referenciado en <nombreobjeto>.
+-Mirar todo de caja: Visualizará todos los objetos de la caja.
+-Mirar objeto/s de caja: También podrá usar objetos en plurales. Por ejemplo:
+mirar armas de caja.
+
+·Coger objetos:
+-coger <nombreobjeto> de caja: Cogerá el objeto <nombreobjeto> de la caja.
+-Coger todo de caja: Intentará coger todos los objetos de la caja.
+-Coger objeto/s de caja: También podrá coger objetos usando sus plurales.
+Ejemplo: Coger viales de caja.
+
+·Permisos:
+Los permisos son un servicio que le permitirá a otros jugadores introducir
+objetos en su caja de seguridad.
+Recuerde que esta facilidad solo admite objetos de entrada, por lo que un
+jugador solo podrá introducir objetos en su caja, nunca sacarlos.
+Para introducir algún objeto en la caja de alguno de nuestros clientes,
+primeramente dicho cliente deberá haberle habilitado como cliente permitido.
+Una vez cumplida esta condición, solo deberá llegarse por una de nuestras
+oficinas y usar el comando transferir <objeto> a <jugador>.
+La comisión vigente actualmente por introducir cualquier objeto usando este
+servicio, será del 25% del valor real del objeto, cobrándosele al
+jugador que lo introduzca.
+
+Para obtener más información sobre la gestión de sus permisos, escriba
+permiso info (una vez dentro de la habitación de seguridad).
+
+Nota importante!
+Nuestros almacenes son limpiados constántemente, por lo que si sale de la
+habitación de seguridad dejando cosas en su interior, el equipo de limpieza
+no dudará en echarlas a la basura.
+La hermandad de consignas no se responsabiliza por los objetos que pierda
+debido a esta situación.
+
+Esperamos que nuestro servicio le satisfaga, y no dude en consultar sus dudas
+a nuestros empleados.

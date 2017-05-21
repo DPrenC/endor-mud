@@ -1,0 +1,38 @@
+NOTA:    Las escaleras las he puesto asi:     :
+      *N - Escalera solo para subir           :
+      #N - Escalera solo para bajar           :
+      @N - Escalera para subir y bajar        :
+..............................................:
+                                                      *1                
+                                                    ermit4.c 
+תתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתת                       |                
+Este es el mapa del cementerio :         ermit3o.c-ermit3.c-ermit3e.c
+y de la ermita desde el cruce  :                       |                 
+de Nandor.                     :    *2 ermit1no.c  ermit2.c  ermit1ne.c *3
+...............................:                 \     |    /               
+                                      cemen4no.c   ermit1.c   cemen4ne.c
+                                             |   \     |    /    |        
+                                       cemen4o.c - cemen4.c - cemen4e.c
+                                             |         |         |        
+                                       cemen3o.c - cemen3.c - cemen3e.c
+                                             |         |         |        
+     תתת---====---תתת                  cemen2o.c - cemen2.c - cemen2e.c
+     [  Blackrider  ]                        |         |         |        
+     ===----תת----===                  cemen1o.c - cemen1.c - cemen1e.c
+                                                       |
+  g  (Nandor)                                      sender14.c 
+  r     |                                              |
+  a - cruce.c - sender10.c - sender11.c - sender12.c - sender13.c  
+  n     |
+  j  (camino)
+  a
+
+ #2 ermit5no.c       ermit5ne.c #3              ermit4u.c
+            \        /                              #1
+             ermit5.c
+                *4 
+             ermit6.c  
+                @4 
+             ermit7.c
+                #4
+

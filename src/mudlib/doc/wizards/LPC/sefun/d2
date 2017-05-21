@@ -1,0 +1,12 @@
+SINOPSIS
+        int d2()
+        int d2(int arg)
+
+DESCRIPCIÓN
+        Devuelve un número aleatorio como resultado de tirar <arg> dados de 2
+        caras y sumar los resultados.
+        Si no se especifica <arg> se supone 1.
+
+VER TAMBIÉN
+        d3(SE), d4(SE), d6(SE), d8(SE), d10(SE), d12(SE), d20(SE), d100(SE),
+        d20Check(SE), d100Check(SE)

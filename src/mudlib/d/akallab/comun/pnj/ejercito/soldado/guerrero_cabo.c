@@ -1,0 +1,18 @@
+/*
+DESCRIPCION  : un guerrero-cabo del ejercito orco
+FICHERO      : soldado/guerrero-cabo.c
+MODIFICACION : 02-03-00 [Angor@Simauria] Creacion
+*/
+
+#include "./path.h"
+#include "../std/soldado.h"
+inherit AK_SOLDADO;
+
+create()
+{
+  ::create();
+  ::ValoresPorDefecto();
+  grado=SO_GRADO_CABO;
+  clase=SO_CLASE_GUERRERO;
+}
+

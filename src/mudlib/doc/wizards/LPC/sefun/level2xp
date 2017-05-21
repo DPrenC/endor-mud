@@ -1,0 +1,8 @@
+SINOPSIS
+        int level2xp(int arg)
+
+DESCRIPCIÓN
+        Devuelve la experiencia correspondiente al nivel <arg>.
+
+VER TAMBIÉN
+        xp2level(SE)

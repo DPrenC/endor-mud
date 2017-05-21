@@ -1,0 +1,13 @@
+SINOPSIS
+    xdbg <objeto>
+
+DESCRIPCION
+    Visualizaria toda la informacion devuelta por la funcion debug_info().
+    La mayor parte de esta informacion no es de utilidad pero te da
+    informacion del numero de variables, funciones, objetos heredados y
+    casi todo lo relacionado con ese objeto. Tambien visualiza si un objeto
+    es living, si su heart_beat esta activo, etc.
+
+EJEMPLOS
+    xdbg $me
+

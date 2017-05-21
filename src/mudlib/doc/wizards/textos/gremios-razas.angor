@@ -1,0 +1,78 @@
+[X] hombre o mujer
+[M] solo mujer
+[H] solo hombre
+
+                 |Demonios
+                 | |Draconianos
+                 | | |Duendes
+                 | | | |Elfos
+                 | | | | |Elfos oscuros
+                 | | | | | |Enanos
+                 | | | | | | |Gigantes
+                 | | | | | | | |Gnomos
+                 | | | | | | | | |Humanos
+                 | | | | | | | | | |Kainoak
+                 | | | | | | | | | | |Kender
+                 | | | | | | | | | | | |Logath
+                 | | | | | | | | | | | | |Medio elfos
+                 | | | | | | | | | | | | | |Orcos
+                 | | | | | | | | | | | | | | |Troll
+Asesino ---------|X|X|X|X|X|X| |X|X| |X|X|X|X| |
+Bardo -----------| | | |X|X| | | |X| |X| |X|X| |
+Clerigos --------|X|X| |X|X|X|X|X|X|X| |X|X|X| |
+Conjuradores ----|X|X|X|X|X| |X| |X|X| |X|X|X|X| 
+Elementalista ---|X|X|X|X|X| | |X|X| | | |X|X| |
+Guardabosque ----| |X| |X|X| | |X|X|X|X|X|X| | |
+Guerrero --------|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X| 
+Hechiceros ------|X|X|X|X|X| |X| |X|X| |X|X|X|X| 
+Kisala ----------|M|M|M|M|M|M|M|M|M|M|M|M|M|M|M| 
+Ladron ----------|X|X|X|X|X|X| |X|X| |X|X|X|X| |
+Nigromantes -----|X|X| |X|X| |X| |X|X| | |X|X| |
+Paladines -------|X|X| |X|X| | | |X| | | |X|X| |
+Pirata ----------|X|X|X|X|X|X|X|X|X|X|X|X|X|X|X| 
+Psionico --------|X|X| |X|X| | | |X| | | |X|X| |
+
+Esta es la tabla que vosotros habeis hecho.
+A continucion esta la que yo propongo
+
+a) demonio: no deberia ser paladin (sol quiza la version oscura)
+b) draconiano : no deberia ser clerigo (es animista, cree en
+   espirutus no esn dioses)
+c) duende : no deberia entrar en gremios del tipo "guerrero",
+   solo en los magicos y quiza en algunos miscelaneos como
+   los bardos
+d) elfos : no deberian entrar en gremios del tipo "guerrero puro",
+   solo en los magicos, miscelaneos y quiza alguno mixto (guerrero-
+   mago) tipo "clerigo". No deberian poder ser asesinos, ladrones y
+   piratas, a cambio serian de los mejores magos.
+e) elfos oscuros : al igual que los elfos, no deberian entrar en gremios
+   del tipo guerrero-puro. Deberian tener mas facilidades que los
+   elfos en los del tipo mixmo mago-guerrero y menos en los del tipo 
+   mago puro. Deberian poder entrar en los gremios "oscuros" como
+   ladrones, asesinos, piratas, y no en los del tipo "naturaleza"
+   como guardabosques o druida
+f) Enanos : no deberian entrar en los gremios del tipo "magia-pura"
+   ni mixtos "magia-guerrero", solo en los del tipo "guerrero-puro"
+   donde serian bastante buenos. No creo que sea bueno que entren 
+   en los gremios oscuros(piratas, asesinos, ladrones) y me es 
+   indiferente que se haga en los tipos "miscelaneo" y "naturaleza"
+g) Gigante : nada de magia, ni pura ni mixta. Solo tipo "guerrero" y 
+   "oscuros". Nada de "naturaleza" ni "miscelaneo"
+h) Gnomo: nada de magia pura, ni mixta, si guerrero. Gremios miscelaneo
+   tipo bardo(?), solo ladron de los del tipo "oscuro" y todos los 
+   del tipo "naturaleza" (guardabosques, druida, etc..)
+i) Humano : todos, si bien seran peores que otras razas en ellos.
+j) Kainoak : los de tipo "guerrero" y quiza algun mixto
+   "magia-guerrero", pero no "magia pura". Oscuros (especialmente
+   asesinos), "naturaleza" y algun miscelaneo(?)
+k) Kender : nada de magia, ni pura ni mixta. Quiza  guerreros(?).
+   Facilidad en los oscuros(asesinos, especialmente ladrones)
+   y los miscelaneos (bardos). ME da igual los del tipo "naturaleza"
+l) Logath : nada de magia, ni mixta ni pura. Facilidad en los 
+   oscuros (asesinos especialmente) y lo naturaleza. Los miscelaneos
+   me da igual.
+m) Medio-elfo: como el elfo oscuro, pero algo mejor en los mixtos
+   magia-guerrero y peor en los oscuros. Miscelaneos (bardo)
+o) Orco : todos excepto los del tipo naturaleza
+p) Troll : como los gigantes.
+

@@ -1,0 +1,26 @@
+COMANDO
+  grupo
+  grupo <quien>
+
+DESCRIPCION
+  Este es el comando que se utiliza para crear, manejar, deshacer y visualizar
+  un grupo.
+  Con 'grupo' visualizas los miembros de tu grupo, si es que hay alguno, y
+  algunos de sus atributos.
+  Con 'grupo <quien>' se realizan las demás acciones, hay que tener en cuenta
+  que la mayoria de las acciones sólo las puede llevar a cabo el lider del
+  grupo (Si no tienes grupo se considera que eres líder de ti mismo).
+  Las acciones que sólo los líderes pueden hacer son:
+   - Invitar a alguien a unirse.	('grupo <a quien invitas>')
+   	(NOTA: No puedes invitar a alguien que ya tenga un grupo)
+   - Retirar una invitación a unirse.	('grupo <a quien desinvitas>')
+   - Hechar a alguien del grupo.	('grupo <a quien hechas>')
+  Las acciones que todos pueden hacer son:
+   - Aceptar una invitación.		('grupo <quien te ha invitado>')
+   - Irse de un grupo.			('grupo <quien es el lider>')
+
+NOTA
+  En combate, si varias personas agrupadas atacan a al vez al mismo enemigo
+  ganan bonificadores.
+  Cuando varios personajes matan a otro la experiencia sólo se reparte entre
+  los miembros del grupo del que propina el golpe mortal.

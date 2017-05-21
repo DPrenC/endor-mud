@@ -1,0 +1,14 @@
+NAME
+	imuds - Give a list of the muds that are known on the intermud
+
+SYNOPSIS
+	imuds
+	imuds <mudname>
+
+DESCRIPTION
+	A list is printed of the known muds or information on specific
+	muds. A specific mud can also be queried for information on
+	other muds.
+
+SEE ALSO
+	intermud, iwho, ifinger, gfinger, mudlist, gwize, gwiz.

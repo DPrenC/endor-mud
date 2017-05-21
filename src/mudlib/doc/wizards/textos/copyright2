@@ -1,0 +1,39 @@
+Licencia 2.0
+------------
+
+1.- Simauria, o en su caso los administradores de Simauria, tienen el
+derecho a eliminar, usar o modificar el código siempre y cuando sea
+necesario para el buen funcionamiento del mud. Éste código es todo el código
+que existe en el servidor, a excepción de aquel que se encuentra el
+directorio home de cada programador.
+
+2.- El código de la mudlib, que es la librería base del mud, es para uso
+exclusivo del mud Simauria, no pudiendo ser usada en otro lugar sin
+consentimiento expreso de Simauria o de sus administradores, a excepción del
+caso detallado en el punto 6.
+
+3.- Los programadores pueden utilizar el código que hayan creado de forma
+íntegra, para los propósitos que crean conveniente fuera de Simauria. Esta
+restricción es exclusiva del código de dominio, quedando sujeto el código de
+la mudlib al punto anterior.
+
+4.- El código que está en el directorio personal de cada programador es para
+su uso exclusivo, no pudiendo, bajo ningún concepto, ser utilizado en el mud
+hasta que no sea ratificado por los administradores, siendo añadido a la
+mudlib o a los dominios. Simauria se reserva el derecho de eliminar todo lo
+contenido en el directorio del programador si éste dejara de serlo, o si se
+hace un uso indebido o excesivo de dicho espacio.
+
+5.- Cada programador es responsable del código existente en su directorio
+personal.
+
+6.- Cada programador tiene el derecho de instalarse una copia del mud en su
+casa o lugar de trabajo. Ésta copia incluirá únicamente el gamedriver, la
+mudlib y los dominios, quedando excluidos los directorios personales y datos
+confidenciales existentes, entre ellos, las claves de acceso y el correo.
+Sin embargo esa copia no deberá ser accesible desde Internet, y deberá ser
+utilizada únicamente por el programador que tenga la licencia para su
+instalación.
+
+shodan@darkestar.org
+25 de Octubre del 2001

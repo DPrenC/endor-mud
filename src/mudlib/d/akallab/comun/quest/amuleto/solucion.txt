@@ -1,0 +1,86 @@
+Quest: Busqueda del amuleto perdido de Messur el herborista
+
+AUTOR : Angor@Simauria
+UPDATE: 28-10-99
+
+VALOR:
+QP= 6
+XP= 100
+
+LUGAR:
+Valle de Zarkam, Akallab
+
+GUION:
+El herborista tiene por costumbre ir a recoger hierbas al bosque 
+del norte del valle de Zarkam. La ultima vez que fue, perdio 
+un amuleto muy apreciado para el y esta dispuesto a recompensar
+a quien se lo devuelva.
+
+La idea que hay tras el quest es la de explorar el bosque al 
+nordeste del valle de Zarkam.
+
+CODIGO:
+objetos y pnjs: "/d/akallab/comun/quest/amuleto/"
+habitaciones  : junto al resto de las del dominio
+
+SOLUCION:
+Tras preguntar a Messur el herborista, este te dira que ha 
+perdido su amuleto de la suerte. Si le preguntas sobre ello
+te dira que lo mas probable es que lo haya perdido cuando 
+fue al bosque del nordeste del valle a recoger hierbas. 
+Promete que si lo recuperas, te recompensara.
+
+Tras explorar el bosque se encuentra una urraca que lleva un
+objeto brillante en el pico (bosque 10, 06, 33, 38, 46 y 63)
+Cuando intentas cogerla/matarla escapa volando hacia las
+montanyas al norte del bosque.
+
+Si intentas escalar las montanyas llega un punto (montain_6.c) 
+en el que no puedes subir si no tienes algo que te ayude 
+Para ello deberas ir a la cercana serreria de la presa
+y coger alli una escalera (maquinaria.c).
+
+Para coger la escalera hay dos posibilidades:
+a) - matar orco (obvia, no?)
+
+b) El orco te deja la escalera a cambio de que le ayudes a reparar uno 
+   de los engranajes de la serreria. Para ello necesita varias cosas que 
+   te indica, un tablon, un serrucho y un cubo. Para hallarlos:
+   - n
+   - coger tablon
+   - s, e
+   - coger cubo 
+   - e
+   - coger serrucho
+   - o, o, o
+   - dar tablon a orco
+   - dar cubo a orco
+   - dar sierra a orco
+
+Tras cualquiera de las dos posibilidades:
+- coger escalera
+
+Debes ir a la montanya:
+- o, o, s, so, ar, n, n
+
+Un oso agresivo esta refugiado en las rocas:
+- matar oso
+- arriba (que ahora funciona por tener escalera)
+- n, o, o
+- mirar nido
+
+Veras que contiene un cristal (bonus) y el amuleto. Cuando intentes coges
+algo del nido las urracas la protegeran violentamente:
+- matar urraca
+- matar urraca
+- matar urraca
+- coger cristal de nido (bonus)
+- coger amuleto de nido
+
+Cuando vuelvas a bajar por la grieta hay una gran probabilidad (75%) de que
+te caigas por ella y te hagas danyo. La vida es dura :)
+
+Ya de vuelta en la herboristeria de la ciudad de Zarkam:
+- dar amuleto a messur
+
+EL agradecido herborista te pagara con un par de pociones curativas.

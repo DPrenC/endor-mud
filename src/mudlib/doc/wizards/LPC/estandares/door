@@ -1,0 +1,304 @@
+Puertas. V: 1.0
+Autor: kastwey@simauria
+Fecha de creación: Septiembre, 2006.
+Revisiones: Abril-Diciembre 2007
+
+Descripción:
+Quizá debería llamar a esta versión de las puertas 2.0, pues el concepto y la funcionalidad derivan de las anteriores puertas de Guybrush. Sin embargo, debido a que sencillamente he borrado todo lo que había y lo he reescrito de cero, no sería correcto decir que es una mejora o parcheado de la anterior, sino más bien, una reescritura completa de todas las funcionalidades de las puertas, eso sí, manteniendo los concéptos básicos inherentes a la versión precedente.
+
+1. ¿Qué es una puerta?
+
+Una puerta, es, en todos los sentidos, el concepto que utilizamos como puerta en nuestra vida diaria: un objeto que comunica dos habitaciones, y que posee dos estados: abierta o cerrada, así como la posibilidad de bloquearse o desbloquearse por cualquier mecanismo disponible. Estas puertas pueden ser transparentes o no, estar construidas de diversos materiales, y al igual que cualquier objeto del mud, posee sus descripciones larga y corta, sus identificadores, y una serie de propiedades extras específicas de este objeto.
+2. Utilización de puertas
+
+2.1. ¿Cuándo utilizar puertas?
+Las puertas las podemos utilizar para comunicar dos habitaciones entre sí, en el momento en el que queramos controlar el acceso a las mismas (utilizando una llave que ha de tenerse en el inventario para abrirlas), o símplemente, para semejarlas al mundo real: habitaciones de posadas, puertas de tiendas, tabernas, ETC...
+
+
+3. Colocando una puerta
+
+A continuación, explico, paso a paso, cómo colocar una puerta en una habitación.
+
+3.1. Prerequisitos:
+Para que una puerta de comunicación entre dos habitaciones funcione correctamente, ambas habitaciones deben cumplir los siguientes requisitos:
+1.  Deben tener salidas entre sí, tanto de ída como de vuelta... 'hab1' debe tener salida a 'hab2', y 'hab2' a 'hab1'.
+2. Las salidas tanto de 'hab1' a 'hab2', como de 'hab2' a 'hab1' deben asociarse al fichero destino, no a funciones closure.
+3. No puede haber más de una salida en hab1 o hab2, que apunten a la otra habitación.
+
+3.2. Colocando la puerta
+
+Para colocar una puerta en una habitación, la función que debemos utilizar es AddDoor. Esta función está definida en /std/room/exits.c, y tiene el siguiente prototipo:
+
+public varargs int AddDoor(string salida, mixed short, mixed long, mixed ids,
+                           mixed arg1, mixed arg2, mixed arg3)
+
+Antes de explicar qué es cada cosa, deciros que a esta función hay que llamarla después de haber definido las salidas. Si no, la puerta no encontrará la salida a la que la intentamos asociar, y dará error.
+
+1. salida: El primer argumento de la función, es un string con el nombre de la salida que vamos a tapar con la puerta: norte, este, sur...
+2. short: Esta es la descripción corta de la puerta... Puede ser tanto un string como una función closure que devuelva ese string. Esta propiedad será la que vean los jugadores cuando se les muestre las salidas y diga: norte (cerrada por <short). Por defecto: "una puerta"
+3. long: Descripción larga. Aquí, igual que en la propiedad anterior, se puede introducir tanto un string con la descripción de la puerta, como una función closure que devuelva ese string. Esto será lo que vean los jugadores al mirar la puerta. Por defecto: "Es una puerta normal y corriente.\n"
+4. Ids: Puede ser tanto un string único como un array de strings, que contenga los identificadores de la puerta. A través de ellos, los jugadores podrán hacer referencia a la misma. Por defecto: "puerta"
+5. Arg1, arg2 y arg3. Estos tres argumentos son intercambiables, es decir, se pueden introducir en el orden en el que se quiera. Ninguno de los tres es obligatorio, por lo que se podrán omitir todos o alguno si se desea.
+Los parámetros que admiten son:
+5.1. int gender: El género de la puerta, definido en /sys/properties.h. Por defecto: GENDER_FEMALE
+5.2. string key: Un identificador que, de ser distinto de 0, será el que se compare con el objeto con el que intentemos bloquear o desbloquear la puerta... Es decir, si el identificador de nuestra puerta es "abcdefg", solo podremos bloquearla y desbloquearla con un objeto que tenga, entre sus identificadores, uno que sea "abcdef". Por defecto: 0 (sin cerradura)
+5.3. mapping properties: UN mapping con las propiedades extra de la puerta. Como todo mapping, su sintáxis es: ([propiedad:valor, propiedad:valor]). Por defecto: 0 (sin propiedades).
+En el punto 3.4, se explicarán detalladamente cada una de las propiedades de las puertas.
+
+Nota: Ninguno de estos parámetros (escepto la salida), es obligatorio. En el caso de props y key, no se usan valores por defecto. Sin embargo, para el short, long e identificadores, se toman los valores por defecto que he indicado más arriba.
+
+Visto lo anterior, y teniendo en cuenta que los tres últimos argumentos son intercambiables y se identifican por el tipo de datos que reciben, y que ninguno de los tres es obligatorio, observamos que a AddDoor se la puede llamar de muchas formas:
+AddDoor(salida, short, long, ids, gender, key, props);
+AddDoor(salida, short, long, ids, key, gender, props);
+AddDoor(salida, short, long, ids, props, gender, key);
+AddDoor(salida, short, long, ids, props);
+AddDoor(salida, short, long, ids, key);
+AddDoor(salida, short, long, ids);
+AddDoor(ssalida);
+ETC, ETC, ETC.
+
+Hay algunas propiedades que se pueden ajustar de forma independiente para cada lado de la puerta. Estas son el short, el long, los identificadores y el identificador de la cerradura. Es decir. Si en una habitación creamos la puerta poniendo un short, y en el otro lado colocamos otro short, cada uno se asignará al lado en el que se haya utilizado.
+
+Importante: A la hora de codificar una puerta, las propiedades que no son ajustables independientemente por cada lado de la puerta, deberán ir codificadas en ambos lados de la misma forma. Ejemplo: el gender o el mapping de las propiedades. En el caso del short, el long, las ids, o la cerradura, aunque en ambos lados sean los mismos, también hay que colocarlo en las dos habitaciones. En una primera versión, esto no era necesario, ya que el mud cargaba en memoria las dos habitaciones y obtenía los datos que necesitaba de ambos lados. Sin embargo, ahora no se cargan ambos lados, de forma que la puerta solo obtendrá la información de su lado de la función AddDoor presente en esa habitación.
+
+Ejemplo 1.
+
+Imaginemos dos habitaciones: hab1 y hab2.
+Hab1 tiene salida al sur a hab2, y hab2, tiene salida al norte a hab1.
+
+Vamos a añadir entre hab1 y hab2 una puerta.
+Por el lado de hab1, va a ser una puerta de madera verde, y por el lado de hab2, va a ser una puerta roja.
+La parte verde tiene una cerradura (que se abre con su llave), y la roja otra cerradura (que se abre con otra llave)... Ya, ya se que esto no es muy común y que las puertas comparten cerradura para una sola llave, pero es para que veáis que también se puede hacer esto.
+
+Procederíamos del siguiente modo:
+
+hab1:
+
+AddDoor("sur", "una puerta verde", "Se trata de una puerta de madera de color verde.\n", ({"puerta", "puerta de madera", "puerta verde", "puerta de madera verde", "puerta verde de madera"}), GENDER_FEMALE, "puertaverde123");
+
+en hab2:
+
+AddDoor("norte", "una puerta roja", "Se trata de una puerta de madera roja.\n", ({"puerta", "puerta roja", "puerta de madera", "puerta de madera roja", "puerta roja de madera"}), GENDER_FEMALE, "puertaroja123");
+
+Como vemos, cada lado tiene algunas propiedades comunes (el género, por ejemplo). Sin embargo, hay otras propiedades que son diferentes para cada lado: el short y el long de la puerta (un lado rojo y otro verde), y el identificador para las llaves, que son también distintos.
+
+Ahora bien, vamos a hacer que la puerta sea idéntica por ambas partes:
+
+hab 1:
+AddDoor("sur", "una puerta de madera", "Se trata de una simple puerta de madera.\n", ({"puerta", "puerta de madera"}), GENDER_FEMALE, "puerta123");
+
+hab 2:
+
+AddDoor("norte", "una puerta de madera", "Se trata de una simple puerta de madera.\n", ({"puerta", "puerta de madera"}), GENDER_FEMALE, "puerta123");
+
+Como vemos, lo único que cambia es la salida a la que está asociada, pues hab1 está comunicada con hab2 hacia el sur, y hab2 con hab1, hacia el norte.
+
+Ejemplo 2: Usando valores por omisión.
+También podemos hacer algo tan sencillo como:
+hab1:
+AddDoor("sur");
+
+hab 2:
+AddDoor("norte");
+
+Añadiríamos una puerta estándard entre hab1 y hab 2. El short es: una puerta, y el Long es: una puerta normal y corriente. Identificador: puerta. Género: Femenino.
+Las propiedades extras están a 0, al igual que la cerradura, que al estar a 0, es que no tiene.
+
+
+
+Ejemplo 3. usando de nuevo  a hab1 y a hab 2.
+Imaginemos que tenemos, como en los ejemplos anteriores, dos habitaciones: hab1, y hab 2.
+Queremos poner una puerta entre estas dos habitaciones... De hab1 a hab2 se va hacia el sur, y de hab2 a hab1, hacia el norte.
+hab 1:
+La puerta tendrá como short: la puerta del almacén.
+long: Se trata de una tosca puerta de madera.
+Ids: puerta, puerta de madera, puerta tosca, tosca puerta de madera
+El género es femenino, y tiene una cerradura con identificador toscap123.
+
+Para añadirla, escribiríamos lo siguiente:
+
+AddDoor("sur", "la puerta del almacén", "Se trata de una tosca puerta de madera.\n", ({"puerta", "puerta de madera", "puerta tosca", "tosca puerta de madera"}), GENDER_FEMALE, "ptosca123");
+
+Ahora bien, queremos añadirle algunas propiedades, como son: el material, un mensaje para cuando te estampes contra la puerta, y un mensaje para cuando se abra y se cierre.
+Una descripción detallada del uso de las propiedades de envío de mensajes, podemos verla en el apartado 3.3. A modo ilustrativo, os cuento que los mensajes van dentro de un array, en el cual el primer elemento es lo que leerá quien realiza la acción que sea con la puerta, el segundo es lo que leerán los que están junto a ese jugador en la habitación, y el tercero lo que leerán los de la habitación del otro lado de la puerta. Cada elemento, a su vez, puede dividirse en dos elementos, uno para cuando lo que ocurre lo percibimos con la vista (porque vemos), y el otro cuando lo percibimos por el oído. Si solo se pone un elemento, es indiferente por qué sentido lo percibamos.
+Así pues, vamos a añadirle a la puerta un mensaje para que, cuando el jugador se choque contra ella le diga: Te estampas contra la puerta y te clavas una astilla en la nariz.
+Los de la habitación, si ven, leerán que pepito se da contra la puerta y pone gesto de dolor, los que no ven y solo escuchan, escucharán un golpe y un grito, y los del otro lado de la puerta, escucharán un golpe tras la misma.
+Nota: Para referirnos al jugador en los mensajes, usaremos el comodín @nombre@, escrito tal cual lo pone aquí. Esto luego se reemplazará por el nombre que corresponda.
+
+AddDoor("sur", "la puerta del almacén", "Se trata de una tosca puerta de madera.\n", ({"puerta", "puerta de madera", "puerta tosca", "tosca puerta de madera"}), GENDER_FEMALe, "ptosca123", ([P_DOOR_NOLEAVE_MSG: ({"Te estampas contra la puerta del almacén, y te clavas una astilla en la nariz.\n", ({"@nombre@ se estampa contra la puerta del almacén y pone gesto de dolor.\n", "Escuchas un golpe seco y un grito de dolor.\n"}), "Escuchas un golpe seco tras la puerta del almacén.\n"}),
+P_DOOR_OPEN_MSG: ({"Abres la puerta del almacén.\n", ({"@nombre@ abre la puerta del almacén.\n", "Escuchas abrirse una puerta.\n"}), ({"Se abre la puerta del almacén.\n", "Escuchas abrirse una puerta.\n"})}),P_DOOR_CLOSE_MSG: ({"Cierras la puerta del almacén", ({"@nombre@ cierra la puerta del almacén\n", "Escuchas cerrarse una puerta cerca de ti.\n"}), ({"Ves como se cierra la puerta del almacén desde el otro lado.\n", "Escuchas cerrarse una puerta cerca tuya.\n"})}):
+P_MATERIAL: M_MADERA]));
+
+AddDoor("norte", "la puerta del almacén", "Se trata de una tosca puerta de madera.\n", ({"puerta", "puerta de madera", "puerta tosca", "tosca puerta de madera"}), GENDER_FEMALe, "ptosca123", ([P_DOOR_NOLEAVE_MSG: ({"Te estampas contra la puerta del almacén, y te clavas una astilla en la nariz.\n", ({"@nombre@ se estampa contra la puerta del almacén y pone gesto de dolor.\n", "Escuchas un golpe seco y un grito de dolor.\n"}), "Escuchas un golpe seco tras la puerta del almacén.\n"}),
+P_DOOR_OPEN_MSG: ({"Abres la puerta del almacén.\n", ({"@nombre@ abre la puerta del almacén.\n", "Escuchas abrirse una puerta.\n"}), ({"Se abre la puerta del almacén.\n", "Escuchas abrirse una puerta.\n"})}),P_DOOR_CLOSE_MSG: ({"Cierras la puerta del almacén", ({"@nombre@ cierra la puerta del almacén\n", "Escuchas cerrarse una puerta cerca de ti.\n"}), ({"Ves como se cierra la puerta del almacén desde el otro lado.\n", "Escuchas cerrarse una puerta cerca tuya.\n"})}):
+P_MATERIAL: M_MADERA]));
+
+
+Básicamente es así como funciona. Puede parecer bastante complejo, pero realmente es acostumbrarse. De todos modos, si lo que queréis es hacer puertas sencillas, ya habéis visto arriba qué fácil es hacerlo.
+
+
+3.3. Propiedades de envío de mensajes
+
+En las puertas, hay bastantes propiedades que se encargan de informar a los distintos personajes que pueden observar los comportamientos de la misma, de qué es lo que está ocurriendo: quien realiza la acción, los que están a su alrededor, y los que se encuentran al otro lado de la puerta.
+Así mismo, estos personajes pueden tener dos condiciones: que puedan ver, y que no puedan ver (esceso o falta de luz, por ejemplo).
+Por ello, he ideado un sistema de mensajes que tiene encuenta tanto a  los tres grupos que observan el comportamiento de la puerta, como los dos estados en los que puede encontrarse cada grupo... En realidad el jugador que realiza la acción es uno solo, por lo que no podríamos considerarlo como grupo, pero... no se me ocurría otra forma de explicarlo.
+Toda propiedad que envía un mensaje (escepto P_DOOR_TRANSPARENCY_MSG que se explica en el siguiente punto), tiene la siguiente estructura: un array que contiene tres elementos. Cada elemento puedeser, o bien un string o una función closure que devuelva un string, o bien un array con dos elementos strings o funciones closure que devuelvan strings.
+Si es un string o una función closure que devuelva un string, será lo que se envíe a uno de estos tres grupos, independientemente de que vea o no. Si es un array con dos elementos, el primer elemento se notificará a cada miembro del grupo que sea, en caso en el que vea, y el segundo, en caso de que no vea.
+Ejemplo:
+({({"lo que yo hago, si veo.\n", "Lo que yo hago, si no veo.\n"}), ({"Los que están con migo en la habitación, y ven que yo hago.\n", "Los que están conmigo en la habitación, y escuchan lo que hago, porque no ven.\n"}),
+({"Lo que ven los que están al otro lado de la puerta.\n", "Lo que escuchan los que están al otro lado de la puerta, porque no ven.\n"})})
+
+o bien:
+
+({"Lo que yo hago, vea o no vea.\n", "Lo que los de mi habitación leen, vean o no vean.\n", "Lo que los del otro lado de la puerta leen, vean o no vean.\n"})
+
+Como habréis notado, los strings de cada elemento del mensaje pueden ser sustituidos por funciones closure que devuelvan un string.
+A continuación se enumeran las propiedades que se encargan de enviar mensajes. Recordad que estas propiedades deben codificarse en el mapping de propiedades, usando los defines que podemos encontrar en /sys/door.h.
+
+
+1. P_DOOR_OPEN_MSG: Mensaje que se enviará cuando se abra la puerta. En caso de que alguno de los elementos de este mensaje sea una función closure, el prototipo de esta función será:
+string funcion(object puerta, string salida, object room)
+- puerta: El objeto puerta que se ha abierto.
+- salida: La salida asociada a la puerta: norte, sur, este, ETC.
+- room: La habitación desde la que se ha abierto la puerta.
+
+2. P_DOOR_CLOSE_MSG: Mensaje que se enviará cuando se cierre la puerta. En caso de que alguno de los elementos de este mensaje sea una función closure, el prototipo de esta función será:
+string funcion(object puerta, string salida, object room)
+- puerta: El objeto puerta que ha cerrado.
+- salida: La salida asociada a la puerta: norte, sur, este, ETC.
+- room: La habitación desde la que se ha cerrado la puerta.
+
+3. P_DOOR_NOLEAVE_MSG. Mensaje que se enviará cuando el jugador no pueda pasar por la salida porque la puerta está cerrada. En caso de que alguno de los elementos de este mensaje sea una función closure, el prototipo de esta función será:
+string funcion(object puerta, string salida, object room)
+- puerta: El objeto puerta que obstaculiza el paso.
+- salida: La salida asociada a la puerta: norte, sur, este, ETC.
+- room: La habitación en la que está el jugador.
+
+4. P_DOOR_CANT_OPEN_MSG: Mensaje que se enviará si el jugador no puede abrir la puerta porque está cerrada con llave (bloqueada). En caso de que alguno de los elementos de este mensaje sea una función closure, el prototipo de esta función será:
+string funcion(object puerta, string salida, object room)
+- puerta: El objeto puerta que no se puede abrir.
+- salida: La salida asociada a la puerta: norte, sur, este, ETC.
+- room: La habitación desde la que se está intentando abrir la puerta.
+
+5. P_DOOR_LOCK_MSG. Mensaje que se enviará cuando se bloquee la puerta. En caso de que alguno de los elementos de este mensaje sea una función closure, el prototipo de esta función será:
+string funcion(object puerta, string salida, object room, object con)
+- puerta: El objeto puerta que se ha bloqueado.
+- salida: La salida asociada a la puerta: norte, sur, este, ETC.
+- room: La habitación desde la que se ha bloqueado la puerta.
+- con: Objeto con el que se ha bloqueado la puerta.
+
+6. P_DOOR_UNLOCK_MSG: Mensaje que se enviará cuando se desbloquee la puerta. En caso de que alguno de los elementos de este mensaje sea una función closure, el prototipo de esta función será:
+string funcion(object puerta, string salida, object room, object con)
+- puerta: El objeto puerta que se ha desbloqueado.
+- salida: La salida asociada a la puerta: norte, sur, este, ETC.
+- room: La habitación desde la que se ha desbloqueado la puerta.
+- con: Objeto con el que se ha desbloqueado la puerta.
+
+7. P_DOR_CANT_UNLOCK_MSG. Mensaje que se enviará cuando se intente desbloquear la puerta con un objeto incorrecto (el identificador P_DOOR_KEY de ese lado de la puerta no coincide con ninguno de los identificadores del objeto utilizado). En caso de que alguno de los elementos de este mensaje sea una función closure, el prototipo de esta función será:
+string funcion(object puerta, string salida, object room, object con)
+- puerta: El objeto puerta que se intenta desbloquear.
+- salida: La salida asociada a la puerta: norte, sur, este, ETC.
+- room: La habitación desde la que se intenta desbloquear la puerta.
+- con: Objeto con el que se ha intentado desbloquear la puerta.
+
+8. P_DOR_CANT_LOCK_MSG. Mensaje que se enviará cuando se intente bloquear la puerta con un objeto incorrecto (el identificador P_DOOR_KEY de ese lado de la puerta no coincide con ninguno de los identificadores del objeto utilizado). En caso de que alguno de los elementos de este mensaje sea una función closure, el prototipo de esta función será:
+string funcion(object puerta, string salida, object room, object con)
+- puerta: El objeto puerta que se intenta bloquear.
+- salida: La salida asociada a la puerta: norte, sur, este, ETC.
+- room: La habitación desde la que se intenta bloquear la puerta.
+- con: Objeto con el que se ha intentado bloquear la puerta.
+
+9. P_DOOR_TRANSPARENCY_MSG: Este mensaje tiene un formato distinto que el resto de mensajes, ya que se suprime el elemento que se enviaría a la habitación del propio jugador.
+El formato sería: ({({"lo que yo veo en el otro lado", "NO puedo ver el otro lado"}), ({"lo que los de la otra habitación ven cuando el jugador mira", "Lo que los de la otra habitación escuchan cuando el jugador mira, porque no pueden verlo"})});
+Al igual que en las anteriores, cada elemento puede llevar igualmente una closure, y también podemos, en lugar de tres arrays de dos elementos, utilizar una simple string o closure, de modo que el mensaje se enviará al jugador y a la otra habitación, independientemente de si el jugador o los de la otra habitación ven o no ven.
+Nota: El mensaje que se envía al jugador si no ve, es cuando ese jugador no puede ver la habitación a la que da la puerta, no su propia habitación.
+El prototipo de las closures que se pueden utilizar en este mensaje es:
+string funcion(object hab)
+En el caso del jugador, hab es la habitación del otro lado de la puerta.
+En caso del mensaje que se envía a los jugadores del otro lado, hab es la habitación en la que está el jugador.
+
+3.4. Propiedades de control y apariencia de las puertas
+Como he mencionado en el punto anterior, todas estas propiedades extra que queramos poner a la puerta y que a continuación explico, deberán incluirse en el mapping de propiedades de la función AddDoor, y deberán usarse utilizando los defines correspondientes, codificados en /sys/door.h
+Por tanto, cuando queramos crear una puerta con propiedades extras, deberemos incluir este archivo en nuestro fichero:
+#include <door.h>
+
+1. P_MATERIAL. Esta propiedad no es específica de las puertas, pero sí se utiliza en ellas. Para definirla, habrá que incluir materials.h (#include <materials.h>), y utilizar alguno de los defines existentes en el archivo. Por ahora no tiene ninguna utilidad, pues las puertas no se pueden romper ni golpear ni forzar... pero se ha puesto para utilizarla en futuras versiones.
+2. P_DOOR_STATE. Define el estado inicial de la puerta: abierta (DOOR_OPENED), o cerrada (DOOR_CLOSED).
+3. P_DOOR_LOCK_STATE: Determina si la puerta, por defecto, estará bloqueada (DOOR_LOCKED), o desbloqueada (DOOR_UNLOCKED).
+4. P_DOOR_DEFAULT_IN_RESET. Si está a 1, en cada reset, la puerta volverá a su estado inicial, tanto de apertura o cierre como de bloqueo o desbloqueo.
+5. P_DOOR_KEY: String que determina el identificador que tendrá que tener el objeto con el que se intente bloquear o desbloquear la puerta. El objeto llave no debe tener nada en especial, solo contener entre sus identificadores el identificador definido en P_DOOR_KEY.
+6. P_DOOR_TRANSPARENCY. Esta propiedad determina si una puerta es o no transparente. Si es transparente, en los mensajes por defecto de apertura, cierre, intentos de apertura y cierre, bloqueos, desbloqueos, intentos de bloqueo y desbloqueo, ETC, los del otro lado podrán ver quien está intentando realizar la acción. Así mismo, al mirar la puerta, el jugador podrá ver qué hay al otro lado, y los del otro lado podrán ver quien está mirando a través de la puerta.
+7. P_DOOR_CLOSE_TIME: Un entero o un array de enteros, en el que se especifican los estados del día en los que la puerta permanecerá cerrada. Esto hay que utilizarlo únicamente en puertas en las que uno de sus lados esté asociado a una habitación SCHEDULER_ROOM. Para utilizar los defines de estado, deberemos incluir el archivo nightday.h en nuestro archivo. Si se trata de una tienda estándar, existe un define denominado S_CLOSED_AT_NIGHT, definido en scheduler.h, que incluye el array de estados del día en los que cierran las tiendas por defecto.
+Ejemplos:
+P_CLOSED_TIME : ({ND_NIGHT, ND_PREDAWN})
+P_CLOSED_TIME : S_CLOSED_AT_NIGHT
+
+7. P_DOOR_CHANGE_STATE_FUNCTION. Función closure que se ejecutará cuando la puerta cambie de estado. Su prototipo es:
+int funcion(object puerta, string salida, string accion, string str)
+-Puerta: El objeto puerta que quiere cambiar de estado.
+-Salida: La salida asociada a la puerta: norte, sur, este...
+-Accion: "abrir" o "cerrar"
+-str: El texto que el jugador puso para identificar la puerta, es decir, lo que escribió tras el comando asociado a abrir o cerrar.
+Nota: Esta función se ejecuta justo antes de cambiar el estado de apertura de la puerta. Es decir, antes ya se ha comprobado que la puerta existe, que no está en el mismo estado en el que el jugador la quiere colocar, y que, en caso de estar cerrada, no esta bloqueada.
+
+Si la función devuelve 0, la puerta no cambiará de estado. Si devuelve 1, seguirá el proceso de cambio de estado. En caso en que devuelva 0, sería correcto notificar al usuario de porqué, con un notify_fail.
+Esta propiedad se puede utilizar para definir condiciones extra por las cuales, por ejemplo, no se pueda abrir una puerta. Imaginemos una puerta enorme, y un duende intenta abrirla. Si el duende no llega al pomo, sería imposible que la pudiese abrir.
+Nuestra función podría ser algo como:
+public int CambiaEstadoPuerta(object puerta, string salida, string accion, string str)
+{
+    if (TP->QueryRace() == "duende")
+    {
+        return notify_fail("Intentas " + accion + " la puerta, pero eres tan enan" + TP->QueryGenderEndString() + " que no             llegas al pomo.\n");
+    }
+    return 1;
+}
+
+8. P_DOOR_CHANGE_LOCK_FUNCTION. Función closure que se ejecutará cuando la puerta vaya a cambiar de estado de bloqueo. Su prototipo es:
+int funcion(object puerta, string salida, string accion, string str, object con)
+- puerta: El objeto puerta que va a cambiar de estado de bloqueo.
+- salida: La salida a la que da la puerta: norte, sur...
+- accion: La acción que se está intentando realizar: "bloquear" o "desbloquear".
+- str: La cadena que el jugador ha utilizado para intentar bloquear o desbloquear la puerta, es decir, todo lo que preceda a "bloquear" o "desbloquear".
+- con: El objeto con el que se va a desbloquear o bloquear la puerta.
+Nota: Esta función se ejecuta cuando la puerta va a cambiar de estado de bloqueo. Esto quiere decir que ya se ha comprobado que su estado no fuese el mismo al que el jugador la quiere poner, que la puerta no esté abierta, y que el objeto con el que la está intentando bloquear o desbloquear es el correcto.
+Si la función devuelve 1, se continuará con el cambio de estado de bloqueo. Si devuelve 0, se interrumpirá el proceso.
+En caso de devolver 0, sería correcto informar al usuario con un notify_fail.
+
+Esta función se puede utilizar, por ejemplo, para situaciones en las que algunos jugadores no pudiesen desbloquear o bloquear la puerta.
+Imaginemos, como en la propiedad anterior, a un duende que no llega a la cerradura:
+
+public int CambiaEstadoBloqueo(object puerta, string salida, string accion, string str, object con)
+{
+    if (TP->QueryRace() == "duende")
+    {
+        return notify_fail("Alzas " + (con->QueryShort() || "algo") + " hacia la cerradura de la puerta, pero eres tan bajit"
+            + TP->QueryGenderEndString() + " que no llegas.\n");
+    }
+    return 1;
+}
+
+9. P_DOOR_OPEN_SOUND. El sonido que se escuchará cuando se abra la puerta. Esto lo escucharán los presentes en las rooms comunicadas por la puerta. Valor por defecto: SND-SUCESOS("abrir_puerta")
+10. P_DOOR_CLOSE_SOUND. El sonido que se escuchará cuando se cierre la puerta. Esto lo escucharán los presentes en las rooms comunicadas por la puerta. Valor por defecto: SND-SUCESOS("cerrar_puerta")
+11. P_DOOR_LOCK_SOUND. El sonido que se escuchará cuando se bloquee la puerta. Esto lo escucharán los presentes en las rooms comunicadas por la puerta. Valor por defecto: SND-SUCESOS("cerradura")
+12. P_DOOR_UNLOCK_SOUND. El sonido que se escuchará cuando se desbloquee la puerta. Esto lo escucharán los presentes en las rooms comunicadas por la puerta. Valor por defecto: SND-SUCESOS("cerradura")
+13. P_DOOR_HIT_SOUND. El sonido que se escuchará cuando alguien se golpee contra una puerta cerrada. Esto lo escucharán los presentes en las rooms comunicadas por la puerta. Valor por defecto: SND_SUCESOS("golpe")
+14. P_DOOR_KNOCK_SOUND. El sonido que se escuchará cuando alguien llame a una puerta. Esto lo escucharán los presentes en las rooms comunicadas por la puerta. Valor por defecto: SND_SUCESOS("llamar_madera")
+
+
+
+3.5. Funciones interesantes
+
+Hay algunas funciones interesantes que se pueden utilizar en las puertas, para obtener las habitaciones a las que da dicha puerta:
+
+object DoorOtherSide(object ob)
+Sea <ob>  un objeto habitación de un lado de la puerta, esta función devolverá la otra habitación asociada.
+
+Hay otra propiedad de las habitaciones que nos puede servir para obtener un objeto puerta:
+object FindDoor(string salida)
+Dada una dirección (norte, sur, este, ETC), devolverá, si la hubiese, la puerta asociada a esa salida. En caso de no encontrarse, devolverá 0.
+
+4. Conclusiones.
+
+Como habréis visto, las puertas son bastante complejas. Se pueden hacer desde puertas muy sencillas (sin propiedades extra y con parámetros por defecto), hasta puertas totalmente personalizadas, con sus mensajes y sus funciones preventivas de bloqueo, desbloqueo, apertura y cierre.
+A gusto del programador queda cómo codear sus puertas. Eso sí, no compliques las cosas demasiado en pro del realismo, si ello te va a suponer un quebradero de cabeza impresionante. Piensa siempre en lo que el jugador va a apreciar, y no hagas virguerías que nadie se va a molestar en observar o en valorar, si el hacerlas te requiere un gran esfuerzo, y encima, de su complejidad pueden derivarse futuros errores difíciles de corregir y detectar.
+

@@ -1,0 +1,13 @@
+NAME
+	iwho - see who is logged on to another mud
+
+SYNOPSIS
+	iwho <mudname>
+	
+DESCRIPTION
+	Get a who listing from a remote mud.  What information you get
+	back depends on the mud.
+
+SEE ALSO
+	imuds, intermud, intercode, iping
+

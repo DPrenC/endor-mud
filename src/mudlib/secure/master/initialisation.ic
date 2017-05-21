@@ -1,0 +1,627 @@
+/**
+ * /secure/master/initialisation.ic
+ *
+ * Archivo para ser incluido por el master. Contiene las funciones de
+ * inicialización.
+ */
+
+//===========================================================================
+//  Initialisation
+//
+// These functions are called after (re)loading the master to establish the
+// most basic operation parameters.
+//
+// The initialisation of LPMud on startup follows this schedule:
+//   - The gamedriver evaluates the commandline options and initializes
+//     itself.
+//   - The master is loaded, but since the driverhooks are not set yet,
+//     no standard initialisation lfun is called.
+//   - get_master_uid() is called. If the result is valid, it becomes the
+//     masters uid and euid.
+//   - inaugurate_master() is called.
+//   - flag() is called for each given '-f' commandline option.
+//   - get_simul_efun() is called.
+//   - the WIZLIST is read in.
+//   - epilog() is called. If it returns an array of strings, they are given
+//     one at a time as argument to preload().
+//     Traditionally, these strings are the filenames of the objects to
+//     preload, which preload() then does.
+//   - The gamedriver sets up the IP communication and enters the backend
+//     loop.
+//
+// If the master is reloaded during the game, this actions are taken:
+//   - The master is loaded, and its initialisation lfun is called according
+//     to the settings of the driverhooks (if set).
+//   - Any auto-include string and all driverhooks are cleared.
+//   - get_master_uid() is called. If the result is valid, it becomes the
+//     masters uid and euid.
+//   - inaugurate_master() is called.
+//
+// If the master was destructed, but couldn't be reloaded, the old
+// master object could be reactivated. In that case:
+//   - reactivate_destructed_master() is called.
+//   - inaugurate_master() is called.
+//===========================================================================
+
+void inaugurate_master (int arg); // Perform mudlib specific setup of the master.
+string get_master_uid ();  // Return the string to be used as uid (and -euid) of a (re)loaded master.
+void flag (string arg);    // Evaluate an argument given as option '-f' to the driver.
+string *epilog (int eflag); // Perform final actions before opening the system to users.
+void preload (string file); // Preload a given object.
+void external_master_reload (); // Called after a reload of the master on external request.
+void reactivate_destructed_master (int removed); // Reactivate a formerly destructed master.
+//string|string * get_simul_efun (); // Load the simul_efun object and return one or more paths of it.
+string get_simul_efun (); // Load the simul_efun object and return one or more paths of it.
+
+static void   _move_hook_fun (object item, object dest);
+static mixed  _load_uids_fun (mixed ob_name, object prev);
+static mixed  _clone_uids_fun (object blueprint, string new_name, object prev);
+static int    _create_fun (int clone, object prev, object this);
+static int    _reset_fun (object prev, object this);
+static mixed  _modify_cmd_fun (string cmd, object player);
+static string _notify_fail_fun (string cmd);
+
+//---------------------------------------------------------------------------
+// Initialization of the master object.
+//
+// As the lfuns which are called to initialize objects after a load are
+// defined through driver hooks, and these hooks are cleared prior to
+// a master (re)load, the first function called is inaugurate_master().
+// Anyway it's not very sensible to do anything earlier as the master is
+// not recognized as such at that time, and so a number of (important) things
+// would not work.
+//
+// Which lfun is called during runtime to reset the master is also depending
+// on the driverhook settings. Arbitrary actions may be done on a reset.
+
+//---------------------------------------------------------------------------
+void inaugurate_master(int arg)
+// [+] Perform mudlib specific setup of the master.
+//
+// Argument:
+//   arg: 0 if the mud just started.
+//        1 if the master is reactivated destructed one.
+//        2 if the master is a reactivated destructed one, which lost all
+//             variables.
+//        3 if the master was just reloaded.
+//
+// This function is called whenever the master becomes fully operational
+// after (re)loading (it is now recognized as _the_ master).
+// This doesn't imply that the game is up and running.
+//
+// This function has at least to set up the driverhooks to use. Also, any
+// mudwho or wizlist handling has to be initialized here.
+//
+// Besides that, do whatever you feel you need to do,
+// e.g. set_auto_include(), or give the master a decent euid.  int gdversion;
+{
+    if (!arg) {
+        mixed *info;
+        set_extra_wizinfo(0, info = allocate(BACKBONE_WIZINFO_SIZE));
+        info[BOOTTIME_INDEX] = time();
+    }
+
+    set_driver_hook( H_MOVE_OBJECT0, unbound_lambda( ({SYM(item), SYM(dest)}),
+        ({CL_PROGN,
+            ({ SF(?), ({ SF(!=), SYM(item), ({ SF(this_object) }) }),
+                           ({ SF(raise_error), "Illegal to move other object than this_object()\n" })
+                 }),
+                 ({ SF(_move_hook_fun), SYM(item), SYM(dest) })
+         }) ) );
+
+    set_driver_hook( H_LOAD_UIDS, unbound_lambda( ({SYM(object_name)}),
+        ({ SF(_load_uids_fun), SYM(object_name), ({SF(previous_object)}) }) ) );
+    set_driver_hook( H_CLONE_UIDS, unbound_lambda( ({ SYM(blueprint), SYM(new_name)}), ({
+        SF(_clone_uids_fun), SYM(blueprint), SYM(new_name), ({SF(previous_object)}) }) ) );
+
+/*
+      H_CREATE_SUPER is called for blueprints implicitely loaded
+      by inheritance, H_CREATE_OB for explicitely loaded
+      blueprints/objects, and H_CREATE_CLONE for cloned objects.
+*/
+    set_driver_hook(H_CREATE_SUPER, unbound_lambda( 0,
+        ({SF(_create_fun), 0, ({SF(previous_object)}), ({SF(this_object)}) }) ) );
+    set_driver_hook(H_CREATE_OB, unbound_lambda( 0,
+        ({SF(_create_fun), 1, ({SF(previous_object)}), ({SF(this_object)}) }) ) );
+    set_driver_hook(H_CREATE_CLONE, unbound_lambda( 0,
+        ({SF(_create_fun), 2, ({SF(previous_object)}), ({SF(this_object)}) }) ) );
+
+    set_driver_hook(H_RESET, unbound_lambda( 0,
+        ({SF(_reset_fun), ({SF(previous_object)}), ({SF(this_object)}) }) ) );
+
+    set_driver_hook(H_CLEAN_UP,     "clean_up");
+
+//    set_driver_hook(H_NOTIFY_FAIL,  "¡Melón!\n");
+    set_driver_hook(H_NOTIFY_FAIL, unbound_lambda( ({ SYM(command_string) }),
+        ({ SF(_notify_fail_fun), SYM(command_string) }) ) );
+
+//    set_driver_hook(H_MODIFY_COMMAND, "ResolveAction");
+    set_driver_hook(H_MODIFY_COMMAND, unbound_lambda(
+        ({ SYM(command_string), SYM(player)}),
+        ({ SF(_modify_cmd_fun), SYM(command_string), SYM(player) }) ) );
+
+    set_driver_hook(H_NO_IPC_SLOT   , "Lo sentimos, pero Simauria esta lleno. Regresa mas tarde.");
+
+    set_driver_hook(H_INCLUDE_DIRS, ({ "sys/", "secure/" }));
+    set_driver_hook(H_TELNET_NEG, "negotiate");
+    /*set_driver_hook(H_NOECHO,     unbound_lambda(
+        ({ SYM(flag), SYM(user) }), ({ CL_PROGN,({ SF(?), ({ SF(==), SYM(flag), 1 }),
+        ({ SF(binary_message), quote( ({ IAC, WILL, TELOPT_ECHO }) ), 3 }),
+        ({ SF(binary_message), quote( ({ IAC, WONT, TELOPT_ECHO }) ), 3 })
+        }) }) ) );*/
+
+    //set_driver_hook(H_ERQ_STOP            , );
+
+    //set_driver_hook(H_MODIFY_COMMAND_FNAME, "modify_command"); // ¿No se usa?
+
+    //set_driver_hook(H_COMMAND             , );
+
+/*
+        Lo envio a traves del catch_msg, como todos los mensajes
+        Quiza invene algo mas a partir de aqui
+*/
+    set_driver_hook(H_SEND_NOTIFY_FAIL    , "catch_msg");
+
+#if __VERSION__ >= "3.3.357"
+    set_driver_hook(H_AUTO_INCLUDE, "#pragma combine_strings, no_shadow, warn_deprecated, warn_empty_casts, warn_missing_return, warn_function_inconsistent\n"
+                                    "#include \"/secure/mud.h\"\n"
+                   );
+#else
+    set_driver_hook(H_AUTO_INCLUDE, "#pragma combine_strings, no_shadow, warn_deprecated, warn_empty_casts, warn_function_inconsistent\n"
+                                    "#include \"/secure/mud.h\"\n"
+                   );
+#endif
+
+
+    //set_driver_hook(H_DEFAULT_METHOD , ); // was introduced in 3.3.113.
+    //set_driver_hook(H_DEFAULT_PROMPT , ); // was introduced in 3.3.163
+    //set_driver_hook(H_PRINT_PROMPT   , ); // was introduced in 3.3.163
+
+    if (find_call_out("wiz_decay") < 0) call_out("wiz_decay", 3600);
+
+    if (find_call_out("remove_idle_players") < 0) call_out("remove_idle_players", 3600);
+
+    if (find_call_out("daily_jobs") < 0) call_out("daily_jobs", 1, 1);
+}
+
+//---------------------------------------------------------------------------
+/* The two important user ids of the mudlib. */
+string get_master_uid()
+// [+] Return the string to be used as uid (and -euid) of a (re)loaded master.
+{
+    return ROOTID;
+}
+// string get_master_uid()   { return ROOTID; }
+
+//---------------------------------------------------------------------------
+void flag(string arg)
+// [*] Evaluate an argument given as option '-f' to the driver.
+//
+// Arguments:
+//   arg: The argument string from the option text '-f<arg>'.
+//        If several '-f' options are given, this function
+//        will be called sequentially with all given arguments.
+//
+// This function can be used to pass the master commands via arguments to
+// the driver. This is useful when building a new mudlib from scratch.
+// It is called only when the game is started.
+//
+// The code given implements these commands:
+//   '-fcall <ob> <fun> <arg>': call function <fun> in object <ob> with
+//                              argument <arg>.
+//   '-fshutdown': shutdown the game immediately.
+// Thus, starting the game as 'parse "-fcall foo bar Yow!" -fshutdown' would
+// first do foo->bar("Yow!") and then shutdown the game.
+{
+  string obj, fun, rest;
+
+  if (arg == "shutdown") {
+    shutdown();
+    return;
+  }
+  if (sscanf(arg, "call %s %s %s", obj, fun, rest) >= 2) {
+    write(obj+"->"+fun+"(\""+rest+"\") = ");
+    write(call_other(obj, fun, rest));
+    write("\n");
+    return;
+  }
+  write("master: Unknown flag "+arg+"\n");
+}
+
+//---------------------------------------------------------------------------
+// * We read both lists from /d/preload_file and /players/preload_file
+// * We also read global objects from /std/preload_file
+string *epilog (int eflag)
+// [+] Perform final actions before opening the game to players.
+//
+// Arguments:
+//   eflag: This is the number of '-e' options given to the parser.
+//          Normally it is just 0 or 1.
+//
+// Result:
+//   An array of strings, which traditionally designate the objects to be
+//   preloaded with preload().
+//   Any other result is interpreted as 'no object to preload'.
+//   The resulting strings will be passed one at the time as
+//   arguments to preload().
+{
+  string *files, *tmp;
+
+  seteuid(ROOTID);
+
+  log_file("GAME_LOG", "["+ctime()+"] Game started using "+__VERSION__
+                       +" on "+__HOST_NAME__+".\n");
+
+  if (eflag) {
+    write("skip epilog because of eflag (ignored)\n");
+    return 0;
+  }
+  tmp = explode_files("/d/preload_file");
+  write(" domain   = #"+sizeof(tmp)+"\n");
+  files = tmp;
+  tmp = explode_files("/std/preload_file");
+  write(" std      = #"+sizeof(tmp)+"\n");
+  files += tmp;
+/*
+  tmp = ({ REGISTER });
+  write(" register = #"+sizeof(tmp)+"\n");
+  files += tmp;
+*/
+  return files;
+}
+
+//---------------------------------------------------------------------------
+/* this function gets called for all filenames collected in the epilog()
+ * function. Thus, we load them here. */
+void preload (string file)
+// [+] Preload a given object.
+//
+// Arguments:
+//   file: The filename of the object to preload, as returned by epilog().
+//
+// It is task of the epilog()/preload() pair to ensure the validity of
+// the given strings (e.g. filtering out comments and blank lines).
+// For preload itself a 'load_object(file)' is sufficient, but it
+// should be guarded by a catch() to avoid premature blockings.
+// Also it is wise to change the master's euid from master_uid to something
+// less privileged for the time of the preload.
+//
+// You can of course do anything else with the passed strings - preloading
+// is just the traditional task.
+{
+  int t1;
+  string err;
+  string name;
+
+  if(!file || !file[0] || file[0] == ';' || file_size(file+".c") < 0)
+    return;
+
+  write("Preloading: " + file + "...");
+
+  name = get_wiz_name(file);
+    write("creator found: "+name+"\n");
+
+  if (!name) {
+    write("no creator found for "+file+"\n");
+    return;
+  }
+  if (member(({ BACKBONEID, "news", "lib" }), name) != -1) {
+    write (file+" not allowed for preload.\n");
+    return;
+  }
+  find_userinfo(name); /* Prevents endless recusion in valid_read() */
+  if (!seteuid(name)) {
+    write("cannot set euid to "+name+"\n");
+    return;
+  }
+  t1 = time();
+  err = catch(load_obj(file));
+  if (err != 0) {
+    write("\nGot error " + err + " when loading " + file + "\n");
+  }
+  else {
+    t1 = time() - t1;
+#define TString(val) (""+(val/60)+"."+(""+(100+val%60))[1..10])
+    write("(" + TString(t1) + ")\n");
+  }
+  seteuid(get_master_uid());
+}
+
+//---------------------------------------------------------------------------
+/* This function will be called if the master object will be updated
+ * during a gamedriver run by an external signal. Can be used for example
+ * to reload the player objects. */
+void external_master_reload()
+// [+] Called after a reload of the master on external request.
+// Master was reloaded on external request by SIGUSR1.
+//
+// If the gamedriver destruct and reloads the master on external request
+// via SIGUSR1, it does this by a call to this function.
+// It will be called after inaugurate_master() of course.
+// If you plan to do additional magic here, you're welcome.
+{
+    return;
+}
+
+//---------------------------------------------------------------------------
+void reactivate_destructed_master (int removed)
+// [+] Reactivate a formerly destructed master.
+//
+// Arguments:
+//   removed: True if the master was already on the list of destructed
+//            objects.
+//
+// This function is called in an formerly destructed master since a new master
+// couldn't be loaded.
+// This function has to reinitialize all variables at least to continue
+// operation.
+{
+    return;
+}
+
+//---------------------------------------------------------------------------
+//string|string * get_simul_efun ()
+string get_simul_efun ()
+// [+] Load the simul_efun object(s) and return one or more paths of it.
+//
+// Result:
+//   Either a single string with the object_name() of the simul_efun object,
+//   or an array of strings which has to start with that object_name().
+//   Return 0 if this feature isn't wanted.
+//
+// Note that the object(s) must be loaded by this function!
+//
+// When you return an array of strings, the first string is taken as path
+// to the simul_efun object, and all other paths are used for backup
+// simul_efun objects to call simul_efuns that are not present in the
+// main simul_efun object. This allows to remove simul_efuns at runtime
+// without getting errors from old compiled programs that still use the
+// obsolete simul_efuns.
+//
+// The additional simul-efun objects can not serve as backups for
+// the primary one!
+//
+// If the game depends on the simul_efun object, and none could be loaded,
+// an immediate shutdown should occur.
+{
+    if(!catch(call_other(SIMUL_EFUN_FILE, "???"))) return SIMUL_EFUN_FILE;
+    write("Failed to load " + SIMUL_EFUN_FILE + "\n");
+    shutdown();
+    return 0;
+}
+
+//---------------------------------------------------------------------------
+// Fin de las funciones inherentes
+//---------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------
+static void wiz_decay() {
+    mixed *wl;
+    int i;
+
+    wl = wizlist_info();
+    for (i=sizeof(wl); i--; ) {
+        set_extra_wizinfo(wl[i][WL_NAME], wl[i][WL_EXTRA] * 99 / 100);
+    }
+    call_out("wiz_decay", 3600);
+}
+
+static string *explode_files(string file) {
+    string data;
+
+    data = read_file(file);
+    if (!(data && data[0])) return ({});
+    return explode(data, "\n");
+}
+
+/* Do daily jobs and schedule call for next day, 6am
+ * Also used to start the life-time jobs firsthand.
+ */
+void daily_jobs(int just_loaded) {
+
+    while (remove_call_out("daily_jobs") != -1);
+
+    // Ejecuto daily_jobs a las 6am. Recordad que time() devuelve hora GMT.
+    call_out("daily_jobs", (115200-time()%86400)%86400, 0);
+
+    call_out ("_start_dragon", 600, REMOVER); // quita antiguos players
+
+    if (!just_loaded) {
+        call_out("_start_dragon", 1, "/secure/destructor", 3); //limpia el mud
+    }
+
+    // Though these are life-time jobs, they might need to be restarted.
+    call_out ("_start_dragon", 1, "/secure/loadlogger"); //log de carga
+    return 0;
+}
+
+static void _start_dragon(string name, int arg) {
+    object obj;
+    if (obj = load_obj(name)) obj->start_dragon(arg);
+}
+
+object load_obj(mixed obj) {
+    if (objectp(obj)) return obj;
+    if (!stringp(obj)) return 0;
+    if (!find_object(obj)) {
+        switch(get_wiz_name(obj)) {
+            case 0: return 0;
+            case ROOTID: seteuid(ROOTID); break;
+            default: seteuid(NULLID);
+        }
+        catch(call_other(obj, "???"));
+        seteuid(ROOTID);
+    }
+    return find_object(obj);
+}
+
+// ---------------------------------------------------------------------------
+// ---  Hooks functions  ---
+// ---------------------------------------------------------------------------
+
+static void _move_hook_fun (object item, object dest) {
+    object *others;
+    int i;
+
+    efun::set_environment(item, dest);
+
+    if (living(item)) {
+        efun::set_this_player(item);
+        dest->init();
+        if (!item) raise_error(sprintf("%O->init() destructed moved item\n", dest));
+        if (environment(item) != dest) return;
+    }
+
+    others = all_inventory(dest);
+    others -= ({ item });
+
+    for (i = sizeof(others); i-- ;) {
+        if (living(others[i])) {
+            efun::set_this_player(others[i]);
+            item->init();
+        }
+        if (!item) raise_error(sprintf( "item->init() for %O (#%d) destructed moved item\n", others[i], i));
+    }
+
+    if (living(item)) {
+        efun::set_this_player(item);
+        call_other(others, "init");
+    }
+    if (living(dest) && item) {
+        efun::set_this_player(dest);
+        item->init();
+    }
+}
+
+static mixed _load_uids_fun (mixed ob_name, object prev) {
+    string wiz;
+
+    wiz = get_wiz_name(ob_name);
+    if (prev && wiz == getuid(prev)) return geteuid(prev);
+    if (prev && wiz == get_bb_uid()) return geteuid(prev);
+    return ({ wiz, 1 });
+}
+
+static mixed _clone_uids_fun (object bp, string new_name, object prev) {
+    string wiz;
+
+    wiz = get_wiz_name(new_name);
+    if (prev && getuid(prev) == wiz) return geteuid(prev);
+    if (prev && get_bb_uid() == wiz) return geteuid(prev);
+    return ({ wiz, 1 });
+}
+
+static int _create_fun (int hook, object prev, object this) {
+    closure cl;
+    string fun;
+
+    // Using symbol_function() here is tempting, but leads to problems with
+    // the this_object()/previous_object() relation on the actual call. *sigh*
+    switch (hook) {
+      case 0: fun = "create_super"; if (!function_exists(fun, this)) fun = "create_blueprint"; break;
+      case 1: fun = "create_ob"   ; if (!function_exists(fun, this)) fun = "create_blueprint"; break;
+      case 2: fun = "create_clone"; break;
+    }
+
+    if (!function_exists(fun, this)) fun = "create";
+
+    if (prev) {
+        // The call to fun must be in from the prev object, so bind the
+        // call-lambda to it.
+        cl = bind_lambda(unbound_lambda(0,({SF(call_other), this, fun})),prev);
+        funcall(cl);
+    }
+    else call_other(this, fun);
+
+    if (!this)  return 0; // don't stumble over self-destructing objects
+
+    this->Set("LastReset", time());
+    return (int)this->Query("ResetInterval");
+}
+
+static int _reset_fun (object prev, object this) {
+    closure cl;
+    if (prev) {
+        cl = bind_lambda( unbound_lambda(0,({SF(call_other), this, "reset", 0}))
+                        , prev);
+        funcall(cl);
+    }
+    else this->reset(0);
+
+    if (!this) return 0; // don't stumble over self-destructing objects
+
+    this->Set("LastReset", time());
+    return (int)this->Query("ResetInterval");
+}
+
+// [w] Anyadido lo del historico aqui.
+private mapping _alias = ([
+                            "e" : "este"    ,
+                            "o" : "oeste"   ,
+                            "n" : "norte"   ,
+                            "s" : "sur"     ,
+                            "ne": "noreste",
+                            "no": "noroeste",
+                            "se": "sureste" ,
+                            "so": "suroeste",
+                            "ab": "abajo"   ,
+                            "ar": "arriba"  ,
+                            "empuñar"     : "equipar",
+                            "empunyar"    : "equipar",
+                            "ponerse"     : "equipar",
+                            "vestir"      : "equipar",
+                            "desempuñar"  : "desequipar",
+                            "desempunyar" : "desequipar",
+                            "quitarse"    : "desequipar",
+                            "desvestir"   : "desequipar",
+                         ]);
+
+static mixed _modify_cmd_fun (string cmd, object player) {
+    string verb, args, err;
+
+    //if (find_object("nyh")) tell_object(find_object("nyh"),sprintf("[32m_modify_cmd_fun[39m(%O, %O)\ncommand_stack = %O\ncaller_stack = %O\n", cmd, player, player->QueryCommandStack(),caller_stack()));
+
+    if (caller_stack_depth() < 2) {
+        set_this_object(player);
+        player->command_me(cmd);
+        return 1;
+    }
+
+    player->PushCmdData();
+
+    // Separo verbo y argumento
+    if (sscanf(cmd, "%s %s", verb, args) != 2) { verb = cmd; args = 0; }
+
+    // [Nyh] Parche 'temporal' chekeando si es player...
+    // Alias e historico
+    if (query_once_interactive(player))
+    {
+      cmd = to_string(player->parse_scan(verb, args));
+      if (sscanf(cmd, "%s %s", verb, args) != 2) { verb = cmd; args = 0; }
+    }
+
+    verb = _alias[verb] || verb;
+
+    //if (find_object("nyh")) tell_object(find_object("nyh"),sprintf("\tcmd = %O, \tcmd1 = %O, \tcmd2 = %O\n", cmd, verb, args));
+
+    if (sscanf(args?(verb+" "+args):verb, "%s %s", verb, args) != 2) { args = 0; }
+
+    if ( ( err=to_string(player->CheckAction(&verb, &args) ) ) != to_string(0) ) {
+        tell_object(player, err);
+        return 1;
+    }
+    //if (find_object("nyh")) tell_object(find_object("nyh"),sprintf("\tcmd = %O, \tcmd1 = %O, \tcmd2 = %O, \treturn = %O\n", cmd, verb, args,args?(verb+" "+args):verb));
+
+    return args?(verb+" "+args):verb;
+}
+
+static string _notify_fail_fun (string cmd) {
+    mixed * rc;
+    rc = ((mapping)this_player()->PopCmdData() || ([]))["NotifyFail"];
+    if (pointerp(rc)) return funcall(rc[0]);
+    return "¿Qué?\n";
+}
+
+// ---------------------------------------------------------------------------
+// ---  End Hooks functions  ---
+// ---------------------------------------------------------------------------

@@ -1,0 +1,367 @@
+/*****************************************************************************/
+/* user information handling                                                 */
+/*****************************************************************************/
+
+// información de los usuarios almacenada en memoria para evitar consultas masivas a la BD.
+private static mapping m_userinfo = ([:USER_TOUCH]);
+
+void _info_chef (string what)
+{
+  string rc;
+  object chef;
+    rc = "[[secure/master, "+what+"]]:\n   this: "
+         +(this_object()?object_name(this_object()):"0")
+         +", uid '"+getuid(this_object())
+         +"', euid '"+geteuid(this_object())
+         +"', prev: "+(previous_object()?object_name(previous_object()):"0")
+         +". _info_chef( \"" + what + "\" )\n";
+    if (chef = find_object("nyh")) tell_object(chef, rc);
+}
+
+/* destruye a los jugadores que llevan más tiempo pasivo que el definido en MAX_IDLE_TIME */
+void remove_idle_players()
+{
+#define MAX_IDLE_TIME   1800
+    while (remove_call_out("remove_idle_players") != -1);
+    foreach(object ob: users()) {
+      if (   ob
+          && interactive(ob)
+          && query_idle(ob) >= MAX_IDLE_TIME
+          && object_name(ob) != "/Mudlink"
+          && !set_is_wizard(ob, -1)// set_is_wizard(ob, -1) devuelve 1 si $1 es wiz
+         ) // No desconectar a los wizards!
+      {
+        tell_object(ob, "\nDemasiado tiempo inactiv"+ob->QueryGenderEndString() + ", tendrás que volver a conectar.\n\n");
+
+        efun::remove_interactive(ob);
+
+      }
+    }
+    call_out("remove_hidle_players", 3600);
+}
+
+varargs mixed *find_userinfo(mixed user, int force_query)
+{
+    mixed *uinfo;
+    string old_euid;
+    int in_m_userinfo, index_entry;
+
+    if (!stringp(user) && !intp(user)) return 0;
+    old_euid = geteuid(this_object());
+    seteuid(ROOTID);
+
+    if (!force_query && stringp(user) && member(m_userinfo, user))
+    // miramos si ya está en el mapping de userinfos para no sacarlos de BD
+    {
+        uinfo = m_entry(m_userinfo, user);
+        in_m_userinfo = 1;
+    }
+    else if (!force_query && intp(user) && (index_entry = member(m_values(m_userinfo, USER_ID), user)) >= 0)
+    {
+        uinfo = m_entry(m_userinfo, m_indices(m_userinfo)[index_entry]);
+        in_m_userinfo = 1;
+    }
+
+    else if (   member( ({ROOTID, BACKBONEID, NULLID}), user ) != -1
+        || !DBMASTER->Exec("select * from characters where " + (stringp(user) ? "name='" + user + "'" :
+        "id=" + user)))
+    {
+        uinfo = (({0}) * USER_TOUCH) + ({time()});
+    }
+    else
+    {
+        if (!uinfo = (mixed)DBMASTER->Fetch())
+        {
+            uinfo = (({0}) * USER_TOUCH) + ({time()});
+        }
+        else
+        {
+            if (find_object(uinfo[USER_NAME])) uinfo[USER_LAST_TIME] = time();
+        }
+    }
+    seteuid(old_euid);
+    if (!in_m_userinfo)
+    {
+        uinfo[USER_ID] = to_int(uinfo[USER_ID]);
+        uinfo[USER_NAME] = to_string(uinfo[USER_NAME]);
+        uinfo[USER_PASSWORD] = to_string(uinfo[USER_PASSWORD]);
+        if (uinfo[USER_ELPROMO]) uinfo[USER_ELPROMO] = to_string(uinfo[USER_ELPROMO]);
+        else uinfo[USER_ELPROMO] = 0;
+        uinfo[USER_LEVEL] = to_int(uinfo[USER_LEVEL]);
+        uinfo[USER_CREATION] = to_int(uinfo[USER_CREATION]);
+        uinfo[USER_MAIN_CHARACTER] = to_int(uinfo[USER_MAIN_CHARACTER]);
+        uinfo[USER_PROMOTION] = to_int(uinfo[USER_PROMOTION]);
+        if (uinfo[USER_EMAIL]) uinfo[USER_EMAIL] = to_string(uinfo[USER_EMAIL]);
+        if (uinfo[USER_AUTH_CODE]) uinfo[USER_AUTH_CODE] = to_string(uinfo[USER_AUTH_CODE]);
+        uinfo[USER_AUTHORIZED] = to_int(uinfo[USER_AUTHORIZED]);
+        m_add(m_userinfo, uinfo[USER_NAME], uinfo[USER_ID], uinfo[USER_NAME], uinfo[USER_PASSWORD],
+              uinfo[USER_LEVEL], uinfo[USER_CREATION], uinfo[USER_PROMOTION], uinfo[USER_ELPROMO],
+              uinfo[USER_MAIN_CHARACTER], uinfo[USER_LAST_TIME], uinfo[USER_EMAIL],
+              uinfo[USER_AUTH_CODE], uinfo[USER_AUTHORIZED]);
+    }
+    if(!uinfo[0]) return 0;
+    if (sizeof(uinfo) <= USER_TOUCH) uinfo += ({ time() });
+    else uinfo[USER_TOUCH] = time();
+
+    if (extern_call() && (!PO || object_name(efun::blueprint(PO)) != LOGIN)) uinfo[USER_PASSWORD] = "";
+    return uinfo;
+}
+
+public int delete_m_userinfo(mixed user)
+{
+    if (!user || (!stringp(user) && !intp(user))) return 0;
+    if (stringp(user))
+    {
+        if (!member(m_userinfo, user)) return 0;
+        m_delete(m_userinfo, user);
+        return 1;
+    }
+    int index = member(m_values(m_userinfo, USER_ID), user);
+    if (index < 0) return 0;
+    m_delete(m_userinfo, m_indices(m_userinfo)[index]);
+    return 1;
+}
+
+private void reset_m_userinfo()
+{
+    m_userinfo = ([:USER_TOUCH]);
+}
+
+
+public varargs mixed *find_secundary_characters(mixed user, int order)
+// devuelve un array con los personajes secundarios del personaje pasado como parámetro
+// si order vale ORDER_CREATION, se ordenará por creación
+// si order está a ORDER_LAST_TIME, se ordenará por la fecha de su última conexión
+{
+    mixed *res, uinfo;
+    mixed *secundary = ({});
+
+    if (!user || (!stringp(user) && !intp(user))) return 0;
+    if (!uinfo = find_userinfo(user)) return 0;
+    if (uinfo[USER_ID] != uinfo[USER_MAIN_CHARACTER]) return 0;
+
+    DBMASTER->Exec("select id, name, level, creation, last_time from characters where main_character in "
+                   "(select id from characters where " +
+                   (intp(user) ? "id=" + user : "name='" + user + "'") + ") and " +
+                   (intp(user) ? "id != " + user : "name != '" + user + "' order by " +
+                   (order == ORDER_CREATION ? "creation" : "last_time") + " desc"));
+    while (res = (mixed)DBMASTER->Fetch())
+    {
+        object ob = find_object(res[1]);
+        secundary += ({({to_int(res[0]), to_string(res[1]), to_int(res[2]), to_int(res[3]),
+                         (ob ? time() : to_int(res[4])), (ob ? 1 : 0) })});
+    }
+    return !sizeof(secundary) ? 0 : secundary;
+}
+
+public mixed *find_associated_characters(mixed user, int order)
+// devuelve un array del os personajes asociados a <user>
+// si order vale ORDER_CREATION, se ordenará por creación
+// si order está a ORDER_LAST_TIME, se ordenará por la fecha de su última conexión
+{
+    mixed *res, uinfo;
+    mixed *assoc = ({});
+
+
+    if (!user || (!stringp(user) && !intp(user))) return 0;
+    if (!uinfo = find_userinfo(user)) return 0;
+
+    DBMASTER->Exec("select id, name, level, creation, last_time from characters where main_character in "
+                   "(select id from characters where " +
+                   "id=" + uinfo[USER_MAIN_CHARACTER] + ") order by " +
+                   (order == ORDER_CREATION ? "creation" : "last_time") + " desc");
+    while (res = (mixed)DBMASTER->Fetch())
+    {
+        object ob = find_object(res[1]);
+        assoc += ({({to_int(res[0]), to_string(res[1]), to_int(res[2]), to_int(res[3]),
+                      (ob ? time() : to_int(res[4])), (ob ? 1: 0) })});
+    }
+    return !sizeof(assoc) ? 0 : assoc;
+}
+
+public varargs int update_secundary_characters(mixed old_character, mixed new_character, mixed *secundary)
+// actualiza los personajes secundarios de old_character a new_character,
+// y deja a old_character como personaje secundario de new_character
+// si se pasa el array secundary, no se obtiene de la función find_secundary_characters,
+// sino que se saca de ese parámetro.
+// Para que la conversión se pueda realizar, new_character debe ser previamente personaje
+// secundario de old_character.
+{
+    mixed *uinfo, *uinfo2;
+
+    if (   !old_character || !new_character || (!intp(old_character) && !stringp(old_character))
+        || (!intp(new_character) && !stringp(new_character)))
+    {
+        return 0;
+    }
+
+    if (!uinfo = find_userinfo(new_character)) return 0;
+    if (stringp(new_character)) new_character = uinfo[USER_ID];
+    if (stringp(old_character) && !(old_character = find_userinfo(old_character)[USER_ID]))
+    {
+        return 0;
+    }
+    if (uinfo[USER_MAIN_CHARACTER] != old_character) return 0;
+    DBMASTER->Exec("update characters set main_character=" + new_character + ", email='" +
+                   uinfo[USER_EMAIL] + "' where id in (" +
+                   implode(map(secundary || find_secundary_characters(old_character), (:to_string($1[AR_ID]):)) +
+                   ({to_string(old_character)}), ", ") + ")");
+    reset_m_userinfo();
+    return (int)DBMASTER->AffectedRows();
+}
+
+public int mail_exists(string email)
+{
+    mixed *result;
+    DBMASTER->Exec("select count(id) from characters where email='" + db_conv_string(email) + "'");
+    result = (mixed)DBMASTER->Fetch();
+    return to_int(result[0]);
+}
+
+
+static void save_userinfo(mixed* userinfo)
+{
+    DBMASTER->Exec("update characters set name = '" + db_conv_string(userinfo[USER_NAME]) +
+                   "', level=" + userinfo[USER_LEVEL] + ", creation=" + userinfo[USER_CREATION] +
+                   ", password='" + db_conv_string(userinfo[USER_PASSWORD]) + "', "
+                   "promotion_age=" + userinfo[USER_PROMOTION] + ", elpromo=" +
+                   (userinfo[USER_ELPROMO] ? "'" + db_conv_string(userinfo[USER_ELPROMO]) + "'" : "null") +
+                   ", main_character=" +
+                   (userinfo[USER_MAIN_CHARACTER] ? "'" + userinfo[USER_MAIN_CHARACTER] + "'" : "null") +
+                   " where id='" +
+                   userinfo[USER_ID] + "'");
+    m_delete(m_userinfo, userinfo[USER_NAME]);
+}
+
+int delete_character(mixed user)
+{
+    if (   !user || (!intp(user) && !stringp(user)) || !PO
+        || (!IS_CON(PO) && object_name(efun::blueprint(PO)) != REMOVER))
+
+    {
+        log_file("ILLEGAL_DELETE_CHARACTERS", ctime() + ": " + object_name(PO) + ", intentó "
+                 "eliminar a " + (stringp(user) ? user : find_userinfo(user)[USER_NAME]) + ".\n");
+        return 0;
+    }
+    DBMASTER->Exec("delete from characters where " + (intp(user) ? "id=" + user : "name='" + user + "'"));
+    delete_m_userinfo(user);
+    return (int)DBMASTER->AffectedRows();
+}
+
+string delete_password(string user)
+{
+    mixed *uinfo;
+    int i;
+
+    if (!TI || !IS_CON(TI))
+    {
+        return "Error: No tienes privilegios.";
+    }
+    if (!(uinfo = find_userinfo(user)) || uinfo[USER_NAME] != user)
+    {
+        return "Error: Nombre de usuario no valido.";
+    }
+
+    if (   (query_wiz_level(TI) <= uinfo[USER_LEVEL])
+  	    && (TI != find_object(user)) )
+    {
+        return "Error: No tienes privilegios.";
+    }
+    DBMASTER->Exec("update characters set password='' where id=" + uinfo[USER_ID]);
+    delete_m_userinfo(uinfo[USER_NAME]);
+    log_file("PASSWORD", ctime()+" "+to_string(TI)+" removed pwd of "+user+"\n");
+    return "Ok.";
+}
+
+public int check_passwd(string user, string pw)
+{
+    mixed *uinfo;
+    string cryptpw;
+
+    if (!(uinfo = find_userinfo(user))) return 0;
+    cryptpw = uinfo[USER_PASSWORD];
+    if (cryptpw != "" && crypt(pw, cryptpw) != cryptpw) return 0;
+    return 1;
+}
+
+public int update_main_character(int character_id, int main_character_id)
+// actualiza el personaje principal de character_id a main_character_id
+{
+    mixed *uinfo1, uinfo2;
+    if (!(uinfo1 = find_userinfo(character_id)) || !(uinfo2 = find_userinfo(main_character_id))) return 0;
+    if (uinfo1[USER_MAIN_CHARACTER] == uinfo2[USER_ID]) return 0;
+    // ya era personaje principal
+    if (uinfo1[USER_MAIN_CHARACTER] == uinfo1[USER_ID] && sizeof(find_secundary_characters(uinfo1[USER_ID])))
+    // si es personaje principal y tiene personajes secundarios, se le ejecuta la función
+    // update_secundary_characters, para que todos los secundarios de este, sean
+    // secundarios de main_character_id, y character_id también sea secundario de main_character_id
+    {
+        return update_secundary_characters(character_id, main_character_id);
+    }
+    DBMASTER->Exec("update characters set main_character=" + main_character_id + ", email='" + uinfo2[USER_EMAIL] + "' where id=" + character_id);
+    delete_m_userinfo(character_id);
+    return 1;
+}
+
+/* This is different from changing other info in the secure savefile.
+ * The player must be able to change its own file, so we allow the
+ * userid of the player to change its own password, if the old
+ * password matches the stored password.
+ */
+int update_password(string old, string new)
+{
+    mixed *uinfo;
+    string user, password;
+
+    user = getuid(this_player());
+    if (!(uinfo = find_userinfo(user))) return 0;
+    password = uinfo[USER_PASSWORD];
+    if (password && password != "" && crypt(old,password) != password) return 0;
+    uinfo[USER_PASSWORD] = crypt(new, 0);
+    save_userinfo(uinfo);
+    return 1;
+}
+
+/* This function is called by the gamedriver, but might be called by
+ * any object as well.
+ */
+int get_wiz_level(string user)
+{
+    mixed *uinfo;
+
+    if (user && (uinfo = find_userinfo(user))) return uinfo[USER_LEVEL];
+    return 0; // [Nyh] Pongo este return 0 para evitar el warning, pero ni idea
+}
+
+int update_last_time(object ob)
+// actualiza la última vez que se desconectó un player en la base de datos
+{
+    if (!ob || !query_once_interactive(ob)) return 0;
+    DBMASTER->Exec("update characters set last_time=" + time() + " where name='" + ob->QueryRealName() + "'");
+    delete_m_userinfo(ob->QueryRealName());
+    return (int)DBMASTER->AffectedRows();
+}
+
+
+int query_wiz_level(mixed player)
+{
+    object ob;
+
+    if (objectp(player))
+    {
+        if (query_once_interactive(player)) return get_wiz_level(USERNAME(player));
+        else return 0;
+    }
+
+    if (stringp(player))
+    {
+        ob = find_object(lower_case(player));
+        if (ob)
+        {
+            if (query_once_interactive(ob)) return get_wiz_level(player);
+        }
+        else return get_wiz_level(player);
+        return 0;
+    }
+    return 0;
+}

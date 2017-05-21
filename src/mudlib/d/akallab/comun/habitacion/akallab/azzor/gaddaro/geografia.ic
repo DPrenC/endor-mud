@@ -1,0 +1,15 @@
+  AddDetail(({"pueblo","villa","Gaddaro"}),
+    "Gaddaro es el nombre de este pequeño pueblo situado en el noroeste del "
+    "valle de Azzor. Sus habitantes se dedican basicamente a la agricultura "
+    "y a la pesca en el cercano lago Darum.\n");
+
+  AddDetail(({"lago","darum","Darum","lago Darum"}),
+    "Es un lago de tamaño medio formado por el embalse de las aguas del río "
+    "Daraii que se halla al noroeste del valle de Azzor. En su orilla se "
+    "encuentra el pueblo de Gaddaro.\n");
+
+  AddDetail(({"afluente","daraii","Daraii","afluente Daraii","río"}),
+    "El Daraii es uno de los afluentes del río Kuneii. Nace entre las montañas "
+    "Negras y la cordillera de Kova al noroeste del valle. Al poco de nacer, se "
+    "embalsa formando el lago Darum, en cuya orilla se halla el pueblo de "
+    "Gaddaro. Luego avanza hacia el sur donde se encuentra con el río Kuneii.\n");

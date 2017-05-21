@@ -1,0 +1,11 @@
+[1mCOMANDO[0m
+  charset
+
+[1mDESCRIPCION[0m
+  Te permite cambiar el juego de caracteres de 'us-ascii' a 'latin1' y
+  viceversa, con lo cual podrás ver las eñes y los acentos o bien
+  deshabilitarlos en caso de que tu cliente telnet no te permita verlos
+  de una forma correcta.
+
+[1mTEMAS RELACIONADOS[0m
+  stty

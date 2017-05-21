@@ -1,0 +1,11 @@
+
+SYNOPSIS
+        int query_wiz_level(object player)
+        int query_wiz_level(string player)
+
+DESCRIPTION
+        Return the wizard level of the player. The argument player can be the
+        name of the wizard or his object file.
+
+SEE ALSO
+        remove_alist

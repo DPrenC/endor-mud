@@ -1,0 +1,21 @@
+Comandos de los Guardabosques
+-----------------------------
+
+  - gayuda              Muestra un texto de ayuda del gremio
+  - ghabilidades        Muestra el estado de las habilidades
+
+Habilidades que se usan a través de comandos (el número entre paréntesis 
+indica el nivel que tienes que tener para que te den dicha habilidad):
+
+  - identificar <planta> Intenta identificar una planta por sus propiedades.
+  - calmar <animal>      Intenta calmar a un animal que esté combatiendo
+			 (8).
+  - corteza              Cambia la piel en corteza de arbol (5).
+  - convocar             Convoca a una manada de animales (10).
+  - piedra		 Endurece la piel hasta darle consistencia de piedra
+			 (15).
+  - sangre		 Convierte la sangre en savia para una mayor
+			 regeneración de los puntos de vida (15).
+  - transmutar		 Transmuta el cuerpo del guardabosques a un lobo
+			 o a un oso, dependiendo del acierto (20).
+  - hierro		 Endurece la piel hasta convertirla en hierro (30).

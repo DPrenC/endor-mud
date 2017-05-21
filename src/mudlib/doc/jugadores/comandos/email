@@ -1,0 +1,14 @@
+[1mCOMANDO[0m
+  email [<nuevo_email>]
+
+[1mDESCRIPCION[0m
+  Si no le introduces ningún argumento este comando te visualizará el email
+  que tienes configurado en el mud. Si escribes después un nuevo email el
+  comando enviará un correo a la nueva dirección para proceder al cambio de la misma.
+   
+[1mEJEMPLOS[0m
+  email                        Te muestra tu dirección actual.
+  email test@simauria.upv.es   Te cambia tu dirección por esta nueva.
+
+[1mTEMAS RELACIONADOS[0m
+  charset, stty, ficha

@@ -1,0 +1,14 @@
+[1mCOMANDO[0m
+  salvar
+
+[1mDESCRIPCION[0m
+  Guarda todas tus características y objetos de forma inminente. El mud
+  debería guardarlos automaticamente pero es bueno realizarlo de vez
+  en cuando por si acaso ocurriera algo desagradable como un corte del
+  suministro electrico en el servidor.
+   
+[1mEJEMPLOS[0m
+  salvar
+
+[1mTEMAS RELACIONADOS[0m
+  abandonar, reiniciar

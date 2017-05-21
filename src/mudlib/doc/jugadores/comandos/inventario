@@ -1,0 +1,12 @@
+[1mCOMANDO[0m
+  inventario
+
+[1mDESCRIPCION[0m
+  Te muestra todos los objetos que tengas en tu inventario. Existe la
+  abreviatura 'i'.
+   
+[1mEJEMPLOS[0m
+  inventario
+
+[1mTEMAS RELACIONADOS[0m
+  equipar, desequipar, coger, tirar

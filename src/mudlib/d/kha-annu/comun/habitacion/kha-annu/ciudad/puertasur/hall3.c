@@ -1,0 +1,49 @@
+//*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+//*   hall3.c                           *
+//* Archivo de: Gorthem, El forjador    *
+//* Email: jorcama@euibbs.upv.es        *
+//* Basado en --------.c                *
+//* Creacion: 01.08.98                  *
+//* Modificacion: 01.08.98              *
+//* Agradecimientos:                    *
+//*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+
+#include "./path.h"
+#include <properties.h>
+#include <materials.h>
+inherit KHA_ROOM;
+create() {
+ ::create();
+
+ SetIntShort("el hall de Kha-annu");
+ SetIntLong("Estas frente a un barracon de guardias enanos, en una garita.\n"
+ "Aqui es donde un guardia vigila la entrada a Kha-annu.\n"
+ "Los guardias descansan en el interior del barracon.\n"
+ "Al norte hay una calle, al oeste la puerta principal.\n");
+
+ SetIndoors(1);
+ SetIntBright(60);
+ SetIntNoise("Oyes conversaciones de guardias por ahi.\n");
+ SetIntSmell("Huele a comida, algo deben estar preparando ahi dentro.\n");
+
+ AddDetail(({"calles","calle"}),
+ "Esta calle alumbrada por falores deciende hacia las profundidades "
+ "de la montanya.\n");
+
+ AddDetail(({"garita"}),
+ "Es un garita con una gran puerta de metal, de vez en cuando entra "
+ "y sale un enano del barracon.\n");
+
+  AddItem(MONS+"guardia2",REFRESH_DESTRUCT,1);
+
+ AddExit("norte",("hall6"));
+ AddExit("oeste",("hall1"));
+ AddExit("noroeste",("hall5"));
+     AddExit("este","./barracon");
+    AddDoor("este","la puerta de la garita",
+        "Es una puerta de hierro, que comunica el hall con la garita de vigilancia.\n",
+        ({"puerta","puerta de garita","puerta de hierro"}),GENDER_FEMALE,
+        ([P_MATERIAL:M_HIERRO,P_DOOR_STATE:DOOR_CLOSED]));
+    SetLocate("Kha-annu");
+}
+

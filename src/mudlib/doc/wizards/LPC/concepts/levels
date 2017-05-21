@@ -1,0 +1,184 @@
+CONCEPT
+	levels
+
+
+LAST UPDATE
+	Mateese, 15-Feb-94, 21:00 MET
+
+
+DESCRIPTION
+	The basic idea is that players are measured just by their
+	experience. Thus the setting of their 'level' (P_LEVEL) is
+	completely up to the guild they are members of.
+
+	For those players who doesn't want to join any guild, the good
+	old 'Adventurers Guild' offers the traditional 20 levels.
+
+	The hierarchy system of Nightfall is based on the 'wiz level',
+	which is no player-property but instead maintained by the
+	/secure/master.
+
+	The system looks as following:
+
+	Wizlevel  Remarks
+	   0       Players, normal player abilities.
+	 10-19     Learner, apprentice wizards
+	 20-29     Wizard
+	 30-39     Domain Lords and Vice Lords
+	 40-49     Archwizards, Vice-Archwizards
+	 50-59     "Sourcerors"
+	 >=60      Demi-Gods, Gods
+
+
+	Players are the normal players and the 'high level' players,
+	i.e. players with more than 1 Meg XP.
+	The 'level' (P_LEVEL) of the player is a completely guild
+	specific value and not mandatory at all. However, for
+	comparison purposes exists in internal P_REAL_LEVEL which is
+	computed from the players experience and solved quests.
+	Players with a 'real level' of more than 19 are 'high level
+	players'.
+
+	If a high level player wants to become a wizard, it has to ask for
+	promotion to 'apprentice wizardhood'. The promotion can't
+	happen automatically, but must be approved by a domain-wizard.
+	An 'appentice wizard' or 'learner' has full wizard powers with
+	the only exception that it's not possible to load/clone the
+	objects it wrote. Since the code is nevertheless compiled, the
+        learner has the ability to learn correct LPC w/o the danger of
+        doing harm.
+	This phase lasts at least 2 hours of being online before the
+	next promotion step can be performed.
+
+	The learner can become a full-fledged 'wizard' by promotion of
+	a domain vice or domain lord. Ideally the newly born wizard
+	joins the domain of the promoting domain master.
+	Domain-less wizards have wiz level 20, domain-wizards 25.
+
+	A wizard can become 'domain vice' or 'domain lord' by
+	promotion of an (vice) archwizard (or in case of promotion to
+	'domain vice' by the domain lord itself).
+	A domain vice has wiz level 30, a domain lord 35.
+
+	Archwizards and Vice Archwizards have to be promoted someone
+	with higher wiz level. Vice Archwizards (wiz level 40) itself
+	may be promoted by Archwizards (level 45).
+
+	In detail: any wizard with wiz level >= 40 may set the wiz
+	level of any being, as long the wiz levels in question
+	are less than its own wiz level. 
+	The only exception is that an (Vice) Arch may demote itself.
+
+
+	For internal computations the mudlib uses a thing called
+	'general level': this is a standard level computed from a
+	players experience. It is used for internal computations of
+	the player's abilities.
+	It is not stored explicitely in a player, but computed on the
+	fly the /obj/racemaster.
+
+	The Adventurers Guild uses the 'general level' for
+	her own level structure. 
+
+
+INITIAL IDEAS by Deepthought:
+
+	Some ideas about the Nightfall II level system
+
+	Idea: A new player is born randomly in a village. Villages are
+	linked by streets and railways (balloons?...). There are
+	dangerous realms  inbetween. These areas form the "Homeland",
+	which is a more or less well known civiliced area.
+
+	Players of higher levels can leave the Homelands over/through
+	the Great Mountains, over the ocean, through the Big Desert...
+
+	There are castles (easy to install in a specific domain) which
+	are similar to the real castles (mansions) of Nightfall I, but
+	part of a domain. Several wizards may also plan a common
+	landscape between  towns, perhaps containing a town. And,
+	there may be also formed domains in the outer unknown areas
+	which might become more known as time passes. 
+
+	I'm thinking about an area of 1000x1000 km for the Homelands,
+	to give you an idea about the size, this is roughly a square
+	around Germany. A domain might have a size of about 100x100
+	km. So there could be 100 Domains in the Homelands...
+
+	Brainstorming about the challenges to a player:
+
+	1) Learn about mudding. Explore the village, test the killing
+	   abilities on some small animals, well, something like the
+	   adventurer park.
+	   Maybe solve a beginners quest to get the hang of it.
+
+	2) Journey through the Homelands. Visit other cities, visit
+	   castles, join one of the many guilds in the cities or in a
+	   deep forest. Solve some  quests, learn to cast spells
+	   and/or fighting.
+
+	3) Go into the unknown. Buy a ship and sail over the ocean.
+	   Ride over the Devils pass over the Great Mountains with
+	   lots of evil creatures. Visit the temple of the Evil Mad
+	   God, haunted by dangerous undeads...
+	   Solve some harder quests.
+
+	4) Go into Hell or on the Olymp. Solve epic quests which
+	   perhaps require a team to solve (Spells required, Fighting
+	   skills only required, thiefing skills, ...), maybe other
+	   worlds (insert your dream here).
+
+	5) Solve an "ultimate quest". Might be guild related, or a
+	   constantly evolving quest with always a new part after
+	   someone completes it, ideas welcome.. Should require some
+	   experience (What scale should we use?)
+
+	6) Seer, Hero, with new (quasi wizard) abilities like
+	   unlimited teleport, unlimited emotes (echo, echoall) people
+	   etc.
+
+	7) Learner, Apprentice Wizard. Read access to the mudlib.
+	   Clone, destruct.  Must be approved by a wizard who also
+	   helps the new Apprentice Wizard (Similar to SPONSOR, but
+	   more secure).
+	   Might also be visiting Gods from other muds who are
+	   interested in the mudlib.
+
+	8) Wizard. Must join a domain with the approvement of the Domain-Lord.
+	   The Domain Lord is responsible for the wizard and should help him
+	   with building, as should the other wizards of the domain do.
+
+	9) Domain Lord. Ruler of one Domain. Only with approval of an
+	   Archwizard possible. Should have an initial plan about the
+	   domain if it is to be founded or "elected" by the members
+	   of the domain, if an old Lord leaves. Has write access to
+	   all files of his domain. 
+
+	10) Archwizard. Without own domain (probably). Similar to
+	    Nightfall I, perhaps fewer archwizards. Specialized for
+	    certain areas. Have write access to all files, except
+	    security. Lords and Archwizards should work together to
+	    define and implement specific ideas. 
+
+	11) Head of Chamber of Lords: Speaker of all Domain Lords, to
+	    coordinate activities over more than two domains. Might
+	    change in regular or irregular intervals (elections,
+	    automatically,... ?) 
+	
+	12) Head of Archwizards: Same idea as for the Lords:
+	    Coordinate activities over several fields.
+
+	xx) Gods? Sourcerers? People who hack the gamedriver source
+	    and do what else is necessary for running Nightfall.
+
+	Wizlevel Group Remarks
+	  0       1-5  Players, Abilities determined through player
+		       object properties
+	 1-9       6   Seer, supernatural abilities 
+	10-19      7   Learner, "Pilgrims"
+	20-29      8   Wizard
+	30-39      9   Domain Lord
+	40-49     10   Archmage,-wizard, maximum file access permissions
+	50-59     11   Head of Chamber of Lords
+	60-69     12   Head of Chamber of Archmages
+	 xxx      xx   God

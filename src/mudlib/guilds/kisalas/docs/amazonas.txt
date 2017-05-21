@@ -1,0 +1,103 @@
+============================================
+|          GREMIO DE LAS AMAZONAS          |
+|  (Idea cooperativa de Woo y Avengelyne)  |
+============================================
+
+Versión : 11 de Marzo de 1999
+Texto de: Woo
+
+INTRODUCCION
+------------
+
+   Las amazonas estarán situadas en medio del lago norte de la isla
+   de Goldhai, en una pequeña islita a la que solo se podrá acceder
+   a través de un bote fantasma que va de la orilla del lago a la isla.
+   Por supuesto, como su nombre indica, son amazonas, por lo tanto
+   solo podrán unirse a este gremio personajes de sexo femenino.
+   Las amazonas son guerreras pero no muy fuertes y son hechiceras
+   pero no muy buenas, o sea, que dominan la lucha y la magia de forma
+   normal en ambos casos. Otra característica importante es el arco,
+   tienen una especial habilidad para atacar a otros que se encuentren
+   en otra habitación con este medio.
+
+   Las amazonas están acostumbradas a vivir entre la naturaleza, por
+   este motivo dominan a los animales y se hacen acompañar de mascotas
+   que les ayudan un poco en la lucha ya que pueden comunicarse
+   con ellas y dirigirlas. Las características principales de las
+   amazonas son por este orden destreza, fuerza, inteligencia y
+   constitución. Resumiendo, las amazonas empezarán como guerreras
+   y conformen aumente de nivel iran decantandose hacia la mágia.
+
+
+HABILIDADES
+-----------
+
+   TIRO CON ARCO
+      Es una de sus más importantes habilidades. En el gremio disponen
+      de arcos que pueden comprar y utilizarlos para atacar a otros
+      que se encuentren en una habitación contigua a donde esté la
+      amazona. Por supuesto deberan llevar flechas consigo.
+
+   LUCHA CON VARA
+      Son bastante buenas usando varas, palos y objetos contundentes
+      ligeros y de fácil uso. Esta cualidad la adquieren nada más
+      llegar al gremio.
+
+   LUCHA CON ESPADA
+      Las amazonas tienen un especial dominio de las espadas, pero solo
+      de aquellas de 1 sola mano, ligeras y manejables.
+
+   ESQUIVAR ATAQUE
+      Dada su increible destreza son capaces de esquivar los ataques de
+      sus adversarios en mayor o menor medida.
+
+   ODIO
+      Este caso se dará muy raramente y 'solo' cuando luchen contra
+      adversarios masculinos. De vez en cuando y si sus puntos de vida
+      están bajos lanzarán un ataque bestial contra su enemigo.
+
+   LANZAR
+      Al igual que son capaces de tirar flechas son muy diestras en
+      el arte de lanzar objetos ligeros mientras luchan (coronas
+      circulares, cuchillos, etc..)
+
+   INUTILIZAR ARMAS o ARMADURAS ¿magia o habilidad?
+      Esta habilidad solo la desarrollaran a niveles altos 25-30 y
+      'muy rara vez' conseguiran realizarla. Consiste en dejar
+      inservibles las armas o armaduras de sus adversarios, aunque
+      aún no tenemos decidido muy bien mediante que métodos y sobre
+      que armas y armaduras. Otra opción seria hacerlas desaparecer :)
+
+
+MAGIA
+-----
+
+   Su mágia está basada en el mentalismo y su dominio del psico. La
+   mayor parte son hechizos ofensivos de efectos paralizantes o
+   desconcertantes en el adversario. Maestras en el arte del camuflaje
+   y la desaparición. Cuando tengan un alto nivel podran hacer
+   una especie de clon suyo en el combate que durará un cierto tiempo.
+   En este caso los ataques tuyos tendran el doble de efecto y recibirás
+   teoricamente la mitad de los golpes. Podriamos achacarlo a un
+   efecto de sombra producido en el oponente mentalmente, o sea, él
+   se cree que está atacando a dos por lo tanto no te da bien y tu
+   al darle le das de forma más desprevenida. Aún están por decidir
+   la mayoria de hechizos, aunque eso si, apareceran a niveles altos.
+
+
+MASCOTAS
+--------
+
+   Como he dicho antes, al vivir en la naturaleza, las amazonas tienen el
+   poder de comunicarse y controlar a ciertos animales. Cada amazona
+   puede tener una mascota (halcon, cocodrilo, panda, etc..) que deberá
+   mantener y darle de comer y beber. Estas, si la amazona lo desea,
+   lucharan a su lado y aumentaran de nivel (maximo nivel 30 y costará
+   un montón). Por supuesto la amazona también puede entrenar a su mascota
+   haciendola luchar con animales débiles en un principio para que gane
+   puntos de experiencia e ir aumentando de nivel. Las mascotas costarán
+   más de 20 monedas de mithril y si muere tendrás que comprar otra con
+   nivel 1 y tendrias que enseñarle otra vez y hacerla poderosa. No hay
+   que decir que las mascotas no harán quests ;))
+
+

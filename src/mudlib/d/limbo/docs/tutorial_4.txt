@@ -1,0 +1,7 @@
+Asthar te dice: el mundo ahí fuera puede ser un lugar peligroso para tu salud. 
+(puedes usar 'estado' para saber como te encuentras). Utiliza 'coraje' para 
+decidir a partir de que momento dejas de luchar y corres por tu vida. Si 
+durante un combate pierdes puntos de vida, puedes comer o beber algo para 
+recuperarte. Por ahí he dejado algo de comida. Prueba a cogerla y usarla 
+('comer lo_que_sea' o 'beber lo_que_sea') para demostrar que me has entendido.
+¡Ah, no abuses del alcohol si no quieres una buena resaca!

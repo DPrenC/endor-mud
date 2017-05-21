@@ -1,0 +1,13 @@
+[1mCOMANDO[0m
+  susurrar <jugador> <mensaje>
+
+[1mDESCRIPCION[0m
+  Susurras a alguien que esté en la misma habitación un mensaje, de forma
+  que los otros que estén en la habitación solo sabrán que le has susurrado
+  a <jugador> pero no el que.
+
+[1mEJEMPLOS[0m
+  susurrar woo Hola.. ¿qué tal?
+
+[1mTEMAS RELACIONADOS[0m
+  decir, telepatia, conversar

@@ -1,0 +1,139 @@
+# Este archivo contiene la lista de quests oficiales.
+# formato:
+#  linea 1: Questid#Creador#Dominio#QP#XP
+#  linea 2: Descripcion corta (Nombre del quest)
+#  linea 3 y siguientes: Descripcion larga (Pistas para el quest)
+# Los quests se separan por lineas vacias.
+# Valores del flag Dominio:
+#  0          no mostrar la pista en ningun sitio
+#  *          mostrar la pista en cualquier sitio
+#  dnombre    mostrar la pista SOLO en dnombre
+#  dname,dname, ...   mostrarla en varios dominios (SIN ESPACIOS!)
+#
+#  Las lineas que comienzan con # son omitidas.
+#  Para eliminar temporalmente un quest, poner un - antes del questid,
+#  e.g. reeplazar "kill_ghoul" por "-kill_ghoul".
+#  El primer quest es un quest "dummy" añaddido por Nemesis para probar
+#  cositas... No es imprescindible, pero así no tengo que escribirlo
+#  cada vez...
+#
+-prueba_total#Nemesis#*#10#0
+Prueba Total
+Este quest es otra prueba total del sistema de quests...
+Desaparecerá en breves momentos, no preocuparse.
+
+daga_hardester#Woo#*#3#3000
+Recupera la daga de Hardester Rankomme
+Al terrateniente Hardester Rankomme de Goldhai le han robado una valiosisima
+daga familiar y quiere recuperarla a toda costa.
+
+-kill_ghoul#Nemesis#*#5#3000
+Desembruja Nandor
+Hay rumores de que el cementerio de Nandor esta embrujado. Deberas ir e
+investigar que esta perturbando la paz.
+
+-frobbon#Woo#*#6#0
+Devuelve el anillo a Frobbon
+El enano Frobbon murió en un callejón de Crowy, en la isla de Goldhai, a manos
+de unos salteadores que pretendian robarle su preciado anillo. Desde entonces
+el fantasma de Frobbon dicen que se aparece en la ciudad buscando su anillo.
+
+-amuleto_perdido_messur#Angor#Akallab#6#0
+Recupera el amuleto perdido del herbolario Messur
+El viejo herbolario Messur de la ciudad de Zarkam ha perdido su amuleto de
+la suerte. Recompensará a quien le ayude a recuperarlo.
+
+-Cocinero_nandor#Cheto#Simauria#8#1000
+Ayuda al cocinero de Nandor
+El cocinero del castillo de Nandor necesita un atún fresco para conservar su
+trabajo y que el señor de la villa pueda disfrutar de su comida favorita.
+
+-llaves_templo_Asthar#Angor#Limbo#8#1000
+Recupera las llaves del templo de Asthar
+Nuk, el troll siervo de los dioses, ha perdido las llaves del templo de Asthar.
+Ayuda al pobre Nuk a recuperarlas antes de que Asthar se entere y le castigue.
+
+-ayudar_granjero#Nemesis#Simauria#10#1000
+Ayuda al granjero
+El pobre granjero Corl no puede trabajar en su granja porque está enfermo.
+Deberás ir a su granja y buscar un remedio para su enfermedad.
+
+-ingredientes_curandera_bosque#Angor#Akallab#12#1000
+Consigue los ingredientes para la curandera
+La curandera del bosque de Talek necesita ingredientes para fabricar
+nuevas pociones. Recompensara a quien se los consiga.
+
+-plumas_de_wyvelt#Theuzifan#*#16#0
+Recuperar tres plumas de un Wyvelt
+Ralin, el tendero de Atbalnin, quiere tres plumas de Wyvelt para hacerle un
+regalo a su esposa.
+
+-berat_quest_cuchillo#Maler#*#5#0
+Ayudar a la tendera Malmabeth
+La tendera Malmabeth de Berat ha perdido un objeto muy preciado para ella.
+Recompensará generosamente a quien consiga devolvérselo.
+
+-cored_quest_tamara#Maler#*#10#0
+Ayudar a Altur a recuperar a Tamara
+Altur, el herrero de Nandor, perdió a su prometida hace años, ayúdale a
+recuperarla.
+
+-faro_gorat#Cheto#*#10#500
+Arreglar el faro de Gorat
+El faro de Gorat se ha estropeado y se necesita un técnico especializado
+para repararlo para que los marineros puedan salir a faenar de noche.
+
+-salvacion_templo_Dehim#Alura#*#15#0
+Salvación del templo de Dehim
+Los espiritus de los monjes del valle de Dehim no pueden descansar en paz
+porque su templo ha sido profanado. Ayudales a recuperar la imagen de su
+dios.
+
+-espada_zendak#Zomax#*#12#5000
+Devolver su espada a Zendak
+El famoso héroe de Koek, Zendak, ha desaparecido, así como su espada.
+Ayuda a restaurar su honor y leyenda encontrándolo y devolviéndole su
+espada en perfectas condiciones.
+
+-maldicion_pantano#Korsario#*#7#0
+Acabar con la Maldición del Pantano de la Muerte
+Un malvado espectro ha regresado del Abismo para traer la desgracia a
+Flenton. Acaba con él y restaura el orden en Flenton.
+Hace mucho tiempo, un héroe local terminó con él. Tal vez esté dispuesto a
+ayudarte a terminar con él de nuevo.
+
+-gardil_quest#Maler#*#6#1000
+Ayudar a Gardil a recuperar su salud
+Gardil, la anciana hechicera elfa necesita tu ayuda para recuperar su
+salud maltrecha por la edad. Búscala en Atbalnin. Lad-laurelin no puede
+permitirse semejante pérdida.
+
+-guennir_quest#Articman#*#12#0
+Ayuda al bardo Guennir a recuperar la ilusión
+El bardo Guennir está triste desde hace un tiempo. Se le ha visto deambulando
+por el bosque de Nandor suspirando y susurrando incoherencias. Los habitantes
+de Nandor están muy preocupados, porque es una persona muy querida en el
+pueblo. Ve a Nandor y a ver qué puedes hacer.
+
+-Sobrino_Leyma#Karu#*#8#0
+Ayuda a Leyma
+La tendera de Nandor necesita ayuda para recuperar a su sobrino. Parece que
+es un chiquillo muy inquieto, que desde que aprendió a andar no ha parado.
+
+-DraegoQuest#Zomax#*#6#0
+Ayuda a Draego en el templo de Seri-Solderteg
+La mano derecha del Adalid del templo de Seri-Solderteg al norte de Koek
+tiene un serio problema, ayúdale en lo que necesite y los dioses te lo
+agradecerán, aunque no tanto como Draego.
+
+-DarylQuest#Yalin#*#16#1000
+Ayuda al jefe de la guardia de Sherek
+En la región de Sherek se oculta un asesino fugitivo. Descubre quién es y ayuda
+al jefe de la guardia en su investigación, para encontrar las pruebas que
+permitan detenerle.
+
+-tutorial_limbo#Angor#Limbo#1#100
+Primeros pasos en un nuevo mundo (tutorial)
+Asthar proporciona a los recien llegados a este mundo los conocimentos básicos
+para valerse por si mismos. Demuéstrale a Asthar que has aprendido lo que te
+ha enseñado.

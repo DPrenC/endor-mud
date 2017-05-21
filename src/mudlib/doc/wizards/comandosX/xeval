@@ -1,0 +1,13 @@
+SINOPSIS
+    xeval <funcion>
+
+DESCRIPCION
+    Ejecuta una funcion de LPC. Existen dos objetos predefinidos que son "me"
+    y "here". Aqui tambien puedes usar la funcion get() para encontrar un
+    objeto usando la sintaxis de acceso a objetos de los comandos X. Si la
+    funcion devolviera un objeto este se almacenaria en la variable "$result".
+
+EJEMPLOS
+    xeval users()
+    xeval getuid(me)
+    xeval get("$me.espada")

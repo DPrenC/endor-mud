@@ -1,0 +1,17 @@
+*****************************************************************************
+*                          NOTICIAS MÁGICAS                                 *
+*                                                                           *
+*			 (c) Khelben@Simauria                               *
+*****************************************************************************
+
+24/02/1999 Nuevo sistema de mensajes. 
+     Los mensajes que ven los jugadores se crean ahora en la función create.
+   Las funciones son autoexplicativas: SetCastMsg, SetStartMsg, etc.
+   Para más información, consultar la documentación (si existe).
+
+22/02/1999 Nuevos comandos en la magia.
+     Se han añadido los comandos de bug, typo y noticias. A partir de ahora
+   la acción por defecto es el lanzamiento de conjuros, de forma que al
+   escribir -> magia 'proyectil magico' a <blanco>  también funcionará
+   (sigue funcionando el método anterior -> magia lanzar ... )
+

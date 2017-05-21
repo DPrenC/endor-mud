@@ -1,0 +1,11 @@
+ -- Sun Jun 16 17:58:18 2013 --
+d/lad-laurelin/std/faeria/enemigos_faeria.c line 136: Missing 'return <value>' statement
+Compiling "/d/lad-laurelin/std/faeria/enemigos_faeria.c", Line 136
+ -- Sun Jun 16 18:01:41 2013 --
+Obj: /d/lad-laurelin/comun/pnj/atbalnin/bosque/lobo#7, File: d/lad-laurelin/comun/pnj/atbalnin/bosque/lobo.c, Line: 200:
+Created by /d/lad-laurelin/comun/habitacion/atbalnin/bosque/bosque05
+  Missing 'return <value>' statement.
+ -- Sun Jun 16 18:01:41 2013 --
+Obj: /d/lad-laurelin/comun/pnj/atbalnin/bosque/lobo#7, File: d/lad-laurelin/comun/pnj/atbalnin/bosque/lobo.c, Line: 200:
+Created by /d/lad-laurelin/comun/habitacion/atbalnin/bosque/bosque05
+  Missing 'return <value>' statement.

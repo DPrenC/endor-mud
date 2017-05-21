@@ -1,0 +1,20 @@
+[1mCOMANDO[0m
+  canal <argumento>
+
+[1mDESCRIPCION[0m
+  Este comando controla todo lo relacionado con los canales. Dependiendo del
+  argumento puedes realizar las siguientes acciones:
+
+  <canal>        Activa o desactiva el canal.
+  salto          Activa o desactiva el salto de linea antes del mensaje.
+  activar        Activa todos los canales.
+  desactivar     Desactiva todos los canales.
+
+[1mEJEMPLOS[0m
+  canal #valencia
+  canal salto
+  canal activar
+  canal desactivar
+
+[1mTEMAS RELACIONADOS[0m
+  =, ==, canales, cquien

@@ -1,0 +1,76 @@
+/**
+ * /secure/master/parse.ic
+ *
+ * Archivo para ser incluido por el master. Contiene las funciones básicas
+ * de parseo.
+ */
+
+//===========================================================================
+//  parse_command() Support  (!compat, SUPPLY_PARSE_COMMAND defined)
+//
+// LPMud has a builtin support for parsing complex commands.
+// It does this by requestion several types of ids from the objects.
+// The same queried functions are also in the master to provide decent
+// defaults, especially for generic ids like 'all the blue ones'.
+//
+// Each of the functions has to return an array of strings (with the exception
+// of parse_command_all_word), each string being one of the ids for that type
+// of id.
+//
+// The whole parsing has a preference for the english language, so the
+// the code for parsing english constructs is given as well.
+//===========================================================================
+
+string *parse_command_id_list (); // Return generic singular ids.
+string *parse_command_plural_id_list (); // Return generic plural ids.
+string *parse_command_adjectiv_id_list (); // Return generic adjective ids.
+string *parse_command_prepos_list (); // Return common prepositions.
+string parse_command_all_word(); // Return the one(!) 'all' word.
+
+//---------------------------------------------------------------------------
+string *parse_command_id_list ()
+// Return generic singular ids.
+{ // ({ "one", "thing" })
+  return ({ "un", "una", "uno", "cosa", "objeto" });
+}
+
+
+//---------------------------------------------------------------------------
+string *parse_command_plural_id_list ()
+// Return generic plural ids.
+{ // ({ "ones", "things", "them" })
+  return ({ "unos", "unas", "cosas", "objetos" });
+}
+
+
+//---------------------------------------------------------------------------
+string *parse_command_adjectiv_id_list ()
+// Return generic adjective ids.
+// If there are none (like here), return some junk which is likely never
+// typed.
+{ // ({ "iffish" })
+  return ({ "iffish" });
+}
+
+
+//---------------------------------------------------------------------------
+string *parse_command_prepos_list ()
+// Return common prepositions.
+{ // ({ "in", "on", "under", "behind", "beside" })
+    return ({ "a", "ante", "bajo", /*"cabe",*/ "con", "contra", "de"
+            , "desde", "durante", "en", "entre", "hacia", "hasta"
+            , "mediante", "para", "por", "según", "sin"/*, "so"*/
+            , "sobre", "tras" });
+}
+
+
+//---------------------------------------------------------------------------
+string parse_command_all_word()
+// Return the one(!) 'all' word.
+{ // "all"
+  return "todo";
+}
+
+//---------------------------------------------------------------------------
+// Fin de las funciones inherentes
+//---------------------------------------------------------------------------

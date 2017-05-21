@@ -1,0 +1,13 @@
+SINOPSIS
+    xclone <nombre_fichero>
+
+DESCRIPCION
+    Actualiza y clona un objeto. En caso de error se visualizaria donde
+    se ha producido. En primer lugar intenta mover el objeto clonado a tu
+    inventario, siempre y cuando se pueda. Si el objeto ha sido clonado con
+    exito se almacenara en la variable "$clone".
+
+EJEMPLOS
+    xclone /std/thing
+    xcall $clone->SetShort("un objeto clonado!");
+

@@ -1,0 +1,15 @@
+# Esta es la lista de MiniQuests de Simauria.
+#      (string)id_quest#(string)creador#(int)QP#(int)XP
+# El id_quest comenzará por minúscula, por convenio.
+# Las líneas que comiencen por # serán tratadas como comentario.
+# La mayoria de MiniQuests dan 0 puntos de experiencia, por lo tanto
+#  debeis poner un 0 en el campo correspondiente
+# [Woo Septiembre 1999]
+#
+# DOMINIO DE GOLDHAI
+# anular líneas con: #
+#
+#fuente_crowy#Woo#1#0
+
+
+

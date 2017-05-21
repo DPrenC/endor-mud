@@ -1,0 +1,12 @@
+[1mCOMANDO[0m
+  cquien <canal>
+
+[1mDESCRIPCION[0m
+  Muestra todos los jugadores que estan escuchando ese canal y que estan
+  conectados en ese instante.
+
+[1mEJEMPLOS[0m
+  cquien #valencia
+
+[1mTEMAS RELACIONADOS[0m
+  =, ==, canales, canal

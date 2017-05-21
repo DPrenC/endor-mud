@@ -1,0 +1,36 @@
+// Provisional (WOM)
+
+
+/* --- MENSAJES DE RETORNO --- */
+
+#define WOM_OK			1
+#define WOM_NULL		0
+#define WOM_ERROR		-1
+#define WOM_ILLEGAL_CALL	-2
+#define WOM_GOD_NEEDED		-14
+#define WOM_VICE_NEEDED		-3
+#define WOM_NOT_EXPEDIENT	-4
+#define WOM_USER_NOT_EXISTS     -5
+#define WOM_WRONG_DEC_LEVEL	-6
+#define WOM_WRONG_INC_LEVEL	-7
+#define WOM_SAME_LEVEL		-8
+#define WOM_WRONG_CALLER_LEVEL	-9
+#define WOM_VICTIM_NOT_LOGGED	-10
+#define WOM_LEARNER_NEEDED	-11
+#define WOM_ILLEGAL_LEVEL	-12
+#define WOM_OTHER_GOD_NEEDED	-13
+#define WOM_VICTIM_STILL_WIZ	-15
+#define WOM_EXPEDIENT_ERROR	-16
+#define WOM_GOD_EXPEDIENT	-17
+#define WOM_LOW_PLAYER_LEVEL	-18
+#define WOM_TEST_NOT_PASSED	-19
+#define WOM_CANT_DO_THE_TEST	-20
+#define WOM_TEST_YET_PASSED	-21
+#define WOM_BAD_EXPEDIENT_DATA	-22
+#define WOM_EXPEDIENT_STILL_WIZ	-23
+#define WOM_ARCH_NEEDED         -24
+#define WOM_OTHER_ARCH_NEEDED   -25
+#define WOM_PROMO_NEEDED        -26
+
+/* --- DIRECTORIO DE EXPEDIENTES --- */
+#define WOM_EXP_DIR( x ) "/wiz_exps/" + x + ".exp"

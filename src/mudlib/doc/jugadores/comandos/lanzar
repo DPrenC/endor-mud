@@ -1,0 +1,12 @@
+[1mCOMANDO[0m
+  lanzar <objeto> contra <bicho>
+
+[1mDESCRIPCION[0m
+  Te permite lanzar objetos contra algún ser vivo, provocándoles un daño en
+  caso de que aciertes en el lanzamiento.
+   
+[1mEJEMPLOS[0m
+  lanzar espada contra orco
+  lanzar dinero contra oveja
+  lanzar piedra contra enano
+

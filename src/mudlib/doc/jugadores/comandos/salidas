@@ -1,0 +1,20 @@
+[1mCOMANDO[0m
+  salidas
+
+[1mDESCRIPCION[0m
+  Con este comando podrás ocultar o visualizar las salidas obvias.
+  Recuerda que existen algunos comodines para las salidas más usuales:
+
+     norte........... n
+     sur............. s
+     este............ e
+     oeste........... o
+     noroeste........ no
+     nordeste........ ne
+     suroeste........ so
+     sudeste......... se
+     arriba.......... ar
+     abajo........... ab
+
+[1mTEMAS RELACIONADOS[0m
+  breve, color

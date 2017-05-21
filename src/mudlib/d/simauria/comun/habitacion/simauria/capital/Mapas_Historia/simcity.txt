@@ -1,0 +1,183 @@
+                                                     O - O - O - O - O - O - O - O - O - O - U - O - O - O - O - O - O - O - O - O - O 
+                                                   / |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | \
+                                                 N - NW- N - N - N - N - N - N - N - N - N - K - N - N - N - N - N - N - N - N - N - NE -N
+                                                 |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |  
+                                             O - O   W   O   O   O   O   O   O   O   O   O - K - O   O   O   O   O   O   O   O   O   E   O - O
+                                                     |                                       |                                       |
+                                     O   O   O   O   W   O   O   O   O   O   O   O   O   O - K - O   O   O   O   O   O   O   O   O   E - O - O - O
+                                     |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+                                     1 - 1 - 1 - 1 - W - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - K - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - 1 - E - 1 - 1 - 1 - 1
+                                   / |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | 
+                                 J   O   O   O   O   W   O   O   O   O   O   O   O   O   O - K - O   O   O   O   O   O   O   O   O   E   O   O   O   O - O
+                               /                     |                                       |                                       |                    
+                         O   J   O   O   O   O   O   W   O   O   O   O   O   O   O   O   O - K - O   O   O   O   O   O   O   O   O   E   O   O   O   O   O   O
+                         |   | \ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+                         2 - 2 - J - 2 - 2 - 2 - 2 - W - 2 - 2 - 2 - 2 - 2 - 2 - 2 - 2 - 2 - K - 2 - 2 - 2 - 2 - 2 - 2 - 2 - 2 - 2 - E - 2 - 2 - 2 - 2 - 2 - 2 - 2
+                         |   |   | \ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | 
+                     O - O   O   O   J   O   O   O   W   O   O   O   O   O   O   O   O   O - K - O   O   O   O   O   O   O   O   O   E   O   O   O   O   O   O   O - O
+                                       \             |                                       |                                       |
+         0   0   O   O   O   O   O   O   J   O   O   W   O   O   O   O   O   O   O   O   O - K - O   O   O   O   O   O   O   O   O   E   O   O   O   O   O   O   O   O   O
+         |   |   |   |   |   |   |   |   | \ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+         3 - 3 - 3 - 3 - 3 - 3 - 3 - 3 - 3 - 3 - 3 - W - 3 - 3 - 3 - 3 - 3 - 3 - 3 - 3 - 3 - K - 3 - 3 - 3 - 3 - 3 - 3 - 3 - 3 - 3 - E - 3 - 3 - 3 - 3 - 3 - 3 - 3 - 3 - 3 - 3
+         |   |   |   |   |   |   |   |   |   | \ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | 
+         0   0   0   0   0   0   0   0   0   0   J   W   O   O   O   O   O   O   O   O   O - K - O   O   O   O   O   O   O   O   O   E   O   O   O   O   O   O   O   O   O   O - O
+                                                   \ |                                       |                                       |
+     4 - 4 - 4 - 4 - 4 - 4 - 4 - 4 - 4 - 4 - 4 - 4 - 4W- 4 - 4 - 4 - 4 - 4 - 4 - 4 - 4 - 4 - K - 4 - 4 - 4 - 4 - 4 - 4 - 4 - 4 - 4 - 4E- 4 - 4 - 4 - 4 - 4 - 4 - 4 - 4 - 4 - 4 - 4 - 4
+   / |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | \
+ A - 5 - 5 - 5 - 5 - 5 - 5 - 5 - 5 - 5 - 5 - 5 - 5 - 5W- 5 - 5 - 5 - 5 - 5 - 5 - 5 - 5 - 5 - K - 5 - 5 - 5 - 5 - 5 - 5 - 5 - 5 - 5 - 5E- 5 - 5 - 5 - 5 - 5 - 5 - 5 - 5 - 5 - 5 - 5 - 5 - B
+ |   |   |   |   |   |   |   |   |   |   |   |   |   |                                       |                                       |   |   |   |   |   |   |   |   |   |   |   |   |   |
+ A   O   O   O   O   O   O   O   O   O   O   O   O   W   M - M - M - M - M - M - M - M - M - K - M - M - M - M - M - M - M - M - M   E   O   O   O   O   O   O   O   O   O   O   O   O   B
+ |                                                   |   |                                                                   |   |   |                                                   |
+ A   O   O   O   O   O   O   O   O   O   O   O   O   W   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M   E   O   O   O   O   O   O   O   O   O   O   O   O   B
+ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+ A - 6 - 6 - 6 - 6 - 6 - 6 - 6 - 6 - 6 - 6 - 6 - 6 - W   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M   E - 6 - 6 - 6 - 6 - 6 - 6 - 6 - 6 - 6 - 6 - 6 - 6 - B
+ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+ A   O   O   O   O   O   O   O   O   O   O   O   O   W   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M   E   O   O   O   O   O   O   O   O   O   O   O   O   B
+ |                                                   |   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |   |                                                   |
+ A   O   O   O   O   O   O   O   O   O   O   O   O   W   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M   E   O   O   O   O   O   O   O   O   O   O   O   O   B
+ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+ A - 7 - 7 - 7 - 7 - 7 - 7 - 7 - 7 - 7 - 7 - 7 - 7 - W   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M   E - 7 - 7 - 7 - 7 - 7 - 7 - 7 - 7 - 7 - 7 - 7 - 7 - B
+ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+ A   O   O   O   O   O   O   O   O   O   O   O   O   W   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M   E   O   O   O   O   O   O   O   O   O   O   O   O   B
+ |                                                   |   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |   |                                                   |
+ A   O   O   O   O   O   O   O   O   O   O   O   O   W   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M   E   O   O   O   O   O   O   O   O   O   O   O   O   B
+ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+ U - R - R - R - R - R - R - R - R - R - R - R - R - R - R - R - R - R - R - R - R - C - C - C - C - C - C - C - C - C - C - C   L   L - L - L - L - L - L - L - L - L - L - L - L - L - U
+ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+ A   O   O   O   O   O   O   O   O   O   O   O   O   W   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M   E   O   O   O   O   O   O   O   O   O   O   O   O   B
+ |                                                   |   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |   |                                                   |
+ A   O   O   O   O   O   O   O   O   O   O   O   O   W   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M   E   O   O   O   O   O   O   O   O   O   O   O   O   B
+ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+ A - 9 - 9 - 9 - 9 - 9 - 9 - 9 - 9 - 9 - 9 - 9 - 9 - W   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M   E - 9 - 9 - 9 - 9 - 9 - 9 - 9 - 9 - 9 - 9 - 9 - 9 - B
+ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+ A   O   O   O   O   O   O   O   O   O   O   O   O   W   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M   E   O   O   O   O   O   O   O   O   O   O   O   O   B
+ |                                                   |   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |   |                                                   |
+ A   O   O   O   O   O   O   O   O   O   O   O   O   W   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M   E   O   O   O   O   O   O   O   O   O   O   O   O   B
+ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+ A - 10- 10- 10- 10- 10- 10- 10- 10- 10- 10- 10- 10- W   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M   E - 10- 10- 10- 10- 10- 10- 10- 10- 10- 10- 10- 10- B
+ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+ A   O   O   O   O   O   O   O   O   O   O   O   O   W   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C   C   M   E   O   O   O   O   O   O   O   O   O   O   O   O   B
+ |                                                   |   |                                   |                                   |   |                                                   |
+ A   O   O   O   O   O   O   O   O   O   O   O   O   W   M - M - M - M - M - M - M - M - M - I - M - M - M - M - M - M - M - M - M   E   O   O   O   O   O   O   O   O   O   O   O   O   B
+ |   |   |   |   |   |   |   |   |   |   |   |   |   |                                       |                                       |   |   |   |   |   |   |   |   |   |   |   |   |   |
+ A - 11- 11- 11- 11- 11- 11- 11- 11- 11- 11- 11- 11- W   11  11- 11- 11- 11- 11- 11- 11- 11- I - 11- 11- 11- 11- 11- 11- 11- 11- 11- E - 11- 11- 11- 11- 11- 11- 11- 11- 11- 11- 11- 11- B
+   \ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | /
+     12- 12- 12- 12- 12- 12- 12- 12- 12- 12- 12- 12-12W- 12- 12- 12- 12- 12- 12- 12- 12- 12- I - 12- 12- 12- 12- 12- 12- 12- 12- 12- E- 12- 12- 12- 12- 12- 12- 12- 12- 12- 12- 12- 12
+                                                     |                                       |                                       |                                               
+         0 - 0   0   0   0   0   0   0   0   0   0   W   O   O   O   O   O   O   O   O   O - I - O   O   O   O   O   O   O   O   O   E   O   O   O   O   O   O   O   O   O   O - O
+         |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | \ |   |   |   |   |   |   |   |   |   |
+         13- 13- 13- 13- 13- 13- 13- 13- 13- 13- 13- W - 13- 13- 13- 13- 13- 13- 13- 13- 13- I - 13- 13- 13- 13- 13- 13- 13- 13- 13- E - 13- 13- 13- 13- 13- 13- 13- 13- 13- 13
+         |   |   |   | \ |   |   |   |   |   | / |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |  \    |   |   |   |   |   |   |
+         O   0   O   O   J   O   O   O   O   J   O   W   O   O   O   O   O   O   O   O   O - I - O   O   O   O   O   O   O   O   O   E   O   J   O   O   O   O   O   O   O
+                       / |                 /         |                                       |                                       |         \ 
+         J - J - O   J - J   O   O   O   J   O   O   W   O   O   O   O   O   O   O   O   O - I - O   O   O   O   O   O   O   O   O   E   O   O   J    O   O   O   O - O
+         |     \       X |   |   |   | / |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | \  |   |   |   | 
+         O   O - J   J - 14- 14- 14- 14- 14- 14- 14- W - 14- 14- 14- 14- 14- 14- 14- 14- 14- I   14- 14- 14- 14- 14- 14- 14- 14- 14- E - 14- 14- 14- 14- 14- 14- 14
+                 |   |   |   |   | / |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | \ |   |
+                 J   J   O   O   J   O   O   O   O   W   O   O   O   O   O   O   O   O   O - I - O   O   O   O   O   O   O   O   O   E   O   O   O   O   J   O
+                 |   | \       /   \                 |                                       |                                       |                   |
+                 J   J   J - J   O   J   O   O   O   W   O   O   O   O   O   O   O   O   O - I - O   O   O   O   O   O   O   O   O   E   O   O   O   O   O
+                 | / |   |   |   |   | \ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | /
+                 J   O   O   15- 15 -15- 15- 15- 15- W - 15- 15- 15- 15- 15- 15- 15- 15- 15- I - 15- 15- 15- 15- 15- 15- 15- 15- 15- E - 15- 15- 15- 15
+                 | \         |   |   |   | \ |       |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |
+                 O   J   O   0   O   O   O   J - O   W   O   O   O   O   O   O   O   O   O - I - O   O   O   O   O   O   O   O   O   E - O - O - O
+                     |   |                   | \     |                                       |                                       |
+                 O   J - J - J - J - J - J   O   J   W   O   O   O   O   O   O   O   O   O - I - O   O   O   O   O   O   O   O   O   E   O - O
+                 | /         |   |   |   |       |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | 
+                 J - O   O - J   O   O   J - O   S - SW- S - S - S - S - S - S - S - S - S - I - S - S - S - S - S - S - S - S - S - SE- S
+                                                   \ |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   | /
+                                                     O - O - O - O - O - O - O - O - O - O - U - O - O - O - O - O - O - O - O - O   O
+
+0 - HABITACION NORMAL (POS NO SE, CASA, ALGUNA TIENDA, ALGUN HERRERO, ETC)
+Algunas tienen 2 accesos, que son provisionales (O se puede hacer que tengan una salida oculta (ya se vera).Las tiendas estoy en ello...
+Primero van lo otro
+T - TEMPLO (UNO PA CADA GOD, SON 16, CREO, LOS OTROS 9 NI PUTA DE PA Q :P YA PEN
+SARE EN ALGO, LOS ARCHS, ETC.(NO ESTAN EN ESTE MAPA)
+P - PARQUE
+C - CASTILLO
+NUMEROS - CALLES, CON EL NOMBRE DEL GOD AL Q ESTA DEDICAO EL TEMPLO Q RIBETEA ES
+A Y B CALLES
+W - CALLE OESTE
+E - CALLE ESTE
+N - CALLE NORTE
+S - CALLE SUR
+J - CALLEJON EN EL BARRIO BAJO Y CALLE ESTRECHA EN LOS BARRIOS "NORMALES".
+G - GREMIO DE PALATAS (YA LO ABRIRAN, YA)(TAMPOCO APARECE EN EL MAPA)
+D - CATEDRAL (TAMPOCO APARECE EN EL MAPA)
+R - CARRETERA CENTRAL (avenida Betwa)
+L - AVENIDA LAD-LAURELIN
+K - AVENIDA KHA-ANNU
+I - AVENIDA ISTMO DE SOCQUER (ESTE NOMBRE ES PROVISIONAL)
+U - ENTRADAS de la ciudad
+
+0 - HABITACION NORMAL (POS NO SE, CASA, ALGUNA TIENDA, ALGUN HERRERO, ETC)
+Algunas tienen 2 accesos, que son provisionales (O se puede hacer que tengan una salida oculta (ya se vera).Las tiendas estoy en ello...
+Primero van lo otro
+T - TEMPLO (UNO PA CADA GOD, SON 16, CREO, LOS OTROS 9 NI PUTA DE PA Q :P YA PEN
+SARE EN ALGO, LOS ARCHS, ETC.(NO ESTAN EN ESTE MAPA)
+P - PARQUE
+C - CASTILLO
+NUMEROS - CALLES, CON EL NOMBRE DEL GOD AL Q ESTA DEDICAO EL TEMPLO Q RIBETEA ES
+A Y B CALLES
+W - CALLE OESTE
+E - CALLE ESTE
+N - CALLE NORTE
+S - CALLE SUR
+J - CALLEJON EN EL BARRIO BAJO Y CALLE ESTRECHA EN LOS BARRIOS "NORMALES".
+G - GREMIO DE PALATAS (YA LO ABRIRAN, YA)(TAMPOCO APARECE EN EL MAPA)
+D - CATEDRAL (TAMPOCO APARECE EN EL MAPA)
+R - CARRETERA CENTRAL (avenida Betwa)
+L - AVENIDA LAD-LAURELIN
+K - AVENIDA KHA-ANNU
+I - AVENIDA ISTMO DE SOCQUER (ESTE NOMBRE ES PROVISIONAL)
+U - ENTRADAS de la ciudad
+
+Una habitacion especifica para la interseccion de los paseos. SW, NW, NE, SE 
+En los paseos norte y sur la primera habitacion se llama pn0.c y ps0.c, luego
+van las intersecciones y empieza en el centro el pn1.c y ps2.c
+
+Otra cuestion es ponerse deacuerdo con las referencias de las habita-
+ciones
+
+Ahora explico como se van a referenciar las calles.
+1) El mapa de la capital se divide en 3 partes utilizando los Paseos
+   Este y Oeste como linea divisoria: (ya que tienen su propia base)
+ 
+a) A la izquierda (las calles del Oeste) del paseoW empezando de 
+   izquierda a derecha (w,e) y de menor a mayor, Ej. cogiendo la calle
+   numero 4, seria, c4w1.c, c4w2.c, c4w3.c ... hasta la interseccion
+
+b) En el centro (entre los 2 paseos, arriba y abajo del castillo), de
+   izquierda a derecha (w,e) y de menor a mayor, Ej. cogiendo la calle
+   4, seria, c4c1.c, c4c2.c, c4c3.c hasta la c4c18.c
+
+c) A la derecha (las calles de Este) del paseoE empezando de
+   izquierda a derecha y de menor a mayor, Ej. cogiendo la calle 4,
+   seria, c4e1.c, c4e2.c, c4e3.c, c4e4.c hasta c4e12.c
+
+Ahora como se van a referenciar las habitaciones,
+ O -> en el mapa, aunque yo sugerio lo siguiente: (aunque es lioso)
+Tomando la calle 4 como ejemplo: las habitaciones del norte llamarlas,
+h1c4w.c, h2c4w.c, h3c4w.c hasta h12c4w.c y las del sur, empezando por
+la h13c4w.c hasta la h24c4w.c
+
+La estructura del nombre lo explico por si acaso, en el caso de las 
+calles esta claro c, de calle, nº calle, situacion en el mapa y nº de
+habitacion.
+En el caso de las casas, comercios, tiendas, h de habitacion, nº de 
+habitacion, c de calle, nº de calle y posicion en el mapa. 
+
+Las referencias de las habitaciones pueden ser temporales y en cuanto
+se tenga claro que va en cada habitacion (dificil pq hay muchas
+habitaciones), hay varias opciones:
+
+A) Se hace una lista y se sustituye nombre antiguo de la habitacion 
+   por el nombre nuevo.
+B) Se mantiene el nombre y en un listado (que se mantiene dentro del
+   directorio de Simauria) se especifican las equivalencias, ej:
+   h8c7e.c es tabernadesotanito/loquesea/casapepa... 
+
+Nota mental: Utilizar una nomenclatura mas corta y cutre la proxima vez
+pq me las estoy viendo y deseando para hacer el puto mapa...
+
+

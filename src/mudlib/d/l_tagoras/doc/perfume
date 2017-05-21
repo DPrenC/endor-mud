@@ -1,0 +1,126 @@
+1. Descripción
+
+	Este objeto es una botella de perfume de la que se puede determinar el olor, la capacidad, el peso del frasco, la desnsidad del perfume (que nos permite calcular el peso total), el precio del cc de perfume y el valor del frasco.
+
+	Para crar un perfume, a parte del que hay por defecto se puede heredar así:
+
+	inherit BASE_PERFUME;
+
+	1.1 Valores por defecto.
+
+		Por defecto el frasco tiene los siguientes valores:
+
+			Valor del frasco:		150 cobres
+			Contenido:				50 cc
+			Capacidad:				50 cc
+			Peso del frasco:		100 gr
+			Densidad:				1.2 (cada cc de perfume pesa 1.2 gr)
+			Precio del perfume:		50 cobres por cc
+			Perfume:				"flores frescas"
+
+2. El frasco
+
+	El frasco puede variar de precio del frasco (vacío), de capacidad, de peso y de contenido actual.
+
+	2.1 SetValue(int i)
+
+		Guarda el valor del frasco vacíoi en cobres.
+
+	2.2 QueryValue()
+
+		Devuelve el valor del frasco incluyendo el precio del perfume que contiene. Para ello tiene presente el precio del cc de perfume.
+
+	2.3 SetContent(int i)
+
+		Varía el contenido de perfume del frasco. Modifica el peso del frasco también.
+
+	2.4 QueryContent()
+
+		Devuelve el contenido del frascom en centimetros cúbicos (cc).
+
+	2.5 SetMaxContent(int i)
+
+		Establece la capacidad (contenido máximo) del frasco.
+
+	2.6 QueryMaxContent()
+
+		Devuelve la capacidad del frasco en cc.
+
+	2.7 SetBaseWeight(int i)
+
+		Establece el peso en gramos del frasco vacío.
+
+	2.8 QueryBaseWeight()
+
+		Devuelve el peso en gramos del frasco vacio.
+
+	2.9 QueryWeigth()
+
+		Devuelve el peso del frasco incluyendo el contenido en perfume. Pare ello usa la densidad del perfume.
+
+3. El perfume
+
+	El perfume que se aplique el jugador durará media hora real (1800 segundos) o hasta que el jugador se deshaga del frasco o hasta que salga del mud; lo que ocurra antes.
+
+	El perfume se puede "aplicar" o "usar" indicando uno de los id del perfume, por defecto ({ "frasco", "frasquito" }).
+
+	En cada aplicación se gastan 2cc de perfume.
+
+	3.1 SetContentWeight(float f)
+
+		Establece la densidad del perfume (en gramos por centímetro cúbico).
+
+	3.2 QueryContentWeight()
+
+		Devuelve la densidad del perfume en gr/cc.
+
+	3.3 SetContentValue(int i)
+
+		Establece el precio del cc de perfume en cobres.
+
+	3.4 QueryContentValue()
+
+		Devuelve el precio del cc de perfume en cobres.
+
+	3.5 SetPerfume(string str)
+
+		Establece el olor del perfume. Este se usará para la etiqueta del frasco y para el olor que tendrá el jugador que se lo aplique.
+
+	3.6 QueryPerfume()
+
+		Devuelve el olor del perfume.
+
+4. Ejemplos
+
+	4.1 Sencillo
+
+#include "path.h"
+
+inherit BASE_PERFUME;
+
+public void create()
+{
+        ::create();
+
+        SetPerfume("lavanda");
+}
+
+	4.2 Uno pelín más sofisticado.
+
+#include "path.h"
+
+inherit BASE_PERFUME;
+
+public void create()
+{
+        ::create();
+
+        SetValue(120);                  // El frasco vale 120 cobres
+        SetContent(65);                 // No está lleno del todo
+        SetMaxContent(75);              // La capacidad del frasco es de 75 cc
+        SetBaseWeight(220);             // El frasco vacio pesa 220 gr
+        SetContentWeight(1.1);          // La densidad del perfume es de 1.1 gr/cc
+        SetContentValue(80);            // Cada cc de perfume vale 80 cobres
+        SetPerfume("agua de rosas");    // El perfume es agua de rosas
+}
+

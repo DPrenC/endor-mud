@@ -1,0 +1,89 @@
+ h2cn    h3cn    h4cn    h5cn  SASTRE    h7cn     h8cn    h9cn P.GUARDAS UN  CARAVANAS  h12cn    h13cn T.IMPORTAC h15cn    h16cn   SELLOS   h18cn   h19cn 
+   |      |       |       |       |       |        |       |      |      |      |        |        |        |        |        |        |       |        |    
+- pn1-   pn2-    pn3-    pn4-    pn5-    pn6-     pn7-    pn8-    pn9 -  K1  - pn10 -   pn11-    pn12-    pn13-   pn14-    pn15-    pn16-    pn17-   pn18   - 
+   |   \  |    /  |       |       |       |        |       |      |      |      |        |        |        |        |        |    \   |    X   |       |       
+ h23cn   ca01n  T.MAPAS  h26cn   h27cn   h28cn FUNERARIA ca10n   h31cn   K2   h32cn    FONDA    h34cn   PAPELERIA  h36cn   h37cn    ca20n-  -ca21n   h40cn
+          |                                                |             |                                                             |   X   |   
+ h1c1c  ca02n  FRUTERIA  h4c1c   h5c1c T.EXPORTA h7c1c   ca11n   h9c1c - K3 - h10c1c   h11c1c   ARMERIA  h13c1c   h14c1c T.JOYERO   ca22n-  -ca23n   h18c1c 
+   |   /  |   \   |       |       |       |        |       |       |     |      |        |        |        |        |        |    /   |    X   |   \    |   
+-c1c1-   c1c2-   c1c3-   c1c4-   c1c5-   c1c6-   c1c7-   c1c8-    c1c9 - K4 -  c1c10-   c1c11-   c1c12-   c1c13-   c1c14-  c1c15-   c1c16-   c1c17-   c1c18  -
+   |      |       |    \  |   X   |   /   |        |       |       |     |      |        |        |        |    \   |        |        |        |        |   
+ h19c1c ZAPATOS  h21c1c ca03n- -ca04n   h24c1c  h25c1c  h26c1c PANADERO- K5 - T.MAGIA  h29c1c   h30c1c   h31c1c   ca27n    h33c1c   h34c1c  HERBORISTA h36c1c  
+                          |   X   |                                      |                                          |                 
+ h1c2c  TIENDAG  h3c2c  ca05n- -ca06n   h6c2c   h7c2c   h8c2c   ARMERO - K6 - h10c2c   h11c2c   h12c2c   BANCO    ca28n    h15c2c   h16c2c   h17c2c   h18c2c 
+   |      |       |    /  |   X   |   \   |        |       |       |     |      |        |        |        |    /   |    \   |        |        |        |   
+-c2c1-   c2c2-   c2c3-   c2c4-   c2c5-   c2c6-   c2c7-   c2c8-    c2c9 - K7 -  c2c10-   c2c11-   c2c12-   c2c13-   c2c14-   c2c15-   c2c16-   c2c17-   c2c18 -
+   |      |       |                       |        |       |       |     |      |        |    X   |    /   |                          |        |        |   
+ h19c2c  ca14n GUARDERIA- AULA1 -AULA2  h24c2c  ca07n   h26c2c  h27c2c - K8 - h28c2c   ca24n--  -ca25n COMISARIA--CARCEL1  CARCEL2  h34c2c   h35c2c   h36c2c 
+          |                                    /                         |               |    X   |                      X     
+ h1c3c   ca13n   h3c3c   h4c3c CURANDERO ca08n   h7c3c   h8c3c   h9c3c - K9 - h10c3c   ca26n-   -ca27n COMISARIA  CARCEL3  CARCEL4  h16c3c   h17c3c  T.POCIONES
+   |   /  |    \  |       |       |       |        |       |       |     |      |        |    X   |        |                          |        |        |   
+-c3c1-   c3c2-   c3c3-   c3c4-   c3c5-   c3c6-   c3c7-   c3c8-    c3c9 - K10 - c3c10-   c3c11-  c3c12-   c3c13-   c3c14-   c3c15-   c3c16-   c3c17-   c3c18  -
+   |      |    \  |    \  |    /  |       |        |       |             |               |        |        |        |        |        |        |        |   
+ h19c3c TIENDAG ca12n - ca09n  h23c3c  h24c3c TIENDAG   h26c3c ZAPATOS - K11- HERRERO  h29c3c   h30c3c   h31c3c   h32c3c   SASTRE    h34c3c    ca29n   h36c3c  
+               /   |   /  |    \                                         |                                                                  /   |   \ 
+-c4c1-   c4c2-   c4c3-   c4c4-   c4c5-   c4c6-   c4c7-   c4c8-    c4c9 - K12 -  c4c10-   c4c11-   c4c12-   c4c13-   c4c14-   c4c15-   c4c16-  c4c17-   c4c18 -
+X  |   X   |   X   |  X   |    X   |   X   |   X   |   X   |   X   |  X  |   X   |    X   |    X   |    X    |    X   |    X    |   X    |   X  |    X   |   X
+-c5c1-   c5c2-   c5c3-   c5c4-   c5c5-   c5c6-   c5c7-   c5c8-    c5c9 - K13 -  c5c10-   c5c11-   c5c12-   c5c13-   c5c14-   c5c15-   c5c16-   c5c17-  c5c18 -
+                                                                         |                                       
+   M - M - M - M - M - M - M - M - M - K - M - M - M - M - M - M - M - M - M   
+   |                                                                   |   |  
+   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M   
+   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |   
+   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M      
+   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |   
+   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M   
+   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |   
+   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M   
+   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |   
+   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M   
+   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |   
+   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M   
+   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |   
+   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M   
+   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |   
+ - R - R - R - R - R - R - R - C - C - C - C - C - C - C - C - C - C - C   L   
+   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |   
+   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M   
+   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |   
+   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M   
+   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |   
+   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M   
+   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |   
+   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M   
+   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |  
+   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M   
+   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |  
+   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C - C   M  
+   |   | X | X | X | X | X |   |   |   |   |   |   |   |   |   |   |   |   |  
+   M   P - P - P - P - P - P   C - C - C - C - C - C - C - C - C - C   C   M   
+   |                                   |                                   |  
+   M - M - M - M - M - M - M - M - M - I - M - M - M - M - M - M - M - M - M  
+                                                                         |                                       
+-c11c1-  c11c2-  c11c3-  c11c4-  c11c5-  c11c6-  c11c7-  c11c8-   c11c9 -I2 - c11c10-  c11c11-  c11c12-  c11c13-  c11c14-  c11c15-  c11c16-  c11c17-  c11c18 -
+X  |   X  |    X   |   X   |   X   |   X   |   X   |   X   |   X    |  X |   X   |   X    |    X   |   X    |   X   |    X    |   X    |    X   |   X   |    X
+-c12c1-  c12c2-  c12c3-  c12c4-  c12c5-  c12c6-  c12c7-  c12c8-   c12c9 -I3 - c12c10-  c12c11-  c12c12-  c12c13-  c12c14-  c12c15-  c12c16-  c12c17-  c12c18 -
+                       \   |   /                           |             |      |                               \   |    /                                        
+ h1c13c T.REGALO h3c13c  ca39n  h5c13c  TIENDAG. h7c13c CENSO-AYUNTAMENTO-I4- CORREOS  h11c13c  TIENDAG. h13c13c   ca50n   h15c13c  h16c13c  h17c13c  HERRERO 
+   |      |       |        |      |       |        |               |     |      |        |        |        |        |        |        |        |        |   
+-c13c1-  c13c2-  c13c3-  c13c4-  c13c5-  c13c6-  c13c7-  c1c8-   c13c9 -I5 - c13c10-  c13c11-  c13c12-  c13c13-  c13c14-  c13c15-  c13c16-  c13c17-  c13c18 -
+   |   \  |    X   |   /   |                               |       |     |              |        |        |        |                 |    X   |        |   
+ h19c13c ca31n - ca32n   COLEGIO-AULA1 -AULA 4  CDRAL-CATEDRAL h27c13c- I6 - TABERNA  h29c13c  h30c13c  h31c13c  PANADERO  ASILO2 -  ca44n -  -ca45nc  h36c13c  
+          |    X   |       |     pasillo           |                     |      	                                     |        |        |    X   |  
+ h1c14c  ca33n - ca34n   AULA2 - AULA3  FLORISTA ALTAR  h8c14c  h9c14c- I7 -  BANCO   COMIDA    ca51n  T.IMPORTAC  h14c14c  ASILO1   ca46n -  -ca47n  BEBIDA 
+   |   /  |    X   |    \                  |               |       |     |      |        |        |        |        |        |        |    X   |        |   
+-c14c1-  c14c2 - c14c3-  c14c4-  c14c5-  c14c6-  c14c7-  c14c8-   c14c9- I8 - c14c10-  c14c11-  c14c12-  c14c13-  c14c14-  c14c15-  c14c16-  c14c17-  c14c18 -
+   |   /  |       |       |       |       |        |       |       |     |      |        |        |        |        |    \   |   /    |        |        |   
+-ca41n  BEBIDA h21c14c h22c14c h23c14c  LAPIDAS h25c14c h26c14c  FONDA - I9 - h28c14c  h29c14c  GREMIO  h31c14c  h32c14c   ca48n    h34c14c  h35c14c  h36c14c 
+   |                                                                     |                   (guerreros)                / 
+-ca40n   h2c15c HERRERO  h4c15c  h5c15c TIENDAG  h7c15c  h8c15c  ARMAS- I10- ZAPATOS ARMADURAS h12c15c  h13c15c  ca49n   h15c15c  h16c15c HERBORISTA  h18c15c 
+   |   \  |       |       |       |       |        |       |       |     |      |        |        |        |        |        |        |        |        |   
+-c15c1-  c15c2-  c15c3-  c15c4-  c15c5-  c15c6-  c15c7-  c15c8-   c15c9- I11 -c15c10-  c15c11-  c15c12-  c15c13-  c15c14-  c15c15-  c15c16-  c15c17-   c15c18 -
+   |      |       |       |       |    \  |    X   |   /   |       |     |      |                 |    \   |    /   |        |        |        |        |   
+ h19c15c h20c15c CASA    h22c15c h23c15c ca35n - ca36n  h26c15c SASTRE -I12-  h28c15c  COMEDOR  h30c15c  ca43n   h32c15c  BEBIDA   h34c15c  h35c15c  h36c15c 
+                 HEROE                    |    X   |                     |                |                |     
+TIENDAG  h2cs    h3cs   h4cs    h5cs    ca37n -  ca38n  h8cs DILIGENCIA-I13-  ESTABLO - POSADA   h12cs   ca42n    h14cs    h15cs    h16cs   T.FLORES  h8cs 
+   |      |       |       |       |    /  |    X   |   \   |       |     |      |        |        |    /   |   \    |        |       |        |        |   
+- ps1 -   ps2 -   ps3 -  ps4 -  ps5 -   ps6 - - ps7 -    ps8 -   ps9-  -I14 -  ps10-    ps11-    ps12-    ps13-   ps14-    ps15-    ps16-    ps17-   ps18 -
+   |      |       |       |       |       |        |       |       |     |      |        |        |        |        |        |       |        |        |   
+h23cs  h24cs   h25cs  T.MAGIA  h27cs   h28cs    h29cs  FRUTERIA h31cs   US - GUARDIAS    h33cs    h34cs CURANDERO h36cs    h37cs INMOBILIARIA h39cs   h40cs

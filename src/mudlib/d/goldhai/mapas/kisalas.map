@@ -1,0 +1,29 @@
+/*=============================================================*
+ |                     << GOLDHAI.mapa >>                      |
+ |               MAPA DEL GREMIO DE LAS KISALAS                |
+ *=============================================================*
+ |               Creacion.............. 07-10-99               |
+ |               Ultima Modificacion... 07-10-99               |
+ |                                                             |
+ | [a] Avengelyne@simauria                                     |
+ | [w] Woo@simauria                                            |
+ |                                                             |
+ | ??-??-?? [a] Creación de este mapa.                         |
+ | 07-10-99 [w] Modificación del mapa, ya que no se entra por  |
+ |              el Norte sino por el sur.                      |
+ *-------------------------------------------------------------*/
+
+                                                      G - Gremio
+                                                      c - Correos
+                                                      B - Embarcadero
+              A - A   a   T                           E - Entrada
+              | \ |     \ |                           V - Vestíbulo
+              A - A - p - S - t   M   p - H           S - Salón
+                          |       |   |               T - Templo
+                      V - V - V - p - p - b           t - Taberna
+                      | \ | / |       |               p - Pasillo
+                      V - E - V - G   c               A - Arena
+                          |                           H - Herreria
+                          B                           b - Banco
+                                                      M - Mascotas
+                                                      a - Tienda de Armas

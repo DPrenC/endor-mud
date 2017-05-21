@@ -1,0 +1,26 @@
+nombre   tipo       nivel  material  manos
+-----------------------------------------
+azagaya        WT_LANZA    3  M_ACERO   1
+
+daga           WT_CUCHILLO 1  M_ACERO   1
+
+espada_corta   WT_ESPADA   3  M_HIERRO  1
+katana         WT_ESPADA   6  M_ACERO   1
+katana negra   WT_ESPADA   9  M_ACERO   1
+katana Urkaz   WT_ESPADA  11  M_HIERRO  1 (cintia)
+
+claymore       WT_ESPADA  10  M_ACERO   2
+claymore negra WT_ESPADA  12  M_ACERO   2 (espada negra)
+
+hacha_combate  WT_HACHA    8  M_HIERRO  1
+berdiche:      WT_HACHA   12  M_ACERO   2
+
+escoba:        WT_MAZA     0  M_MADERA  1
+maza madera    WT_MAZA     2  M_MADERA  1
+pico:          WT_MAZA     4  M_HIERRO  1
+gargaz:        WT_MAZA     6  M_HIERRO  1
+
+maza hierro    WT_MAZA    10  M_HIERRO  2
+
+vara:          WT_VARA     5  M_MADERA  1?
+vara metal:    WT_VARA     7  M_ACERO   2

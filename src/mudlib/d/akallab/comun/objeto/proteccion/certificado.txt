@@ -1,0 +1,17 @@
+botas_cuero.c
+camisa.c
+capa.c
+casco.c
+coraza.c
+escudo.c
+guantes.c
+pantalon.c
+sandalias_cuero.c
+sombrero.c
+yelmo_orco.c
+zapatos_cuero.c
+
+
+Revisados y aprobados por:
+
+Nemesis, Diox del Combate

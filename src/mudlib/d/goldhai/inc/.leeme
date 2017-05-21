@@ -1,0 +1,5 @@
+INFO: Este directorio contiene los 'includes' utilizados dentro del código
+      de algunos archivos de Goldhai.
+         d_xxxx.inc         Archivo de Detalle
+         c_xxxx.inc         Archivo de Comando
+         f_xxxx.inc         Archivo de Función General

@@ -1,0 +1,24 @@
+Este directorio contiene los objetos estándar que pueden ser heredados.
+Los objetos básicos son:
+                           
+thing.c          Objeto base para cualquier cosa 'real'
+armour.c         La armadura básica
+weapon.c         El arma básica
+unit.c           Objeto base para objetos que son contables
+
+food.c           Comida y bebida básica
+drink.c          Recipiente para bebida básico
+                 
+container.c      Un objeto que puede contener otros objetos
+room.c           Habitación básica
+scheduler_room.c Habitación con horarios básica
+shop.c           La tienda básica
+store.c          El almacen de las tiendas
+                 
+ncp.c            El objeto básico para un PNJ (personaje no jugador)
+player.c         El objeto de todos los jugadores
+wizard.c         El objeto de todos los wizards
+                 
+puerta.c         El objeto de las puertas
+                 
+weather.c        Servidor del tiempo y estado del día

@@ -1,0 +1,42 @@
+Mapas.
+
+    SOTANO 1.
+
+    	Simple.
+
+
+           1   O   O                 Lugares.
+           |   |   |                   1.- Celda Cerrada.
+       O - O - O - O - O               2.- Centro de Reclutamiento.
+           |       |                   3.- Alojamiento del Caracelero.
+       2 - O   3   O - O               4.- Subida a la base.
+           | /     |
+           4 - O - O - O
+               |   |
+               O   O
+
+
+        Completo.
+
+
+
+           1   2   3                 Lugares.
+           |   |   |                   1.- celda1.c
+       4 - 5 - 6 - 7 - 8               2.- celda2.c
+           |       |                   3.- celda3.c
+       9 - 10  11  12- 13              4.- celda4.c
+           | /     |                   5.- pasillo1.c
+           14- 15- 16- 17              6.- pasillo2.c
+               |   |                   7.- pasillo3.c
+               18  19                  8.- celda5.c
+                                       9.- recluta.c
+                                      10.- pasillo4.c
+                                      11.- carcelero.c
+                                      12.- pasillo5.c
+                                      13.- celda6.c
+                                      14.- subida.c
+                                      15.- pasillo6.c
+                                      16.- pasillo7.c
+                                      17.- celda7.c
+                                      18.- celda8.c
+                                      19.- celda9.c

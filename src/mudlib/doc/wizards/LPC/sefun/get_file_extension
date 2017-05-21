@@ -1,0 +1,12 @@
+SINOPSIS
+        string get_file_extension(string file)
+
+DESCRIPTION
+        Obtiene, si la tiene, la extensión del nombre del fichero pasado como parámetro.
+
+EXAMPLES
+        string file = "prueba.wav";
+        string ext = get_file_extension(file);
+
+VER TAMBIEN
+        remove_file_extension(S)

@@ -1,0 +1,30 @@
+         Gundistyr-Sender
+
+         s01-s02-s03                  
+                   |                       
+                  s04               
+                   |  
+                  s05                              t22-eab
+                   |                                |
+                  s06                      t16-t17-t18-t19-t20-t21
+                   |                        | /   \ | X |    
+                  s07                      t15     t13-t14  
+                    \                               |     
+                    s08                            t12       
+                     |                              |     
+                     s09-s10-s11                t09-t10-t11  
+                               \                    |
+                                s12                t08              pex        
+                                 |                  | \                \      
+                                s13                t05-t06-t07          2t2    
+                                   \                |   |   |          /
+                                    s14        t02-t03-t04 ear^2t1^^2t2  
+           2tX= 2torre0X.c           |              | 
+           tXX= torreXX.c           s15        eno-ent-ene       
+           sXX= senderoXX            |              |
+           ear= escarriba.c         s16-s17        s22
+           eab= escabajo.c               |          |
+           eno= entoeste.c              s18        s21
+           ene= enteste.c                  \       / 
+           ^  = un piso arriba              s19-s20  
+           pex= ptoexp.c

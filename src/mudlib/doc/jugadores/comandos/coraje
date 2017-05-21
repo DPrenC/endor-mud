@@ -1,0 +1,17 @@
+[1mCOMANDO[0m
+  coraje [<num>]
+
+[1mDESCRIPCION[0m
+  Te permite especificar a cuantos puntos de vida huirás del combate, así
+  te despreocupas un poco más a la hora de luchar. El funcionamiento es muy
+  sencillo, cuando tus puntos de vida sean iguales o inferiores a los de
+  coraje serás forzado a 'huir'.
+  Si estableces a 0 los puntos de vida no huirás jamás del combate.
+  Sin argumento te muestra el número de puntos de vida que tienes ahora
+  especificados en 'coraje'.
+
+[1mEJEMPLOS[0m
+  coraje 20
+
+[1mTEMAS RELACIONADOS[0m
+  huir, matar

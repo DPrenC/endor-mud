@@ -1,0 +1,64 @@
+CONCEPTO
+	luz
+
+ACTUALIZACIONES
+	Nyh, 06-Sep-05: Creación
+
+DESCRIPCIÓN - luz
+    Este documento describe el sistema de luz utilizado en Simauria.
+    El sistema es un modelo muy simplificado del comportamiento real de la luz.
+
+	Cualquier objeto puede emitir luz a su entorno. Asi mismo, cualquier objeto
+	contenedor es capaz de emitir luz hacia su interior.
+	La intensidad de la luz emitida se controla a través de las propiedades
+	internas P_BRIGHT y P_INT_BRIGHT:
+
+      public int QueryBright()
+        Devuelve el brillo del objeto: La cantidad de luz que emite a su
+        entorno.
+
+      public int SetBright(int brillo)
+        Establece el brillo del objeto a <brillo>, y actualiza el entorno.
+
+    Las funciones son similares para P_INT_BRIGHT solo que la luz se emite
+    hacia el interior:
+
+      int QueryIntBright()
+      int SetIntBright(int brillo)
+
+    La propiedad P_LIGHT permanece por compatibilidad, pero actualmente es
+    sólo un alias de P_BRIGHT. No usar nunca más, en cualquier momento pueden
+    dejar de existir.
+
+      public int QueryLight()         { return QueryBright(); }
+      public int SetLight(int light)  { return SetBright(light); }
+
+    La cantidad de luz que hay dentro de un contenedor o habitación se obtiene
+    a través de la propiedad interna P_INT_LIGHT:
+
+      public varargs int QueryIntLight(int nosun)
+        Devuelve la cantidad de luz que hay en el interior del objeto.
+        Si <nosun> es distinto de cero la luz del sol no sera tenida en cuenta.
+
+      public int SetIntLight(int luz)
+        No puedes establecer la luz que hay dentro de un objeto.
+        Devuelve QueryIntLight()
+
+    Actualmente la cantidad de luz que hay dentro de un contenedor se calcula
+    sencillamente sumando los brillos de las fuentes de luz internas y el propio
+    brillo interno del contenedor/habitación. Si alguien idea un sistema más
+    realista y que consuma más o menos la misma cantidad de recursos que el
+    existente se aceptan recomendaciones al respecto.
+
+    Los objetos reales pueden ser transparentes. El antiguo sistema de luz
+    permitia transparencias, pero daba más problemas que ventajas. El sistema
+    actual es más sencillo y robusto gracias, entre otras cosas, a haber
+    eliminado las transparencias. La luz no se transmite de un entorno a otro,
+    exceptuando el caso de los livings. Los livings son transparentes a efectos
+    de transmisión de luz. Esto es así para permitir que un objeto luminoso que
+    se encuentre en el inventario de un living (como una linterna) sea capaz de
+    modificar la luz en el entorno del living. Todo living emitira una cantidad
+    de luz a su entorno igual a la suma de su propio brillo al exterior y la
+    cantidad de luz interna que posee.
+
+VER TAMBIÉN

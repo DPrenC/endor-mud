@@ -1,0 +1,7 @@
+                     DIRECTORIO DE País de Bree
+
+comun/         Directorio donde estan las habitaciones, objetos, etc.. 
+docs/          Documentacion tecnica acerca del dominio .
+este dominio. 
+std/           Inherits basicos utilizados en este dominio. 
+sys/           Includes usados en este dominio. 

@@ -1,0 +1,56 @@
+
+	Autor: khelben
+	Versión: 1.0
+	Fecha: 29-Oct-1997
+	Descripcion: Notas sobre la creacion de comandos y el BIND
+
+
+Los comandos del mud se encuentran en el directorio /bin
+Aqui se estan trasladando los comandos del player.c
+
+Los comandos se encuentran implementados cada uno en un fichero distinto y
+con un nombre determinado. El nombre del fichero DEBE tener el siguiente
+formato:
+ 		'_' + nombre_del_comando + '.c'
+
+Por ejemplo: el comando 'quien' estara en un fichero llamado _quien.c
+
+Los comandos, ademas deben estar en unos directorios determinados.
+Los comandos para players en /bin/mortal
+Los de wizard en /bin/wiz
+Los comandos de los gremios en /_gremio_/bin
+...
+
+No hay limite en cuanto a crear categorias de comandos. Eso si, si un
+jugador tiene acceso a un comando de un directorio, tiene acceso a todos
+los comandos de ese directorio.
+
+El causante de que todo esto funcione (al menos aparentemente) es el BIND
+(BINary Daemon) que se encuentra en /secure/daemons/bind.c  hasta que se
+le mueva a otra localizacion. El BIND se encarga de comprobar que tipo de
+personaje intenta ejecutar un comando: player, wizard, etc.  y segun esto
+genera una lista de directorios en donde buscar el comando que se quiere
+ejecutar. Con esta lista y el comando, intenta localizar el fichero
+correspondiente (de ahi la necesidad de un formato fijo en los nombres de
+los ficheros).
+
+
+Dentro de un fichero de comando, pueden haber tantas funciones como sean
+necesarias para que funcione el comando, pero debe existir al menos una
+de estas dos:
+	int main(string str)   o     int nombre_comando(string str)
+
+donde nombre_comando es el nombre el comando, que ademas coincide con el nombre
+del fichero :) (pero sin el '_' inicial y el '.c' final)
+
+Bien, pues al menos una de estas dos funciones debe existir, ya que son el
+punto de entrada del comando.
+
+Cuando haya concluido el comando, se debe retornar SIEMPRE un 1 para indicar
+que el comando se ha ejecutado, sino el BIND seguira buscando otro comando
+con el mismo nombre para ejecutarlo. Imaginad si hay versiones diferentes
+de wiz y player de un mismo comando ;)
+
+						Khelben el errante
+
+EOF

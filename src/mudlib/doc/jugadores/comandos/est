@@ -1,0 +1,14 @@
+[1mCOMANDO[0m
+est [<objeto o personaje>]
+
+[1mDESCRIPCION[0m
+Te informa del estado de un objeto de la habitación, de un objeto que lleves
+en tu inventario, o de un player que esté contigo en la habitación.
+
+[1mEJEMPLOS[0m
+est espada
+est gulkas
+est me (mirarías tu propio estado).
+
+[1mTEMAS RELACIONADOS[0m
+compararse, mirar, examinar.

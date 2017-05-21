@@ -1,0 +1,12 @@
+NAME
+	ilist - show who is listening to the intermud channels
+
+SYNOPSIS
+	ilist <mudname>
+
+DESCRIPTION
+	Allows you to see who is listening to the intermud channels.
+
+SEE ALSO
+	busy, intermud, intercode, iwho, ihistory
+

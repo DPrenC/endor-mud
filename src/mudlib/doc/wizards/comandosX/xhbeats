@@ -1,0 +1,14 @@
+SINOPSIS
+    xhbeats [cadena]
+
+DESCRIPCION
+    Si no hay argumento visualizara todos tus objetos que esten ejecutando
+    el heart_beat. Si no buscara todos los objetos que contengan la [cadena]
+    y que esten ejecutando el heart_beat.
+
+EJEMPLOS
+    xhbeats obj   Visualiza todos los objetos que tengan activado el heart_beat
+                  y que contengan la cadena "obj".
+    xhbeats .     Visualiza todos los heart_beats. No ejecutar sin no es
+                  estrictamente necesario ya que tiene un elevado coste de
+                  tiempo.

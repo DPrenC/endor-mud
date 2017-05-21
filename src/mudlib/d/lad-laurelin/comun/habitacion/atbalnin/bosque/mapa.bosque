@@ -1,0 +1,35 @@
+BOSQUE DE ATBALNIN
+------------------
+
+
+            C0
+            |
+        31--32--C1
+        |   |    
+        29--30--C2
+        |   |   |
+    25--26--27--28--C3 
+    |       |          
+    17      18--19          20--21--22  23--24          
+            |   |           |   |   |   |               
+            09--10--11--12--13--14--15--16
+            |   |   |   |   | 
+        03--04--05--06--07--08
+            |   |                           
+            01--02                          
+            |                                   
+            00                                  
+            
+            
+
+	- En la habitación 17 está la caravana que va a Simauria.
+	- En la habitación 24 está uno de los Grandes Arboles custodiado por
+	  una guardia de Ents.
+	- Las habitaciones donde pone C<num> son habitaciones de ciudad.
+	- Las habitaciones [0..12] son de un bosque muy frondoso, con 
+	  animales más o menos normales.
+	- Las habitaciones [13..16] U [20..24] son de un bosque viejo, con 
+	  ents y demás.
+	- Las habitaciones [17..19] U [25..32] son de bosque más normal, no 
+	  tan 'añejo' como el de la parte este, y menos frondoso que el de
+	  la parte sur.

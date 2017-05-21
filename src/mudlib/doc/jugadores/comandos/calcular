@@ -1,0 +1,16 @@
+[1mCOMANDO[0m
+calcular [jugador o gremio]
+
+[1mDESCRIPCION[0m
+Te informa de tu nivel actual como jugador o en tu gremio, y la XP que
+necesitas para avanzar al siguiente nivel.
+Usa calcular greio para calcularla con base a tu nivel de grmeio, y jugador
+para calcularla en base a tu nivel y XP como jugador.
+
+
+[1mEJEMPLOS[0m
+calcular gremio
+calcular jugador
+
+[1mTEMAS RELACIONADOS[0m
+gxp, jxp, qp.

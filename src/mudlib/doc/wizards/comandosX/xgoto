@@ -1,0 +1,13 @@
+SINOPSIS
+    xgoto [objeto]
+
+DESCRIPCION
+    Hace que te teletransportes dentro del <objeto>. Si no le das ningun
+    argumento lo hara a tu workroom. En caso de que el <objeto> fuera un
+    living iria al sitio donde este se encontrase.
+
+EJEMPLOS
+    xgoto /room/shop
+    xgoto shop	 (ambos comandos son el mismo, ya que si no existiera ningun
+                  fichero llamado 'shop.c' en el directorio donde estes se
+                  anyadira "/room/" al argumento.

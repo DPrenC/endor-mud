@@ -1,0 +1,38 @@
+INFORMACION ACERCA DE LOS COMANDOS ESPECIALES DE ASESINOS
+--------------------------------------------------------
+
+Comando: acuchillar <quien>
+
+   Acuchillas a alguien por la espalda si tienes la habilidad.
+
+Comando: cortar garganta a <quien>
+   Cortar la garganta de alguien si tienes la habilidad.
+
+Comando: engañar a <nombre> hacia <salida>
+         engañar desde <salida>
+         enganyar a <nombre> hacia <salida>
+         enganyar desde <salida>
+Engaña a alguien que este en el mismo sitio que tú, para que vaya a
+   otro sitio diferente, o engaña a las personas de un lugar para que
+   vengan a donde tu estás.
+
+Comando: esconderse
+   Te escondes de las miradas de las personas en un lugar.
+
+Comando: gayuda [<tema>]'
+   Te muestra toda la información disponible sobre el gremio de Asesinos.
+
+Comando: gbug <bug>
+   Para informar de los posibles bugs al creador del gremio.
+
+Comando: gquien
+   Te muestra todos los asesinos conectados.
+
+Comando: preparar veneno
+   Prepara un veneno si tienes la habilidad y los objetos necesarios.
+
+Comando: envenenar <arma>
+   Envenena un arma que tengas empuñada.
+
+Comando: sigilo <dirección>
+   Te mueves en sigilo, sin que la gente puede verte u oirte.

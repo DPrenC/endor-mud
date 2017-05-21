@@ -1,0 +1,5 @@
+Asthar te dice: puedes moverte de un sitio para otro por este mundo. Si te has 
+fijado, cuando miras a tu alrededor se te muestran las salidas disponibles 
+hacia otros lugares. Esta habitación, por ejemplo, tiene una salida hacia el 
+norte (para usarla teclea 'norte' o simplemente 'n'). En la habitación de al
+lado te explicaré más cosas.

@@ -1,0 +1,99 @@
+[1mCONCEPTO[0m
+	habilidad
+
+[1mULTIMA MODIFICACION[0m
+	02 de Diciembre de 1999, Theuzifan.
+
+[1mDESCRIPCION[0m
+
+	  Las habilidades son las habilidades que tiene un personaje. Por lo
+	tanto es una parte fundamental de Simauria, ya que un jugador sin
+	habilidades no avanzara ni sera tan ventajoso y divertido como si las
+	tuviera.
+
+	  Hay que diferenciar las habilidades de jugador de las de gremio.
+	Los de jugador son las que al crearte un personaje ya tienes, como
+	puede ser el skill de 'montar' o 'escalar', o que quizas consigas
+	mas adelante pero sin tener que estar en un gremio. Normalmente todos
+	los personajes y todas las razas pueden tener estas habilidades, ya
+	que un enano puede montar una burra y un gigante un elefante. Lo
+	bien que lo haga es el nivel de la habilidad que tenga.
+
+	  Las habilidades las aprendes poco a poco, usandolas. Obvianmente
+	contra mayor nivel tengas, mas dificil sera aprenderla.
+
+	  Las habilidades de jugador no pueden superar el 70%, y las de
+	gremio, obviamente el 100%.
+
+[1mPROGRAMACION PARA LOS PERSONAJES JUGADORES[0m
+
+	  A continuacion explico las funciones que hay en el
+	/std/player/skills.c. Todas ellas estan en el propio jugador
+	y por tanto se llaman con xxxx->yyyy(zzzz), siendo xxxx el objeto
+	del jugador en cuestion. Los niveles de los skills son porcentajes.
+
+	mapping skills:
+		Variable donde se guardan los skills. Tiene el formato
+		([nombre:nivel;max;aux]), donde 'nombre' es el nombre del
+		skill (string), 'nivel' el porcentaje de aprendizaje,
+		'max' el nivel maximo al que vas a llegar y 'aux' una
+		variable auxiliar que puedes usar.
+
+	mapping AddSkill(string name, int initial, mixed stat, int max):
+		Sirve para anyadir un skill tanto de gremio como de jugador.
+		Hay que tener en cuenta que si se anyade de jugador deberia
+		usarse mediante un comando o mediante un objeto que todos
+		tuvieran. 'name' es el nombre del skill, 'inicial' el valor
+		inicial	al que lo aprendes, 'max' el nivel maximo al que vas
+		a llegar y 'modif' es el stat del jugador que va a ser usado
+		para modificar la posibilidad de éxito de la habilidad. No
+		hace falta poner ninguno, por defecto usa la Destreza como
+		modificador, ya que la mayoría, por no decir todas las
+		habilidades de un jugador (no las de gremio) se basan en su
+		destreza.
+
+	int HasSkill(name):
+		Devuelve 1 si el jugador tiene el skill 'name'.
+
+	mapping SetSkills(mapping sk):
+		Pone los skills a 'sk'.
+
+	int QuerySkillLevel(string nombre):
+	Obtiene el nivel del skill 'nombre' del jugador actual.
+
+	int SetSkillLevel(string nombre, int nivel):
+		Pone el skill 'nombre' al nivel 'nivel'.
+
+	mapping RemoveSkill(string nombre):
+		Borra el skill 'nombre'.
+
+	mapping QuerySkills():
+		Devuelve un mapping con todos los skills.
+
+	int UseSkill(string name, int diff):
+		Usa el skill 'name', teniendo en cuenta una dificultad
+		'diff'. La dificultad va de -100 a 100, donde los valores
+		negativos son los mas dificiles y los positivos los faciles.
+		Devuelve un 1 si aciertas el skill. Con esta funcion puedes
+		aprender el skill, y si lo consigues, saldra un mensaje
+		indicándotelo.
+
+		Esta función devuelve siempre lo bien o mal que lo haces; si
+		el número es menor o igual a 0, quiere decir que has fallado,
+		y si está por encima de 1, quiere decir que el skill ha
+		salido bien. El rango exacto es -100..0 para fallo de skill
+		(se supone que -100 es fallo garrafal) y 1..100 para acierto
+		de skill.
+
+		[1mNOTA[0m: El parametro 'diff' no debe usarse casi nunca, solo lo
+		he dejado para casos especiales en que algo es mas facil con
+		una cosa que con otra...
+
+	  Los skills deben estar implementados en algun sitio, por ejemplo,
+	en el guildobject o en el binario del gremio, y al usar un skill se
+	debe llamar a UseSkill, y si consigues hacer bien el skill, devolvera
+	un número superior 0. Si aprendes a usar el skill, al personaje
+	le aparecerá un mensaje haciéndoselo saber.
+
+[1mVER TAMBIEN[0m
+	guilds(S)

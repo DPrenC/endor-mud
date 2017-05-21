@@ -1,0 +1,86 @@
+LISTA DE COMANDOS
+-----------------
+xcall        xdclean      xforall      xinherit     xmove        xsh
+xcallouts    xddes        xgoto        xload        xmsg         xtrace
+xclean       xdes         xgrep        xlook        xnews        xtrans
+xclone       xdlook       xhbeats      xlpc         xnpc         xupdate
+xcmds        xdupdate     xhelp        xman         xprops       xwho
+xdbg         xeval        xids         xmore        xquit
+
+Los comandos X son una version mejorada de los comandos básicos de los wizs.
+Si escribes '?' como único argumento te aparecerá una breve explicación de
+como usar el comando, si quieres más información escribe 'xman <comando>'
+Para cualquier fallo o mejora enviar un email a woo@simauria.upv.es.
+
+ARGUMENTOS
+----------
+   La mayoria de comandos necesitan ficheros u objetos como argumento. Estos
+   pueden ser referenciados de la manera tradicional o bien usando diversas
+   abreviaturas o comodines.
+
+   Forma tradicional (ejemplos)
+   - xlook espada
+     Examinaria una espada que estuviera en la habitacion o en tu inventario.
+   - xmore workroom.c
+     Visualizaria el contenido del archivo 'workroom.c'.
+   - xtrans woo
+     Teletransportaria a woo a la habitacion donde tú te encuentres.
+
+ABREVIATURAS
+------------
+   --> $here, $h
+       Equivale a la habitacion donde tú estás en ese instante.
+       Ejemplos:
+        - xmore $here
+          Visualizaria el contenido del archivo de la habitación donde estes.
+        - xmove woo into $here
+          Moveria a woo a la habitacion donde estuvieras.
+
+   --> "^"
+       Equivale al lugar donde este un objeto (environment).
+       Ejemplos:
+        - xlook ^woo
+          Miraria el lugar donde estuviera woo, por ejemplo una habitación.
+
+   --> "."
+       Sirve para mirar objetos dentro de otro objeto.
+       Ejemplos:
+        - xlook $here.1
+          Miraria el objeto numero 1 de la habitación donde estuvieras.
+        - xlook woo.3
+          Miraria el objeto numero 1 que llevara woo en su inventario.
+        - xlook woo.3.2
+          Miraria el objeto 2 dentro del objeto 1 del inventario de woo.
+        - xlook woo.cofre
+          Miraria el interior del cofre que woo lleva en su inventario.
+        - xlook 2.1
+          Miraria el objeto 1 dentro del objeto 2 de la habitación.
+
+   --> $me, $m
+       Equivale a ti mismo.
+       Ejemplos:
+        - xlook $me
+          Te mirarias a ti mismo.
+        - xlook $me.4
+          Mirarias el objeto 4 de tu inventario.
+        
+   --> Identificativo del objeto
+       Ejemplos:
+        - xlook /std/weapon#34
+          Miraria el arma con identificativo 34.
+
+   --> "\"
+       Si el nombre de un objeto contiene un caracter que ya actua como
+       abreviatura como "^", "." entonces se debe de poner un "\" delante
+       de dicho caracter para inutilizarlo.
+       Por ejemplo, tenemos un objeto llamado "woo.casa.hola" y lo queremos
+       visualizar, entonces deberiamos escribir "woo\.casa\.hola" como
+       argumento del comando xmore.
+
+   --> "@"
+       Si escribimos "@" delante de un objeto tendremos el nombre del
+       fichero en vez del objeto.
+       Ejemplos:
+        - xclone @woo.zurron.pan
+          Clonearia un pan de los que woo guarda en su zurron.
+

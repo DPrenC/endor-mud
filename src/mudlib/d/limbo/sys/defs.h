@@ -1,0 +1,2 @@
+//Utiles
+#define SIGNINT1 "¿"

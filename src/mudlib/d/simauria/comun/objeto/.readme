@@ -1,0 +1,13 @@
+                 O=O=O=O=O=O=O=O=O=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+                 |     DIRECTORIO DE OBJETO.COMUN.KENTON     |
+                 O                                           O
+                 |                [o] Okkita                 |
+                 O=O=O=O=O=O=O=O=O=O=O=O=O=O=O=O=O=O=O=O=O=O=O
+
+arma/           Armas, municiones, etc. (Magica o no)
+bebida/         Bebidas, principalmente alcoholicas.
+comida/         Comida, pociones, pak kender, raciones, etc.
+magia/          Objetos magicos variados.
+otros/          Objetos variados, objetos de quest, sin categoria.
+proteccion/     Armaduras, ropas, y demas proteccion. (Magica o no)
+

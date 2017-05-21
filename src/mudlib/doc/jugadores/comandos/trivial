@@ -1,0 +1,16 @@
+[1mCOMANDO[0m
+  trivial
+
+[1mDESCRIPCION[0m
+  Con este comando podrás ver información sobre la partida activa, así como
+proponer nuevas preguntas para futuras partidas.
+
+[1mEJEMPLOS[0m
+  trivial: Te muestra la ayuda sobre el comando
+  trivial proponer: Te permite proponer una pregunta para el trivial.
+  trivial info: Te muestra información sobre la partida en curso, si la hubiese.
+  trivial info extendida: Te muestra información detallada sobre la partida
+en curso, si la hubiese.
+  trivial pregunta: Te muestra la pregunta actual de la partida.
+  
+[1mTEMAS RELACIONADOS[0m

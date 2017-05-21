@@ -1,0 +1,23 @@
+NAME
+	iping - ping a mud on the intermud
+
+SYNOPSIS
+	iping
+	iping -s <mudname> <number_of_pings>
+	iping -a
+
+DESCRIPTION
+	Works much like UNIX ping.  Sends packets to a mud on the 
+	intermud and records the difference between the time sent 
+	and time recieved.
+	
+OPTIONS
+	[none]	-	send a packet to find out if the mud is alive.
+
+  	-s	-	send a specified number of pings to the mud.
+			(defaults to 10 if no number is specified)
+	-a	-	abort the current ping.
+
+SEE ALSO
+	itell, gwiz, intermud, imuds, ifinger, gfinger.
+

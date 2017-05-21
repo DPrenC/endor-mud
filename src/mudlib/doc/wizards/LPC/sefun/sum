@@ -1,0 +1,8 @@
+SINOPSIS
+        int sum(int *arg)
+
+DESCRIPCIÓN
+        Devuelve el resultado de la suma algebraica de los elementos de <arg>.
+
+VER TAMBIÉN
+        prod(SE)

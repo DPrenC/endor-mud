@@ -1,0 +1,40 @@
+/*=============================================================*
+ |            << GOLDHAI.mapa   [w] Woo@simauria >>            |
+ |               MAPA DEL BOSQUE WALD DE GOLDHAI               |
+ *=============================================================*
+ |               Creacion.............. 27-08-98               |
+ |               Ultima Modificacion... 27-08-98               |
+ |                                                             |
+ *-------------------------------------------------------------*/
+
+     Bosque  Norte  de  goldhai
+
+                       Granja
+                                |
+                    A-c-c-c-c-c-B
+                    |       |   |		A - Alrededor Crowy
+                    A       b   B
+                    |       |   |  R
+                    A     b-b   B  i		b - Bosque Wald
+                    |     |/|   |  o
+                    A-b-b-b b   B       Zona
+                    |       |   |   	 	c - Camino granja
+     Crowy          A       b   B-p-     de
+                    |       |   |
+                  A-A     b-b   B      Batalla	B - Borde del río
+                  |      /|\|   |  C
+  Bosque -A-A-A-A-A-b-b-b-b-b   B  a
+  Oscuro                        |  s		t - Tienda de plantas
+                    t           B  h
+                    |          /   i
+                   -b-b-b-b-b-B    g		p - Puente sobre río
+     Ruinas            \|/    |    a
+                  C     b     B    n
+                   a    |     |
+                    v   b     B
+                     e   \    |
+                      r   b-b-B
+                       n    |X|
+                        a   b-B
+
+              M  A  R

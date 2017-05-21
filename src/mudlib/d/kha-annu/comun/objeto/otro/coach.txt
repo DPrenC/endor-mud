@@ -1,0 +1,23 @@
+# Fichero de creacion de un camino..
+#
+#  formato:
+#           nombre del fichero#recorrido#tiempo-parada
+#   nombre del fichero: Por ejemplo /players/woo/bosque
+#   recorrido: Si va desde crowy hasta glucksfall se llamara crowy-glucksfall.
+#   tiempo-parada: Si es  > 0 Tiempo de espera en ese lugar en segundos.
+#                  Si es <= 0 Indica que no efectuara ninguna espera..
+#
+# NORMAS
+#        Debe crearse UNA parada por cada recorrido.
+#        Deben insertarse los puntos intermedios del trayecto por ORDEN.
+#        El primer recorrido sera el primero que haga desde la parada inicial
+#          que se define en la diligencia.
+#        Deben haber tantos recorridos como paradas.
+#        Las habitaciones de las paradas NO se definen aqui.
+#        Si que deben definirse los puntos intermedios en los cuales puedan
+#          atacar a la diligencia.
+#        La espera se usa para conseguir que una diligencia vaya mas rapida
+#          o mas lenta a eleccion. Si todas las esperas estan a 0 entonces
+#          hara todo el recorrido casi de inmediato.
+/d/kha-annu/comun/habitacion/kha-annu/ciudad/kilok5#parada1-parada2#1
+/d/kha-annu/comun/habitacion/kha-annu/ciudad/avcastle1#parara2-parada3#1

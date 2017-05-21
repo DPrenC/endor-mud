@@ -1,0 +1,17 @@
+[1mCOMANDO[0m
+  breve
+  breve combate
+
+[1mDESCRIPCION[0m
+  Pasa de modo breve a modo detallado. Si estás en modo breve, solo verás
+  las descripciones cortas de todas las habitaciones. Usa el comando
+  'mirar' para ver la descripción larga.
+  Por defecto un jugador nuevo estará en modo detallado.
+
+  Con 'breve combate' cambiarás entre el modo abreviado y el modo detallado
+  de los mensajes del combate.
+  Por defecto un jugador nuevo estará con los mensajes de combate en modo
+  detallado.
+
+[1mTEMAS RELACIONADOS[0m
+  salidas, color

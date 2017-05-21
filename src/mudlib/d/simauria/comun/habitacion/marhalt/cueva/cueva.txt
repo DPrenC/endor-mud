@@ -1,0 +1,71 @@
+*************************************************
+*						*
+*	Fichero: cueva.txt			*
+*	Localizacion:				*
+*	Realizado por: Cajun, el ejecutor	*
+*	Fecha de creacion: 30/09/1999		*
+*	Fecha de modificacion:			*
+*						*
+*************************************************
+
+Cueva de los Trolls:
+--------------------
+
+En algun lugar no demasiado lejos de las rutas comerciales se encuentran
+unas cadenas montanyosas no demasiado altas, aunque bastante escarpadas para
+su altura. En una de las paredes interiores de estas montanyas se puede ver
+una pequenya hendidura en la roca que al acercarse parece una cueva.
+
+El interior de la cueva es muy oscuro y humedo, las paredes de roca gotean y
+un musgo muy resbaladizo cubre el suelo. La cueva consta de dos niveles, uno
+al ras de suelo y otro mas profundo. En ambos niveles la cueva se ramifica
+en distintos pasadizos que dan a diversas habitaciones.
+
+NIVEL 0:
+--------
+
+		c01
+ 		c02
+    c06 c05 c04	c03
+                c07
+    	        c08
+	    c10 c09 c11 c12 c13
+		        c14
+		    	c15
+		    
+
+En el nivel 0, hay 5 habitaciones importantes:
+	c06 -> 	Lugar donde los Trolls tiran todos los desperdicios, esta
+		habitacion huele fatal y algunos animales carronyeros se han
+		acomodado a vivir entre los desperdicios.
+    c07,c08 ->  En medio de este tramo de pasillo los Trolls han construido
+		una precaria trampa de foso con puntas de madera en el fondo
+		para defenderse.
+	c10 ->	Lugar de guardia del grupo, aqui guardan las armas y
+		protegen el resto de la cueva.
+	c13 ->  Aqui las trolls-hembras preparan la comida para el grupo y
+		ensenyan a desenvolverse a sus crias.
+	c15 ->	El suelo de la cueva ha cedido en este lugar y un agujero en
+		suelo la comunica con el nivel inferior (nivel -1). Desde
+		aqui se puede acceder a las habitaciones inferiores.
+
+NIVEL -1:
+---------
+
+			c16
+			c17
+          		c18 c19
+	        	c20 c21 c22
+
+En el nivel 1, hay 5 habitaciones importantes:
+	c16 -> 	Al bajar del nivel 0 se desciende aqui, esta habitacion esta
+		completamente llena de escombros y restos del suelo del
+		nivel superior.
+	c18,c19,c20,c21 ->  Estas cuatro habitaciones rodean un pilar
+		central, esta es la habitacion del jefe del grupo. Aqui se
+		encuentran algunos objetos que han robado a las carretas
+		de comerciantes.
+	c22 ->  Esta cueva esta ligeramente escavada y muestra en una de sus
+		paredes una puerta de piedra construida por una mano
+		"humana". La puerta esta cerrada y pienso utilizarla para
+		dar acceso a un dungeon mas adelante.

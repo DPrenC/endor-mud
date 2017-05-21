@@ -1,0 +1,12 @@
+[1mCOMANDO[0m
+  decir <mensaje>
+
+[1mDESCRIPCION[0m
+  Dices un mensaje que escucharan todos aquellos que esten contigo en
+  la misma habitación, a excepción de aquellos que te esten ignorando.
+   
+[1mEJEMPLOS[0m
+  decir Hola.. que tal??
+
+[1mTEMAS RELACIONADOS[0m
+  telepatia, canal, canales, ignorar, acciones

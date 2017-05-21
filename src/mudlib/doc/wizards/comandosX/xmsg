@@ -1,0 +1,9 @@
+SINOPSIS
+    xmsg [to <objeto>|all]
+
+DESCRIPCION
+    Envia un mensaje. Si no existieran argumentos entonces enviaria el mensaje
+    a la habitacion. Puedes enviarselo a un solo objeto utilizando "to". En
+    caso de utilizar "all" el mensaje lo recibirian todos los PJ de Simauria.
+    Este comando puede usarse para enviar texto mediante cut&paste a alguien
+    sin necesidad de escribir "decir", "tel" o "gritar" en cada linea.

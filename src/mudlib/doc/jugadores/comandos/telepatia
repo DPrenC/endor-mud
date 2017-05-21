@@ -1,0 +1,15 @@
+[1mCOMANDO[0m
+  tel[epatia] <jugador(es)> <mensaje>
+
+[1mDESCRIPCION[0m
+  Le envias un mensaje telepatico a cualquier jugador que se encuentre
+  conectado en ese momento. También puedes enviar el mismo mensaje a
+  varios jugadores simplemente separando sus nombres por comas.
+   
+[1mEJEMPLOS[0m
+  tel woo Hola
+  telepatia woo Hola
+  tel woo,theuzifan ¿Sabeis donde esta mi perro?
+
+[1mTEMAS RELACIONADOS[0m
+  mensajes, decir, susurrar, conversar, ausente

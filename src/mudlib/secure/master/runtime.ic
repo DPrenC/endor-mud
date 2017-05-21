@@ -1,0 +1,522 @@
+/**
+ * /secure/master/runtime.ic
+ *
+ * Archivo para ser incluido por el master. Contiene las funciones de
+ * soporte para tiempo de ejecución.
+ */
+
+//===========================================================================
+//  Runtime Support
+//
+// Various functions used to implement advanced runtime features.
+//===========================================================================
+
+object compile_object (string filename); // Compile an virtual object.
+string get_wiz_name (string file); // Return the author of a file.
+mixed include_file (string file, string compiled_file, int sys_include); // Return the full pathname for an included file.
+mixed inherit_file (string file, string compiled_file); // Return the full pathname for an inherited object.
+string printf_obj_name (object obj); // Return a printable name for an object.
+mixed prepare_destruct (object obj); // Prepare the destruction of the given object.
+void quota_demon (void); // Handle quotas in times of memory shortage.
+void receive_udp (string host, string msg, int port); // Handle a received IMP message.
+void slow_shut_down (int minutes); // Schedule a shutdown for the near future.
+varargs void notify_shutdown (string crash_reason); // Notify the master about an immediate shutdown.
+
+
+//---------------------------------------------------------------------------
+object compile_object (string filename)
+// [+] Compile an virtual object.
+//
+// Arguments:
+//   PO: The object requesting the virtual object.
+//   filename         : The requested filename for the virtual object.
+//
+// Result:
+//   The object to serve as the requested virtual object, or 0.
+//
+// This function is called if the compiler can't find the filename for an
+// object to compile. The master has now the opportunity to return an other
+// which will then serve as if it was compiled from <filename>.
+// If the master returns 0, the usual 'Could not load'-error will occur.
+//
+/* The functions asks either prev->Query("VMaster") resp. prev
+// itself by calling ->compile_object(<filename>) and using that result.
+// If the load fails and the loader has an environment, the same procedure
+// is performed for the environment again (simple because livings moving
+// around in a virtual maze are the loading objects, though their rooms
+// alone know about the virtuality). */
+/* Primero chekea el virtualmaster
+// Si estos no responden, busca en el objeto q hizo la llamada
+// y si no en su environment. */
+{
+    object obj;
+
+    if (filename[0] != '/') filename = "/"+filename;
+
+    last_filename = filename;
+    last_loader = object_name(PO);
+    last_env = environment(PO) ? object_name(environment(PO)) : 0;
+    last_lived = living(PO);
+
+    obj = (object) VIRTUALMASTER->compile_object(filename);
+
+//    DTELL("nyh",sprintf("VIRTUALMASTER->compile_object(%O) = %O\n",filename, obj));
+
+    if (!obj) {
+        object vmaster;
+
+        vmaster = ((object) PO->Query("VMaster")) || PO;
+        obj = (object) vmaster->compile_object(filename);
+
+        if (!obj && (vmaster = environment(PO))) {
+            vmaster = ((object) vmaster->Query("VMaster")) || vmaster;
+            obj = (object) vmaster->compile_object(filename);
+        }
+    }
+
+    if (obj) obj->SetIsVirtual(1);
+
+    return obj;
+}
+
+
+//---------------------------------------------------------------------------
+mixed include_file (string file, string compiled_file, int sys_include)
+// [+] Generate the pathname of an included file.
+//
+// Arguments:
+//   PO: The object causing the compile.
+//   file             : The name given in the #include directive.
+//   compiled_file    : The object file which is just compiled
+//                      (compat: name without leading "/").
+//   sys_include      : TRUE for #include <> directives.
+//
+// Result:
+//   0:      use the normal include filename generation (""-includes are used
+//           as they are, <>-includes are handled according to H_INCLUDE_DIRS).
+//   <path>: the full absolute pathname of the file to include without
+//           parentdir parts ("/../"). Leading slashes ("/") may be omitted.
+//   else:   The include directive is not legal.
+{
+    return 0;
+}
+
+//---------------------------------------------------------------------------
+mixed inherit_file (string file, string compiled_file)
+// [+] Generate the pathname of an inherited file.
+//
+// Arguments:
+//   PO: The object causing the compile.
+//   file             : The name given in the inherit directive.
+//   compiled_file    : The object file which is just compiled
+//                      (compat: name without leading "/").
+//
+// Result:
+//   0:      use the filename as it is.
+//   <path>: the full absolute pathname of the file to inherit without
+//           parentdir parts ("/../"). Leading slashes ("/") are ignored.
+//   else:   The include directive is not legal.
+{
+    return 0;
+}
+
+//---------------------------------------------------------------------------
+/* Get the owner of a file. This is called from the game driver, so as
+ * to be able to know which wizard should have the error.
+ * It can be either a wizard or a domain. */
+string get_wiz_name(mixed file)
+// [+] Return the author of a file.
+//
+// Arguments:
+//   file: The name of the file in question.
+//
+// Result:
+//   The name of the file's author (or 0 if there is none).
+//
+// This function is called for maintenance of the wiz-list, to score errors
+// to the right wizard.
+
+/* get_wiz_name: This function should return the creator of an object. It is
+ * used to determine to which userid the object should be set. Wizard-defined
+ * objects get the userid and eff. userid of the wizard if the cause of
+ * the cloning is the same wizard and only uid but euid of 0 if they are
+ * different. Public objects get both userid and euserid of the cloning
+ * wizards uid.
+ *
+ * Addition: subdirs in domains only get the userid of the wiz if
+ * the wiz is really a member of the domain.
+ *
+ * We do it this way:
+ * - Files in /w/<wizname>/* return <wizname> if <wizname> is no learner.
+ * - Files in /players/<wizname>/* return <wizname> if <wizname> is no learner.
+ * - Files in /d/<domain>/<wizname> return <wizname>.
+ * - Other files in /d/<domain>/* return <domain>.
+ * - Files in /d/common/* return <domain>.
+ * - Public files return backbone-id
+ * - Secure files return root-id
+ * - Other files (/ftp, /open) return 0 (not loadable)
+ * - Files in /log/xtools/<wizname>.* return <wizname>
+ */
+{
+  string *strs;
+  int s;
+
+  if (objectp(file)) strs = full_path_array(object_name(file));
+  else if (stringp(file)) strs = full_path_array(file);
+  else return 0;
+
+  s = sizeof(strs);
+  if (s<2) return 0;
+
+  switch(strs[0]) {
+
+  case PDIR: return strs[1];       // we tested for s >= 2 already S.P.
+  case DDIR: return strs[1];       // we tested for s >= 2 already S.P.
+  case "secure": return ROOTID;
+      /* The following uids are illegal for preload(). New uids here
+      ** therefore need to go into preload() as well.
+      */
+  case "std":
+  case "room":
+  case "obj":  return BACKBONEID;
+
+  case "news": return "news";
+  case "lib":  return "lib";
+  case "bin":  return "bin";
+
+  case "log": if (sizeof(strs)==3 && strs[1]=="xtools") return explode(strs[2],".")[0];
+  }
+  return 0;
+}
+
+//---------------------------------------------------------------------------
+string printf_obj_name (object obj)
+// [+] Return a printable name for an object.
+//
+// Arguments:
+//   obj: The object which name is of interest.
+//
+// Result:
+//   A string with the objects name, or 0.
+//
+// This function is called by sprintf() to print a meaningful name
+// in addition to the normal object_name().
+// If this functions returns a string, the object will be printed
+// as "<obj_name> (<printf_obj_name>)".
+{
+    return 0;
+}
+
+//---------------------------------------------------------------------------
+mixed prepare_destruct (object obj)
+// [+] Prepare the destruction of the given object.
+//
+// Argument:
+//   obj : The object to destruct.
+//
+// Result:
+//   Return 0 if the object is ready for destruction, any other value
+//   will abort the attempt.
+//   If a string is returned, an error with the string as message will
+//   be issued.
+//
+// The gamedriver calls this function whenever an object shall be destructed.
+// It expects, that this function cleans the inventory of the object, or
+// the destruct will fail. It is also recommended to clean up all
+// shadows on obj at this point.
+//
+// Furthermore, the function could notify the former inventory objects that
+// their holder is under destruction (useful to move players out of rooms which
+// are updated); and it could announce mudwide the destruction(quitting) of
+// players.
+//
+// Another use for this apply is to take care of any other 'cleanup'
+// work needed to be done, like adjusting weights, light levels, and
+// such. Alternatively and traditionally this is done by calling an
+// lfun 'remove()' in the object, which then calls the efun destruct()
+// after performing all the adjustments.
+{
+  object super;
+  mixed *errors;
+  int i;
+  string str, name, rname;
+  object sh, next;
+
+  if (!objectp(obj)) return 0;
+  catch(rname = (string)obj->QueryRealName());
+  catch(name =  (string)obj->QueryName());
+
+  if (   getuid(obj) != "gopher"
+      && rname != "<logon>"
+      && explode(object_name(obj),"#")[0] != LOGIN)
+  {
+    if (   interactive(obj)
+        && (!IS_LEARNER(obj) || !obj->QueryInvis()))
+    {
+        obj->NotifyExit();
+    }
+    /* To find out about the strange destructions of wizards... */
+    if (   !catch(i = (int)obj->QueryIsPlayer())
+        && i
+        && (    obj != TP || obj != TI
+             || TP != previous_object(caller_stack_depth()-1)
+             || TP != TI
+             || TI != previous_object(caller_stack_depth()-1)
+           )
+        && (   !previous_object(1)
+            || (   object_name(previous_object(1))[0..7] != "/secure/"
+                && object_name(previous_object(1)) != "/"+capitalize(getuid(previous_object(1)))
+               )
+           )
+       )
+    {
+      str = (rname) || ("NPC '"+name+"'");
+      str = ctime(time())+" "+capitalize(str)
+            +(str != getuid(obj) ? (" ["+getuid(obj)+"] "):" ")
+            +query_wiz_level(obj);
+      if (!interactive(obj)) str += " netdead.";
+      else if (query_idle(obj)) str += " idle "+(query_idle(obj))+" sec.";
+      else str += " active.";
+      str += backtrace();
+      if (file_size("/log/DESTRUCT") >= 50000)
+        catch(rename("/log/DESTRUCT", "/log/DESTRUCT.old"));
+      log_file("DESTRUCT", str);
+    }
+  } /* if (is gopher) */
+
+  if (!query_shadowing(obj))
+    for (sh = shadow(obj, 0); sh; sh = next) {
+      next = shadow(sh, 0);
+      funcall(bind_lambda(SF(unshadow), sh)); /* Avoid deep recursion */
+      destruct(sh);
+    }
+
+  super = environment(obj);
+  if (!super) { // No tengo environment
+    object item;
+
+    while ( item = first_inventory(obj) ) {
+      destruct_environment_of(item); // Notifico y si sigue aqui, destruyo.
+      if (item && environment(item) == obj) destruct(item);
+    }
+  }
+  else { // Si que tengo environment
+    while ( first_inventory(obj) ) {
+      if (obj->QueryIsPlayer()) destruct(first_inventory(obj));
+      else move_or_destruct(first_inventory(obj), super);
+    }
+  }
+
+  return 0; /* success */
+}
+
+//---------------------------------------------------------------------------
+void quota_demon (void)
+// [+] Handle quotas in times of memory shortage.
+//
+// This function is called during the final phase of a garbage collection if
+// the reserved user area couldn't be reallocated. This function (or a called
+// demon) has now the opportunity to remove some (still active) objects from
+// the game. If this does not free enough memory to reallocate the user
+// reserve, slow_shut_down() will be called to start Armageddon.
+//
+// Note: Up to now, the wizlist lacks various informations needed to detect
+//   the memory-hungriest wizards.
+{
+  log_file("GAME_LOG", "["+ctime()+"] quota_demon() called.\n");
+  catch("/secure/destructor"->start_dragon());
+}
+
+//---------------------------------------------------------------------------
+#include UDP_HEADER
+void receive_udp (string host, string msg, int port)
+// [+] Handle a received UDP message.
+//
+// Arguments:
+//   host: Name of the host the message comes from.
+//   msg : The received message.
+//   port: the port number from which the message was sent.
+//
+// This function is called for every message received on the UDP port.
+//
+// The driver first calls receive_udp(). If that method doesn't exist
+// and if the driver is compiled with USE_DEPRECATED, it will then
+// call receive_imp().
+/*
+ * receive_udp is a master function for receiving inter-mud-protocol
+ * messages. Parameters are the host where the message comes from and
+ * the message itself.
+ */
+{
+  INETD->receive_udp(host, msg, port);
+//  log_file("UDP_MSGS","Host: "+host+" - "+msg+"\n");
+}
+
+//---------------------------------------------------------------------------
+/* This function is indirectly called by the gamedriver when the memory
+ * is getting low and should shut the game down in a certain amount
+ * of minutes. We load the shutdown demon and tell him to do it. */
+void slow_shut_down (int minutes)
+// [+] Schedule a shutdown for the near future.
+//
+// Argument:
+//   minutes: The desired time in minutes till the shutdown:
+//             6, if just the user reserve has been put into use;
+//             1, if the (smaller) system or even the master reserve
+//                has been put into use as well.
+//
+// The gamedriver calls this function when it runs low on memory.
+// At this time, it has freed its reserve, but since it won't last long,
+// the games needs to be shut down. Don't take the 'minutes' as granted
+// remaining uptime, just deduce the urgency of the shutdown from it.
+// The delay is to give the players the opportunity to finish quests,
+// sell their stuff, etc.
+// It is possible that the driver may reallocate some memory after the
+// function has been called, and then run again into a low memory situation,
+// calling this function again.
+//
+// For example: this function might load an 'Armageddon' object and tells
+// it what to do. It is the Armageddon object then which performs
+// the shutdown.
+//
+// Technical:
+//   The memory handling of the gamedriver includes three reserved areas:
+//   user, system and master. All three are there to insure that the game
+//   shuts down gracefully when the memory runs out: the user area to give
+//   the players time to quit normally, the others to enable emergency-logouts
+//   when the user reserve is used up as well.
+//   The areas are allocated at start of the gamedriver, and released when
+//   no more memory could be obtained from the host. In such a case, one
+//   of the remaining areas is freed (so the game can continue a short
+//   while) and a garbagecollection is initiated.
+//   If the garbagecollection recycles enough memory (either true garbage
+//   or by the aid of the quota_demon) to reallocate the areas, all is
+//   fine, else the game is shut down by a call to this function.
+{
+  int i;
+  object armageddon_ob;
+  object where_ob;
+  string err;
+
+  find_userinfo("armageddon"); /* Prevents endless recusion in valid_read() */
+  seteuid("armageddon");
+
+  if (TI) log_file("GAME_LOG","["+ctime()+"] "+geteuid(TI));
+  else log_file("GAME_LOG","["+ctime()+"] Gamedriver");
+
+  log_file("GAME_LOG"," slow_shut_down("+minutes+")\n");
+
+  armageddon_ob = find_object(SHUTDEMON);
+  if (   !armageddon_ob
+      || !armageddon_ob->query_progress()
+      || getuid(armageddon_ob) != "armageddon"
+      || minutes < (int)armageddon_ob->query_time_left() / 60
+      || armageddon_ob->query_time_left() <= 0
+     ) {
+    err = catch(call_other(SHUTDEMON, "???")
+	       , armageddon_ob = find_object(SHUTDEMON));
+    seteuid(get_master_uid());
+    if (err)
+          return;
+    filter(users(), lambda(({SYM(u)}),({SF(&&),
+      ({SF(environment), SYM(u)}),
+      ({SF(!=), SYM(u), ({SF(this_player)})}),
+      ({SF(tell_object), SYM(u), "The Gamedriver shouts: Damn! I ran out of memory!\n"})
+    })));
+    armageddon_ob->set_reason("Game is out of memory.");
+    armageddon_ob->shut(minutes);
+  }
+  else {
+    log_file("GAME_LOG", "  Armageddon already active\n");
+  }
+}
+
+//---------------------------------------------------------------------------
+varargs void notify_shutdown (string crash_reason)
+// [+] Notify the master about an immediate shutdown.
+//
+// If <crash_reason> is 0, it is a normal shutdown, otherwise it is a crash
+// and <crash_reason> gives a hint at the reason.
+//
+// The function has the opportunity to perform any cleanup operation, like
+// informing the mudwho server that the mud is down. This can not be done
+// when remove_player() is called because the udp connectivity is already
+// gone then.
+//
+// If the gamedriver shuts down normally , this is the last function called
+// before the mud shuts down the udp connections and the accepting socket
+// for new players.
+//
+// If the gamedriver crashes, this is the last function called before the
+// mud attempts to dump core and exit. WARNING: Since the driver is in
+// an unstable state, this function may not be able to run to completion!
+// The following crash reasons are defined:
+//   "Fatal Error": an internal sanity check failed.
+{
+    log_file("GAME_LOG","["+ctime()+"] notify_shutdown("+crash_reason+")\n");
+
+    if (PO && PO != TO) return;
+    filter(users(),SF(tell_object),"La Tierra Media ha dejado de existir.\n");
+    save_wiz_file();
+}
+
+//---------------------------------------------------------------------------
+// Fin de las funciones inherentes
+//---------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------
+
+void save_wiz_file()
+/* Save the wizlist file.
+ */
+{
+#ifdef __WIZLIST__
+    rm(__WIZLIST__);
+    write_file(
+      __WIZLIST__,
+      implode(
+        map(wizlist_info(),
+          lambda(({'a}),
+            ({#'sprintf, "%s %d %d\n",
+              ({#'[, 'a, WL_NAME}),
+              ({#'[, 'a, WL_COMMANDS}),
+              ({#'[, 'a, WL_EXTRA})
+            })
+          )
+        ), ""
+      )
+    );
+#endif
+}
+
+/* An error in this function can be very nasty. Note that unlimited recursion
+ * is likely to cause errors when environments are deeply nested
+ */
+void move_or_destruct(object what, object to) {
+  int rc;
+  object oenv;
+
+  oenv = environment(what);
+  if (   (   catch(rc = (int) what->move(to, 1)) || rc != 1 /* ME_OK Pepel */
+          || (what && environment(what) == oenv)
+         )
+      && what
+     )
+    destruct(what);
+}
+
+/*
+ * When an object is destructed, this function is called with every
+ * item in that room. We get the chance to save players !
+ */
+void destruct_environment_of(object ob) {
+  string target = "/std/void";
+
+  if (!query_once_interactive(ob)) return;
+  if (!interactive(ob) && object_name(environment(ob)) != "/room/netdeath")
+    target = "/room/netdeath";
+  else
+    tell_object(ob, "Tu personaje ha sido movido a otra room debido a un error irreparable donde te encontrabas.\n");
+  if (catch(ob->move(target, 2, "es transferido")) && ob)
+    destruct(ob);
+}

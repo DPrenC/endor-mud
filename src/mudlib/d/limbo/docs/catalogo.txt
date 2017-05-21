@@ -1,0 +1,8 @@
+; DESCRIPCION : Este fichero contiene la lista de los libros disponobles
+;               biblioteca de la isla Limbo
+; FORMATO     : <nombre del fichero>,<desccripcion del libro>
+;
+; NOTA        : las lineas que empiezan con ';' son comentario
+;               el resto deben ser libros
+isla_Limbo.txt,La isla Limbo
+pollo.txt,Segundo libro de poetica de Aristoteles

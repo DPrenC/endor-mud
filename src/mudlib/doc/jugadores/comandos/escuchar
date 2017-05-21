@@ -1,0 +1,14 @@
+[1mCOMANDO[0m
+  escuchar [<arg>]
+
+[1mDESCRIPCION[0m
+  Te permite escuchar en una habitación, a un objeto o a otro personaje. Es
+  un buen sistema para averiguar más datos acerca y poder realizar los quests
+  más facilmente.
+   
+[1mEJEMPLOS[0m
+  escuchar           Escuchas en la habitación donde te encuentras
+  escuchar elfo      Escuchas al elfo atentamente
+
+[1mTEMAS RELACIONADOS[0m
+  mirar, oler

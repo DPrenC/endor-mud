@@ -1,0 +1,1 @@
+#include "./sys/goldhai.h"

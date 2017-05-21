@@ -1,0 +1,179 @@
+<HTML>
+
+<!-- This is a hypertext file. -->
+<!-- Either view it using a hypertext browser, such as NCSA Mosaic, -->
+<!-- or ignore the html markup tags enclosed in angle-brackets -->
+
+<HEAD><TITLE> Intermud DONE </TITLE></HEAD>
+<BODY>
+
+<H1> DONE (0.7a) </H1>
+<HR>
+
+<H2> Version 0.3 </H2>
+<UL>
+<LI> send_udp() will not send requests that are not listed in the
+     target hosts command list.
+<LI> Abbreviated mudnames can be used. send_udp() will do mudname
+     completion as long as there is no ambiguity.
+<LI> receive_udp() logs the DATA field of system replies (ie. no
+     recipient) if it exists.
+<LI> receive_udp() will send a 'request failed' reply and record a log
+     if an incoming command is unknown or fails.
+<LI> Added some example files to help in writing intermud commands.
+<LI> Added 'finger' module.
+<LI> Any data fields of type object passed to send_udp() will be
+     converted to object_name format on encoding.
+<LI> A object_name or object can be used as the SENDER field and replies
+     will be directed to udp_reply(mapping data) in that object.
+<LI> Added 'channel' module.
+</UL>
+
+
+<H2> Version 0.4 </H2>
+<UL>
+<LI> The second (port) argument to send_imp() is typecast to an int for
+     compatability with older drivers.
+<LI> Null fields are ignored in the encoding process to minimize packet
+     size.
+<LI> inetd.c and the files in /udp have been rewritten to make them
+     more portable and aid quick and easy installation of the basic
+     intermud system.
+<LI> Int and string fields are guaranteed to be decoded correctly.
+     Float support was removed for simplicity and to aid portability.
+<LI> Buffering is done on packets longer than the maximum transfer
+     size.
+</UL>
+
+
+<H2> Version 0.5 </H2>
+<UL>
+<LI> Fixed bug with object encoding.
+<LI> Channel module modified to allow channel listings.
+<LI> Reply and ping requests moved from the inetd to seperate modules.
+<LI> Query and man modules added.
+<LI> Host data and access system rewritten.
+<LI> Previously unknown hosts are added dynamically with public privs.
+<LI> Field names in the data mapping are not restricted to strings.
+<LI> The DATA field guarantees correct decoding of strings and ints.
+</UL>
+
+
+<H2> Version 0.6 </H2>
+<UL>
+<LI> Added definition of INETD to udp.h.
+<LI> Renamed the LOG_FILE macro in udp.h to INETD_LOG_FILE to prevent
+     clashes.
+<LI> Added simple reliability scheme (udp.h):
+     Requests that expect a reply will be resubmitted up to RETRIES number
+     of times after each TIME_OUT expires without a response.
+<LI> Added compatability to allow another intermud system (or
+     interpretter) to run invisibly underneath the inetd package.
+     (config in inetd.c)
+<LI> Added security checking to receive_udp() (config in inetd.c).
+<LI> Added diagnostics to inetd if required (udp.h):
+     If used, the RESPONSE_TIME field will contain the number of seconds
+     a reply took to arrive.
+<LI> Error checking in INETD_HOSTS file.
+<LI> Changed send_udp() to return 0 for success and an error message
+     for failure.
+<LI> Muds are PINGed at load-time by the function startup() which is
+     called via a call_out("startup", 1). set_host_list() is called
+     normally from reset()/create(). This allows inetd.c to be loaded
+     from init_file safely.
+<LI> Added a symbol USE_EXTRACT to inetd.c for muds that do not support
+     the a[n..] indexing notation.
+<LI> Added compatability for to_int(), to_string, copy() and
+     send_imp() efuns in the form of definitions in inetd.c
+<LI> Added SYSTEM field to hold system information.
+<LI> Moved timeout notification to reply.c module.
+<LI> Added HOST_STATUS field to "hosts" queries in udp/query.c
+<LI> Added PACKET_LOSS diagnostic field which holds the number of
+     packets lost before the last reply (or timeout) arrived.
+<LI> Auto-updating of host and port numbers:
+     The memory-resident host list is updated and a log recorded of the
+     event.  No change is made to the INETD_HOSTS file.
+<LI> Illegal calls of receive_udp() are logged.
+<LI> Checking for illegal characters is done when encoding packets.
+<LI> "time" queries changed to return ctime(time()) in udp/query.c
+<LI> Renamed the "CHANNEL" and "CMD" headers used by udp/channel.c to
+     "channel" and "cmd" so as to reserve upper case for standard
+     headers in udp.h. See udp/channel.c for backwards compatability
+     hack.
+<LI> Ftp module added. (udp/ftp.c)
+<LI> Improved error tracing (slightly) when remote commands fail.
+<LI> The DATA field will be encoded as long as it is present in the
+     data mapping even if it's contents is (int)0 to ensure the mapping
+     indices are correct on decoding.
+<LI> Changed udp/reply.c so replies will be sent to players with
+     tell_object() if the players name is used as the SENDER field, but
+     to player->udp_reply() if the filename of the player is used.
+<LI> start_up() is only called in inetd.c at boot-up (ie.
+     !this_player()) to make it a bit nicer when testing/debugging.
+<LI> Added locate module. (udp/locate.c)
+</UL>
+
+
+<H2> Version 0.6.1 </H2>
+<UL>
+<LI> Fixed a bug(/feature?) in packet decoding that was converting some
+     system fields to lower case.
+</UL>
+
+
+<H2> Version 0.7 </H2>
+<UL>
+<LI> RESPONSE_TIME is rounded up to the nearest second rather than
+     down.
+<LI> As a security measure, if your local mud is listed in your host
+     list, host and port changes will not occur dynamically. Instead a
+     "fake mud" log will be made as it is assumed you would update your
+     host list if you changed address or port.
+<LI> Mud name changes are logged and the host list updated accordingly
+     rather than simply adding them as a new mud.
+<LI> The host list is reset correctly when calling set_host_list().
+<LI> New muds using our LOCAL_NAME will we logged as fake muds and not
+     added to the host list.
+<LI> INETD_HOSTS file is no longer supplied as part of the distribution
+     as it was always out of date!  It should be obtained separatly via
+     ftp.
+<LI> Increased timeout for buffered packets to (REPLY_TIME_OUT +
+     REPLY_TIME_OUT * RETRIES), to improve hit rate when split packets
+     are received over multiple resends.
+<LI> (string *)expand_mud_name(string name) added to inetd.c.  It
+     returns an array of mudnames which can be expanded from the string
+     given as it's argument.  This can be used by intermud objects to
+     expand mud names.  Changed examples/_ping.c to use this.
+<LI> Compatability with CD.03.xx drivers.
+<LI> HOST_STATUS retension is handled more intelligently when
+     set_host_list() is called.
+<LI> Changed the way the SYSTEM field is implemented to allow multiple
+     system fields.  Added (status)check_system_field(mapping data,
+     string field) and (mapping)add_system_field(mapping data, string
+     field) to inetd.c for manipulation of the system field.  Changed
+     udp/reply.c, _ping.c, _ftp.c and _locate.c appropriately.
+<LI> Fixed some minor bugs in udp/ftp.c and examples/_ftp.c
+<LI> Changed examples/_locate.c so only successes are reported by
+     default.  Fail and timeout reports can be requested independantly.
+<LI> Added compatability for a future change of the DELIMITER string
+     used in packet encoding / decoding. (decode_packet() takes a
+     second argument which is the DELIMITER string to be used).
+<LI> Packets with no REQUEST field are logged as system messages.
+<LI> Repeated requests have the REPEAT system field set.  Modified
+     udp/tell to use this to prevent repeated tells.  Requests with the
+     REPEAT system field set should generate a response as normal, but
+     should take no other action.
+<LI> Changed udp/reply.c to ignore replies with no recipient.
+<LI> Changed udp/channel.c to send a minimal reply.
+<LI> Tidied up udp/channel.c.  It now uses the channeld code supplied as
+     an example channel implementation.  If people want to use their own
+     channel system they should modify udp/channel.c accordingly.
+<LI> Changed examples/_ping.c to give more useful output.
+<LI> Fixed a bug which allocated a new ID to retries if they were buffered.
+<LI> Fixed a bug in buffered packet decoding which only appeared with
+     DELIMITER_COMPAT enabled.
+<LI> Added query("valid_request", request, mudname) function to inetd.c.
+     Changed channeld.c to use this.
+</UL>
+
+</BODY></HTML>

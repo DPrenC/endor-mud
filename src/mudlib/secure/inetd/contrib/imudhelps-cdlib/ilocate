@@ -1,0 +1,20 @@
+NAME
+	ilocate - find a player on another MUD
+
+SYNOPSIS
+	ilocate <playername>
+	ilocate -t <playername>
+	ilocate -s <playername>
+	
+DESCRIPTION
+	Locates a player on a MUD.  
+
+OPTIONS
+	[none]		-	will locate <playername>
+	-t <playername>	-	will locate <playername> but ingore time-outs
+	-s <playername> - 	will locate <playername> but only report
+				successes
+
+SEE ALSO
+	gwiz, intermud, locate, mudlist
+

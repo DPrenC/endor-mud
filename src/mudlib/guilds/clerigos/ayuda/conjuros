@@ -1,0 +1,21 @@
+LISTA DE CONJUROS DEL GREMIO
+----------------------------
+
+ -------------------------------------------------------------
+|  Nombre             | Nivel | Nivel | Puntos | Tipo         |
+|  Conjuro            | Hacer | Memor | Magia  | Conjuro      |
+|-------------------------------------------------------------|
+| Identificar Hierba  |   1   |   5   |   10   | CONOCIMIENTO |
+| Oscuridad           |   1   |   6   |   10   | LUZ          |
+| Lanza de Acido      |   1   |   7   |   10   | ATAQUE       |
+| Invocar victima     |   1   |   8   |   16   | CREACIÓN     |
+| Maza del Infierno   |   1   |  10   |   20   | CREACIÓN     |
+| Familiar            |   1   |  10   |   15   | ALTERACION   |
+| Piel de Piedra      |   1   |  12   |   16   | ALTERACIÓN   |
+| Frio Intenso        |   1   |  15   |   15   | ATAQUE       |
+| Coraza Ligera       |   5   |  16   |   23   | CREACIÓN     |
+| Teletransporte      |  10   |  25   |   80   | TRANSPORTE   |
+| Elemental de Fuego  |  10   |  25   |   55   | CREACION     |
+| Apocalipsis         |  25   |  35   |   90   | ATAQUE       |
+ -------------------------------------------------------------
+ 

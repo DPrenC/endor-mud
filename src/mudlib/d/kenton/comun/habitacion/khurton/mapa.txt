@@ -1,0 +1,24 @@
+
+
+              BAN arb
+               |   |
+              AYU-Ja1     PAL IMP
+                   |       |   |
+              Ca1-Ja2-Gi1-Gi2-Li1
+                   |           |
+          ALT-TEM Ja3-Ca2     Li2-PRO
+               |   |           |
+          POS-Pl1-Pl2     Ca3-Li3-Ca4
+               | X |           |
+          esc-Pl3-Pl4-Do1-Do2-DRA
+               |   |           |
+              CUR Ca5         Ca6
+
+Khurton
+===========
+Ja - Calle del Jamacuco     BAN - Banco               PRO - Provisiones
+Li - Calle del Limaquillo   AYU - AYuntamiento        CUR - Curiosidades
+Gi - Calle Gilloly          ALT - Altar               POS - Posada
+Do - Calle Dontigono        TEM - Templo              PAL - Palomar (Mailer)
+Pl - Plaza                  IMP - Impluvium
+Ca - Casa Kender            DRA - Plaza del Dragon

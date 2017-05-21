@@ -1,0 +1,126 @@
+SINOPSIS 
+void play_sound(object ob | object *ob, string name)
+void play_sound(object ob | object *ob, string name, object exclude |object
+*exclude)
+void play_sound(object ob | object *ob, string name, object exclude |object
+*exclude, int volume)
+void play_sound(object ob | object *ob, string name, object exclude |object
+*exclude, int volume, int loop)
+void play_sound(object ob | object *ob, string name, object exclude |object
+*exclude, int volume, int loop, int priority)
+void play_sound(object ob | object *ob, string name, object exclude |object
+*exclude, int volume, int loop, int priority, string type)
+void play_sound(object ob | object *ob, string name, object exclude |object
+*exclude, int volume, int loop, int priority, string type, string url) 
+
+DESCRIPCIÓN
+Envía una cadena de texto al cliente en el formato Mud SoundProtocol, que
+desencadena por parte de dicho cliente, la reproducción del sonido
+introducido
+en el parámetro <name>, para el / los objetos introducidos en <ob>,
+excluyendo si se especifica al / los objetos del parámetro <exclude>, y con
+el volúmen,
+repeticiones, prioridad, tipo de sonido y url alternativa especificados en
+<volume>, <loop>, <priority<, <type> y <url> respectivamente. 
+
+DETALLE
+Esta función, permite reproducir sonidos almacenados en el cliente de juego
+que utilice el jugador, si este lo soporta.
+Para ello, sólo se debe enviar una cadena específica a dicho cliente,
+conteniendo los parámetros estándares del protocolo MSP (Mud Sound
+Protocol). 
+
+Los parámetros que acepta esta función son:
+
+1. ob: El / los objetos que escucharán el sonido.
+Puede ser un array de objetos o un objeto único. En caso de ser un array,
+la función se encargará de obtener los jugadores, las habitaciones, y los jugadores
+que estén dentro de esas habitaciones, enviándoles el comando, siempre y cuando
+el jugador pueda escuchar, tenga los sonidos activados, y ese sonido en
+concreto habilitado (CanHear, QuerySounds() y QuerySoundEnabled()).
+
+2. Name: El nombre del fichero a reproducir.
+El nombre del sonido debe especificarse utilizando la ruta absoluta del
+mismo (o los defines que se hayan creado a este efecto) (/sys/sounds.h).
+Ejemplo: "/sucesos/canales/canal_general.wav"
+Si solo especificamos el nombre del sonido sin utilizar una ruta, la ruta
+utilizada será la introducida en el parámetro <type> que veremos más
+adelante.
+Nota: A fin de ofrecer al jugador varios paquetes de audio con distintos soportes, en caso en el que el sonido a enviar esté dentro de los formatos a elegir (ver SOUND_SUPPORT), no se debe poner la extensión al archivo. La propia función se encargará de obtener la extensión adecuada para cada jugador, dependiendo del formato que este haya elegido como formato de reproducción de ficheros de audio digital. Es decir, si nuestro archivo está dentro de este define (wav, mp3 u ogg), no se debe poner la extensión. En otro caso, sí se debe utilizar.
+
+
+También se pueden utilizar comodines en el nombre del sonido, de modo que,
+si hay varias coincidencias, el cliente reproducirá aleatoriamente
+cualquiera
+de los sonidos encontrados. En caso de utilizarse la opción <loop> con más
+de una repetición, el cliente volverá a reproducir uno de los sonidos
+encontrados de forma aleatoria por cada repetición.
+
+3. exclude: Objetos excluidos de los objetos que escucharán el sonido.
+En caso de introducirse un array de objetos jugador en el primer parámetro,
+se comprobará si alguno de ellos está en exclude, y no se le enviará el
+comando
+de sonido. De igual modo, si el objeto pasado como primer parámetro es un
+objeto habitación, el exclude también se tendrá en cuenta, no enviando el
+sonido
+a los jugadores de la habitación que se encuentren en dicho parámetro
+exclude. 
+
+Ejemplo:
+play_sound(load_object("/d/simauria/comun/habitacion/marhalt/nandor/calle42n
+"), "/global/transportes/caravana_llega.wav", TP);
+Enviaría el sonido a toda la habitación escepto a TP, si este se encuentra
+dentro de esa habitación. 
+
+4. volume: Volúmen del sonido:
+El volúmen por defecto de un sonido es 100. El máximo es 100, y el mínimo es
+1. 
+
+5. loop: Número de repeticiones del sonido.
+Loop puede ser cualquier valor entre -1 y __INT_MAX__. Por defecto, 0.
+Si se especifica -1, significa que el sonido se repetirá de forma
+indefinida, hasta que el jugador cierre el cliente, o bien hasta que reciba
+el comando
+de detención de sonidos codificado por la función stop_sounds(). 
+
+6. priority: Prioridad del sonido:
+Esto se utiliza para priorizar la reproducción de un determinado sonido
+mientras otro sonido está sonando.
+Ejemplo: Si se está escuchando 1.wav con prioridad 3, y llega 2.wav con
+prioridad 5, el fichero 1.wav dejará de escucharse y comenzará a sonar
+2.wav.
+En caso de que 2.wav tenga una prioridad inferior, símplemente, no sonará
+mientras que los otros sonidos con prioridad superior estén sonando.
+Si 2.wav tuviese la misma prioridad que 1.wav, dejaría de sonar 1.wav y
+comenzaría a sonar 2.wav. Esto último no lo tengo claro, yo creo que si dos
+sonidos tienen la misma prioridad, haré que suenen a la vez, al menos en mi
+cliente.
+Por defecto, si no se especifica prioridad, se presupone 50.
+Valores permitidos: 0-100.
+
+7. Type:
+Este parámetro se utiliza de forma poco frecuente. Es más, segúramente en
+Simauria no lo utilizaremos, aunque lo implemento para ceñirme al estándard
+del MSP.
+Este parámetro codifica otro modo de definir el subdirectorio de un archivo
+de sonido.
+Es decir, si como <name> ponemos: "canal_general.wav", y como <type>
+ponemos: "/global/canales/", es como si en el nombre hubiésemos puesto
+global/canales/canal_general.wav.
+
+8. Url:
+Este parámetro (nuevo en la última versión actualizada del MSP), permite, en
+caso de que el cliente no encuentre el sonido requerido por <name>, bajarse
+dicho sonido de internet, poniendo como ruta la url especificada en este
+parámetro, y agregándole la ruta del nombre de archivo, o de la
+concatenación de <type> y <name>, si estos dos parámetros estuvieran
+presentes.
+Ejemplo, si como <url> pusiésemos "http://www.simauria.org/sounds", y como
+<name> /global/canales/canal_general.wav, el cliente intentaría bajarse el
+archivo: http://www.simauria.org/sounds/global/canales/canal_general.wav.
+Si pusiésemos como <url>: "http://www.simauria.org/sounds", como <name>
+"canal_general.wav" y como <type>: "/global/canales/", obtendríamos el mismo
+resultado que con el ejemplo anterior.
+
+VER TAMBIEN
+stop_sounds(E), play_music(E), stop_music(E).

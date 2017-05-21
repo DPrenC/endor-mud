@@ -1,0 +1,72 @@
+   *************************************************************
+                   [52mREGLAS DEL DOMINIO DE KENTON[0m
+   *************************************************************
+ 
+    [52m1.[0m     [52mNo subir archivos de prueba[0m si no es estrictamente 
+        necesario. Cada member de  kenton tiene un espacio en 
+        [56m/d/kenton/miembros/[0m  y  uno muy  bonito  en [56m/players/[0m
+        para hacer pruebas.  La zona se desarrollará  en esos 
+        dos sitios (el que prefirais)  y [52mcuando esté lista se 
+        migrará[0m  por completo.  Si no esto se convierte en un 
+        basurero con cientos de archivos repetidos y backups.[0m
+
+    [52m2.[0m     [52mRespetar la estructura de directorios[0m. No se podrá 
+        poner un pnj en el directorio de objetos ni en ningún
+        directorio de pnj fuera de su ciudad. Ejemplo: un pnj
+        de flenton irá en  [56m/d/kenton/comun/pnj/flenton/[0m no en
+        [56m/d/kenton/comun/pnj/[0m ni cosas por el estilo.  Esto se
+        hace para tener algo de orden.  Dentro del directorio 
+        de la ciudad se pueden poner subdirectorios a vuestro
+        gusto (bosque, casas, comercio, sotano...)[0m
+
+    [52m3.[0m     [52mTODOS los archivos  deberán tener  cabecera[0m con el 
+    	nombre del archivo, el autor, su fecha de creacion un 
+    	espacio reservado para apuntar futuras modificaciones 
+    	por bugs, typos y cambios de cualquier tipo.[0m
+
+    [52m4.[0m     [52mTODAS las alusiones a rutas[0m  para enlazar o clonar
+        archivos  [52mestarán  en función  de los defines[0m.  Si se 
+        necesita la ruta de otro dominio consultad. Se podría
+        meter un define exclusivo  para eso en [56mkenton.h[0m y así
+        en caso de  cambios sería prácticamente  automático y 
+        no se tendrá que estar escarbando como un topo. [52mNunca[0m
+        [52mponer rutas relativas,  siempre completas  usando los[0m
+        [52mdefines.[0m
+
+    [52m5.[0m     En [56m/d/kenton/mapas/[0m  habrá 2 directorios,  ascii y
+        gif, en  el que se [52msubirán  los mapas de  la zona[0m que
+        se haga.  Recomiendo el  ASCII MapMaker que graba  en
+        ascii y puedes  capturar una  imagen muy  chula de la
+        zona con  cualquier  programa  de capturar  imágenes.
+        Después, si  podeis, los editais  para poner  ciertas
+        referencias. Cuando leais  esto ya debe haber alguno,
+        miradlos. El programa está en:
+           [57mhttp://www.stud.ux.his.no/~austad/mud/mapmaker/[0m
+    
+    [52m6.[0m     [52mTodas las  quest deberán  tener un log standard[0m en
+    	[56m/d/kenton/comun/quest/[0m.  En este directorio  no habrá
+    	pnjs  ni nada  relacionado  con la quest,  solo logs. 
+    	Quizás algún txt con la explicación  para resolverla,
+    	ya se verá.  Esto se hace  para evitar en  lo posible
+    	que mi-amigo-wizard(TM) pueda facilitar la resolución
+    	de la quest, al menos que se dignen a buscar un poco.[0m
+    
+    [52m7.[0m     Los archivos deberán  estar [52mordenados e identados[0m. 
+        En todos se usarán  [52mcabeceras standard[0m  como las  que
+        hay ahora. Se subirán en [52mformato UNIX[0m :) y [57mme reservo
+        el derecho de identarlos  y ordenarlos[0m para  que sean
+        más claros de leer, sin modificar el código (a no ser
+        que tengan bugs),  en cuyo caso se añadirá una reseña
+        en  la cabecera. Acostumbraros a usar  los [52mAddRoomCmd[0m
+        en lugar  de los add_action en las habitaciones,  así
+        os librais de usar el init() en habitaciones  simples
+        que no lo necesitarían a no ser por el add_action.[0m
+        
+    [52m8.[0m     Evidentemente [52mal que borre cosas vitales...  me lo[0m
+        [52mcargo.[0m
+    
+    [52m9.[0m     Bueno,  después de esto  supongo que  nadie querrá
+        estar en Kenton,  pero esto os lo leeis  por si acaso
+        cae algún despistado.[0m
+
+   *************************************************************

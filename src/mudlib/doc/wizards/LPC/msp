@@ -1,0 +1,23 @@
+MUD SOUND PROTOCOL (MSP)
+
+El Mud Sound Protocol, es un protocolo estandarizado para reproducir sonidos
+desde el servidor, en los clientes de mud que soporten este protocolo.
+Su página oficial en inglés desde la que podréis obtener más información,
+especificaciones y características es:
+http://www.zuggsoft.com/zmud/msp.htm#MSP%20Specification
+
+Las especificaciones del MSP, permiten reproducir tanto archivos wav
+(sonidos), como ficheros midi (música) de forma independiente. Así mismo,
+recientemente, se incorporó una nueva opción que permite, en caso de no
+existir el archivo de sonido en los archivos de sonido del cliente,
+descargarse estos de Internet para poder escucharlos. Queda a criterio del
+cliente si almacenarlos para utilizarlos más adelante sin necesidad de
+descargarlos, guardarlos en una carpeta temporal para la sesión, ETC.
+Nosotros aquí, nos limitaremos únicamente a emitir la cadena de caracteres
+que el cliente, según los estándares del MSP, pueda interpretar de forma
+correcta para reproducir los sonidos 
+requeridos.
+Para ello, se han creado cuatro funciones (sefuns) que son las siguientes:
+play_sound, stop_sounds, play_music y stop_music.
+
+Para obtener más información sobre cada una de ellas, escribid man <función>

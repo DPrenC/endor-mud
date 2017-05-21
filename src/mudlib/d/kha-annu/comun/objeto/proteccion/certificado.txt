@@ -1,0 +1,11 @@
+
+botas.c
+cota.c
+cotaman.c
+escudo.c
+escudoxl.c
+yelmo.c
+
+Revisado y aprobado por:
+
+Nemesis, Diox del Combate

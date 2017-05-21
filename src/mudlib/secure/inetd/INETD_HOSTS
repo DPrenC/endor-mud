@@ -1,0 +1,118 @@
+# Simauria 'INETD_HOSTS'
+# [w] Woo@Simauria
+#
+# 23-09-99 [w] Añadidos nuevos hosts y cambiados algunos.
+#
+#Here's a copy of my current intermud INETD_HOSTS file.  Please mail me if
+#any muds listed are no longer active, or there are other errors or
+#omisions of any kind.
+#
+#	Mark / Nostradamus@Zebedee.
+#
+#--
+#.--------------------------{ From:  Mark Lewis }--------------------------.
+#|      PGP public key available by fingering ec179@finger.city.ac.uk      |
+#`------------------{ Email:  nostra@city.ac.uk (MIME) }-------------------'
+#
+#----{ Cut Here }----
+# This file contains site information and privs used by the inetd.
+# It lists the sites that can be contacted and the commands they are
+# allowed to use / receive in the form:
+#	mudname:host_address:udp_port:incoming_cmds:remote_cmds
+# PING, QUERY and REPLY are included automatically.
+# A * in the incoming_cmds denotes the list of public commands as defined in
+# inetd.c (COMMANDS)
+#
+3k:199.177.127.68:9999:*:*
+Adamant:130.83.9.19:4246:*:*
+AfterHours:130.205.70.4:4246:*:*
+AfterShok:204.167.98.30:4247:*:*
+Alatia:209.42.128.17:4246:*:*
+Alnwick:129.27.130.50:2112:*:*
+Aldebaran:194.162.206.11:4246:*:channel,finger,locate,tell,who,mail
+AncientAnguish:208.25.49.5:4246:*:*
+Anderland:130.83.112.121:4246:*:*
+Artus:194.94.248.79:4246:*:*
+Atlantis:192.109.44.65:4246:*:*
+Avalon:141.82.16.25:4246:*:*
+BrokenWorld:206.112.202.178:6970:*:*
+ChrisMud:195.63.93.10:4246:*:*
+Core:132.199.3.66:4246:*:*
+Cosmos:216.111.160.141:4051:*:*
+D'Artus:137.248.9.65:4246:*:*
+Darkside:132.199.136.36:4246:*:*
+DeadofNight:205.216.133.15:4246:*:*
+Defiance:130.205.70.4:6888:*:*
+DomainOfWylds:207.1.218.4:4246:*:*
+DontPanic:207.49.240.62:4243:*:*
+DrachenWelt:134.96.240.42:4246:*:*
+DragonFire:204.96.167.22:4246:*:*
+DragonStorm:199.212.175.3:4246:*:*
+DragonHeart:207.71.213.246:8889:*:*
+Dune:209.50.231.65:8888:*:*
+EnchantedRock:130.89.227.140:2000:*:*
+Evermore:134.2.114.123:7780:*:*
+ESELCE:134.100.222.48:5563:*:*
+EotL:36.21.0.99:4246:*:*
+Fear:195.48.69.120:4246:*:*
+FallenNight:198.109.165.121:4247:*:*
+Fantasia:129.27.130.50:7683:*:*
+FirstLight:134.176.139.60:4246:*:*
+FinalFrontier:141.44.22.50:7610:*:*
+GateKeep:207.239.198.233:7683:*:*
+Gerkhent's Quest:129.69.164.134:4246:*:*
+GoldenEmpire:129.27.130.50:1522:*:*
+GueldenLand:137.193.14.14:4246:*:*
+HeimatMud:193.141.176.114:4246:*:*
+IntoTheLight:194.94.79.21:4246:*:*
+Kerovnia:205.197.26.2:1985:*:*
+Lemmings Paradise:141.2.28.15:4246:*:*
+MD:141.44.22.48:4246:*:*
+MalderMud:207.156.183.3:4246:*:*
+Midnight:130.240.16.23:3001:*:*
+MorgenGrauen:128.176.182.70:4246:*:*
+Nagilum:129.69.31.168:4246:*:*
+nexus:134.7.137.10:4246:*:*
+Nightfall:134.2.170.99:4246:*:*
+Nightfall-denker:194.94.253.85:4246:*:*
+Orbit:129.69.221.130:9878:*:*
+OSB:192.124.28.80:4246:*:*
+OuterSpace:131.155.141.166:2500:*:*
+PK-Mud:141.55.225.26:4246:*:*
+Quovadis:205.216.133.34:3456:*:*
+RB-Vogtland:141.30.221.115:4246:*:*
+Realmsmud:206.127.32.200:4246:*:*
+Regenbogen:141.76.2.6:4246:*:*
+Renegade:205.216.133.34:4247:*:*
+SagaMud:160.45.40.171:7776:*:*
+Seifenblase:141.7.1.39:4246:*:*
+ShadowGate:206.58.216.7:4246:*:*
+SilberLand:128.130.45.201:4246:*:*
+SiliconDream:194.95.209.17:4246:*:*
+SILKE:134.100.221.101:5563:*:*
+Simauria:158.42.96.118:4246:*:*
+Sivao:141.22.192.35:4246:*:*
+Solitude:160.45.224.2:3335:*:*
+StarTrek:141.44.1.17:4246:*:*
+Straylight:199.80.240.122:4246:*:*
+Serendipity:130.149.19.19:7683:*:*
+Sonnenuntergang:141.20.3.170:3335:*:*
+Sunrise 2700:130.75.148.207:4710:*:*
+TAPPMud:141.65.40.11:4246:*:*
+Tauros:205.197.26.2:2049:*:*
+T'Mud:131.95.119.2:2221:*:*
+Terabithia:207.227.188.40:4246:*:*
+TimesPeril:207.49.240.62:4322:*:*
+Timewarp:207.49.240.62:5152:*:*
+Timewarp-RENEGADE:205.216.133.34:4246:*:*
+TubMud:130.149.19.20:7683:*:*
+Ulantris:206.109.153.66:4246:*:*
+UNItopia:129.69.221.130:3335:*:*
+Venus:207.238.162.18:9995:*:*
+ViKaR:131.246.89.1:7777:*:*
+Virrel:129.13.97.10:20002:*:*
+WinterKill:194.157.11.2:4246:*:*
+Wolke7:132.231.51.150:3335:*:*
+Wunderland:139.18.11.78:4246:*:*
+Zebedee:138.40.17.11:7002:*:*
+Zeittunnel:134.109.132.63:4246:*:*

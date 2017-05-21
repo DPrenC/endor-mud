@@ -1,0 +1,107 @@
+PROYECTO : Bosque del valle de Zarkam
+DOMINIO  : Akallab
+WIZARD   : Elric, Angor
+CREACION : 07/01/98
+UPDATE   : 12/10/98
+
+VERSION DEFINITIVA [Angor@Simauria] 
+
+--------------------------------------------------------------------------------
+1. MAPAS DE LA ZONA DE BOSQUE 
+2. LEYENDA DE LOS MAPAS
+--------------------------------------------------------------------------------
+
+MAPAS DE LA ZONA DE BOSQUE:
+
+   Mapa al nivel del suelo (0)
+
+      1   2   3   4   5   6   7   8   9  10   
+  +---+---+---+---+---+---+---+---+---+---+---   
+  |
+ 1+                              Al  *        
+  |                              |   *        
+ 2+  62                  63--64--Ma--Pr--Ha   
+  |    \                 |  /|   |   *        
+ 3+      57--58          59  60  Cb  *   61   
+  |     /| X | \       /    /|   |    *  |    
+ 4+  47  48--49  50-<51  52--53--54--55* 56   
+  |  | \ |   |  /       /  \         ** /|    
+ 5+  37--38--39--40> 41--42--43--44 *45--46   
+  |      |   |  /| X |   |  /   ***\ |        
+ 6+  27--28  29--30--31--32--33**34--35       
+  |    \ |       |     \   \   * |  /  \      
+ 7+      18--19> 20--21--22--23 *24--25--26   
+  |     /| \ |     X |   |       ******\ |    
+ 8+  08--09--10  11  12--13--14--15-<16**17>  
+  |    \    /| \ | \    /  \     |  /    ***  
+ 9+      01  02--03--04      06--07           
+  |     /                                     
+10+ (al valle)
+  |
+
+
+   Al nivel de la copa de los arboles (+1)
+
+       1   2   3   4   5   6   7   8   9  10  
+   +---+---+---+---+---+---+---+---+---+---+  
+   |
+  1+   m1--m2              m9--ma
+   |       |  \           /      
+  2+       m3--m4--m5-<m6  
+   |               |   |   
+  3+               m7--m8   
+   |                   |   
+  4+                   me<  
+   |
+  5+               a3<
+   |
+  6+
+   |
+  7+          a2<
+   |
+  8+                                 >a0--a1<
+   |
+  9+
+   |
+
+
+   Parte alta de las montanyas (+2)
+
+       1   2   3   4   5   6   7   8   9  10  
+   +---+---+---+---+---+---+---+---+---+---+  
+   |
+  1+           mb--mc--mf 
+   |                   |
+  2+                   md<
+   |
+  3+                       
+   |
+  4+
+   |
+  5+
+   |
+  6+
+   |
+  7+
+   |
+  8+
+   |
+  9+
+   |
+
+
+LEYENDA DE LOS MAPAS:
+
+bosque:
+  (XY) habitaciones a nivel del suelo del bosque (bosque_XY.c)
+  (a0) arbol_16.c  (a1) arbol_17.c (a2) arbol_19.c  (a3) arbol_40.c
+
+montanyas
+  (mX) habitaciones de las montanyas (montain_X.c)
+
+aserradero
+  (Cb) cabanya.c      (cabanya en la que habitan los orcos)
+  (Ma) maquinaria.c   (engranajes, sierras y demas)
+  (Pr) presa.c        (la presa)
+  (Al) almacen.c      (almacen donde se guarda la madera)
+  (Ha) habitaciones.c (donde duermen los orcos)

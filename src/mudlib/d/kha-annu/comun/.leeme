@@ -1,0 +1,12 @@
+         /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+          DIRECTORIO DE COMUN.KHA-ANNU  [w] Woo    
+                                        [o] Okkita 
+                                        [I] Izet
+         \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+
+gremio/        Directorio base de los gremios del dominio.
+habitacion/    Ciudades con las habitaciones creadas para el dominio.
+pnj/           Donde se encuentran todos los objetos animados (lease bichos).
+objeto/        Objetos que no pueden incluirse en los demas directorios.
+quest/         Directorio de quests de este dominio.
+

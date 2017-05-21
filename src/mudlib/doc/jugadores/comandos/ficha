@@ -1,0 +1,8 @@
+[1mCOMANDO[0m
+  ficha <jugador>
+
+[1mDESCRIPCION[0m
+  Sin argumento muestra tu estado actual. Aparecerán reflejados en la pantalla tus puntos
+  de vida, puntos de quest, alineamiento, fuerza, destreza, inteligencia, sabiduría, carisma,
+  así como muertes o niveles de sed y hambre entre otros.
+Si se introduce un argumento da cierta informacion sobre el personaje jugador si es que existe.

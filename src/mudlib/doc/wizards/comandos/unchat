@@ -1,0 +1,11 @@
+[1mCOMANDO[0m
+  unchat <jugador>
+
+[1mDESCRIPCIÓN[0m
+  Coloca el bozal mágico al jugador <jugador>. Esto no le permitirá decir nada
+  ni por ningún canal, ni por el decir, ni por el tel, ni siquiera gritar
+  durante treinta minutos.
+
+[1mEJEMPLOS[0m
+  unchat manolito
+

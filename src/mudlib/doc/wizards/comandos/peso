@@ -1,0 +1,19 @@
+[1mCOMANDO[0m
+  peso [ |inv|<arg>]
+
+[1mDESCRIPCION[0m
+  Este comando te permite conocer el peso de las cosas.
+  Con 'peso' sabras cuanto pesas tu y los objetos que en ese momento cargues
+  en tu inventario y hasta donde puedes llegar a cargar.
+  Si utilizas 'peso inv' podras saber cuanto pesa cada uno de los objetos
+  que cargas en tu inventario. 
+  Para conocer el peso de un objeto utiliza 'peso <arg>', donde arg es
+  el nombre del objeto. Para poder conocer el peso de un objeto deberas
+  cargar con el en el inventario o que el objeto este junto a ti.
+   
+[1mEJEMPLOS[0m
+  peso           Te dice cuanto pesas y con cuanto puedes cargar.
+  peso inv       Te muestra el peso de cada objeto de tu inventario.
+  peso espada    Te dice el peso de la espada que tienes es tu inventario o 
+                 que se halla en el suelo a tus pies.
+		 

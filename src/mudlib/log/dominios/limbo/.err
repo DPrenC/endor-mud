@@ -1,0 +1,121 @@
+ -- Sun May 30 17:49:22 2010 --
+d/limbo/comun/habitacion/limbo/torrewiz/rooms/ratwor/sanbernardo.c line 46: syntax error
+Compiling "/d/limbo/comun/habitacion/limbo/torrewiz/rooms/ratwor/sanbernardo.c", Line 46
+ -- Sat Feb 11 20:15:53 2012 --
+Obj: /d/limbo/comun/habitacion/limbo/templo/biblioteca, File: d/limbo/comun/habitacion/limbo/templo/biblioteca.c, Line: 113:
+Created by /aule
+  Warning: Indexing past string end is deprecated: index 0, string length: 0.
+Obj: /d/limbo/comun/habitacion/limbo/templo/biblioteca, File: d/limbo/comun/habitacion/limbo/templo/biblioteca.c, Line: 113:
+Created by /aule
+  Warning: Indexing past string end is deprecated: index 0, string length: 0.
+ -- Sun Feb 26 03:55:41 2012 --
+d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/laboratorio.c line 29: Variable P_TPORT not declared !
+Compiling "/d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/laboratorio.c", Line 29
+ -- Thu Mar 01 11:44:14 2012 --
+Obj: /d/limbo/comun/habitacion/limbo/templo/biblioteca, File: d/limbo/comun/habitacion/limbo/templo/biblioteca.c, Line: 113:
+Created by /galadhil
+  Warning: Indexing past string end is deprecated: index 0, string length: 0.
+Obj: /d/limbo/comun/habitacion/limbo/templo/biblioteca, File: d/limbo/comun/habitacion/limbo/templo/biblioteca.c, Line: 113:
+Created by /galadhil
+  Warning: Indexing past string end is deprecated: index 0, string length: 0.
+ -- Wed Mar 14 16:24:03 2012 --
+Obj: /d/limbo/comun/habitacion/limbo/templo/biblioteca, File: d/limbo/comun/habitacion/limbo/templo/biblioteca.c, Line: 113:
+Created by /gotmog
+  Warning: Indexing past string end is deprecated: index 0, string length: 0.
+Obj: /d/limbo/comun/habitacion/limbo/templo/biblioteca, File: d/limbo/comun/habitacion/limbo/templo/biblioteca.c, Line: 113:
+Created by /gotmog
+  Warning: Indexing past string end is deprecated: index 0, string length: 0.
+ -- Sun Jul 29 01:14:42 2012 --
+Obj: /d/limbo/comun/habitacion/limbo/templo/biblioteca, File: d/limbo/comun/habitacion/limbo/templo/biblioteca.c, Line: 113:
+Created by /shani
+  Warning: Indexing past string end is deprecated: index 0, string length: 0.
+Obj: /d/limbo/comun/habitacion/limbo/templo/biblioteca, File: d/limbo/comun/habitacion/limbo/templo/biblioteca.c, Line: 113:
+Created by /shani
+  Warning: Indexing past string end is deprecated: index 0, string length: 0.
+ -- Sun Aug 26 12:12:45 2012 --
+Obj: /d/limbo/comun/habitacion/limbo/templo/biblioteca, File: d/limbo/comun/habitacion/limbo/templo/biblioteca.c, Line: 113:
+Created by /bilbo
+  Warning: Indexing past string end is deprecated: index 0, string length: 0.
+Obj: /d/limbo/comun/habitacion/limbo/templo/biblioteca, File: d/limbo/comun/habitacion/limbo/templo/biblioteca.c, Line: 113:
+Created by /bilbo
+  Warning: Indexing past string end is deprecated: index 0, string length: 0.
+ -- Sun Aug 26 23:04:10 2012 --
+Obj: /d/limbo/comun/habitacion/limbo/templo/biblioteca, File: d/limbo/comun/habitacion/limbo/templo/biblioteca.c, Line: 113:
+Created by /azaghal
+  Warning: Indexing past string end is deprecated: index 0, string length: 0.
+Obj: /d/limbo/comun/habitacion/limbo/templo/biblioteca, File: d/limbo/comun/habitacion/limbo/templo/biblioteca.c, Line: 113:
+Created by /azaghal
+  Warning: Indexing past string end is deprecated: index 0, string length: 0.
+ -- Mon Aug 27 23:00:04 2012 --
+Obj: /d/limbo/comun/habitacion/limbo/templo/biblioteca, File: d/limbo/comun/habitacion/limbo/templo/biblioteca.c, Line: 113:
+Created by /galadhil
+  Warning: Indexing past string end is deprecated: index 0, string length: 0.
+Obj: /d/limbo/comun/habitacion/limbo/templo/biblioteca, File: d/limbo/comun/habitacion/limbo/templo/biblioteca.c, Line: 113:
+Created by /galadhil
+  Warning: Indexing past string end is deprecated: index 0, string length: 0.
+ -- Sat Sep 01 21:45:33 2012 --
+Obj: /d/limbo/comun/habitacion/limbo/templo/biblioteca, File: d/limbo/comun/habitacion/limbo/templo/biblioteca.c, Line: 113:
+Created by /eowyn
+  Warning: Indexing past string end is deprecated: index 0, string length: 0.
+Obj: /d/limbo/comun/habitacion/limbo/templo/biblioteca, File: d/limbo/comun/habitacion/limbo/templo/biblioteca.c, Line: 113:
+Created by /eowyn
+  Warning: Indexing past string end is deprecated: index 0, string length: 0.
+ -- Sun Dec 30 19:09:08 2012 --
+Obj: /d/limbo/comun/habitacion/limbo/templo/biblioteca, File: d/limbo/comun/habitacion/limbo/templo/biblioteca.c, Line: 113:
+Created by /aule
+  Warning: Indexing past string end is deprecated: index 0, string length: 0.
+Obj: /d/limbo/comun/habitacion/limbo/templo/biblioteca, File: d/limbo/comun/habitacion/limbo/templo/biblioteca.c, Line: 113:
+Created by /aule
+  Warning: Indexing past string end is deprecated: index 0, string length: 0.
+ -- Wed Apr 10 16:36:07 2013 --
+d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/otro/castigo/tiza.c line 72: Missing 'return <value>' statement
+Compiling "/d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/otro/castigo/tiza.c", Line 72
+d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/otro/castigo/tiza.c line 72: Missing 'return <value>' statement
+Compiling "/d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/otro/castigo/tiza.c", Line 72
+d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/otro/castigo/pizarra.c line 38: Missing 'return <value>' statement
+Compiling "/d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/otro/castigo/pizarra.c", Line 38
+d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/otro/castigo/borrador.c line 69: Missing 'return <value>' statement
+Compiling "/d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/otro/castigo/borrador.c", Line 69
+d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/otro/castigo/borrador.c line 69: Missing 'return <value>' statement
+Compiling "/d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/otro/castigo/borrador.c", Line 69
+ -- Wed Apr 10 16:37:45 2013 --
+Obj: d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/otro/castigo/tiza#135, File: d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/otro/castigo/tiza.c, Line: 53:
+Created by /aule
+  Object 'd/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/celda' illegal to load (no uid).
+Obj: d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/otro/castigo/tiza#135, File: d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/otro/castigo/tiza.c, Line: 53:
+Created by /aule
+  Object 'd/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/celda' illegal to load (no uid).
+ -- Wed Apr 10 16:39:55 2013 --
+Obj: d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/otro/castigo/tiza#136, File: d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/otro/castigo/tiza.c, Line: 53:
+Created by /aule
+  Object 'd/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/celda' illegal to load (no uid).
+ -- Wed Apr 10 16:42:03 2013 --
+Obj: d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/otro/castigo/tiza#135, File: d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/otro/castigo/tiza.c, Line: 53:
+Created by /aule
+  Object 'd/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/celda' illegal to load (no uid).
+Obj: d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/otro/castigo/tiza#135, File: d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/otro/castigo/tiza.c, Line: 53:
+Created by /aule
+  Object 'd/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/celda' illegal to load (no uid).
+Obj: d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/otro/castigo/tiza#135, File: d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/otro/castigo/tiza.c, Line: 53:
+Created by /aule
+  Object 'd/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/celda' illegal to load (no uid).
+Obj: d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/otro/castigo/tiza#135, File: d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/otro/castigo/tiza.c, Line: 53:
+Created by /aule
+  Object 'd/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/celda' illegal to load (no uid).
+ -- Wed Apr 10 16:45:35 2013 --
+d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/dormitorio.c line 19: Variable P_TPORT not declared !
+Compiling "/d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/dormitorio.c", Line 19
+d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/trastero.c line 19: Variable P_TPORT not declared !
+Compiling "/d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/trastero.c", Line 19
+d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/laboratorio.c line 29: Variable P_TPORT not declared !
+Compiling "/d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/laboratorio.c", Line 29
+d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/dormitorio.c line 19: Variable P_TPORT not declared !
+Compiling "/d/limbo/comun/habitacion/limbo/torrewiz/rooms/tagoras/dormitorio.c", Line 19
+ -- Sun Jul 20 04:34:13 2014 --
+Obj: /d/limbo/comun/habitacion/limbo/torrewiz/rooms/yalin/obj/hoja#50, File: d/limbo/comun/habitacion/limbo/torrewiz/rooms/yalin/obj/hoja.c, Line: 76:
+Created by /d/limbo/comun/habitacion/limbo/torrewiz/rooms/yalin/obj/altar#48
+  Missing 'return <value>' statement.
+ -- Sun Jul 20 04:34:13 2014 --
+Obj: /d/limbo/comun/habitacion/limbo/torrewiz/rooms/yalin/obj/hoja#50, File: d/limbo/comun/habitacion/limbo/torrewiz/rooms/yalin/obj/hoja.c, Line: 76:
+Created by /d/limbo/comun/habitacion/limbo/torrewiz/rooms/yalin/obj/altar#48
+  Missing 'return <value>' statement.

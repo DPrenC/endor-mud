@@ -1,0 +1,8 @@
+[1mCOMANDO[0m
+  clave [oculto|visible]
+
+[1mDESCRIPCION[0m
+  Cambia la clave antigua por una nueva. La clave antigua debe ser
+  introducida correctamente. 
+  Algunos sistemas pueden dar errores a la hora de ocultar los caracteres
+  con lo cual se debera usar la opcion 'visible'... 

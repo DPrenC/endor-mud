@@ -1,0 +1,24 @@
+[1mCOMANDO[0m
+  color [lista|estado|<arg>] <color>
+  color combate <tipo> <color>
+
+[1mDESCRIPCION[0m
+  Este comando controla el nuevo sistema de colores de Simauria.
+  Con 'color estado' te mostrará toda la información acerca de lo que puedes
+  cambiar así como si esta activado o desactivado el color.
+  'Color lista' te imprime todos los posibles colores permitidos.
+  Si escribes 'color <arg> <color>' cambiará el color de lo que hayas
+  seleccionado <arg> por <color>.
+  Con 'color combate <tipo> <color>' cambias el color de los distintos tipos
+  mensajes de combate, los tipos disponibles son: 'ataco', 'defiendo', 'otros'.
+
+[1mEJEMPLOS[0m
+  color lista        Saca por pantalla todos los colores disponibles.
+  color estado       Te muestra toda la información referente a los colores.
+  color canal        Si esta activo/desactivo el color en los canales.
+  color salidas      Si esta activo/desactivo el color en las salidas.
+  color canal verde  Cambia el color de los canales a verde.
+  color combate defiendo rojo  Cambia el color de los ataques recibidos a rojo.
+
+[1mTEMAS RELACIONADOS[0m
+  canal, salidas, breve

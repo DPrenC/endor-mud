@@ -1,0 +1,27 @@
+Escribe '[1mayuda <comando>[0m' para obtener ayuda especifica de un comando
+
+[1m--------------------------< COMANDOS GENERALES >------------------------------[0m
+breve         hora          email        ayuda        inventario   equipo
+matar         clave         oler         escuchar     habilidades  abandonar
+reiniciar     salvar        estado       parar        pagina       stty
+quien         coraje        alias        hacer        huir         compararse
+historico     color         salidas      charset      suicidar     fecha
+conjuros      magia         seguir       mostrar      memorizar    grupo
+alcohol       calcular      con          conj         dex          est
+fza           gxp           hab          hambre       int          jxp
+obj           pf            pm           pv           qp           sal
+sed           tiflo/ciego
+
+
+[1m------------------------< MANIPULACION DE OBJETOS >---------------------------[0m
+mirar         examinar      tirar        coger        ponerse      quitarse
+equipar       desequipar    desempuñar   empuñar      dar          lanzar
+
+[1m-----------------------------< COMUNICACION >---------------------------------[0m
+conversar     acciones      decir        gritar       susurrar     telepatia
+canales       mensajes      jgritar      ignorar      designorar   ausente
+canal         cquien        informar     bug          idea         prompt
+
+[1m-------------------< INFORMACION ADICIONAL 'ayuda tema' >---------------------[0m
+cambios       transporte    bancos
+[1m------------------------------------------------------------------------------[0m

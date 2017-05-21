@@ -1,0 +1,24 @@
+[1mCOMANDO[0m
+  ls [<directorio>]
+
+[1mDESCRIPCION[0m
+  Te muestra una lista de todos los archivos que esten en <directorio>.
+  Si no se diera ningún argumento mostraria los archivos del directorio
+  actual. Algunos archivos pueden tener algún carácter extra en su nombre:
+
+  <nombre>       Es un archivo normal
+  <nombre>/      Se trata de un directorio
+  <nombre>*      Este archivo está cargado en el juego
+   
+[1mEJEMPLOS[0m
+  ls arma
+  ls /std
+
+[1mBUGS[0m
+  Si se recarga el objeto /secure/simul_efun, ls dejará de mostrar ciertos
+  archivos que están en directorios ocultos, por ejemplo, en
+  /players/<nombre_player>/secure. En esos casos se debe usar el comando
+  'lls'. Este es un fallo del gamedriver.
+
+[1mTEMAS RELACIONADOS[0m
+  lls, rmdir, mkdir

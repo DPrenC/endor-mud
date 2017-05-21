@@ -1,0 +1,6 @@
+Asthar te dice: puedes manipular objetos. Por ejemplo si te has fijado, en esta 
+habitación hay un viejo cofre que puedes 'abrir' y 'cerrar'. Ábrelo y si 
+encuentras algo útil en su interior ('mirar cofre' o 'mirar todo de cofre'), 
+cógelo. Para coger un objeto de tu alrededor (y así llevártelo a tu inventorio)
+usa 'coger lo_que_sea' o 'coger lo_que_sea de donde_sea'. De forma similar, 
+usa 'tirar lo_que_sea' para desprenderte de objetos que no necesites.

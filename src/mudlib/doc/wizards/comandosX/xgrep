@@ -1,0 +1,17 @@
+SINOPSIS
+    xgrep <cadena> <ficheros>
+
+DESCRIPCION
+    Busca la <cadena> en todos los <ficheros>. Trabaja de forma similar al
+    comando 'grep' de Unix. El resultado se almacenara en el fichero temporal
+    '~/.xcmds.tmp".
+
+EJEMPLOS
+
+    xgrep Woo /log/KILLER
+    Este comando hara una busqueda de la cadena 'Woo' dentro del fichero
+    log de asesinos.
+
+    xgrep create\(\) *.c
+    Buscara en todas las lineas de los ficheros con la extension .c la
+    funcion "create()".

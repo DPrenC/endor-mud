@@ -1,0 +1,24 @@
+ Mapa del pueblo pesquero de gorat.
+
+
+
+ Emb (quest del cocinero)
+  |
+  P
+  |
+F-|- Pd- - - - ->a simauria-nandor
+  |     |
+  Pc    |         T   B  R.H
+        |   |  |  |   |   |
+   Pl - - - - - - - - - - - - - - - Calle principal
+            |  |  |   |   
+                  C   A   
+  Leyenda
+
+F-> Faro de Gorat			RH->hostal-taberna
+P-> Puerto 				C->oficina de correos/posta
+Pc->Parada de Caravana                  A->Ayuntamiento/censo
+Pd->Parada de diligencia		Pl->playa
+T->tienda comun				Emb->embarcadero
+B->Banco
+                                 

@@ -1,0 +1,181 @@
+ -- Sun Sep 14 17:10:48 2014 --
+d/pais-bree/comun/habitacion/bree/poney_pisador/pajar.c line 43: Undefined function 'SetExplorer'
+Compiling "/d/pais-bree/comun/habitacion/bree/poney_pisador/pajar.c", Line 43
+ -- Sun Oct 19 02:31:12 2014 --
+d/pais-bree/comun/habitacion/bree/comercios/herreria.c line 30: Variable REFRESH_REMOVE not declared !
+Compiling "/d/pais-bree/comun/habitacion/bree/comercios/herreria.c", Line 30
+d/pais-bree/comun/habitacion/bree/comercios/herreria.c line 31: Variable REFRESH_REMOVE not declared !
+Compiling "/d/pais-bree/comun/habitacion/bree/comercios/herreria.c", Line 31
+d/pais-bree/comun/habitacion/bree/comercios/herreria.c line 32: Variable REFRESH_REMOVE not declared !
+Compiling "/d/pais-bree/comun/habitacion/bree/comercios/herreria.c", Line 32
+d/pais-bree/comun/habitacion/bree/comercios/herreria.c line 33: Variable REFRESH_REMOVE not declared !
+Compiling "/d/pais-bree/comun/habitacion/bree/comercios/herreria.c", Line 33
+d/pais-bree/comun/habitacion/bree/comercios/herreria.c line 34: Variable REFRESH_REMOVE not declared !
+Compiling "/d/pais-bree/comun/habitacion/bree/comercios/herreria.c", Line 34
+d/pais-bree/comun/habitacion/bree/comercios/herreria.c line 35: Variable REFRESH_REMOVE not declared !
+Compiling "/d/pais-bree/comun/habitacion/bree/comercios/herreria.c", Line 35
+ -- Sun Oct 19 02:33:16 2014 --
+d/pais-bree/comun/habitacion/bree/comercios/herreria.c line 6: Cannot #include './path.h'
+Compiling "/d/pais-bree/comun/habitacion/bree/comercios/herreria.c", Line 6
+d/pais-bree/comun/habitacion/bree/comercios/herreria.c line 30: Variable REFRESH_REMOVE not declared !
+Compiling "/d/pais-bree/comun/habitacion/bree/comercios/herreria.c", Line 30
+d/pais-bree/comun/habitacion/bree/comercios/herreria.c line 31: Variable REFRESH_REMOVE not declared !
+Compiling "/d/pais-bree/comun/habitacion/bree/comercios/herreria.c", Line 31
+d/pais-bree/comun/habitacion/bree/comercios/herreria.c line 32: Variable REFRESH_REMOVE not declared !
+Compiling "/d/pais-bree/comun/habitacion/bree/comercios/herreria.c", Line 32
+d/pais-bree/comun/habitacion/bree/comercios/herreria.c line 33: Variable REFRESH_REMOVE not declared !
+Compiling "/d/pais-bree/comun/habitacion/bree/comercios/herreria.c", Line 33
+d/pais-bree/comun/habitacion/bree/comercios/herreria.c line 34: Variable REFRESH_REMOVE not declared !
+Compiling "/d/pais-bree/comun/habitacion/bree/comercios/herreria.c", Line 34
+ -- Wed Nov 12 15:28:15 2014 --
+Obj: std/store#70, File: std/room/items.c, Line: 77:
+/std/store#70 tried to load /obj/herramientas/horca.c
+Created by /d/pais-bree/comun/habitacion/bree/comercios/herreria
+  Failed to load file: 'obj/herramientas/horca'.
+ -- Wed Nov 12 15:32:27 2014 --
+Obj: std/store#115, File: std/room/items.c, Line: 77:
+/std/store#115 tried to load /obj/herramientas/sierra.c
+Created by /d/pais-bree/comun/habitacion/bree/comercios/herreria
+  Failed to load file: 'obj/herramientas/sierra'.
+ -- Sat Dec 06 20:42:33 2014 --
+d/pais-bree/comun/habitacion/bree/manzano.c line 18: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/manzano.c", Line 18
+ -- Sat Dec 06 20:49:29 2014 --
+d/pais-bree/comun/habitacion/bree/manzano.c line 19: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/manzano.c", Line 19
+ -- Sat Dec 06 20:50:45 2014 --
+d/pais-bree/comun/habitacion/bree/manzano.c line 18: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/manzano.c", Line 18
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 16: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 16
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 17: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 17
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 94: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 94
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 123: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 123
+ -- Sat Dec 06 20:53:08 2014 --
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 22: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 22
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 94: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 94
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 123: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 123
+ -- Sat Dec 06 20:55:06 2014 --
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 33: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 33
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 94: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 94
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 123: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 123
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 33: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 33
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 94: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 94
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 123: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 123
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 33: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 33
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 94: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 94
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 123: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 123
+ -- Sun Dec 07 07:10:33 2014 --
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 33: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 33
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 94: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 94
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 123: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 123
+ -- Sun Dec 07 07:12:05 2014 --
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 113: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 113
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 123: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 123
+ -- Sun Dec 07 07:20:24 2014 --
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 113: Variable manzano not declared !
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 113
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 130: Variable manzano not declared !
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 130
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 133: Variable manzano not declared !
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 133
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 130: Variable manzano not declared !
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 130
+d/pais-bree/comun/habitacion/bree/c1_huerto2.c line 133: Variable manzano not declared !
+Compiling "/d/pais-bree/comun/habitacion/bree/c1_huerto2.c", Line 133
+ -- Sun Dec 07 08:11:19 2014 --
+d/pais-bree/comun/habitacion/bree/manzano.c line 50: Undefined function: bajar_manzano
+Compiling "/d/pais-bree/comun/habitacion/bree/manzano.c", Line 50
+ -- Fri Dec 19 14:55:47 2014 --
+Obj: d/pais-bree/comun/habitacion/bree/c1_huerto2, File: d/pais-bree/comun/habitacion/bree/c1_huerto2.c, Line: 116:
+Created by /orome
+  Bad arg 1 to tell_room(): got 'number', expected 'string/object'.
+Obj: d/pais-bree/comun/habitacion/bree/c1_huerto2, File: d/pais-bree/comun/habitacion/bree/c1_huerto2.c, Line: 134:
+Created by /orome
+  Bad arg 1 to tell_room(): got 'number', expected 'string/object'.
+ -- Sat Dec 20 05:49:48 2014 --
+Obj: d/pais-bree/comun/habitacion/bree/c1_huerto2, File: d/pais-bree/comun/habitacion/bree/c1_huerto2.c, Line: 116:
+Created by /orome
+  Bad arg 1 to tell_room(): got 'number', expected 'string/object'.
+Obj: d/pais-bree/comun/habitacion/bree/c1_huerto2, File: d/pais-bree/comun/habitacion/bree/c1_huerto2.c, Line: 128:
+Created by /orome
+  Bad arg 1 to tell_room(): got 'number', expected 'string/object'.
+Obj: d/pais-bree/comun/habitacion/bree/c1_huerto2, File: d/pais-bree/comun/habitacion/bree/c1_huerto2.c, Line: 116:
+Created by /orome
+  Bad arg 1 to tell_room(): got 'number', expected 'string/object'.
+Obj: d/pais-bree/comun/habitacion/bree/c1_huerto2, File: d/pais-bree/comun/habitacion/bree/c1_huerto2.c, Line: 134:
+Created by /orome
+  Bad arg 1 to tell_room(): got 'number', expected 'string/object'.
+ -- Sat Dec 20 05:55:00 2014 --
+Obj: d/pais-bree/comun/habitacion/bree/c1_huerto2, File: d/pais-bree/comun/habitacion/bree/c1_huerto2.c, Line: 134:
+Created by /orome
+  Bad arg 1 to tell_room(): got 'number', expected 'string/object'.
+Obj: d/pais-bree/comun/habitacion/bree/c1_huerto2, File: d/pais-bree/comun/habitacion/bree/c1_huerto2.c, Line: 134:
+Created by /orome
+  Bad arg 1 to tell_room(): got 'number', expected 'string/object'.
+Obj: d/pais-bree/comun/habitacion/bree/c1_huerto2, File: d/pais-bree/comun/habitacion/bree/c1_huerto2.c, Line: 134:
+Created by /orome
+  Bad arg 1 to tell_room(): got 'number', expected 'string/object'.
+Obj: d/pais-bree/comun/habitacion/bree/c1_huerto2, File: d/pais-bree/comun/habitacion/bree/c1_huerto2.c, Line: 134:
+Created by /orome
+  Bad arg 1 to tell_room(): got 'number', expected 'string/object'.
+Obj: d/pais-bree/comun/habitacion/bree/c1_huerto2, File: d/pais-bree/comun/habitacion/bree/c1_huerto2.c, Line: 134:
+Created by /orome
+  Bad arg 1 to tell_room(): got 'number', expected 'string/object'.
+ -- Sat Dec 20 06:14:29 2014 --
+Obj: d/pais-bree/comun/habitacion/bree/c1_huerto2, File: d/pais-bree/comun/habitacion/bree/c1_huerto2.c, Line: 134:
+Created by /orome
+  Bad arg 1 to tell_room(): got 'number', expected 'string/object'.
+ -- Sat Dec 20 06:15:53 2014 --
+Obj: d/pais-bree/comun/habitacion/bree/c1_huerto2, File: d/pais-bree/comun/habitacion/bree/c1_huerto2.c, Line: 128:
+Created by /orome
+  Bad arg 1 to tell_room(): got 'number', expected 'string/object'.
+ -- Sat Jan 31 21:04:31 2015 --
+d/pais-bree/comun/pnj/bree/comercios/weltford.c line 93: Variable x not declared !
+Compiling "/d/pais-bree/comun/pnj/bree/comercios/weltford.c", Line 93
+d/pais-bree/comun/pnj/bree/comercios/weltford.c line 93: syntax error
+Compiling "/d/pais-bree/comun/pnj/bree/comercios/weltford.c", Line 93
+ -- Sat Jan 31 21:16:03 2015 --
+d/pais-bree/comun/objeto/proteccion/bree/comercios/pantalones_gruesos.c line 18: Variable M_cuero not declared !
+Compiling "/d/pais-bree/comun/objeto/proteccion/bree/comercios/pantalones_gruesos.c", Line 18
+/d/pais-bree/comun/pnj/bree/comercios/weltford tried to load /d/pais-bree/comun/objeto/proteccion/bree/comercios/pantalones_cuero.c
+ -- Sun Feb 01 13:29:02 2015 --
+d/pais-bree/comun/habitacion/bree/comercios/herreria.c line 52: Variable x not declared !
+Compiling "/d/pais-bree/comun/habitacion/bree/comercios/herreria.c", Line 52
+d/pais-bree/comun/habitacion/bree/comercios/herreria.c line 52: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/comercios/herreria.c", Line 52
+ -- Sun Feb 01 13:32:00 2015 --
+d/pais-bree/comun/habitacion/bree/comercios/herreria.c line 52: Variable x not declared !
+Compiling "/d/pais-bree/comun/habitacion/bree/comercios/herreria.c", Line 52
+d/pais-bree/comun/habitacion/bree/comercios/herreria.c line 52: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/comercios/herreria.c", Line 52
+ -- Sun Feb 01 13:33:51 2015 --
+d/pais-bree/comun/habitacion/bree/comercios/herreria.c line 52: Variable x not declared !
+Compiling "/d/pais-bree/comun/habitacion/bree/comercios/herreria.c", Line 52
+d/pais-bree/comun/habitacion/bree/comercios/herreria.c line 52: syntax error
+Compiling "/d/pais-bree/comun/habitacion/bree/comercios/herreria.c", Line 52
+ -- Sun Feb 01 13:36:01 2015 --
+Obj: d/pais-bree/comun/habitacion/bree/comercios/herreria, File: std/room/items.c, Line: 77:
+/d/pais-bree/comun/habitacion/bree/comercios/herreria tried to load /obj/otros/yunque.c
+Created by /orome
+  Failed to load file: 'obj/otros/yunque'.

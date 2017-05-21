@@ -1,0 +1,12 @@
+SINOPSIS
+        int d20Check()
+
+DESCRIPCIÓN
+        Devuelve un número aleatorio como resultado de realizar una tirada
+        'abierta' de un dado de 20 caras. Consiste en que si sacas 20 vuelves
+        a tirar y sumas los resultados, y si sacas 1 vuelves a tirar y restas
+        la nueva tirada.
+
+VER TAMBIÉN
+        d2(SE), d3(SE), d4(SE), d6(SE), d8(SE), d10(SE), d12(SE), d20(SE),
+        d100(SE), d100Check(SE)

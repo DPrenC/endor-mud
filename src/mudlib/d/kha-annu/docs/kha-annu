@@ -1,0 +1,109 @@
+*** Documento redactado por [i] Izet.
+
+	Historia y mapas de la ciudad de Kha-annu (raza de enanos)
+	~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.----------------------------------------------------------------------------.
+|   INDICE                                                                   |
+|   ~~~~~~                                                                   |
+|   1.-INTRODUCCION.                                                         |
+|   2.-HISTORIA (aun por definir).                                           |
+|   3.-GREMIOS Y CLANES.                                                     |
+|   4.-MAPAS.                                                                |
+|   5.-QUESTS (aun por definir).                                             |
+~----------------------------------------------------------------------------~
+
+
+1.- INTRODUCCION
+~~~~~~~~~~~~~~~~
+    Kha-annu esta situada al norte del mundo de Simauria, justo entre las
+monta¤as. La ciudad en si se encuentra justo dentro de una montaña, de cuya 
+punta aflora la parte mas alta de su castillo. La ciudad consta de un gran 
+río subterraneo, que alimenta el foso de la ciudad y abastece de agua a toda 
+la poblacion que convive en dicha ciudad. Kha-annu esta formada por cuatro 
+pisos, el primero y el que mas cerca esta de la superficie, es la ciudad en
+si, con sus gremios, tiendas, bares, oficinas de correos, tesoreria y demas. 
+En el centro de la ciudad esta la entrada del castillo. Los otros tres pisos
+restantes son los formados por las minas, de donde los enanos extraen metales
+y piedras para forjar y adornar sus armas y armaduras por las cuales son 
+famosos.
+
+2.- HISTORIA
+~~~~~~~~~~~~
+    Kha-annu es el dominio de los enanos, y la historia esta centrada en los 
+miembros de esta raza. Los enanos, en si, siempre fueron grandes herreros y
+mineros; asi que decidimos que lo mejor seria llenar la primera planta de la 
+ciudad de tiendas, gremios, bares y todo lo relacionado con la vida social. 
+La parte en donde se encuentran las minas
+es un inmenso laberinto en el que se piensa implementar un quest, buscando
+algun objeto especifico, o ayudando a alguien en particular (se aceptan toda
+clase de ideas y se aceptan voluntarios para hacer este trabajo). Del mapeado
+de la zona de minas me he encargado yo mismo, y se puede encontrar unas lineas
+mas abajo.
+
+3.- GREMIOS Y CLANES
+~~~~~~~~~~~~~~~~~~~~
+     Hay muchas ideas sobre este tema. Okkita ha decidido ocuparse de este te-
+ma y tiene pensado hacer el gremio de ladrones. Mi pequenyo cerebro tambien ha
+tenido una idea, y creo que habria de crearse un gremio de herreros, con cono-
+cimientos de hechiceria, capaces de poner runas magicas en las hojas de sus
+armas y en la superficie de sus armaduras; claro que aun siendo enano se 
+puede pertenecer al gremio que uno mismo desee y lanzarse a la aventura.
+La idea de hacer clanes ha sido de Yandros, y personalmente creemos que
+deberia extenderse por todo el MUD. La idea de hacer batallas entre clanes,
+venganzas por matar a un compa¤ero, exterminio de clanes y cosas parecidas,
+es muy atractiva a los jugadores, y se veran obligados a moverse en grupos y
+convivir entre ellos.
+
+4.- MAPAS (o al menos los que he podido currarme)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Bueno, que se iran poniendo los mapas que vayamos haciendo, por mi parte
+pondre los mapas de las minas, el castillo y la ciudad (todos hasta ahora,
+pero no quiere decir que podamos insertar aun muchas cosas).
+
+
+
+
+					     Mapa del primer piso de Kha-annu
+					     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+###__###__###__###__###__###__###__###__###__###__###__###__###
+###~~###~~###~~###~~###~~###~~###~~###~~###~~###~~###~~###~~###   <=== 1*
+ |    |              |         |         |         |    |    |
+###__%%%__###       %%%       ###       %%%       ###__%%%  ###
+###~~%%%~~###       %%%       ###       %%%       ###~~%%%  ###
+ |         |         |         |         |         |    |    |
+###__###__###__###__###__###__###__###__###__###__###__###__###
+###~~###~~###~~###~~###~~###~~###~~###~~###~~###~~###~~###~~###   <=== 2*
+ |         |   _____________   |   ________   |         |
+###       ### |:::::::::::::| ### |::::::::| ###       ###__###
+###       ### |:::::::::::::| ### |::::::::| ###       ###~~###
+ |         |  |:::::::::::::|  |  |::::::::|  |              |
+###__%%%__### |:::::::::::::|_/~\_|::::::::| ###__###       ###
+###~~%%%~~### |::::::::::::::::::::::::::::| ###~~###       ###
+ |         |  |::::::::::::::::::::::::::::|____   |         |
+###       ### |:::::::::::::::::::::::::::::::::| ###       ###
+###       ### |:::::::::::::::::::::::::::::::::| ###       ###
+ |         |  |:::::::::::::::::::::::::::::::::|  |         |
+###__###__### |:::::::::::::::::::::::::::::::::| ###     __/~\__
+###~~###~~### |:::::::: C A S T I L L O ::::::::| ###     __\/~\_ <== puente
+ |         |  |::::::: K H A  -  A N N U :::::::|  |         |
+###       ### |:::::::::::::::::::::::::::::::::| ###       ###
+###       ### |:::::::::::::::::::::::::::::::::| ###       ###
+ |         |  |::::::::::::::::::::::::::::|~~~~   |         |
+###__%%%__### |::::::::::::::::::::::::::::| ###__###  %%%__###__%%%
+###~~%%%~~### |::::::::::::::::::::::::::::| ###~~###  %%%~~###~~%%%
+ |         |  |::::::::::::::::::::::::::::|  |              |
+###       ### |::::::::::::::::::::::::::::| ###       ###__###
+###       ### |::::::::::::::::::::::::::::| ###       ###~~###
+ |         |  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~  |         |
+###__###__###__###__###__###__###__###__###__###__###__###__###
+###~~###~~###~~###~~###~~###~~###~~###~~###~~###~~###~~###~~###   <=== 3*
+ |    |    |         |         |         |         |    |    |
+###__%%%__###       %%%       ###       %%%       ###  %%%__###
+###~~%%%~~###       %%%       ###       %%%       ###  %%%~~###
+ |         |         |         |         |         |    |    |
+###__###__###__###__###__###__###__###__###__###__###__###__###
+###~~###~~###~~###~~###~~###~~###~~###~~###~~###~~###~~###~~###   <=== 4*
+ ^         ^                                       ^         ^
+ ^         ^                                       ^         ^
+ ^         ^                                       ^         ^
+ 5*        6*                                      7*        8*

@@ -1,0 +1,9 @@
+[1mCOMANDO[0m
+  untester <jugador>
+
+[1mDESCRIPCIÓN[0m
+  Elimina a <jugador> como tester de Simauria.
+
+[1mEJEMPLOS[0m
+  untester manolito
+

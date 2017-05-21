@@ -1,0 +1,6 @@
+Asthar te dice: lo siguiente que debes saber es que puedes cargar con objetos. 
+Para ver que objetos tienes en cualquier momento usa el comando 'inventario' 
+(o 'i'). Verás que te he dado una nota con las tareas básicas que voy a 
+enseñarte (puedes leerla con 'mirar nota'). Dependiendo de tu fuerza podrás 
+cargar con mas o menos cosas. Usa el comando 'peso' para saber cuanto puedes 
+cargar aun.

@@ -1,0 +1,99 @@
+/**
+ *  SIMAURIA /bin/mortal/equipdata.ic
+ *
+ * [Nyh] Rutinas de ayuda para todos los comandos relacionados con el equipo
+ *
+ */
+
+#include <config.h>
+#include <search.h>
+#include <properties.h>
+#include <equipment.h>
+
+//-----------------------------------------------------------------------------
+
+private int isCarried (object obj, object *inv)
+{
+  return member(inv, obj) >= 0;
+}
+
+//-----------------------------------------------------------------------------
+// [w] Devuelve la terminacion apropiada segun el mapping de objetos
+//     que se introducen, segun  genero. La funcion lo que hace es comprobar
+//     si de todos los objetos hay uno solo masculino entonces devuelve 'o'
+//     sino devuelve 'a' ya que todos serian femeninos.
+
+private string getPlData(string var, mapping cdata)
+{
+ int i;
+ for (i=0;i<sizeof(cdata[var]);i++)
+  if(cdata[var][i]->Query(P_GENDER)==GENDER_FEMALE)
+   return "a";
+ return "o";
+}
+
+//-----------------------------------------------------------------------------
+
+private mapping getCData(string str, string arg)
+{
+  mapping cdata = ([]), found;
+  mixed   what;
+  closure tmp;
+  string  msg;
+
+  if ("equipar" == str)
+  {
+    what = TP->SearchM(arg, SEARCH_INV_ENV|SM_CMULTI);
+    tmp = lambda(({SYM(o)}), ({SF(!)
+                          , ({ SF(isCarried), SYM(o), quote(all_inventory(TP)) })
+                         })
+                );
+    found = sort_findings( what-({ TP })
+                         , lambda( ({SYM(o), SYM(t), SYM(l), SYM(c)})
+                           , ({SF(sort_f_std), SYM(o), SYM(t), SYM(l), SYM(c), tmp })
+                           )
+                         );
+  }
+  else // "desequipar"
+  {
+    what = TP->SearchM(arg, SEARCH_INV|SM_CMULTI
+                          , lambda(({SYM(o)}), ({SF(isCarried), SYM(o)
+                                             , quote(all_inventory(TP)) })
+                                  )
+                      );
+    found = sort_findings(what-({ TP }), SF(sort_f_default));
+  }
+
+  //dtell("nyh",sprintf("what = %O\n",what));
+  //dtell("nyh",sprintf("found = %O\n",found));
+
+  what = found[FOUND_SINGLE]||({});
+
+  msg = "";
+  if (found[-FOUND_SINGLE])
+    msg = "No has encontrado todo lo que querías "+query_verb()+".\n";
+
+  msg += implode_list( (found[FOUND_NOTHANDLE] || ({ })) - ({TP }) // No se por que lo añade
+                     , "Tienes que coger ", " primero.\n", "y");
+  msg += implode_list( found[FOUND_IDS]
+                     , "No encuentras ", ".\n", "ni");
+
+  if (!sizeof(what))
+  {
+    notify_fail( msg + "No encuentras nada que "+query_verb()+".\n"
+                      , NOTIFY_NOT_VALID);
+    return 0; // Como espera un mapping no puedo devolver notify_fail q es int
+  }
+
+  //dtell("nyh",sprintf("cdata = %O\n",cdata));
+  cdata["what"] = what;
+  cdata["msg"] = msg;
+  cdata["handled"] = ({});
+  cdata["nothandled"] = ({});
+  cdata["already"] = ({});
+  cdata["fewhands"] = ({});
+  cdata["small"] = ({});
+  cdata["large"] = ({});
+
+  return cdata;
+}

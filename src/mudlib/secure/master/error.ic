@@ -1,0 +1,468 @@
+/**
+ * /secure/master/error.ic
+ *
+ * Archivo para ser incluido por el master. Contiene las funciones de
+ * manejo de errores.
+ */
+
+//===========================================================================
+//  Error Handling
+//
+//===========================================================================
+
+void dangling_lfun_closure (); // Handle a dangling lfun-closure.
+void log_error (string file, string err, int warn); // Announce a compiler-time error or warning.
+mixed heart_beat_error (object culprit, string err, string prg, string curobj, int line); // Announce an error in the heart_beat() function.
+void runtime_error (string err, string prg, string curobj, int line); // Announce a runtime error.
+void runtime_warning (string msg, string curobj, string prg, int line, int inside_catch); // Announce a runtime warning.
+
+//---------------------------------------------------------------------------
+void dangling_lfun_closure ()
+// [+] Handle a dangling lfun-closure.
+//
+// This is called when the gamedriver executes a closure using a vanished
+// lfun, with previous_object() showing the originating object. A proper
+// handling is to raise a runtime error.
+//
+// Technical:
+//   Upon replacing programs (see efun replace_program()), any existing
+//   lambda closures of the object are adjusted to the new environment.
+//   If a closure uses a lfun which vanished in the replacement process,
+//   the reference to the lfun is replaced by an alien-lfun closure
+//   referencing this function.  The error will then occur when the execution
+//   of the adjusted lambda reaches the point of the lfun reference.
+//   There are two reasons for the delayed handling. First is that the
+//   program replacement and with it the closure adjustment happens at
+//   the end of a backend cycle, outside of any execution thread: noone
+//   would see the error at this time.
+//   Second, smart closures might know/recognize the program replacement
+//   and skip the call to the vanished lfun.
+{
+  raise_error("dangling lfun closure\n");
+}
+
+//---------------------------------------------------------------------------
+
+void log_error (string file, string err, int warn)
+// [+] Announce a compiler-time error or warning.
+//
+// Arguments:
+//   file: The name of file containing the error/warning (it needn't be
+//         an object file!).
+//   err : The error/warning message.
+//   warn: non-zero if this is a warning, zero if it is an error.
+//
+// Whenever the LPC compiler detects an error or wants to issue a warning,
+// this function is called.
+// It should at least log the message in a file, and also announce it
+// to the active player if it is an wizard.
+{
+  string *lfile;
+  string code;
+
+  if (!catch(code = expand_define("__FILE__")) && code)
+    err += "Compiling "+code+", Line "+expand_define("__LINE__")+"\n";
+  if (last_loader)
+    err += last_loader+" tried to load "+last_filename+"\n";
+  last_loader = 0;
+  last_filename = 0;
+  if (IS_LEARNER(TI))
+    write (err);
+  lfile = error_logfile(file);
+  if (time() > last_log_time+59 || lfile[0] != last_log_file[0])
+  {
+    last_log_time = time();
+    last_log_file = lfile;
+    err = " -- "+ctime()+" --\n"+err;
+  }
+  catch(map(lfile, SF(write_file), err));
+}
+
+//---------------------------------------------------------------------------
+mixed heart_beat_error (object culprit, string err,
+                        string prg, string curobj, int line)
+// [+] Announce an error in the heart_beat() function.
+//
+// Arguments:
+//   culprit: The object which lost the heart_beat.
+//   err    : The error message.
+//   prg    : The executed program (might be 0).
+//   curobj : The object causing the error (might be 0).
+//   line   : The line number where the error occured (might be 0).
+//
+// Result:
+//   Return anything != 0 to restart the heart_beat in culprit.
+//
+// This function has to announce an error in the heart_beat() function
+// of culprit.
+// At time of call, the heart_beat has been turned off.
+// A player should at least get a "You have no heartbeat!" message, a more
+// advanced handling would destruct the offending object and allow the
+// heartbeat to restart.
+//
+// Note that <prg> denotes the program actually executed (which might be
+// inherited one) whereas <curobj> is just the offending object.
+{
+  object causer;
+  string *file;
+  string message;
+  string code;
+  int flag, rc;
+
+#define CWRITE(s) tell_object(culprit, s)
+
+  if (err == "Illegal use of save_object()\n" && last_save_fname)
+  {
+    err = err[0..<2] + " to '"+last_save_fname+"'\n";
+    last_save_fname = 0;
+  }
+
+  if (prg) {
+    message = "Obj: "+curobj;
+    if ((causer = find_object(curobj)) && (causer = environment(causer)))
+      message += " in "+object_name(causer);
+    message += ", File: "+prg+", Line: "+line;
+    file = error_logfile(curobj);
+    if (time() > last_heart_time+59 || file[0] != last_heart_file[0])
+    {
+      last_heart_time = time();
+      last_heart_file = file;
+      catch(map(file, SF(write_file), " -- "+ctime()+" --\n"+message+"\n  "+err));
+    }
+    else
+      catch(map(file, SF(write_file), message+"\n  "+err));
+    causer = find_object(curobj);
+  }
+  else {
+    message = "Offending object not locatable (maybe destructed).\n";
+    causer = 0;
+  }
+
+  rc = 1;
+  if (objectp(culprit) && interactive(culprit))
+  {
+    flag = 0;
+    if (!catch(flag = IS_LEARNER(culprit)) && flag) {
+      CWRITE(
+        "---------------------------------------------------------------\n");
+      CWRITE("Error in your heartbeat!\n");
+      CWRITE(message+"\n");
+      if (prg && !catch(code=read_file("/"+prg, line, 1)) && code)
+        CWRITE("\n"+code+"\n");
+      CWRITE("Error: "+err);
+      CWRITE(
+        "---------------------------------------------------------------\n");
+    }
+    if (!causer || causer == culprit) {
+      if (flag)
+        CWRITE("Can't turn your heartbeat on again!\n");
+      else {
+        catch(load_obj(CHANNELMASTER)->SendMsg("error", message));
+        catch(load_obj(CHANNELMASTER)->SendMsg("error",
+          "Heartbeat de "+capitalize(getuid(culprit))+" desactivado.\n"));
+        CWRITE("Se ha producido un error  que detiene tu heart!\n");
+      }
+      rc = 0;
+    }
+    else {
+      if (causer != this_object()) { // In case its in the microcode
+        catch(causer->remove());
+        if (causer) catch(destruct(causer));
+      }
+      if (causer) rc = 0;
+      if (flag) {
+        if (causer)
+          CWRITE("No pude destruir el objeto ofensor.\n"
+                +"No puedo volver a activar tu heartbeat!\n");
+        else
+          CWRITE("Objeto ofensor destruido.\n");
+      }
+      else {
+        if (causer) {
+          catch(load_obj(CHANNELMASTER)->SendMsg("error",
+            "No pude destruir el objeto ofensor.\n"));
+          catch(load_obj(CHANNELMASTER)->SendMsg("error",
+            "Heartbeat de "+capitalize(getuid(culprit))+" desactivado.\n"));
+          CWRITE("Se ha producido un error que detiene   tu heart.\n");
+        }
+        else {
+        catch(load_obj(CHANNELMASTER)->SendMsg("error",
+          "Heartbeat de "+capitalize(getuid(culprit))+" continua.\n"));
+          CWRITE("Se ha producido un error momentáneo.\n");
+        }
+      }
+    }
+  }
+  else { // culprit not interactive
+    string fname;
+    if (culprit)
+      fname = object_name(culprit);
+    else
+      fname = "<zombie>";
+    catch(map(error_logfile(fname), SF(write_file)
+             ,fname+": Error en el heartbeat\n"+message
+              +"\n  "+err));
+    catch(load_obj(CHANNELMASTER)->SendMsg("error",
+      "Error en el heartbeat de "+fname+"\n"));
+    catch(load_obj(CHANNELMASTER)->SendMsg("error",message));
+    if (objectp(causer) && interactive(causer)) { // Don't remove players
+      catch(load_obj(CHANNELMASTER)->SendMsg("error",
+        "El objeto ofensor no puede ser destruido.\n"));
+      catch(load_obj(CHANNELMASTER)->SendMsg("error",
+        "Heartbeat of "+capitalize(getuid(culprit))+" turned off.\n"));
+      rc = 0;
+    }
+    else if (causer) { // Remove the offending object.
+      if (causer != this_object()) {
+        catch(causer->remove());
+        if (causer) catch(destruct(causer));
+      }
+      if (causer || !culprit)
+        rc = 0;  // Don't restart heart if causer is still there, or if
+                 // culprit was the causer and therefore got removed.
+      if (causer)
+        catch(load_obj(CHANNELMASTER)->SendMsg("error",
+          "Offending object can't be destructed.\n"));
+    }
+  }
+
+  unwind_cmd_stack(TP);
+
+  return rc;
+
+#undef CWRITE
+}
+
+//---------------------------------------------------------------------------
+void runtime_error (string err, string prg, string curobj, int line
+                   , mixed culprit)
+// [+] Announce a runtime error.
+//
+// Arguments:
+//   err    : The error message.
+//   prg    : The executed program.
+//   curobj : The object causing the error.
+//   line   : The line number where the error occured.
+//   culprit: -1 for runtime errors; the object holding the heart_beat()
+//            function for heartbeat errors.
+//
+// This function has to announce a runtime error to the active user,
+// resp. handle a runtime error which occured during the execution of
+// heart_beat() of <culprit>.
+//
+// For a normal runtime error, if the active user is a wizard, it might
+// give him the full error message together with the source line; if the
+// user is a is a player, it should issue a decent message ("Your sensitive
+// mind notices a wrongness in the fabric of space") and could also announce
+// the error to the wizards online.
+//
+// If the error is a heartbeat error, the heartbeat for the offending
+// <culprit> has been turned off. The function itself shouldn't do much, since
+// the lfun heart_beat_error() will be called right after this one.
+//
+// Note that <prg> denotes the program actually executed (which might be
+// inherited) whereas <curobj> is just the offending object for which the
+// program was executed.
+{
+  string *file;
+  string message;
+  string code;
+  int flag;
+  object theobj;
+
+  if (err == "Illegal use of save_object()\n" && last_save_fname)
+  {
+    err = err[0..<2] + " to '"+last_save_fname+"'\n";
+    last_save_fname = 0;
+  }
+  message = "Obj: "+curobj+", File: "+prg+", Line: "+line+":";
+  if (code = expand_define("__FILE__"))
+    message += "\nCompiling "+code+", Line "+expand_define("__LINE__");
+  if (last_loader)
+  {
+    message += "\n"+last_loader;
+    if (last_lived && last_env)
+      message += " in "+last_env;
+    message += " tried to load "+last_filename;
+  }
+  last_loader = 0;
+  last_filename = 0;
+  file = error_logfile(curobj);
+  if (   (theobj = find_object(curobj))
+      && stringp(code = (string)theobj->QueryCreator())
+     )
+  {
+    file += error_logfile(code);
+    message += "\nCreated by "+code;
+  }
+  if (time() > last_runt_time+59 || file[0] != last_runt_file[0])
+    {
+    last_runt_time = time();
+    last_runt_file = file;
+    catch(map(file, SF(write_file), " -- "+ctime()+" --\n"+message+"\n  "+err));
+  }
+  else
+    catch(map(file, SF(write_file), message+"\n  "+err));
+
+  if (TI)
+  {
+    if (!catch(flag = IS_LEARNER(TI)) && flag) {
+      write(
+        "---------------------------------------------------------------\n");
+      write(message+"\n");
+      if (prg && !catch(code=read_file("/"+prg, line, 1)) && code)
+        write("\n"+code+"\n");
+      write("Error: "+err);
+      write(
+        "---------------------------------------------------------------\n");
+    }
+    else {
+      write(
+        "Se ha producido un error.\n");
+      catch(load_obj(CHANNELMASTER)->SendMsg("error", message+" "+err));
+    }
+  }
+
+  unwind_cmd_stack(TP);
+}
+
+//---------------------------------------------------------------------------
+void runtime_warning (string err, string curobj, string prg, int line
+                     , int inside_catch)
+
+// Announce a runtime warning.
+//
+// Arguments:
+//   err    : The warning message.
+//   curobj : The object causing the warning, may be 0.
+//   prg    : The executed program, may be 0.
+//   line   : The line number where the warning occured.
+//   inside_catch : != 0 if the warning occurs inside a catch().
+//
+// This function is to allow the mudlib to handle runtime warnings, for
+// example to log them into a database.
+//
+// Note that <prg> denotes the program actually executed (which might be
+// inherited) whereas <curobj> is just the offending object for which the
+// program was executed.
+//
+// The driver imposes a limit of three nested warnings, to prevent endless
+// recursions.
+{
+  string *file;
+  string message;
+  string code;
+  int flag;
+  object theobj;
+
+  message = "Obj: "+curobj+", File: "+prg+", Line: "+line+":";
+  if (code = expand_define("__FILE__"))
+    message += "\nCompiling "+code+", Line "+expand_define("__LINE__");
+  if (last_loader)
+  {
+    message += "\n"+last_loader;
+    if (last_lived && last_env) message += " in "+last_env;
+    message += " tried to load "+last_filename;
+  }
+  last_loader = 0;
+  last_filename = 0;
+  file = error_logfile(curobj);
+  if (   (theobj = find_object(curobj))
+      && stringp(code = (string)theobj->QueryCreator())
+     )
+  {
+    file += error_logfile(code);
+    message += "\nCreated by "+code;
+  }
+  if (time() > last_runt_time+59 || file[0] != last_runt_file[0])
+  {
+    last_runt_time = time();
+    last_runt_file = file;
+    catch(map(file, SF(write_file), " -- "+ctime()+" --\n"+message+"\n  "+err));
+  }
+  else
+    catch(map(file, SF(write_file), message+"\n  "+err));
+
+  if (TI)
+  {
+    if (!catch(flag = IS_LEARNER(TI)) && flag) {
+      write(
+        "---------------------------------------------------------------\n");
+      write(message+"\n");
+      if (prg && !catch(code=read_file("/"+prg, line, 1)) && code)
+        write("\n"+code+"\n");
+      write("Warning: "+err);
+      write(
+        "---------------------------------------------------------------\n");
+    }
+    else {
+      catch(load_obj(CHANNELMASTER)->SendMsg("error", message+" "+err));
+    }
+  }
+
+}
+
+//---------------------------------------------------------------------------
+// Fin de las funciones inherentes
+//---------------------------------------------------------------------------
+
+//---------------------------------------------------------------------------
+string *error_logfile (string file)
+// Return appropiate names( for an error logfile.
+//
+// Arguments:
+//   file   : The name of file containing the error (it needn't be an object
+//            file!).
+// Result:
+//   The filenames where the error should be logged.
+{
+  string *lfile;
+  string cuid, puid;
+
+  cuid = get_wiz_name(file);
+
+  if (!cuid || cuid == "ze/us") lfile = ({ LOGPATH "ERR/generic" });
+  else if (query_wiz_level(cuid)>0) lfile = ({ WIZARDSLOGPATH + cuid + ".err" });
+  else if (file_size("/d/"+cuid) == -2) {
+      lfile = ({ DOMAINLOGPATH + cuid + "/.err" });
+      puid = explode(file, "/")[2];
+      if (query_wiz_level(cuid)>0) lfile += ({ WIZARDSLOGPATH + cuid + ".err" });
+  }
+  else {
+    if (cuid == ROOTID) cuid = "root";
+    lfile = ({ LOGPATH "ERR/"+cuid });
+  }
+  return lfile;
+}
+
+//---------------------------------------------------------------------------
+static int _mutex_unwind = 0;
+
+static void unwind_cmd_stack(object pl)
+// Unwind the command giver stack, thus performing all pending post-cmd-calls.
+//
+// Argument:
+//   pl : The command_giver to start with.
+//
+// The function will attempt to unwind the command giver stack, and then
+// walk through the caller chain.
+
+{
+  object prev_pl;
+  int i;
+
+  if (_mutex_unwind) return;
+  _mutex_unwind++;
+
+  while (pl)
+  {
+    prev_pl = (object)pl->QueryCmdData("PreviousPlayer");
+    catch(pl->PopCmdData(1));
+    pl = prev_pl;
+  }
+  for (i = 0; pl = previous_object(i); i++)
+    if (living(pl))
+      catch(pl->EmptyCmdDataStack(1));
+
+  _mutex_unwind--;
+}

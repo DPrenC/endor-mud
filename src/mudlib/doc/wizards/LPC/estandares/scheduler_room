@@ -1,0 +1,150 @@
+/std/scheduler_room
+
+Sinopsis:
+Objeto habitación con horarios de apertura y cierre.
+
+Descripción:
+Este objeto, que hereda diréctamente de la habitación base (/std/room), es la 
+habitación que permite definir horarios de apertura y cierre. Es muy útil para 
+establecimientos públicos: tiendas, bancos, oficinas de consignas, ETC.
+
+Para usarla, no tenemos más que heredar de scheduler_room en lugar de room, y 
+utilizar las funciones que se explican a continuación, para definir el 
+comportamiento de la habitación.
+Nota, se debe utilizar el define SCHEDULER_ROOM, definido en mud.h, que se 
+autoincluye en cualquier archivo compilado.
+
+1. int *SetCloseTime(int * | int horarios)
+Define las etapas del día en las que esta habitación permanecerá cerrada. Para 
+ello, utilizaremos los defines del nightday, o bien, un define existente en scheduler.h, que define un horario estándard de cierre, que es el que siguen las tiendas por defecto. El define es:
+#define S_CLOSED_AT_NIGHT ({ND_NIGHT, ND_PREDAWN, ND_DAWN, ND_SUNRISE})
+Para usarlo, deberemos incluir scheduler.h en nuestro archivo.
+Se puede especificar tanto un array de enteros con los distintos horarios, o un 
+sólo int para definir una única etapa del día.
+Si no se define ningún horario de cierre, la habitación nunca cerrará.
+
+Ejemplo:
+SetCloseTime(({ND_NIGHT, ND_PREDAWN, ND_DAWN, ND_SUNRISE}));
+Esta habitación permanecería cerrada durante toda la noche, hasta que el sol se 
+eleva sobre el horizonte.
+
+SetCloseTime(ND_NIGHT)
+Esta habitación solo permanecería cerrada en noche cerrada.
+
+2. string SetThrowOUtMsg(string mensaje)
+Define el mensaje que se enviará a los jugadores que estén dentro de la 
+habitación para echarlos de la misma antes de cerrar.
+Por defecto se envía un mensaje estándar, por lo que si no se desea, no es 
+necesario ajustar esta propiedad.
+
+Ejemplo:
+SetThrowOutMsg("Leyma grita: ¡Eh, venga, fuera que me voy a casa a hacerme la 
+cena!\n");
+
+3. string SetRoomClosedMsg(string mensaje). Determina el mensaje que verán los 
+jugadores que intenten entrar a la habitación cuando esta permanezca cerrada.
+Por defecto, se utiliza un mensaje estándar con el IntShort (sin PreIntShort) de 
+la habitación.
+
+Ejemplo:
+SetRoomClosedMsg("La tienda está cerrada.\n");
+
+3. string SetLastDest(string destino)
+Esta función define el punto de destino de un jugador cuando sale de la tienda. 
+LastDest puede tener una ruta relativa, pues se usa la sefun resolve_file para 
+construir la ruta absoluta.
+De no definirse, se intentará mover al jugador a una salida aleatoria de las 
+existentes en la habitación, priorizando las salidas exteriores, y siempre 
+obviando las salidas asociadas a closures.
+
+Ejemplo:
+SetLastDest("/d/simauria/comun/habitacion/marhalt/nandor/calle3");
+SetLastDest("../calle2");
+
+4. string *NotifyExits(string * |string exits)
+Define las salidas a las que el tendero (o un personaje indeterminado en caso de 
+no haber encargado de cierre), notificará la apertura o cierre de la habitación.
+Se puede introducir un array de string, o un string sólo, con la salida a 
+notificar.
+Si no se especifica, se notificará a todas las salidas de la habitación que den 
+al exterior, o de no haberlas, a todas las que, aunque no den al exterior, no 
+sean salidas asociadas a closures. La primera salida encontrada será por la que 
+el tendero se marche, notificándose al resto de salidas, si las hubiese, de que 
+el encargado cierra la habitación, simplemente.
+
+5. string SetSchedulerID(string id)
+Determina la ID del encargado de cerrar o abrir la habitación. Esta id debe 
+pertenecer a un personaje existente en la habitación.
+Nota: SetSchedulerID no carga ningún personaje, solo asocia un personaje 
+existente en la habitación como el encargado de abrirla y cerrarla.
+
+ejemplo:
+SetSchedulerID("paquito_el_chocolatero");
+
+6. int SetNoSchedulerObject(int i)
+Determina si la habitación tendrá o no encargado de su apertura y cierre. De 
+definirse a 1, se considerará que no tiene encargado, y de definirse a 0, se 
+considerará al encargado el definido en SchedulerID.
+
+Ejemplo:
+SetNoSchedulerObject(1)
+
+7. string *SetAssociatedRooms(string habitacion | string *habitaciones)
+Esta función ajusta las habitaciones asociadas a una tienda, si dicha tienda consta de más de una habitación. Si solo es de una habitación, esta propiedad no se debe ajustar. Esto es debido a que cada tienda deberá constar de una habitación principal, y el resto se considerarán habitaciones secundarias. AssociatedRooms se encargará de echar a todos los clientes de las habitaciones asociadas para poder así cerrar la tienda sin gente dentro. Se pueden utilizar rutas relativas, ya que esta función utiliza la sefun resolve_file para armar las rutas de cada habitación.
+Ejemplo:
+SetAssociatedRooms(({"trastienda", "cocinilla", "probador"}));
+
+
+9. string SetMainRoom(string ruta)
+En tiendas con más de una habitación, si la habitación que estamos codificando es una habitación secundaria, MainRoom debe hacer referencia a la habitación principal de la tienda, de igual modo que esa habitación principal, debe tener a esta habitación dentro de sus habitaciones asociadas.
+Ejemplo:
+SetMainRom("tienda");
+
+10. string SetInformCloseMsg(string mensaje)
+Informa, un minuto antes de cerrar, del cierre del establecimiento.
+Ejemplo:
+SetInformCloseMsg("Azlirt dice: ¡Venga, venga, marchando que estoy a puntito de cerrar!\n");
+
+11. string SetNotifyOpenMsg(string msg)
+Mensaje que se enviará a la primera habitación de las definidas en NotifyExits de la habitación principal, cuando la tienda se abra.
+Ejemplo:
+SetNotifyOpenMsg("Leyma sale de casa, abre la tienda y entra rapidamente.\n");
+
+12. string SetNotifyCloseMsg(string msg)
+Mensaje que se notificará a la primera habitación de NotifyExits de la habitación principal, cuando se vaya a abrir la tienda.
+Ejemplo: SetNotifyCloseMsg("Leyma sale corriendo de la tienda, cierra y se va a casa.\n");
+
+
+Notas sobre bancos, taquillas, tiendas y tabernas.
+
+En estos establecimientos, no es necesario ajustar la propiedad SchedulerID, 
+pues ya se hace automáticamente al hacer el SetKeeper o SetShopkeeper 
+respectivamente.
+En el caso de las tiendas, taquillas  y bancos, CloseTime, está definido por defecto como: 
+({ND_NIGHT, ND_PREDAWN, ND_DAWN, ND_SUNRISE}), o lo que es lo mismo, el valor del define S_CLOSED_AT_NIGHT definido en scheduler.h. Es decir, que cierra toda la 
+noche y parte de la mañana.
+Si se quiere cambiar en alguno de ellos, no hay más que volver a definir en la 
+habitación dicha propiedad como se desee.
+
+En el caso de las tabernas, aunque se hereda de scheduler_room, no tienen 
+definidos horarios de cierre, por considerar que pueden tener horarios 
+totalmente distintos entre si, dependiendo de la naturaleza de la misma.
+
+Nota sobre los establecimientos con puertas.
+La habitación, buscará en NotifyExits las salidas que tengan puertas, las 
+cerrará si están abiertas, y las bloqueará hasta que la tienda vuelva a abrirse.
+En la primera salida, los que estén fuera verán como el tendero abre la puerta 
+(si estaba cerrada), sale, la cierra y se marcha. En las demás, solo se verá, en 
+caso en que la puerta esté abierta, como se cierra.
+Es imprescindible colocar, en las puertas que tengan nuestras schedulers_rooms, la propiedad P_DOOR_CLOSE_TIME, con los mismos estados del día en los que cerrará la tienda.
+Por ejemplo. Si nuestra tienda cierra solo por la noche (ND_NIGHT), en la puerta que comunica la tienda con la calle, deberemos codificar la propiedad P_CLOSE_TIME como ND_NIGHT
+([P_CLOSE_TIME : ND_NIGHT ])
+tanto en el lado de la tienda, como en el lado de la calle.
+Si la tienda es una tienda con horario por defecto, podremos usar el mismo define S_CLOSED_AT_NIGHT que encontraremos en scheduler.h
+
+Nota sobre establecimientos con habitaciones múltiples.
+
+Como he explicado en las funciones anteriores, si un establecimiento tiene varias habitaciones, deberemos considerar a una de ellas como la habitación principal, y el resto como habitaciones secundarias.
+En la habitación principal, deberemos ajustar SetAssociatedRooms con un array en el que colocaremos las rutas de las habitaciones secundarias, y en cada habitación secundaria, deberemos llamar a SetMainRoom, pasándole la ruta de la habitación principal.
+¡Importante! SetCloseTime solo se debe definir en la habitación principal, no en las secundarias.
+De igual modo, en cada habitación, podremos definir ThrowOutPeopleMsg, LastDest, NotifyExits, InformCloseMsg, NotifyOpenMsg, NotifyCloseMsg y RoomClosedMsg, lanzándose en cada una el que esté definido en su codificación.

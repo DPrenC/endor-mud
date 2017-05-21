@@ -1,0 +1,16 @@
+[1mCOMANDO[0m
+  typo [<mensaje>]
+
+[1mDESCRIPCION[0m
+  Te permite enviar un mensaje de una linea a los wizards para que corrijan
+  algún typo (error de ortografia). Debes hacerlo desde la habitación donde
+  hayas encontrado el error. Si no especificas el mensaje te aparecerá una
+  línea para que lo introduzcas.
+
+  Los wizards agradecen tu colaboración.
+
+[1mEJEMPLOS[0m
+  typo En vez de oreja pone horeja
+
+[1mTEMAS RELACIONADOS[0m
+  bug, idea

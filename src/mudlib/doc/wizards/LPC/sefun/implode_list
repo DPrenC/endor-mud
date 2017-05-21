@@ -1,0 +1,19 @@
+SYNOPSIS
+    string implode_list ( object *|string * list
+                        , void | string pre
+                        , void | string post
+                        , void | string conj
+                        )
+
+DESCRIPCIÓN
+    Unifica la lista especificada por <list> (o la descripción corta si alguno
+    de los elementos es un objeto) en una cadena de la forma "<pre><list1>, <list2>,
+    ... , <listn-1> <conj > <listn><post>".
+    Se devuelve una cadena con el resultado, o cadena vacía si no hay elementos a unificar.
+    Por defecto, pre es "", post es "", y conj es "y".
+
+Ejemplo:
+    implode_list(({"Manolito", "Pepito", "Antoñito", "rodrigo", "Alfonso"}),
+    "Han venido a cenar", ".\n", "y");
+    Resultado:
+    "Han venido a cenar Manolito, Pepito, Antoñito y rodrigo.\n"

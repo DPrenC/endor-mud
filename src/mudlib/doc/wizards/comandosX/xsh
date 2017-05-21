@@ -1,0 +1,11 @@
+SINOPSIS
+    xsh <nombre_fichero>
+
+DESCRIPCION
+    Lee informacion de un fichero y ejecuta cada linea como si se tratase
+    de un comando. El fichero puede contener un maximo de 15 comandos.
+    El fichero puede tener cualquier nombre y cualquier extension.
+
+EJEMPLOS
+    xsh ~/aliases.xsh
+    Una forma sencilla de reestrablecer todos tus alias.

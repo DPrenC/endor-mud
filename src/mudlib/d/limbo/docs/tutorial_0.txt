@@ -1,0 +1,6 @@
+Asthar te dice: lo primero que debes saber es donde estas, ¿no crees?. Usando
+el comando 'mirar' (o simplemente 'm') obtendras una descripcion del lugar en 
+el que te encuentras y una lista de lo hay a tu alrededor (objetos o personas).
+Para mirar algo en concreto, usa el comando 'mirar lo_que_sea'. Tambien puedes
+'oler' y 'escuchar' si te apetece. ¿Probamos? Usa los comandos 'mirar' para 
+ver esta habitación y luego 'mirar Asthar' para ver como soy.

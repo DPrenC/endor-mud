@@ -1,0 +1,23 @@
+[1mCOMANDO[0m
+  objetivo <nombre>
+  objetivo lista
+  objetivo <nombre> <objetivo>
+  objetivo <nombre> eliminar
+
+[1mDESCRIPCION[0m
+  Los comandos 'ir', 'en' y 'trans' aceptan objetivos simbolicos que pueden
+  ser establecidos y eliminados con este comando.
+
+  Los dos primeros devuelven el objetivo especifico con el simbolo <nombre>
+  o bien la lista completa de objetivos. La última forma elimina el objetivo
+  especificado. Todos los objetivos deben de existir en el momento en que
+  se ejecuta el comando.
+   
+[1mEJEMPLOS[0m
+  objetivo pub /d/goldhai/comun/habitacion/crowy/pub_guerreros
+  objetivo casa here
+  objetivo pub eliminar
+  objetivo lista
+
+[1mTEMAS RELACIONADOS[0m
+  ir, en, trans, falias

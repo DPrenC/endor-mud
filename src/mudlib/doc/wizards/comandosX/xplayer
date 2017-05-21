@@ -1,0 +1,15 @@
+SINOPSIS
+    xplayer <jugador>
+
+DESCRIPCION
+    Muestra de una forma clara y sencilla el valor de alguna de las
+    variables y de los stats de los jugadores. El comando no funcionaria
+    si se tratase de un pnj, pero si quieres averiguar toda la informacion
+    de un pnj o un jugador puedes usar el comando xprops.
+
+EJEMPLOS
+    xplayer $me    Mostraria tu informacion.
+    xplayer $h.1   Mostraria la informacion del objeto 1 de la habitacion
+                   en caso de que fuera un jugador.
+    xplayer woo    Mostraria la informacion de woo, si fuera un jugador.
+

@@ -1,0 +1,14 @@
+[1mCOMANDO[0m
+  pagina [<num>]
+
+[1mDESCRIPCION[0m
+  Establece el número de lineas que conforman una página. Así, a la hora de
+  mostrar textos largos hará una interrupción en cada página.
+  Si no se establece un número el comando te informará de las líneas que
+  forman una página en ese instante.
+
+[1mEJEMPLOS[0m
+  pagina 20
+
+[1mTEMAS RELACIONADOS[0m
+  stty

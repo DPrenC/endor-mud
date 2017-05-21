@@ -1,0 +1,29 @@
+Notas para aclarar lo de la luz:
+=================================
+ 
+ ND_NIGHT:     0
+ ND_PREDAWN:  10
+ ND_DAWN:     20
+ ND_SUNRISE:  40
+ ND_PRENOON:  70
+ ND_DAY:     100
+ ND_POSTNOON: 70
+ ND_PREFALL:  40
+ ND_FALL:     20
+ ND_PRENIGHT: 10
+ 
+ Rango de visión de un demonio:      100:150
+ Rango de visión de un draconiano:  -100:100
+ Rango de visión de un duende:       -50:100
+ Rango de visión de un elfo oscuro: -200: 70
+ Rango de visión de un elfo:          20:200
+ Rango de visión de un enano:        -70:100
+ Rango de visión de un gigante:       20:200
+ Rango de visión de un gnomo:         20:200
+ Rango de visión de un humano:        20:300
+ Rango de visión de un kainoak:       20:200
+ Rango de visión de un kender:        20:200
+ Rango de visión de un logath:       -70:100
+ Rango de visión de un medio-elfo:    20:200
+ Rango de visión de un orco:         -50:100
+ Rango de visión de un troll:       -100:100

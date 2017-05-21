@@ -1,0 +1,240 @@
+
+Dirección de contacto:	guybrush@simauria.upv.es
+
+/*****************************************/
+/*	Localización - Distribución	 */
+/*****************************************/
+
+Nombre del gremio:	Gremio de Hechiceros.
+
+Clase del gremio:	Hechiceros.
+
+Wizard/s creador/es:	Guybrush Threepwood.
+
+Historia del gremio:	El gremio fue creado por los elfos mucho antes
+			de que estos se separaran en las dos facciones
+			actuales (elfos y elfos oscuros). Fue creado
+			para la investigación de aquella nueva "ciencia"
+			que de alguna manera se habia dado a conocer
+			(me remito a lo que diga la historia general
+			respecto al origen de la magia). Una vez se
+			llegó a cierto punto en la investigación,
+			habían ya dos claras tendencias. La blanca- o
+			"de la luz"- y la negra- o "de la oscuridad".
+			Habiéndose convertido, por aquel entonces, en
+			algo tan cotidiano, la magia ocupó un lugar muy
+			importante entre las diversas razones que
+			causaron la separación de los elfos. Tanto
+			tiempo ha pasado ya, que de eso poco se
+			recuerda y muy pocas cosas guardan en común
+			ambas tendencias mágicas.
+
+Sede central:		Lad Laurelin (bosque cercano a Kellios)
+
+Sedes proyectadas:	Leewin y Simauria.
+
+Visión global:		Los miembros de este gremio efectuarán hechizos
+			de esencia bastante poderosos (al ser un gremio
+			dedicado por completo a la magia)
+
+Tipo de gremio:		Únicamente orientado a la magia.
+
+Otras consideraciones:	Ninguna.
+
+/*****************************************/
+/*		Afiliación		 */
+/*****************************************/
+
+Mínima Fza requerida:	1
+
+Mínima Des requerida:	2
+
+Mínima Con requerida:	1
+
+Mínima Int requerida:	4
+
+Máxima Fza normal:	15
+
+Máxima Des normal:	19
+
+Máxima Con normal:	19
+
+Máxima Int normal:	30
+
+Máxima Fza J.A.N.:	22
+
+Máxima Des J.A.N.:	28
+
+Máxima Con J.A.N.:	30
+
+Máxima Int J.A.N.:	36
+
+Máxima Fza Maestro:	30
+
+Máxima Des Maestro:	36
+
+Máxima Con Maestro:	40
+
+Máxima Int Maestro:	50
+
+Miembros permitidos:	Cualquier raza excepto: Trolls, Enanos, Kenders
+			y Gigantes.
+
+Prerrequisitos:		El interesado deberá pasar una prueba de acceso
+			que pruebe que es merecedor de ingresar en el
+			gremio (un miniquest).
+
+Otras cosas:		Nada.
+
+
+/*****************************************/
+/*		Niveles			 */
+/*****************************************/
+
+Relación nivel-stats:	????
+
+Niveles internos:	????
+
+Otras consideraciones:	Ninguna.
+
+/*****************************************/
+/*		Guildquests		 */
+/*****************************************/
+
+Para pasar al nivel X habrá que hacer el guildquest correspondiente,
+que se describirá cuando esté planteado a la comisión de quests,
+siendo X los niveles: 6, 10, 15, 18, 24, 25, 30, 40, 50 aprox.
+
+/*****************************************/
+/*		Guildobject		 */
+/*****************************************/
+
+Qué es:			El cayato o vara de un mago.
+
+Qué hace:		La vara será un arma como otra, o sea, que
+			podrá ser usada para luchar. Será posible
+			hacerla "desaparecer" de manera que si no
+			la necesitas, no te moleste. Y podrás hacerla
+			aparecer cuando quieras (quizá excepto en
+			medio de un combate o situaciones excepcionales)
+			La única característica ventajosa de la vara
+			será la posibilidad de hacer brillar el cristal
+			que se encuentra en uno de sus extremos haciendo
+			las veces de antorcha. Por supuesto, tendrá
+			cierta limitación. Quizá la imposibilidad de
+			brillar si no está empuñada (por lo que si
+			quieres luz y tener las dos manos libres,
+			debes gastarte los SP con un hechizo de luz).
+			Posiblemente, con el tiempo y mayor nivel se
+			le pueda añadir la característica de guardar
+			parte de la energía del mago y alimentar a
+			éste cuando lo necesite, o incluso de efectúe
+			algun hechizo gastando esa energía.
+
+Archivo:		Aún por determinar el path, pero posiblemente
+			sea /guilds/hechiceros/guildobject.c
+
+Modificaciones a lib:	De momento, ninguna que me venga en mente.
+
+Historia del GuildObj:	¿Érase una vez...?
+
+/*****************************************/
+/*		Skills			 */
+/*****************************************/
+
+- "pelea con vara"; nivel 1
+  Es el skill de lucha de los guerreros con un arma de tipo vara.
+  Mín: 0; Máx: 100
+
+- "memorizar hechizos"; nivel 1
+  Este skill se usa cada vez que se quiera memorizar un hechizo. Cuanto
+  mejor salga la tirada, mejor se memoriza el hechizo. Si se falla, o
+  no lo memorizarás, o lo olvidarás en poco tiempo. Se hará el UseSkill
+  cuando se ponga el comando "memorizar <hechizo>"
+
+- "pelea con daga"; nivel 6
+  Es el skill de lucha de los guerreros con un arma de tipo daga, pero
+  cambiado de nombre, ya que cuchillos no me mola.
+  Mín: 0; Máx: 90-100 (ya veremos)
+
+- "leer runas"; nivel 8
+  Las runas es un lenguaje mágico muy complicado por el cual se describen
+  los hechizos más complicados. Si no sabes leer runas, no puedes leer bien
+  un hechizo, ni por lo tanto lanzarlo. Si lees bien la runa, podrás lanzar
+  o memorizar el hechizo. Si no, no lo harás o lo harás mal. El UseSkill
+  se llamará cuando se ponga "leer <runa>"
+  Mín: 0; Máx: 100;
+
+- "concentración"; nivel 12
+  Todo lo que hagas que tenga que ver con magia mientras estés concentrado,
+  lo harás con mayor probabilidad de que salga y mejor. El problema es que
+  no puedes luchar cuerpo a cuerpo mientras tanto. El UseSkill se hará
+  cada vez que se haga un comando de magia estando en "modo concentrado".
+  Mín: 0; Máx: 100;
+
+- "autoaprendizaje"; nivel 18
+  En realidad, no es una habilidad en sí, o sea, que no aumentará de nivel
+  conforme se use, sino que usará los valores de las habilidades "memorizar"
+  y "concentración" para saber si ha habido éxito. Cada vez que se lance un
+  hechizo en presencia del mago, si las tiradas son propicias lo aprenderá,
+  eso sí, muy mal, porque no es lo mismo que te lo enseñen o lo leas que
+  simplemente ver como otro lo hace. Si las tiradas fallan, simplemente nada.
+  He pensado que esta habilidad sólo estará activa para aquellos de nivel
+  18 en adelante que sean del sólamente del gremio de Hechiceros.
+  Mín: N.A.; Máx: N.A.;
+
+- "pelea con armas mágicas"; nivel 25
+  Cualquier arma con características mágicas son succeptibles de ser mejor
+  explotadas por un mago. Si el arma está encantada de alguna manera, el
+  daño inflingido por está será mayor (a parte de las características
+  propias del encantamiento). El UseSkill será cuando se haga un WeaponHit.
+  Mín: 0; Máx: 100;
+
+- "resistencia mágica"; nivel 30
+  Define la capacidad de evitar un ataque mágico en parte o (en raros casos)
+  en su totalidad. Si eres bastante resistente a la magia y el hechizo no
+  es poderoso, no te hará ningún efecto. El UseSkill se hará cada vez que
+  se lanze un hechizo dañino contra alguien o quizá cuando se detecte un
+  daño por magia al mago (si es que es posible). Esta será difícil de subir.
+  Mín: 0; Máx: 100;
+
+- "reflexión de hechizos"; nivel 35
+  Es la capacidad de devolver un hechizo dañino al agresor. Si eres bueno
+  en esta habilidad, y el agresor es muy molón, recibirá su paquete de
+  vuelta por expirar el plazo de recogida. El UseSkill será igual que en
+  la habilidad de "resistencia mágica". Esta será más difícil de subir.
+  Mín: 0; Máx: 100;
+
+- "absorción de hechizos"; nivel 40
+  Es la leche con canela. Si alguien se gasta sus SP (o PM) en hacerte
+  pupa, se llevará un chasco al ver cómo canalizas las energías de su
+  hechizo en benieficio propio. No llegarás a sumar todos los puntos
+  que se haya gastado el agresor a no ser que la tirada salga redonda,
+  y tu sepas la habilidad a tope. El UseSkill será igual que en la
+  habilidad "reflexión de hechizos". Esta será muy difícil de subir.
+  Mín: 0; Máx: 100;
+
+/*****************************************/
+/*		Cambio de Gremio	 */
+/*****************************************/
+
+Limitación (gremio):	Ninguna.
+
+Limitación (raza):	Ninguna.
+
+Otras limitaciones:	Inteligencia. No puedes ser de este gremio si
+			eres de otro y tienes poca inteligencia. Has
+			de olvidarlo todo para dedicar el 100% de tí
+			a comprenderlo todo, a no ser que seas lo
+			bastante listo.
+
+/*****************************************/
+/*	GuildMaster/GuildLeader		 */
+/*****************************************/
+
+GuildMaster:		Será un PNJ, pero aún en proceso de creación.
+
+Ventajas GuildLeaders:	Algún poder bonito que no se pase, dado que
+			no todos pueden ser guildleader.
+
+Cualquier otra cosa que no aparezca en el documento: ¿Estás de broma?

@@ -1,0 +1,8 @@
+SINOPSIS
+        int prid(int *arg)
+
+DESCRIPCIÓN
+        Devuelve el resultado del producto algebraico de los elementos de <arg>.
+
+VER TAMBIÉN
+        sum(SE)

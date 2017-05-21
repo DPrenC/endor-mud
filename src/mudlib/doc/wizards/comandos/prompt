@@ -1,0 +1,17 @@
+[1mCOMANDO[0m
+  prompt <modo>
+
+[1mDESCRIPCION[0m
+  El prompt de juego (usualmente '>') puede ser cambiado mediante este
+  comando. Los modos disponibles son:
+    - ninguno: no muestra absolutamente ningún prompt.
+    - estándar: muestra el prompt estándar '>'.
+    - detalle: muestra los puntos de magia y de vida restantes. Se usa el 
+	siguiente código de color: rojo si la vida está por debajo del 15%
+	de vida, amarillo si está entre el 16% y el 75%, y verde o azul
+	si está por encima, dependiendo si lo mostrado es vida o magia, 
+	respectivamente.
+    - path: muestra el path actual.
+
+[1mEJEMPLOS[0m
+  prompt ninguno

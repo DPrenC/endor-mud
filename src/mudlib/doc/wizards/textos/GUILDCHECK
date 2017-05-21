@@ -1,0 +1,148 @@
+  1. /d/archwiz/common/room/city/adv_guild:
+       Error: *Error in loading object
+       
+       
+  2. /d/archwiz/common/room/city/adv_guild.1:
+       Error: *Error in loading object
+       
+       
+  3. /d/kha-annu/comun/gremio/clerigos/clerigos:
+       salon del Gremio de los Guerreros de Kha-annu.
+       Guildclass:  0
+       Guildname:   Clerigos
+       Guildobject: 0
+       Creators:    izet
+       Guildfile:   /d/kha-annu/comun/gremio/clerigos/clerigos
+       Minstats:
+         Con: 1   Dex: 1   Int: 1   Str: 1   
+       Maxstats:
+         Con: 25   Dex: 25   Int: 15   Str: 25   
+       MaxHLPstats:
+         Con: 40   Dex: 40   Int: 20   Str: 40   
+       Members:     0
+       Guildleader: none
+       Viceleader:  none
+       
+  4. /d/kha-annu/comun/gremio/guerreros/guerreros:
+       salon del Gremio de los Guerreros de Kha-annu.
+       Guildclass:  warrior
+       Guildname:   Guerreros
+       Guildobject: 0
+       Creators:    izet
+       Guildfile:   /d/kha-annu/comun/gremio/guerreros/guerreros
+       Minstats:
+         Con: 1   Dex: 1   Int: 1   Str: 1   
+       Maxstats:
+         Con: 25   Dex: 25   Int: 15   Str: 25   
+       MaxHLPstats:
+         Con: 40   Dex: 40   Int: 20   Str: 40   
+       Members:     2
+       Guildleader: none
+       Viceleader:  none
+       
+  5. /d/limbo/comun/habitacion/limbo/templo/gremio2:
+       ayuntamiento del poblado de pescadores.
+       Guildclass:  nigromante
+       Guildname:   Gremio de los Nigromantes
+       Guildobject: /p/guilds/necromancer/capa
+       Creators:    theuzifan
+       Guildfile:   /p/guilds/necromancer/necro
+       Minstats:
+         Con: 2   Dex: 3   Int: 3   Str: 2   
+       Maxstats:
+         Con: 20   Dex: 22   Int: 23   Str: 19   
+       MaxHLPstats:
+         Con: 29   Dex: 31   Int: 32   Str: 20   
+       Members:     5
+       Guildleader: none
+       Viceleader:  none
+       
+  6. /p/guilds/necromancer/necro:
+       a guild.
+       Guildclass:  nigromante
+       Guildname:   Gremio de los Nigromantes
+       Guildobject: /p/guilds/necromancer/capa
+       Creators:    theuzifan
+       Guildfile:   /p/guilds/necromancer/necro
+       Minstats:
+         Con: 2   Dex: 3   Int: 3   Str: 2   
+       Maxstats:
+         Con: 20   Dex: 22   Int: 23   Str: 19   
+       MaxHLPstats:
+         Con: 29   Dex: 31   Int: 32   Str: 20   
+       Members:     5
+       Guildleader: none
+       Viceleader:  none
+       
+  7. /players/izet/guild:
+       Error: *Error in loading object
+       
+       
+  8. /players/izet/guilds/putas:
+       Gremio 'las Puta'.
+       Guildclass:  las Puta
+       Guildname:   las Puta
+       Guildobject: 0
+       Creators:    izet, okkita and fran
+       Guildfile:   /players/izet/guilds/putas
+       Minstats:
+         Con: 1   Dex: 1   Int: 1   Str: 1   
+       Maxstats:
+         Con: 21   Dex: 21   Int: 16   Str: 22   
+       MaxHLPstats:
+         Con: 31   Dex: 32   Int: 25   Str: 32   
+       Members:     1
+       Guildleader: none
+       Viceleader:  none
+       
+  9. /players/okkita/gremio/gremio_ladron:
+       a guild.
+       Guildclass:  0
+       Guildname:   0
+       Guildobject: 0
+       Creators:    none
+       Guildfile:   /players/okkita/gremio/gremio_ladron
+       Minstats:
+         Con: 1   Dex: 1   Int: 1   Str: 1   
+       Maxstats:
+         Con: 20   Dex: 20   Int: 20   Str: 20   
+       MaxHLPstats:
+         Con: 20   Dex: 20   Int: 20   Str: 20   
+       Members:     1
+       Guildleader: none
+       Viceleader:  none
+       
+ 10. /players/theuzifan/ello:
+       a guild.
+       Guildclass:  nigromante
+       Guildname:   Black Chamber
+       Guildobject: /p/guilds/necromancer/capa
+       Creators:    theuzifan
+       Guildfile:   /p/guilds/necromancer/necro
+       Minstats:
+         Con: 2   Dex: 3   Int: 3   Str: 2   
+       Maxstats:
+         Con: 20   Dex: 22   Int: 23   Str: 19   
+       MaxHLPstats:
+         Con: 29   Dex: 31   Int: 32   Str: 20   
+       Members:     5
+       Guildleader: none
+       Viceleader:  none
+       
+ 11. /std/guild:
+       a guild.
+       Guildclass:  0
+       Guildname:   0
+       Guildobject: 0
+       Creators:    none
+       Guildfile:   /std/guild
+       Minstats:
+         Con: 1   Dex: 1   Int: 1   Str: 1   
+       Maxstats:
+         Con: 20   Dex: 20   Int: 20   Str: 20   
+       MaxHLPstats:
+         Con: 20   Dex: 20   Int: 20   Str: 20   
+       Members:     0
+       Guildleader: none
+       Viceleader:  none
+       

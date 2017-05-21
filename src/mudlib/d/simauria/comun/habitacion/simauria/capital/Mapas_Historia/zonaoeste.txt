@@ -1,0 +1,91 @@
+                                                                                                    h1cn -  h2cn    h3cn    h4cn    h5cn    h6cn    h7cn     h8cn    h9cn   h10cn  UN     h11cn    h12cn    h13cn    h14cn    h15cn    h16cn    h17cn   h18cn    h19cn 
+                                                                                                    / |     
+                                                                                                pn0 - NW -  
+                                                                                                |     |     
+                                                                                     h21cn - h22cn   W40    
+                                                                                                       |    
+                                                                     h1c1w   h2c1w  h3c1w    h4c1w   W39    
+                                                                      |       |       |       |        |    
+                                                                    c1w1 --- c1w2 -- c1w3 -- c1w4 -- W38 -  
+                                                                  /   |       |       |       |        |    
+                                                             jnw6   h6c1w   h7c1w   h8c1w   h9c1w     W37   
+                                                          /                                            |    
+                                            h1c2w     jnw5   h2c2w   h3c2w   h4c3w   h5c2w   h6c2w    W36   
+                                              |       |   \    |      |       |        |       |       |    
+                                            c2w1 -- c2w2 -- jnw4 --  c2w3 -- c2w4 -- c2w5 -- c2w6 --  W35 - 
+                                              |       |        |  \   |       |        |       |       |    
+                                    h7c2gw - h8c2w   h9c2w  h10c2w  jnw3   h11c2w   h12c2w   h13c2w   W34   
+                                                                          \                            |    
+             h1c3w   h2c3w   h3c3w   h4c3w   h5c3w   h6c3w   h7c5w  h8c3w    jnw2   h9c3w   h10c3w    W33   
+               |      |       |        |      |       |        |      |        |  \    |       |       |    
+             c3w1 - c3w2 -- c3w3 -- c3w4 -- c3w5 -- c3w6 -- c3w7 -- c3w8 -- c3w9 -- c3w10 -- c3w11  - W32 - 
+               |      |       |        |      |       |        |      |        |       |   \     |     |    
+             h11c3w  h12c3w  h13c3w  h14c3w  h15c3w  h16c3w  h17c3w  h18c3w   h19c3w  h20c3w  jnw1 -- W31   
+                                                                                                   \   |    
+       c4w1 - c4w2 - c4w3 -- c4w4 -- c4w5 -- c4w6 -- c4w7 -- c4w8 -- c4w9 -- c4w10 -- c4w11 - c4w12 - W30 - 
+     /  |      |      |       |        |      |       |        |      |        |       |       |       |    
+ A18 - c5w1 - c5w2 - c5w3 -- c5w4 -- c5w5 -- c5w6 -- c5w7 -- c5w8 -- c5w9 -- c5w10 -- c5w11 - c5w12 - W29 - 
+ |      |      |      |       |        |      |       |        |      |        |       |       |       |    
+ A17  h1c5w   h2c5w  h3c5w   h4c5w   h5c5w   h6c5w   h7c5w   h8c5w   h9c5w   h10c5w   h11c5w  h12c5w  W28   
+ |                                                                                                     |    
+ A16  h1c6w   h2c6w  h3c6w   h4c6w   h5c6w   h6c6w   h7c6w   h8c6w   h9c6w   h10c6w   h11c6w  h12c6w  W27   
+ |      |      |      |       |        |      |       |        |      |        |       |       |       |    
+ A15 - c6w1 - c6w2 - c6w3 -- c6w4 -- c6w5 -- c6w6 -- c6w7 -- c6w8 -- c6w9 -- c6w10 -- c6w11 - c6w12 - W26   
+ |      |      |      |       |        |      |       |        |      |        |       |       |       |    
+ A14 h13c6w  h14c6w  h15c6w  h16c6w  h17c6w  h18c6w  h19c6w  h20c6w  h21c6w  h22c6w  h23c6w   h24c6w  W25   
+ |                                                                                                     |    
+ A13  h1c7w   h2c7w  h3c7w   h4c7w   h5c7w   h6c7w   h7c7w   h8c7w   h9c7w   h10c7w   h11c7w  h12c7w  W24   
+ |      |      |      |       |        |      |       |        |      |        |       |        |      |    
+ A12 - c7w1 - c7w2 - c7w3 -- c7w4 -- c7w5 -- c7w6 -- c7w7 -- c7w8 -- c7w9 -- c7w10 -- c7w11 - c7w12 - W23   
+ |      |      |      |       |        |      |       |        |      |        |       |        |      |    
+ A11 h13c7w  h14c7w  h15c7w  h16c7w  h17c7w  h18c7w  h19c7w  h20c7w  h21c7w  h22c7w  h23c7w   h24c7w  W22   
+ |                                                                                                     |    
+ A10   h1rw   h2rw   h3rw    h4rw    h5rw    h6rw    h7rw    h8rw    h9rw    h10rw    h11rw   h12rw   W21   
+ |      |      |      |       |        |      |       |        |      |        |       |        |      |    
+ UO -- r1w -- r2w- - r3w --- r4w  --  r5w -- r6w  -- r7w --- r8w  -- r9w --  r10w -- r11w --  r12w - r13w - 
+ |      |      |      |       |        |      |       |        |      |        |       |        |      |    
+ A9   h13rw   h14rw   h15rw   h16rw   h17rw   h18rw   h19rw   h20rw   h21rw   h22rw   h23rw   h24rw   W20   
+ |                                                                                                     |    
+ A8  h1c9w   h2c9w   h3c9w   h4c9w   h5c9w   h6c9w   h7c9w   h8c9w   h9c9w  h10c9w  h11c9w   h12c9w   W19   
+ |      |      |      |       |        |      |        |       |      |        |       |        |      |    
+ A7 -  c9w1 - c9w2 - c9w3 -- c9w4 -- c9w5 -- c9w6 -- c9w7 -- c9w8 -- c9w9 -- c9w10 -- c9w11 - c9w12 - W18   
+ |      |      |      |       |        |      |        |       |      |        |       |        |      |    
+ A6 h13c9w  h14c9w  h15c9w  h16c9w  h17c9w  h18c9w  h19c9w  h20c9w  h21c9w  h22c9w  h23c9w   h24c9w   W17   
+ |                                                                                                     |    
+ A5 h1c10w   h2c10w  h3c10w  h4c10w  h5c10w  h6c10w  h7c10w  h8c10w  h9c10w h10c10w h11c10w  h12c10w  W16   
+ |      |       |     |        |       |       |       |       |       |       |       |        |      |    
+ A4 - c10w1- c10w2-  c10w3-  c10w4-  c10w5-  c10w6-  c10w7-  c10w8-  c10w9-  c10w10-  c10w11- c10w12- W15   
+ |      |       |     |        |       |       |       |       |       |       |       |        |      |    
+ A3 h13c10w h14c10w h15c10w h16c10w h17c10w h18c10w h19c10w h20c10w h21c10w h22c10w h23c10w  h24c10w  W14   
+ |                                                                                                     |    
+ A2 h1c11w   h2c11w  h3c11w  h4c11w  h5c11w  h6c11w  h7c11w  h8c11w  h9c11w h10c11w h11c11w  h12c11w  W13   
+ |      |       |     |        |       |       |      |       |       |       |        |        |      |    
+ A1 - c11w1- c11w2-  c11w3-  c11w4-  c11w5-  c11w6-  c11w7-  c11w8-  c11w9-  c11w10-  c11w11- c11w12- W12   
+   \    |       |     |        |       |       |      |       |       |       |        |        |      |    
+     c12w1- c12w2-  c12w3-  c12w4-  c12w5-  c12w6-  c12w7-  c12w8-  c12w9-  c12w10-  c12w11-  c12w12- W11-  
+                                                                                                       |    
+             h1c13w  h2c13w  h3c13w  h4c13w  h5c13w  h6c13w  h7c13w  h8c13w  h9c13w h10c13w  h11c13w  W10   
+                |      |       |       |       |      |       |       |       |        |        |      |    
+             c13w1-  c13w2-  c13w3-  c13w4- c13w5- c13w6-  c13w7-  c13w8 - c13w9- - c13w10-  c13w11-  W9 -  
+                |      |       |       |   \   |      |       |       |       |        |   /    |      |    
+            h12c13w h13c13w h14c13w h15c13w jswm0 h16c13w h17c13w h18c13w h19c13w    jsw00  h20c13w   W8    
+                                           /   |                                    /                  |    
+            jsw01 - jsw02 - h1c14w   jsw03 - jsw04  h2c14w  h3c14w  h4c14w   jsw05   h5c14w   h6c14w   W7   
+                |         \                 X  |      |       |       |    /  |        |        |      |    
+           h7c14w  h8c14w - jsw06    jsw07 - c14w1-  c14w2-  c14w3-  c14w4-  c14w5-  c14w6-   c14w7-   W6 -  
+                               |       |       |      |       |    /  |       |        |        |      |    
+                            jsw08   jsw09   h9c14w  h10c14w  jsw10  h11c14w h12c14w  h13c14w  h14c14w  W5   
+                                       |       |    \               /      \                           |   
+                                      jsw11   jsw12  jsw13  - jsw14  h1c15w jsw15 h2c15w h3c15w h4c15w W4   
+                                         |   /   |       |      |      |      |  \   |      |     |    |   
+                                       jsw16  h5c15w   h6c15w c15w1- c15w2 -c15w3- c15w4- c15w5- c15w6-W3 -  
+                                         |   \                  |      |      |       |  \  |          |   
+                                      h7c15w jsw17 h8c15w h9c15w h10c15w h11c15w h12c15w jsw18-h13c15w W2   
+                                                 |       |                                 | \         |   
+                                         h1cs  jsw19 - jsw20- jsw21- jsw22- jsw23- jsw24  h2cs jsw25   W1   
+                                           |  /                 |        |      |      |          |    |   
+                                         jsw26 - h3cs   h4cs - jsw27    h5cs  h6cs   jsw28 - h7cs ps0- SW- 
+                                                                                                     \ |  
+                                                                                                     h23cs 
+
+

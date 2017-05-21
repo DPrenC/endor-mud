@@ -1,0 +1,21 @@
+[1mServicio de BANCOS
+--------------------------[0m
+
+[1mINTRODUCCION[0m
+
+      El servicio de Bancos, permite a los habitantes de Simauria tener el dinero guardado de forma
+      segura, y a recaudo de ladrones y maleantes.
+
+      Cada banco funciona de forma independiente, es decir, cada persona
+      podrá tener una cuenta por cada banco existente en los dominios de Simauria.
+      De todos modos, se podrá transferir dinero personalmente de un banco a otro
+      sin ningún inconveniente, tan solo el pago de las distintas comisiones
+      que cada banco estipule por el ingreso de dinero en sus instalaciones.
+      
+      El comando finanzas, te permitirá ver un resúmen del estado de
+      todas tus cuentas,       así como información pormenorizada de cada
+      una de ellas.
+      
+      
+[1mTEMAS RELACIONADOS[0m
+  finanzas, consignas

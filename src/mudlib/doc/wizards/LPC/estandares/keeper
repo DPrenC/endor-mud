@@ -1,0 +1,462 @@
+Estándar std/room/keeper.
+
+Autor: Kastwey. Última modificación: 06/12/2006.
+
+Sinopsis:
+#include <keeper.h>
+inherit KEEPER;
+
+Descripción:
+El Keeper es un estándard que se deberá heredar para construir
+habitaciones que conlleven el uso de un empleado, ya sea un tendero, un
+oficinista... En definitiva, una habitación que necesite funciones tales
+como: manejo de dinero, comprobaciones de si está o no el empleado, envío de
+mensajes a la habitación o a un personaje en concreto usando el nombre o
+descripción corta del empleado...
+
+1.	Creación de una oficina / tienda.
+
+Para crear una habitación con la funcionalidad del keeper, se deberá heredar
+el estándar “/std/keeper” (o su define correspondiente: KEEPER, del mud.h,
+que ya se autoincluye en todas las compilaciones), además del tipo de
+habitación que sea. Es decir, el Keeper no conlleva a su vez ningún objeto
+heredado, sino que se utilizará como un objeto proveedor de funciones
+adicionales al tipo de habitación que se desee crear.
+
+Por ejemplo:
+
+--- #include <keeper.h>
+
+
+inherit ROOM; inherit KEEPER;
+
+---
+
+Una vez tenemos nuestro objeto, vamos a crear un empleado para que esté en
+la habitación.
+
+2.	Creación de un empleado.
+
+Para crear el empleado de nuestra habitación, utilizaremos la función
+SetKeeper. El prototipo de la función es: public varargs void
+SetKeeper(mixed arg1, mixed arg2)
+
+Esta función puede recibir uno, dos, o ningún parámetro. En caso de
+introducir los dos parámetros, estos serán de dos tipos diferentes: String,
+y mapping. El String, recoge la ruta del archivo objeto que se considerará
+empleado, y el mapping, recoge las propiedades adicionales que queramos dar
+a dicho empleado. El orden de los parámetros no importa, aunque es
+recomendable pasar primero el File, y luego las propiedades. Si le pasamos
+solo el primer parámetro (file), la función agregará al objeto ‘File’ a la
+habitación, y lo asignará como empleado. Si le pasamos también el segundo
+parámetro, la función agregará al objeto ‘File’ a la habitación, y le
+aplicará las propiedades que se hayan pasado en dicho parámetro.
+
+Por ejemplo:
+
+--- SetKeeper(“/d/simauria/comun/pnj/empleado.c”); ---
+
+En este caso, se añadirá al objeto “/d/simauria/pnj/empleado” a la
+habitación, y se asignará a este como el empleado de la misma.
+
+--- SetKeeper(“/d/simauria/comun/pnj/empleado.c", ([P_NAME":"Fargo";
+P_LONG:"Es Fargo, el empleado de esta oficina.\n" ])); ---
+
+En este caso, la función agregará al objeto "/d/simauria/comun/pnj/empleado"
+a la habitación, y le aplicará las propiedades que le hemos pasado en el
+mapping de propiedades.
+
+
+Si se omite el primer parámetro, se agregará a un NPC estándard, humano, de
+nivel 17. Su sexo se generará de forma aleatoria, y de él dependerá el
+nombre: El empleado, o La empleada. Ejemplo:
+
+--- SetKeeper((["Name":"pepito"])); ---
+
+Añadiría a un NPC estándar, y le pondría como nombre Pepito.
+
+--- SetKeeper(); ---
+
+Añadirá al empleado estándar anteriormente mencionado, y lo asignará como
+empleado de la habitación, sin agregarle ninguna propiedad extra.
+
+
+
+
+3. Funciones de manejo del objeto.
+
+A continuación, se explican todas las funciones disponibles en este objeto,
+y ejemplos de cómo utilizarlas.
+
+
+3.1. QueryKeeper
+
+Sinopsis:
+object QueryKeeper()
+
+Descripción:
+Devuelve el objeto Empleado. Si no está en la habitación, o
+está muerto, devuelve 0.
+
+3.2. QueryNoKeeper
+
+Sinopsis:
+int QueryNoKeeper()
+
+Descripción:
+Devuelve 1 si no hay empleado asignado a la habitación. Esto
+ocurre cuando en el archivo habitación, no se ha llamado a la función
+SetKeeper.
+
+3.3. RemoveKeeper
+
+Sinopsis:
+void RemoveKeeper()
+
+Descripción:
+Elimina al empleado de la habitación. Esta función se usa de
+forma interna para implementar la función SetKeeper, y no creo que sea
+necesario utilizarla en la codificación de una tienda u oficina, aunque la
+explico, por si alguien la necesita.
+
+
+3.4. keeper_in_room
+
+Sinopsis:
+int keeper_in_room(int silent)
+int keeper_in_room()
+
+Descripción:
+Esta función, devuelve 1 si el empleado está en la habitación.
+Si se le pasa 1 como parámetro (definido como K_SILENT en el keeper.h), no
+informará al usuario mediante ningún mensaje. En caso contrario, informará
+mediante un mensaje por defecto, o un mensaje personalizado, que se puede
+definir usando la función: Set(P_NO_KEEPER_MSG,mensaje); Este mensaje lo
+enviará mediante la función notify_fail.
+
+Ejemplo:
+
+---
+    if (!keeper_in_room(K_SILENT))
+    {
+        return notify_fail("El empleado no está.\n");
+    }
+    write("El empleado te saluda.\n");
+---
+
+En caso de que el empleado no esté, enviará un mensaje al player, informando
+de que el empleado no está. En caso contrario, envía el mensaje de que el
+empleado le saluda. Al haber pasado K_SILENT como parámetro a la función,
+hemos hecho que dicha función no envíe un mensaje por sí sola al player.
+
+
+
+Ejemplo 2. Sin usar K_SILENT:
+
+---
+    Set(P_NO_KEEPER_MSG,"El empleado no está.\n");
+    if (!keeper_in_room()) return 0;
+    write("El empleado te saluda.\n");
+---
+
+
+En primer lugar, definimos el mensaje que aparecerá al jugador en caso de
+que el empleado no esté. Si no queremos definir este mensaje, la función
+enviará un mensaje predefinido (No hay nadie aquí que pueda atenderte.). A
+continuación, la condición if (!keeper_in_room()) return 0 hace que, en caso
+de no estar el empleado, se devuelve 0 y se informa al jugador mediante un
+notify_fail con el mensaje definido o por defecto. En caso de que esté, se
+enviará un saludo al jugador.
+
+
+3.5. KeeperShort.
+
+Sinopsis:
+string KeeperShort(int cap)
+string KeeperShort()
+
+Descripción:
+Devuelve una cadena con el Short del empleado. Si se pasa 1
+como parámetro (definido en el keeper.h como K_CAP, devolverá la cadena con
+la primera letra en mayúscula. Si el empleado no está, devolverá 0. Si no
+tiene short asignado, devolverá "alguien". Si la habitación tiene el
+NoKeeper a 1, devolverá "El empleado".
+
+ejemplo:
+---
+    write(KeeperShort(K_CAP) + " te dice: Hola.\n");
+---
+
+Si el empleado tiene como Short "Manolo, el empleado de la oficina", este
+ejemplo enviaría al player: Manolo, el empleado de la oficina te dice: Hola.
+
+
+3.6. KeeperName
+
+Sinopsis:
+string KeeperName(int cap)
+string KeeperName()
+
+Descripción:
+Esta función es similar al KeeperShort, solo que extrae el Name
+del empleado. Si se pasa 1 como parámetro (definido en el keeper.h como
+K_CAP, devolverá la cadena con la primera letra en mayúscula. Si el empleado
+no está, devolverá 0. Si no tiene Name asignado, devolverá "alguien". Si la
+habitación tiene el NoKeeper a 1, devolverá "El empleado".
+
+Ejemplo:
+---
+    write (KeeperName(K_CAP) + " te dice: Hola");
+---
+
+Si el empleado tiene como Name Manolo, se le enviará el siguiente mensaje al
+jugador: Manolo te dice: Hola.
+
+3.7. KeeperSay
+
+Sinopsis:
+int KeeperSay(string str)
+
+Descripción:
+El empleado enviará un mensaje a la habitación. Su formato
+sería: <nombre_empleado> dice: <mensaje>. Si el empleado no está, la función
+devolverá 0.
+
+Ejemplo:
+---
+    KeeperSay("Qué día más aburrido.\n");
+---
+
+Este ejemplo, suponiendo que el empleado tiene como nombre Manolo, enviaría
+a la habitación el siguiente mensaje: Manolo dice: Qué día más aburrido.
+
+
+3.8. KeeperTell
+
+Sinopsis:
+int KeeperTell(string str, object ob)
+int KeeperTell(string str)
+
+Descripción:
+Enviará la cadena str al objeto pasado como segundo parámetro,
+y en su defecto, a this_player(). El formato es: <nombre_empleado> te dice:
+<mensaje> Si el empleado no está, el mensaje no se envía y la función
+devuelve 0. En caso contrario, devuelve 1.
+
+Ejemplo:
+---
+    KeeperTell("hola forastero.");
+---
+
+La acción sería, suponiendo que el empleado se llame Manolo y que esté en la
+habitación, enviar a this_player() el siguiente mensaje: Manolo te dice:
+Hola forastero.
+
+
+Ejemplo 2:
+
+---
+    object pl = find_object("kastwey");
+    if (pl) KeeperTell("Hola forastero",pl);
+---
+
+Enviaría el mensaje anterior al jugador Kastwey (suponiendo que esté
+conectado).
+
+3.9. KeeperEmote
+
+Sinopsis:
+int KeeperEmote(string str)
+int KeeperEmote(string *str)
+
+Descripción:
+El empleado envía un mensaje a la habitación. Si el parámetro
+pasado es una cadena, enviará dicho mensaje a la habitación. Si es un array
+de string de dos elementos, el primero lo enviará a this_player(), y el
+segundo a la room, excluyendo al jugador.
+
+Ejemplo:
+
+---
+    KeeperEmote("se mira al espejo");
+---
+
+Enviaría el siguiente mensaje a la habitación: <nombre_empleado> se mira al
+espejo.
+
+ejemplo 2
+
+---
+    KeeperEmote(({"te da una llave", "le da unas llaves a " +
+                  capitalize(TP->QueryName()) + ".\n" }));
+---
+
+En este ejemplo, el primer elemento del array se envía al player, y el
+segundo a la habitación, excluyendo a dicho player. Es decir, el player
+recibiría: <nombre_empleado> te da unas llaves. El resto de los objetos de
+la habitación, recibirán: <nombre_empleado> le da unas llaves a
+<Nombre_player Si suponemos que el nombre del empleado es Manolo, los
+mensajes quedarían: Player: Manolo te da unas llaves. Room excluyendo al
+player: Manolo le da unas llaves a <Nombre_Player>.
+
+
+3.10. Emote
+
+Sinopsis:
+void Emote(string msg)
+void Emote(string msg, object *exclude)
+void Emote(string msg, object exclude)
+
+Descripción:
+Envía un mensaje a la habitación, excluyendo por defecto a
+this_player. Si se le pasa un segundo parámetro, excluirá al objeto u
+objetos que se le hayan pasado. Básicamente es igual que el say, solo que
+esta función enviará el mensaje únicamente a aquellos objetos que puedan ver
+a this_player.
+
+Ejemplo 1:
+---
+    Emote(capitalize(this_player()->QueryName()) + " le pregunta algo a " +
+          KeeperShort(K_CAP) + ".\n");
+---
+
+Este ejemplo enviaría el mensaje a la habitación, excluyendo por defecto a
+this_player, y enviando dicho mensaje únicamente a las personas que puedan
+verlo.
+
+Ejemplo 2:
+
+---
+    Emote(capitalize(this_player()->QueryName()) + " le pregunta algo a " +
+          KeeperShort(K_CAP) + ".\n",QueryKeeper());
+---
+
+Este ejemplo enviaría el mensaje a la habitación, excluyendo a this_player,
+y además, al empleado. A parte, aquellos objetos que no vean a this_player.
+
+
+
+
+3.11. CantAttend
+
+Sinopsis:
+string CantAttend();
+string CantAttend(object ob);
+string CantAttend(int notify_fail);
+
+Descripción:
+Esta función se utiliza para saber si el empleado puede atender
+a un determinado objeto. Si se llama a la función si nparámetros, el objeto
+en el que se basará la función, será this_player. En caso de introducir un
+objeto, se basará en dicho objeto. Si se le pasa un 1 (definido como
+K_NOTIFY en el keeper.h), en caso de error, el mensaje se devolverá usando
+notify_fail, a this_player.
+
+Se pueden definir los mensajes de error que serán verbalizados al objeto del
+cual se desea comprobar si el empleado puede atender, usando las siguientes
+funciones:
+
+Set(P_NO_KEEPER_MSG,mensaje) Será el mensaje devuelto al objeto en caso de
+que el empleado no esté.
+
+Set(P_CANT_SEE_MSG,mensaje) Será el mensaje devuelto en caso de que el
+empleado no pueda ver al objeto.
+
+Set(P_FIGHTING_YOU_MSG,mensaje) Será el mensaje devuelto al objeto en caso
+de que el empleado esté luchando con él.
+
+Set(P_FIGHTING_MSG,mensaje) Será el mensaje devuelto al objeto en caso de
+que el empleado esté luchando con un objeto diferente.
+
+
+
+Ejemplo:
+---
+    // ajustamos el mensaje en caso de que el empleado esté luchando con el
+    // objeto.
+    Set(P_FIGHTING_YOU_MSG,"Cuando vas a hablar con "
+                           KeeperName(K_CAP) + "recapacitas y asumes que no "
+                           "es un buen momento.\n");
+
+    // en caso de que esté luchando con otro...
+    Set(P_FIGHTING_MSG, "Parece ser que este no es un buen momento para hablar"
+                        "con " + KeeperName(K_CAP) + ".\n");
+
+    // En caso de que no esté.
+    Set(P_No_KEEPER_MSG, "Parece ser que " + KeeperName(K_CAP) + "se ha ido a dar "
+                         "una vuelta y aún no ha llegado.\n");
+
+    if (CantAttend(K_NOTIFY))
+    // no puede atender a this_player.
+    {
+        return 0;
+    }
+    write("El empleado puede atenderte.\n");
+---
+
+En este código, ajustamos los diversos mensajes que puede devolver la
+función. A continuación, la llamamos con el parámetro K_NOTIFY (definido en
+keeper.h), para que en caso de que no pueda, el mensaje sea devuelto usando
+notify_fail. Si la función devolviese 0, se enviaría un mensaje a
+this_player, informándole de que el empleado sí puede atenderle.
+
+3.11. CheckMoney
+
+Sinopsis:
+int CheckMoney(object ob, int coste)
+int CheckMoney(int coste)
+
+Descripción:
+Se comprueba si un objeto tiene el dinero especificado en
+coste. En caso de pasar dos parámetros a la función, el primero será el
+objeto del que se desea comprobar el dinero pasado como segundo parámetro
+(siempre se contará en monedas de cobres o UMS (unidad monetaria de
+Simauria)). Si solo se pasa el coste, el objeto será this_player. Devolverá
+1 en caso de tener suficiente dinero, y en caso contrario, devolverá 0.
+
+Ejemplo:
+
+---
+    if (!CheckMoney(1000))
+    // no tiene suficiente dinero (1000 monedas de cobre.
+    {
+        write("Lo siento, no tienes suficiente dinero.\n");
+    }
+    else
+    {
+        write("Parece ser que llevas suficiente para lo que quieres comprar.\n");
+    }
+---
+
+En este ejemplo, se comprueba si this_player posee en su inventario 1000
+monedas de cobre (o su equivalente en monedas más grandes). Si es así, se le
+informa de que puede comprar lo que quería, y si no, se le da la mala
+noticia.
+
+
+3.12. Pay
+
+sinopsis:
+int Pay(object ob, int coste, string extraMsg)
+int pay(object ob, int coste)
+
+Descripción:
+Se le descontará el valor pasado como coste al objeto pasado
+como ob. En caso de haber pasado un mensaje extra, este se visualizará de la
+siguiente forma: Pagas x monedas de oro <mensaje_extra>, y recibes 3 monedas
+de plata. Si la operación ha tenido éxito, devolverá 1. En caso de error,
+devolverá 0, enviando al objeto ob el error ocurrido.
+
+Ejemplo:
+
+---
+    Pay(this_player(),30,"por la reparación de tu arma");
+---
+
+Se le intentará descontar a this_player 30 monedas de cobre. En caso de
+éxito, se le enviará un mensaje al jugador del tipo: Pagas 30 monedas de
+cobre por la reparación e tu arma. Al resto de la habitación, se le enviará
+un mensaje del tipo: <Nombre_player> paga 30 monedas de cobre. Este mensaje
+se enviará con la función Emote, así que solo podrán verlo quienes vean a
+this_player.
+

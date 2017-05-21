@@ -1,0 +1,9 @@
+[1mCOMANDO[0m
+  regenerar a <jugador>
+
+[1mDESCRIPCION[0m
+  Regeneras a un jugador poniendo al máximo sus puntos de vida y magia y
+  eliminando su sed y hambre.
+   
+[1mEJEMPLOS[0m
+  regenerar a woo

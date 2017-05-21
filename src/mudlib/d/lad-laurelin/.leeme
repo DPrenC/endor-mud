@@ -1,0 +1,15 @@
+                /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+                     DIRECTORIO DE LAD-LAURELIN 
+                \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+
+comun/         Directorio donde estan las habitaciones, objetos, etc.. 
+docs/          Documentacion tecnica acerca de lad-laurelin.
+ejemplos/      Ejemplos de codigo: ayuda para wizards de lad-laurelin.
+historia/      Documentos sobre la historia de lad-laurelin y sus ciudades.
+logs/          Directorio donde se graban todos los logs de este dominio. 
+mapas/         Mapas ASCII o gráficos de lad-laurelin y sus ciudades.
+miembros/      Donde estan los directorios de los miembros de este dominio. 
+std/           Inherits basicos utilizados en este dominio. 
+sys/           Includes usados en este dominio. 
+
+IMPORTANTE: Leeros las normas del directorio en .reglas

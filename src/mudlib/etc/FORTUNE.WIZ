@@ -1,0 +1,120 @@
+Los Wizards no pueden prestarle ayuda a los jugadores a no ser que exista un
+fallo en algún sitio.
+%%
+Los Wizards no pueden morir a no ser que desactiven el modo wizard, con el
+comando 'modowiz'.
+%%
+Puedes forzar a alguien a hacer algo usando el comando 'forzar', siempre y
+cuando su nivel de wizard sea menor al tuyo. Forzar funciona como si el
+propio jugador hubiese escrito él mismo el comando.
+%%
+Para destruir algún objeto puedes usar el comando xdest.
+%%
+El mejor amigo del wizard son las xtools. Pon 'xhelp' para obtener ayuda de
+las xtools.
+%%
+Recuerda que NO puedes cargar ni clonar nada si estás en el vacío. Tu
+personaje necesita tener un environment para realizar estas tareas.
+%%
+Puedes recargar una habitación con el comando 'xload', pero ten en cuenta
+que todos los objetos que estuvieran allí y que no se creen al cargar la
+habitación se perderán.
+%%
+Si estás en una habitación y tiene un fallo en la programación y se
+destruye, irás al vacío. Allí no puedes crear ni cargar nada. Puedes
+intentar volver a tu lugar de origen usando la salida 'volver', pero el
+fallo que había en la habitación que se destruyó puede volver a aparecer.
+%%
+Mirad al menos una vez por semana los logs que hay en /log/rep. Aquí se
+almacenan las ideas, los errores y los typos que los jugadores encuentran.
+%%
+En vuestro dominio y en vuestras habitaciones puede existir un archivo .err.
+En él se guardan los mensajes de error que se han ido generando en todas las
+habitaciones/pnjs/etc que hay a partir de ese directorio.
+%%
+Todos los wizards deben pertenecer a un dominio, y deben trabajar a las
+órdenes de algún vicelord/vicelady o lord/lady.
+%%
+Los objetos que se guarden en vuestro directorio de wizard no deben pasar
+bajo ninguna circunstacia a manos de los jugadores.
+%%
+Con las xtools puedes llamar a funciones de objetos o evaluar líneas de
+código. Para llamar a funciones puedes usar el comando 'xcall' y para
+evaluar código usa el comando 'xeval'. La diferencia es que con xcall llamas
+a una función de un objeto directamente y con xeval creas un trozo de código
+que se ejecuta.
+%%
+Los comandos de las xtools usan diversos comodines. El más importante es el
+$me (o $m), que hace referencia a quien realiza el comando o la llamada, el
+$here (o $h) que hace referencia al environment del wizard. Además estos
+comodines admiten que hagas referencia a sus contenidos. Por ejemplo, para
+mirar la descripción del primer objeto que este en tu habitación, puedes
+usar el comando 'xcall $h.1->QueryLong()'.
+%%
+Usa el comando xhelp para obtener ayuda sobre las xtools, y para obtener
+ayuda sobre un determinado comando, puedes usar el xman. Para ver la
+sintaxis de comando de las xtools puedes usar el '<comando> ?'.
+%%
+En el directorio /log se almacenan diversos logs creados con la función
+'log_file'. Los logs de error se guardan el /log/ERROR
+%%
+Los members de un dominio tienen acceso de ecritura a su directorio de
+dominio (/d/<dominio>/members/<nombre>), y al directorio común del dominio.
+Los vicelord/vicelady tienen acceso a todos los demás directorios excepto al
+secure del dominio, donde sólo tiene acceso el lord/lady.
+%%
+Hay diversas macros que puedes usar, como la macro '+' que puedes usar en
+tus comandos para hacer referencia al directorio base donde están los
+dominios (ej /d/simauria se convierte en +simauria), '@' se usa para hacer
+referencia al fichero o directorio donde estás o que estás mirando (con cd @
+vas al directorio donde está la habitacion en la que esté tu wizard).
+%%
+Debes tener el canal de errores activado para saber si algo falla en el mud.
+%%
+Si no sabes como funciona algo, tu mejor amigo es el comando 'man'. Con el
+obtienes ayuda sobre todas las funciones, objetos, etc. Para obtener ayuda
+sobre un objeto, usa el 'man <objeto>'. Todos los objetos que están en el
+directorio /std/ tienen ayuda, por lo que si quieres obtener, por ejemplo,
+ayuda sobre una tienda, puedes poner 'man shop'. Aquí te aparece todo lo que
+necesias para codificar una, dándote además una lista detallada de sus
+propiedades y funciones.
+%%
+Recuerda que no puedes obtener ayuda sobre una función que esté implementada
+en un objeto diréctamente con el 'man', debes obtener ayuda sobre el objeto
+en cuestión y buscar la función.
+%%
+El man tiene información de dos tipos: de funciones y de objetos. La ayuda
+de funciones sólo contiene las funciones globales que no necesitan incluir a
+nada para poder llamarlas, como explode, sizeof, call_other, etc. Para
+obtener ayuda sobre una función que sí esté definida en un objeto, como por
+ejemplo SetShopkeeper que está definida en las tiendas, debes obtener la
+página del manual del objeto donde esté definida esta función, en este caso
+en el objeto /std/shop.
+%%
+Puede ser que al obtener una página de manual te diga que hay varios
+ficheros de ayuda. Por ejemplo, si pones 'man living' te dice: 'Encontrados
+3 documentos: efun/, std/, conceptos/'. Para obtener el manual de uno en
+concreto, usa 'man efun/living' o 'man std/living' o 'man conceptos/living'.
+%%
+Intenta que no todos tus npcs puedan moverse por el mundo libremente, y
+limita también en la medida de lo posible los call_outs. Son muy útiles pero
+consumen mucha CPU.
+%%
+Tienes dos buenos amigos: el man y las xtools.
+%%
+Si no sabes cómo se hace algo, usa el manual.
+%%
+Para obtener una lista de comandos usa el comando 'ayuda'.
+%%
+Si quieres crear algo que sea maravilloso y digno de admiración, por
+ejemplo, un arma superpoderosa que destruye a los enemigos con sólo mirarla,
+mejor déjalo y haz una espada normal. El mud necesita objetos normales.
+%%
+La programación de la mudlib básica es tarea exclusiva de los gods. Ningún
+otro wizard puede crear estándares ni objetos base.
+%%
+Cuando eres wizard tu comando 'inventario' se cambia por otro más útil que
+te muestra información sobre los objetos. Sin embargo aún conservas el otro
+comando, renombrado a 'inv', que te muestra el inventario tal y como lo
+vería un jugador.
+

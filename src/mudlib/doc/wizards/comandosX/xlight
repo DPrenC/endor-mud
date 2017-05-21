@@ -1,0 +1,17 @@
+SINOPSIS
+    xlight <valor>
+
+DESCRIPCION
+    Sin argumentos te muestra el valor de luz de una habitacion, mientras
+    que si le das un <valor> (puede ser positivo o negativo) lo que hara
+    sera hacer un SetLight() a ti mismo, con lo cual la gente que este a
+    tu alrededor podra ver mejor o peor. No se modifica ningun valor de
+    la habitacion, con lo que si te vas a otro lugar el anterior permanecera
+    tal y como estaba.
+    Recuerda que siempre emitiras esa luz mientras no lo vuelvas a cambiar.
+
+EJEMPLOS
+    xlight      Mostraria la luz de la habitacion donde estes.
+    xlight 10   Incrementaria en 10 tu nivel de luz.
+    xlight -10  Decrementaria en 10 tu nivel de luz.
+

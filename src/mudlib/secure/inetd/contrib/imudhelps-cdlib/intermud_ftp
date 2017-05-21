@@ -1,0 +1,19 @@
+
+Intermud FTP
+~~~~~~~~~~~~
+
+Intermud ftp is a special mud protocol which allows the transfer files from
+one mud to another.
+
+Intermud FTP consists of 3 commands.
+
+    fls <mudname> <dirname>	- will give a list of available files 
+				  (usually /ftp)
+    fget <mudname> <filename>   - will get the file from the specified	
+				  mud, (to /ftp/incoming)
+    fput <mudname> <filename>   - will put the file from your mud to the
+				  specified mud.
+	
+NB:  Full paths are required for filename.
+	 Intermud ftp is not globally supported.
+

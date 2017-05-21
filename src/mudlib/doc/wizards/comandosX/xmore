@@ -1,0 +1,9 @@
+SINOPSIS
+    xmore <fichero>
+
+DESCRIPCION
+    Visualiza el contenido del <fichero>.
+
+EJEMPLOS
+      xmore ~/workroom.c
+      xmore $here (visualiza el codigo de la habitacion donde estes)

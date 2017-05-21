@@ -1,0 +1,11 @@
+[1mCOMANDO[0m
+  cat <fichero>
+
+[1mDESCRIPCION[0m
+  Visualiza las 40 primeras lineas de <fichero>.
+   
+[1mEJEMPLOS[0m
+  cat sotano.c
+
+[1mTEMAS RELACIONADOS[0m
+  tail, type, more, ed

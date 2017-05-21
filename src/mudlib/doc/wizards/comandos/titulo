@@ -1,0 +1,12 @@
+[1mCOMANDO[0m
+  titulo [<titulo>]
+
+[1mDESCRIPCION[0m
+  Te permite cambiar tu título por uno nuevo. En caso de no introducir
+  ningún argumento te muestra tu título actual.
+   
+[1mEJEMPLOS[0m
+  titulo el más mejor del mundo mundial
+
+[1mTEMAS RELACIONADOS[0m
+  ficha

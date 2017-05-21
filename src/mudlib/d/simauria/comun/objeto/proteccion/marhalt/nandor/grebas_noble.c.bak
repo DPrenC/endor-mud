@@ -1,0 +1,26 @@
+/****************************************************************************
+Fichero: bregas_noble.c
+Autor: Ratwor
+Fecha: 28/11/2007
+Descripción: parte del equipo del noble del castillo.
+****************************************************************************/
+
+#include <properties.h>
+#include <combat.h>
+inherit ARMOUR;
+create()
+{
+    ::create();
+    SetStandard(AT_GREBAS, 3, P_SIZE_GENERIC, M_ACERO);
+    SetShort("unas grebas de acero");
+    SetLong("Las grebas están formadas por tres piezas metálicas unidas con hebillas y "
+    "tiras de cuero que protegen la pierna de la ingle al tobillo.\n"
+    "No es una pieza muy común, solo utilizadas los caballeros y guerreros de la "
+    "nobleza humana, así como por la infantería pesada de algunas ciudades "
+    "lo suficientemente ricas como para costearlas.\n");
+    AddId(({"grebas de acero", "grebas", "acero"}));
+    Set(P_GENDER, GENDER_FEMALE);
+    Set(P_NUMBER, NUMBER_PLURAL);
+    SetWeight(6600);
+    SetValue(2000);
+}

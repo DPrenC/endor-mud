@@ -1,0 +1,48 @@
+
+Una habitacion especifica para la interseccion de los paseos. 
+Ej: SW, NW, 
+
+Otra cuestion es ponerse deacuerdo con las referencias de las habita-
+ciones
+
+Ahora explico como se van a referenciar las calles.
+1) El mapa de la capital se divide en 3 partes utilizando los Paseos
+   Este y Oeste como linea divisoria: (ya que tienen su propia base)
+ 
+a) A la izquierda (las calles del Oeste) del paseoW empezando de 
+   izquierda a derecha (w,e) y de menor a mayor, Ej. cogiendo la calle
+   numero 4, seria, c4w1.c, c4w2.c, c4w3.c ... hasta la interseccion
+
+b) En el centro (entre los 2 paseos, arriba y abajo del castillo), de
+   izquierda a derecha (w,e) y de menor a mayor, Ej. cogiendo la calle
+   4, seria, c4c1.c, c4c2.c, c4c3.c hasta la c4c18.c
+
+c) A la derecha (las calles de Este) del paseoE empezando de
+   izquierda a derecha y de menor a mayor, Ej. cogiendo la calle 4,
+   seria, c4e1.c, c4e2.c, c4e3.c, c4e4.c hasta c4e12.c
+
+Ahora espero que Maler me diga como va a referenciar las habitaciones,
+ O -> en el mapa, aunque yo sugerio lo siguiente: (aunque es lioso)
+Tomando la calle 10 como ejemplo: las habitaciones del norte llamarlas,
+h1c4w.c, h2c4w.c, h3c4w.c hasta h12c4w.c y las del sur, empezando por
+la h13c4w.c hasta la h24c4w.c
+
+La estructura del nombre lo explico por si acaso, en el caso de las 
+calles esta claro c, de calle, nº calle, situacion en el mapa y nº de
+habitacion.
+En el caso de las casas, comercios, tiendas, h de habitacion, nº de 
+habitacion, c de calle, nº de calle y posicion en el mapa. 
+
+Las referencias de las habitaciones pueden ser temporales y en cuanto
+se tenga claro que va en cada habitacion (dificil pq hay muchas
+habitaciones), hay varias opciones:
+
+A) Se hace una lista y se sustituye nombre antiguo de la habitacion 
+   por el nombre nuevo.
+B) Se mantiene el nombre y en un listado (que se mantiene dentro del
+   directorio de Simauria) se especifican las equivalencias, ej:
+   h8c7e.c es tabernadesotanito/loquesea/casapepa... 
+
+Nota mental: Utilizar una nomenclatura mas corta y cutre la proxima vez
+pq me las estoy viendo y deseando para hacer el puto mapa...
+

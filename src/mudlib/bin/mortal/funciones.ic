@@ -1,0 +1,185 @@
+/**
+ *  ENDOR-MUD/bin/mortal/funciones.ic
+ *
+ * [Orome] Rutinas de ayuda para algunos comandos.
+ *
+ */
+
+#include <config.h>
+#include <search.h>
+#include <properties.h>
+#include <equipment.h>
+#include <messages.h>
+protected varargs int _notify_fail(mixed ownmsg,mixed envmsg,
+                                 mixed vicmsg,object victim)
+{
+  mixed ownfun,envfun,vicfun;
+  object pl;
+  closure wrap_fun;
+
+  pl = TP;
+  wrap_fun = symbol_function("wrap",STR);
+
+  if (!ownmsg&&!envmsg) return 0;
+
+  if (pointerp(ownmsg))
+    ownfun = ({SF(tell_object),pl,quote(({MSG_SEE})+map(ownmsg,wrap_fun))});
+  else
+    if (stringp(ownmsg))
+      ownfun = ({SF(write),W(ownmsg)});
+    else
+      ownfun = 0;
+
+  if (pointerp(envmsg))
+    envfun = ({SF(tell_room),environment(pl),
+               quote(({MSG_SEE})+map(envmsg,wrap_fun)),SYM(({pl,victim}))});
+  else
+    if (stringp(envmsg))
+      envfun = ({SF(tell_room),environment(pl), quote(({MSG_SEE, W(envmsg)})),
+                 SYM(({pl,victim}))});
+    else
+      envfun = 0;
+
+  if (pointerp(vicmsg))
+    vicfun = ({SF(tell_object),victim,quote(({MSG_SEE})+map(vicmsg,wrap_fun))});
+  else
+    if (stringp(vicmsg))
+      vicfun = ({SF(tell_object),victim,W(vicmsg)});
+    else
+      vicfun = 0;
+  return notify_fail(lambda(0,({CL_PROGN,({CL_PROGN,ownfun,vicfun}),envfun})),
+                     NOTIFY_NOT_VALID),0;
+}
+
+protected status check_sight()
+{
+  if (TP->Query(P_BLIND))
+    return _notify_fail("Estás ciego.\n");
+  if (TP->CantSee())
+    return _notify_fail(TP->CantSee()<0?"Está demasiado oscuro.\n":"Hay demasiada luz.\n");
+  return 1;
+}
+
+protected status check_ghost()
+// Used to check if a spell might be cast, if it mustn't be cast
+// when TP is a ghost.
+{
+  if (TP->QueryGhost())
+    return _notify_fail("No puedes hacer eso en tu estado inmaterial.\n"),1;
+  return 0;
+}
+
+protected object check_env()
+// Check if the environment of TP is existant
+{
+  return environment(TP)||
+         _notify_fail("No puedes hacer magia en el tejido del espacio-tiempo.\n");
+}
+
+protected status check_delay()
+{
+  if (TP->QueryCombatDelay())
+    return _notify_fail(TP->QueryCombatDelayMsg()||"Estás inconsciente.\n"),1;
+  return 0;
+}
+protected varargs string Descr(object ob, status cap)
+{
+  string res;
+  if (!ob) return cap?"Algo":"algo";
+  if (!res) res = ob->QueryName();
+  if (!res) res = ob->QueryShort();
+  if (!res) res = "algo";
+  return cap?capitalize(res):res;
+}
+
+
+protected varargs int _notify_succes(mixed ownmsg,mixed envmsg,
+                                    mixed vicmsg,object victim)
+{
+  mixed ownfun,envfun,vicfun;
+  object pl;
+
+  pl = TP;
+
+  if (!ownmsg&&!envmsg) return 0;
+
+  if (pointerp(ownmsg))
+    ownfun = ({SF(tell_object),pl,quote(({MSG_SEE})+ ownmsg)});
+  else
+    if (stringp(ownmsg))
+      ownfun = ({SF(write),ownmsg});
+    else
+      ownfun = 0;
+
+  if (pointerp(envmsg))
+    envfun = ({SF(tell_room), environment(pl),
+               quote(({MSG_SEE})+ envmsg),quote(({pl,victim}))});
+  else
+    if (stringp(envmsg))
+      envfun = ({SF(tell_room),environment(pl),envmsg,
+                 quote(({pl,victim}))});
+    else
+      envfun = 0;
+
+  if (pointerp(vicmsg))
+    vicfun = ({SF(tell_object),victim,quote(({MSG_SEE})+vicmsg)});
+  else
+    if (stringp(vicmsg))
+      vicfun = ({SF(tell_object),victim,vicmsg});
+    else
+      vicfun = 0;
+  return funcall(lambda(0,({CL_PROGN,({CL_PROGN,ownfun,vicfun}),envfun}))),1;
+}
+
+public string PesoAprox(int p){
+string s="pesa aproximadamente ";
+   switch (p) {
+   case 0..100: s+="lo mismo que una rata seca, practicamente nada";break;
+   case 101..200: s+="menos de un cuarto de kilo";break;
+   case 201..300: s+="un cuarto de kilo";break;
+   case 301..450: s+="casi medio kilo";break;
+   case 451..600: s+="medio kilo";break;
+   case 601..750: s+="más de medio kilo";break;
+   case 751..950: s+="casi un kilo";break;
+   case 951..1100: s+="un kilo";break;
+   case 1101..1400: s+="algo más de un kilo";break;
+   case 1401..1600: s+="un kilo y medio";break;
+   case 1601..1900: s+="casi dos kilos";break;
+   case 1901..2100: s+="un par de kilos";break;
+   case 2101..2400: s+="algo más de dos kilos";break;
+   case 2401..2600: s+="dos kilos y medio";break;
+   case 2601..2900: s+="casi tres kilos";break;
+   case 2901..3100: s+="unos tres kilos";break;
+   case 3101..3400: s+="algo más de tres kilos"; break;
+   case 3401..3600: s+="tres kilos y medio";break;
+   case 3601..3900: s+="casi cuatro kilos";break;
+   case 3901..4100: s+="unos cuatro kilos";break;
+   case 4101..4400: s+="algo más de cuatro kilos"; break;
+   case 4401..4600: s+="cuatro kilos y medio";break;
+   case 4601..4900: s+="casi cinco kilos";break;
+   case 4901..5100: s+="unos cinco kilos";break;
+   case 5101..5400: s+="algo más de 5 kilos";break;
+   case 5401..5600: s+="cinco kilos y medio";break;
+   case 5601..5900: s+="casi seis kilos";break;
+   case 5901..6100: s+="unos seis kilos";break;
+   case 6101..6400: s+="algo más de seis kilos";break;
+   case 6401..6600: s+="seis kilos y medio";break;
+   case 6601..6900: s+="casi siete kilos";break;
+   case 6901..7100: s+="unos siete kilos";break;
+   case 7101..9500: s+="cerca de diez kilos";break;
+   case 9501..11100: s+="unos diez kilos";break;
+   case 11101..14500: s+="cerca de quince kilos";break;
+   case 14501..16000: s+="unos quince kilos";break;
+   case 16001..22000: s+="unos veinte kilos";break;
+   case 22001..27000: s+="alrededor de veinticinco kilos";break;
+   case 27001..35000: s+="unos treinta o treinta y cinco kilos";break;
+   case 35001..45000: s+="unos cuarenta kilos";break;
+   case 45001..55000: s+="alrededor de cincuenta kilos";break;
+   case 55001..75000: s+="algo más de sesenta kilos";break;
+   case 75001..100000: s+="cerca de 100 kilos";break;
+   case 100001..150000: s+="entre cien y ciento cincuenta kilos";break;
+   case 150001..250000: s+="unos doscientos kilos";break;
+   default: s+="más de doscientos kilos";
+  }
+  return s;
+}

@@ -1,0 +1,10 @@
+                     DIRECTORIO DE ERIADOR
+
+comun/         Directorio donde estan las habitaciones, objetos, etc.. 
+docs/          Documentacion tecnica acerca de eriador.
+historia/      Documentos sobre la historia de eriador y sus ciudades.
+mapas/         Mapas ASCII o gráficos de eriador y sus ciudades.
+std/           Inherits basicos utilizados en este dominio. 
+sys/           Includes usados en este dominio. 
+
+IMPORTANTE: Leeros las normas del directorio en .reglas

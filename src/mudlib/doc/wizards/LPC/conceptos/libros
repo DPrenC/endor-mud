@@ -1,0 +1,127 @@
+CONCEPTO
+	libros
+
+ÚLTIMA ACTUALIZACIÓN
+	Nemesis, Dom 18 Nov 2001 20:52:50 CET
+
+DESCRIPCIÓN
+
+    Los libros son algo muy importante en un mud fantástico-medieval
+    como Simauria. De hecho, lo ideal es que cualquier duda que un
+    jugador pudiera tener la pudiera resolver yendo a la biblioteca
+    más próxima y consultando el libro apropiado. El tipo de dudas
+    que un libro puede resolver son múltiples: desde ayudas para
+    jugadores novatos, pistas para resolver un quest, o incluso la
+    respuesta a la eterna pregunta: ¿por qué no hay dragones en el mud?
+    
+    Ahora bien, ¿qué es un libro? ¿Existe algo parecido a un std/libro?
+    La respuesta es no, no hay un std/libro. Y la razón es simple: no
+    hay ninguna necesidad de que un jugador vaya por el mundo cargado
+    con un montón de libracos como si fuera un niño que va al colegio.
+    La idea es que vaya a la biblioteca cuando lo necesite, y que la
+    información que necesite la tenga en un papel en su mesa, o en un
+    fichero de log. No se intenta por tanto implementar un libro como
+    objeto tangible. Pero esto nos está llevando lejos de la pregunta
+    ¿qué es un libro? Bueno, eso depende bastante del punto de vista.
+    Para un jugador, es un nombre y un número en una biblioteca. Un
+    jugador sabe que, si pone 'leer 5', comenzará a aparecer el texto
+    del libro número 5, que se titula "Historia General de la Noble
+    Villa de Nandor", pero no tiene ni idea de cómo puede ser eso
+    posible. Para un wizard, sin embargo, la cosa cambia: un libro no
+    es otra cosa que una entrada de un mapping en una habitación que
+    hereda de /room/biblioteca y cuyo contenido está en un vulgar
+    archivo de texto situado en algún directorio creado al efecto.
+    En resumen: un libro es un archivo de texto en el que el wizard
+    responsable habrá escrito una historia, un cuento, una leyenda,
+    una biografía, en resumen: algo que ayude a ambientar este mud
+    tan sosito.
+    
+    De todo lo anterior se deduce que la dificultad para codear un
+    libro es, aproximadamente, 0. Más que nada porque la cantidad
+    de código necesaria para hacer un libro es exactamente ésa, 0.
+    Otro asunto es meterlo en una biblioteca, pero para eso siempre
+    puede recurrir a algún wizard más experimentado, e incluso puede
+    intentar hacerlo él, que no es tan complicado (en la última sección
+    hay una lista de archivos que puedes consultar).
+    Ahora bien, eso no quiere decir que escribir un libro sea sencillo.
+    Como en todo, existen una serie de reglas que hay que seguir.
+    
+    La primera, y la más importante: antes de hacer nada hay que hablar
+    con el Lord de nuestro dominio y decirle que vamos a escribir un
+    libro sobre un tema X. Él decidirá si el dominio es el lugar para
+    ponerlo (no tendría sentido un libro sobre ingeniería de minas en
+    el dominio de los duendes) y, sobre todo, si es coherente con la
+    ambientación general del mud (igualmente, no sería coherente con el
+    mud un libro sobre mecánica cuántica). En caso de duda, los Gods
+    encargados de la Historia estarán encantados de ayudaros.
+    
+    Una vez que nuestro libro ha sido aprobado, podemos proceder a
+    escribirlo, siguiendo una serie de recomendaciones básicas:
+    
+    1) El título es lo primero que hay que poner, en mayúsculas, como
+       cabecera del libro. Resistid la tentación de poneros a vosotros
+       mismos como autores. Simauria intenta ser el esfuerzo de un
+       equipo: los Wizards de Simauria, y no es bonito que unos
+       destaquen más que otros.
+    
+    2) Es interesante dejar un pequeño margen de dos espacios al principio
+       de cada línea, y hacer los sangrados de cuatro espacios. De esta
+       manera el jugador puede distinguir el texto de otros posibles
+       mensajes que pudieran llegarle.
+
+    3) Es interesante que el texto esté bien justificado. Por desgracia,
+       el texto va a salir en formato WYSIWYG, es decir, que lo que
+       escribamos es exactamente lo que va a ver el jugador, por lo que
+       habrá que procurar justificar el texto correctamente. Recordad
+       que el número de columnas de una terminal estándar es 80, aunque
+       programas como el tinyfugue reducen ese espacio a algo menos. En
+       general, para evitar pillaros los dedos, podéis justificar al
+       número de columnas que justifica el wrap.
+       
+    4) Otra cosa importante que hay que recordar es no usar tabuladores,
+       sino espacios, ya que así nos aseguramos de que el tamaño de
+       nuestras tabulaciones es exactamente el que queremos, y no hay
+       problemas de representación.
+       
+    5) Como es normal, podéis utilizar cualquier carácter propio del
+       castellano (ñ, acentos, diéresis...). Al hilo de esto, decir
+       que, aunque sé que muchos habéis descubierto los caracteres
+       ANSI, os resistáis a usarlos, ya que probablemente no saldrán
+       todo lo bien que a vosotros os gustaría...
+       
+    6) Intentad ser creativos, pero sin pasarse. Es decir, podéis
+       hacer libros de varios K de extensión, pero probablemente ningún
+       jugador querrá leerlos, así que por favor intentad no contar la
+       biblia en verso en un único libro. En general, un libro no
+       debería tener más de 100 líneas de extensión, siendo lo normal
+       unas 50 ó 60 líneas. (Os recuerdo que el alto de una pantalla
+       estándar son 24 líneas, menos en el caso del tinyfugue).
+       En cualquier caso, si véis que lleváis 50K de libro y la cosa
+       no tiene pinta de ir a terminar pronto, lo que podéis hacer
+       (además de pensaros seriamente presentaros al Planeta) es
+       dividir la historia en "volúmenes". Esto es, coger las 100
+       primeras líneas, cortarlas y guardarlas como volumen 1. El
+       volumen 2 serán las 100 siguientes, y así sucesivamente.
+      
+    7) Sed concisos, pero sin pasarse. Si queréis usar un libro para
+       dar pistas en un quest, no os limitéis a poner el título y dos
+       líneas con el dato exacto. Hay que ser un poco más "creativo".
+       Inventad una historia y poned el dato mezclado en el texto.
+       Recordad que estáis escribiendo un libro, no un reportaje para
+       el "Hola"...
+       
+    8) Una última recomendación para los Lords. Procurad tener un
+       directorio habilitado para meter los libros. Como en muchas
+       cosas, sois libres de tenerlo o no, pero sería interesante.
+       Si decidís tenerlo, lo idóneo sería que colgara de alguno
+       de los directorios básicos del dominio. Por ejemplo, en
+       '/d/tu_dominio/libros' ó '/d/tu_dominio/comun/libros'.
+       Otra opción es que los libros cuelguen de la biblioteca que
+       los vaya a contener, pero eso puede llevar a confusiones en
+       caso de que un libro esté disponible en varias bibliotecas
+       del mismo dominio (o incluso de dominios distintos).
+
+
+VÉASE TAMBIÉN
+	biblioteca(S)
+

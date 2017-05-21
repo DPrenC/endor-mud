@@ -1,0 +1,26 @@
+[1mCOMANDO[0m
+  more <fichero>
+
+[1mDESCRIPCION[0m
+  Visualiza <fichero> por páginas y espera después de cada página a que se
+  introduzca un comando, bien para proseguir, volver atrás, etc..
+  Los comandos permitidos son:
+
+  ENTER     : página siguiente,
+  a         : página anterior.
+  p         : ir a la primera página.
+  u         : ir a la ultima página.
+  <linea>   : ir a la linea <linea>.
+  /<cadena> : avanza hasta encontrar la cadena <cadena>.
+  /         : repite la última busqueda.
+  e         : reescribe la página actual.
+  ?         : visualiza esta ayuda.
+  s         : sale del listado.
+
+  Por defecto el tamaño de la página es de 16 lineas.
+   
+[1mEJEMPLOS[0m
+  more barco.c
+
+[1mTEMAS RELACIONADOS[0m
+  tail, type, cat, pagina

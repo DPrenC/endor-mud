@@ -1,0 +1,143 @@
+/*****************************************************************************************
+ ARCHIVO:       Quest_druida.txt
+ AUTOR:         [zt] Ztico
+ FECHA:         16-01-2006
+ COMENTARIOS:   Descripción y solución del quest
+ ****************************************************************************************/
+
+ QUEST DEL SANTUARIO DRUIDA
+ ==========================
+
+ 1.- Localización
+ ¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
+
+    Este quest se centra  básicamente en el dominio  de Lad-laurelin, concretamente en  la
+    Zona  de Faeria.  Allí estarán la  mayoría de  personajes  y objetos principales,  así
+    como el lugar histórico de referencia del quest.
+
+
+ 2.- Historia
+ ¨¨¨¨¨¨¨¨¨¨¨¨
+
+    Aproximadamente hacia  la época  en la  que los  trasgos entraron  en la  región y  se
+    asentaron  en la  división oeste  de las  montañas Cylerid,  uno de  los más   famosos
+    druidas, perteneciente a la Antigua Orden de los Druidas, fue expulsado del   Concilio
+    y de estas tierras.  Muchas leyendas e historias  sobre lo ocurrido se  han  extendido
+    por mar y  tierra, pero de  todas ellas, ésta  es la única,  la verdadera, por   tanto
+    dejemos a un lado especulaciones y rumores.
+
+    Gleryn el  Hechicero, primogénito  de un  acaudalado noble  de la  capital, Gaellyn el
+    avaro, era conocido por  todos por su extraño  comportamiento, por sus secretas,  y no
+    tan secretas, prácticas de la magia y  porque en las vísperas de su sexto  cumpleaños,
+    en una  de sus  típicas escapadas  nocturnas, perdió  un pie  entre las  fauces de  un
+    hambriento lobo de  los bosques. Ya  fuera por lástima,  por méritos propios  o por la
+    influencia de su padre (nunca se ha llegado a saber, aunque la última razón sea la más
+    probable), entró en el reducido círculo de discípulos de la Orden. Bajo la tutela  del
+    Gran Sacerdote  Cathrann, desarrolló  unas buenas  cualidades, ascendiendo  a bardo  y
+    centrándose, entre  otras cosas,  en la  canalización de  las fuerzas.  En su etapa de
+    madurez, Gleryn se fue encontrando con sus propias fuerzas, aprendiendo el arte de  la
+    adivinación, la invocación  y el manejo  directo de la  energía, así, fue  anunciado y
+    proclamado miembro  de la  Orden de  los Druidas,  convirtiéndose de  este modo  en el
+    druida más joven de todos los tiempos.
+
+    Mientras Gleryn el Hechicero se convertía en un prestigioso druida, los trasgos habían
+    conseguido devastar prácticamente toda la región occidental del valle de Faeria, desde
+    su laberinto de cuevas en las montañas  hasta los límites del bosque de las  Dríadas y
+    el río Ellidan. Es de común  conocimiento que estas criaturas son insaciables,  por lo
+    que no satisfechas con sus saqueos e intrusiones, desviaron el cauce del Elvian y toda
+    la zona arrasada se transformó en un pantano cenagoso.
+
+    Con motivo de la última irrupción fallida de los trasgos en el bosque, las visitas del
+    joven druida al Pantano  se hicieron mucho más  habituales que de costumbre.  El resto
+    del  Concilio  notó que  su  compañero estaba  adquiriendo  un carácter  cada  vez más
+    reservado e introvertido, hasta que bien entrada la primera primavera del nuevo año de
+    Balor, desapareció la  Hoz Sagrada con  la que se  realizaban los actos  religiosos de
+    ofrendas y sacrificios. Según la tradición druida de bendecir los hogares, cada  ciclo
+    se recogía el muérdago que crece en los robles del Jardín de los Deseos. Para realizar
+    tal acto, el oficiante, vestido con túnicas blancas y engalanado con hojas de roble se
+    alzaba ante uno de los cuatro viejos robles blancos y cortaba casi todas las ramas  de
+    muérdago. Sin  esta hoz  no se  puede efectuar  el rito  y, en  consecuencia, la Orden
+    estalló en cólera y la conmoción fue el único sentimiento del pueblo. Justo cuando  se
+    iba a formar una partida de búsqueda, Cathrann informó que Gleryn se había esfumado.
+
+    Poco  tiempo  después, el  actual  guardián del  puesto  de Siempreunidos,  Shadezzar,
+    informó de que Gleryn deambulaba por el  pantano como un alma errante. En efecto,  los
+    informes de Shadezzar eran correctos y se logró capturar al druida. Tras interrogarle,
+    descubrieron que él había robado la Hoz y no sólo eso, sino que la tenía en su  poder.
+    Aunque jamás  se supo  para fines  la usó,  se le  expulsó de  la Orden  y de la Isla.
+    Condenado, nunca más se volvió a saber nada de él.
+
+    Un nuevo robo ha alterado la paz de Faeria. En este caso han sido sustraídas cinco  de
+    las diez  runas que  formaban parte  de los  menhires de  El Santuario,  y, según  los
+    rumores, el robo podría volver a haber sido perpetrado por Gleryn el Hechicero.
+
+    En efecto él ha sido el autor del robo. Al despojar al menhir de su runa, el flujo  de
+    energía del santuario queda bloqueado.
+    El  hechicero  ha enviado,  mediante un  conjuro, cada  runa con  su elemento, pero se
+    quedó con la de Balor, dios de las tinieblas, del que es ferviente adorador.
+
+ 3.- El Quest
+ ¨¨¨¨¨¨¨¨¨¨¨¨
+
+    Lo primero que  deberá hacer el  player será preguntar  a Cathrann. Éste  le informará
+    sobre su problema, le contará un pequeño relato sobre Gleryn y le dará unas pistas del
+    lugar en el que se encuentran las runas.
+    Cathrann se encuentra situado en el interior de una choza al sur del Santuario Druida.
+    En dicho santuario, hay diez menhires, cinco  de ellos tienen grabada una runa con  el
+    emblema de un dios. Los otros cinco tienen huecos en lugar de runas.
+    Menhires  con  runas  y  huecos están  colocados  de  forma  alterna. Estos  monolitos
+    constituyen un círculo en la mitad del claro, y en el centro se encuentra el altar.
+
+    La distribución de dioses en los menhires es la siguiente:
+
+         1.- Menhir de Cernunos (Dios de los animales)            (hueco)
+         2.- Menhir de Donn (Dios de los muertos)                 (runa)
+         3.- Menhir de Morgana (Diosa de la guerra)               (hueco)
+         4.- Menhir de Agnus (Dios del amor y la juventud)        (runa)
+         5.- Menhir de Beli (Dios del mar)                        (hueco)
+         6.- Menhir de Arianrhod (Diosa de la luna y de la noche) (runa)
+         7.- Menhir de Belisama (Diosa del fuego)                 (hueco)
+         8.- Menhir de Tentatis(Dios del pueblo)                  (runa)
+         9.- Menhir de Balor (Dios de las tinieblas)              (hueco)
+        10.- Menhir de Lugh (Dios de la luz)                      (runa)
+
+    Bien, el player tendrá que  recuperar las cinco runas desaparecidas y devolvérselas al
+    druida.
+
+    Situación de las runas:
+
+         1.- Runa de Cernunos:
+
+         	     Está metida dentro del abrevadero donde beben las gallinas  en la granja de
+         	     Koek:
+
+         	     "/d/simauria/comun/habitacion/simauria/rhoemas/koek/granja/gallinero"
+
+         2.- Runa de Morgana: en la sede de guerreros de kha-annu
+
+         3.- Runa de Beli:
+
+               Estará  colocada en el  fondo de  un pequeño estanque  en el  bosque de las
+               Hadas (Bosque de Faeria). Para conseguirla deberá saltar a un pozo que está
+               situado en  una gruta (en el mismo bosque) y mover una roca en el fondo del
+               pozo.  Entonces  las  paredes  se  derruirán  y   será  arrastrado  por una
+               corriente subterránea de agua hasta el fondo del estanque.
+
+               "/d/lad-laurelin/comun/habitacion/faeria/bosque_faeria/bosque_hadas/fondo_estanque"
+
+
+         4.- Runa de Belisama:
+
+               Se encuentra en una chimenea en el poblado de siempreunidos:
+
+               "/d/lad-laurelin/comun/habitacion/faeria/siempreunidos/posada/posada_salon"
+
+         5.- Runa de Balor:
+
+               La  tendrá  Gleryn en  su poder, para  conseguirla, el jugador  tendrá  que
+               derrotar al mago (nivel 35).
+               El mago está escondido en la posada del robledal (en la Isla):
+
+               "/d/lad-laurelin/comun/habitacion/faeria/bosque_faeria/isla/posada09_secreta"
+
+

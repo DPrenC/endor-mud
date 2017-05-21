@@ -1,0 +1,6 @@
+SINOPSIS
+    xlook [objeto]
+
+DESCRIPCION
+    Mira un objeto. Si no se introduce ningun argumento miraria la habitacion
+    donde te encontrases en ese instante.

@@ -1,0 +1,8 @@
+; DESCRIPCION : Este fichero contiene la lista de los anuncios disponibles en el
+;               tablon del cuartel de la guardia en el castillo de Zarkam
+; FORMATO     : <nombre del fichero>,<descripcion del contenido>
+; NOTAS       : - Los nombres de ficheros son relativos al directorio DOC
+;               - Las lineas que empiezan con ';' son comentario
+;                 el resto deben ser anuncios
+anuncio/recompensa_troll.txt,Recompensa por la captura de un bandido troll
+anuncio/pollo.txt,Segundo libro de poetica de Aristoteles

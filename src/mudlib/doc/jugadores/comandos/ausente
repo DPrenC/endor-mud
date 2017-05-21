@@ -1,0 +1,13 @@
+[1mCOMANDO[0m
+  ausente [<mensaje>]
+
+[1mDESCRIPCION[0m
+  Estableces un mensaje de ausencia para que todos los que te digan algo
+  sepan que no estás en ese instante y no le podrás responder.
+  Si pones 'ausente' sin mensaje volverás a tu estado normal.
+
+[1mEJEMPLOS[0m
+  ausente Estoy comiendo.. volveré a las 15:00 horas
+
+[1mTEMAS RELACIONADOS[0m
+  telepatia, decir

@@ -1,0 +1,20 @@
+[1mCOMANDO[0m
+  lls [<directorio>]
+
+[1mDESCRIPCION[0m
+  Te muestra una lista de todos los archivos que esten en <directorio>.
+  La diferencia con el comando ls radica en que da mucha más información
+  sobre cada archivo de forma equivalente al comando 'ls -l' de unix.
+  Si no se diera ningún argumento mostraria los archivos del directorio
+  actual. Algunos archivos pueden tener algún carácter extra en su nombre:
+
+  <nombre>       Es un archivo normal
+  <nombre>/      Se trata de un directorio
+  <nombre>*      Este archivo está cargado en el juego
+   
+[1mEJEMPLOS[0m
+  lls arma
+  lls /std
+
+[1mTEMAS RELACIONADOS[0m
+  ls, rmdir, mkdir

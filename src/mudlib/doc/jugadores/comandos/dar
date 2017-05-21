@@ -1,0 +1,15 @@
+[1mCOMANDO[0m
+  dar <objeto(s)> a <jugador>
+
+[1mDESCRIPCION[0m
+  Das uno o más objetos que estan en tu posesión al personaje <jugador>.
+  <objeto(s)> puede ser un plural o pueden ser objetos que esten dentro
+  de contenedores como cofres o bolsas.
+  También puedes dar un objeto que esté en una habitación.
+
+[1mEJEMPLOS[0m
+  dar todas las cervezas a Theuzifan
+  dar espada y escudo a peggy
+
+[1mTEMAS RELACIONADOS[0m
+  tirar, coger, poner, equipar, desequipar

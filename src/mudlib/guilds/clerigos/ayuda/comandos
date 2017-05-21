@@ -1,0 +1,13 @@
+INFORMACION ACERCA DE LOS COMANDOS ESPECIALES DE CONJURADORES
+-------------------------------------------------------------
+
+Comando: gayuda [<tema>]'
+   Te muestra toda la información disponible sobre el gremio de conjuradores.
+
+Comando: enseñar '<nombre_conjuro>' a <jugador>
+   Intentas enseñar un determinado conjuro a otro jugador.
+
+Comando: conjuros
+   Te muestra todos los conjuros que tienes memorizados así como sus distintos
+   niveles personales.
+

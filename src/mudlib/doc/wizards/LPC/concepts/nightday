@@ -1,0 +1,186 @@
+CONCEPT
+	day/night model
+
+
+INVALID
+	The information in this document is outdated.
+	It has been replaced by /doc/concepts/weather.
+	This doc still exists for historical reasons, and to confuse you :-)
+
+
+LAST UPDATE
+	Deepthought, 28-Jul-94, 14:00 MET
+
+SYNOPSIS
+	#include <config.h>
+	#include <nightday.h>
+
+
+DESCRIPTION - Model
+	This document describes the day model used in Nightfall.
+	The model is a simplification of the real world.
+	For the moment, it simulates just the sun bright, though hooks
+	are implemented for more environmental simulation.
+
+	One Nightfall day is defined in length in /sys/config.h by
+	DAY_LENGTH, at the moment as 28800 seconds = 8 hours.
+
+	The day is divided into several parts, each with a specific
+	length and a specific sun light level.
+	There are (actual durations in parens):
+
+	   night	  remain/2	(3:10 hours)	  0% light
+	   near dawn	  DAY_LENGTH/32 (15 minutes)	 10% light
+	   dawn 	  DAY_LENGTH/48 (10 minutes)	 20% light
+	   sunrize	  DAY_LENGTH/48 (10 minutes)	 40% light
+	   late morning   DAY_LENGTH/32 (15 minutes)	 70% light
+	   day		  remain/2	(3:10 hours)	100% light
+	   afternoon	  DAY_LENGTH/32 (15 minutes)	 70% light
+	   evening	  DAY_LENGTH/48 (10 minutes)	 40% light
+	   night fall	  DAY_LENGTH/48 (10 minutes)	 20% light
+	   almost night   DAY_LENGTH/32 (15 minutes)	 10% light
+
+	The ND_NO_STATES divisions are defined as constants in
+	/sys/nightday.h as:
+
+	   ND_NIGHT	night
+	   ND_PREDAWN	near dawn
+	   ND_DAWN	dawn
+	   ND_SUNRIZE	sunrize
+	   ND_PRENOON	late morning
+	   ND_DAY	day
+	   ND_POSTNOON	afternoon
+	   ND_PREFALL	evening
+	   ND_FALL	night fall
+	   ND_PRENIGHT	almost night
+
+	The relative bright of a given day state in respect to a given
+	maximum may be computed using the macro REL_STATE(state, max).
+	E.g. REL_STATE(ND_DAWN, 1000) returns 200.
+
+	The simulation just involves the light level for
+	'outdoor' rooms - no weather or shifting daylengths are
+	simulated so far.
+
+	The change of daylight is seen only by 'outdoor' rooms.
+	'Indoor' rooms are of constant light by default.
+
+	Outdoor rooms are notified by a central server about the
+	actual 'day state' and announce changes to the livings inside
+	them.
+	If a player leaves a building, it is also notified about the
+	current day state.
+
+	The maximum sun light is defined in /sys/config.h by
+	MAX_SUNBRIGHT, at the moment this value is 100.
+	However: all light specifications should be done in relation
+	to the symbolic constant.
+
+
+DESCRIPTION - Server
+	The central default server is NIGHTDAY == /obj/nightday.c.
+	It may only be loaded.
+
+	It keeps track of the current day state and offers functions
+	for querying the information.
+	It does this in a way allowing for implemetation of weather
+	and other bells and whistles.
+
+	All environmental information (sun bright, temperature, etc)
+	are handled in form of an array to make enhancements simpler.
+	The indices of the NDS_NO_DATA entries in this statedata-array
+	are also defined in /sys/nightday as:
+
+	  NDS_BRIGHT   the actual sun bright (values: 0..1000)
+
+
+	int QueryState ()
+	int SetState (int i)
+	  Set or query the current day state.
+
+	mixed *QueryStateData ()
+	mixed *SetStateData (mixed *v)
+	  Set or query the current statedata.
+
+	string QueryStateMsg ()
+	string SetStateMsg (string m)
+	  Set or query the current day-state message.
+
+	string QueryStateChgMsg ()
+	string SetStateChgMsg (string m)
+	  Set or query the current day-state change message.
+
+	int QueryStateLength ()
+	  Return the length (in seconds) of the current state.
+
+	int QueryTimeLeft()
+	  Return the time left till the next state change (in seconds).
+
+
+	varargs void ChangeState (int old, int new, int flag)
+	  Changes the day state from <old> to <new>. This updates the
+	  internal variables and notifies all rooms.
+	  If <flag> is _not_ set, the internal state-changing will
+	  properly restarted.
+	  Note that the internal statebright variable is modified by
+	  the difference of the state brightnesses - it is not _set_.
+
+	void NextState ()
+	  Aborts the current state and changes to the next one.
+
+
+	mixed *StateData (int state)
+	  Return the basic data for the given <state>.
+
+	string StateChgMsg (int state)
+	  Return the basic message for the change to day state <state>.
+
+	string StateMsg (int state)
+	  Return the basic message for the day state <state>.
+
+	int StateLength (int state)
+	  Return the length (in seconds) of the given <state>.
+
+	Additionally, the server may notify objects if the current day
+	state changes.
+
+	If the day state changes, in each object to notify the lfun
+
+	  void SetDayState (int newstate, string chgmsg, string msg,
+			    mixed *statedata
+			   )
+
+	is called with the new day state, the statedata and the
+	approbiate descriptions.
+	This can also be used for intermediate weather related changes...
+
+	The list of objects (rooms) to notify is maintained with:
+
+	void AddRoom (object room)
+	  Adds <room> to the list of objects to notify.
+
+	void RemoveRoom (object room)
+	  Removes <room> from the list.
+
+	void CleanupRooms ()
+	  Removes all destructed objects from the list.
+	  This is called automatically with each state change.
+
+	void NotifyRooms ()
+	  All rooms are notified with the current state data.
+
+	UPDATE: An alternate way is implemented for std/room rooms.
+	Instead of using AddRoom() on std/room outdoor rooms,
+	the nightday server checks the location of each player
+	and if that environment()'s server is the current server
+	object, calls
+
+	  void NotifyDayState(object player, int newstate,
+			     string chgmsg, string msg, mixed *statedata)
+
+	in that room. std/room only sends chgmsg to the player,
+	but a special room might use the other information, too.
+
+
+SEE ALSO
+	light(C), room(S)

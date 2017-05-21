@@ -1,0 +1,13 @@
+LISTA DE HECHIZOS DEL GREMIO
+----------------------------
+
+ ------------------------------------------------------------
+|  Nombre             | Nivel | Nivel | Puntos | Tipo        |
+|  Hechizo            | Hacer | Memor | Magia  | Hechizo     |
+|------------------------------------------------------------|
+| Calmar Ambiente     |   1   |  10   |   25   | INFLUENCIA  |
+| Vision Nocturna     |   1   |  12   |   25   | MODIFICADOR |
+| Sombra              |   10  |  25   |   55   | INFLUENCIA  |
+| Luz cegadora        |   1   |   7   |   15   | ATAQUE      |
+ ------------------------------------------------------------
+ 

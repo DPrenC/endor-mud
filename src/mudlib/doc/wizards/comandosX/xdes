@@ -1,0 +1,6 @@
+SINOPSIS
+    xdes <objeto>
+
+DESCRIPCION
+    Destruye un objeto usando en primer termino la funcion remove() y en
+    caso de que no haya sido destruido usa la funcion destruct().

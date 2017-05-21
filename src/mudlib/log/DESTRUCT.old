@@ -1,0 +1,1381 @@
+Sat Mar 20 20:02:54 2010 Buh 80 active.
+   PrevObj: 	/secure/master [ze/us]
+   Player: 	/buh [buh]
+   Interactive: ?
+Sun Mar 21 11:11:21 2010 Buh 80 active.
+   PrevObj: 	/secure/master [ze/us]
+   Player: 	/buh [buh]
+   Interactive: ?
+Tue May 18 09:52:23 2010 Saragi 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/saragi [saragi] interactive.
+            	/secure/login#84 [ze/us]
+   Player: 	/saragi [saragi]
+   Interactive: /saragi [saragi]
+Sat Jan 21 07:05:07 2012 Rafa 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/rafa [rafa] interactive.
+            	/secure/login#0 [ze/us]
+   Player: 	/rafa [rafa]
+   Interactive: /rafa [rafa]
+Sat Jan 21 07:55:16 2012 Sam 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/sam [sam] interactive.
+            	/secure/login#16 [ze/us]
+   Player: 	/sam [sam]
+   Interactive: /sam [sam]
+Wed Jan 25 14:51:12 2012 Frodo 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/frodo [frodo] interactive.
+            	/secure/login#0 [ze/us]
+   Player: 	/frodo [frodo]
+   Interactive: /frodo [frodo]
+Thu Jan 26 16:09:30 2012 Pepe 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/pepe [pepe] interactive.
+            	/secure/login#5 [ze/us]
+   Player: 	/pepe [pepe]
+   Interactive: /pepe [pepe]
+Fri Jan 27 13:58:43 2012 Tom 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/tom [tom] interactive.
+            	/secure/login#0 [ze/us]
+   Player: 	/tom [tom]
+   Interactive: /tom [tom]
+Sat Feb 11 20:15:15 2012 Aule 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/aule [aule] interactive.
+            	/secure/login#3 [ze/us]
+   Player: 	/aule [aule]
+   Interactive: /aule [aule]
+Sat Feb 11 20:19:07 2012 Sam 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/sam [sam] interactive.
+            	/secure/login#8 [ze/us]
+   Player: 	/sam [sam]
+   Interactive: /sam [sam]
+Sat Feb 11 20:42:27 2012 Melcor 0 idle 1017 sec.  Command 'quit'.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/melcor [melcor] idle 1017 sec.
+            	/bin/mortal/_quit [bin]
+            	/secure/daemons/bind [ze/us]
+            	/melcor [melcor] idle 1017 sec.
+            	/melcor [melcor] idle 1017 sec.
+            	/melcor [melcor] idle 1017 sec.
+            	/bin/wiz/_forzar [bin]
+            	/bin/wiz/_forzar [bin]
+            	/secure/daemons/bind [ze/us]
+            	/aule [aule] interactive.
+            	/aule [aule] interactive.
+            	/aule [aule] interactive.
+            	/aule [aule] interactive.
+            	/aule [aule] interactive.
+   Player: 	/melcor [melcor]
+   Interactive: /aule [aule]
+Sun Feb 12 04:51:08 2012 Melkor 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/melkor [melkor] interactive.
+            	/secure/login#19 [ze/us]
+   Player: 	/melkor [melkor]
+   Interactive: /melkor [melkor]
+Sun Feb 12 13:40:14 2012 Tulkas 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/tulkas [tulkas] interactive.
+            	/secure/login#5 [ze/us]
+   Player: 	/tulkas [tulkas]
+   Interactive: /tulkas [tulkas]
+Sun Feb 12 13:45:56 2012 Tulkas 100 active.
+   PrevObj: 	/secure/master [ze/us]
+   Player: 	/tulkas [tulkas]
+   Interactive: ?
+Wed Feb 15 21:48:20 2012 Orome 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/orome [orome] interactive.
+            	/secure/login#3 [ze/us]
+   Player: 	/orome [orome]
+   Interactive: /orome [orome]
+Thu Feb 16 22:16:59 2012 Aule 100 idle 74 sec.
+   PrevObj: 	/secure/master [ze/us]
+   Player: 	/aule [aule]
+   Interactive: ?
+Sun Feb 19 16:40:20 2012 Buldbarg 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/buldbarg [buldbarg] interactive.
+            	/secure/login#19 [ze/us]
+   Player: 	/buldbarg [buldbarg]
+   Interactive: /buldbarg [buldbarg]
+Sun Feb 26 04:18:04 2012 Tulkas 100 idle 34 sec.
+   PrevObj: 	/secure/master [ze/us]
+   Player: 	/tulkas [tulkas]
+   Interactive: ?
+Sun Feb 26 04:18:04 2012 Aule 100 idle 16 sec.
+   PrevObj: 	/secure/master [ze/us]
+   Player: 	/aule [aule]
+   Interactive: ?
+Sun Feb 26 04:24:52 2012 Buldbarg 0 idle 162 sec.  Command 'xdel'.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/buldbarg [buldbarg] idle 162 sec.
+            	/tulkas [tulkas] interactive.
+            	/tulkas [tulkas] interactive.
+            	/tulkas [tulkas] interactive.
+            	/tulkas [tulkas] interactive.
+            	/tulkas [tulkas] interactive.
+   Player: 	/tulkas [tulkas]
+   Interactive: /tulkas [tulkas]
+Sun Feb 26 04:42:37 2012 Buldbarg 0 idle 971 sec.  Command 'xdel'.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/buldbarg [buldbarg] idle 971 sec.
+            	/tulkas [tulkas] interactive.
+            	/tulkas [tulkas] interactive.
+            	/tulkas [tulkas] interactive.
+            	/tulkas [tulkas] interactive.
+            	/tulkas [tulkas] interactive.
+   Player: 	/tulkas [tulkas]
+   Interactive: /tulkas [tulkas]
+Sun Feb 26 05:01:37 2012 Buldbarg 0 idle 64 sec.  Command 'xdes'.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/buldbarg [buldbarg] idle 64 sec.
+            	/tulkas [tulkas] interactive.
+            	/tulkas [tulkas] interactive.
+            	/tulkas [tulkas] interactive.
+            	/tulkas [tulkas] interactive.
+            	/tulkas [tulkas] interactive.
+   Player: 	/tulkas [tulkas]
+   Interactive: /tulkas [tulkas]
+Sun Feb 26 05:10:58 2012 Buldbarg 0 idle 176 sec.  Command 'xdes'.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/buldbarg [buldbarg] idle 176 sec.
+            	/tulkas [tulkas] interactive.
+            	/tulkas [tulkas] interactive.
+            	/tulkas [tulkas] interactive.
+            	/tulkas [tulkas] interactive.
+            	/tulkas [tulkas] interactive.
+   Player: 	/tulkas [tulkas]
+   Interactive: /tulkas [tulkas]
+Thu Mar 01 11:39:38 2012 Galadhil 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/galadhil [galadhil] interactive.
+            	/secure/login#6 [ze/us]
+   Player: 	/galadhil [galadhil]
+   Interactive: /galadhil [galadhil]
+Thu Mar 01 15:52:15 2012 Aule 80 active.
+   PrevObj: 	/secure/master [ze/us]
+   Player: 	/aule [aule]
+   Interactive: ?
+Thu Mar 01 16:22:48 2012 Galadhil 0 idle 46 sec.  Command 'abandonar'.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/galadhil [galadhil] idle 46 sec.
+            	/bin/mortal/_abandonar [bin]
+            	/secure/daemons/bind [ze/us]
+            	/galadhil [galadhil] idle 46 sec.
+            	/galadhil [galadhil] idle 46 sec.
+            	/galadhil [galadhil] idle 46 sec.
+            	/bin/wiz/_shutdown [bin]
+            	/secure/daemons/bind [ze/us]
+            	/aule [aule] interactive.
+            	/aule [aule] interactive.
+            	/aule [aule] interactive.
+            	/aule [aule] interactive.
+            	/aule [aule] interactive.
+   Player: 	/galadhil [galadhil]
+   Interactive: /aule [aule]
+Thu Mar 01 16:22:48 2012 Aule 80 active.
+   PrevObj: 	/secure/master [ze/us]
+   Player: 	/aule [aule]
+   Interactive: ?
+Thu Mar 01 21:40:25 2012 Galadhil 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/galadhil [galadhil] interactive.
+            	/secure/login#0 [ze/us]
+   Player: 	/galadhil [galadhil]
+   Interactive: /galadhil [galadhil]
+Thu Mar 01 22:04:24 2012 Galadhil 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/galadhil [galadhil] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/galadhil [galadhil]
+   Interactive: /galadhil [galadhil]
+Thu Mar 01 22:18:57 2012 Galadhil 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/galadhil [galadhil] interactive.
+            	/secure/login#23 [ze/us]
+   Player: 	/galadhil [galadhil]
+   Interactive: /galadhil [galadhil]
+Fri Mar 02 12:12:44 2012 Galadhil 0 idle 1958 sec.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/galadhil [galadhil] idle 1958 sec.
+   Player: 	/galadhil [galadhil]
+   Interactive: ?
+Fri Mar 02 18:41:54 2012 Galadhil 0 idle 2004 sec.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/galadhil [galadhil] idle 2004 sec.
+   Player: 	/galadhil [galadhil]
+   Interactive: ?
+Fri Mar 02 20:05:08 2012 Aule 80 active.
+   PrevObj: 	/secure/master [ze/us]
+   Player: 	/aule [aule]
+   Interactive: ?
+Sat Mar 03 08:39:30 2012 Aule 80 active.
+   PrevObj: 	/secure/master [ze/us]
+   Player: 	/aule [aule]
+   Interactive: ?
+Sat Mar 03 22:15:17 2012 Buldbarg 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/buldbarg [buldbarg] netdead.
+   Player: 	/buldbarg [buldbarg]
+   Interactive: ?
+Sat Mar 03 22:19:35 2012 Buldbarg 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/buldbarg [buldbarg] netdead.
+   Player: 	/buldbarg [buldbarg]
+   Interactive: ?
+Sat Mar 03 22:20:39 2012 Buldbarg 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/buldbarg [buldbarg] netdead.
+   Player: 	/buldbarg [buldbarg]
+   Interactive: ?
+Sat Mar 03 22:32:43 2012 Galadhil 0 idle 2234 sec.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/galadhil [galadhil] idle 2234 sec.
+   Player: 	/galadhil [galadhil]
+   Interactive: ?
+Sat Mar 03 23:16:21 2012 Aule 100 active.
+   PrevObj: 	/secure/master [ze/us]
+   Player: 	/aule [aule]
+   Interactive: ?
+Sat Mar 03 23:16:21 2012 Tulkas 100 idle 28 sec.
+   PrevObj: 	/secure/master [ze/us]
+   Player: 	/tulkas [tulkas]
+   Interactive: ?
+Sun Mar 04 00:27:20 2012 Aule 80 active.
+   PrevObj: 	/secure/master [ze/us]
+   Player: 	/aule [aule]
+   Interactive: ?
+Mon Mar 05 15:17:34 2012 Aule 80 active.
+   PrevObj: 	/secure/master [ze/us]
+   Player: 	/aule [aule]
+   Interactive: ?
+Mon Mar 05 21:52:09 2012 Buldbarg 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/buldbarg [buldbarg] netdead.
+   Player: 	/buldbarg [buldbarg]
+   Interactive: ?
+Mon Mar 12 15:47:48 2012 Aule 80 active.
+   PrevObj: 	/secure/master [ze/us]
+   Player: 	/aule [aule]
+   Interactive: ?
+Wed Mar 14 16:19:50 2012 Grishnakh 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/grishnakh [grishnakh] interactive.
+            	/secure/login#0 [ze/us]
+   Player: 	/grishnakh [grishnakh]
+   Interactive: /grishnakh [grishnakh]
+Wed Mar 14 16:22:27 2012 Gotmog 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/gotmog [gotmog] interactive.
+            	/secure/login#6 [ze/us]
+   Player: 	/gotmog [gotmog]
+   Interactive: /gotmog [gotmog]
+Sat Apr 14 18:21:33 2012 Orome 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/orome [orome] interactive.
+            	/secure/login#0 [ze/us]
+   Player: 	/orome [orome]
+   Interactive: /orome [orome]
+Thu Apr 19 13:41:16 2012 Shani 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/shani [shani] interactive.
+            	/secure/login#0 [ze/us]
+   Player: 	/shani [shani]
+   Interactive: /shani [shani]
+Thu Apr 19 15:45:27 2012 Shani 0 idle 1802 sec.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/shani [shani] idle 1802 sec.
+   Player: 	/shani [shani]
+   Interactive: ?
+Mon Apr 30 19:59:45 2012 Galadhil 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/galadhil [galadhil] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/galadhil [galadhil]
+   Interactive: /galadhil [galadhil]
+Mon Apr 30 20:00:55 2012 Galadhil 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/galadhil [galadhil] interactive.
+            	/secure/login#16 [ze/us]
+   Player: 	/galadhil [galadhil]
+   Interactive: /galadhil [galadhil]
+Mon Apr 30 20:23:48 2012 Gotmog 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/gotmog [gotmog] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/gotmog [gotmog]
+   Interactive: /gotmog [gotmog]
+Mon Apr 30 20:24:24 2012 Gotmog 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/gotmog [gotmog] interactive.
+            	/secure/login#205 [ze/us]
+   Player: 	/gotmog [gotmog]
+   Interactive: /gotmog [gotmog]
+Tue Jul 24 00:36:23 2012 Galadhil 0 idle 138 sec.  Command 'abandonar'.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/galadhil [galadhil] idle 138 sec.
+            	/bin/mortal/_abandonar [bin]
+            	/secure/daemons/bind [ze/us]
+            	/galadhil [galadhil] idle 138 sec.
+            	/galadhil [galadhil] idle 138 sec.
+            	/galadhil [galadhil] idle 138 sec.
+            	/bin/wiz/_shutdown [bin]
+            	/secure/daemons/bind [ze/us]
+            	/aule [aule] interactive.
+            	/aule [aule] interactive.
+            	/aule [aule] interactive.
+            	/aule [aule] interactive.
+            	/aule [aule] interactive.
+   Player: 	/galadhil [galadhil]
+   Interactive: /aule [aule]
+Tue Jul 24 00:36:23 2012 Aule 80 active.
+   PrevObj: 	/secure/master [ze/us]
+   Player: 	/aule [aule]
+   Interactive: ?
+Wed Jul 25 10:14:21 2012 Aule 80 idle 74 sec.
+   PrevObj: 	/secure/master [ze/us]
+   Player: 	/aule [aule]
+   Interactive: ?
+Wed Jul 25 11:02:18 2012 Aule 80 active.
+   PrevObj: 	/secure/master [ze/us]
+   Player: 	/aule [aule]
+   Interactive: ?
+Wed Jul 25 13:29:44 2012 Gotmog 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/gotmog [gotmog] interactive.
+            	/secure/login#136 [ze/us]
+   Player: 	/gotmog [gotmog]
+   Interactive: /gotmog [gotmog]
+Sat Jul 28 22:27:45 2012 Aule 80 active.
+   PrevObj: 	/secure/master [ze/us]
+   Player: 	/aule [aule]
+   Interactive: ?
+Sun Jul 29 01:13:56 2012 Shani 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/shani [shani] interactive.
+            	/secure/login#3 [ze/us]
+   Player: 	/shani [shani]
+   Interactive: /shani [shani]
+Sun Jul 29 02:42:30 2012 Galadhil 0 idle 146 sec.  Command 'kick'.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/galadhil [galadhil] idle 146 sec.
+            	/bin/wiz/_kick [bin]
+            	/secure/daemons/bind [ze/us]
+            	/aule [aule] interactive.
+            	/aule [aule] interactive.
+            	/aule [aule] interactive.
+            	/aule [aule] interactive.
+            	/aule [aule] interactive.
+   Player: 	/aule [aule]
+   Interactive: /aule [aule]
+Fri Aug 17 14:37:30 2012 Sam 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/sam [sam] netdead.
+            	/secure/master [ze/us]
+   Player: 	?
+   Interactive: ?
+Fri Aug 17 14:54:30 2012 Pet 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/pet [pet] interactive.
+            	/secure/login#10 [ze/us]
+   Player: 	/pet [pet]
+   Interactive: /pet [pet]
+Sun Aug 19 16:50:43 2012 Pepe 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/pepe [pepe] netdead.
+            	/secure/master [ze/us]
+   Player: 	?
+   Interactive: ?
+Sun Aug 19 17:17:32 2012 Gusarapilla 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/gusarapilla [gusarapilla] netdead.
+            	/secure/master [ze/us]
+   Player: 	?
+   Interactive: ?
+Sun Aug 19 17:18:04 2012 Paco 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/paco [paco] interactive.
+            	/secure/login#4 [ze/us]
+   Player: 	/paco [paco]
+   Interactive: /paco [paco]
+Sun Aug 19 17:20:18 2012 Renacuajo 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/renacuajo [renacuajo] netdead.
+            	/secure/master [ze/us]
+   Player: 	?
+   Interactive: ?
+Sun Aug 19 18:01:43 2012 Federico 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/federico [federico] netdead.
+            	/secure/master [ze/us]
+   Player: 	?
+   Interactive: ?
+Sat Aug 25 19:01:50 2012 Sebas 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/sebas [sebas] interactive.
+            	/secure/login#8 [ze/us]
+   Player: 	/sebas [sebas]
+   Interactive: /sebas [sebas]
+Sun Aug 26 12:09:35 2012 Bilbo 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/bilbo [bilbo] interactive.
+            	/secure/login#0 [ze/us]
+   Player: 	/bilbo [bilbo]
+   Interactive: /bilbo [bilbo]
+Sun Aug 26 12:44:39 2012 Froda 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/froda [froda] interactive.
+            	/secure/login#43 [ze/us]
+   Player: 	/froda [froda]
+   Interactive: /froda [froda]
+Sun Aug 26 22:38:49 2012 Azaghal 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/azaghal [azaghal] interactive.
+            	/secure/login#0 [ze/us]
+   Player: 	/azaghal [azaghal]
+   Interactive: /azaghal [azaghal]
+Sun Aug 26 22:59:26 2012 Aule 80 active.
+   PrevObj: 	/secure/master [ze/us]
+   Player: 	/aule [aule]
+   Interactive: ?
+Mon Aug 27 22:57:46 2012 Galadhil 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/galadhil [galadhil] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/galadhil [galadhil]
+   Interactive: /galadhil [galadhil]
+Mon Aug 27 22:58:36 2012 Galadhil 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/galadhil [galadhil] interactive.
+            	/secure/login#12 [ze/us]
+   Player: 	/galadhil [galadhil]
+   Interactive: /galadhil [galadhil]
+Tue Aug 28 00:05:01 2012 Aule 80 active.
+   PrevObj: 	/secure/master [ze/us]
+   Player: 	/aule [aule]
+   Interactive: ?
+Tue Aug 28 00:54:15 2012 Ugluk 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/ugluk [ugluk] interactive.
+            	/secure/login#0 [ze/us]
+   Player: 	/ugluk [ugluk]
+   Interactive: /ugluk [ugluk]
+Wed Aug 29 22:30:11 2012 Fingolfin 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/fingolfin [fingolfin] interactive.
+            	/secure/login#2 [ze/us]
+   Player: 	/fingolfin [fingolfin]
+   Interactive: /fingolfin [fingolfin]
+Wed Aug 29 22:32:51 2012 Beralath 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/beralath [beralath] interactive.
+            	/secure/login#9 [ze/us]
+   Player: 	/beralath [beralath]
+   Interactive: /beralath [beralath]
+Wed Aug 29 22:37:05 2012 Luthien 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/luthien [luthien] netdead.
+            	/secure/master [ze/us]
+   Player: 	?
+   Interactive: ?
+Wed Aug 29 22:37:25 2012 Luthien 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/luthien [luthien] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/luthien [luthien]
+   Interactive: /luthien [luthien]
+Wed Aug 29 22:40:32 2012 Luthhien 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/luthhien [luthhien] netdead.
+            	/secure/master [ze/us]
+   Player: 	?
+   Interactive: ?
+Wed Aug 29 22:42:10 2012 Melian 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/melian [melian] interactive.
+            	/secure/login#12 [ze/us]
+   Player: 	/melian [melian]
+   Interactive: /melian [melian]
+Wed Aug 29 22:43:20 2012 Gilthas 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/gilthas [gilthas] interactive.
+            	/secure/login#17 [ze/us]
+   Player: 	/gilthas [gilthas]
+   Interactive: /gilthas [gilthas]
+Wed Aug 29 22:44:24 2012 Gorbag 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/gorbag [gorbag] interactive.
+            	/secure/login#22 [ze/us]
+   Player: 	/gorbag [gorbag]
+   Interactive: /gorbag [gorbag]
+Wed Aug 29 22:45:32 2012 Azog 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/azog [azog] interactive.
+            	/secure/login#27 [ze/us]
+   Player: 	/azog [azog]
+   Interactive: /azog [azog]
+Sat Sep 01 21:44:51 2012 Eowyn 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/eowyn [eowyn] interactive.
+            	/secure/login#0 [ze/us]
+   Player: 	/eowyn [eowyn]
+   Interactive: /eowyn [eowyn]
+Sat Sep 01 21:49:15 2012 Eomer 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/eomer [eomer] interactive.
+            	/secure/login#12 [ze/us]
+   Player: 	/eomer [eomer]
+   Interactive: /eomer [eomer]
+Sat Sep 01 21:51:39 2012 Eomer 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/eomer [eomer] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/eomer [eomer]
+   Interactive: /eomer [eomer]
+Sat Sep 01 21:53:03 2012 Ghargol 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/ghargol [ghargol] interactive.
+            	/secure/login#17 [ze/us]
+   Player: 	/ghargol [ghargol]
+   Interactive: /ghargol [ghargol]
+Sat Sep 01 21:57:00 2012 Halet 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/halet [halet] interactive.
+            	/secure/login#0 [ze/us]
+   Player: 	/halet [halet]
+   Interactive: /halet [halet]
+Sun Sep 02 11:47:03 2012 Beorn 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/beorn [beorn] interactive.
+            	/secure/login#0 [ze/us]
+   Player: 	/beorn [beorn]
+   Interactive: /beorn [beorn]
+Sun Sep 02 12:08:46 2012 Beorn 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/beorn [beorn] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/beorn [beorn]
+   Interactive: /beorn [beorn]
+Sun Sep 02 12:10:44 2012 Eddard 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/eddard [eddard] netdead.
+            	/secure/master [ze/us]
+   Player: 	?
+   Interactive: ?
+Sun Oct 07 15:10:06 2012 Aule 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/aule [aule] interactive.
+            	/secure/login#2 [ze/us]
+   Player: 	/aule [aule]
+   Interactive: /aule [aule]
+Sun Oct 07 15:12:54 2012 Galadhil 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/galadhil [galadhil] interactive.
+            	/secure/login#7 [ze/us]
+   Player: 	/galadhil [galadhil]
+   Interactive: /galadhil [galadhil]
+Sun Oct 07 15:21:13 2012 Gildor 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/gildor [gildor] interactive.
+            	/secure/login#6 [ze/us]
+   Player: 	/gildor [gildor]
+   Interactive: /gildor [gildor]
+Sun Oct 07 21:59:35 2012 Galadhil 0 idle 1802 sec.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/galadhil [galadhil] idle 1802 sec.
+   Player: 	/galadhil [galadhil]
+   Interactive: ?
+Sun Oct 07 22:02:15 2012 Gildor 0 idle 1802 sec.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/gildor [gildor] idle 1802 sec.
+   Player: 	/gildor [gildor]
+   Interactive: ?
+Sun Oct 07 22:29:11 2012 Boffo 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/boffo [boffo] interactive.
+            	/secure/login#32 [ze/us]
+   Player: 	/boffo [boffo]
+   Interactive: /boffo [boffo]
+Sun Oct 07 22:32:17 2012 Thorin 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/thorin [thorin] interactive.
+            	/secure/login#40 [ze/us]
+   Player: 	/thorin [thorin]
+   Interactive: /thorin [thorin]
+Tue Oct 09 23:41:13 2012 Eowyn 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/eowyn [eowyn] interactive.
+            	/secure/login#13 [ze/us]
+   Player: 	/eowyn [eowyn]
+   Interactive: /eowyn [eowyn]
+Fri Oct 12 16:36:47 2012 Orome 100 idle 128 sec.
+   PrevObj: 	/secure/master [ze/us]
+   Player: 	/orome [orome]
+   Interactive: ?
+Sat Oct 27 05:33:53 2012 Peque 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/peque [peque] interactive.
+            	/secure/login#0 [ze/us]
+   Player: 	/peque [peque]
+   Interactive: /peque [peque]
+Thu Nov 01 12:52:32 2012 Peque 0 idle 2085 sec.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/peque [peque] idle 2085 sec.
+   Player: 	/peque [peque]
+   Interactive: ?
+Thu Nov 01 13:28:42 2012 Peque 0 idle 1850 sec.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/peque [peque] idle 1850 sec.
+   Player: 	/peque [peque]
+   Interactive: ?
+Wed Nov 07 13:02:07 2012 Aule 80 idle 2458 sec.
+   PrevObj: 	/secure/master [ze/us]
+   Player: 	/aule [aule]
+   Interactive: ?
+Sun Dec 30 14:04:44 2012 Throno 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/throno [throno] interactive.
+            	/secure/login#196 [ze/us]
+   Player: 	/throno [throno]
+   Interactive: /throno [throno]
+Sun Dec 30 19:02:52 2012 Aule 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/aule [aule] interactive.
+            	/secure/login#3 [ze/us]
+   Player: 	/aule [aule]
+   Interactive: /aule [aule]
+Sun Dec 30 19:04:56 2012 Tulkas 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/tulkas [tulkas] interactive.
+            	/secure/login#2 [ze/us]
+   Player: 	/tulkas [tulkas]
+   Interactive: /tulkas [tulkas]
+Sun Dec 30 19:07:48 2012 Orome 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/orome [orome] interactive.
+            	/secure/login#9 [ze/us]
+   Player: 	/orome [orome]
+   Interactive: /orome [orome]
+Sun Dec 30 19:49:52 2012 Galadhil 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/galadhil [galadhil] interactive.
+            	/secure/login#109 [ze/us]
+   Player: 	/galadhil [galadhil]
+   Interactive: /galadhil [galadhil]
+Sat Jan 05 23:01:02 2013 Ugulk 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/ugulk [ugulk] netdead.
+            	/secure/master [ze/us]
+   Player: 	?
+   Interactive: ?
+Sun Feb 24 14:32:51 2013 Gildor 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/gildor [gildor] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/gildor [gildor]
+   Interactive: /gildor [gildor]
+Sun Feb 24 14:36:19 2013 Gimli 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/gimli [gimli] interactive.
+            	/secure/login#8 [ze/us]
+   Player: 	/gimli [gimli]
+   Interactive: /gimli [gimli]
+Mon Feb 25 23:08:37 2013 Gotmog 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/gotmog [gotmog] interactive.
+            	/secure/login#5 [ze/us]
+   Player: 	/gotmog [gotmog]
+   Interactive: /gotmog [gotmog]
+Mon Feb 25 23:23:05 2013 Gildor 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/gildor [gildor] interactive.
+            	/secure/login#22 [ze/us]
+   Player: 	/gildor [gildor]
+   Interactive: /gildor [gildor]
+Thu Mar 07 16:36:39 2013 Gimli 0 idle 1857 sec.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/gimli [gimli] idle 1857 sec.
+   Player: 	/gimli [gimli]
+   Interactive: ?
+Sat Mar 30 23:53:48 2013 Aule 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/aule [aule] interactive.
+            	/secure/login#5 [ze/us]
+   Player: 	/aule [aule]
+   Interactive: /aule [aule]
+Thu Apr 04 11:48:06 2013 Doryn 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/doryn [doryn] interactive.
+            	/secure/login#16 [ze/us]
+   Player: 	/doryn [doryn]
+   Interactive: /doryn [doryn]
+Thu Apr 04 12:37:08 2013 Gimli 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/gimli [gimli] interactive.
+            	/secure/login#13 [ze/us]
+   Player: 	/gimli [gimli]
+   Interactive: /gimli [gimli]
+Sat Apr 06 08:21:36 2013 Doryn 0 idle 2176 sec.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/doryn [doryn] idle 2176 sec.
+   Player: 	/doryn [doryn]
+   Interactive: ?
+Sun Apr 07 15:18:11 2013 Galadhil 0 idle 2426 sec.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/galadhil [galadhil] idle 2426 sec.
+   Player: 	/galadhil [galadhil]
+   Interactive: ?
+Wed Apr 10 16:02:53 2013 Yalin 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/yalin [yalin] interactive.
+            	/secure/login#71 [ze/us]
+   Player: 	/yalin [yalin]
+   Interactive: /yalin [yalin]
+Wed Apr 10 16:50:37 2013 Yalin 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/yalin [yalin] netdead.
+   Player: 	/yalin [yalin]
+   Interactive: ?
+Wed Apr 10 16:52:09 2013 Yalin 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/yalin [yalin] netdead.
+   Player: 	/yalin [yalin]
+   Interactive: ?
+Wed Apr 10 16:53:03 2013 Yalin 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/yalin [yalin] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/yalin [yalin]
+   Interactive: /yalin [yalin]
+Wed Apr 10 16:53:41 2013 Kastwey 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/kastwey [kastwey] interactive.
+            	/secure/login#219 [ze/us]
+   Player: 	/kastwey [kastwey]
+   Interactive: /kastwey [kastwey]
+Wed Apr 10 16:55:41 2013 Kastwey 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/kastwey [kastwey] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/kastwey [kastwey]
+   Interactive: /kastwey [kastwey]
+Wed Apr 10 16:56:19 2013 Kastwey 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/kastwey [kastwey] interactive.
+            	/secure/login#235 [ze/us]
+   Player: 	/kastwey [kastwey]
+   Interactive: /kastwey [kastwey]
+Wed Apr 10 16:57:01 2013 Kastwey 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/kastwey [kastwey] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/kastwey [kastwey]
+   Interactive: /kastwey [kastwey]
+Sat Apr 20 19:29:36 2013 Kastwey 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/kastwey [kastwey] interactive.
+            	/secure/login#3 [ze/us]
+   Player: 	/kastwey [kastwey]
+   Interactive: /kastwey [kastwey]
+Sat Apr 20 19:41:10 2013 Kastwey 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/kastwey [kastwey] netdead.
+   Player: 	/kastwey [kastwey]
+   Interactive: ?
+Sat Apr 20 19:45:03 2013 Kastwey 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/kastwey [kastwey] netdead.
+   Player: 	/kastwey [kastwey]
+   Interactive: ?
+Sat Apr 20 19:45:53 2013 Yalin 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/yalin [yalin] interactive.
+            	/secure/login#70 [ze/us]
+   Player: 	/yalin [yalin]
+   Interactive: /yalin [yalin]
+Sat Apr 20 19:48:13 2013 Yalin 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/yalin [yalin] netdead.
+   Player: 	/yalin [yalin]
+   Interactive: ?
+Sat Apr 20 19:49:53 2013 Aule 80 idle 74 sec.
+   PrevObj: 	/secure/master [ze/us]
+   Player: 	/aule [aule]
+   Interactive: ?
+Tue Apr 23 21:05:27 2013 Kastwey 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/kastwey [kastwey] netdead.
+   Player: 	/kastwey [kastwey]
+   Interactive: ?
+Fri Jun 14 18:40:23 2013 Galadhil 0 idle 2314 sec.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/galadhil [galadhil] idle 2314 sec.
+   Player: 	/galadhil [galadhil]
+   Interactive: ?
+Sun Jun 16 18:33:47 2013 Galadhil 0 idle 2048 sec.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/galadhil [galadhil] idle 2048 sec.
+   Player: 	/galadhil [galadhil]
+   Interactive: ?
+Sun Jun 23 17:32:44 2013 Orome 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/orome [orome] interactive.
+            	/secure/login#0 [ze/us]
+   Player: 	/orome [orome]
+   Interactive: /orome [orome]
+Thu Jun 27 16:56:08 2013 Pet 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/pet [pet] interactive.
+            	/secure/login#14 [ze/us]
+   Player: 	/pet [pet]
+   Interactive: /pet [pet]
+Sat Jun 29 11:23:20 2013 Gimli 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/gimli [gimli] interactive.
+            	/secure/login#4 [ze/us]
+   Player: 	/gimli [gimli]
+   Interactive: /gimli [gimli]
+Sat Jun 29 13:38:42 2013 Gimli 0 idle 1802 sec.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/gimli [gimli] idle 1802 sec.
+   Player: 	/gimli [gimli]
+   Interactive: ?
+Fri Jul 05 16:19:04 2013 Goyum 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/goyum [goyum] interactive.
+            	/secure/login#0 [ze/us]
+   Player: 	/goyum [goyum]
+   Interactive: /goyum [goyum]
+Sun Jul 21 05:03:07 2013 Turin 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/turin [turin] interactive.
+            	/secure/login#6 [ze/us]
+   Player: 	/turin [turin]
+   Interactive: /turin [turin]
+Sun Jul 21 05:26:48 2013 Shani 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/shani [shani] interactive.
+            	/secure/login#6 [ze/us]
+   Player: 	/shani [shani]
+   Interactive: /shani [shani]
+Sun Jul 21 05:42:02 2013 Doryn 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/doryn [doryn] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/doryn [doryn]
+   Interactive: /doryn [doryn]
+Sun Jul 21 05:43:06 2013 Throno 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/throno [throno] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/throno [throno]
+   Interactive: /throno [throno]
+Sun Jul 21 05:45:10 2013 Peque 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/peque [peque] interactive.
+            	/secure/login#13 [ze/us]
+   Player: 	/peque [peque]
+   Interactive: /peque [peque]
+Sun Jul 21 05:46:56 2013 Sebas 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/sebas [sebas] interactive.
+            	/secure/login#18 [ze/us]
+   Player: 	/sebas [sebas]
+   Interactive: /sebas [sebas]
+Sat Aug 03 17:34:29 2013 Uno 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/uno [uno] interactive.
+            	/secure/login#21 [ze/us]
+   Player: 	/uno [uno]
+   Interactive: /uno [uno]
+Sat Aug 03 17:57:30 2013 Uno 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/uno [uno] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/uno [uno]
+   Interactive: /uno [uno]
+Sat Aug 03 17:58:30 2013 Dos 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/dos [dos] interactive.
+            	/secure/login#10 [ze/us]
+   Player: 	/dos [dos]
+   Interactive: /dos [dos]
+Sat Aug 03 18:00:28 2013 Dos 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/dos [dos] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/dos [dos]
+   Interactive: /dos [dos]
+Sun Aug 18 17:21:56 2013 Dos 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/dos [dos] interactive.
+            	/secure/login#7 [ze/us]
+   Player: 	/dos [dos]
+   Interactive: /dos [dos]
+Sun Aug 18 17:27:52 2013 Dos 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/dos [dos] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/dos [dos]
+   Interactive: /dos [dos]
+Sun Aug 18 17:55:03 2013 Tres 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/tres [tres] interactive.
+            	/secure/login#0 [ze/us]
+   Player: 	/tres [tres]
+   Interactive: /tres [tres]
+Sun Aug 18 17:56:33 2013 Tres 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/tres [tres] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/tres [tres]
+   Interactive: /tres [tres]
+Sun Aug 18 18:29:38 2013 Cero 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/cero [cero] interactive.
+            	/secure/login#1 [ze/us]
+   Player: 	/cero [cero]
+   Interactive: /cero [cero]
+Sun Aug 18 18:30:46 2013 Cero 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/cero [cero] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/cero [cero]
+   Interactive: /cero [cero]
+Sun Aug 18 18:44:09 2013 Cero 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/cero [cero] interactive.
+            	/secure/login#0 [ze/us]
+   Player: 	/cero [cero]
+   Interactive: /cero [cero]
+Sun Aug 18 18:44:57 2013 Cero 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/cero [cero] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/cero [cero]
+   Interactive: /cero [cero]
+Sun Aug 25 06:39:11 2013 Cinco 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/cinco [cinco] interactive.
+            	/secure/login#0 [ze/us]
+   Player: 	/cinco [cinco]
+   Interactive: /cinco [cinco]
+Sun Aug 25 06:40:55 2013 Cinco 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/cinco [cinco] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/cinco [cinco]
+   Interactive: /cinco [cinco]
+Sun Sep 01 06:16:36 2013 Arandil 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/arandil [arandil] interactive.
+            	/secure/login#0 [ze/us]
+   Player: 	/arandil [arandil]
+   Interactive: /arandil [arandil]
+Sun Sep 01 06:48:39 2013 Arandil 0 idle 1802 sec.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/arandil [arandil] idle 1802 sec.
+   Player: 	/arandil [arandil]
+   Interactive: ?
+Sun Sep 01 08:24:59 2013 Arandil 0 idle 1802 sec.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/arandil [arandil] idle 1802 sec.
+   Player: 	/arandil [arandil]
+   Interactive: ?
+Sun Sep 01 08:32:51 2013 Malur 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/malur [malur] netdead.
+            	/secure/master [ze/us]
+   Player: 	?
+   Interactive: ?
+Sun Sep 01 08:34:33 2013 Malur 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/malur [malur] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/malur [malur]
+   Interactive: /malur [malur]
+Sun Sep 01 08:35:49 2013 Malur 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/malur [malur] interactive.
+            	/secure/login#14 [ze/us]
+   Player: 	/malur [malur]
+   Interactive: /malur [malur]
+Tue Sep 03 03:46:58 2013 Tres 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/tres [tres] interactive.
+            	/secure/login#6 [ze/us]
+   Player: 	/tres [tres]
+   Interactive: /tres [tres]
+Tue Sep 03 04:02:59 2013 Tres 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/tres [tres] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/tres [tres]
+   Interactive: /tres [tres]
+Tue Sep 03 04:10:49 2013 Cuatro 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/cuatro [cuatro] interactive.
+            	/secure/login#3 [ze/us]
+   Player: 	/cuatro [cuatro]
+   Interactive: /cuatro [cuatro]
+Tue Sep 03 04:14:35 2013 Cuatro 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/cuatro [cuatro] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/cuatro [cuatro]
+   Interactive: /cuatro [cuatro]
+Tue Sep 03 06:41:23 2013 Seis 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/seis [seis] interactive.
+            	/secure/login#0 [ze/us]
+   Player: 	/seis [seis]
+   Interactive: /seis [seis]
+Tue Sep 03 07:10:06 2013 Cinco 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/cinco [cinco] interactive.
+            	/secure/login#6 [ze/us]
+   Player: 	/cinco [cinco]
+   Interactive: /cinco [cinco]
+Tue Sep 03 07:11:02 2013 Seis 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/seis [seis] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/seis [seis]
+   Interactive: /seis [seis]
+Tue Sep 03 07:11:32 2013 Cinco 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/cinco [cinco] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/cinco [cinco]
+   Interactive: /cinco [cinco]
+Tue Sep 03 07:13:04 2013 Seis 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/seis [seis] interactive.
+            	/secure/login#13 [ze/us]
+   Player: 	/seis [seis]
+   Interactive: /seis [seis]
+Tue Sep 03 07:13:56 2013 Seis 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/seis [seis] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/seis [seis]
+   Interactive: /seis [seis]
+Tue Sep 03 07:23:08 2013 Tres 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/tres [tres] interactive.
+            	/secure/login#7 [ze/us]
+   Player: 	/tres [tres]
+   Interactive: /tres [tres]
+Tue Sep 03 07:24:44 2013 Tres 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/tres [tres] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/tres [tres]
+   Interactive: /tres [tres]
+Tue Sep 03 08:07:53 2013 Cinco 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/cinco [cinco] interactive.
+            	/secure/login#6 [ze/us]
+   Player: 	/cinco [cinco]
+   Interactive: /cinco [cinco]
+Tue Sep 03 08:08:13 2013 Cinco 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/cinco [cinco] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/cinco [cinco]
+   Interactive: /cinco [cinco]
+Wed Sep 04 07:30:31 2013 Buh 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/buh [buh] interactive.
+            	/secure/login#1 [ze/us]
+   Player: 	/buh [buh]
+   Interactive: /buh [buh]
+Thu Sep 05 08:12:53 2013 Pedro 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/pedro [pedro] interactive.
+            	/secure/login#0 [ze/us]
+   Player: 	/pedro [pedro]
+   Interactive: /pedro [pedro]
+Thu Sep 05 08:16:37 2013 Pedro 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/pedro [pedro] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/pedro [pedro]
+   Interactive: /pedro [pedro]
+Thu Sep 05 08:32:59 2013 Laura 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/laura [laura] netdead.
+            	/secure/master [ze/us]
+   Player: 	?
+   Interactive: ?
+Thu Sep 05 08:36:21 2013 Laura 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/laura [laura] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/laura [laura]
+   Interactive: /laura [laura]
+Thu Sep 05 08:37:31 2013 Eva 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/eva [eva] interactive.
+            	/secure/login#12 [ze/us]
+   Player: 	/eva [eva]
+   Interactive: /eva [eva]
+Thu Sep 05 08:39:53 2013 Antonio 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/antonio [antonio] interactive.
+            	/secure/login#21 [ze/us]
+   Player: 	/antonio [antonio]
+   Interactive: /antonio [antonio]
+Fri Sep 06 07:50:07 2013 Laura 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/laura [laura] netdead.
+            	/secure/master [ze/us]
+   Player: 	?
+   Interactive: ?
+Fri Sep 06 07:50:23 2013 Laura 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/laura [laura] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/laura [laura]
+   Interactive: /laura [laura]
+Fri Sep 06 07:54:03 2013 Laura 0 idle 68 sec.  Command 'xdes'.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/laura [laura] idle 68 sec.
+            	/orome [orome] interactive.
+            	/orome [orome] interactive.
+            	/orome [orome] interactive.
+            	/orome [orome] interactive.
+            	/orome [orome] interactive.
+   Player: 	/orome [orome]
+   Interactive: /orome [orome]
+Fri Sep 06 07:54:39 2013 Laura 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/laura [laura] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/laura [laura]
+   Interactive: /laura [laura]
+Fri Sep 06 07:55:09 2013 Eva 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/eva [eva] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/eva [eva]
+   Interactive: /eva [eva]
+Fri Sep 06 08:04:52 2013 Felipe 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/felipe [felipe] interactive.
+            	/secure/login#0 [ze/us]
+   Player: 	/felipe [felipe]
+   Interactive: /felipe [felipe]
+Fri Sep 06 08:07:52 2013 Laura 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/laura [laura] netdead.
+            	/secure/master [ze/us]
+   Player: 	?
+   Interactive: ?
+Fri Sep 06 08:08:08 2013 Laura 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/laura [laura] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/laura [laura]
+   Interactive: /laura [laura]
+Fri Sep 06 08:09:06 2013 Pepa 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/pepa [pepa] interactive.
+            	/secure/login#15 [ze/us]
+   Player: 	/pepa [pepa]
+   Interactive: /pepa [pepa]
+Fri Sep 06 08:11:40 2013 Pepa 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/pepa [pepa] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/pepa [pepa]
+   Interactive: /pepa [pepa]
+Fri Sep 06 08:12:30 2013 Laura 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/laura [laura] interactive.
+            	/secure/login#23 [ze/us]
+   Player: 	/laura [laura]
+   Interactive: /laura [laura]
+Fri Sep 06 08:13:06 2013 Laura 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/laura [laura] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/laura [laura]
+   Interactive: /laura [laura]
+Fri Sep 06 08:13:28 2013 Felipe 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/felipe [felipe] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/felipe [felipe]
+   Interactive: /felipe [felipe]
+Sat Sep 07 07:49:46 2013 Orome 100 active.
+   PrevObj: 	/secure/master [ze/us]
+   Player: 	/orome [orome]
+   Interactive: ?
+Sun Sep 08 06:48:59 2013 Alfonso 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/alfonso [alfonso] interactive.
+            	/secure/login#5 [ze/us]
+   Player: 	/alfonso [alfonso]
+   Interactive: /alfonso [alfonso]
+Sun Sep 08 06:58:13 2013 Alfonso 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/alfonso [alfonso] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/alfonso [alfonso]
+   Interactive: /alfonso [alfonso]
+Sun Sep 08 07:01:33 2013 Jose 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/jose [jose] interactive.
+            	/secure/login#5 [ze/us]
+   Player: 	/jose [jose]
+   Interactive: /jose [jose]
+Sun Sep 08 07:05:47 2013 Jose 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/jose [jose] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/jose [jose]
+   Interactive: /jose [jose]
+Tue Sep 10 07:12:24 2013 Antonio 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/antonio [antonio] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/antonio [antonio]
+   Interactive: /antonio [antonio]
+Tue Sep 10 07:19:55 2013 Joluk 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/joluk [joluk] netdead.
+            	/secure/master [ze/us]
+   Player: 	?
+   Interactive: ?
+Tue Sep 10 07:20:39 2013 Joluk 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/joluk [joluk] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/joluk [joluk]
+   Interactive: /joluk [joluk]
+Tue Sep 10 07:21:19 2013 Joluk 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/joluk [joluk] interactive.
+            	/secure/login#28 [ze/us]
+   Player: 	/joluk [joluk]
+   Interactive: /joluk [joluk]
+Sat Sep 14 11:07:52 2013 Joluk 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/joluk [joluk] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/joluk [joluk]
+   Interactive: /joluk [joluk]
+Sat Sep 14 11:08:54 2013 Joluk 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/joluk [joluk] interactive.
+            	/secure/login#10 [ze/us]
+   Player: 	/joluk [joluk]
+   Interactive: /joluk [joluk]
+Sat Sep 14 11:12:00 2013 Joluk 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/joluk [joluk] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/joluk [joluk]
+   Interactive: /joluk [joluk]
+Sat Sep 14 11:13:14 2013 Joluk 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/joluk [joluk] netdead.
+            	/secure/master [ze/us]
+   Player: 	?
+   Interactive: ?
+Sat Sep 14 11:14:12 2013 Joluk 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/joluk [joluk] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/joluk [joluk]
+   Interactive: /joluk [joluk]
+Sat Sep 14 11:16:06 2013 Joluk 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/joluk [joluk] interactive.
+            	/secure/login#23 [ze/us]
+   Player: 	/joluk [joluk]
+   Interactive: /joluk [joluk]
+Sat Sep 14 11:34:37 2013 Joluk 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/joluk [joluk] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/joluk [joluk]
+   Interactive: /joluk [joluk]
+Sat Sep 14 11:36:11 2013 Joluk 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/joluk [joluk] interactive.
+            	/secure/login#10 [ze/us]
+   Player: 	/joluk [joluk]
+   Interactive: /joluk [joluk]
+Sat Sep 14 11:37:53 2013 Joluk 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/joluk [joluk] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/joluk [joluk]
+   Interactive: /joluk [joluk]
+Sat Sep 14 13:06:25 2013 Joluk 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/joluk [joluk] interactive.
+            	/secure/login#5 [ze/us]
+   Player: 	/joluk [joluk]
+   Interactive: /joluk [joluk]
+Sat Sep 14 13:41:07 2013 Joluk 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/joluk [joluk] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/joluk [joluk]
+   Interactive: /joluk [joluk]
+Sat Sep 14 13:49:06 2013 Juan 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/juan [juan] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/juan [juan]
+   Interactive: /juan [juan]
+Sat Sep 14 20:00:00 2013 Buh 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/buh [buh] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/buh [buh]
+   Interactive: /buh [buh]
+Sat Sep 14 20:01:20 2013 Buh 0 netdead.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/buh [buh] netdead.
+            	/secure/master [ze/us]
+   Player: 	?
+   Interactive: ?
+Sat Sep 14 20:01:36 2013 Buh 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/buh [buh] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/buh [buh]
+   Interactive: /buh [buh]
+Sat Sep 14 20:07:20 2013 Buh 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/buh [buh] interactive.
+            	/secure/login#24 [ze/us]
+   Player: 	/buh [buh]
+   Interactive: /buh [buh]
+Sun Sep 22 16:11:57 2013 Buh 0 idle 2481 sec.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/buh [buh] idle 2481 sec.
+   Player: 	/buh [buh]
+   Interactive: ?
+Sun Sep 22 16:56:02 2013 Dalanor 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/dalanor [dalanor] interactive.
+            	/secure/login#5 [ze/us]
+   Player: 	/dalanor [dalanor]
+   Interactive: /dalanor [dalanor]
+Sun Sep 22 17:03:51 2013 Dalanor 0 active.
+   PrevObj: 	/secure/simul_efun [ze/us]
+            	/dalanor [dalanor] interactive.
+            	/bin/mortal/_suicidar [bin]
+   Player: 	/dalanor [dalanor]
+   Interactive: /dalanor [dalanor]

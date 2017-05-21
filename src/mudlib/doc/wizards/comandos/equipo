@@ -1,0 +1,15 @@
+[1mCOMANDO[0m
+  equipo [<jugador>]
+
+[1mDESCRIPCION[0m
+  Te muestra las armas y protecciones que llevas en ese instante de una forma
+  clara y detallada, indicando sus caracteristicas más comunes (AC,WC,tipo..)
+  Si le das como argumento el nombre de un jugador te mostrará el equipo de
+  ese jugador en particular.
+
+[1mEJEMPLOS[0m
+  equipo           Muestra tu propio equipo.
+  equipo woo       Muestra el equipo de woo (si existe o está conectado).
+
+[1mTEMAS RELACIONADOS[0m
+  empuñar, desempuñar, equipar, desequipar, ponerse, quitarse

@@ -1,0 +1,33 @@
+PRIMER PISO.
+
+    	Simple.
+
+
+               1
+               |
+           2   3   O		      Lugares.
+           |   | /       		1.- Capilla.
+       4 - 5 - O - O		        2.- Puestos de la guardia real.
+           |   | \			3.- Templo de <dios de la vida>
+           2   6   O                    4.- Subida a los alojamientos reales.
+                                        5.- Salon Real.
+                                        6.- Banco.
+ 
+        Completo.
+
+
+               1
+               |
+           2   3   4		      Lugares.
+           |   | /			1.-capilla.c
+       5 - 6 - 7 - 8                    2.-puesto1.c
+           |   | \                      3.-templo.c
+           9   10  11                   4.-interior1.c
+          				5.-escaleras1.c
+                                        6.-trono.c
+                                        7.-centro1.c
+                                        8.-talleres1.c
+                                        9.-puesto2.c
+                                       10.-banco.c
+                                       11.-interior2.c
+

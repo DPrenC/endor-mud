@@ -1,0 +1,9 @@
+[1mCOMANDO[0m
+  casa
+
+[1mDESCRIPCION[0m
+  Te teletransporta al lugar que tengas establecido como SetHome(), por
+  defecto te lleva a '/players/nick/workroom.c'.
+
+[1mTEMAS RELACIONADOS[0m
+  ir, trans

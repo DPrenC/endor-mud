@@ -1,0 +1,12 @@
+SINOPSIS
+    xcallouts [cadena de busqueda]
+
+DESCRIPCION
+    Sin argumentos devolveria todos tus callouts. En caso contrario devolveria
+    todos los callouts que contuvieran la cadena introducida.
+
+EJEMPLOS
+    xcallouts obj   Visualizaria todos los callouts con la secuencia "obj".
+    xcallouts .     Devolveria todos los callouts. No se debe usar si no es
+                    estrictamente necesario ya que tiene un elevado coste
+                    de tiempo.

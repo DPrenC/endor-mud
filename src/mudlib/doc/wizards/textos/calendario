@@ -1,0 +1,57 @@
+PROYECTO : SISTEMA DE TIEMPO EN SIMAURIA
+DOMINIO  : todos
+WIZARD   : Angor
+CREACION : 11-02-98
+---------------------------------------------------------------------------
+1.INTRODUCCION
+2.SISTEMA DE TIEMPO EN SIMAURIA
+
+---------------------------------------------------------------------------
+1. INTRODUCCION
+
+El sistema de tiempo es la forma de medir el tiempo para los jugadores
+de Simauria. Estrictamente hablando este sistema es innecesario para el 
+juego, pero representa un importante papel a la hora de hacer que el
+jugador sienta el mundo como mas verosimil y se sienta mas metido dentro
+del juego. 
+
+A la hora de decidir el sistema de tiempo se han seguido dos ideas:
+
+1. Objetivo primario:
+   El dia de Simauria debe ser mas rapido que un dia normal. De esta
+   forma un jugador que se conecte podra ver pasar un dia de Mud en un
+   tiempo real de juego razonable.
+
+2. Objetivo secundario:
+   Para que un jugador pueda apreciar los cambios segun las estaciones
+   en el Mud: (a) no debe haber muchas estaciones y (b) el anyo-mud 
+   debe tener una duracion razonable.
+
+---------------------------------------------------------------------------
+2. SISTEMA DE TIEMPO EN SIMAURIA
+
+Esta es la propuesta final que recoge la opinion mas generalizada acerca
+del sistema de tiempo a emplear en Simauria.
+
+En la siguiente tabla se recoge la equivalencia entre el tiempo en el 
+mundo real y el tiempo en Simauria
+
+  Tiempo Real                                  Tiempo Simauria
+
+- 1 dia de Simauria                     <--->  1/4 dia real
+- 1 estacion Simauria = 30*4 = 120 dias <--->  1 mes = 30 dias
+- 1 anyo = 4 estaciones                 <--->  4 meses = 30*4 dias
+
+NOTAS:
+
+1. Los meses, su duracion y su nombre en Simauria dependeran del calendario que
+   se use en cada zona de Simauria.
+
+2. Pese a la nota anterior, las estaciones en Simauria son similares a las que
+   existen en el mundo real: invierno-primavera-verano-otoño (y como en el, en
+   funcion de la latitud de un territorio, estas estaciones se manifestaran con
+   mas o menos intensidad.
+
+3. Segun el calendario, se podrian subdividir las estaciones en varias
+   subestaciones.
+

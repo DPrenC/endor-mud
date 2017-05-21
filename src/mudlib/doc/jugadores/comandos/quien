@@ -1,0 +1,17 @@
+[1mCOMANDO[0m
+  quien
+  quien viejo
+  quien dist[into]
+  quien jugador(es)
+  quien wiz[ards]
+  quien trabajo(s)
+  quien tabla
+
+[1mDESCRIPCION[0m
+  Muestra que jugadores estan conectados. Las opciones pueden restringir 
+  la salida a jugadores/wizards solamente, o mostrar los jugadores y los
+  wizards por separado.
+ Los Archiwizards, Councilers y Gods aparecerán señalados como tales.
+
+[1mTEMAS RELACIONADOS[0m
+  canales, cquien

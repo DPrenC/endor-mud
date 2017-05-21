@@ -1,0 +1,24 @@
+[1mCOMANDO[0m
+  hacer [<veces1>#]<cmd1>;[<veces2>#]<cmd2>;[<veces3>#]<cmd3>.....
+
+[1mDESCRIPCION[0m
+  Una forma sencilla de poder realizar una secuencia de comandos sin
+  necesidad de escribir cada uno en una linea. Puedes poner tantos comandos
+  como quieras. Si uno de ellos no se puede realizar entonces la secuencia
+  se interrumpe. Lo de [<veces>#] no hace falta ponerlo a no ser que se
+  quiera repetir un comando más de una vez.
+   
+[1mEJEMPLOS[0m
+  hacer n;s;4#e;n
+  (Haria 'norte, sur, este, este, este, este, norte')
+
+  hacer 2#s;coger espada;mirar arbol;mover rama
+  (Haria 'sur, sur, coger espada, mirar arbol, mover rama)
+
+  Imagina un camino 'norte, este, este, norte, oeste' y tu escribes:
+  hacer n;2#e;s;o
+  Entonces haria 'norte, este, este' y luego si no existiera 'sur' entonces
+  el resto de comandos, 'oeste', no se realizaria.
+
+[1mTEMAS RELACIONADOS[0m
+  alias, historico

@@ -1,0 +1,12 @@
+[1mCOMANDO[0m
+  man [<funcion>]
+
+[1mDESCRIPCION[0m
+  Con este comando podrás ver los manuales referentes a funciones y temas
+  de programación. Escribe 'man' para obtener más información.
+   
+[1mEJEMPLOS[0m
+  man call_out
+
+[1mTEMAS RELACIONADOS[0m
+  ayuda, xhelp

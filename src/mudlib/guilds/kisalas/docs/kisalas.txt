@@ -1,0 +1,143 @@
+      +-----------------+
+      | Regimen Interno |
+      +-----------------+
+
+        Cuando una mujer entra en La Orden, pasa a ser una "iniciada",
+es una especie de etapa de transicion, en la cual la muchacha aprende el
+funcionamiento del gremio y decide si le gusta o no. En este periodo, la
+chica puede cambiarse de gremio si lo desea. Al llegar a un cierto
+nivel, recibe el tratamiento de "Kisala", mediante el cual pertenece por
+entero a la Orden y NO puede cambiar de gremio, si lo hace sera
+considerado alta traicion. Las Kisalas de alto nivel son las "Kisalas
+Mayores", con poder para discutir los asuntos de la Orden. Por ultimo
+esta la "Gran Kisala", la que tiene poder absoluto.
+
+        +---------+
+        | Niveles |
+        +---------+
+
+         Una Kisala no es solo una guerrera, sino tambien una "maga".
+Los hechizos son puramente encaminados al ataque, es decir que no basa
+su vida en la magia. Al ser mujer es tremendamente agil, lo que hace que
+sea muy buena esquivando, pero sus golpes son de poca potencia, para eso
+estan las armas especiales.
+        Bueno, ahora propondre un sistema de niveles de lucha y magia, y
+las distintas habilidades y hechizos, y entre parentesis el nivel minimo
+para poder tenerlos. (Supongamos un maximo de 100 niveles)
+
+             - LUCHA:
+                                   +- Abanico (40)
+                        +- Armada -+- Cuchillo doble filo (20)
+              +- Pelea -|   (10)   +- Espada (20)
+              |   (7)   +- Sin armar (10)
+              |
+    - Ataque  +- Arrojar [ Abanico, corona circular, cuchillo ] (70)
+              |    (60)
+              |         +- Odio
+              +- Odio  -+- Odio reprimido (55)
+                 (50)   +- Odio controlado (60)
+
+
+              +- Esquivar (10)
+              |
+   - Defensa  +- Defender (20)
+       (5)    |              +- Armas (80)
+              +- Inutilizar -|
+                    (70)     +- Armaduras (75)
+
+
+   - Entrenamiento ==> Puntos corporales (5)
+
+
+               - MAGIA:
+
+                           +- Multiplicador (20)
+              + Ofensivos -+- Paralizante (50)
+              |            +- Bolas de fuego (10)
+   - Hechizos-+
+        (5)   |            +- Sombra (40)
+              + Ofensivos -+- Cambiador (12)
+                           +- Desaparicion (10)
+
+   - Entrenamiento ==> mana (10)
+
+
+NOTA: Los numeros entre parentesis indican el nivel donde aparecen
+dichos comandos. ( estilo "Aurora")
+
+Para ser "Kisala" hay que tener nivel 20 en "lucha" y en "magia"; para
+"Kisala Mayor" nivel 70 en lucha y 60 en magia; y para "Gran Kisala"
+nivel 90 en lucha y 75 en magia; las Kisalas aunque tengan el nivel
+requerido han de hacer algo que les ordene "La cupula" ( las Kisalas
+mayores y la Gran Kisala) para ser Kisala mayor. Por ej. un quest; La
+"Gran Kisala", solo podra serlo si el puesto queda vacante ( muerte o
+abdicación de la anterior)
+
+
+        +----------+
+        | Comandos |
+        +----------+
+
+        - Arrojar: Es sencillo, hay armas propias de las Kisalas que se
+pueden arrojar, con lo cual le das de lleno a tu victima y le haces mas
+danyo.
+
+        - Odio: Es muy util, consiste en lo siguiente: al "odiar" algo
+aumentas la potencia de tus golpes y resistes mucho mas. ( una kisala
+podria odiar a ogros u otras razas, ya se miraria...) Lo cual quiere
+decir qeu si te encuentras con alguien a quien "odiar" ( y que sea
+varon) lo atacara automaticamente, ( si es hembra solo la "odiara" si
+pelea contra ella). "Odio reprimido", es que se puede activar o
+desactivar a placer dicho comando; "Odio controlado" es que solo odia a
+quien desee odiar. Esto es importante ya que si p. ej. vamos y nos
+encontramos con 5 ogros a la vez, los atacaremos a los 5 y seguramente
+nos mataran, pero si tenemos Odio Reprimido u Odio Controlado podremos
+elegir a quien hacerlo.
+
+        - Inutilizar: inutiliza el arma de tu oponente dejandola
+insevible o casi, segun el nivel que tengas.
+
+        - Multiplicador: es una especia de clonacion, apareceria un
+doble tuyo identico (como si fuera un espejo) durante el tiempo que
+dure el combate, con lo cual sera x2 el danyo que hagas, y %2 el que
+recibas( segun el nivel que tengas pueden aparecer mas de 2 imagenes)
+
+        - Paralizante: paraliza a tu victima por un tiempo determinado,
+segun el nivel.
+
+        - Bolas de fuego: cae por su propio peso... :)
+
+        - Sombra: te conviertes en sombra por un tiempo, por lo que tu
+pegas pero no te pueden dar. ( copia descarada del juego "Eternal
+Champions", para Megadrive...)
+
+        - Cambiador: apareces en otro lugar, de esta forma desconciertas
+a tu rival y no te pega.
+
+        - Desaparicion: haces que le desaparezca el arma o armadura.
+
+
+        +-------+
+        | Notas |
+        +-------+
+
+        Que quede claro una cosa, para ser Kisala hay que ser nivel 20
+en lucha y magia, es decir que una iniciada, si p. ej. tiene nivel 50 en
+lucha y 0 en magia no es Kisala.
+        Si eres Kisala podras acceder a las tiendas del gremio, amen de
+tener habitacion propia donde guardar las cosas, tambien tendra creditos
+en el banco y buzon de correo interno.
+        Por cierto, los hombres tienen vetada la entrada al gremio, al
+entrar y por los pasillos se les ira dando avisos en carteles, y unas
+"voces" bastante persuasorias. Aquel que no hiciera caso de las
+advertencias... caeran en el laberinto de castigo.
+         Bueno, esto es algo muy esquematico de como va a ser la cosa,
+es para discutirlo, y para dar una idea de por donde van los tiros.
+
+-------------------------------------  Avengelyne, la mujer fatal -------
+-------------------------------------------------------------------------
+Traducido por Korsario, sufridor de los comentarios feministas del texto,
+algunos de los cuales han sido censurados para no herir la sensibilidad
+del leyente.
+-------------------------------------------------------------------------
+

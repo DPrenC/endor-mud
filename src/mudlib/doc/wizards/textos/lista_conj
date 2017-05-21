@@ -1,0 +1,29 @@
+LISTA DE CONJUROS/HECHIZOS DE SIMAURIA (NI) No Implementado
+-----------------------------------------------------------
+
+ * CONJURADORES *
+ ------------------------------------------------------------
+|  Nombre             | Nivel | Nivel | Puntos | Tipo        |
+|  Conjuro            | Hacer | Memor | Magia  | Conjuro     |
+|------------------------------------------------------------|
+| Oscuridad           |   1   |   6   |   10   | LUZ         |
+| Lanza de Acido      |   1   |   7   |   10   | ATAQUE      |
+| Invocar Victima     |   1   |   8   |   16   | CREACION    |
+| Maza del Infierno   |   1   |  10   |   20   | CREACION    |
+| Piel de Piedra      |   1   |  12   |   16   | ALTERACIÓN  |
+| Frio Intenso        |   1   |  15   |   15   | ATAQUE      |
+| Apocalipsis         |  25   |  35   |   90   | ATAQUE      |
+ ------------------------------------------------------------
+ 
+ * KISALAS *
+ ------------------------------------------------------------
+|  Nombre             | Nivel | Nivel | Puntos | Tipo        |
+|  Hechizo            | Hacer | Memor | Magia  | Hechizo     |
+|------------------------------------------------------------|
+| Oscuridad           |   5   |       |   10   | LUZ         |
+| Luz cegadora        |   1   |   7   |   15   | ATAQUE      |
+| Miedo Paralizante   |   1   |  10   |   20   | ATAQUE      |
+| Vision Nocturna     |   1   |  12   |   25   | ALTERACIÓN  |
+ ------------------------------------------------------------
+ 
+ 

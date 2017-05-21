@@ -1,0 +1,237 @@
+/**
+ * /secure/master/permisions.ic
+ *
+ * Archivo para ser incluido por el master. Contiene las funciones de
+ * seguridad que manejan los permisos de ejecución.
+ */
+
+
+//===========================================================================
+//  Security and Permissions
+//
+// Most of these functions guard critical efuns. A good approach to deal
+// with them is to redefine the efuns by simul_efuns (which can then avoid
+// trouble prematurely) and give root objects only the permission to
+// execute the real efuns.
+//
+// See also get_wiz_name(), valid_read() and valid_write().
+//===========================================================================
+
+int privilege_violation (string op, mixed who, mixed arg3, mixed arg4); // Validate the execution of a privileged operation.
+int query_allow_shadow (object victim); // Validate a shadowing.
+int valid_trace (string what, mixed arg); //   Check if the player may use tracing.
+int valid_exec (string name, object ob, object obfrom); // Validate the rebinding of an IP connection by usage of efun exec().
+int valid_query_snoop (object obj); // Validate if the snoopers of an object may be revealed by usage of the efun query_snoop().
+int valid_snoop (object snoopee, object snooper); // Validate the start/stop of a snoop.
+
+//---------------------------------------------------------------------------
+/* privilege_violation is called when objects try to do illegal things,
+ * or files being compiled request a privileged efun. */
+int privilege_violation (string op, mixed who, mixed arg, mixed arg2)
+// [+] Validate the execution of a privileged operation.
+//
+// Arguments:
+//   op   : the requestion operation (see below)
+//   who  : the object requesting the operation (filename or object pointer)
+//   arg  : additional argument, depending on <op>.
+//   arg2 : additional argument, depending on <op>.
+//
+// Result:
+//     >0: The caller is allowed for this operation.
+//      0: The caller was probably misleaded; try to fix the error
+//   else: A real privilege violation; handle it as error.
+//
+// Privileged operations are:
+//   attach_erq_demon  : Attach the erq demon to object <arg> with flag <arg2>.
+//   bind_lambda       : Bind a lambda-closure to object <arg>.
+//   call_out_info     : Return an array with all call_out informations.
+//   erq               : A the request <arg2> is to be send to the
+//                       erq-demon by the object <who>.
+//   enable_telnet     : Enable/disable telnet (<arg2>) for object <arg>.
+//   execute_command   : Execute command string <arg2> for the object <arg>.
+//   input_to          : Object <who> issues an 'ignore-bang'-input_to() for
+//                       commandgiver <arg2>; the exact flags are <arg2>.
+//   mysql:            : Object <who> attempted to execute mySQL efun <arg>.
+//   net_connect       : Attempt to open a connection to host <arg>,
+//                        port <arg2>.
+//   nomask simul_efun : Attempt to get an efun <arg> via efun:: when it
+//                       is shadowed by a 'nomask'-type simul_efun.
+//   rename_object     : The current object <who> renames object <arg>
+//                       to name <arg2>.
+//   send_imp          : Send UDP-data to host <arg> (deprecated).
+//   send_udp          : Send UDP-data to host <arg>.
+//   set_auto_include_string : Set the string automatically included by
+//                       the compiler (deprecated).
+//   get_extra_wizinfo : Get the additional wiz-list info for wizard <arg>.
+//   set_extra_wizinfo : Set the additional wiz-list info for wizard <arg>.
+//   set_extra_wizinfo_size : Set the size of the additional wizard info
+//                       in the wiz-list to <arg>.
+//   set_driver_hook   : Set hook <arg> to <arg2>.
+//   set_max_commands  : Set the max. number of commands interactive
+//                       object <arg> can issue per second to <arg2>.
+//   limited:          : Execute <arg> with reduced/changed limits.
+//   set_limits        : Set limits to <arg>.
+//   set_this_object   : Set this_object() to <arg>.
+//   shadow_add_action : Add an action to function <arg2> of object <arg>
+//                       from the shadow <who> which is shadowing <arg>.
+//   symbol_variable   : Attempt to create symbol of a hidden variable
+//                       of object <arg> with with index <arg2> in the
+//                       objects variable table.
+//   variable_list     : An attempt to return the variable values of object
+//                        <arg> is made from a different object <who>.
+//   wizlist_info      : Return an array with all wiz-list information.
+//
+// call_out_info can return the arguments to functions and lambda closures
+// to be called by call_out(); you should consider that read access to
+// closures, mappings and pointers means write access and/or other privileges.
+// wizlist_info() will return an array which holds, among others, the extra
+// wizlist field. While a toplevel array, if found, will be copied, this does
+// not apply to nested arrays or to any mappings. You might also have some
+// sensitive closures there.
+// send_udp() should be watched as it could be abused to mess up the IMP.
+// The xxx_extra_wizinfo operations are necessary for a proper wizlist and
+// should therefore be restricted to admins.
+// All other operations are potential sources for direct security breaches -
+// any use of them should be scrutinized closely.
+{
+  // debug_message(sprintf("priv (%O, %O, %O, %O)\n", op, who, arg, arg2));
+  switch(op) {
+    case "bind_lambda":
+      // 'who' is the object to which the lambda is bound to.
+      if ((stringp(arg) && arg[0..6] == "secure/") ||
+         (objectp(arg) && getuid(arg) == ROOTID))
+        return 1;
+      break;
+    case "call_out_info":
+      return 1;
+    case "erq":      if (arg2 == ERQ_RLOOKUP)        return 1;
+      /* FALL THROUGH */
+    case "attach_erq_demon":
+    case "nomask simul_efun":
+    case "set_this_object":
+    case "wizlist_info":
+    case "get_extra_wizinfo":
+    case "set_extra_wizinfo":
+    case "set_extra_wizinfo_size":
+    case "send_imp":
+    case "rename_object":
+    case "input_to":
+    case "limited":
+      if ((stringp(who) && who[0..6] == "secure/") ||
+         (objectp(who) && getuid(who) == ROOTID))
+        return 1;
+      /* FALL THROUGH */
+    default:
+      break;
+    }
+  log_file("PRIVILEGE_VIOLATION",
+           ctime()+"  op: " + op +
+           " who: " + to_string(who) +
+           " arg: " + to_string(arg) + "\n"
+           +backtrace());
+  return -1;
+}
+
+//---------------------------------------------------------------------------
+/* The master object is asked if it is ok to shadow object ob. Use
+ * previous_object() to find out who is asking. */
+int query_allow_shadow (object victim)
+// [+] Validate a shadowing.
+//
+// Arguments:
+//   previous_object(): the wannabe shadow
+//   victim           : the object to be shadowed.
+//
+// Result:
+//   Return 0 to disallow the shadowing, any other value to allow it.
+//   Destructing the shadow or the victim is another way of disallowing.
+//
+// The function should deny shadowing on all root objects, else it might
+// query the victim for clearance.
+{
+    return 0;
+}
+
+//---------------------------------------------------------------------------
+int valid_trace (string what, mixed arg)
+// [+] Check if the player is allowed to use tracing.
+//
+// Argument:
+//   what: The actual action (see below).
+//   arg:  int|string The argument given to the traceing efun.
+//
+// Result:
+//   Return 0 to disallow, any other value to allow it.
+//
+// Actions asked for so far are:
+//   "trace":       Is the user allowed to use tracing?
+//                  <arg> is the tracelevel argument given.
+//   "traceprefix": Is the user allowed to set a traceprefix?
+//                  <arg> is the prefix given.
+{
+  return IS_ARCH(what);
+}
+
+//---------------------------------------------------------------------------
+int valid_exec (string name, object ob, object obfrom)
+// [+] Validate the rebinding of an IP connection by usage of efun exec().
+//
+// Arguments:
+//    name  : The name of the _program_ attempting to rebind the connection.
+//            This is not the file_name() of the object, and has no leading
+//            slash.
+//    ob    : The object to receive the connection.
+//    obfrom: The object giving the connection away.
+//
+// Result:
+//   Return a non-zero number to allow the action,
+//   any other value to disallow it.
+{
+    switch(name) {
+      case "secure/login.c":
+      case "secure/master.c":
+        if (!interactive(ob)) {
+          return 1;
+        }
+    }
+    return 0;
+}
+
+//---------------------------------------------------------------------------
+/* Snooping stuff is handled here. Allow access to the efuns only via an object
+ * with a root id. The main snoop stuff is hanlded by simul_efun.c */
+int valid_query_snoop (object obj)
+// [+] Validate if the snoopers of an object may be revealed by usage of the
+// efun query_snoop().
+//
+// Arguments:
+//   previous_object(): the asking object.
+//   obj              : the object which snoopers are to be revealed.
+//
+// Result:
+//   Return a non-zero number to allow the action,
+//   any other value to disallow it.
+{
+    return getuid(previous_object()) == ROOTID;
+}
+
+//---------------------------------------------------------------------------
+/* Snooping stuff is handled here. Allow access to the efuns only via an object
+ * with a root id. The main snoop stuff is hanlded by simul_efun.c */
+int valid_snoop (object snoopee, object snooper)
+// [+] Validate the start/stop of a snoop.
+//
+// Arguments:
+//   snoopee: The victim of the snoop.
+//   snooper: The wannabe snooper, or 0 when stopping a snoop.
+//
+// Result:
+//   Return a non-zero number to allow the action,
+//   any other value to disallow it.
+{
+    return getuid(previous_object()) == ROOTID;
+}
+
+//---------------------------------------------------------------------------
+// Fin de las funciones inherentes
+//---------------------------------------------------------------------------

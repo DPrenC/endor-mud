@@ -1,0 +1,12 @@
+[1mCOMANDO[0m
+  mostrar <objeto> a <jugador>
+
+[1mDESCRIPCION[0m
+  Muestras el objeto al jugador que deseas, de tal forma que no tienes que
+  darselo o dejarlo en el suelo para que el otro vea como es.
+
+[1mEJEMPLOS[0m
+  mostrar espada a woo
+
+[1mTEMAS RELACIONADOS[0m
+  inventario

@@ -1,0 +1,21 @@
+SINOPSIS
+    xcall <objeto>-><funcion>(<argumentos>)
+
+DESCRIPCION
+    Hace una llamada a la <funcion> del <objeto> con sus <argumentos>.
+    Esta incluido el archivo <properties.h> por lo tanto se pueden usar
+    cualquiera de sus definiciones. Al igual, tambien estan definidos
+    tres objetos: "me" representa al wiz que ha ejecutado el comando xcall,
+    "here" representa la habitacion donde te encuentras y "obj" es el objeto
+    que contiene la funcion que estamos ejecutando. Si la llamada devolviera
+    un objeto se almacenaria en la variable $result.
+    La funcion 'get(string)' devolvera un objeto y se puede utilizar de
+    la forma abajo mencionada.
+
+EJEMPLOS
+    xcall $me->Query(P_LONG)
+    xcall /std/thing#145->Set(P_SHORT,"un objeto")
+    xcall /secure/master->add_domain_wiz("simauria", "woo")
+    xcall $me->move(get("^woo"),"go")
+    (Se usa la funcion get() para hallar la habitacion donde se encuentra woo)
+

@@ -1,0 +1,84 @@
+   *************************************************************
+                   [52mREGLAS DEL BUEN MEMBER[0m
+   *************************************************************
+ 
+    [52m1.[0m     [52mNo subir archivos de prueba[0m si no es estrictamente 
+        necesario. Cada member de  kenton tiene un espacio en 
+        [56m/miembros/[0m  y  uno muy  bonito  en [56m/players/[0m
+        para hacer pruebas.  La zona se desarrollará  en esos 
+        dos sitios (el que prefirais)  y [52mcuando esté lista se 
+        migrará[0m  por completo.  Si no esto se convierte en un 
+        basurero con cientos de archivos repetidos y backups.[0m
+
+    [52m2.[0m     [52mRespetar la estructura de directorios[0m. No se podrá 
+        poner un pnj en el directorio de objetos ni en ningún
+        directorio  de pnj  fuera de su zona. Ejemplo: un pnj
+        de    flenton  irá  en   [56m/comun/pnj/flenton/[0m  no   en
+        [56m/comun/pnj/[0m  ni  cosas  por  el estilo.  Esto se hace
+        para tener algo de orden. Dentro del directorio de la
+        zona se  pueden poner  subdirectorios a vuestro gusto
+        (bosque, casas, comercio,  sotano...). No hace  falta
+        crear  un  subdirectorio  para  un  solo archivo.  No
+        hagais subdirectorios dentro del directorio de vuestra
+        zona a menos que vayais a meter varios archivos.[0m
+
+    [52m3.[0m     [52mTODOS los archivos  deberán tener  cabecera[0m con el 
+    	nombre del archivo, el autor, su fecha de creacion un 
+    	espacio reservado para apuntar futuras modificaciones 
+    	por bugs, typos y cambios de cualquier tipo.[0m
+
+    [52m4.[0m     [52mTODAS las alusiones a rutas[0m  para enlazar o clonar
+        archivos  [52mestarán  en función  de los defines[0m.  Si se 
+        necesita la ruta de otro dominio consultad. Se podría
+        meter un define exclusivo para eso en el dominio y así
+        en caso de  cambios sería prácticamente  automático y 
+        no se tendrá que estar escarbando como un topo. [52mNunca[0m
+        [52mponer rutas relativas,  siempre completas  usando los[0m
+        [52mdefines.[0m
+
+    [52m5.[0m       En   [56m/mapas/[0m  habrá  2  directorios,   ascii y
+        gif, en  el que se [52msubirán  los mapas de  la zona[0m que
+        se haga.  Recomiendo el  ASCII MapMaker que graba  en
+        ascii y puedes  capturar una  imagen muy  chula de la
+        zona con  cualquier  programa  de capturar  imágenes.
+        Después, si  podeis, los editais  para poner  ciertas
+        referencias. Cuando leais  esto ya debe haber alguno,
+        miradlos.
+    
+    [52m6.[0m     [52mTodas las  quest deberán  tener un log standard[0m en
+    	[56mcomun/quest/[0m.  En este directorio  no habrá pnjs  ni
+    	nada  relacionado  con la quest,  solo  logs. Habrá
+    	tambien un  txt con la explicación  para resolverla,
+    	ya se verá, detallando que  archivos son  usados en
+    	el  quest, cuales  son  los  pasos  a  seguir  para 
+    	resolverlo,  la dificultad y que  recompensa se  da.
+    	Este  archivo  una vez este  el  quest  activado  se 
+    	trasladará       al    secure,   para   evitar   que 
+    	mi-amigo-wizard(TM)  pueda  facilitar  la resolución 
+    	de la quest[0m
+    
+    [52m7.[0m     Los archivos deberán  estar [52mordenados e identados[0m. 
+        En todos se usarán  [52mcabeceras standard[0m  como las  que
+        hay  ahora. Se  subirán en [52mformato UNIX[0m :) y [57mel Lord/
+        Lady[0m  se  reservo  el   derecho   de   identarlos  y 
+        ordenarlos[0m  para  que sean  más  claros de leer, sin
+        modificar  el código (a no ser  que tengan bugs), en 
+        cuyo  caso  se  añadirá  una  reseña en la  cabecera.
+        Acostumbraros  a usar  los [52mAddRoomCmd[0m en  lugar de
+        los add_action en las habitaciones, así os librais de
+        usar  el  init() en  habitaciones  simples  que no lo 
+        necesitarían a no ser  por el add_action.[0m
+        
+    [52m8.[0m     En  los  path.h [52mno debe[0m, y  repito, [52mno debe[0m haber
+        defines. Sólo una referencia al path.h superior. [52mTodas,[0m
+        y repito, [52mTodas[0m las habitaciones  tienen que heredar
+        la habitación  estándar del dominio, o, en su defecto, 
+        una  habitación estándar  hecha para la zona la  cual 
+        debe heredar la habitación estándar del dominio. [0m
+        
+    [52m9.[0m     Evidentemente al que borre cosas vitales...  se lo
+        carga Zomax.
+
+
+
+   *************************************************************

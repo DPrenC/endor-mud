@@ -1,0 +1,37 @@
+[1mCOMANDO[0m
+  ir               <objetivo>
+  ir mon[struo]    <nombre>
+  ir jug[ador]     <nombre>
+  ir obj[eto]      <spec>|<fichero>
+  ir hab[itacion]  <spec>|<fichero>
+  ir objetivo      <nombre>
+
+[1mDESCRIPCION[0m
+  Te teletransporta a una habitación, junto a un jugador, etc.. Utilizando
+  las palabras clave 'monstruo', 'jugador', 'objeto', 'habitacion' se puede
+  especificar más claramente el objetivo. Si no se especifica la palabra
+  clave se intentan todas las variantes hasta que encuentra un objetivo.
+
+  ir monstruo|jugador <nombre> te lleva a la habitación donde se encuentra
+     el jugador/monstruo.
+  ir objeto <spec>|<fichero> te teletransporta a la habitación donde se
+     encuentra ese objeto.
+  ir habitacion <spec>|<fichero> te teletransporta a esa habitación. En el
+     caso de que esa habitación no esté cargada el comando la intenta cargar
+     primero.
+  ir objetivo <nombre> te teletransporta hasta el objetivo definido con
+     anterioridad mediante el comando 'objetivo'.
+
+  <spec> es la especificación del objeto igual que sería al tirar/coger.
+  <fichero> es el nombre del fichero del objeto en cuestión, la extensión
+  (.c) es ignorada.
+   
+[1mEJEMPLOS[0m
+  ir woo
+  ir obj /d/goldhai/comun/objeto/espada#346
+  ir hab /d/goldhai/comun/habitacion/crowy/callejon
+  ir piedra en bolsa
+  ir objetivo bar
+
+[1mTEMAS RELACIONADOS[0m
+  objetivo, trans, en

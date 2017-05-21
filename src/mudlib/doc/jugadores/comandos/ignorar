@@ -1,0 +1,23 @@
+[1mCOMANDO[0m
+  ignorar <quien> [ <minutos> | siempre ]
+  ignorar gritos
+  ignorar a todos
+
+[1mDESCRIPCION[0m
+  Con este comando podras ignorar a la gente que te resulte tan indeseable
+  como para querer no saber nada de lo que dice. Le puedes ignorar bien
+  para siempre o bien por un cierto numero de minutos, y con ello no veras
+  ni sus 'telepatias' ni aquello que dice en la habitacion.
+  Tambien puedes ignorar solamente los gritos de todos los jugadores y
+  si pones como argumento 'a todos' ignoraras tanto los gritos como a todos
+  los jugadores.. casi silencio absoluto.
+   
+[1mEJEMPLOS[0m
+  ignorar ..................... Veras a todos aquellos a los que ignoras
+  ignorar woo 30 .............. Ignoras a woo durante 30 minutos
+  ignorar woo siempre ......... Ignoras a woo siempre
+  ignorar gritos .............. Ignoras todos los gritos
+  ignorar a todos ............. Ignoras a todo el mundo
+
+[1mTEMAS RELACIONADOS[0m
+  designorar, canal, canales, telepatia, decir

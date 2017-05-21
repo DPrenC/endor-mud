@@ -1,0 +1,34 @@
+
+#include <rooms.h>
+
+#include <properties.h>
+#include "path.h"
+
+inherit ROOM;
+
+create()
+{
+  ::create();
+  SetIntShort("el cementerio");
+  SetIntLong(
+    "Te encuentras delante de un pequeño mausoleo.La niebla que hay en esta zona no te "
+    "permite verlo muy bien, pero hay un pequeño camino, bordeado por unos arbustos secos "
+    "y descoloridos . Una pequeña fuente con lo que parece la estatua de un niño se alza "
+    "en un lateral.\n"
+    );
+  SetIndoors(0);
+  SetIntSmell(
+    "El olor nauseabundo de la carne putrefacta se extiende por todos lados.\n"
+    );
+  SetIntNoise(
+    "Oyes como se mueven cosas, arañazos y algun tipo de extraño grito.\n"
+    );
+  AddDetail(({"niebla"}),
+    "La niebla en esta zona se hace mas densa, arremolinandose por tus piernas y haciendo "
+    "que un escalofrio te suba por la espalda.\n"
+    );
+  AddExit("nordeste",ALUTIIN("cementerio/camino5a"));
+  AddExit("oeste",ALUTIIN("cementerio/mausoleo2"));
+  AddExit("sur",ALUTIIN("cementerio/caminox"));
+  SetLocate("cementerio2");
+}

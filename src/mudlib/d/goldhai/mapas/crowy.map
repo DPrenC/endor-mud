@@ -1,0 +1,33 @@
+/*=============================================================*
+ |            << GOLDHAI.mapa   [w] Woo@simauria >>            |
+ |                 MAPA DE LA CIUDAD DE CROWY                  |
+ *=============================================================*
+ |               Creacion.............. 10-01-98               |
+ |               Ultima Modificacion... 12-02-99               |
+ |                                                             |
+ *-------------------------------------------------------------*/
+
+						F - Callejón de Frobbon
+						G - Taberna de Guerreros
+ P-P P-P					C - Calle de Crowy
+ | | | 						P - Parque
+ P-P-P-P-P-C-K F				K - Callejón
+           |   |				B - Banco
+       a q C-B C				J - Entrada Herreria
+       | | |   |				E - Entrada a Crowy
+       C-C-C   C-C-C-C-c			U - Pequeño parque
+           |   |   |				a - Armeria
+           C U-C-G m v r			c - Contrabandistas
+           | | |     | |			q - Tienda de bromas
+     e-J-C-C-C-C-C-Z-Z-Z-f			e - Herreria
+         |   | |   | | |			j - Tienda de Josue
+         j g-E-C-h s b i			h - Mensajeria
+             |					s - Tienda de Smart
+             E					p - Puente
+             |					b - Biblioteca
+             p					i - Iglesia
+             |					f - Fruteria
+      Salida de Crowy				v - Verduleria
+						r - Tienda de ropa
+						m - Mesón
+                                                g - Torre guardianes/lonny

@@ -1,0 +1,10 @@
+[1mCOMANDO[0m
+  shutdown [<tiempo>] <razón>
+
+[1mDESCRIPCION[0m
+  Te permite hacer un reboot de Simauria. La opción <tiempo> es opcional
+  y se cuenta en minutos, por defecto está a 5 minutos.
+   
+[1mEJEMPLOS[0m
+  shutdown Para restaurar el player.c
+  shutdown 3 Por que quiero

@@ -1,0 +1,30 @@
+[1mCOMANDO[0m
+  historico
+
+[1mDESCRIPCION[0m
+  Todos los comandos que vas realizando se van guardando en un histórico
+  que te permitirá repetir un comando de manera facil sin tener que escribirlo
+  de nuevo. Si escribes 'historico' te aparecerán los comandos guardados.
+  En el histórico se guardan unicamente los 15 últimos comandos.
+  %      repite el ultimo comando ejecutado
+  %2     repite el comando guardado en la posición 2 del histórico (si existe)
+  %<str> repite el ultimo comando que comience por <str>
+  No se guardan en el histórico ni 'historico' ni los comandos '%'.
+   
+[1mEJEMPLOS[0m
+  Si escribes 'historico' puede aparecer algo como:
+  5: entrar casa
+  4: mirar casa
+  3: sur
+  2: coger piedra
+  1: este
+
+  '%'    seria 'este'
+  '%1'   seria 'este'
+  '%2'   seria 'coger piedra'
+  '%3'   seria 'sur'
+  '%cog' seria 'coger piedra'
+  etc...
+  
+[1mTEMAS RELACIONADOS[0m
+  alias, hacer

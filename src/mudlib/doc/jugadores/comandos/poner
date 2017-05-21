@@ -1,0 +1,16 @@
+[1mCOMANDO[0m
+  poner <objeto(s)> en <contenedor>
+  poner <objeto(s)> sobre <contenedor>
+
+[1mDESCRIPCION[0m
+  Pones uno o más objetos que esten en tu posesión en un <contenedor>.
+  <objetos(s)> puede ser un plural u otros objetos que esten en 
+  contenedores. 
+  También puedes usar este comando con objetos que esten en la habitación.
+
+[1mEJEMPLOS[0m
+  poner todas las cervezas en cubo
+  poner cervezas sobre mesa
+
+[1mTEMAS RELACIONADOS[0m
+  tirar, coger, dar, equipar, desequipar

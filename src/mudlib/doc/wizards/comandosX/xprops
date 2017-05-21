@@ -1,0 +1,8 @@
+SINOPSIS
+    xprops <objeto>
+
+DESCRIPCION
+    Visualiza todas las propiedades de un <objeto>.
+      
+EJEMPLOS
+    xprops $me

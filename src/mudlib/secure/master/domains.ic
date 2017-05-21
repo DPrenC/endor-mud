@@ -1,0 +1,49 @@
+static string GetDomainDir(string in)
+{
+  string *dirs;
+  string *indirs;
+  int i, j;
+
+  if (!in) return 0;
+  dirs = get_dir("/d/*");
+  if (!dirs) return 0;
+  indirs = explode(in, "/");
+  for (i=sizeof(indirs); i--; )
+    for (j=sizeof(dirs); j--; )
+      if (dirs[j] == indirs[i]) return dirs[j];
+
+  return 0;
+}
+
+static int IsValidDomainDir(string in, string domain, string wiz)
+{
+  int i;
+  string *indirs;
+
+  if (!in) return(0);
+
+  indirs=explode(in, "/");
+  if (!indirs) return(0);
+  if (sizeof(indirs) < 3) return(0);
+  if (indirs[1] != "d" || indirs[2] != domain) return(0);
+  if (IsMember(wiz, domain))
+  {
+    if (sizeof(indirs)<4) return(0);
+    if (indirs[3] == "comun") return(1);
+    if (indirs[3] == "miembros")
+      if (sizeof(indirs)>3)
+        if (indirs[4] == wiz) return(1);
+
+    return(0);
+  }
+  if (IsViceLord(wiz, domain))
+  {
+    if (sizeof(indirs)>3)
+      if (indirs[3] == "secure") return(0);
+    return(1);
+  }
+  if (IsLord(wiz, domain))
+    return(1);
+
+  return(0);
+}

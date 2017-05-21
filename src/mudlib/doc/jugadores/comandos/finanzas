@@ -1,0 +1,16 @@
+[1mCOMANDO[0m
+  finanzas
+
+[1mDESCRIPCION[0m
+  Con este comando puedes ver el estado de tus finanzas, obteniendo
+información de todas tus cuentas, o de alguna cuenta en particular.
+
+[1mEJEMPLOS[0m
+  finanzas ?: Muestra la ayuda sobre el comando.
+  finanzas: Muestra el dinero que tienes en cada cuenta y el total acumulado.
+  finanzas breve: Muestra una tabla resúmen de todas tus cuentas y del
+  dinero acumulado.
+  finanzas de <banco>: Te muestra información sobre tu cuenta en el banco <banco>.
+  
+[1mTEMAS RELACIONADOS[0m
+  

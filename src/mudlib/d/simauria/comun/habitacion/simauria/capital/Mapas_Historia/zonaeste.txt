@@ -1,0 +1,91 @@
+h20cn 
+|  \
+NE - pn19
+|     |     
+E41  h41cn- h42cn
+|
+E40    h1c1e   h2c1e   h3c1e
+|       |       |      |  
+E39- -c1e1 -- c1e2 -- c1e3 -- c1e4
+|       |       |        |      | 
+E38   h4c1e   h5c1e   h6c1e    h7c1e - h8c1e
+|                    
+E37   h1c2e   h2c2eO   h3c2e   h4c2e   h5c2e   h6c2e
+|       |      |        |      |       |        |
+E36 - c2e1 -- c2e2 -- c2e3 -- c2e4 -- c2e5 -- c2e6 -- c2e7
+|       |      |        |      |       |        |      | 
+E35   h6c2e   h7c2e  h8c2e   h9c2e   h10c2e   h11c2e  h12c2e - h13c2e
+|
+E34   h1c3e   h2c3e   h3c3e   h4c3e   h5c3e   h6c3e   h7c3e   h8c3e   h9c3e 
+|        |      |       |        |       |       |       |      |       |
+E33 -- c3e1 -- c3e2 -- c3e3 -- c3e4 -- c3e5 -- c3e6 -- c3e7 -- c3e8 -- c3e9 -- c3e10
+|        |      |       |        |       |       |       |      |      |      | 
+E32   h10c3e  h11c3e  h12c3e  h13c3e  h14c3e  h15c3e  h16c3e  h17c3e  h18c3e  h19c3e - h20c3e
+|
+E31 -  c4e1 -  c4e2 -  c4e3 - c4e4 -  c4e5 -  c4e6 - c4e7 -  c4e8 -  c4e9 --  c4e10 -- c4e11 -  c4e12
+|        |      |       |      |       |       |       |      |        |        |        |         |   \
+E30 -  c5e1 -  c5e2  - c5e3 - c5e4  - c5e5 -  c5e6 - c5e7 -  c5e8 -  c5e9 -- c5e10 --  c5e11 -- c5e12 -  B18
+|        |      |       |      |       |       |       |       |       |        |        |        |      |
+E29   h1c5e   h2c5e   h3c5e   h4c5e   h5c5e   h6c5e   h7c5e   h8c5e   h9c5e   h10c5e   h11c5e   h12c5e  B17
+|                                                                                                        |
+E28   h1c6e   h2c6e    h3c6e    h4c6e   h5c6e  h6c6e  h7c6e   h8c6e   h9c6e    h10c6e  h11c6e  h12c6e   B16
+|        |      |       |       |       |       |        |       |       |       |       |        |      |
+E27 -  c6e1  -  c6e2  - c6e3 -  c6e4  - c6e5  -c6e6  - c6e7  - c6e8  - c6e9  - c6e10 - c6e11 -  c6e12 - B15
+|        |      |       |       |        |      |        |       |       |       |        |        |     |
+E26  h13c6e  h14c6e  h15c6e   h16c6e   h17c6e  h18c6e  h19c6e  h20c6e  h21c6e  h22c6e  h23c6e  h24c6e   B14
+|                                                   |
+E25     h1c7e  h2c7e   h3c7e   h4c7e   h5c7e   h6c7e    h7c7e   h8c7e   h9c7e   h10c7e   h11c7e   h12c7e B13
+|        |       |       |       |        |       |        |      |        |       |        |       |     |
+E24 -  c7e1  - c7e2 -  c7e3 -  c7e4 -  c7e5 -  c7e6 -  c7e7 -   c7e8 -  c7e9 -  c7e10 -  c7e11 -  c7e12- B12
+|        |      |       |        |        |       |        |      |        |       |        |       |     |
+E23   h13c7e  h14c7e  h15c7e  h16c7e  h17c7e   h18c7e   h19c7e  h20c7e  h21c7e  h22c7e   h23c7e  h24c7e  B11
+|                                                                                                         |
+E22    h1c8e  h2c8e   h3c8e   h4c8e  h5c8e   h6c8e   h7c8e   h8c8e    h9c8e    h10c8e   h11c8e   h12c8e  B10
+|        |      |     |       |       |       |       |       |        |        |         |       |       |
+L1 ---  L2 --- L3 -- L4 ---  L5 ---  L6 ---  L7 ---  L8 ---  L9 ---   L10 ---  L11 ---  L12 --- L13 ---   U
+|        |      |     |       |       |       |       |       |        |         |        |       |       |
+E20  h13c8e  h14c8e  h15c8e  h16c8e  h17c8e  h18c8e  h19c8e  h20c8e   h21c8e   h22c8e   h23c8e   h24c8e   B9
+|                                                                                                         |
+E19  h1c9e   h2c9e   h3c9e   h4c9e   h5c9e   h6c9e   h7c9e    h8c9e   h9c9e   h10c9e   h11c9e   h12c9e    B8
+|        |      |      |       |       |       |        |       |       |        |        |        |      |
+E18 - c9e1  - c9e2  - c9e3  - c9e4  -  c9e5 -  c9e6 -  c9e7 -  c9e8 - c9e9  - c9e10  - c9e11  - c9e12  -  B7
+|        |      |      |       |       |       |        |       |        |       |        |        |      |
+E17  h13c9e  h14c9e  h15c9e  h16c9e  h17c9e  h18c9e  h19c9e  h20c9e   h21c9e   h22c9e   h23c9e   h24c9e   B6
+|                                                                                                         |
+E16   h1c10e  h2c10e  h3c10e  h4c10e  h5c10e  h6c10e  h7c10e h8c10e  h9c10e   h10c10e  h11c10e  h12c10e   B5
+|        |     |       |       |       |       |        |       |      |        |        |        |       |
+E15 - c10e1- c10e2 - c10e3 - c10e4 - c10e5 - c10e6 - c10e7 - c10e8 - c10e9 - c10e10 - c10e11 - c10e12-  - B4
+|        |     |       |       |       |       |        |       |      |        |        |        |       |
+E14 h13c10e h14c10e h15c10e h16c10e h17c10e h18c10e h19c10e h20c10e  h21c10e  h22c10e  h23c10e  h24c10e   B3
+|                                                                                                         |
+E13   h1c11e  h2c11e  h3c11e  h4c11e  h5c11e   h6c11e  h7c11e  h8c11e  h9c11e   h10c11e  h11c11e  h12c11e B2
+|       |       |      |       |        |       |       |       |       |        |         |        |     |
+E12 - c11e1-  c11e2-  c11e3-  c11e4-  c11e5-  c11e6-  c11e7-  c11e8-  c11e9-   c11e10-   c11e11- c11e12 - B1
+|       |       |      |       |        |       |       |       |       |        |         |        |   /
+E11 - c12e1-  c12e2-  c12e3-  c12e4-  c12e5-  c12e6-  c12e7-  c12e8-  c12e9-  c12e10-  c12e11-  c12e12
+|                                               
+E10   h1c13  h2c13e  h3c13e  h4c13e  h5c13e  h6c13e  h7c13e  h8c13e  h9c13e  h10c13e - h11c13e
+|    \   |      |      |       |      |      |       |       |        |      |
+E9 -  c13e1- c13e2- c13e3-  c13e4-  c13e5-  c13e6-  c13e7-  c13e8-  c13e9- c13e10
+|      |    \          |      |       |       |      |       |        |
+E8   h12c13  Jse1   h13c13  h14c13  h15c13  h16c13  h17c13  h18c13  h19c13
+|                  \ 
+E7   h1c14e   h2c14e   Jse2    h3c14e   h4c14e   h4c14e  h5c14e - h6c14e
+|       |       |        |  \  |        |      |       | 
+E6  -  c14e1 - c14e2-  c14e3- c14e4-  c14e5- c14e6-  c14e7
+|       |       |       |       |    \ |       |
+E5    h7c14e  h8c14e  h9c14e  h10c14e  Jse3    h11c14e
+|                                        |
+E4   h1c15e   h2c15e   h3c15e   h6c15e  h7c15e
+|       |        |      |        |    /
+E3 -  c15e1-   c15e2-   c15e3- c15e4
+|       |        |      |
+E2 - h8c15e - h9c15e - h10c15e
+|
+E1    h21cs - h22cs
+|      | 
+SE-  ps19
+|   /
+h42cs
+
+

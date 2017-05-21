@@ -1,0 +1,14 @@
+LISTA DE HECHIZOS DEL GREMIO
+----------------------------
+
+ -------------------------------------------------------------------
+|  Nombre             | Nivel | Nivel | Puntos | Tipo    | Dominio  |
+|  Hechizo            | Hacer | Memor | Magia  | Conjuro |          |
+|-------------------------------------------------------------------|
+| Golpe de Descarga   |   1   |   1   |   15   | ATAQUE  | Laurelin |
+| Lanza de Fuego      |   1   |   5   |   15   | ATAQUE  | Simauria |
+| Bola de Fuego       |   5   |  10   |   20   | ATAQUE  | Kenton   |
+| Campo de Fuerza     |   7   |  13   |   20   | DEFENSA |Mithondrin|
+| Proyectil electrico |   8   |  15   |   25   | ATAQUE  | Berat    |
+ -------------------------------------------------------------------
+ 

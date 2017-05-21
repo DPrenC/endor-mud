@@ -1,0 +1,7 @@
+SINOPSIS
+    xcmds [objeto]
+
+DESCRIPCION
+    Visualiza todos los comandos que puede realizar un [objeto]. En caso de
+    no especificar ningun objeto devolveria los comandos de la habitacion
+    donde te encuentras.

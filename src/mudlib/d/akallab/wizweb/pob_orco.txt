@@ -1,0 +1,89 @@
+PROYECTO : Poblado orco
+DOMINIO  : Akallab
+WIZARD   : Angor
+CREACION : 20-05-97
+UPDATE   : 10-10-97
+
+VERSION NO DEFINITIVA [angor] 
+
+--------------------------------------------------------------------------
+1. DESCRIPCION
+2. MAPA DETALLADO
+3. 
+
+--------------------------------------------------------------------------
+1. DESCRIPCION
+
+Este es un poblado orco. Su organizacion es un poco anarquica, ya que 
+los mismos orcos no son muy dados a seguir las normas. Todo el poblado
+ha crecido en torno a la gran casa del jefe que hace las veces de 
+ayuntamiento. Frente a esta casa esta la plaza, centro de todos las
+retorcidas calles del poblado. Dado que son orcos, el poblado 
+no tiene grandes comodidades o diversiones, pero es practico y 
+sobre todo, esta bien armado y defendido. Una empalizada de madera
+rodea todo el poblado y se dispone de una alta torre donde siempre
+alguien vigila por si se aproximan enemigos.
+
+La organizacion basica del poblado es esta:
+
+                                                                        
+               .................. puerta ........................       
+          ....      establos      norte                          ...    
+        ..           ganado         |                    brujo      ..  
+      .                |      .----------.              & altar       . 
+    .            .--- -------/    torre   \                |           .
+   .            /            |    vigia    ----------------------.     .
+  .            |             |   /                                \    .
+  .    bar     |   casa    plaza                                   \   .
+  .  & burdel--|   jefe---central---tiendas   tienda armas madera  |   .
+  .            |         /   |   \            & carpintero         /   .
+  .  guarderia-|--------|    |    \              |                /    .
+  .     .------'        |  meson   \-----------------------------/     .
+  .    |                |          |    |                      |       .
+  .    |  barracas------|          / tienda armas metal     maestro de .
+   .   \   orcos        |---------/  & herrero              armas      .
+    .   ----------------'                                             . 
+     .             |                                                 .  
+      .......... puerta .............................................   
+                  sur                                                   
+
+
+---------------------------------------------------------------------------
+2. MAPA DETALLADO
+
+Este es el mapa detallado de la organizacion de las habitaciones en este
+poblado. 
+                                            puerta_norte
+                                                  |
+                       establo--establo guard---calle---guard   xxxxx            
+                          |       |               |               |              
+        xxxxx   xxxxx   redil---ganado  calle---calle---calle---xxxxx   xxxxx    mago---almacen
+                  |       |               |       |       |               |       |
+        xxxxx---calle---calle---calle---calle---torre  _calle---calle---calle_   hall---altar
+                  |                       |       |   /                       \_  |
+show----mesas   calle   jefe_0--jefe_0  plaza---plaza---ultram--almacen xxxxx   calle---calle
+          |       |               |       |   X   |                                       |
+esc_0----bar----calle   jefe_0--jefe_0--plaza---plaza---tienda--almacen arcos---almacen calle
+                  |                       |   X   |                       |               |
+crios---calle---calle---calle---calle---calle---calle_--curand--almacen porche--carpin _calle
+     _/                           |               |   \_                  |           /
+calle   taqui--camas_h--porche--calle   habit---meson   calle---calle---calle---calle-
+  |                       |       |               |       |       |               |         
+calle_  taqui--camas_m--porche--calle   almac---cocina _calle---porche--fragua swmastr
+      \_                          |                  _/           |   
+        calle---calle---calle---calle---calle---calle---xxxxx  armeria--almacen
+                  |               |               |
+                xxxxx   guard---calle---guard  establo
+								  |
+							  puerta_sur
+
+
+Algunos nombres que no quedan muy claros
+
+almac : almacen de comida del meson
+habit : cuartucho alquilable en el meson
+jefe_0: planta baja de la casa del jefe
+jefe_1: primera planta de la cas del jefe
+p_dorm: porche de la barrca dormitorio
+
+(completar)

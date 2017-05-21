@@ -1,0 +1,30 @@
+LISTA DE CONJUROS DEL GREMIO
+----------------------------
+
+ -------------------------------------------------------------
+|  Nombre             | Nivel | Nivel | Puntos | Tipo         |
+|  Conjuro            | Hacer | Memor | Magia  | Conjuro      |
+|-------------------------------------------------------------|
+| Enjambre            |   1   |   5   |   20   | ATAQUE       |
+| Identificar Hierba  |   1   |   5   |   10   | CONOCIMIENTO |
+| Oscuridad           |   1   |   6   |   10   | LUZ          |
+| Esfera Luminosa     |   1   |   6   |   10   | LUZ          |
+| Esfera de Oscuridad |   1   |   6   |   10   | LUZ          |
+| Lanza de Acido      |   1   |   7   |   10   | ATAQUE       |
+| Hogaza de pan       |   1   |   8   |   12   | CREACIÓN     |
+| Invocar victima     |   1   |   8   |   16   | CREACIÓN     |
+| Maza del Infierno   |   1   |  10   |   20   | CREACIÓN     |
+| Familiar            |   1   |  10   |   15   | ALTERACION   |
+| Piel de Piedra      |   1   |  12   |   16   | ALTERACIÓN   |
+| Coraza Ligera       |   5   |  16   |   23   | CREACIÓN     |
+| Meteorito           |   7   |  22   |   40   | ATAQUE       |
+| Elemental de Fuego  |  10   |  25   |   55   | CREACIÓN     |
+| Frio Intenso        |   1   |  25   |   15   | ATAQUE       |
+| Agrandar Objeto     |  10   |  27   |   25   | ALTERACIÓN   |
+| Reducir Objeto      |  10   |  27   |   25   | ALTERACIÓN   |
+| Espada Sagrada      |  15   |  30   |   40   | CREACIÓN     |
+| Apocalipsis         |  25   |  35   |   90   | ATAQUE       |
+| Puerta Dimensional  |  25   |  35   |  100   | TRANSPORTE   |
+| Elemental Mayor     |  30   |  50   |  100   | CREACIÓN     |
+ -------------------------------------------------------------
+ 

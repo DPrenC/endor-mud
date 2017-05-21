@@ -1,0 +1,16 @@
+SYNOPSIS
+    string strip_article (string text)
+
+DESCRIPTION
+    Españolizado: quita el artículo del inicio de la cadena, de haberlo, y
+    devuelve el resto. Los artículos q actualmente elimina son:
+      "un", "una", "unos", "unas", "el", "la", "los", "las"
+    Any "a ", "an " or "the " is removed from the start of <text> if
+    necessary. The remainder is returned.
+
+EXAMPLE
+    strip_article("a cart")  --> "cart"
+    strip_article("the gem") --> "gem"
+
+SEE ALSO
+    strip_a(SEFUN), add_a(SEFUN)

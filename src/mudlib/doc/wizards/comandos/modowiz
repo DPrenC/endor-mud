@@ -1,0 +1,10 @@
+[1mCOMANDO[0m
+  modowiz [si|no]
+
+[1mDESCRIPCION[0m
+  Te permite activar o desactivar tu propiedad de wiz que te hace inmortal.
+  Sin argumentos visualizas tu modo actual.
+   
+[1mEJEMPLOS[0m
+  modowiz si
+  modowiz no

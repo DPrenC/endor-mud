@@ -1,0 +1,16 @@
+[1mCOMANDO[0m
+  empuñar <objeto(s)>
+
+[1mDESCRIPCION[0m
+  Empuña uno o varios objetos que lleves en tu inventario. Por supuesto
+  si alguno de ellos no lo puedes empuñar porque no es de tu tamanyo o
+  porque ya llevas ocupadas las manos pues te devolverá el consiguiente
+  mensaje de error.
+   
+[1mEJEMPLOS[0m
+  empuñar espada
+  empuñar espada y hacha
+  empuñar espada, hacha y lanza (en el caso que puedas empuñar 3 cosas)
+
+[1mTEMAS RELACIONADOS[0m
+  desempuñar, equipar, desequipar, ponerse, quitarse

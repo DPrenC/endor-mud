@@ -1,0 +1,4 @@
+SetIntNoise("Sopla una suave brisa desde el este.\n");
+SetIntSmell("Hueles el fresco aroma del campo.\n");
+SetLocate("valle de Azzor");
+SetIndoors(0);

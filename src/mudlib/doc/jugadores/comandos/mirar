@@ -1,0 +1,23 @@
+[1mCOMANDO[0m
+  mirar [<objeto(s)>]
+  mirar <detalle> de/en <objeto>
+
+[1mDESCRIPCION[0m
+  Miras uno o varios objetos y te da una descripción. Si pones 'mirar' sin
+  argumentos te mostrará la información referente a la habitación donde
+  estés. También puedes mirar un objeto, da igual que este en la habitación
+  o que lo tengas en tu inventario, así como a otro jugador o pnj. Existe
+  la abreviación 'm'.
+  Asimismo, puedes examinar con mayor profundidad un objeto o pnj siempre y
+  cuando indiques 'que' es lo que quieres mirar de 'que' objeto.
+   
+[1mEJEMPLOS[0m
+  mirar
+  mirar habitacion
+  mirar arbol
+  mirar antorcha,orco
+  mirar cara de orco
+  mirar inscripción en cubo
+
+[1mTEMAS RELACIONADOS[0m
+  examinar, oler, escuchar

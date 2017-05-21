@@ -1,0 +1,13 @@
+[1mCOMANDO[0m
+  coger <objeto(s)>
+
+[1mDESCRIPCION[0m
+  Coge uno o varios objetos de la habitación o de algún otro lugar.
+  Obviamente no puedes coger más objetos de los que puedes llevar.
+   
+[1mEJEMPLOS[0m
+  coger espada
+  coger gemas de la bolsa, cerveza del cofre y todas las antorchas
+
+[1mTEMAS RELACIONADOS[0m
+  tirar, dar, poner, equipar, desequipar

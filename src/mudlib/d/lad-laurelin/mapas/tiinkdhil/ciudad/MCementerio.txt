@@ -1,0 +1,84 @@
+Mapa del Cementerio.
+
+Nivel del suelo.
+
+  	Simple.
+	 --------------
+ 	| CEMENTERIO |
+	 ----------------------
+	 |      3   3         |
+ 	 |      |   |         |
+	 |  O - O - O         |
+ 	 |  |         \       |
+	_|  O   3   3   O     |
+	    |   |   |   |     |
+      -(1)- O - O - O - O - 2 |
+	_   |   |   |   |     |
+	 |  O   3   3   O     |
+	 |  |         /       |
+	 |  O - O - O         |
+	 |      |   |         |
+	 |      3   3         |
+	 ----------------------
+
+ Lugares.
+
+  1.- Entrada al cementerio.
+  2.- Gremio Nicromante.
+  3.- Mausoleos.
+
+
+	Completo.
+
+	 --------------
+	 | CEMENTERIO |
+	 ----------------------
+	 |      1   2         |
+	 |      |   |         |
+	 |  3 - 4 - 5         |
+	 |  |         \       |
+	_|  6   7   8   9     |
+	    |   |   |   |     |
+      -(10)-11- 12- 13- 14- 15|
+	_   |   |   |   |     |
+	 |  16  17  18  19    |
+	 |  |         /       |
+	 |  20- 21- 22        |
+	 |      |   |         |
+	 |      23  24        |
+	 ----------------------
+
+ Lugares.
+
+  1.- mausoleo1.c
+  2.- mausoleo2.c
+  3.- camino1.c
+  4.- camino2.c
+  5.- camino3.c
+  6.- camino4.c
+  7.- mausoleo3.c
+  8.- mausoleo4.c
+  9.- camino5.c
+ 10.- entrada.c
+ 11.- camino5.c
+ 12.- camino6.c
+ 13.- camino7.c
+ 14.- camino8.c
+ 15.- bajada1.c
+ 16.- camino9.c
+ 17.- mausoleo5.c
+ 18.- mausoleo6.c
+ 19.- camino10.c
+ 20.- camino11.c
+ 21.- camino12.c
+ 22.- camino13.c
+ 23.- mausoleo7.c
+ 24.- mausoleo8.c
+
+
+
+
+
+
+
+

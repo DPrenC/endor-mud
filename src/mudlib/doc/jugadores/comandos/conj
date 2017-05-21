@@ -1,0 +1,14 @@
+[1mCOMANDO[0m
+conj [<nombre_conjuro>]
+
+[1mDESCRIPCION[0m
+Te informa del nivel de práctica del conjuro <nombre_conjuro> y del nivel máximo
+de aprendizaje.
+
+[1mEJEMPLOS[0m
+conj lanza de acido
+conj invocar victima
+conj espada sagrada
+
+[1mTEMAS RELACIONADOS[0m
+hab.

@@ -1,0 +1,18 @@
+NAME
+	intermud - gossip on the intermud line
+
+SYNOPSIS
+	intermud [message]
+	intermud :[message]
+
+DESCRIPTION
+	With this command you can send messages on the intermud wizard 
+        communication line. All such messages will be prependend with 
+        the string "[Intermud: <your-name>@<your-mud>]" in order for people to 
+        know who sent the message.
+	If you add : to the start of your message and you will emote
+	on the intermud channel.
+
+SEE ALSO
+	wiz, busy, rwho, imuds, mudlist, gwiz, iwho, gtell, itell
+

@@ -1,0 +1,16 @@
+/*
+DESCRIPCION  : bosque alrededor de la fortaleza de nandor
+FICHERO      : bosq061.c
+Creacion	 : 4-7-00 [Maler]
+*/
+
+#include "./path.h"
+inherit ROOMFB("bosque");
+
+create(){
+  ::create();
+ AddExit("nordeste",ROOMFB("bosq055"));
+  AddExit("sur",ROOMFB("bosq070"));
+  AddExit("sudeste",ROOMFB("bosq071"));
+  AnyadirPnjs();
+  }

@@ -1,0 +1,141 @@
+/**
+ * /secure/master/ed.ic
+ *
+ * Archivo para ser incluido por el master. Contiene las funciones de
+ * manejo del ed.
+ */
+
+//===========================================================================
+//  ed() Support
+//
+//===========================================================================
+
+string make_path_absolute(string str); // Absolutize a relative filename given to the editor.
+int save_ed_setup(object who, int code); // Save individual settings of ed for a wizard.
+int retrieve_ed_setup(object who); // Retrieve individual settings of ed for a wizard.
+string get_ed_buffer_save_file_name(string file); // Return a filename for the ed buffer to be saved into.
+
+//---------------------------------------------------------------------------
+
+//string make_path_absolute(string str)
+varargs string make_path_absolute(string str, string user)
+// [+] Absolutize a relative filename given to the editor.
+//
+// Argument:
+//   str : The relative filename (without leading slash).
+//
+// Result:
+//   The full pathname of the file to use.
+//   Any non-string result will act as 'bad file name'.
+/* Absolutiza lo que le llegue sea o no del editor */
+{
+  return "/" + ARRAY_PATH(full_path_array(str, user || (TP?USERNAME(TP):0)));
+}
+
+//---------------------------------------------------------------------------
+/* save_ed_setup and restore_ed_setup are called by the ed to maintain
+   individual options settings. These functions are located in the master
+   object so that the local gods can decide what strategy they want to use.
+   suggestions:
+        A setup file for every wizard.
+                advantages:     transparent to the user
+                                independent of wizard count
+                disadvantage:   extra file access at ed invocation
+        An array in the master object, wizards are searched by member
+                advantage:      easy to implement
+                disadvantage:   performance degradation with high wizard counts
+        An AVL-tree to access wizards by name
+                advantage:      can fit any need
+                disadvantage:   hard to implement, will need more overhead on
+                                small and medium muds than it can ever make
+                                good by lg(wizcount) complexity
+        Dedicated flags in every wizard object, inherited from /obj/living
+                advantages:     easy to implement ( as shown here)
+                                independent of wizard count
+                                Will also work for nonm-wizards.
+                disadvantage:   care has to be taken to avoid collision with
+                                other uses of the /obj/living flags.
+*/
+/*
+ * The wizard object 'who' wants to save his ed setup. It is saved in the
+ * file /players/wiz_name/.edrc . A test should be added to make sure it is
+ * a call from a wizard.
+ *
+ * Don't care to prevent unauthorized access of this file. Only make sure
+ * that a number is given as argument.
+ */
+int save_ed_setup (object who, int code)
+// [+] Save individual settings of ed for a wizard.
+//
+// Arguments:
+//   who : The wizard using the editor.
+//   code: The encoded options to be saved.
+//
+// Result:
+//   Return 0 on failure, any other value for success.
+//
+// This function has to save the given integer into a safe place in the
+// realm of the given wizard, either a file, or in the wizard itself.
+//
+// Be aware of possible security breaches: under !compat, a write_file()
+// should be surrounded by a temporary setting of the masters euid to
+// that of the wizard.
+{
+  return 0;
+}
+
+//---------------------------------------------------------------------------
+int retrieve_ed_setup (object who)
+// [+] Retrieve individual settings of ed for a wizard.
+//
+// Arguments:
+//   who : The wizard using the editor.
+//
+// Result:
+//   The encoded options retrieved (0 if there are none).
+{
+  return 0;
+}
+
+//---------------------------------------------------------------------------
+string get_ed_buffer_save_file_name (string file)
+// [+] Return a filename for the ed buffer to be saved into.
+//
+// Arguments:
+//   this_player(): The wizard using the editor.
+//   file         : The name of the file currently in the buffer.
+//
+// Result:
+//   The name of the file to save the buffer into, or 0.
+//
+// This function is called whenever a wizard is destructed/goes netdeath
+// while editing. Using this function, his editing is not done in vain.
+{
+  return 0;
+}
+
+//---------------------------------------------------------------------------
+// Fin de las funciones inherentes
+//---------------------------------------------------------------------------
+
+/* Build an array out of a path, containing the parts of the path
+ */
+varargs string *full_path_array(string path, string user) {
+  string *strs;
+  int p;
+
+  if (!path) return ({""});
+
+  if (path[0] != '/') { // Miro si es relativo...
+    if (user && TP && USERNAME(TP) == user && TP->QueryCurrentDir())
+      path = TP->QueryCurrentDir() + "/" + path;
+//    else if (user = object_name(PO))
+//      path = user + "/../" + path;
+  }
+
+  strs = PATH_ARRAY(path);
+
+  while ( (p = member(strs, "..")) > -1) strs = strs[..p-2] + strs[p+1..];
+
+  return strs;
+}

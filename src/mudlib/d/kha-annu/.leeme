@@ -1,0 +1,16 @@
+                /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+                DIRECTORIO DE KHA-ANNU [w] Woo    
+                                       [o] Okkita 
+                \/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/
+
+comun/         Directorio donde estan las habitaciones, objetos, etc.. 
+docs/          Documentacion tecnica acerca de Kha-Annu.
+ejemplos/      Ejemplos de codigo: ayuda para wizards de Kha-annu
+historia/      Documentos sobre la historia de Kha-Annu y sus ciudades.
+logs/          Directorio donde se graban todos los logs de este dominio. 
+mapas/         Mapas ASCII de Kha-Annu y sus ciudades.
+miembros/      Donde estan los directorios de los miembros de este dominio. 
+std/           Inherits basicos utilizados en este dominio. 
+sys/           Includes usados en este dominio. 
+
+IMPORTANTE: Leeros las normas del directorio en .reglas

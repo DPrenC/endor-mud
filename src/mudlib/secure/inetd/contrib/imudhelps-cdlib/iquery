@@ -1,0 +1,11 @@
+NAME
+	iquery - 
+
+SYNOPSIS
+	itell <playername>@<mudname> message
+
+DESCRIPTION
+	Tell a player on a remote mud a message. 
+
+SEE ALSO
+	busy, tell, reply

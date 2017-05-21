@@ -1,0 +1,11 @@
+SINOPSIS
+    xclean [objeto]
+
+DESCRIPCION
+    Borra todo el inventario de un objeto pero sin destruir ningun PJ.
+    Si no se introduce ningun argumento eliminaria los objetos de la
+    habitacion donde te encuentres. Los objetos se eliminan haciendo una
+    llamada a la funcion remove().
+
+EJEMPLOS
+    xclean $me.bolsa    Limpiaria de objetos la bolsa de tu inventario.

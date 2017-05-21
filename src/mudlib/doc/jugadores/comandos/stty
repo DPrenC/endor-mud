@@ -1,0 +1,15 @@
+[1mCOMANDO[0m
+  stty [<arg>]
+
+[1mDESCRIPCION[0m
+  Con este comando podrás cambiar tu tipo de terminal entre 'dumb', 'vt100'
+  y 'ansi'. Recuerda que si estás en terminal dumb lo más normal es que no
+  te permita ver los colores y en su lugar te muestre caracteres extraños,
+  en ese caso si estableces el tty a dumb el mud no te enviará ningún tipo
+  de color y podrás visualizar los textos correctamente.
+  Si estableces el modo 'vt100' lo que hace es sustituir los colores por
+  texto en negrita exclusivamente. 'ansi' te permitirá ver todos los colores
+  de una forma correcta, siempre y cuando tu terminal sea del mismo tipo.
+
+[1mTEMAS RELACIONADOS[0m
+  charset

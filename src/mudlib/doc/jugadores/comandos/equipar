@@ -1,0 +1,14 @@
+[1mCOMANDO[0m
+  equipar <objeto(s)>
+  equipar con <objeto(s)>
+
+[1mDESCRIPCION[0m
+  Declara uno o más objetos cargados como objetos de 'equipamiento'.
+  Los objetos deben estar equipados 'a pelo' para hacer esto.
+
+[1mEJEMPLOS[0m
+  equipar con antorcha
+  equipar espada y antorcha
+
+[1mTEMAS RELACIONADOS[0m
+  desequipar, inventario, equipamiento

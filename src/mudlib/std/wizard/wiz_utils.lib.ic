@@ -1,0 +1,825 @@
+/**
+ * SIMAURIA '/std/player/wiz_utils.lib.ic'
+ */
+
+#include <config.h> // Aqui esta definido XPATH
+#include <lpctypes.h>
+#include <properties.h>
+
+#define FMASTER      MASTER
+#define R_NAME       getuid(TP)
+#define RNAME(x)     ((x)?getuid(x):"<ninguno>")
+#define CR_NAME      CAP(RNAME)
+#define CRNAME(x)    CAP(RNAME(x))
+#define LEVEL(x)     query_wiz_level(x)
+#define PWD          (string)TP->QueryCurrentDir()
+#define FORALL(x, y) for(x=first_inventory(y);x;x=next_inventory(x))
+
+#define SUBSTR(x,y,z)      (x)[y..z]
+#define FIRST(x,y)         (x)[0..y]
+#define LAST(x,y)          (x)[<y..]
+#define RIGHT(x,y)         (x)[y..]
+#define LEFT(x,y)          (x)[0..<y]
+#define ALEFT(x,y,z)       sprintf("%-*.*'"+z+"'s", y, y, ""+(x))
+#define ARIGHT(x,y,z)      sprintf("%*.*'"+z+"'s", y, y, ""+(x))
+#define WR(x)              write(x+"\n")
+
+#define ERR_FILE    ( XPATH + RNAME(TI) + ".err" )
+#define LPC_FILE    ( XPATH + RNAME(TI) + ".lpc" )
+#define TMP_FILE    ( XPATH + RNAME(TI) + ".tmp" )
+
+#define MAX_RECURSION      (6)
+#define EXEC_LINES         (15)
+#define EXEC_TIME          (1)
+#define VOID               "/std/void"
+#define TRACE_LEVEL        (1|2|4|8)
+
+#define MDTQS "/obj/lib/mdtqs"
+
+/* ---------------------------------------------
+ * Variables globales
+ */
+static mapping variable;
+static string *scriptline;
+static int scriptsize;
+static object msgto;
+
+/* ---------------------------------------------
+ * Definicion de todas las funciones por orden
+ */
+string *strip_explode(string str, string del);
+string short_path(string file);
+string long_path(string file);
+string pure_file_name(object obj);
+string source_file_name(object obj);
+string *long_get_dir(string pat, int all);
+int string_compare(string str1, string str2);
+string string_replace(string str, string old, string new);
+string lit_string(string str);
+string mixed_to_string(mixed mix, int lvl);
+int is_player(object obj);
+int is_not_player(object obj);
+int is_living(object obj);
+int is_not_living(object obj);
+int is_netdead(object obj);
+int is_alive(object obj);
+int is_snoopee(object who);
+int is_nosnoop(object who);
+int is_invis(object who);
+int is_visib(object who);
+string ObjFile(object obj);
+void PrintShort(string pre, object obj);
+int MoveObj(object obj1, object obj2, int silent);
+string XFindFile(string file);
+object XFindObj(string str);
+object FindObj(string str, object env);
+string XFile(string file);
+object VarToObj(string str);
+string VarToFile(string str);
+string VarToPureFile(string str);
+void XMoreFile(string file, int flag);
+string PlayerIdle(object obj);
+string PlayerAge(object obj);
+string PlayerJobs(object obj, int flag);
+string PlayerWho(object obj);
+string PlayerMail(object obj, int flag);
+string PlayerIP(object obj, int flag);
+string PlayerRace(object obj, int flag);
+string PlayerDomain(object obj, int flag);
+string PlayerStats(object obj, int flag);
+string PlayerSnoop(object obj, int flag);
+void PrintObj(object obj);
+void Destruct(object obj);
+int XGrepFile(string pat, string file);
+void XExecFile(int line);
+void DeepPrintShort(object env, int indent, string pre);
+object *SubNodes(object obj);
+void Inheritance(object obj, string func, string pre);
+void props_to_tmpfile(object obj);
+void DumpProperties(object obj);
+void XMsgSay(string str);
+void XMsgTell(string str);
+void XMsgShout(string str);
+void DeepClean(object obj);
+
+
+/* ---------------------------------------
+ * Implementacion de las funciones
+ */
+
+string *strip_explode(string str, string del) {
+  return explode(str, del)-({""});
+}
+
+string short_path(string file) {
+  int s;
+  string tmp;
+
+  if (!file) return 0;
+  if (TP) {
+    if (FIRST(file, 8)=="/players/") {
+      s=strlen(R_NAME)+8;
+      return "~"+(SUBSTR(file, 9, s)==R_NAME ?
+		  RIGHT(file, s+1) : RIGHT(file, 9));
+    }
+  }
+  if (FIRST(file, 2)=="/d/") return "+"+RIGHT(file, 3);
+  if (FIRST(file, 2)=="/p/") return "&"+RIGHT(file, 3);
+  else return file;
+}
+
+
+string long_path(string file) {
+  return (string)FMASTER->make_path_absolute(file);
+}
+
+string pure_file_name(object obj) {
+  return obj ? explode(object_name(obj), "#")[0] : 0;
+}
+
+string source_file_name(object obj) {
+  return obj ? explode(object_name(obj), "#")[0]+".c" : 0;
+}
+
+string *long_get_dir(string pat, int all) {
+  int i, s;
+  string str, dir, *file, *tmp;
+
+  if (!pat) return ({});
+  pat=long_path(pat);
+  if (tmp=explode(pat, "/")) dir="/"+implode(tmp[0..sizeof(tmp)-2], "/")+"/";
+  else dir="/";
+  s=sizeof(tmp=get_dir(pat));
+  file=({});
+  for(i=0;i<s;i++) {
+    str=dir+tmp[i];
+    if (all||file_size(str)>=0) file+=({str});
+  }
+  return file;
+}
+
+int string_compare(string str1, string str2) {
+  if (str1==str2) return 0;
+  if (str1>str2) return 1;
+  else return -1;
+}
+
+string string_replace(string str, string old, string new) {
+  return implode(explode(str, old), new);
+}
+
+string lit_string(string str) {
+  str=string_replace(str, "\\", "\\\\");
+  str=string_replace(str, "\b", "\\b");
+  str=string_replace(str, "\n", "\\n");
+  str=string_replace(str, "\r", "\\r");
+  str=string_replace(str, "\t", "\\t");
+  return string_replace(str, "\"", "\\\"");
+}
+
+string mixed_to_string(mixed mix, int lvl) {
+  int i, j, s, t;
+  string str;
+  mixed *keys;
+
+  if (lvl) {
+    switch(typeof(mix)) {
+    default:
+    case T_INVALID:
+      return "<invalid>";
+    case T_LVALUE:
+      return "&"+mixed_to_string(mix, lvl-1);
+    case T_NUMBER:
+    case T_FLOAT:
+      return to_string(mix);
+    case T_STRING:
+      return "\""+lit_string(mix)+"\"";
+    case T_POINTER:
+      return "({"+implode(map(mix,"mixed_to_string",TO,lvl-1),",")+"})";
+    case T_OBJECT:
+      return "["+short_path(object_name((object)mix))+"]";
+    case T_MAPPING:
+      s=sizeof(keys=m_indices(mix));
+      t=get_type_info(mix, 1);
+      str="([";
+      for(i=0;i<s;i++) {
+	str+=mixed_to_string(keys[i], lvl-1);
+	if (t) {
+	  str+=":"+mixed_to_string(mix[keys[i],0], lvl-1);
+	  for(j=1;j<t;j++)
+	    str+=";"+mixed_to_string(mix[keys[i],j], lvl-1);
+	}
+	if (i<s-1) str+=",";
+      }
+      return str+"])";
+    case T_CLOSURE:
+    case T_SYMBOL:
+      return sprintf("%O", mix);
+    case T_QUOTED_ARRAY:
+      return "'"+mixed_to_string(funcall(lambda(0, mix)), lvl-1);
+    }
+  }
+  return "...";
+}
+
+int is_player(object obj) {
+  return obj&&obj==find_object(getuid(obj));
+}
+
+int is_not_player(object obj) {
+  return obj&&obj!=find_object(getuid(obj));
+}
+
+int is_living(object obj) {
+  return obj&&living(obj);
+}
+
+int is_not_living(object obj) {
+  return obj&&!living(obj);
+}
+
+int is_netdead(object obj) {
+  return is_player(obj)&&!interactive(obj);
+}
+
+int is_alive(object obj) {
+  return is_player(obj)&&interactive(obj);
+}
+
+int is_snoopee(object who) {
+  return who&&objectp(query_snoop(who));
+}
+
+int is_nosnoop(object who) {
+  return who&&!objectp(query_snoop(who));
+}
+
+int is_invis(object who) {
+  string str;
+
+  if (!who) return 0;
+  str=(string)who->QueryShort();
+  return !str || !str[0];
+}
+
+int is_visib(object who) {
+  string str;
+
+  if (!who) return 0;
+  str=(string)who->QueryShort();
+  return str&&str[0];
+}
+
+string ObjFile(object obj) {
+  return "["+short_path(obj?object_name(obj):"<destruido>")+"]";
+}
+
+void PrintShort(string pre, object obj) {
+  string str;
+  int size, pos;
+
+  if (!obj) return;
+
+  if (!((str=(string)obj->QueryIntShort()) || (str=(string)obj->Short())))
+  {
+    if (is_player(obj)) str=CRNAME(obj)+" (invisible)";
+    else str="- sin descripcion corta -";
+  }
+
+  size = TP->QueryConsoleWidth();
+  if (size < 80) {
+  	size=80;
+  }
+
+  //[t] Los objetos invisibles aparecen entre parentesis.
+  if (obj->Query(P_MAGIC))
+    str="~"+CAP(str)+"~";
+  if (obj->Query(P_INVIS))
+    str="("+CAP(str)+")";
+  str=ALEFT(CAP(str)+" ", 34, ".")+" ";
+  if (interactive(obj)) str+="i";
+  else if (living(obj)) str+="l";
+  else str+=".";
+  str+=(shadow(obj, 0) ? "s" : ".");
+  while((pos = strstr(str, "\n"))!=-1) {
+  	str[pos]='.';
+  }
+  str = pre+str+" "+ObjFile(obj);
+  if (strlen(str) > size) {
+	WR(FIRST(str, size-1));
+  }
+  else {
+	WR(str);
+  }
+}
+
+int MoveObj(object obj1, object obj2, int silent) {
+  int err;
+  object oldenv;
+
+  if ( !( obj1 && obj2 ) ) return 0;
+
+  oldenv = ENV(obj1);
+  err = (int) obj1->move(obj2, M_SILENT, 0);
+  if (!silent) {
+    if (function_exists("move", obj1)) WR("El objeto tiene una lfun move() definida");
+    switch (err) {
+    case ME_NO_MOVE:
+      WR("El objeto devolvió: ME_NO_MOVE");
+    case ME_OK:
+      WR("El objeto devolvió: ME_OK");
+      if (ENV(obj1) == obj2) {
+	    PrintShort("Mover: ", obj1);
+	    PrintShort("a: ", obj2);
+	    return 1;
+      }
+    case ME_DESTRUCTED_SELF:
+      WR("El objeto devolvió: ME_DESTRUCTED_SELF");
+      if (obj1) {
+	    WR("El objeto continua valido");
+        return 0;
+      }
+    case ME_NO_LEAVE:
+      WR("El objeto devolvió: ME_NO_LEAVE");
+      break;
+    case ME_NO_ENTER:
+      WR("El objeto devolvió: ME_NO_ENTER");
+      break;
+    case ME_TOO_HEAVY:
+      WR("El objeto devolvió: ME_TOO_HEAVY");
+      break;
+    case ME_CAUGHT_ERR:
+      WR("El objeto devolvió: ME_CAUGHT_ERR");
+      break;
+    case ME_NO_DROP:
+      WR("El objeto devolvió: ME_NO_DROP");
+      break;
+    case ME_NO_GET:
+      WR("El objeto devolvió: ME_NO_GET");
+      break;
+    case ME_NO_GIVE:
+      WR("El objeto devolvió: ME_NO_GIVE");
+      break;
+    case ME_TOO_MANY:
+      WR("El objeto devolvió: ME_TOO_MANY");
+      break;
+    case ME_TOO_BIG:
+      WR("El objeto devolvió: ME_TOO_BIG");
+      break;
+    default:
+      WR("El objeto devolvió: valor de retorno desconocido (" + err + ")");
+    }
+    if (!obj1) WR("El objeto ha sido destruido");
+    else if (oldenv && oldenv != ENV(obj1)) WR("El objeto ha sido movido");
+    else WR("El objeto NO ha sido movido");
+    return 0;
+
+  }
+  return 1;
+}
+
+string XFindFile(string file) {
+  if (file=XFile(file)) {
+    if (file_size(file)>=0) return file;
+    if (LAST(file, 3)!=".c"&&file_size(file+".c")>0) return file+".c";
+  }
+  WR("Fichero no encontrado o ilegible ["+short_path(file)+"]");
+  return 0;
+}
+
+object XFindObj(string str) {
+  object obj, env;
+  string *strs;
+  int i, s;
+
+  if (!str) return 0;
+  env=ENV(TI);
+  str=string_replace(str, "\\.", "");
+  str=string_replace(str, "\\^", "");
+  str=string_replace(str, "\\$", "");
+  str=string_replace(str, "\\\\", "\\");
+  s=sizeof(strs=strip_explode(str, "."));
+  while(s--) {
+    if (obj=FindObj(strs[i++], env)) env=obj;
+    else break;
+  }
+  return obj;
+}
+
+object FindObj(string str, object env) {
+  object obj, *inv;
+  string tmp;
+  int num, e, i;
+
+  if (!(str&&env)) return 0;
+  str=string_replace(str, "", ".");
+  while(str[e++]=='^');
+  str=RIGHT(str, --e);
+  str=string_replace(str, "", "^");
+  inv=all_inventory(env);
+  if (obj=VarToObj(str));
+  else if (str[0]=='') str=string_replace(str, "", "$");
+  else if (1==sscanf(str, "%d", num)&&(""+num==str)&&(inv)) {
+    if (num>0&&num<=sizeof(inv)) {
+      obj=inv[num-1];
+    } else {
+      WR("Numero del objeto fuera de rango [1-"+sizeof(inv)+"]");
+      return 0;
+    }
+  }
+  if (obj||(obj=present(str, env))||
+     (obj=find_object(LOWER(str)))||
+     (obj=find_object(long_path(str)))) {
+    while(e--) {
+      if (!(obj=ENV(obj))) {
+	write("El objeto especificado no esta en ningun lado [");
+	while(e--) write("^");
+	WR(str+"]");
+        return 0;
+      }
+    }
+  } else WR("El objeto no existe ["+str+"]");
+  return obj;
+}
+
+string XFile(string file) {
+  if (file) {
+    switch(file[0]) {
+    case '@':
+      return source_file_name(XFindObj(RIGHT(file, 1)));
+    case '$':
+      return source_file_name(XFindObj(file));
+    default:
+      return long_path(file);
+    }
+  }
+  return 0;
+}
+
+object VarToObj(string str) {
+    if (!(str&&str[0]=='$')) return 0;
+    switch(str) {
+        case "$m":
+        case "$me": return TI;
+        case "$h":
+        case "$here": return ENV(TI);
+    }
+    return variable[RIGHT(str, 1)];
+}
+
+string VarToFile(string str) {
+  return source_file_name(VarToObj(str));
+}
+
+string VarToPureFile(string str) {
+  return pure_file_name(VarToObj(str));
+}
+
+void XMoreFile(string file, int flag) {
+  int s;
+  string morefile;
+
+  if (!file) return;
+  if (file_size(morefile=long_path(file))>0)
+    TI->more(morefile);
+  else if (flag) WR("No se puede leer el fichero");
+}
+
+string PlayerIdle(object obj) {
+  string str;
+  int i, tmp;
+
+  if (!obj) return 0;
+  if (!interactive(obj))
+    str="<dsc>";
+  else if ((i=query_idle(obj))>=60) {
+    str=ARIGHT(""+(i/3600), 2, "0");
+    i-=(i/3600)*3600;
+    str+="'"+ARIGHT(""+(i/60), 2, "0");
+  } else str=".....";
+  return str;
+}
+
+string PlayerAge(object obj) {
+  string str;
+  int i, tmp;
+
+  if (!obj) return 0;
+  i=(int)obj->QueryAge();
+  str=" "+ARIGHT(""+(i/43200), 3, ".");
+  i-=(i/43200)*43200;
+  return str+":"+ARIGHT(""+(i/1800), 2, "0");
+}
+
+string PlayerJobs(object obj, int flag) {
+  string str;
+  mixed *data, *userinfo;
+  int i;
+
+  if (!obj) return 0;
+  str=(flag) ? ALEFT(CRNAME(obj)+" ", 12, ".")+" " : "";
+  if (IS_ARCH(TP))
+    str+=ARIGHT(LEVEL(obj)+"", 2, " ")+" ("+(query_wiz_tag(obj, 1)||"Player")+")";
+  else
+    str+=query_wiz_tag(obj, 1)||"Player";
+  userinfo=MASTER->find_userinfo(getuid(obj));
+  data=userinfo && userinfo[3];
+  if (sizeof(data)) {
+    for (i=0; i < sizeof(data); i++) {
+      str+=", ";
+      switch (data[i][0]) {
+        case '*': str+=(obj->QueryGender() < 2?"Lord":"Lady")+" de "+capitalize(data[i][1..]); break;
+        case '+': str+="Vice de "+capitalize(data[i][1..]); break;
+        default : str+="Miembro de "+capitalize(data[i]); break;
+      }
+    }
+  }
+  return str;
+}
+
+string PlayerWho(object obj) {
+  object tmp;
+  string str, stmp;
+
+  if (IS_ARCH(TP))
+    str=ARIGHT(""+LEVEL(obj),  4, " ");
+  else
+    str=ALEFT(LEVEL(obj) ? "Wiz" : "",  4, " ");
+  str+=ALEFT(" "+CRNAME(obj)+" ", 12, ".");
+  str+=PlayerAge(obj);
+  str+=((int)obj->QueryGender()==1 ? " m " : " f ");
+  str+=(obj->QueryFrog())    ? "r" : ".";
+  str+=(obj->QueryGhost())   ? "f" : ".";
+  str+=(obj->QueryInvis())   ? "i" : ".";
+  str+=(query_editing(obj)||query_input_pending(obj) ? "e" : ".");
+  str+=" "+PlayerIdle(obj)+" ";
+  str+=(tmp=ENV(obj)) ? ObjFile(tmp) : "- en ningun lado -";
+  return str;
+}
+
+string PlayerMail(object obj, int flag) {
+  string pre;
+
+  pre=(flag) ? ALEFT(CRNAME(obj)+" ", 12, ".")+" " : "";
+  return pre+"Correo: "+obj->QueryMailaddr();
+}
+
+string PlayerIP(object obj, int flag) {
+  string pre;
+
+  pre=(flag) ? ALEFT(CRNAME(obj)+" ", 12, ".")+" " : "";
+  return pre+"Host: "+query_ip_name(obj)+" ("+query_ip_number(obj)+")";
+}
+
+string PlayerRace(object obj, int flag) {
+  string tmp, pre;
+
+  pre=(flag) ? ALEFT(CRNAME(obj)+" ", 12, ".")+" " : "";
+  pre=pre+"Raza: "+ALEFT(obj->QueryRace()+" ", 10, ".")+
+    " Gremio: ";
+  tmp=(string)obj->QueryGuild();
+  return tmp ? pre+tmp : pre+"- ninguna -";
+}
+
+string PlayerDomain(object obj, int flag) {
+  mixed *domains;
+  string pre;
+
+  pre = (flag) ? ALEFT(CRNAME(obj)+" ", 12, ".")+" " : "";
+  pre += "Dominios: ";
+  domains = MDTQS->GetWizardInfo(obj->QueryRealName());
+
+  if (domains) pre += implode(domains, ", ");
+  else pre += "ninguno.";
+
+  pre = implode(explode(pre, "*"), "lord de ");
+  pre = implode(explode(pre, "+"), "vicelord de ");
+  pre = implode(explode(pre, "-"), "member de ");
+
+  return pre;
+}
+
+string PlayerStats(object obj, int flag) {
+  string pre;
+
+  pre=(flag) ? ALEFT(CRNAME(obj)+" ", 12, ".")+" " : "";
+  pre+="hp="+ARIGHT(obj->QueryHP(), 3, "0");
+  pre+="/"+ARIGHT(obj->QueryMaxHP(), 3, "0");
+  pre+=" sp="+ARIGHT(obj->QuerySP(), 3, "0");
+  pre+="/"+ARIGHT(obj->QueryMaxSP(), 3, "0");
+  pre+=" hambre="+ARIGHT(obj->QueryFood(), 3, "0");
+  pre+="/"+ARIGHT(obj->QueryMaxFood(), 3, "0");
+  pre+=" sed="+ARIGHT(obj->QueryDrink(), 3, "0");
+  pre+="/"+ARIGHT(obj->QueryMaxDrink(), 3, "0");
+  pre+=" exp="+obj->QueryXP();
+
+  return pre;
+}
+
+string PlayerSnoop(object obj, int flag) {
+  string tmp, pre;
+  object victim;
+
+  pre=(flag) ? ALEFT(CRNAME(obj)+" ", 12, ".")+" " : "";
+  pre=pre+"Esta siendo espiad"+(obj->QueryGender()<2?"o":"a")+" por: ";
+  if (victim=query_snoop(obj))
+    pre+=ARIGHT(" "+CRNAME(victim), 12, ".");
+  else
+    pre+="............";
+  return pre;
+}
+
+void PrintObj(object obj) {
+  object item, tmp;
+  string str;
+  mixed m;
+  int i, j;
+
+  if (!obj) return;
+  PrintShort("Corta: ", obj);
+  WR("Larga:");
+  if ( (m=(mixed)obj->QueryIntLong())
+   || (m=(mixed)obj->QueryLong())
+    )
+  {
+    if (pointerp(m))
+      str = "-- Mirar --\n"+m[0]+"-- Examinar --\n"+m[1];
+    else
+      str = m;
+  }
+  else str="- sin descripcion larga -\n";
+  WR(str);
+  j=0;
+  FORALL(item, obj) {
+    if (!j) WR("Contenido:");
+    j++;
+    if (item->Query(P_INVIS)<=this_player()->Query(P_SEE_INVIS))
+      PrintShort(ARIGHT(++i+". ", 4, " "), item);
+  }
+}
+
+void Destruct(object obj)
+{
+ if (!obj) return;
+ catch(obj->remove());
+ if (obj) destruct(obj);
+}
+
+int XGrepFile(string pat, string file) {
+  int i, f;
+  string tfile, *ts, t;
+
+  if (!(pat&&file)) return 0;
+  tfile=TMP_FILE;
+  for(i=1; t=read_file(file, i, 1000); i+=1000) {
+    if (sizeof(ts=regexp(strip_explode(t, "\n"), pat))) {
+      if (!f++) write_file(tfile, "*** Fichero: "+file+" ***\n");
+      write_file(tfile, implode(ts, "\n")+"\n");
+    }
+  }
+  return 1;
+}
+
+void XExecFile(int line) {
+  int i;
+
+  if (!scriptline) return;
+  for(i=line; i<scriptsize&&i<line+EXEC_LINES; i++) {
+    if (!scriptline[i]) continue;
+    if (!TI->command_me(scriptline[i])) {
+      scriptline=0;
+      return;
+    }
+  }
+  if (i<scriptsize) call_out("XExecFile", EXEC_TIME, i);
+  else scriptline=0;
+}
+
+void DeepPrintShort(object env, int indent, string pre) {
+  int i;
+  object item;
+
+   if (!env) return;
+  for(i=indent; i--; ) write("  ");
+  i++;
+  if (pre) write(pre);
+  PrintShort("", env);
+
+  FORALL(item, env)
+  {
+    if (item->Query(P_INVIS)<=this_player()->Query(P_SEE_INVIS))
+    	DeepPrintShort(item, indent+1, ARIGHT((++i)+". ", 4, " "));
+  }
+}
+
+object *SubNodes(object obj) {
+  int s;
+  object *objs;
+  string *inlist;
+
+  if (!obj) return 0;
+  inlist=inherit_list(obj);
+  s=sizeof(inlist);
+  objs=({});
+  while(s-->1) objs=({find_object(inlist[s])})+objs;
+  return objs;
+}
+
+void Inheritance(object obj, string func, string pre) {
+  int i, s;
+  object *ln;
+  string str;
+
+  if (!obj) return;
+  str=pre+" "+ObjFile(obj);
+  if (func) {
+    str=ALEFT(str+" ", 50, ".");
+    if (function_exists(func, obj)==object_name(obj))
+      str+=ARIGHT(" "+func, 19, ".");
+    else str+=ARIGHT("", 19, ".");
+  }
+  WR(str);
+  ln=SubNodes(obj);
+  for(i=0; i<sizeof(ln); i++) ln=ln-SubNodes(ln[i]);
+  s=sizeof(ln);
+  for(i=0; i<s; i++) Inheritance(ln[i], func, pre+".....");
+}
+
+void props_to_tmpfile(object obj) {
+  mapping props;
+  string  *index, data;
+  int     i;
+  props = (mapping)obj->QueryProperties()||([]);
+  index = sort_array(m_indices(props), SF(>));
+  data = "";
+  for (i = 0; i < sizeof(index); i++)
+     data += ALEFT(index[i]+" ", 18, ".")+
+	     " = "+mixed_to_string(props[index[i]], MAX_RECURSION)+"\n";
+  write_file(TMP_FILE, data);
+}
+
+void DumpProperties(object obj) {
+
+  if (!obj) return;
+  else if (file_size(TMP_FILE)>0) rm(TMP_FILE);
+  props_to_tmpfile(obj);
+  XMoreFile(TMP_FILE, 0);
+}
+
+void XMsgSay(string str) {
+  if (str=="."||str=="**") {
+    WR("[Fin de mensaje]");
+    say("[Fin de mensaje]\n");
+  } else {
+    say(str+"\n");
+    input_to("XMsgSay");
+  }
+}
+
+void XMsgTell(string str) {
+  if (str=="."||str=="**") {
+    WR("[Fin de mensaje]");
+    tell_object(msgto, "[Fin de mensaje]\n");
+  } else {
+    tell_object(msgto, str+"\n");
+    input_to("XMsgTell");
+  }
+}
+
+void XMsgShout(string str) {
+  if (str=="."||str=="**") {
+    WR("[Fin de mensaje]");
+    filter(users()-({TP}), SF(tell_object), "[Fin de mensaje]\n");
+  }
+  else {
+    filter(users()-({TP}), SF(tell_object), str+"\n");
+    input_to("XMsgShout");
+  }
+}
+
+void DeepClean(object obj) {
+  if (!obj) return;
+  filter(filter(deep_inventory(obj), "is_not_player", TO),
+	       "Destruct", TO);
+  if (is_not_player(obj)) Destruct(obj);
+}
+
+string dtime(int time)
+{
+  string ret;
+
+  ret = "";
+  if ( time >= 86400) {
+    ret += time/86400+"d ";
+    time %= 86400;
+  }
+  if (time < 36000) ret += "0";
+  ret += time/3600+":";
+  time %= 3600;
+  if (time < 600) ret += "0";
+  ret += time/60+":";
+  time %= 60;
+  if (time < 10) ret += "0";
+  ret += time+"";
+  return ret;
+}

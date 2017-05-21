@@ -1,0 +1,11 @@
+[1mCOMANDO[0m
+  tail <fichero>
+
+[1mDESCRIPCION[0m
+  Visualiza las 40 últimas líneas de <fichero>.
+   
+[1mEJEMPLOS[0m
+  tail espada.c
+
+[1mTEMAS RELACIONADOS[0m
+  cat, type, more, ed

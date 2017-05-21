@@ -1,0 +1,150 @@
+################################################################
+#                       Gremios en Simauria                    #
+#                        Mirill@Simaria'97                     #
+################################################################
+
+
+Indice:
+    1.- Definicion de Gremio
+    2.- Gremios en Simauria
+    3.- Papel de los Gremios
+    4.- Como cambiarse de gremio
+    
+1.- Definicion de Gremio
+------------------------
+
+    Un gremio es una corporacion de individuos con una misma dedicacion
+o profesion. El gremio medieval surgio de la necesidad de la libre
+asociacion por parte de los artesanos y la de controlar la calidad y el
+precio de los productos por parte de los poderes publicos. La
+reglamentacion gremial reservaba el mercado local para sus asociados,
+evitaba la competencia entre ellos y regulaba tambien el horario de
+trabajo y la tecnica empleada. De la vigilancia de su cumplimiento se
+encargaban los veedores, elegidos por el gremio, pero sometidos a
+fiscalizacion municipal. La jerarquia gremial estaba formada por el
+aprendiz, el oficial y el maestro, esta ultima de hecho, en manos de
+una oligarquia gremial cerrada. 
+
+2.- Gremios en Simauria
+-----------------------
+
+    En Simauria tambien existen estos tipos de gremios entre artesanos,
+aunque no reciben el nombre de gremios, son las Hermandades. La Hermandad
+mas importante de Simauria es la de los banqueros. Debido a que el jugador
+no puede, en principio, pertenecer a ninguna de estas Hermandades, aqui no
+se explicara el funcionamiento de estas.
+
+    Los gremios en Simauria son las asociaciones por profesion de individuos
+con las mismas habilidades. Asi hay tantos gremios como profesiones, estos
+son los gremios que se pueden encontrar en Simauria, sus centrales y sus
+delegaciones:
+
+    Gremio          |       Central     |           Delegaciones
+--------------------------------------------------------------------------
+Asesinos (Ninjas)   |Kenton (Knd)       |Moosmoor, Kloghoren                                   
+Bardos              |Leeuwin (MEf)      |Lad-Laurelin
+Conjuradores        |Akallab (Orc)      |Kavir
+Clerigos            |Simauria (Hum)     |
+Druidas             |Balao (Log)        |Leewin, Kavir
+                    |Kha-annu (Ena)     |
+Elementalistas      |Aire: Lad-Laurelin (Elf)
+                    |Tierra: Kha-annu (Ena)
+                    |Agua: Gwddnolyd (Dnd)
+                    |Fuego: Simauria (Hum) 
+Guerreros           |Thanll (Gig)       |Akallab, Kavir, Kha-annu,
+                    |                   |Kloghoren, Lad-Laurelin, Leewin,
+                    |                   |Moosmoor, Simauria
+Hechiceros          |Lad-Laurelin (Elf) |Simauria, Leewin           
+Kisalas		    |Goldhai (Woo)	|
+Ladrones            |Kenton (Knd)       |
+Nigromantes         |Moosmoor (EfO)     |Akallab
+Paladines           |Simauria (Hum)     |
+Caballeros Oscuros  |Kloghoren (Dem)    |
+Piratas             |Sbiat (Hum)        |
+Psionicos           |Kavir (HdS)        |
+
+aunque para la mayor parte de las operaciones que se vayan a hacer en los
+gremios bastara con acudir a las delegaciones, existiran algunas que
+unicamente podran realizarse en la central.
+
+    Es necesario que todos los personajes pertenezcan a un gremio puesto
+que es la unica forma que tienen de subir de nivel. Ademas pertenecer
+a un gremio tiene una serie de ventajas como son el disponer de un canal
+propio de cada gremio donde poder hacer preguntas relacionadas con la
+profesion, comandos propios del gremio que permiten realizar acciones
+unicamente por los pertenecientes al gremio, hechizos propios de cada
+gremio, bonificaciones en habilidades y atributos que tengan relacion
+con el gremio, etc...
+    Para entrar en un gremio habra que cumplir los requisitos impuestos
+por el creador de dicho dominio. Algunas razas no podran pertenecer a
+determinados gremios por ser opuestos a su alineacion, por ejemplo los
+Demonios no podran entrar en los Paladines debido a su alineamiento
+malvado.
+
+    Los lideres de gremio, que seran tantos como jugadores en el gremio/10
+(minimo 1), se elegiran en sufragio universal y democratico. Cualquier
+jugador se podra presentar (excepto aquellos que esten penalizados) a las
+elecciones. Las funciones del lider del gremio seran:
+- Canalizar las quejas hacia los responsables
+- Ayudar a los mismos
+- Encargarse del buen funcionamiento del gremio
+- Ayudar a sus subordinados dentro de los limites del Reglamento.
+Los lideres podran plantear quejas y peticiones y tendran voz y voto sobre
+temas relevantes de Simauria, en especial si su gremio esta afectado.
+
+
+3.- Papel de los Gremios
+------------------------
+
+    Los gremios en Simauria tienen 
+    
+    
+4.- Como cambiarse de Gremio
+----------------------------
+
+    Los cambios de gremio se basan en el siguiente diagrama:
+
+---------------------------------------------------------------------
+    Esencia         |   Canalizacion        |   Mentalismo
+---------------------------------------------------------------------
+    Nigromantes*    |   Paladines           |   Psionicos*
+    Hechiceros*     |   Paladines del Caos  |   Bardos
+    Conjuradores*   |   Clerigo*            |   Kisalas
+    Elementalistas* |                       |   
+---------------------------------------------------------------------
+                    |   Sin magia           |
+---------------------------------------------------------------------
+*: Significa que    |   Guerreros           |
+son magos puros.    |   Ladrones            |
+                    |   Piratas             |
+                    |   Druidas (Guardabosq)|
+                    |   Asesinos            |
+                    -------------------------
+
+                    
+
+    Cuando un jugador cambia de gremio recuerda ciertos hechizos y
+habilidades del ultimo gremio en el que ha estado hasta cierto nivel.
+Al separarse del gremio para unirse al otro, el jugador pasara a
+nivel 0, aunque conservara los puntos (experiencia y  sabiduria)para 
+poder aumentar su nivel en el nuevo gremio hasta llegar al que estaba
+cuando dejo el anterior.
+    Para hablar de los cambios entre los gremios utilizaremos el
+diagrama. Estas reglas son generales, es decir que todos los gremios
+las deben cumplir, pero no significa que los propios gremios puedan
+tener reglas adicionales que complementen a las aqui descritas basadas
+en raza, sexo, dominio anterior, etc... Recomendamos leer los
+requisitos de cada gremio antes de intentar cambiarse para comprobar
+que se puede hacer
+
+    Reglas para el cambio de gremios:
+
+1.- Cambiar entre Dominios diferentes de Magia (ej. de Esencia a
+    Canalizacion, o de Mentalismo a Esencia) supone acordarse de
+    los hechizos y habilidades del gremio anterior hasta nivel 4.
+2.- Cambiar entre el Dominio Sin Magia a otro de Magia supone
+    acordarse de todas las habilidades del gremio anterior hasta
+    nivel 6.
+3.- Los Magos puros (marcados con una * en el diagrama) no podran
+    cambiar de dominio sin pasar un periodo por el Dominio Sin
+    Magia para limpiar su mente de las esenyanzas magicas anteriores.

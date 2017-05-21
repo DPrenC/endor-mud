@@ -1,0 +1,114 @@
+/**
+ * /secure/master/connections.ic
+ *
+ * Archivo para ser incluido por el master. Contiene las funciones que
+ * manejan las conexiones de los jugadores.
+ */
+
+//===========================================================================
+//  Handling of player connections
+//
+// See also valid_exec().
+//===========================================================================
+
+object connect (); // Handle the request for a new connection.
+void disconnect (object obj); // Handle the loss of an IP connection.
+void remove_player (object user); // Remove a user object from the system.
+void stale_erq (closure callback); // Notify the loss of the erq demon.
+
+//---------------------------------------------------------------------------
+/* This function is called every time a player connects.
+ * input_to() can't be called from here.*/
+object connect ()
+// [+] Handle the request for a new connection.
+//
+// Result:
+//   An login object the requested connection should be bound to.
+//
+// Note that the connection is at this time bound to the master object,
+// and will be re-bound to the returned object.
+//
+// The gamedriver will call the lfun 'logon()' in the login object after
+// binding the connection to it. That lfun has to return !=0 to succeed.
+{
+  string err;
+  object ob, bp;
+
+  bp = find_object(LOGIN);
+  if (bp && environment(bp) != 0) destruct(bp);
+
+  if ( err = catch(ob = clone_object(LOGIN)) ) {
+    write("Error al clonar "+LOGIN+".c\n"+err+"\n");
+    shutdown();
+  }
+
+  return ob;
+}
+
+
+//---------------------------------------------------------------------------
+void disconnect (object obj)
+// [+] Handle the loss of an IP connection.
+//
+// Argument:
+//   obj: The (formerly) interactive object (player).
+//
+// This called by the gamedriver to handle the removal of an IP connection,
+// either because the connection is already lost ('netdeath') or due to
+// calls to exec() or remove_interactive().
+//
+// The connection will be unbound upon return from this call, so
+// for the time of this call, interactive(ob) will still return TRUE
+// even if the actual network connection has already been lost.
+//
+// This method is not called if the object has been destructed already.
+{
+  if (getuid(obj) != get_master_uid()
+   && (!IS_LEARNER(obj) || !obj->QueryInvis())
+   && !obj->IsServiceDemon()
+     ) {
+        load_obj(CHANNELMASTER)->SendEmote("infomud", capitalize(getuid(obj))+" se ha visto arrancado súbitamente de Arda.", SND_SUCESOS("cortar_conexion"));
+     }
+     if (!obj->IsServiceDemon()) obj->save();
+}
+
+//---------------------------------------------------------------------------
+void remove_player (object player)
+// [+] Remove a player object from the game.
+//
+// Argument:
+//   player: The player object to be removed.
+//
+// This function is called by the gamedriver to expell remaining players
+// from the game on shutdown in a polite way.
+// If this functions fails to quit/destruct the player, it will be
+// destructed the hard way by the gamedriver.
+//
+// Note: This function must not cause runtime errors.
+{
+  if (previous_object() && to_string(previous_object())[0..7] != SECUREPATH) {
+    raise_error("Naughty naughty!\n");
+    return;
+  }
+  if (!objectp(player)) return;
+  catch(player->quit());
+  if (player) destruct(player);
+}
+
+//---------------------------------------------------------------------------
+void stale_erq (closure callback)
+// [+] Notify the loss of the erq demon.
+//
+// Argument:
+//   callback: the callback closure set for an erq request.
+//
+// If the erq connection dies prematurely, the driver will call this lfun for
+// every pending request with set callback. This function should notify the
+// originating object that the answer will never arrive.
+{
+  attach_erq_demon("", 0);
+}
+
+//---------------------------------------------------------------------------
+// Fin de las funciones inherentes
+//---------------------------------------------------------------------------

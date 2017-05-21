@@ -1,0 +1,21 @@
+/* obras.c
+ * Codigo a incluir en la habitacion anterior a las obras...
+ * Creado por : Nemesis
+ * Fecha : 2-Nov-98
+ * NOTA: No es un fallo. El archivo tiene extension '.ic', ya que es un archivo
+ *      que se incluye.
+ */ 
+ 
+#include <colours.h>
+
+obras() {
+
+ write(TC_RED TC_BOLD"\t\tAVISO:\t\n"
+       TC_NORMAL       "Esta parte del mud esta en obras, por lo\n"
+                         "que permanera cerrada hasta nuevo aviso.\n"
+			 "                  Fdo.\n"    
+			 "      El Ministerio de Obras Publicas\n"
+    );
+return 1;
+
+}

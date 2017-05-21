@@ -1,0 +1,725 @@
+Fri Mar 19 19:01:54 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/castillo/planta1/bodega2 llama a
+remove en /std/door#14. Me borro.
+Fri Mar 19 19:02:10 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/castillo/planta1/vestibulo llama
+a remove en /std/door#20. Me borro.
+Tue Mar 23 08:22:44 2010. /d/simauria/comun/habitacion/simauria/berat/ctab4
+llama a remove en /std/door#37. Me borro.
+Mon Mar 29 07:42:03 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/castillo/murallas/torre3_3 llama
+a remove en /std/door#44. Me borro.
+Fri Apr 02 06:09:37 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/castillo/patio/patio13 llama a
+remove en /std/door#50. Me borro.
+Fri Apr 02 06:10:07 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/castillo/patio/patio19 llama a
+remove en /std/door#49. Me borro.
+Fri Apr 02 06:10:07 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/castillo/patio/patio17 llama a
+remove en /std/door#42. Me borro.
+Fri Apr 02 06:19:53 2010: 0 llama a clean_up en /std/door.
+Fri Apr 02 06:19:53 2010. 0 llama a remove en /std/door. Me borro.
+Fri Apr 02 06:20:29 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/castillo/mazmorras/pasillo6
+llama a remove en /std/door#71. Me borro.
+Fri Apr 02 06:20:29 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/castillo/mazmorras/pasillo6
+llama a remove en /std/door#70. Me borro.
+Fri Apr 02 06:20:29 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/castillo/mazmorras/pasillo6
+llama a remove en /std/door#72. Me borro.
+Fri Apr 02 06:20:29 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/castillo/mazmorras/pasillo5
+llama a remove en /std/door#68. Me borro.
+Fri Apr 02 06:20:29 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/castillo/mazmorras/pasillo5
+llama a remove en /std/door#69. Me borro.
+Fri Apr 02 06:28:43 2010: 0 llama a clean_up en /std/door#22.
+No se borra pues pDoorRoom1
+(/d/simauria/comun/habitacion/marhalt/nandor/castillo/patio/patio18) está
+cargada, y pDoorRoom2
+(/d/simauria/comun/habitacion/marhalt/nandor/castillo/planta1/vestibulo), no
+está cargada.
+Fri Apr 02 06:37:19 2010: 0 llama a clean_up en /std/door#67.
+No se borra pues pDoorRoom1
+(/d/simauria/comun/habitacion/marhalt/nandor/castillo/mazmorras/pasillo4)
+está cargada, y pDoorRoom2
+(/d/simauria/comun/habitacion/marhalt/nandor/castillo/mazmorras/celda2), no
+está cargada.
+Fri Apr 02 06:37:19 2010: 0 llama a clean_up en /std/door#66.
+No se borra pues pDoorRoom1
+(/d/simauria/comun/habitacion/marhalt/nandor/castillo/mazmorras/pasillo4)
+está cargada, y pDoorRoom2
+(/d/simauria/comun/habitacion/marhalt/nandor/castillo/mazmorras/celda1), no
+está cargada.
+Fri Apr 02 07:41:27 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/castillo/mazmorras/pasillo6
+llama a remove en /std/door#149. Me borro.
+Fri Apr 02 07:41:27 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/castillo/mazmorras/pasillo6
+llama a remove en /std/door#148. Me borro.
+Fri Apr 02 07:41:27 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/castillo/mazmorras/pasillo6
+llama a remove en /std/door#150. Me borro.
+Fri Apr 02 07:41:33 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/castillo/mazmorras/pasillo5
+llama a remove en /std/door#133. Me borro.
+Fri Apr 02 07:41:33 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/castillo/mazmorras/pasillo5
+llama a remove en /std/door#132. Me borro.
+Fri Apr 02 07:48:27 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/castillo/patio/patio13 llama a
+remove en /std/door#187. Me borro.
+Sun Apr 11 08:52:01 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/calle42n llama a remove en
+/std/door#20. Me borro.
+Sun Apr 11 08:52:01 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/calle42n llama a remove en
+/std/door#19. Me borro.
+Sun Apr 11 09:25:05 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/calle42n llama a remove en
+/std/door#21. Me borro.
+Sun Apr 11 09:25:05 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/calle42n llama a remove en
+/std/door#20. Me borro.
+Sun Apr 11 09:25:25 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/calle42n llama a remove en
+/std/door#807. Me borro.
+Sun Apr 11 09:25:25 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/calle42n llama a remove en
+/std/door#806. Me borro.
+Sun Apr 11 09:50:03 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/calle42n llama a remove en
+/std/door#14. Me borro.
+Sun Apr 11 09:50:03 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/calle42n llama a remove en
+/std/door#13. Me borro.
+Sun Apr 11 09:52:41 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/calle42n llama a remove en
+/std/door#25. Me borro.
+Sun Apr 11 09:52:41 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/calle42n llama a remove en
+/std/door#24. Me borro.
+Sun Apr 11 09:55:45 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/calle42n llama a remove en
+/std/door#220. Me borro.
+Sun Apr 11 09:55:45 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/calle42n llama a remove en
+/std/door#219. Me borro.
+Sat May 01 19:12:33 2010.
+/d/simauria/comun/habitacion/marhalt/enalel/poblado/calles/calle05 llama a
+remove en /std/door#13. Me borro.
+Sat May 01 19:12:33 2010.
+/d/simauria/comun/habitacion/marhalt/enalel/poblado/calles/calle05 llama a
+remove en /std/door#14. Me borro.
+Sat May 01 19:16:07 2010.
+/d/simauria/comun/habitacion/marhalt/enalel/poblado/calles/calle03 llama a
+remove en /std/door#132. Me borro.
+Sat May 01 19:16:07 2010.
+/d/simauria/comun/habitacion/marhalt/enalel/poblado/calles/calle03 llama a
+remove en /std/door#133. Me borro.
+Sat May 01 19:16:07 2010.
+/d/simauria/comun/habitacion/marhalt/enalel/poblado/calles/calle04 llama a
+remove en /std/door#130. Me borro.
+Sat May 01 19:16:07 2010.
+/d/simauria/comun/habitacion/marhalt/enalel/poblado/calles/calle04 llama a
+remove en /std/door#131. Me borro.
+Sat May 08 09:09:09 2010. /d/simauria/comun/habitacion/simauria/berat/ctab3
+llama a remove en /std/door#27. Me borro.
+Sat May 08 09:09:09 2010. /d/simauria/comun/habitacion/simauria/berat/ctab3
+llama a remove en /std/door#26. Me borro.
+Fri May 14 04:02:27 2010. /d/goldhai/comun/habitacion/puerto/puerto5 llama a
+remove en /std/door#10. Me borro.
+Fri May 14 04:04:47 2010. /d/goldhai/comun/habitacion/puerto/puerto5 llama a
+remove en /std/door#14. Me borro.
+Fri May 14 05:04:48 2010: 0 llama a clean_up en /std/door.
+Fri May 14 05:04:48 2010. 0 llama a remove en /std/door. Me borro.
+Sat May 15 07:05:32 2010. /d/simauria/comun/habitacion/simauria/berat/cprin8
+llama a remove en /std/door#17. Me borro.
+Thu May 20 05:44:20 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/tiendas/posada llama a remove en
+/std/door#107. Me borro.
+Thu May 20 05:57:44 2010.
+/d/simauria/comun/habitacion/marhalt/nandor/tiendas/posada llama a remove en
+/std/door#498. Me borro.
+Tue Jan 31 15:49:58 2012. /d/simauria/comun/habitacion/marhalt/nandor/calle1
+llama a remove en /std/door#215. Me borro.
+Tue Jan 31 15:49:58 2012. /d/simauria/comun/habitacion/marhalt/nandor/calle1
+llama a remove en /std/door#216. Me borro.
+Tue Jan 31 15:49:58 2012. /d/simauria/comun/habitacion/marhalt/nandor/calle0
+llama a remove en /std/door#213. Me borro.
+Tue Jan 31 15:49:58 2012. /d/simauria/comun/habitacion/marhalt/nandor/calle0
+llama a remove en /std/door#214. Me borro.
+Tue Jan 31 15:50:30 2012.
+/d/simauria/comun/habitacion/marhalt/enalel/poblado/calles/calle04 llama a
+remove en /std/door#133. Me borro.
+Tue Jan 31 15:50:30 2012.
+/d/simauria/comun/habitacion/marhalt/enalel/poblado/calles/calle04 llama a
+remove en /std/door#132. Me borro.
+Tue Jan 31 15:51:12 2012. /d/simauria/comun/habitacion/marhalt/nandor/calle6
+llama a remove en /std/door#41. Me borro.
+Tue Jan 31 15:51:38 2012.
+/d/simauria/comun/habitacion/marhalt/nandor/calle14 llama a remove en
+/std/door#258. Me borro.
+Tue Jan 31 15:52:14 2012.
+/d/simauria/comun/habitacion/marhalt/enalel/poblado/calles/calle06 llama a
+remove en /std/door#230. Me borro.
+Tue Jan 31 15:52:14 2012.
+/d/simauria/comun/habitacion/marhalt/enalel/poblado/calles/calle06 llama a
+remove en /std/door#231. Me borro.
+Tue Jan 31 15:52:14 2012.
+/d/simauria/comun/habitacion/marhalt/enalel/poblado/calles/calle06 llama a
+remove en /std/door#229. Me borro.
+Tue Jan 31 15:52:14 2012.
+/d/simauria/comun/habitacion/marhalt/enalel/poblado/calles/calle05 llama a
+remove en /std/door#33. Me borro.
+Tue Jan 31 15:52:14 2012.
+/d/simauria/comun/habitacion/marhalt/enalel/poblado/calles/calle05 llama a
+remove en /std/door#32. Me borro.
+Tue Jan 31 15:52:30 2012.
+/d/simauria/comun/habitacion/marhalt/enalel/poblado/calles/calle03 llama a
+remove en /std/door#135. Me borro.
+Tue Jan 31 15:52:30 2012.
+/d/simauria/comun/habitacion/marhalt/enalel/poblado/calles/calle03 llama a
+remove en /std/door#134. Me borro.
+Tue Jan 31 15:52:34 2012.
+/d/simauria/comun/habitacion/marhalt/nandor/calle12 llama a remove en
+/std/door#233. Me borro.
+Tue Jan 31 15:52:48 2012. /d/simauria/comun/habitacion/marhalt/nandor/calle3
+llama a remove en /std/door#5. Me borro.
+Tue Jan 31 15:53:08 2012. /d/simauria/comun/habitacion/marhalt/nandor/calle5
+llama a remove en /std/door#40. Me borro.
+Tue Jan 31 16:04:40 2012: 0 llama a clean_up en /std/door#23.
+No se borra pues pDoorRoom1
+(/d/simauria/comun/habitacion/marhalt/nandor/calle42n) está cargada, y
+pDoorRoom2 (/d/simauria/comun/habitacion/marhalt/nandor/tiendas/iglesia), no
+está cargada.
+Tue Jan 31 16:04:40 2012: 0 llama a clean_up en /std/door#22.
+No se borra pues pDoorRoom1
+(/d/simauria/comun/habitacion/marhalt/nandor/calle42n) está cargada, y
+pDoorRoom2 (/d/simauria/comun/habitacion/marhalt/nandor/casas/casa4), no
+está cargada.
+Tue Jan 31 16:11:38 2012.
+/d/simauria/comun/habitacion/betwa/gorat/calles/callep0 llama a remove en
+/std/door#579. Me borro.
+Sat Feb 11 21:35:37 2012: 0 llama a clean_up en /std/door.
+Sat Feb 11 21:35:37 2012. 0 llama a remove en /std/door. Me borro.
+Sat Feb 11 21:37:33 2012.
+/d/limbo/comun/habitacion/limbo/torrewiz/piso2/center llama a remove en
+/std/door#18. Me borro.
+Sat Feb 11 21:37:33 2012.
+/d/limbo/comun/habitacion/limbo/torrewiz/piso2/center llama a remove en
+/std/door#17. Me borro.
+Sat Feb 18 22:26:50 2012: 0 llama a clean_up en /std/door.
+Sat Feb 18 22:26:50 2012. 0 llama a remove en /std/door. Me borro.
+Sun Feb 19 18:05:34 2012: 0 llama a clean_up en /std/door.
+Sun Feb 19 18:05:34 2012. 0 llama a remove en /std/door. Me borro.
+Sun Feb 19 18:07:06 2012.
+/d/limbo/comun/habitacion/limbo/torrewiz/piso2/center llama a remove en
+/std/door#35. Me borro.
+Sun Feb 19 18:08:24 2012.
+/d/limbo/comun/habitacion/limbo/torrewiz/rooms/ratwor/workroom llama a
+remove en /std/door#3. Me borro.
+Sun Feb 19 18:08:24 2012.
+/d/limbo/comun/habitacion/limbo/torrewiz/rooms/ratwor/workroom llama a
+remove en /std/door#2. Me borro.
+Fri Feb 24 22:38:08 2012: 0 llama a clean_up en /std/door.
+Fri Feb 24 22:38:08 2012. 0 llama a remove en /std/door. Me borro.
+Thu Mar 01 22:42:10 2012: 0 llama a clean_up en /std/door.
+Thu Mar 01 22:42:10 2012. 0 llama a remove en /std/door. Me borro.
+Thu Mar 01 22:50:52 2012.
+/d/limbo/comun/habitacion/limbo/torrewiz/rooms/ratwor/workroom llama a
+remove en /std/door#14. Me borro.
+Thu Mar 01 22:50:52 2012.
+/d/limbo/comun/habitacion/limbo/torrewiz/rooms/ratwor/workroom llama a
+remove en /std/door#13. Me borro.
+Sat Mar 03 22:39:31 2012. /d/simauria/comun/habitacion/marhalt/nandor/calle3
+llama a remove en /std/door#15. Me borro.
+Sat Mar 03 22:40:25 2012: 0 llama a clean_up en /std/door.
+Sat Mar 03 22:40:25 2012. 0 llama a remove en /std/door. Me borro.
+Sat Mar 03 22:44:11 2012. /d/simauria/comun/habitacion/marhalt/nandor/calle1
+llama a remove en /std/door#27. Me borro.
+Sat Mar 03 22:56:19 2012.
+/d/simauria/comun/habitacion/marhalt/nandor/tiendas/herreria llama a remove
+en /std/door#26. Me borro.
+Sat Mar 03 23:05:03 2012: 0 llama a clean_up en /std/door#108.
+No se borra pues pDoorRoom1
+(/d/simauria/comun/habitacion/marhalt/nandor/calle0) está cargada, y
+pDoorRoom2 (/d/simauria/comun/habitacion/marhalt/nandor/tiendas/posada), no
+está cargada.
+Sat Mar 03 23:05:03 2012: 0 llama a clean_up en /std/door#107.
+No se borra pues pDoorRoom1
+(/d/simauria/comun/habitacion/marhalt/nandor/calle0) está cargada, y
+pDoorRoom2 (/d/simauria/comun/habitacion/marhalt/nandor/tiendas/bancoh), no
+está cargada.
+Sun Apr 15 07:25:12 2012.
+/d/aman/comun/habitacion/valinor/valmar/isla/posada02_hab1 llama a remove en
+/std/door#10. Me borro.
+Sun Apr 15 07:30:20 2012.
+/d/aman/comun/habitacion/valinor/valmar/isla/posada02_hab1 llama a remove en
+/std/door#11. Me borro.
+Sun Apr 15 07:37:06 2012.
+/d/aman/comun/habitacion/valinor/valmar/isla/posada02_hab1 llama a remove en
+/std/door#12. Me borro.
+Sun Apr 15 07:44:22 2012.
+/d/aman/comun/habitacion/valinor/valmar/isla/posada02_hab1 llama a remove en
+/std/door#14. Me borro.
+Sun Apr 15 08:01:34 2012.
+/d/aman/comun/habitacion/valinor/valmar/isla/posada03_atrio llama a remove
+en /std/door#17. Me borro.
+Sun Apr 15 08:01:34 2012.
+/d/aman/comun/habitacion/valinor/valmar/isla/posada03_atrio llama a remove
+en /std/door#16. Me borro.
+Sun Apr 15 08:01:34 2012.
+/d/aman/comun/habitacion/valinor/valmar/isla/posada03_atrio llama a remove
+en /std/door#18. Me borro.
+Sun Apr 15 12:58:47 2012: 0 llama a clean_up en /std/door.
+Sun Apr 15 12:58:47 2012. 0 llama a remove en /std/door. Me borro.
+Sun Apr 15 19:53:30 2012: 0 llama a clean_up en /std/door.
+Sun Apr 15 19:53:30 2012. 0 llama a remove en /std/door. Me borro.
+Sun Apr 15 19:54:18 2012.
+/d/aman/comun/habitacion/valinor/valmar/isla/posada02_hab1 llama a remove en
+/std/door#2. Me borro.
+Mon Apr 16 19:59:01 2012: 0 llama a clean_up en /std/door.
+Mon Apr 16 19:59:01 2012. 0 llama a remove en /std/door. Me borro.
+Mon Apr 16 20:00:25 2012.
+/d/aman/comun/habitacion/valinor/valmar/isla/posada02_hab1 llama a remove en
+/std/door#2. Me borro.
+Wed Apr 18 21:23:16 2012.
+/d/aman/comun/habitacion/valinor/valmar/isla/posada02_hab1 llama a remove en
+/std/door#2. Me borro.
+Thu Apr 19 07:42:26 2012.
+/d/aman/comun/habitacion/valinor/valmar/isla/posada02_hab1 llama a remove en
+/std/door#2. Me borro.
+Thu Apr 19 07:44:22 2012.
+/d/aman/comun/habitacion/valinor/valmar/isla/posada02_hab1 llama a remove en
+/std/door#282. Me borro.
+Thu Apr 19 07:47:44 2012.
+/d/aman/comun/habitacion/valinor/valmar/isla/posada02_hab1 llama a remove en
+/std/door#284. Me borro.
+Thu Apr 19 16:02:55 2012: 0 llama a clean_up en /std/door.
+Thu Apr 19 16:02:55 2012. 0 llama a remove en /std/door. Me borro.
+Sat Apr 28 19:56:10 2012: 0 llama a clean_up en /std/door.
+Sat Apr 28 19:56:10 2012. 0 llama a remove en /std/door. Me borro.
+Mon Apr 30 20:51:03 2012.
+/d/limbo/comun/habitacion/limbo/torrewiz/piso2/center llama a remove en
+/std/door#9. Me borro.
+Mon Apr 30 20:51:03 2012.
+/d/limbo/comun/habitacion/limbo/torrewiz/piso2/center llama a remove en
+/std/door#8. Me borro.
+Mon Apr 30 21:17:47 2012. /d/simauria/comun/habitacion/marhalt/nandor/calle3
+llama a remove en /std/door#15. Me borro.
+Mon Apr 30 21:21:46 2012.
+/d/simauria/comun/habitacion/marhalt/nandor/castillo/patio/patio13 llama a
+remove en /std/door#139. Me borro.
+Mon Apr 30 21:21:56 2012: 0 llama a clean_up en /std/door.
+Mon Apr 30 21:21:56 2012. 0 llama a remove en /std/door. Me borro.
+Mon Apr 30 21:22:54 2012. /d/simauria/comun/habitacion/marhalt/nandor/calle1
+llama a remove en /std/door#52. Me borro.
+Mon Apr 30 21:22:54 2012. /d/simauria/comun/habitacion/marhalt/nandor/calle1
+llama a remove en /std/door#53. Me borro.
+Mon Apr 30 21:25:04 2012.
+/d/simauria/comun/habitacion/marhalt/nandor/castillo/planta1/vestibulo llama
+a remove en /std/door#114. Me borro.
+Mon Apr 30 21:28:20 2012.
+/d/simauria/comun/habitacion/marhalt/nandor/castillo/patio/patio17 llama a
+remove en /std/door#127. Me borro.
+Mon Apr 30 21:28:20 2012.
+/d/simauria/comun/habitacion/marhalt/nandor/castillo/patio/patio18 llama a
+remove en /std/door#115. Me borro.
+Mon Apr 30 21:29:16 2012: 0 llama a clean_up en /std/door#44.
+No se borra pues pDoorRoom1
+(/d/simauria/comun/habitacion/marhalt/nandor/calle2) está cargada, y
+pDoorRoom2 (/d/simauria/comun/habitacion/marhalt/nandor/tiendas/tienda), no
+está cargada.
+Mon Apr 30 21:30:40 2012.
+/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario llama a
+remove en /std/door#2. Me borro.
+Mon Apr 30 21:33:38 2012: 0 llama a clean_up en /std/door#54.
+No se borra pues pDoorRoom1
+(/d/simauria/comun/habitacion/marhalt/nandor/calle0) está cargada, y
+pDoorRoom2 (/d/simauria/comun/habitacion/marhalt/nandor/tiendas/bancoh), no
+está cargada.
+Mon Apr 30 21:33:42 2012: 0 llama a clean_up en /std/door#66.
+No se borra pues pDoorRoom1
+(/d/simauria/comun/habitacion/marhalt/nandor/calle10) está cargada, y
+pDoorRoom2
+(/d/simauria/comun/habitacion/marhalt/nandor/tiendas/herboristeria), no está
+cargada.
+Mon Apr 30 21:37:30 2012: 0 llama a clean_up en /std/door#59.
+No se borra pues pDoorRoom1
+(/d/simauria/comun/habitacion/marhalt/nandor/tiendas/posada) está cargada, y
+pDoorRoom2 (/d/simauria/comun/habitacion/marhalt/nandor/calle15), no está
+cargada.
+Mon Apr 30 21:37:30 2012: 0 llama a clean_up en /std/door#55.
+No se borra pues pDoorRoom1
+(/d/simauria/comun/habitacion/marhalt/nandor/calle0) está cargada, y
+pDoorRoom2 (/d/simauria/comun/habitacion/marhalt/nandor/tiendas/posada),
+está cargada.
+Mon Apr 30 21:39:10 2012: 0 llama a clean_up en /std/door#37.
+No se borra pues pDoorRoom1
+(/d/simauria/comun/habitacion/marhalt/nandor/calle42n) está cargada, y
+pDoorRoom2 (/d/simauria/comun/habitacion/marhalt/nandor/tiendas/iglesia), no
+está cargada.
+Mon Apr 30 21:39:10 2012: 0 llama a clean_up en /std/door#36.
+No se borra pues pDoorRoom1
+(/d/simauria/comun/habitacion/marhalt/nandor/calle42n) está cargada, y
+pDoorRoom2 (/d/simauria/comun/habitacion/marhalt/nandor/casas/casa4), no
+está cargada.
+Mon Apr 30 21:43:27 2012: 0 llama a clean_up en /std/door#168.
+No se borra pues pDoorRoom1
+(/d/simauria/comun/habitacion/marhalt/nandor/castillo/patio/patio19) está
+cargada, y pDoorRoom2
+(/d/simauria/comun/habitacion/marhalt/nandor/castillo/patio/pajareras), no
+está cargada.
+Mon Apr 30 21:48:49 2012: 0 llama a clean_up en /std/door#141.
+No se borra pues pDoorRoom1
+(/d/simauria/comun/habitacion/marhalt/nandor/castillo/murallas/torre2_04)
+está cargada, y pDoorRoom2
+(/d/simauria/comun/habitacion/marhalt/nandor/castillo/murallas/torre2_03),
+no está cargada.
+Mon Apr 30 21:48:49 2012: 0 llama a clean_up en /std/door#140.
+No se borra pues pDoorRoom1
+(/d/simauria/comun/habitacion/marhalt/nandor/castillo/murallas/torre2_04)
+está cargada, y pDoorRoom2
+(/d/simauria/comun/habitacion/marhalt/nandor/castillo/murallas/torre2_01),
+no está cargada.
+Mon May 28 15:19:23 2012: 0 llama a clean_up en /std/door.
+Mon May 28 15:19:23 2012. 0 llama a remove en /std/door. Me borro.
+Sun Jun 03 23:13:31 2012.
+/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario llama a
+remove en /std/door#2. Me borro.
+Sun Jun 03 23:16:16 2012: 0 llama a clean_up en /std/door.
+Sun Jun 03 23:16:16 2012. 0 llama a remove en /std/door. Me borro.
+Mon Jun 04 02:43:01 2012: 0 llama a clean_up en /std/door#14.
+No se borra pues pDoorRoom1
+(/d/aman/comun/habitacion/valinor/valmar/isla/posada03_atrio) está cargada,
+y pDoorRoom2 (/d/aman/comun/habitacion/valinor/valmar/isla/posada07_hab4),
+no está cargada.
+Mon Jun 04 02:43:01 2012: 0 llama a clean_up en /std/door#13.
+No se borra pues pDoorRoom1
+(/d/aman/comun/habitacion/valinor/valmar/isla/posada03_atrio) está cargada,
+y pDoorRoom2 (/d/aman/comun/habitacion/valinor/valmar/isla/posada05_hab3),
+no está cargada.
+Mon Jun 04 02:43:01 2012: 0 llama a clean_up en /std/door#12.
+No se borra pues pDoorRoom1
+(/d/aman/comun/habitacion/valinor/valmar/isla/posada03_atrio) está cargada,
+y pDoorRoom2 (/d/aman/comun/habitacion/valinor/valmar/isla/posada04_hab2),
+no está cargada.
+Mon Jun 04 02:43:01 2012: 0 llama a clean_up en /std/door#11.
+No se borra pues pDoorRoom1
+(/d/aman/comun/habitacion/valinor/valmar/isla/posada03_atrio) está cargada,
+y pDoorRoom2 (/d/aman/comun/habitacion/valinor/valmar/isla/posada02_hab1),
+no está cargada.
+Wed Jul 25 12:06:12 2012.
+/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario llama a
+remove en /std/door#2. Me borro.
+Wed Jul 25 12:11:29 2012.
+/d/kha-annu/comun/habitacion/kha-annu/ciudad/grimly11 llama a remove en
+/std/door#26. Me borro.
+Wed Jul 25 12:12:29 2012. /d/kha-annu/comun/habitacion/kha-annu/ciudad/rurik
+llama a remove en /std/door#20. Me borro.
+Wed Jul 25 12:24:56 2012.
+/d/akallab/comun/habitacion/akallab/zarkam/ciudad/calle_02 llama a remove en
+/std/door#59. Me borro.
+Wed Jul 25 12:24:56 2012.
+/d/akallab/comun/habitacion/akallab/zarkam/ciudad/calle_02 llama a remove en
+/std/door#58. Me borro.
+Wed Jul 25 12:25:30 2012.
+/d/akallab/comun/habitacion/akallab/zarkam/ciudad/calle_28 llama a remove en
+/std/door#62. Me borro.
+Wed Jul 25 12:25:32 2012.
+/d/akallab/comun/habitacion/akallab/zarkam/tienda/taquillas llama a remove
+en /std/door#66. Me borro.
+Wed Jul 25 12:25:38 2012: 0 llama a clean_up en /std/door.
+Wed Jul 25 12:25:38 2012. 0 llama a remove en /std/door. Me borro.
+Wed Jul 25 12:25:40 2012.
+/d/akallab/comun/habitacion/akallab/zarkam/ciudad/calle_04 llama a remove en
+/std/door#68. Me borro.
+Wed Jul 25 12:25:56 2012.
+/d/akallab/comun/habitacion/akallab/zarkam/ciudad/calle_14 llama a remove en
+/std/door#57. Me borro.
+Wed Jul 25 12:51:36 2012.
+/d/akallab/comun/habitacion/akallab/zarkam/tienda/banco llama a remove en
+/std/door#63. Me borro.
+Sun Aug 12 08:38:29 2012: 0 llama a clean_up en /std/door.
+Sun Aug 12 08:38:29 2012. 0 llama a remove en /std/door. Me borro.
+Sun Aug 19 22:14:06 2012: 0 llama a clean_up en /std/door.
+Sun Aug 19 22:14:06 2012. 0 llama a remove en /std/door. Me borro.
+Sun Aug 19 22:14:08 2012.
+/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario llama a
+remove en /std/door#2. Me borro.
+Sat Aug 25 17:04:27 2012.
+/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario llama a
+remove en /std/door#2. Me borro.
+Sat Aug 25 17:04:35 2012.
+/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario llama a
+remove en /std/door#11. Me borro.
+Sat Aug 25 19:00:02 2012.
+/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario llama a
+remove en /std/door#2. Me borro.
+Sun Aug 26 23:59:50 2012: 0 llama a clean_up en /std/door.
+Sun Aug 26 23:59:50 2012. 0 llama a remove en /std/door. Me borro.
+Mon Aug 27 00:05:48 2012.
+/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario llama a
+remove en /std/door#2. Me borro.
+Wed Aug 29 23:40:34 2012: 0 llama a clean_up en /std/door.
+Wed Aug 29 23:40:34 2012. 0 llama a remove en /std/door. Me borro.
+Sun Oct 07 22:22:49 2012: 0 llama a clean_up en /std/door.
+Sun Oct 07 22:22:49 2012. 0 llama a remove en /std/door. Me borro.
+Sun Oct 07 22:25:03 2012. /d/aman/comun/habitacion/valinor/valmar/isla/choza
+llama a remove en /std/door#3. Me borro.
+Sat Oct 13 19:50:52 2012: 0 llama a clean_up en /std/door.
+Sat Oct 13 19:50:52 2012. 0 llama a remove en /std/door. Me borro.
+Sun Oct 21 08:30:00 2012: 0 llama a clean_up en /std/door.
+Sun Oct 21 08:30:00 2012. 0 llama a remove en /std/door. Me borro.
+Sun Oct 21 11:52:50 2012: 0 llama a clean_up en /std/door.
+Sun Oct 21 11:52:50 2012. 0 llama a remove en /std/door. Me borro.
+Sat Oct 27 08:10:35 2012.
+/d/simauria/comun/habitacion/marhalt/nandor/tiendas/posada llama a remove en
+/std/door#19. Me borro.
+Thu Nov 01 13:39:42 2012. /d/aman/comun/habitacion/valinor/valmar/isla/choza
+llama a remove en /std/door#2. Me borro.
+Wed Nov 07 12:36:59 2012.
+/d/simauria/comun/habitacion/betwa/gorat/calles/callep7 llama a remove en
+/std/door#65. Me borro.
+Wed Nov 07 12:36:59 2012.
+/d/simauria/comun/habitacion/betwa/gorat/calles/callep7 llama a remove en
+/std/door#66. Me borro.
+Wed Nov 07 12:37:15 2012.
+/d/simauria/comun/habitacion/betwa/gorat/calles/callep6 llama a remove en
+/std/door#60. Me borro.
+Wed Nov 07 12:37:15 2012.
+/d/simauria/comun/habitacion/betwa/gorat/calles/callep6 llama a remove en
+/std/door#59. Me borro.
+Wed Nov 07 12:37:15 2012.
+/d/simauria/comun/habitacion/betwa/gorat/calles/callep5 llama a remove en
+/std/door#53. Me borro.
+Wed Nov 07 12:37:15 2012.
+/d/simauria/comun/habitacion/betwa/gorat/calles/callep5 llama a remove en
+/std/door#52. Me borro.
+Wed Nov 07 12:38:51 2012.
+/d/simauria/comun/habitacion/betwa/gorat/calles/callep0 llama a remove en
+/std/door#12. Me borro.
+Wed Nov 07 12:52:19 2012: 0 llama a clean_up en /std/door.
+Wed Nov 07 12:52:19 2012. 0 llama a remove en /std/door. Me borro.
+Wed Nov 07 12:53:33 2012: 0 llama a clean_up en /std/door#45.
+No se borra pues pDoorRoom1
+(/d/simauria/comun/habitacion/betwa/gorat/calles/callep4) está cargada, y
+pDoorRoom2 (/d/simauria/comun/habitacion/betwa/gorat/casas/casa2s), no está
+cargada.
+Wed Nov 07 12:53:33 2012: 0 llama a clean_up en /std/door#44.
+No se borra pues pDoorRoom1
+(/d/simauria/comun/habitacion/betwa/gorat/calles/callep4) está cargada, y
+pDoorRoom2 (/d/simauria/comun/habitacion/betwa/gorat/casas/casa2n), no está
+cargada.
+Wed Nov 07 12:54:21 2012.
+/d/simauria/comun/habitacion/simauria/berat/muelle03 llama a remove en
+/std/door#78. Me borro.
+Fri Nov 09 10:09:38 2012: 0 llama a clean_up en /std/door.
+Fri Nov 09 10:09:38 2012. 0 llama a remove en /std/door. Me borro.
+Fri Nov 09 10:10:24 2012.
+/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario llama a
+remove en /std/door#2. Me borro.
+Sun Dec 30 20:20:06 2012.
+/d/simauria/comun/habitacion/betwa/gorat/calles/callep0 llama a remove en
+/std/door#55. Me borro.
+Sun Dec 30 20:20:06 2012. /d/simauria/comun/habitacion/marhalt/nandor/calle1
+llama a remove en /std/door#46. Me borro.
+Sun Dec 30 20:20:06 2012. /d/simauria/comun/habitacion/marhalt/nandor/calle1
+llama a remove en /std/door#47. Me borro.
+Sun Dec 30 20:20:12 2012. /d/simauria/comun/habitacion/marhalt/nandor/calle3
+llama a remove en /std/door#67. Me borro.
+Sun Dec 30 20:20:34 2012.
+/d/simauria/comun/habitacion/marhalt/fortaleza/fortaleza/lord llama a remove
+en /std/door#28. Me borro.
+Sun Dec 30 20:20:36 2012. /d/simauria/comun/habitacion/marhalt/nandor/calle0
+llama a remove en /std/door#32. Me borro.
+Sun Dec 30 20:20:36 2012. /d/simauria/comun/habitacion/marhalt/nandor/calle0
+llama a remove en /std/door#33. Me borro.
+Sun Dec 30 20:20:50 2012.
+/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario llama a
+remove en /std/door#15. Me borro.
+Sun Dec 30 20:29:34 2012: 0 llama a clean_up en /std/door.
+Sun Dec 30 20:29:34 2012. 0 llama a remove en /std/door. Me borro.
+Sun Dec 30 20:32:42 2012.
+/d/simauria/comun/habitacion/simauria/berat/muelle03 llama a remove en
+/std/door#76. Me borro.
+Sun Dec 30 20:36:22 2012.
+/d/simauria/comun/habitacion/simauria/berat/muelle05 llama a remove en
+/std/door#86. Me borro.
+Sun Feb 24 15:30:33 2013: 0 llama a clean_up en /std/door.
+Sun Feb 24 15:30:33 2013. 0 llama a remove en /std/door. Me borro.
+Sun Feb 24 15:56:19 2013.
+/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario llama a
+remove en /std/door#4. Me borro.
+Thu Mar 07 15:56:04 2013: 0 llama a clean_up en /std/door.
+Thu Mar 07 15:56:04 2013. 0 llama a remove en /std/door. Me borro.
+Thu Mar 07 15:56:14 2013.
+/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario llama a
+remove en /std/door#6. Me borro.
+Mon Mar 18 22:35:08 2013: 0 llama a clean_up en /std/door.
+Mon Mar 18 22:35:08 2013. 0 llama a remove en /std/door. Me borro.
+Mon Mar 18 22:35:14 2013.
+/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario llama a
+remove en /std/door#6. Me borro.
+Sun Mar 24 10:40:27 2013. /d/pais-bree/comun/habitacion/bree/traspuertao
+llama a remove en /std/door#15. Me borro.
+Tue Apr 02 13:01:18 2013: 0 llama a clean_up en /std/door.
+Tue Apr 02 13:01:18 2013. 0 llama a remove en /std/door. Me borro.
+Tue Apr 02 13:01:24 2013.
+/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario llama a
+remove en /std/door#5. Me borro.
+Thu Apr 04 16:39:47 2013: 0 llama a clean_up en /std/door.
+Thu Apr 04 16:39:47 2013. 0 llama a remove en /std/door. Me borro.
+Thu Apr 04 21:38:28 2013: 0 llama a clean_up en /std/door.
+Thu Apr 04 21:38:28 2013. 0 llama a remove en /std/door. Me borro.
+Thu Apr 04 21:38:40 2013.
+/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario llama a
+remove en /std/door#98. Me borro.
+Sat Apr 06 07:35:52 2013. /d/simauria/comun/habitacion/marhalt/nandor/calle3
+llama a remove en /std/door#8. Me borro.
+Sat Apr 06 07:57:38 2013. /d/pais-bree/comun/habitacion/caminos/antepuertao
+llama a remove en /std/door#463. Me borro.
+Sat Apr 06 08:38:11 2013: 0 llama a clean_up en /std/door#197.
+Sat Apr 06 08:38:11 2013. 0 llama a remove en /std/door#197. Me borro.
+Sat Apr 06 08:38:49 2013. /d/simauria/comun/habitacion/marhalt/nandor/calle5
+llama a remove en /std/door#69. Me borro.
+Sat Apr 06 08:40:17 2013.
+/d/simauria/comun/habitacion/marhalt/enalel/poblado/calles/calle03 llama a
+remove en /std/door#160. Me borro.
+Sat Apr 06 08:40:17 2013.
+/d/simauria/comun/habitacion/marhalt/enalel/poblado/calles/calle03 llama a
+remove en /std/door#159. Me borro.
+Sat Apr 06 08:40:23 2013.
+/d/simauria/comun/habitacion/marhalt/enalel/poblado/calles/calle04 llama a
+remove en /std/door#158. Me borro.
+Sat Apr 06 08:40:23 2013.
+/d/simauria/comun/habitacion/marhalt/enalel/poblado/calles/calle04 llama a
+remove en /std/door#157. Me borro.
+Sat Apr 06 08:40:35 2013.
+/d/simauria/comun/habitacion/marhalt/nandor/calle14 llama a remove en
+/std/door#260. Me borro.
+Sat Apr 06 08:40:35 2013. /d/pais-bree/comun/habitacion/bree/traspuertao
+llama a remove en /std/door#731. Me borro.
+Sat Apr 06 08:40:41 2013.
+/d/simauria/comun/habitacion/marhalt/enalel/poblado/calles/calle05 llama a
+remove en /std/door#63. Me borro.
+Sat Apr 06 08:40:41 2013.
+/d/simauria/comun/habitacion/marhalt/enalel/poblado/calles/calle05 llama a
+remove en /std/door#62. Me borro.
+Sat Apr 06 08:40:43 2013.
+/d/simauria/comun/habitacion/marhalt/enalel/poblado/calles/calle06 llama a
+remove en /std/door#302. Me borro.
+Sat Apr 06 08:40:43 2013.
+/d/simauria/comun/habitacion/marhalt/enalel/poblado/calles/calle06 llama a
+remove en /std/door#303. Me borro.
+Sat Apr 06 08:40:43 2013.
+/d/simauria/comun/habitacion/marhalt/enalel/poblado/calles/calle06 llama a
+remove en /std/door#301. Me borro.
+Sat Apr 06 08:40:53 2013. /d/simauria/comun/habitacion/marhalt/nandor/calle6
+llama a remove en /std/door#70. Me borro.
+Sat Apr 06 08:41:19 2013. /d/simauria/comun/habitacion/marhalt/nandor/calle0
+llama a remove en /std/door#227. Me borro.
+Sat Apr 06 08:41:19 2013. /d/simauria/comun/habitacion/marhalt/nandor/calle0
+llama a remove en /std/door#228. Me borro.
+Sat Apr 06 08:41:19 2013. /d/simauria/comun/habitacion/marhalt/nandor/calle1
+llama a remove en /std/door#24. Me borro.
+Sat Apr 06 08:41:35 2013.
+/d/simauria/comun/habitacion/marhalt/nandor/calle12 llama a remove en
+/std/door#229. Me borro.
+Sat Apr 06 08:43:11 2013.
+/d/simauria/comun/habitacion/marhalt/nandor/calle10 llama a remove en
+/std/door#210. Me borro.
+Sat Apr 06 08:45:21 2013: 0 llama a clean_up en /std/door#449.
+Sat Apr 06 08:45:21 2013. 0 llama a remove en /std/door#449. Me borro.
+Sat Apr 06 08:45:49 2013: 0 llama a clean_up en /std/door#452.
+Sat Apr 06 08:45:49 2013. 0 llama a remove en /std/door#452. Me borro.
+Sat Apr 06 08:46:07 2013: 0 llama a clean_up en /std/door#455.
+Sat Apr 06 08:46:07 2013. 0 llama a remove en /std/door#455. Me borro.
+Sat Apr 06 08:46:25 2013: 0 llama a clean_up en /std/door#458.
+Sat Apr 06 08:46:25 2013. 0 llama a remove en /std/door#458. Me borro.
+Sat Apr 06 08:46:35 2013: 0 llama a clean_up en /std/door#461.
+Sat Apr 06 08:46:35 2013. 0 llama a remove en /std/door#461. Me borro.
+Sun Apr 07 15:11:55 2013: 0 llama a clean_up en /std/door.
+Sun Apr 07 15:11:55 2013. 0 llama a remove en /std/door. Me borro.
+Sun Apr 07 15:14:31 2013. /d/pais-bree/comun/habitacion/bree/traspuertao
+llama a remove en /std/door#9. Me borro.
+Sun Apr 07 15:14:31 2013. /d/pais-bree/comun/habitacion/bree/traspuertao
+llama a remove en /std/door#8. Me borro.
+Wed Apr 10 16:52:31 2013.
+/d/simauria/comun/habitacion/betwa/gorat/calles/callep0 llama a remove en
+/std/door#40. Me borro.
+Wed Apr 10 16:52:31 2013. /d/simauria/comun/habitacion/marhalt/nandor/calle1
+llama a remove en /std/door#31. Me borro.
+Wed Apr 10 16:52:31 2013. /d/simauria/comun/habitacion/marhalt/nandor/calle1
+llama a remove en /std/door#32. Me borro.
+Wed Apr 10 16:52:31 2013. /d/simauria/comun/habitacion/marhalt/nandor/calle0
+llama a remove en /std/door#16. Me borro.
+Wed Apr 10 16:52:31 2013. /d/simauria/comun/habitacion/marhalt/nandor/calle0
+llama a remove en /std/door#17. Me borro.
+Wed Apr 10 16:52:31 2013.
+/d/simauria/comun/habitacion/marhalt/fortaleza/fortaleza/lord llama a remove
+en /std/door#12. Me borro.
+Thu Apr 11 09:45:56 2013: 0 llama a clean_up en /std/door#6.
+Thu Apr 11 09:45:56 2013. 0 llama a remove en /std/door#6. Me borro.
+Thu Apr 11 09:47:32 2013: 0 llama a clean_up en /std/door#10.
+Thu Apr 11 09:47:32 2013. 0 llama a remove en /std/door#10. Me borro.
+Thu Apr 11 09:47:42 2013: 0 llama a clean_up en /std/door#11.
+Thu Apr 11 09:47:42 2013. 0 llama a remove en /std/door#11. Me borro.
+Fri Jun 14 18:14:35 2013. /d/pais-bree/comun/habitacion/bree/traspuertao
+llama a remove en /std/door#4. Me borro.
+Fri Jun 14 18:14:35 2013: 0 llama a clean_up en /std/door.
+Fri Jun 14 18:14:35 2013. 0 llama a remove en /std/door. Me borro.
+Fri Jun 14 18:14:35 2013. /d/pais-bree/comun/habitacion/caminos/antepuertao
+llama a remove en /std/door#3. Me borro.
+Tue Jun 25 21:40:40 2013: 0 llama a clean_up en /std/door.
+Tue Jun 25 21:40:40 2013. 0 llama a remove en /std/door. Me borro.
+Tue Jun 25 22:11:34 2013. /d/pais-bree/comun/habitacion/bree/traspuertao
+llama a remove en /std/door#3. Me borro.
+Tue Jun 25 22:48:29 2013. /d/pais-bree/comun/habitacion/bree/traspuertas
+llama a remove en /std/door#7. Me borro.
+Fri Jun 28 20:31:39 2013.
+/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario llama a
+remove en /std/door#2. Me borro.
+Sat Jun 29 12:23:22 2013: 0 llama a clean_up en /std/door.
+Sat Jun 29 12:23:22 2013. 0 llama a remove en /std/door. Me borro.
+Sat Jun 29 12:23:34 2013.
+/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario llama a
+remove en /std/door#6. Me borro.
+Sat Jun 29 13:53:22 2013. /d/pais-bree/comun/habitacion/caminos/antepuertao
+llama a remove en /std/door#30. Me borro.
+Sat Jun 29 13:54:20 2013. /d/pais-bree/comun/habitacion/caminos/antepuertao
+llama a remove en /std/door#31. Me borro.
+Sat Jun 29 14:14:31 2013.
+/d/pais-bree/comun/habitacion/bree/poney_pisador/arcada llama a remove en
+/std/door#34. Me borro.
+Sat Jun 29 14:39:33 2013.
+/d/pais-bree/comun/habitacion/bree/poney_pisador/arcada llama a remove en
+/std/door#35. Me borro.
+Sat Jun 29 14:54:51 2013.
+/d/pais-bree/comun/habitacion/bree/poney_pisador/arcada llama a remove en
+/std/door#37. Me borro.
+Sun Sep 01 07:16:37 2013: 0 llama a clean_up en /std/door.
+Sun Sep 01 07:16:37 2013. 0 llama a remove en /std/door. Me borro.
+Sat Apr 12 18:52:34 2014: 0 llama a clean_up en /std/door.
+Sat Jul 19 22:57:12 2014: 0 llama a clean_up en /std/door.
+Tue Jul 22 05:37:55 2014: 0 llama a clean_up en /std/door.
+Fri Jul 25 05:16:54 2014: 0 llama a clean_up en /std/door.
+Sun Jul 27 07:35:33 2014: 0 llama a clean_up en /std/door.
+Mon Jul 28 16:44:32 2014: 0 llama a clean_up en /std/door.
+Sat Aug 02 15:43:27 2014: 0 llama a clean_up en /std/door.
+Sun Aug 03 08:11:03 2014: 0 llama a clean_up en /std/door.
+Sun Aug 17 17:47:26 2014: 0 llama a clean_up en /std/door.
+Tue Aug 19 17:04:47 2014: 0 llama a clean_up en /std/door.
+Mon Aug 25 05:43:31 2014: 0 llama a clean_up en /std/door.
+Sat Sep 06 17:57:21 2014: 0 llama a clean_up en /std/door.
+Sun Sep 07 08:15:53 2014: 0 llama a clean_up en /std/door.
+Sun Sep 07 18:13:43 2014: 0 llama a clean_up en /std/door.
+Sun Sep 07 19:33:20 2014: 0 llama a clean_up en /std/door.
+Tue Sep 09 06:20:45 2014: 0 llama a clean_up en /std/door.
+Tue Sep 09 16:41:52 2014: 0 llama a clean_up en /std/door.
+Sun Sep 21 09:56:25 2014: 0 llama a clean_up en /std/door.
+Sun Sep 28 17:10:19 2014: 0 llama a clean_up en /std/door.
+Sun Oct 26 17:44:29 2014: 0 llama a clean_up en /std/door.

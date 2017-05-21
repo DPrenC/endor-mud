@@ -1,0 +1,61 @@
+Descripción y resolución:
+
+Un asesino fugitivo se ha ocultado en la aldea. Al listar el número del quest en un gremio, se dará al player la primera pista de que debe empezar en la aldea de Sloch, en los dominios de Sherek.
+Nadie hablará nada sobre el tema, ni contestará preguntas, si no han sido programadas, y si el player no tiene el atributo exigido para cada pregunta y su respuesta.
+Será en la taberna, donde por los chats de Marath y Tabur, el tabernero, el player empezará a saber o sospechar.
+Deberá entonces preguntar al tabernero "sobre marath", y el tabernero le dará la primera explicación, y le dirigirá al jefe de la guardia, colocándole el atributo "sabemarath". Sin éste atributo, Daryl, el jefe, no contestará como es debido, diciendo al player que está en la taberna, que vaya allí si quiere hablar con marath, vamos, se lo quita de encima.
+Con el atributo puesto, Daryl le informará de que ya sospechaba algo, pero que necesita una prueba y no puede desplazarse a Berat a investigar, pidiendo al player que vaya y pregunte a las autoridades, colocándole el atributo "sabeprueba".
+Deberá entonces dirigirse a Berat, y hablar con el secretario del ayuntamiento.
+Dependiendo de si el player ha resuelto ya el quest, tiene el atributo "sabeprueba" o no, dará una respuesta distinta a la pregunta "sobre asesino", o "sobre marath", o bueno, crimen, asesinato...
+Si no está resuelto y tiene el atributo, le explicará la historia, y le dirá que la prueba es un libro, colocándole el atributo "sabelibro".
+Ahora, en el cementerio, hay una room donde será necesario rastrear para encontrar una salida abajo, al interior de una tumba, donde hay un cofre, que, en el init, si no tiene el quest resuelto y no tiene el atributo "sabecofre", se lo pondrá, pero en ese momento no le servirá para nada, digo el cofre, el atributo sí.
+En la pradera, hay un niño bañándose en el río, y buscando en la arena, que..., si el quest no está resuelto, tiene el atributo sabelibro y el sabecofre, le dirá que ha encontrado una llave.
+Si el player le pregunta por la llave, las respuestas serán variadas, pero atengamos a lo necesario para el quest, o sea, tiene ambos atributos y no ha resuelto el quest, el niño le dirá que se la dará si le trae una piedra preciosa, y le pondrá el atributo sabellave.
+Si le preguntamos por la piedra teniendo el atributo sabellave, nos dirá que su abuelo le ha hablado de una mina, y le pondrá el atributo sabepiedra.
+Estos controles sirven para por un lado, si el player muere y no hay posibilidad de que recupere la llave, por lo que sea, si tiene los atributos necesarios, al preguntar al niño de nuevo, éste le dirá que, "la perdiste al irte, y yo la recogí, toma".
+Bien, le preguntamos sobre su abuelo, y nos dice que es el viejo que está pescando en la room continua, a quien preguntamos sobre las minas, y con el atributo sabepiedra puesto, nos dirá que..., bueno, una explicación, y nos remitirá a los enanos, a alguien que por su autoridad sepa todo sobre la historia de los enanos.
+Vamos a Kha-annu, y le preguntamos, nada menos que al rey. Si tenemos los atributos requeridos, nos dirá donde están, y nos pondrá el atributo sabeminas.
+Volvemos a la aldea, y vamos a las canteras del norte, nos arrojarán al interior del primer laberinto, a una room aleatoria, obsequiando a quien venga con nosotros con un TP->RemoveFollowers(); que impedirá llevar de la manita a nadie.
+El player podrá entrar sólo a matar guardias y esclavos, cuando no tenga el atributo sabeminas, y se le permitirá salir, pero no encontrará el paso al siguiente laberinto, mientras que si tiene sabeminas, podrá encontrar el paso, pero no se le permitirá salir.
+Rebuscando por el laberinto, encontraremos, si tenemos el atributo sabeminas, una salida abajo, al segundo laberinto, que es copia del primero, pero que también nos deja caer en una room aleatoria, quitando de nuevo los seguidores.
+Encontramos una nueva salida, de la que saldremos trepando, con useskill, claro, que nos envía a una room aleatoria de un tercer laberinto, y de nuevo sin seguidores.
+Estos 3 laberintos tienen ForbidAllMagic.
+En el primer laberinto habrá guardias que azotarán al player quitándole 2 pv cada vez que los encuentre, y algunos aldeanos esclavos.
+El segundo laberinto es resbaladizo y áspero y el player se hará daño cada room que se mueva, perdiendo igualmente 2 pv.
+En éste habrá murciélagos de nivel 5 a 10.
+El tercer laberinto no hace daño por sí mismo, pero es guarida de demonios agresivos de nivel 10 a 25.
+Las descripciones de los 3 son aleatorias, con un switch, pero diferentes para cada laberinto.
+Bien, en la room apropiada del último laberinto, habrá que picar, para lo cuál el player tendrá que llevar el pico que le entregarán al entrar en la cantera, y tendrá que probar en todas las rooms, o mirar en todas, porque en la salida le indican que "el suelo está formado por guijarros que no están colocados de forma natural".
+Picando, se le quitan de nuevo los seguidores, y cae al fin del laberinto, donde, le daremos una lorobola para que se consuele, y sin quest y con los atributos necesarios, coge la piedra y le ponen el atributo tienepiedra.
+Si tiene el attributo tienepiedra y muere y no consigue recuperarla, volviendo aquí se le dará una nueva piedra.
+De aquí sólo se sale nadando, con useskill, por supuesto.
+Llega al lavadero de la aldea, va al niño, le dará la piedra, y el niño le dará la llave, poniéndole el atributo tienellave, y borrando sabepiedra, sabeminas, tienepiedra y sabellave.
+Volverá al cementerio, donde abrirá el cofre, y obtendrá el libro y una cantidad aleatoria, entre 5 y 15 mt, se le pone el atributo tienelibro, se le borra tienellave y la llave es destruida.
+Con el atributo tienelibro, si muere y no consigue recuperar el libro, volviendo a la tumba se le dará uno nuevo.
+Irá entonces a Daryl y le dará el libro, y éste le dará el quest por resuelto, eliminando a Marath y su inventario (una simple katana negra), y haciendo un borrado de todos los atributos, por si acaso.
+Si el jugador, pese a todos los Sets prohibitivos de los objetos consigue apoderarse de la llave, la piedra o el libro de forma indebida, (por ejemplo cargando con el cadáver de un player hasta que se descomponga) su uso le traerá consecuencias nefastas, tales como que se simule una agresión casi mortal de Marath si intenta abrir el cofre con la llave mal obtenida, o sea, sin el atributo tienellave, o el niño llamará a un guardia que automáticamente lucha con el player, si se le da la piedra sin el atributo ttienepiedra, o se simulará una paliza casi mortal de Daryl y sus 4 guardias, si se intenta darle el libro sin el atributo tienelibro.
+
+Guía de atributos de control 
+
+Atributos de autocontrol para el funcionamiento del quest
+
+sabemarath: el tabernero le ha informado de que marath podría ser un asesino.
+sabeprueba: Daryl le ha informado de que Marath es efectivamente un asesino, y que la prueba está en Berat. No se activará si no está activado sabemarath.
+sabelibro: El secretario de Berat le ha informado de que la prueba a conseguir es un libro. No se activará si no está activado sabeprueba.
+sabecofre: ha descubierto el cofre en el cementerio. 
+sabellave: El niño le ha informado de que tiene la llave del cofre. No se activará si no está activado sabecofre.
+sabepiedra: El niño le ha informado dónde conseguir la piedra. No se activará si no está activado sabellave.
+sabeminas: el rey enano le ha informado dónde están las minas. No se activará si no está activado sabepiedra.
+tienepiedra: Ha encontrado la piedra. No se activará si no está activado sabepiedra.
+tienellave: El niño le ha dado la llave. No se activará si no está activado tienepiedra. Se borrarán sabeminas, sabepiedra y tienepiedra.
+tienelibro: Ha conseguido el libro. No se activará si no está activado tienellave. Se borrarán sabecofre, sabellave y tienellave.
+
+Atributos de control para el seguimiento de los wizards
+
+hechodaryl: cumplido con Daryl. Se borrará sabemarath.
+hechoberat: cumplido en Berat. 
+echoenano: listo para las minas.
+hechoniño: cumplido con el niño. se borrarán sabecofre, sabeminas, sabellave, sabepiedra, tienepiedra y tienellave.
+
+QUESTMASTER->SetPlayerQuest("DarylQuest",TP);
+quest resuelto. Se borrarán todos los atributos de control del juego, y de control para wizs.

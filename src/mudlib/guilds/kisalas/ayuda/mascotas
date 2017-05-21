@@ -1,0 +1,97 @@
+
+               _ |\_  	 		      ,    , 
+               \` ..\      G r e m i o	    ("\''/").___..--''"`-._ 
+          __,.-" =__Y=         d e	     `9_ 9  )   `-.  (     ).`-.__.`)
+        ."        )       K i s a l a s      (_Y_.)'  ._   )  `._ `. ``-..-
+  _    /   ,    \/\_  _ 		   _..`--'_..-_/  /--'_.' .'       
+ ((____|    )_-\ \_-`(_)  		 (il).-''  ((i).'  ((!.-'          
+ `-----'`-----` `--`     [1mM A S C O T A S[0m                              
+
+[1mIntroducción[0m
+
+    Las Amazonas, al convivir desde pequeñas rodeadas de animales salvajes y
+  domesticados, poseen una cualidad que les permite comunicarse con estos a
+  través de la telepatia. Una vez alcanzan la mayoría de edad y entran a
+  formar parte de la orden la Gran Kisala les otorga el privilegio de poder
+  adoptar una mascota que la amazona deberá alimentar, enseñar y proteger.
+  A cambio, si le enseña bien, la mascota le acompañará a todos los lugares
+  y le ayudará en situaciones comprometidas.
+
+[1mLas mascotas[0m
+
+    Existen multitud de animales entre los que puedes elegir tu mascota, cada
+  uno con sus características própias de fuerza, inteligencia, destreza o
+  constitución. Una vez hayas adoptado una mascota ésta te seguirá a donde
+  quiera que vayas. El animal se mantendrá oculto hasta que tú no lo llames
+  silbando, en ese instante se acercará a ti y te seguirá. Conforme tu mascota
+  aumente de nivel hará más caso a tus indicaciones y cada vez conseguirás
+  que haga más cosas. No debes dejar de lado su alimentación o morirá y en
+  ese caso tendrás que adoptar otra mascota y enseñarle de nuevo. Su instinto
+  de conservación hace que se coman los cadáveres que encuentran en su camino.
+
+[1mNiveles de las mascotas[0m
+
+    Cuando adoptas un animal éste tiene nivel 1 y solo atiende a ciertas
+  órdenes muy concretas y simples. Pero puedes conseguir que aumente de nivel
+  mediante puntos de experiencia que tu mascota adquirirá combatiendo a tu
+  lado o por su cuenta. Cuando tenga suficientes puntos para subir de nivel
+  ella lo hará automáticamente y se incrementará la fuerza, la destreza, la
+  inteligencia y la constitución dependiendo del nuevo nivel que jamás podrá
+  ser mayor a 30.
+
+[1mForma de comunicarse[0m
+
+    La telepatía es de la única forma en que puedes comunicarte con tu mascota
+  para indicarle las acciones a realizar. O sea, pongamos que tienes un animal
+  que se llama Dyigo pues el método sería 'telepatia dyigo <acción>'. Por lo
+  normal la mascota estará escondida y siguiéndote a una cierta distancia y
+  deberás reclamar su atención silbando para que aparezca y tu puedas
+  ordenarle lo que quieras. Si deseas que vuelva a esconderse solo tienes que
+  decirle 'escóndete'. Si por alguna razón como que la mascota huye del lugar
+  en un combate dejará de seguirte y si no tiene mucho nivel tendrás que ir
+  por ella y cuando la hayas encontrado decirle 'sígueme' para que vuelva a
+  hacerlo. En caso de que tenga más de nivel 15 silbando de nuevo reclamará
+  la atención del animal, acudirá a tu lado y te comenzará a seguir.
+
+    Aunque las mascotas son reacias a tratar con el resto de seres puedes
+  obligarlas a que digan o hagan cosas. Con 'telepatia <mascota> di <texto>'
+  tu mascota dirá eso en el lugar donde ella esté, y con 'telepatia <mascota>
+  acción <accion>' actuará igual que 'acción' de los jugadores.
+
+    En el supuesto caso de que tu mascota se llame igual que un jugador que
+  en ese instante esté conectado y no puedas decirle nada puedes hacerlo
+  con 'tel mascota <comando>'.
+
+[1mCombate[0m
+
+    Las mascotas tienen dos sistemas de combate alerta y pasivo. En el primero
+  atacarán a tus enemigos y en el segundo se mantendrán al margen en todos
+  tus combates. Para cambiarle el modo solo tienes que decirle a tu animal
+  'combate (alerta/pasivo)' y ella actuará en consecuencia. También puedes
+  obligarla a que ataque a alguien por su cuenta diciéndole 'ataca objetivo',
+  si le dices 'huye' huirá en alguna de las direcciones posibles y si le dices
+  'huye <direccion>' lo hará en esa en concreto.
+
+[1mComandos y niveles[0m
+
+    A continuación teneis todo lo que pueden hacer vuestras mascotas y al
+  nivel al que lo hacen. La forma es 'telepatia <nombre_mascota> <comando>':
+
+    Nivel 1:  estado .................... Te dice su estado actual
+              combate (alerta/pasivo) ... Cambias el modo de combate.
+              nombre <nuevo_nombre> ..... Le cambias el nombre.
+              sígueme ................... Le fuerzas a que te siga.
+              sálvate ................... Memoriza su estado actual.
+              huye ...................... Huye por una dirección aleatoria.
+              escóndete ................. Desaparece y va por su cuenta.
+              coraje <nuevo_coraje> ..... Le dices cuando quieres que huya.
+              ataca <objetivo> .......... Le fuerzas a que ataque.
+
+    Nivel 5:  di <texto> ................ Le fuerzas a que diga algo.
+              acción <accion> ........... Le fuerzas a que haga algo.
+
+    Nivel 15: huye <dirección> .......... Huye hacia donde le indicas.
+              vete <dirección> .......... Se va por esa dirección.
+              mira ...................... Te dice lo que ella ve.
+              compra <alimento> ......... Le indicas que compre alimentos.
+

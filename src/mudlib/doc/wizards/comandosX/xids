@@ -1,0 +1,5 @@
+SINOPSIS
+    xids <objeto>
+
+DESCRIPCION
+    Visualiza el UID y el EUID de un <objeto>.

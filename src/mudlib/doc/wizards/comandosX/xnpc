@@ -1,0 +1,15 @@
+SINOPSIS
+    xnpc <pnj>
+
+DESCRIPCION
+    Muestra de una forma clara y sencilla el valor de alguna de las
+    variables y de los stats de los pnjs. El comando no funcionaria si
+    se tratase de un jugador, para ello tienes el comando 'xplayer'.
+    Si quieres averiguar toda la información de un pnj o un jugador puedes
+    usar el comando xprops.
+
+EJEMPLOS
+    xnpc $h.2      Mostraria tu información del objeto 2 de la habitación
+                   en caso de que fuera un pnj.
+    xplayer orco   Mostraria la informacion del orco, si estuviera en la
+                   habitación donde te encuentres en ese instante.

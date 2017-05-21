@@ -1,0 +1,44 @@
+/*=============================================================*
+ |            << GOLDHAI.mapa   [w] Woo@simauria >>            |
+ |                  ZONA SUROESTE DE GOLDHAI                   |
+ *=============================================================*
+ |               Creacion.............. 10-01-98               |  
+ |               Ultima Modificacion... 10-01-98               |
+ |                                                             |
+ *-------------------------------------------------------------*/
+
+   Parte Noroeste
+         |
+       F-A
+      /  |
+   P-P   A					A - Alrededores de Crowy
+   | |   |
+   P-P   A					B - Bosque Oscuro
+   |     |
+   P     A					C - Camino del puerto
+   |     |
+   P-C-C-A-A					P - Puerto de Goldhai
+   |     | |
+   M     B A					M - Muelles
+   |     | |
+   M     B A					N - Mansion de Rankomme
+   |     | |
+   M     N-A					F - Frente Faro
+   |     | |
+   M     B A-A     Crowy			K - Acantilado
+   |     |   |       |
+   M     B   A-A-A-A-A-A-A-Zona Centro		E - Frente magia negra
+   |     |     |
+   M-C   B     B				T - Tienda magia negra
+     |   |     |
+     C-F-B     B-Ruinas
+         |     |
+         B-B-B-B
+         |     |
+       K-B     B
+       |       |
+       K       B-Ruinas
+       |       |
+       K-E-B-B-B
+         |
+         T

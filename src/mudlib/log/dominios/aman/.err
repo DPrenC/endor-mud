@@ -1,0 +1,1055 @@
+ -- Sat Feb 18 19:28:19 2012 --
+d/aman/comun/habitacion/valinor/valmar/bosque_central/bosque_central_base.c line 282: Missing 'return <value>' statement
+Compiling "/d/aman/comun/habitacion/valinor/valmar/bosque_central/bosque_central_base.c", Line 282
+ -- Sat Feb 18 22:56:01 2012 --
+Obj: d/aman/comun/habitacion/valinor/valmar/bosque_central/bosque15, File: d/aman/comun/habitacion/valinor/valmar/bosque_central/bosque15.c, Line: 23:
+Created by /orome
+  Undefined function: OBJ_COMIDA_FAERIA
+ -- Sat Feb 18 22:58:05 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/isla_base.c line 11: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/isla_base.c", Line 11
+ -- Sat Feb 18 23:12:51 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 12: Cannot #include '/d/lad-laurelin/comun/quest/runas/runas_quest.h'
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 12
+ -- Sat Feb 18 23:14:21 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/isla_base.c line 11: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/isla_base.c", Line 11
+ -- Sun Feb 19 16:33:38 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 14: Missing leading " or < in #include
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 14
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 15: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 15
+ -- Sun Feb 19 17:17:10 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 14: Missing leading " or < in #include
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 14
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 15: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 15
+ -- Sun Feb 19 17:18:24 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 14: Missing leading " or < in #include
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 14
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 15: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 15
+ -- Sun Feb 19 17:29:12 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 14: Missing leading " or < in #include
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 14
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 15: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 15
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 14: Missing leading " or < in #include
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 14
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 15: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 15
+ -- Sun Feb 19 17:46:34 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 71: Undefined function: mirar_menir
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 71
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 72: Undefined function: mirar_hueco
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 72
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 82: Undefined function: mirar_uno
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 82
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: Undefined function: mirar_tres
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 96: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 96
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 71: Undefined function: mirar_menir
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 71
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 72: Undefined function: mirar_hueco
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 72
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 82: Undefined function: mirar_uno
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 82
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: Undefined function: mirar_tres
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 96: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 96
+ -- Sun Feb 19 17:55:22 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 71: Undefined function: mirar_menir
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 71
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 72: Undefined function: mirar_hueco
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 72
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 82: Undefined function: mirar_uno
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 82
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: Undefined function: mirar_tres
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 96: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 96
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 71: Undefined function: mirar_menir
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 71
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 72: Undefined function: mirar_hueco
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 72
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 82: Undefined function: mirar_uno
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 82
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: Undefined function: mirar_tres
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 96: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 96
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 71: Undefined function: mirar_menir
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 71
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 72: Undefined function: mirar_hueco
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 72
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 82: Undefined function: mirar_uno
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 82
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: Undefined function: mirar_tres
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 96: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 96
+ -- Sun Feb 19 17:56:58 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 71: Undefined function: mirar_menir
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 71
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 72: Undefined function: mirar_hueco
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 72
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 82: Undefined function: mirar_uno
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 82
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: Undefined function: mirar_tres
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 96: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 96
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 71: Undefined function: mirar_menir
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 71
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 72: Undefined function: mirar_hueco
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 72
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 82: Undefined function: mirar_uno
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 82
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: Undefined function: mirar_tres
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 96: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 96
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 71: Undefined function: mirar_menir
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 71
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 72: Undefined function: mirar_hueco
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 72
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 82: Undefined function: mirar_uno
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 82
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: Undefined function: mirar_tres
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 96: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 96
+ -- Sun Feb 19 18:12:18 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 71: Undefined function: mirar_menir
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 71
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 72: Undefined function: mirar_hueco
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 72
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 82: Undefined function: mirar_uno
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 82
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: Undefined function: mirar_tres
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 96: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 96
+ -- Sun Feb 19 18:25:22 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 71: Undefined function: mirar_menir
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 71
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 72: Undefined function: mirar_hueco
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 72
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 82: Undefined function: mirar_uno
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 82
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: Undefined function: mirar_tres
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 96: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 96
+ -- Sun Feb 19 18:29:06 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 71: Undefined function: mirar_menir
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 71
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 72: Undefined function: mirar_hueco
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 72
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 82: Undefined function: mirar_uno
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 82
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: Undefined function: mirar_tres
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 96: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 96
+ -- Sun Feb 19 18:30:14 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/robledal37.c line 70: Function OBJ_COMIDA_FAERIA undefined
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal37.c", Line 70
+d/aman/comun/habitacion/valinor/valmar/isla/robledal37.c line 70: Bad arg 1 type to clone_object(): got unknown, expected string/object
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal37.c", Line 70
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 71: Undefined function: mirar_menir
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 71
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 72: Undefined function: mirar_hueco
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 72
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 82: Undefined function: mirar_uno
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 82
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: Undefined function: mirar_tres
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 96: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 96
+ -- Sun Feb 26 04:13:33 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/choza.c line 110: Missing 'return <value>' statement
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/choza.c", Line 110
+d/aman/comun/quest/runas/cathrann.c line 187: Missing 'return <value>' statement
+Compiling "/d/aman/comun/quest/runas/cathrann.c", Line 187
+ -- Sun Feb 26 04:31:29 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/choza.c line 110: Missing 'return <value>' statement
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/choza.c", Line 110
+d/aman/comun/quest/runas/cathrann.c line 187: Missing 'return <value>' statement
+Compiling "/d/aman/comun/quest/runas/cathrann.c", Line 187
+ -- Sun Feb 26 04:40:01 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 71: Undefined function: mirar_menir
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 71
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 72: Undefined function: mirar_hueco
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 72
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 82: Undefined function: mirar_uno
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 82
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: Undefined function: mirar_tres
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 96: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 96
+ -- Sun Feb 26 04:49:17 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/choza.c line 118: Missing 'return <value>' statement
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/choza.c", Line 118
+ -- Sun Feb 26 04:52:11 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/choza.c line 55: Undefined function: mirar_abertura
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/choza.c", Line 55
+ -- Sun Feb 26 05:08:46 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 71: Undefined function: mirar_menir
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 71
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 72: Undefined function: mirar_hueco
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 72
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 82: Undefined function: mirar_uno
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 82
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: Undefined function: mirar_tres
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 96: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 96
+ -- Thu Mar 01 11:27:12 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/robledal37.c line 70: Function OBJ_COMIDA_FAERIA undefined
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal37.c", Line 70
+d/aman/comun/habitacion/valinor/valmar/isla/robledal37.c line 70: Bad arg 1 type to clone_object(): got unknown, expected string/object
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal37.c", Line 70
+d/aman/comun/habitacion/valinor/valmar/isla/robledal37.c line 70: Function OBJ_COMIDA_FAERIA undefined
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal37.c", Line 70
+d/aman/comun/habitacion/valinor/valmar/isla/robledal37.c line 70: Bad arg 1 type to clone_object(): got unknown, expected string/object
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal37.c", Line 70
+d/aman/comun/habitacion/valinor/valmar/isla/robledal37.c line 70: Function OBJ_COMIDA_FAERIA undefined
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal37.c", Line 70
+d/aman/comun/habitacion/valinor/valmar/isla/robledal37.c line 70: Bad arg 1 type to clone_object(): got unknown, expected string/object
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal37.c", Line 70
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 71: Undefined function: mirar_menir
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 71
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 72: Undefined function: mirar_hueco
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 72
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 82: Undefined function: mirar_uno
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 82
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 88: Undefined function: mirar_tres
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 88
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 96: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 96
+ -- Sat Apr 14 18:39:23 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/choza.c line 59: Variable NIGHTDAY not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/choza.c", Line 59
+d/aman/comun/habitacion/valinor/valmar/isla/choza.c line 59: Variable ND_NIGHT not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/choza.c", Line 59
+d/aman/comun/habitacion/valinor/valmar/isla/choza.c line 85: Missing 'return <value>' statement
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/choza.c", Line 85
+ -- Sat Apr 14 18:40:49 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c line 10: Cannot #include '/d/lad-laurelin/comun/quest/runas/runas_quest.h'
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c", Line 10
+d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c line 59: Variable QUEST_KEY not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c", Line 59
+d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c line 59: Variable ATTE_RUNAS not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c", Line 59
+d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c line 68: Variable QUEST_KEY not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c", Line 68
+d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c line 68: Variable ATTE_RUNAS not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c", Line 68
+d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c line 103: Variable QUEST_KEY not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c", Line 103
+ -- Sat Apr 14 18:43:33 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/posada03_atrio.c line 91: Missing 'return <value>' statement
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada03_atrio.c", Line 91
+ -- Sat Apr 14 18:55:17 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/posada03_atrio.c line 91: Missing 'return <value>' statement
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada03_atrio.c", Line 91
+ -- Sat Apr 14 18:56:49 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c line 10: Cannot #include '/d/lad-laurelin/comun/quest/runas/runas_quest.h'
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c", Line 10
+d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c line 59: Variable QUEST_KEY not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c", Line 59
+d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c line 59: Variable ATTE_RUNAS not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c", Line 59
+d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c line 68: Variable QUEST_KEY not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c", Line 68
+d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c line 68: Variable ATTE_RUNAS not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c", Line 68
+d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c line 103: Variable QUEST_KEY not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c", Line 103
+ -- Sun Apr 15 07:20:54 2012 --
+Obj: d/aman/comun/habitacion/valinor/valmar/isla/posada02_hab1, File: std/room/exits.c, Line: 514:
+Created by /orome
+  Aunque /d/aman/comun/habitacion/valinor/valmar/isla/posada03_atrio está cargada, no se encontró la puerta asociada a la salida de vuelta a esta habitación.
+ -- Sun Apr 15 07:26:12 2012 --
+Obj: d/aman/comun/habitacion/valinor/valmar/isla/posada03_atrio, File: std/room/exits.c, Line: 503:
+Created by /orome
+  No se encontró la salida de la habitación destino a la actual.
+ -- Sun Apr 15 07:27:22 2012 --
+Obj: d/aman/comun/habitacion/valinor/valmar/isla/posada03_atrio, File: std/room/exits.c, Line: 503:
+Created by /orome
+  No se encontró la salida de la habitación destino a la actual.
+ -- Sun Apr 15 07:29:20 2012 --
+Obj: d/aman/comun/habitacion/valinor/valmar/isla/posada03_atrio, File: std/room/exits.c, Line: 503:
+Created by /orome
+  No se encontró la salida de la habitación destino a la actual.
+ -- Sun Apr 15 07:30:48 2012 --
+Obj: d/aman/comun/habitacion/valinor/valmar/isla/posada03_atrio, File: std/room/exits.c, Line: 503:
+Created by /orome
+  No se encontró la salida de la habitación destino a la actual.
+ -- Sun Apr 15 07:59:54 2012 --
+Obj: d/aman/comun/habitacion/valinor/valmar/isla/posada03_atrio, File: std/room/exits.c, Line: 503:
+Created by /orome
+  No se encontró la salida de la habitación destino a la actual.
+ -- Sun Apr 15 08:09:30 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/choza.c line 59: Variable NIGHTDAY not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/choza.c", Line 59
+d/aman/comun/habitacion/valinor/valmar/isla/choza.c line 59: Variable ND_NIGHT not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/choza.c", Line 59
+d/aman/comun/habitacion/valinor/valmar/isla/choza.c line 85: Missing 'return <value>' statement
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/choza.c", Line 85
+d/aman/comun/habitacion/valinor/valmar/isla/choza.c line 85: Missing 'return <value>' statement
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/choza.c", Line 85
+ -- Sun Apr 15 12:00:06 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/choza.c line 81: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/choza.c", Line 81
+ -- Sun Apr 15 12:01:14 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/choza.c line 82: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/choza.c", Line 82
+ -- Sun Apr 15 12:13:08 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 107: Variable QUEST_KEY not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 107
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 115: Variable QUEST_KEY not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 115
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 123: Variable QUEST_KEY not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 123
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 131: Variable QUEST_KEY not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 131
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 139: Variable QUEST_KEY not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 139
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 147: Variable QUEST_KEY not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 147
+ -- Sun Apr 15 12:17:48 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 13: Missing leading " or < in #include
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 13
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 14: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 14
+ -- Sun Apr 15 12:30:43 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 13: Missing leading " or < in #include
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 13
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 14: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 14
+ -- Sun Apr 15 12:42:49 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 13: Missing leading " in #include
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 13
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 107: Variable QUEST_KEY not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 107
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 115: Variable QUEST_KEY not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 115
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 123: Variable QUEST_KEY not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 123
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 131: Variable QUEST_KEY not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 131
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 139: Variable QUEST_KEY not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 139
+ -- Sun Apr 15 13:22:49 2012 --
+Obj: d/aman/comun/transporte/barco/barca_faeria/int_barca, File: d/aman/comun/transporte/barco/barca_faeria/int_barca.c, Line: 25:
+Created by /d/aman/comun/transporte/barco/barca_faeria/barca_glinnael#21
+  Undefined function: PNJ_BOSQUE_FAERIA
+ -- Sun Apr 15 13:22:49 2012 --
+Obj: d/aman/comun/transporte/barco/barca_faeria/int_barca, File: d/aman/comun/transporte/barco/barca_faeria/int_barca.c, Line: 25:
+Created by /d/aman/comun/transporte/barco/barca_faeria/barca_glinnael#21
+  Undefined function: PNJ_BOSQUE_FAERIA
+ -- Sun Apr 15 13:22:49 2012 --
+Obj: d/aman/comun/transporte/barco/barca_faeria/int_barca, File: d/aman/comun/transporte/barco/barca_faeria/int_barca.c, Line: 25
+  Undefined function: PNJ_BOSQUE_FAERIA
+/d/aman/comun/transporte/barco/barca_faeria/barca_glinnael#21: Error en el heartbeat
+Obj: d/aman/comun/transporte/barco/barca_faeria/int_barca, File: d/aman/comun/transporte/barco/barca_faeria/int_barca.c, Line: 25
+  Undefined function: PNJ_BOSQUE_FAERIA
+ -- Sun Apr 15 13:27:11 2012 --
+Obj: d/aman/comun/transporte/barco/barca_faeria/int_barca, File: d/aman/comun/transporte/barco/barca_faeria/int_barca.c, Line: 25:
+Created by /d/aman/comun/transporte/barco/barca_faeria/barca_glinnael#22
+  Undefined function: PNJ_VALINOR
+ -- Sun Apr 15 13:27:11 2012 --
+Obj: d/aman/comun/transporte/barco/barca_faeria/int_barca, File: d/aman/comun/transporte/barco/barca_faeria/int_barca.c, Line: 25:
+Created by /d/aman/comun/transporte/barco/barca_faeria/barca_glinnael#22
+  Undefined function: PNJ_VALINOR
+ -- Sun Apr 15 13:27:11 2012 --
+Obj: d/aman/comun/transporte/barco/barca_faeria/int_barca, File: d/aman/comun/transporte/barco/barca_faeria/int_barca.c, Line: 25
+  Undefined function: PNJ_VALINOR
+/d/aman/comun/transporte/barco/barca_faeria/barca_glinnael#22: Error en el heartbeat
+Obj: d/aman/comun/transporte/barco/barca_faeria/int_barca, File: d/aman/comun/transporte/barco/barca_faeria/int_barca.c, Line: 25
+  Undefined function: PNJ_VALINOR
+Obj: d/aman/comun/transporte/barco/barca_faeria/int_barca, File: d/aman/comun/transporte/barco/barca_faeria/int_barca.c, Line: 25:
+Created by /d/aman/comun/transporte/barco/barca_faeria/barca_glinnael#22
+  Undefined function: PNJ_VALINOR
+Obj: d/aman/comun/transporte/barco/barca_faeria/int_barca, File: d/aman/comun/transporte/barco/barca_faeria/int_barca.c, Line: 25:
+Created by /d/aman/comun/transporte/barco/barca_faeria/barca_glinnael#22
+  Undefined function: PNJ_VALINOR
+ -- Sun Apr 15 19:17:01 2012 --
+Obj: d/aman/comun/pnj/valinor/valmar/elfo#7, File: d/aman/comun/pnj/valinor/valmar/elfo.c, Line: 33:
+Created by /d/aman/comun/habitacion/valinor/valmar/bosque_central/bosque03
+  Undefined function: HAB_BOSQUE_FAERIA
+ -- Sun Apr 15 19:17:01 2012 --
+Obj: d/aman/comun/pnj/valinor/valmar/elfo#7, File: d/aman/comun/pnj/valinor/valmar/elfo.c, Line: 33:
+Created by /d/aman/comun/habitacion/valinor/valmar/bosque_central/bosque03
+  Undefined function: HAB_BOSQUE_FAERIA
+ -- Sun Apr 15 19:35:54 2012 --
+Obj: d/aman/comun/pnj/valinor/valmar/elfo#8, File: std/room/items.c, Line: 77:
+/d/aman/comun/pnj/valinor/valmar/elfo#8 tried to load /d/aman/comun/objeto/arma/espada-acero.c
+Created by /d/aman/comun/habitacion/valinor/valmar/bosque_central/bosque03
+  Failed to load file: 'd/aman/comun/objeto/arma/espada-acero'.
+ -- Sun Apr 15 19:35:54 2012 --
+Obj: d/aman/comun/pnj/valinor/valmar/elfo#8, File: std/room/items.c, Line: 77:
+/d/aman/comun/pnj/valinor/valmar/elfo#8 tried to load /d/aman/comun/objeto/arma/espada-acero.c
+Created by /d/aman/comun/habitacion/valinor/valmar/bosque_central/bosque03
+  Failed to load file: 'd/aman/comun/objeto/arma/espada-acero'.
+ -- Sun Apr 15 19:57:04 2012 --
+d/aman/comun/pnj/valinor/valmar/elfa.c line 38: Variable P_SIZE_NORMAL not declared !
+Compiling "/d/aman/comun/pnj/valinor/valmar/elfa.c", Line 38
+ -- Sun Apr 15 20:01:54 2012 --
+d/aman/comun/objeto/comida/valinor/gran_seta.c line 50: Undefined function 'PNJ_BOSQUE_FAERIA'
+Compiling "/d/aman/comun/objeto/comida/valinor/gran_seta.c", Line 50
+ -- Sun Apr 15 20:22:20 2012 --
+d/aman/comun/pnj/valinor/valmar/centauro.c line 60: Missing 'return <value>' statement
+Compiling "/d/aman/comun/pnj/valinor/valmar/centauro.c", Line 60
+ -- Sun Apr 15 20:33:04 2012 --
+d/aman/comun/pnj/valinor/valmar/unicornio_zolnor.c line 113: Missing 'return <value>' statement
+Compiling "/d/aman/comun/pnj/valinor/valmar/unicornio_zolnor.c", Line 113
+ -- Mon Apr 16 19:10:40 2012 --
+d/aman/comun/habitacion/valinor/valmar/bosque_hadas/bosque42.c line 66: Missing 'return <value>' statement
+Compiling "/d/aman/comun/habitacion/valinor/valmar/bosque_hadas/bosque42.c", Line 66
+ -- Mon Apr 16 19:31:26 2012 --
+d/aman/comun/objeto/otro/valinor/parra.c line 51: syntax error
+Compiling "/d/aman/comun/objeto/otro/valinor/parra.c", Line 51
+d/aman/comun/objeto/otro/valinor/parra.c line 59: Bad assignment: illegal lhs (target)
+Compiling "/d/aman/comun/objeto/otro/valinor/parra.c", Line 59
+d/aman/comun/objeto/otro/valinor/parra.c line 65: syntax error
+Compiling "/d/aman/comun/objeto/otro/valinor/parra.c", Line 65
+d/aman/comun/objeto/otro/valinor/parra.c line 73: Bad assignment: illegal lhs (target)
+Compiling "/d/aman/comun/objeto/otro/valinor/parra.c", Line 73
+d/aman/comun/objeto/otro/valinor/parra.c line 76: Bad assignment: illegal lhs (target)
+Compiling "/d/aman/comun/objeto/otro/valinor/parra.c", Line 76
+d/aman/comun/objeto/otro/valinor/parra.c line 95: Bad assignment: illegal lhs (target)
+Compiling "/d/aman/comun/objeto/otro/valinor/parra.c", Line 95
+ -- Mon Apr 16 19:43:26 2012 --
+d/aman/comun/pnj/valinor/valmar/reina_hadas.c line 103: Missing 'return <value>' statement
+Compiling "/d/aman/comun/pnj/valinor/valmar/reina_hadas.c", Line 103
+d/aman/comun/pnj/valinor/valmar/reina_hadas.c line 304: Missing 'return <value>' statement
+Compiling "/d/aman/comun/pnj/valinor/valmar/reina_hadas.c", Line 304
+ -- Mon Apr 16 19:57:21 2012 --
+d/aman/comun/habitacion/valinor/valmar/bosque_hadas/bosque58.c line 37: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/bosque_hadas/bosque58.c", Line 37
+d/aman/comun/habitacion/valinor/valmar/bosque_hadas/bosque58.c line 37: Newline in string
+Compiling "/d/aman/comun/habitacion/valinor/valmar/bosque_hadas/bosque58.c", Line 37
+ -- Tue Apr 17 11:02:38 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c line 10: Cannot #include '/d/lad-laurelin/comun/quest/runas/runas_quest.h'
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c", Line 10
+d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c line 59: Variable QUEST_KEY not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c", Line 59
+d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c line 59: Variable ATTE_RUNAS not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c", Line 59
+d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c line 68: Variable QUEST_KEY not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c", Line 68
+d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c line 68: Variable ATTE_RUNAS not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c", Line 68
+d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c line 103: Variable QUEST_KEY not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c", Line 103
+ -- Tue Apr 17 11:14:25 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c line 10: Missing leading " in #include
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c", Line 10
+d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c line 59: Variable QUEST_KEY not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c", Line 59
+d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c line 59: Variable ATTE_RUNAS not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c", Line 59
+d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c line 68: Variable QUEST_KEY not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c", Line 68
+d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c line 68: Variable ATTE_RUNAS not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c", Line 68
+d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c line 103: Variable QUEST_KEY not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada08_salon.c", Line 103
+ -- Tue Apr 17 11:20:37 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c line 54: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c", Line 54
+d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c line 70: Missing 'return <value>' statement
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c", Line 70
+ -- Tue Apr 17 11:26:49 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c line 54: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c", Line 54
+d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c line 70: Missing 'return <value>' statement
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c", Line 70
+ -- Tue Apr 17 11:33:21 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c line 54: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c", Line 54
+d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c line 70: Missing 'return <value>' statement
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c", Line 70
+ -- Tue Apr 17 11:38:39 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c line 54: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c", Line 54
+d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c line 70: Missing 'return <value>' statement
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c", Line 70
+ -- Tue Apr 17 11:41:59 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c line 50: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c", Line 50
+d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c line 70: Missing 'return <value>' statement
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c", Line 70
+ -- Tue Apr 17 11:43:51 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c line 70: Missing 'return <value>' statement
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c", Line 70
+ -- Tue Apr 17 12:00:19 2012 --
+Obj: d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta, File: std/room/items.c, Line: 77:
+/d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta tried to load /d/aman/comun/quest/runas.c
+Created by /orome
+  Failed to load file: 'd/aman/comun/quest/runas'.
+ -- Tue Apr 17 15:25:04 2012 --
+Obj: d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta, File: std/room/items.c, Line: 77:
+/d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta tried to load /d/aman/comun/quest/runas.c
+Created by /orome
+  Failed to load file: 'd/aman/comun/quest/runas'.
+ -- Tue Apr 17 15:29:26 2012 --
+Obj: d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta, File: std/room/items.c, Line: 77:
+/d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta tried to load /d/aman/comun/quest/runas.c
+Created by /orome
+  Failed to load file: 'd/aman/comun/quest/runas'.
+ -- Tue Apr 17 15:33:42 2012 --
+Obj: d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta, File: std/room/items.c, Line: 77:
+/d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta tried to load /d/aman/comun/quest/runas.c
+Created by /orome
+  Failed to load file: 'd/aman/comun/quest/runas'.
+ -- Tue Apr 17 15:40:32 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c line 48: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c", Line 48
+d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c line 48: Newline in string
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c", Line 48
+ -- Tue Apr 17 15:47:24 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c line 69: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c", Line 69
+d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c line 89: Bad assignment: illegal lhs (target)
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c", Line 89
+d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c line 105: Bad assignment: illegal lhs (target)
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/posada09_secreta.c", Line 105
+ -- Wed Apr 18 20:34:24 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/robledal10.c line 104: Undefined function 'OBJ_OTRO_FAERIA'
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal10.c", Line 104
+d/aman/comun/habitacion/valinor/valmar/isla/robledal10.c line 156: Missing 'return <value>' statement
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal10.c", Line 156
+ -- Wed Apr 18 20:37:40 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/robledal10.c line 156: Missing 'return <value>' statement
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal10.c", Line 156
+ -- Wed Apr 18 20:52:25 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/robledal18.c line 54: Missing 'return <value>' statement
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal18.c", Line 54
+ -- Wed Apr 18 21:14:24 2012 --
+d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c line 13: Cannot #include '/d/aman/comun/quest/runas/'
+Compiling "/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario.c", Line 13
+ -- Wed Apr 18 21:16:56 2012 --
+d/aman/comun/pnj/valinor/valmar/centauro.c line 30: Variable WT_ESPADA not declared !
+Compiling "/d/aman/comun/pnj/valinor/valmar/centauro.c", Line 30
+d/aman/comun/pnj/valinor/valmar/centauro.c line 30: Variable WT_ESPADA not declared !
+Compiling "/d/aman/comun/pnj/valinor/valmar/centauro.c", Line 30
+ -- Thu Apr 19 07:28:48 2012 --
+d/aman/comun/pnj/valinor/valmar/unicornio_zolnor.c line 113: Missing 'return <value>' statement
+Compiling "/d/aman/comun/pnj/valinor/valmar/unicornio_zolnor.c", Line 113
+ -- Thu Apr 19 07:41:40 2012 --
+d/aman/comun/pnj/valinor/valmar/reina_hadas.c line 103: Missing 'return <value>' statement
+Compiling "/d/aman/comun/pnj/valinor/valmar/reina_hadas.c", Line 103
+d/aman/comun/pnj/valinor/valmar/reina_hadas.c line 304: Missing 'return <value>' statement
+Compiling "/d/aman/comun/pnj/valinor/valmar/reina_hadas.c", Line 304
+ -- Thu Apr 19 07:46:30 2012 --
+d/aman/comun/quest/runas/cathrann.c line 187: Missing 'return <value>' statement
+Compiling "/d/aman/comun/quest/runas/cathrann.c", Line 187
+ -- Thu Apr 19 07:53:16 2012 --
+d/aman/comun/quest/runas/gleryn.c line 146: Missing 'return <value>' statement
+Compiling "/d/aman/comun/quest/runas/gleryn.c", Line 146
+ -- Thu Apr 19 08:11:02 2012 --
+d/aman/comun/quest/runas/gleryn.c line 146: Missing 'return <value>' statement
+Compiling "/d/aman/comun/quest/runas/gleryn.c", Line 146
+/d/aman/comun/quest/runas/gleryn tried to load /d/aman/comun/objeto/arma/espada-acero.c
+ -- Fri Aug 17 14:57:26 2012 --
+d/aman/comun/pnj/hobbit_1.c line 1: syntax error
+Compiling "/d/aman/comun/pnj/hobbit_1.c", Line 1
+ -- Fri Aug 17 17:03:30 2012 --
+d/aman/comun/pnj/hobbit1.c line 1: syntax error
+Compiling "/d/aman/comun/pnj/hobbit1.c", Line 1
+d/aman/comun/pnj/hobbit1.c line 1: syntax error
+Compiling "/d/aman/comun/pnj/hobbit1.c", Line 1
+ -- Fri Aug 17 17:06:18 2012 --
+d/aman/comun/pnj/valinor/valmar/reina_hadas.c line 103: Missing 'return <value>' statement
+Compiling "/d/aman/comun/pnj/valinor/valmar/reina_hadas.c", Line 103
+d/aman/comun/pnj/valinor/valmar/reina_hadas.c line 304: Missing 'return <value>' statement
+Compiling "/d/aman/comun/pnj/valinor/valmar/reina_hadas.c", Line 304
+ -- Mon Aug 20 08:15:06 2012 --
+d/aman/comun/pnj/hobbit1.c line 1: syntax error
+Compiling "/d/aman/comun/pnj/hobbit1.c", Line 1
+ -- Mon Aug 20 17:44:01 2012 --
+d/aman/comun/pnj/hobbit_pnj.c line 1: syntax error
+Compiling "/d/aman/comun/pnj/hobbit_pnj.c", Line 1
+ -- Sat Aug 25 16:32:01 2012 --
+d/aman/comun/pnj/valinor/valmar/pnj_prueba.c line 1: Illegal character (hex 00) '
+Compiling "/d/aman/comun/pnj/valinor/valmar/pnj_prueba.c", Line 1
+d/aman/comun/pnj/valinor/valmar/pnj_prueba.c line 1: syntax error
+Compiling "/d/aman/comun/pnj/valinor/valmar/pnj_prueba.c", Line 1
+ -- Sat Aug 25 16:35:39 2012 --
+d/aman/comun/pnj/valinor/valmar/pnj_prueba.c line 1: Illegal character (hex 00) '
+Compiling "/d/aman/comun/pnj/valinor/valmar/pnj_prueba.c", Line 1
+d/aman/comun/pnj/valinor/valmar/pnj_prueba.c line 1: syntax error
+Compiling "/d/aman/comun/pnj/valinor/valmar/pnj_prueba.c", Line 1
+ -- Sat Aug 25 16:38:13 2012 --
+d/aman/comun/pnj/valinor/valmar/pnj_prueba.c line 1: Illegal character (hex 00) '
+Compiling "/d/aman/comun/pnj/valinor/valmar/pnj_prueba.c", Line 1
+d/aman/comun/pnj/valinor/valmar/pnj_prueba.c line 1: syntax error
+Compiling "/d/aman/comun/pnj/valinor/valmar/pnj_prueba.c", Line 1
+ -- Sat Aug 25 16:42:43 2012 --
+d/aman/comun/pnj/valinor/valmar/pnj2.c line 10: syntax error
+Compiling "/d/aman/comun/pnj/valinor/valmar/pnj2.c", Line 10
+ -- Sat Aug 25 17:46:45 2012 --
+d/aman/comun/pnj/hobbit_pnj.c line 1: syntax error
+Compiling "/d/aman/comun/pnj/hobbit_pnj.c", Line 1
+ -- Sat Aug 25 17:49:25 2012 --
+d/aman/comun/pnj/hobbit_pnj.c line 1: Illegal character (hex 00) '
+Compiling "/d/aman/comun/pnj/hobbit_pnj.c", Line 1
+d/aman/comun/pnj/hobbit_pnj.c line 1: syntax error
+Compiling "/d/aman/comun/pnj/hobbit_pnj.c", Line 1
+ -- Sun Nov 11 12:59:06 2012 --
+d/aman/sys/aman.h line 17: syntax error
+Compiling "/d/aman/sys/aman.h", Line 17
+d/aman/sys/aman.h line 17: syntax error
+Compiling "/d/aman/sys/aman.h", Line 17
+ -- Sun Nov 11 13:03:51 2012 --
+d/aman/comun/habitacion/valinor/valmar/hab_bosque.c line 12: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/hab_bosque.c", Line 12
+ -- Sun Nov 11 13:15:53 2012 --
+d/aman/comun/habitacion/valinor/valmar/hab_bosque.c line 12: Macro 'STD_VALINOR': Missing '(' in call
+Compiling "/d/aman/comun/habitacion/valinor/valmar/hab_bosque.c", Line 12
+ -- Sun Nov 11 13:20:21 2012 --
+Obj: d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario, File: std/room/details.c, Line: 98:
+/d/aman/comun/habitacion/valinor/valmar/isla/robledal39_santuario tried to load /d/aman/std/clima.c
+Created by /orome
+  Failed to load file: 'd/aman/std/clima'.
+ -- Sat Nov 17 11:04:20 2012 --
+Obj: d/aman/comun/habitacion/valinor/valmar/ciudad/trans_antiguo, File: d/aman/comun/habitacion/valinor/valmar/ciudad/trans_antiguo.c, Line: 66:
+Created by /aule
+  Undefined function: TORRE
+ -- Sun Mar 24 10:31:53 2013 --
+d/aman/comun/objeto/otro/valaromma.c line 40: Variable CATP not declared !
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 40
+ -- Sun Mar 24 10:33:13 2013 --
+d/aman/comun/objeto/otro/valaromma.c line 40: Variable CATP not declared !
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 40
+d/aman/comun/objeto/otro/valaromma.c line 40: syntax error
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 40
+d/aman/comun/objeto/otro/valaromma.c line 40: Variable CATP not declared !
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 40
+d/aman/comun/objeto/otro/valaromma.c line 40: syntax error
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 40
+d/aman/comun/objeto/otro/valaromma.c line 40: Variable CATP not declared !
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 40
+d/aman/comun/objeto/otro/valaromma.c line 40: syntax error
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 40
+ -- Sun Mar 24 10:34:27 2013 --
+d/aman/comun/objeto/otro/valaromma.c line 40: Variable CATP not declared !
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 40
+ -- Sun Mar 24 10:36:19 2013 --
+d/aman/comun/objeto/otro/valaromma.c line 40: Variable CATP not declared !
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 40
+d/aman/comun/objeto/otro/valaromma.c line 41: Missing 'return <value>' statement
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 41
+d/aman/comun/objeto/otro/valaromma.c line 42: syntax error
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 42
+d/aman/comun/objeto/arma/guanteletes_tulkas.c line 15: Variable WT_manopla not declared !
+Compiling "/d/aman/comun/objeto/arma/guanteletes_tulkas.c", Line 15
+ -- Thu Apr 04 15:54:41 2013 --
+d/aman/comun/objeto/otro/valaromma.c line 38: Variable CATP not declared !
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 38
+ -- Thu Apr 04 16:41:56 2013 --
+Obj: d/aman/comun/objeto/otro/valaromma#60, File: d/aman/comun/objeto/otro/valaromma.c, Line: 30:
+Created by /aule
+  Bad arg 3 to add_action(): got 'string', expected 'number'.
+ -- Thu Apr 04 16:47:08 2013 --
+Obj: d/aman/comun/objeto/otro/valaromma#60, File: d/aman/comun/objeto/otro/valaromma.c, Line: 30:
+Created by /aule
+  Bad arg 3 to add_action(): got 'string', expected 'number'.
+Obj: d/aman/comun/objeto/otro/valaromma#60, File: d/aman/comun/objeto/otro/valaromma.c, Line: 30:
+Created by /aule
+  Bad arg 3 to add_action(): got 'string', expected 'number'.
+ -- Thu Apr 04 18:06:19 2013 --
+Obj: d/aman/comun/objeto/otro/valaromma#64, File: d/aman/comun/objeto/otro/valaromma.c, Line: 30:
+Created by /aule
+  Bad arg 3 to add_action(): got 'string', expected 'number'.
+Obj: d/aman/comun/objeto/otro/valaromma#64, File: d/aman/comun/objeto/otro/valaromma.c, Line: 30:
+Created by /aule
+  Bad arg 3 to add_action(): got 'string', expected 'number'.
+ -- Thu Apr 04 18:08:52 2013 --
+Obj: d/aman/comun/objeto/otro/valaromma#64, File: d/aman/comun/objeto/otro/valaromma.c, Line: 30:
+Created by /aule
+  Bad arg 3 to add_action(): got 'string', expected 'number'.
+ -- Thu Apr 04 18:14:08 2013 --
+Obj: d/aman/comun/objeto/otro/valaromma#64, File: d/aman/comun/objeto/otro/valaromma.c, Line: 30:
+Created by /aule
+  Bad arg 3 to add_action(): got 'string', expected 'number'.
+ -- Thu Apr 04 18:20:39 2013 --
+Obj: d/aman/comun/objeto/otro/valaromma#64, File: d/aman/comun/objeto/otro/valaromma.c, Line: 30:
+Created by /aule
+  Bad arg 3 to add_action(): got 'string', expected 'number'.
+Obj: d/aman/comun/objeto/otro/valaromma#64, File: d/aman/comun/objeto/otro/valaromma.c, Line: 30:
+Created by /aule
+  Bad arg 3 to add_action(): got 'string', expected 'number'.
+ -- Thu Apr 04 18:26:03 2013 --
+Obj: d/aman/comun/objeto/otro/valaromma#64, File: d/aman/comun/objeto/otro/valaromma.c, Line: 30:
+Created by /aule
+  Bad arg 3 to add_action(): got 'string', expected 'number'.
+ -- Thu Apr 04 18:27:35 2013 --
+Obj: d/aman/comun/objeto/otro/valaromma#68, File: d/aman/comun/objeto/otro/valaromma.c, Line: 28:
+Created by /aule
+  Bad arg 3 to add_action(): got 'string', expected 'number'.
+ -- Thu Apr 04 18:29:32 2013 --
+d/aman/comun/objeto/otro/valaromma.c line 28: syntax error
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 28
+d/aman/comun/objeto/otro/valaromma.c line 28: syntax error
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 28
+ -- Thu Apr 04 18:31:12 2013 --
+d/aman/comun/objeto/otro/valaromma.c line 28: Too few arguments to add_action
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 28
+ -- Thu Apr 04 18:33:23 2013 --
+Obj: d/aman/comun/objeto/otro/valaromma#69, File: d/aman/comun/objeto/otro/valaromma.c, Line: 42:
+Created by /aule
+  Undefined function: Add_Action
+ -- Thu Apr 04 18:50:03 2013 --
+d/aman/comun/objeto/otro/valaromma.c line 36: Undefined function 'return_fail'
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 36
+ -- Thu Apr 04 18:52:08 2013 --
+d/aman/comun/objeto/otro/valaromma.c line 36: Undefined function 'return_notify_fail'
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 36
+d/aman/comun/objeto/otro/valaromma.c line 36: Undefined function 'return_notify_fail'
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 36
+ -- Thu Apr 04 19:09:21 2013 --
+d/aman/comun/objeto/otro/valaromma.c line 38: Newline in string
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 38
+d/aman/comun/objeto/otro/valaromma.c line 39: syntax error
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 39
+d/aman/comun/objeto/otro/valaromma.c line 38: Newline in string
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 38
+d/aman/comun/objeto/otro/valaromma.c line 39: syntax error
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 39
+ -- Thu Apr 04 19:52:45 2013 --
+d/aman/comun/objeto/otro/valaromma.c line 10: Missing trailing " or > in #include
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 10
+d/aman/comun/objeto/otro/valaromma.c line 15: Variable WT_MAZA not declared !
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 15
+ -- Thu Apr 04 19:54:21 2013 --
+d/aman/comun/objeto/otro/valaromma.c line 10: Missing trailing " or > in #include
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 10
+d/aman/comun/objeto/otro/valaromma.c line 15: Variable WT_MAZA not declared !
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 15
+ -- Fri Apr 05 17:08:54 2013 --
+d/aman/comun/objeto/otro/valaromma2.c line 1: syntax error
+Compiling "/d/aman/comun/objeto/otro/valaromma2.c", Line 1
+ -- Fri Apr 05 17:16:44 2013 --
+d/aman/comun/objeto/otro/valaromma3.c line 1: syntax error
+Compiling "/d/aman/comun/objeto/otro/valaromma3.c", Line 1
+ -- Fri Apr 05 17:29:39 2013 --
+Obj: d/aman/comun/objeto/otro/valaromma#8, File: secure/simul_efun.c, Line: 549:
+Created by /orome
+  Error in loading object: 'std/shop/trading' (inherited by 'std/shop' by 'room/herreria' by 'd/simauria/comun/habitacion/marhalt/nandor/tiendas/herreria').
+ -- Fri Apr 05 17:32:25 2013 --
+Obj: d/aman/comun/objeto/otro/valaromma#8, File: secure/simul_efun.c, Line: 549:
+Created by /orome
+  Error in loading object: 'std/shop/trading' (inherited by 'std/shop' by 'room/herreria' by 'd/simauria/comun/habitacion/marhalt/nandor/tiendas/herreria').
+ -- Fri Apr 05 19:49:30 2013 --
+Obj: d/aman/comun/objeto/otro/valaromma#2, File: secure/simul_efun.c, Line: 549:
+Created by /aule
+  Error in loading object: 'std/shop/trading' (inherited by 'std/shop' by 'guilds/asesinos/room/tienda1').
+Obj: d/aman/comun/objeto/otro/valaromma#2, File: secure/simul_efun.c, Line: 549:
+Created by /aule
+  Error in loading object: 'std/shop/trading' (inherited by 'std/shop' by 'guilds/asesinos/room/tienda1').
+ -- Fri Apr 05 19:51:36 2013 --
+d/aman/comun/objeto/otro/valaromma2.c line 1: syntax error
+Compiling "/d/aman/comun/objeto/otro/valaromma2.c", Line 1
+ -- Fri Apr 05 22:49:03 2013 --
+Obj: d/aman/comun/objeto/otro/valaromma#4, File: secure/simul_efun.c, Line: 549:
+Created by /aule
+  Error in loading object: 'd/pais-bree/comun/habitacion/bree/poney_pisador/h1'.
+ -- Sat Apr 06 08:19:40 2013 --
+d/aman/comun/objeto/otro/valaromma.c line 303: Undefined function 'SOUND_OBJETOS'
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 303
+ -- Sat Apr 06 08:40:55 2013 --
+d/aman/comun/objeto/otro/valaromma.c line 252: Macro 'SOUND_OBJETOS': Missing '(' in call
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 252
+d/aman/comun/objeto/otro/valaromma.c line 252: syntax error
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 252
+d/aman/comun/objeto/otro/valaromma.c line 259: Bad assignment: illegal lhs (target)
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 259
+d/aman/comun/objeto/otro/valaromma.c line 259: syntax error
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 259
+d/aman/comun/objeto/otro/valaromma.c line 260: Bad assignment: illegal lhs (target)
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 260
+d/aman/comun/objeto/otro/valaromma.c line 260: syntax error
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 260
+d/aman/comun/objeto/otro/valaromma.c line 315: Missing 'return <value>' statement
+Compiling "/d/aman/comun/objeto/otro/valaromma.c", Line 315
+ -- Sun Apr 07 14:10:39 2013 --
+Obj: d/aman/comun/objeto/otro/valaromma#5, File: secure/simul_efun.c, Line: 549:
+Created by /aule
+  Error in loading object: 'd/pais-bree/comun/habitacion/bree/poney_pisador/h1'.
+Obj: d/aman/comun/objeto/otro/valaromma#5, File: secure/simul_efun.c, Line: 549:
+Created by /aule
+  Error in loading object: 'd/pais-bree/comun/habitacion/bree/poney_pisador/h1'.
+Obj: d/aman/comun/objeto/otro/valaromma#5, File: secure/simul_efun.c, Line: 549:
+Created by /aule
+  Error in loading object: 'd/pais-bree/comun/habitacion/bree/poney_pisador/h1'.
+Obj: d/aman/comun/objeto/otro/valaromma#5, File: secure/simul_efun.c, Line: 549:
+Created by /aule
+  Error in loading object: 'd/pais-bree/comun/habitacion/bree/poney_pisador/h1'.
+Obj: d/aman/comun/objeto/otro/valaromma#5, File: secure/simul_efun.c, Line: 549:
+Created by /aule
+  Error in loading object: 'd/pais-bree/comun/habitacion/bree/poney_pisador/h1'.
+Obj: d/aman/comun/objeto/otro/valaromma#5, File: secure/simul_efun.c, Line: 549:
+Created by /aule
+  Error in loading object: 'd/pais-bree/comun/habitacion/bree/poney_pisador/h1'.
+ -- Sun Apr 07 14:11:47 2013 --
+Obj: d/aman/comun/objeto/otro/valaromma#5, File: secure/simul_efun.c, Line: 549:
+Created by /aule
+  Error in loading object: 'd/pais-bree/comun/habitacion/bree/poney_pisador/h1'.
+Obj: d/aman/comun/objeto/otro/valaromma#5, File: secure/simul_efun.c, Line: 549:
+Created by /aule
+  Error in loading object: 'd/pais-bree/comun/habitacion/bree/poney_pisador/h1'.
+ -- Sun Apr 07 14:14:37 2013 --
+Obj: d/aman/comun/objeto/otro/valaromma#5, File: secure/simul_efun.c, Line: 549:
+Created by /aule
+  Error in loading object: 'd/pais-bree/comun/habitacion/bree/poney_pisador/h1'.
+Obj: d/aman/comun/objeto/otro/valaromma#5, File: secure/simul_efun.c, Line: 549:
+Created by /aule
+  Error in loading object: 'd/pais-bree/comun/habitacion/bree/poney_pisador/h1'.
+Obj: d/aman/comun/objeto/otro/valaromma#5, File: secure/simul_efun.c, Line: 549:
+Created by /aule
+  Error in loading object: 'd/pais-bree/comun/habitacion/bree/poney_pisador/h1'.
+Obj: d/aman/comun/objeto/otro/valaromma#5, File: secure/simul_efun.c, Line: 549:
+Created by /aule
+  Error in loading object: 'd/pais-bree/comun/habitacion/bree/poney_pisador/h1'.
+Obj: d/aman/comun/objeto/otro/valaromma#5, File: secure/simul_efun.c, Line: 549:
+Created by /aule
+  Error in loading object: 'd/pais-bree/comun/habitacion/bree/poney_pisador/h1'.
+ -- Sun Apr 07 14:57:31 2013 --
+Obj: d/aman/comun/objeto/otro/valaromma#5, File: secure/simul_efun.c, Line: 549:
+Created by /aule
+  Error in loading object: 'd/pais-bree/comun/habitacion/bree/poney_pisador/h1'.
+ -- Sat Sep 07 07:21:28 2013 --
+d/aman/comun/habitacion/valinor/valmar/ciudad/calzadao3.c line 16: Macro 'HAB_VALMAR': Missing '(' in call
+Compiling "/d/aman/comun/habitacion/valinor/valmar/ciudad/calzadao3.c", Line 16
+d/aman/comun/habitacion/valinor/valmar/ciudad/calzadao3.c line 16: Too few arguments to tell_room
+Compiling "/d/aman/comun/habitacion/valinor/valmar/ciudad/calzadao3.c", Line 16
+d/aman/comun/habitacion/valinor/valmar/ciudad/calzadao3.c line 17: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/ciudad/calzadao3.c", Line 17
+ -- Tue Sep 09 05:22:35 2014 --
+Obj: d/aman/comun/habitacion/valinor/valmar/ciudad/estancias_mandos, File: std/room/items.c, Line: 77:
+/d/aman/comun/habitacion/valinor/valmar/ciudad/estancias_mandos tried to load /d/aman/comun/pnj/valinor/valmar/ciudad/mandos.c
+Created by /orome
+  Failed to load file: 'd/aman/comun/pnj/valinor/valmar/ciudad/mandos'.
+ -- Tue Sep 09 15:30:24 2014 --
+d/aman/comun/habitacion/valinor/valmar/ciudad/estancias_mandos.c line 28: Variable AO not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/ciudad/estancias_mandos.c", Line 28
+d/aman/comun/habitacion/valinor/valmar/ciudad/estancias_mandos.c line 29: Variable AO not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/ciudad/estancias_mandos.c", Line 29
+d/aman/comun/habitacion/valinor/valmar/ciudad/estancias_mandos.c line 29: Variable AO not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/ciudad/estancias_mandos.c", Line 29
+ -- Tue Sep 09 15:33:02 2014 --
+d/aman/comun/habitacion/valinor/valmar/ciudad/estancias_mandos.c line 29: Variable AO not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/ciudad/estancias_mandos.c", Line 29
+d/aman/comun/habitacion/valinor/valmar/ciudad/estancias_mandos.c line 29: Variable AO not declared !
+Compiling "/d/aman/comun/habitacion/valinor/valmar/ciudad/estancias_mandos.c", Line 29
+ -- Tue Sep 09 15:37:18 2014 --
+d/aman/comun/habitacion/valinor/valmar/ciudad/estancias_mandos.c line 11: syntax error
+Compiling "/d/aman/comun/habitacion/valinor/valmar/ciudad/estancias_mandos.c", Line 11
+ -- Tue Sep 09 17:24:23 2014 --
+Obj: d/aman/comun/pnj/valinor/valmar/ciudad/mandos, File: d/aman/comun/pnj/valinor/valmar/ciudad/mandos.c, Line: 63:
+Created by /d/aman/comun/habitacion/valinor/valmar/ciudad/estancias_mandos
+  Bad arg 1 to call_other(): got 'number', expected 'string/array/object'.
+ -- Tue Sep 09 17:24:23 2014 --
+Obj: d/aman/comun/pnj/valinor/valmar/ciudad/mandos, File: d/aman/comun/pnj/valinor/valmar/ciudad/mandos.c, Line: 63:
+Created by /d/aman/comun/habitacion/valinor/valmar/ciudad/estancias_mandos
+  Bad arg 1 to call_other(): got 'number', expected 'string/array/object'.
+ -- Tue Sep 09 17:24:23 2014 --
+Obj: d/aman/comun/pnj/valinor/valmar/ciudad/mandos, File: d/aman/comun/pnj/valinor/valmar/ciudad/mandos.c, Line: 63
+  Bad arg 1 to call_other(): got 'number', expected 'string/array/object'.
+ -- Wed Sep 10 17:21:13 2014 --
+d/aman/comun/pnj/valinor/valmar/ciudad/mandos.c line 19: Variable who not declared !
+Compiling "/d/aman/comun/pnj/valinor/valmar/ciudad/mandos.c", Line 19
+d/aman/comun/pnj/valinor/valmar/ciudad/mandos.c line 22: Variable who not declared !
+Compiling "/d/aman/comun/pnj/valinor/valmar/ciudad/mandos.c", Line 22
+ -- Wed Sep 10 17:25:38 2014 --
+d/aman/comun/pnj/valinor/valmar/ciudad/mandos.c line 22: Variable who not declared !
+Compiling "/d/aman/comun/pnj/valinor/valmar/ciudad/mandos.c", Line 22
+ -- Sun Sep 21 08:56:54 2014 --
+d/aman/comun/habitacion/valinor/valmar/ciudad/sala_experimental1.c line 25: Undefined function 'xp'
+Compiling "/d/aman/comun/habitacion/valinor/valmar/ciudad/sala_experimental1.c", Line 25
+ -- Sun Sep 21 08:58:37 2014 --
+d/aman/comun/habitacion/valinor/valmar/ciudad/sala_experimental1.c line 9: illegal to inherit after defining functions
+Compiling "/d/aman/comun/habitacion/valinor/valmar/ciudad/sala_experimental1.c", Line 9
+ -- Sun Sep 21 09:04:31 2014 --
+d/aman/comun/habitacion/valinor/valmar/ciudad/sala_experimental1.c line 9: illegal to inherit after defining functions
+Compiling "/d/aman/comun/habitacion/valinor/valmar/ciudad/sala_experimental1.c", Line 9
+ -- Sun Oct 19 03:36:02 2014 --
+Obj: d/aman/comun/habitacion/valinor/valmar/ciudad/antepuertao, File: d/aman/std/valinor/hab_valinor.c, Line: 22:
+Created by /orome
+  Undefined function: setIntBando
+ -- Sun Oct 19 15:50:40 2014 --
+Obj: d/aman/comun/habitacion/valinor/valmar/bosque_central/bosque01, File: d/aman/comun/habitacion/valinor/valmar/bosque_central/bosque01.c, Line: 23:
+Created by /orome
+  Undefined function: SetHayLenya
+ -- Sun Oct 19 17:00:46 2014 --
+Obj: d/aman/comun/habitacion/valinor/valmar/hab_bosque, File: d/aman/comun/habitacion/valinor/valmar/hab_bosque.c, Line: 22:
+Created by /orome
+  Undefined function: SetcantidadLenya
+ -- Sun Oct 19 19:46:26 2014 --
+Obj: d/aman/comun/habitacion/valinor/valmar/bosque_central/bosque01, File: d/aman/comun/habitacion/valinor/valmar/hab_bosque.c, Line: 23:
+Created by /orome
+  Undefined function: SetHayLenya
+ -- Sun Oct 19 19:47:54 2014 --
+Obj: d/aman/comun/habitacion/valinor/valmar/bosque_central/bosque01, File: d/aman/comun/habitacion/valinor/valmar/hab_bosque.c, Line: 23:
+Created by /orome
+  Undefined function: SetHayLenya
+ -- Sun Oct 19 19:51:52 2014 --
+Obj: d/aman/comun/habitacion/valinor/valmar/bosque_central/bosque01, File: d/aman/comun/habitacion/valinor/valmar/hab_bosque.c, Line: 23:
+Created by /orome
+  Undefined function: SetHayLenya
+ -- Fri Oct 24 05:37:22 2014 --
+Obj: d/aman/comun/habitacion/valinor/valmar/hab_bosque, File: d/aman/comun/habitacion/valinor/valmar/hab_bosque.c, Line: 27:
+Created by /orome
+  Undefined function: SetHayarbol
+ -- Fri Oct 24 05:38:50 2014 --
+Obj: d/aman/comun/habitacion/valinor/valmar/hab_bosque, File: d/aman/comun/habitacion/valinor/valmar/hab_bosque.c, Line: 27:
+Created by /orome
+  Undefined function: SetTipoArbol
+Obj: d/aman/comun/habitacion/valinor/valmar/hab_bosque, File: d/aman/comun/habitacion/valinor/valmar/hab_bosque.c, Line: 27:
+Created by /orome
+  Undefined function: SetTipoArbol
+Obj: d/aman/comun/habitacion/valinor/valmar/bosque_central/bosque01, File: d/aman/comun/habitacion/valinor/valmar/hab_bosque.c, Line: 27:
+Created by /orome
+  Undefined function: SetHayarbol
+ -- Fri Oct 24 06:25:20 2014 --
+Obj: d/aman/comun/habitacion/valinor/valmar/hab_bosque, File: d/aman/comun/habitacion/valinor/valmar/hab_bosque.c, Line: 27:
+Created by /orome
+  Undefined function: SetTipoArbol
+ -- Wed Nov 05 03:51:10 2014 --
+d/aman/comun/pnj/valinor/valmar/unicornio_zolnor.c line 113: Missing 'return <value>' statement
+Compiling "/d/aman/comun/pnj/valinor/valmar/unicornio_zolnor.c", Line 113
+ -- Wed Nov 05 04:38:08 2014 --
+d/aman/comun/pnj/valinor/valmar/unicornio_zolnor.c line 113: Missing 'return <value>' statement
+Compiling "/d/aman/comun/pnj/valinor/valmar/unicornio_zolnor.c", Line 113
+ -- Sat Nov 08 06:31:57 2014 --
+d/aman/comun/pnj/valinor/valmar/unicornio_zolnor.c line 113: Missing 'return <value>' statement
+Compiling "/d/aman/comun/pnj/valinor/valmar/unicornio_zolnor.c", Line 113
+ -- Sat Nov 08 06:44:39 2014 --
+d/aman/comun/pnj/valinor/valmar/unicornio_zolnor.c line 113: Missing 'return <value>' statement
+Compiling "/d/aman/comun/pnj/valinor/valmar/unicornio_zolnor.c", Line 113
+ -- Sat Nov 08 06:57:07 2014 --
+d/aman/comun/pnj/valinor/valmar/unicornio_zolnor.c line 113: Missing 'return <value>' statement
+Compiling "/d/aman/comun/pnj/valinor/valmar/unicornio_zolnor.c", Line 113
+ -- Sat Nov 08 07:17:38 2014 --
+d/aman/comun/pnj/valinor/valmar/unicornio_zolnor.c line 113: Missing 'return <value>' statement
+Compiling "/d/aman/comun/pnj/valinor/valmar/unicornio_zolnor.c", Line 113
+ -- Sat Nov 08 07:38:15 2014 --
+d/aman/comun/pnj/valinor/valmar/unicornio_zolnor.c line 113: Missing 'return <value>' statement
+Compiling "/d/aman/comun/pnj/valinor/valmar/unicornio_zolnor.c", Line 113
+ -- Sat Nov 08 07:58:23 2014 --
+d/aman/comun/pnj/valinor/valmar/unicornio_zolnor.c line 113: Missing 'return <value>' statement
+Compiling "/d/aman/comun/pnj/valinor/valmar/unicornio_zolnor.c", Line 113
+ -- Sat Nov 22 15:15:19 2014 --
+Obj: d/aman/comun/habitacion/valinor/valmar/ciudad/room_control, File: d/aman/comun/habitacion/valinor/valmar/ciudad/room_control.c, Line: 312:
+Created by /orome
+  Undefined function: TORRE
+ -- Thu Dec 25 18:54:35 2014 --
+d/aman/comun/objeto/proteccion/guanteletes_tulkas.c line 27: syntax error
+Compiling "/d/aman/comun/objeto/proteccion/guanteletes_tulkas.c", Line 27
+d/aman/comun/objeto/proteccion/guanteletes_tulkas.c line 27: syntax error
+Compiling "/d/aman/comun/objeto/proteccion/guanteletes_tulkas.c", Line 27
+d/aman/comun/objeto/proteccion/guanteletes_tulkas.c line 27: Newline in string
+Compiling "/d/aman/comun/objeto/proteccion/guanteletes_tulkas.c", Line 27
+ -- Thu Apr 27 08:47:47 2017 --
+Obj: d/aman/comun/objeto/otro/valaroma#11, File: d/aman/comun/objeto/otro/valaroma.c, Line: 281:
+Created by /orome
+  Index for [] out of bounds: 0, vector size: 0
+ -- Thu Apr 27 08:49:39 2017 --
+d/aman/comun/objeto/otro/valaroma.c line 281: syntax error
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 281
+d/aman/comun/objeto/otro/valaroma.c line 287: Bad assignment: illegal lhs (target)
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 287
+d/aman/comun/objeto/otro/valaroma.c line 287: syntax error
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 287
+d/aman/comun/objeto/otro/valaroma.c line 288: Bad assignment: illegal lhs (target)
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 288
+d/aman/comun/objeto/otro/valaroma.c line 288: syntax error
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 288
+d/aman/comun/objeto/otro/valaroma.c line 289: Bad assignment: illegal lhs (target)
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 289
+ -- Thu Apr 27 09:31:12 2017 --
+d/aman/comun/objeto/otro/valaroma.c line 287: syntax error
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 287
+d/aman/comun/objeto/otro/valaroma.c line 290: Bad assignment: illegal lhs (target)
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 290
+d/aman/comun/objeto/otro/valaroma.c line 354: syntax error
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 354
+ -- Thu May 04 15:57:27 2017 --
+d/aman/comun/objeto/otro/valaroma.c line 284: Variable PUNTOS_ANIMACION not declared !
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 284
+d/aman/comun/objeto/otro/valaroma.c line 285: Variable PUNTOS_ANIMACION not declared !
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 285
+d/aman/comun/objeto/otro/valaroma.c line 288: Variable PUNTOS_ANIMACION not declared !
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 288
+d/aman/comun/objeto/otro/valaroma.c line 289: Variable PUNTOS_ANIMACION not declared !
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 289
+d/aman/comun/objeto/otro/valaroma.c line 292: Variable PUNTOS_ANIMACION not declared !
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 292
+d/aman/comun/objeto/otro/valaroma.c line 293: Variable PUNTOS_ANIMACION not declared !
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 293
+ -- Thu May 04 15:58:33 2017 --
+d/aman/comun/objeto/otro/valaroma.c line 284: Variable PUNTOS_ANIMACION not declared !
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 284
+d/aman/comun/objeto/otro/valaroma.c line 285: Variable PUNTOS_ANIMACION not declared !
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 285
+d/aman/comun/objeto/otro/valaroma.c line 288: Variable PUNTOS_ANIMACION not declared !
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 288
+d/aman/comun/objeto/otro/valaroma.c line 289: Variable PUNTOS_ANIMACION not declared !
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 289
+d/aman/comun/objeto/otro/valaroma.c line 292: Variable PUNTOS_ANIMACION not declared !
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 292
+d/aman/comun/objeto/otro/valaroma.c line 293: Variable PUNTOS_ANIMACION not declared !
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 293
+ -- Thu May 04 16:02:15 2017 --
+d/aman/comun/objeto/otro/valaroma.c line 284: Variable PUNTOS_ANIMACION not declared !
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 284
+d/aman/comun/objeto/otro/valaroma.c line 285: Variable PUNTOS_ANIMACION not declared !
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 285
+d/aman/comun/objeto/otro/valaroma.c line 288: Variable PUNTOS_ANIMACION not declared !
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 288
+d/aman/comun/objeto/otro/valaroma.c line 289: Variable PUNTOS_ANIMACION not declared !
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 289
+d/aman/comun/objeto/otro/valaroma.c line 292: Variable PUNTOS_ANIMACION not declared !
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 292
+d/aman/comun/objeto/otro/valaroma.c line 293: Variable PUNTOS_ANIMACION not declared !
+Compiling "/d/aman/comun/objeto/otro/valaroma.c", Line 293
+Obj: /d/simauria/comun/habitacion/marhalt/nandor/calle6, File: d/simauria/comun/habitacion/marhalt/nandor/calle6.c, Line: 38:
+Created by /d/aman/comun/objeto/otro/valaroma#10
+  Missing 'return <value>' statement.

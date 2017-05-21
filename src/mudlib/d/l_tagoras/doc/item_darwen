@@ -1,0 +1,57 @@
+1. Descripción
+
+	Este objeto es la base de los objetos que Darwen pierde por ahí y luego pide a los jugadores que vayan a buscar.
+	Para declara un bojeto de Darwen basta con:
+
+	inherit BASE_ITEM_DARWEN;
+
+	1.1 Valores por defecto
+
+		Por defecto los objetos de Darwen tienen los siguientes valores:
+
+			Tamaño:			Pequeño (P_SIZE_SMALL)
+			Peso:			50 gr
+			Valor:			50 cobres
+			Número:			singular (NUMERO_SINGULAR)
+			Género:			masculino (GENERO_MASCULINO)
+			Ads:			({ "el", "de", "Darwen" })
+			ID de clase:	"objeto_darwen"
+			Los objeto de Darwen no se pueden vender.
+
+2. Expiración
+
+	Los objetos de Darwen pueden programarse para que se autodestruyan al cabo de un tiempo.
+
+	2.1 IsExpired()
+
+		La función IsExpired() devuelve si el objeto ha expirado.
+
+	2.2 QueryExpiry()
+
+		La función QueryExpiry() devuelve el momento en que expirará el objeto (en segundos desde epoch, ver time()).
+
+	2.3 SetExpiry(int expiry)
+
+		La función SetExpiry() establece el momento en que expirará el objeto (en segundos desde epoch, ver time()) y programa un call_out para llamar a Destroy(). Si el objeto ya ha expirado con el nuevo tiempo, llama a remove().
+
+	2.4 Destroy()
+
+		Comunica que el objeto desaparece, con sonido incluido, y llama a remove().
+
+3. Ayuda al jugador.
+
+	El objeto mostrará "[RETO]" al lado de la descripción corta si este es el objeto que el jugador ha de recuperar.
+
+	3.1 QueryPlayer()
+
+		Devuelve el nombre del jugador que ha de recoger el objeto.
+
+	2.3 SetPlayer(string str)
+
+		Guarda el jugador (en minúsculas) que ha de recoger el objeto.
+	
+4. Otras funciones
+
+	4.1 QueryArtDetString()
+
+		Devolverá el artículo determinado correcto para el objeto (según el número y el género).

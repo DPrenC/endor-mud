@@ -1,0 +1,29 @@
+SINOPSIS
+    xforall <ficheros> <comando>
+
+DESCRIPTION
+    Ejecuta un <comando> en todos los ficheros introducidos. El <comando>
+    puede contener abreviaciones que posteriormente seran reemplazadas y
+    que son las siguientes:
+      - "!!" devuelve el nombre completo del fichero.
+      - "!e" devuelve la extension del fichero.
+      - "!f" devuelve el nombre del fichero sin extension ni directorio.
+      - "!h" devuelve el directorio completo del fichero.
+      - "!r" devuelve el nombre completo del fichero sin extension.
+      - "!t" devuelve el nombre del fichero sin el directorio.
+
+    Si el nombre completo del fichero fuera "/directorio/fichero.ext" entonces
+      "!!" equivale a "/directorio/fichero.ext"
+      "!e" equivale a "ext"
+      "!f" equivale a "fichero"
+      "!h" equivale a "/directorio"
+      "!r" equivale a "/directorio/fichero"
+      "!t" equivale a "fichero.ext"
+
+EXAMPLES
+    xforall /room/*.c xcall !r->reset();
+    Hace una llamada a la funcion reset() en todas las habitaciones de /room.
+
+    xforall ~/obj/* mv !! !h/basura/!f.!e.old
+    Mueve todos los ficheros de tu directorio "obj" a "obj/basura" y cambia
+    las extensiones a ".old".

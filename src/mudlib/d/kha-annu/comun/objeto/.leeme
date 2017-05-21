@@ -1,0 +1,12 @@
+
+arma/           Directorio para las armas del dominio.
+bebida/         Es donde se encuentran las bebidas.
+comida/         Toda clase de elemento comestible que regenere Puntos de
+                Vida, o cualquiera de las caracteristicas del PJ.
+magia/          Aqui van todos los objetos magicos esparcidos por Kha-annu.
+                (Consultar con uno de los lords para saber si se pueden
+                implementar al juego dado que los enanos son poco magicos)
+otros/          Todos los demas objetos que formen parte de quests, u
+                objetos sin excesiva relevancia.
+proteccion/     Aqui estan todas las armaduras creadas en Kha-annu.
+

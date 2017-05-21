@@ -1,0 +1,19 @@
+SINOPSIS
+    xlpc <codigo lpc>
+
+DESCRIPCION
+    Ejecuta codigo LPC. Existen dos objetos ya predefinidos, "me" y "here".
+    El archivo <properties.h> esta incluido. Para acceder a los objetos se
+    puede usar la funcion "get(string)". Si la ejecucion devuelve un objeto
+    este se almacenara en "$result".
+    Todos los comandos deben ser introducidos en UNA sola linea.
+
+EJEMPLOS
+      xlpc int i;object *o;o=users();for(i=0;i<sizeof(o);i++)o[i]->
+           Set(P_FROG,1);
+      (Todos los PJ son ranas a partir de ahora)
+
+      xlpc int i;object *o;o=users();for(i=0;i<sizeof(o);i++)
+	   o[i]->Set(P_TITLE,get("$me")->Query(P_TITLE));
+      (Cambia a todos los PJ el titulo por el que mas te guste. Observa el
+       uso que se le da a la funcion get)

@@ -1,0 +1,20 @@
+[1mCOMANDO[0m
+  cd [<directorio>]
+  cd @
+
+[1mDESCRIPCION[0m
+  Te cambia del directorio donde te encuentres a <directorio>. Por defecto,
+  si escribes 'cd' sin ningún argumento te llevará a tu directorio personal
+  mientras que si pones '@' cambiará al directorio donde esté hospedada la
+  habitación donde te encuentres.
+  Si el directorio al que te mueves contiene un archivo llamado .leeme éste
+  será visualizado primero. Normalmente este archivo se usa para poner una
+  breve descripción del contenido del directorio.
+   
+[1mEJEMPLOS[0m
+  cd /obj/lib
+  cd arma/crowy
+  cd ../../lib
+
+[1mTEMAS RELACIONADOS[0m
+  mkdir, rmdir, ls, lls

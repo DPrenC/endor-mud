@@ -1,0 +1,15 @@
+NAME
+	iman - get a remote man page
+
+SYNOPSIS
+	iman <subject>@<mudname>
+
+DESCRIPTION
+	Allows you to retrieve man pages from other muds.
+
+NOTA BENE
+	Only works on a few muds.
+	
+SEE ALSO
+	itell, man, sman, iwho, intermud
+

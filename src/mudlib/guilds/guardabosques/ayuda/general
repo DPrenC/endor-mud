@@ -1,0 +1,10 @@
+Ayuda de los Guardabosques
+--------------------------
+
+  Existen los siguientes temas de ayuda:
+
+   - general             Muestra esta ayuda.
+   - comandos            Muestra información sobre los comandos disponibles.
+   - habilidades         Muestra información sobre las habilidades.
+
+ Usa 'gayuda <tema>' para obtener ayuda sobre un tema en concreto.

@@ -1,0 +1,1153 @@
+
+Nombre: Tiinkelghinn. ( Capital de Tiinkdhil )
+Localizacion: El Arbol de la Vida.
+Creacion [Ch] Chantiel.
+
+    Dia de Comienzo: 16-11-1997
+    Dia de Finalizacion: 17-11-1997
+	Modificaciones por [Ch].
+		Fecha: 18-11-1997. Puse el Sotano 1.
+		Fecha: 19-11-1997. Cambio de acentos y de enyes. Creacion 
+		     de PNJs.
+		(nota: el puto servidor se cayo y tuve que hacerlo todo de 
+			nuevo. GGGGrrrrrrrrrrrrrrr.)
+		Fecha: 20-11-1997. Terminar los PNJs.
+		Fecha: 21-11-1997. A ver si termino alguna de las rooms.
+		Fecha: 23-11-1997. Nada que el ultimo dia me entro el 
+		     gandulismo y no hice ninguna habitacion. Espero estar
+		     mas animado hoy. :P
+		Fecha: 26-11-1997. Me cagon toooo!!!!!, paso de hacer nada!.
+		(nota: los muy mamones de aurora me jodieron el PJ)
+		Fecha: 28-11-1197. Bieeenn. El ftp funciona!, a ver si 
+		     empiezo las room.c :P.
+        	Fecha: 14-01-1998. Hace casi un mes que no he puesto los cambios
+		     que he ido haciendo. Pero quiero hacer reflejar que no he
+		     estado un mes sin hacer nada.
+		Fecha:
+
+
+	Todo lo que se refiere a continuacion hace referencia al posible
+desarrollo por una persona, o varias, de la codificacion de esta ciudad.
+
+	He intentado que todo estuviese lo mas claro y detallado posible, para
+la buena realizacion. Solo hay que definir, copiar y pegar las diferentes
+descripciones en su lugar correspondiete y fabricar los diferentes objetos
+que se pueden encontrar en esta ciudad, asi como la codificacion de los
+personajes no jugadores y monstruos (me gusta hacer la diferencia entre
+ambos) del lugar.
+
+	A ver si alguien le dedica un poquillo de su tiempo, si quiere vamos, a
+la codificacion de esta ciudad de nada. :=)
+
+
+I N D I C E
+--------------
+	MAPA DE LA CIUDAD
+    	*NIVEL DEL SUELO.
+            Simple.
+            Completo.
+
+        *PRIMER PISO.(falta realizar)
+            Simple.
+            Completo.
+
+
+    LOCALIZACION: Ciudad.
+    	Historia.
+        Quests.
+    	PERSONAJES NO JUGADORES.
+
+    LOCALIZACION: Cementerio.
+    	Historia.
+        Quests.
+    	PERSONAJES NO JUGADORES.
+
+    LOCALIZACION: Arbol de la Vida.
+    	Historia.
+        Quests.
+        Mapas.
+        	*SOTANO 1
+            	Simple.
+                Completo.
+
+            *BASE(Nivel del Suelo).
+            	Simple.
+                Completo.
+
+            *PRIMER PISO.
+            	Simple.
+                Completo.
+
+            *SEGUNDO PISO.
+            	Simple.
+                Completo.
+
+    	PERSONAJES NO JUGADORES.
+
+            - Elfo Cautivo.
+            - Vedel.
+            - Oficial reclutador.
+            - Carcelero.
+            - Oficial de la Guardia.
+            - Guardias de acceso.
+            - Transeuntes.
+            - Funcionarios.
+            - Saviulas.
+	    - Guardia de Elite.
+ 	    - Guardia Personal.
+	    - General Katharl. 	    
+	    - Consejera Shaeire.
+	    - Zalidian.
+
+
+
+    ALICIENTES PARA VENIR A THIINKDIL.
+
+    	DE TIPO MONETARIO Y MATERIAL.
+
+	Luchadores. (amazonas, barbaros, paladines, caballeros oscuros)
+
+            	* Armas y aramduras elficas.
+
+                    - Espada corta thiinkdihil.
+                    - Espada thiinkdhil.
+                    - Espada larga thiinkdihil.
+                    - Escudo thiinkdil.
+                    - Peto de Cuero thiinkdil.
+                    - Mallas thiinkdil.
+                    - Placas thiinkdil.
+                    - Placas de Campanya thiinkdil.
+
+                * Salvia bendita.
+
+                * Armas y aramaduras magicas.
+
+                    - Espada Honorifica thiinkdil.
+                    - Espada Sagrada thiinkdil.
+                    - Escudo Honorifico thiinkdil.
+                    - Placas Honorificas thiinkdil.
+
+            Magos.  (conjuradores, elementalistas, hechiceros, nigromantes)
+
+			* Varas y varitas.
+
+    			* Salvia bendita.
+
+		    	* Objetos magicos.
+
+	    Clerigos. (clerigos, druidas)
+
+			* Tunicas sagradas.
+
+			* Salvia bendita.
+
+    			* Medallones Magicos.
+
+	    Bribones. (asesinos(ninjas), ladrones, bardos, piratas)
+
+			* Salvia bendita.
+
+	    		* Armas
+
+			* Instrumentos musicales.
+
+	    		* Obras de arte.
+
+	    Psionicos.
+
+			* Salvia bendita.
+
+
+	DE TIPO EXPERIENCIA.
+
+
+	DE TIPO QUEST.
+
+
+
+
+(----------------------------------------------------------------------------)
+
+
+
+
+MAPA DE LA CIUDAD.
+
+    - El gran "Arbol de la Vida" esta justo en el centro de la ciudad.
+
+    - Al este de la ciudad se encuentra el "Cementerio".
+
+    - Al sur y al norte estan los accesos a la zona residencial sobre las
+    ramas del gran arbol.
+
+    - Se pueden comprar casas en la ciudad para los pj. (ver mas adelante)
+
+
+
+  *Nivel del Suelo.
+
+  	Simple.
+
+    ----------
+    | CIUDAD |
+    -----------------------------------------
+    |                                       |
+    |                   (C1)                |
+    |                    |                  |
+    |                2 - 1 - 2              |
+    |                    |                  |
+    |                    O - 3              |
+    |                    |                  | --------------
+    |                    4                  | | CEMENTERIO |
+    |       (C2)         |                  | ----------------------
+    |   (C3) O - O - O - O - O - O - O      | |      3   3         |
+    |        |   |      -|-  |   |   |      | |      |   |         |
+    |        O   5      |6|  7   8   O - 9  | |  O - O - O         |
+    |        |      /---' `---\      |      | |  |         \       |
+    |    2   O - 10 |  ARBOL  |      O   2  |_|  O   3   3   O     |
+    |    |   |  |---'         `----| |   |       |   |   |   |     |
+    |  - 11- O - 12  DE     LA   13- O - O -(1)- O - O - O - O - 2 |
+    |    |   |  |---.         .----| |   |   _   |   |   |   |     |
+    |    2   O      |  VIDA   |  14- O   2  | |  O   3   3   O     |
+    |        |      \---.  .--/      |      | |  |         /       |
+    |        O   15  16 |17|     18- O      | |  O - O - O         |
+    |        |   |   |  -|--         |      | |      |   |         |
+    |   (C4) O - O - O - O - O - O - O      | |      3   3         |
+    |                    |          (C5)    | ----------------------
+    |                    19                 |
+    |                    |                  | Lugares.
+    |                2 - 20- 2              |
+    |                    |                  |   1.- Entrada al cementerio.
+    |                                       |   2.- Gremio Nicromante.
+    -----------------------------------------   3.- Mausoleos.
+
+
+
+    Lugares.
+
+        C1.- Calle del Viajero.
+        C2.- Calle del Anochecer.
+	C3.- Calle Hirak.
+	C4.- Calle Fanan.
+        C5.- Calle del Amanecer.
+
+
+         1.- Acceso Norte.
+         2.- Puestos de Guardia.
+         3.- Posada/Taberna.
+         4.- Acceso Norte a las viviendas.
+         5.- Taberna.
+         6.- Entrada Norte al Arbol de la Vida.
+         7.- Correo.
+         8.- Tienda general.
+         9.- Gremio de ??????????
+        10.- Gremio de ??????????
+        11.- Acceso Oeste.
+        12.- Entreda Oeste al Arbol de la Vida.
+        13.- Entrada Este al Arbol de la Vida.
+        14.- Tienda de armas normales/magicas.
+        15.- Gremio de ??????????
+        16.- Gremio de ??????????
+        17.- Entrada Sur al Arbol de la Vida.
+        18.- Tienda de armaduras normales/magicas.
+        19.- Acceso Sur a las viviendas.
+        20.- Acceso Sur.
+
+
+(----------------------------------------------------------------------------)
+
+LOCALIZACION: Ciudad.
+
+Historia:
+
+Quests:
+
+PERSONAJES NO JUGADORES.
+
+	Nombre: Modelo.
+
+            Nombre del fuente:
+
+	    Localizacion del fuente: /players/chantiel/pnj
+
+	    Lugar donde se encuentra:
+
+	    Fichero donde se encuentra:
+	    
+	    Equipo:
+
+	    Cometido:
+
+
+
+(----------------------------------------------------------------------------)
+
+LOCALIZACION: Cementerio.
+
+Historia:
+
+Quests:
+
+PERSONAJES NO JUADORES.
+
+	Nombre: Modelo.
+
+            Nombre del fuente:
+
+	    Localizacion del fuente: /players/chantiel/pnj
+
+	    Lugar donde se encuentra:
+
+	    Fichero donde se encuentra:
+	    
+	    Equipo:
+
+	    Cometido:
+
+
+(----------------------------------------------------------------------------)
+
+
+LOCALIZACION: El Arbol de la Vida.
+
+Historia.
+
+El Arbol de la Vida es el punto de referencia para todo elfo viajero
+perteneciente a la ciudad de <nombre de la ciudad>. Simbolo de la grandeza
+y esplendor de los elfos <nombre nativo>, se trata de un a rbol milenario
+que se encuentra en lo mas profundo del bosque <nombre>. Ha sido modelado
+por los artesanos mas diestros del pasado, dando a su diezmado exterior
+un aspecto hermoso y a su interior un nuevo concepto de artesania. Con la
+ayuda de guardabosques, druidas y magos, junto con el cuidado del resto
+de los ciudadanos, se ha convertido en todo un estandarte para los
+habitantes de la zona. En el se cuentran todos los lugares de interes
+politico y social. Tambien es el alojamiento de <Nombre>,el rey gobernante
+actual de los <nombre nativo>, y sirve como bastion de las fuerza de
+elite del lugar.
+
+    A lo largo de los anyos este lugar se ha convertido en lugar de 
+peregrinaje, esto es devido a que la savia extraida al a rbol posee propiedade
+curativas e incluso milagrosas, los eruditos del lugar creen que este es
+uno de los posibles origenes del caracteristico nombre que posee el a rbol.
+
+    Los clerigos del lugar han ergido un altar en su interior en ofrenda y
+se dedican a bendecir esta savia y venderla por un modico precio para
+manutecion de la orden.
+
+
+    Tambien cuentan los bardos y narradores de historias, que en el corazon
+mismo del a rbol se encuentra el legado de los antiguos elfos. Muchos han
+intentado descifrar las viejas palabras grabadas en savia que se encuentran
+en la base del arbol, justo en las entradas, pero no han conseguido nada.
+
+
+Quests.
+	La Bendicion del Penitente.
+
+	Elfo Cautivo.
+
+
+
+Mapas.
+
+    SOTANO 1.
+
+
+           1   O   O                 Lugares.
+           |   |   |                   1.- Celda Cerrada.
+       O - O - O - O - O               2.- Centro de Reclutamiento.
+           |       |                   3.- Alojamiento del Caracelero.
+       2 - O   3   O - O               4.- Subida a la base.
+           | /     |
+           4 - O - O - O
+               |   |
+               O   O
+
+
+	BASE.
+
+              (C1)
+               |                      Calles.
+           1 - O                        C1.-
+               |                        C2.-
+           O - O - O   1                C3.-
+           | \ | / |   |                C4.-
+ (C2)- O - O - 2 - O - O -(C3)        Lugares.
+       |   | / | \ |                    1.- Puestos de Guardia.
+       1   3 - O - O                    2.- Escaleras que suben.
+               |                        3.- Escaleras a la carcel.
+               O - 1
+               |
+              (C4)
+
+	*PRIMER PISO.
+
+
+               1
+               |
+           2   3   O		      Lugares.
+           |   | /       		1.- Capilla.
+       4 - 5 - O - O		        2.- Puestos de la guardia real.
+           |   | \			3.- Templo de <dios de la vida>
+           2   6   O                    4.- Subida a los alojamientos reales.
+                                        5.- Salon Real.
+                                        6.- Banco.
+	SEGUNDO PISO.
+
+           O   O	      	      Lugares.
+           |   |                     	1.- Alojamientos reales.
+       1 - O - O -                      2.- Escalera al Salon Real.
+           |   |
+           O   O
+
+
+PERSONAJES NO JUGADORES.
+
+	Nombre: Modelo.
+
+            Nombre del fuente:
+
+	    Localizacion del fuente: /players/chantiel/pnj
+
+	    Lugar donde se encuentra:
+
+	    Fichero donde se encuentra:
+	    
+	    Equipo:
+
+	    Cometido:
+
+
+	Nombre: Elfo Cautivo.
+
+            Nombre del fuente: ecautivo.c
+
+	    Localizacion del fuente: /players/chantiel/pnj
+
+	    Lugar donde se encuentra: SOTANO 1.
+
+	    Fichero donde se encuentra: celda1.c
+
+            Equipo: Piedra Cambiante.
+
+	    Cometido: en realidad es la representacion terrenal del dios de la
+        	guerra. Una vez liberado, le entrega al libertador la Piedra
+                Cambiante. Una pieza importante para la realizacion de otro de
+                los quest de thiinkdil (La Bendicion del Penitente).
+
+	
+	Nombre: Vedel.
+
+	    Nombre del fuente: evedel.c
+	    
+	    Localizacion del fuente: /players/chantiel/pnj
+
+	    Lugar donde se encuentra: SOTANO 1.
+
+	    Fichero donde se encuentra: pasillo1-7.c
+	    
+	    Equipo:
+
+	    Cometido: vigilar las celdas que hay en este piso. Se movera
+		    por las habitaciones contiguas.
+	
+	Nombre: Oficial reclutador.
+ 	    
+            Nombre del fuente: ereclutador.c
+	    
+	    Localizacion del fuente: /players/chantiel/pnj
+
+	    Lugar donde se encuentra: SOTANO 1.
+
+	    Fichero donde se encuentra: recluta.c
+	    
+	    Equipo:
+
+	    Cometido: se pasara todo el dia ocupado rellenando formularios y
+		    ordenando papeles.
+
+	Nombre: Carcelero.
+ 	    
+            Nombre del fuente: ecarcelero.c
+	    
+	    Localizacion del fuente: /players/chantiel/pnj
+
+	    Lugar donde se encuentra: SOTANO 1.
+
+	    Fichero donde se encuentra: carcelero.c
+	    
+	    Equipo:
+
+	    Cometido: estara haciendo el bago y durmiendo todo el rato. Tiene
+		la llave de la celda cerrada. No es necesario matarlo para
+	        conseguir la llave, simplemente con darle una buena cantidad de
+            	dinero entregara la llave.
+
+
+	Nombre: Oficial de la Guardia.
+ 	    
+            Nombre del fuente: eguardia.c
+	    
+	    Localizacion del fuente: /players/chantiel/pnj
+
+	    Lugar donde se encuentra: BASE.
+
+	    Fichero donde se encuentra: puesto1-4.c
+	    
+	    Equipo:
+
+	    Cometido: mantener el orden y solucionar cualquier problema en 
+		    los accesos al arbol.
+
+	Nombre: Guardias de acceso.
+ 	    
+            Nombre del fuente: eacceso.c
+	    
+	    Localizacion del fuente: /players/chantiel/pnj
+
+	    Lugar donde se encuentra: BASE.
+
+	    Fichero donde se encuentra: pasillo1-4.c; bajada1.c
+	    
+	    Equipo:
+
+	    Cometido: velar por la seguridad de los transeuntes y de los 
+		    accesos al arbol.
+
+	Nombre: Transeuntes.
+ 	    
+            Nombre del fuente: etranseunte.c
+
+	    Localizacion del fuente: /players/chantiel/pnj
+
+	    Lugar donde se encuentra: BASE.
+
+	    Fichero donde se encuentra: interior1-8.c
+	    
+	    Equipo:
+
+	    Cometido: pues no tienen por que tener algo en concreto que hacer,
+	        estan simplemente para hacer hueco y darle vida a los sitios
+		interiores. :P
+
+	Nombre: Funcionarios.
+ 	    
+            Nombre del fuente: efuncionario.c
+	    
+	    Localizacion del fuente: /players/chantiel/pnj
+
+	    Lugar donde se encuentra: PRIMER PISO.
+
+	    Fichero donde se encuentra: interior1-4.c
+	    
+	    Equipo:
+
+	    Cometido: pues como todo buen funcionario deberia de estar en su
+		    oficina haciendo su trabajo diario.
+
+	Nombre: Saviulas.
+ 	    
+            Nombre del fuente: Saviulas.c
+	    
+	    Localizacion del fuente: /players/chantiel/pnj
+
+	    Lugar donde se encuentra: PRIMER PISO.
+
+	    Fichero donde se encuentra: capilla.c
+	    
+	    Equipo:
+
+	    Cometido: pues mantener en buen estado la capilla y orar por la
+		    savia bendita para que no pierda sus propiedades. Tambien
+		    es el encargado de la venta del elixir, es decir, que si
+		    no esta en la capilla no se vende el elixir.
+
+	Nombre: Guardia de Elite.
+ 	    
+            Nombre del fuente: eelite.c
+	    
+	    Localizacion del fuente: /players/chantiel/pnj
+
+	    Lugar donde se encuentra: PRIMER PISO.
+	    
+	    Equipo:
+
+	    Fichero donde se encuentra: puesto1-2.c
+
+	    Cometido: vigilar la seguridad de los posibles ataques hostiles
+		    de fuerzas enemigas o infiltradas. No dejaran pasar a
+		    nadie a menos que se les entrege un pase de audiencia.
+		      Si se les ataca apareceran dos o tres mas guardias de 
+		    elite.
+
+	Nombre: Guardia Personal.
+ 	    
+            Nombre del fuente: epersonal.c
+	    
+	    Localizacion del fuente: /players/chantiel/pnj
+
+	    Lugar donde se encuentra: PRIMER PISO Y SEGUNDO PISO.
+
+	    Fichero donde se encuentra: escaleras1.c; salon1-3.c
+	    
+	    Equipo:
+
+	    Cometido: pues como los guardias de elite pero mas furros. Se 
+		    encargan de la vigilancia y seguridad de las estancias
+		    de los nobles regentes.
+
+	Nombre: General Katharl.
+ 	    
+            Nombre del fuente: ekatharl.c
+	    
+	    Localizacion del fuente: /players/chantiel/pnj
+
+	    Lugar donde se encuentra: SEGUNDO PISO.
+
+	    Fichero donde se encuentra: general1.c
+	    
+	    Equipo:
+
+	    Cometido: esta a cargo de todas las tropas de la region, tanto
+		    las que se encuentran en la ciudad, como las que estan 
+		    en las fronteras.
+
+	Nombre: Consejera Shaeire.
+ 	    
+            Nombre del fuente: eshaeire.c
+	    
+	    Localizacion del fuente: /players/chantiel/pnj
+
+	    Lugar donde se encuentra: SEGUNDO PISO.
+
+	    Fichero donde se encuentra: consejero.c
+	    
+	    Equipo:
+
+	    Cometido: es la mujer del gobernarte de tiinkdhil y ostenta el
+		    titulo de consejera. Y el cometido
+
+	Nombre: Zalidian.
+ 	    
+            Nombre del fuente: ezalidan.c
+	    
+	    Localizacion del fuente: /players/chantiel/pnj
+
+	    Lugar donde se encuentra: SEGUNDO PISO.
+
+	    Fichero donde se encuentra: lider.c
+	    
+	    Equipo:
+
+	    Cometido: Pues es bastante claro lo que hace, no?
+
+
+
+
+(----------------------------------------------------------------------------)
+
+
+ALICIENTES PARA VENIR A TIINK.
+
+DE TIPO MONETARIO Y MATERIAL.
+
+****************************
+ N O T A
+
+	Todos los objetos que aparecen a continuacion seran objetos estandars,
+que en la descripcion o durante la elaboracion del mismo se digan o se pongan
+descripciones, no significa que sean definitivas.
+****************************
+
+Luchadores. (amazonas, barbaros, paladines, caballeros oscuros)
+
+	* Armas y armaduras elficas.
+
+    	- Modelo
+
+            Descripcion:
+            Caracteristicas:
+            	Tamanyo:
+                Peso:
+                Tipo:
+                Danyo:
+                Esgrimida:
+                Valor:
+                Especial:
+
+    	- Espada corta thiinkdil.
+
+          	Descripcion: Es una pequenya espada corta, finamente trabajada
+            	por los los herreros elfos. Su hoja esta muy bien afilada
+                y lustrosa a simple vista. El punyo y la parte inferior de
+                la hoja esta decorada con grabados y runas que representan
+                a la naturaleza. La cruz tiene egarzada una piedra de vivo
+                color que le da al arma un aspecto hornamental.
+
+            Caracteristicas:
+            	Tamanyo: pequenyo.
+                Peso: no mas de un kilo.
+                Tipo: cortadora, penetradora.
+                Danyo: poco.
+                Esgruimida: una mano.
+                Valor: ????
+                Especial: si es vendida en una tienda fuera de thiinkdil su
+			precio se duplica. Esto se consigue de forma muy facil.
+                        Cuando se codifiquen las tiendas en la ciudad se pagara
+                        la cuarta parte del valor y en el resto de las tiendas
+                        del mud a la mitad del mismo, asi no hay problemas, y
+	        	seria una buena excusa para visitar las ciudades mas
+			proximas.
+
+        	Son espadas de pequenyo tamanyo, estandars en cualquier guardia
+          o ciudadano medio. Estan bien templadas y son ligueras comparadas
+	  con las espadas cortas normales de manofactura humana.
+
+
+        - Espada thiinkdil.
+
+            Descripcion: Es una espada de una envergadura de hoja de metro
+            	veinte, finamente acabada por los artesanos metalurgicos
+                elfos. Tanto la hoja, el punyo y la cruz estan completamente
+                labradas de simbolos y extranyos trazos que hacen referencia
+                a la naturaleza. Justo en medio de la hoja tiene una piedra
+                ornamental, que representa la calidad y el grado de pericia
+                del artesano que la ha fabricado.
+
+            Caracteristicas:
+            	Tamanyo: mediano.
+                Peso: no mas de tres kilos.
+                Tipo: cortadora.
+                Danyo: poco-medio.
+                Esgrimida: una mano.
+                Valor: ????
+                Especial: idem espada corta thiinkdil.
+
+            Son las espadas estandart de la guardia thiinkdil.
+
+
+        - Espada larga thiinkdil.
+
+        	Descripcion: Es una espada larga, finamente elaborada por los
+            	herreros y artesanos elfos de Thiinkdil. Su hoja, de mas de
+                metro ochenta de envergadura, parece muy afilada a simple
+                vista y esta decorada con grabados y runas de un acabado
+                muy depurado. El enorme punyo tiene tiras de cuero con
+                intrincados dibujos alegoricos a la naturaleza. La cruz esta
+                elaborada con una extranya aleacion de acero, de un color
+                amarillento que podria confundirse con oro, y tiene
+		engarzadas varias piedras semipreciosas.
+
+            Caracteristicas:
+            	Tamanyo: grande.
+                Peso: no mas de cinco kilos.
+                Tipo: cortadora.
+                Danyo: medio-mucho.
+                Esgrimida: dos manos.
+                Valor: ????
+                Especial: idem espada corta thiinkdil.
+
+            Son espadas de gran tamanyo, solo dadas a los oficiales en los
+          puesto fronterizos, accesos al Arbol de al Vida o algun miembro
+          o personaje que se la haya ganado por sus propios meritos.
+
+
+        - Escudo thiinkdil.
+
+            Descripcion: Es un escudo de mediana envergadura. Esta hecho de
+		una resistente madera, endurecida y remachada por los armeros
+		de thiinkdil. Todo el borde esta recubierto por una gran tira
+		de acero, adornada laboriosamente con grabados y runas que
+		representan la naturaleza. Justo en el centro del escudo hay
+		engarzada una piedra ornamental, que representa la calidad y
+		el grado de pericia del artesano que lo ha fabricado.
+
+            Caracteristicas:
+            	Tamanyo:mediano.
+                Peso: no mas de tres kilos.
+                Tipo: proteccion.
+                Danyo: bajo.
+                Esgrimida: una mano.
+                Valor: ????.
+                Especial: si es vendido en una tienda fuera de thiinkdil su
+	       	    precio se duplica. Esto se consigue de forma muy facil.
+		    Cuando se codifiquen las tiendas en la ciudad se pagara
+                    la cuarta parte del valor y en el resto de las tiendas
+                    del mud a la mitad del mismo, asi no hay problemas, y
+		    seria una buena excusa para visitar las ciudades mas
+		    proximas.
+
+            Son los escudos estandart de la guardia thiinkdil.
+
+
+
+        - Peto de Cuero thiinkdil.
+
+            Descripcion: Es un peto hecho de cuero curtido y endurecido. Toda
+            	su superficie se ha recubierto de una gruesa capa de una
+		especie de matierial muy rigido. Tiene el aspecto de ser
+		algun tipo de madera, pero el inconfundible olor a cuero
+		denota todo lo contrario. Tiras a ambos lados permiten la
+		facil sujeccion en torno al cuerpo. Parece muy gastado, pero
+		al menos ofrece una pequenya proteccion.
+
+            Caracteristicas:
+            	Tamanyo: mediano.
+                Peso: no mas de diez kilos.
+                Tipo: proteccion.
+                Danyo: poco.
+                Esgrimida: Pecho frontal/trasero.
+                Valor: ???
+                Especial:idem escudo thiinkdil.
+			
+			Solo puede ser llevado por humanos y elfos.
+
+
+        - Mallas thiinkdil.
+
+            Descripcion:
+            Caracteristicas:
+            	Tamanyo:
+                Peso:
+                Tipo:
+                Danyo: medio.
+                Esgrimida:
+                Valor:
+                Especial: solo puede ser llevada por humanos y elfos.
+
+
+        - Placas thiinkdil.
+
+            Descripcion:
+            Caracteristicas:
+            	Tamanyo:
+                Peso:
+                Tipo:
+                Danyo: medio-alto.
+                Esgrimida:
+                Valor:
+                Especial: solo puede ser llevada por humanos y elfos.
+
+
+        - Placas de Campanya thiinkdil.
+
+            Descripcion:
+            Caracteristicas:
+            	Tamanyo:
+                Peso:
+                Tipo:
+                Danyo: alto.
+                Esgrimida:
+                Valor:
+                Especial: solo puede ser llevada por elfos.
+
+
+
+    * Salvia bendita.
+
+    		Ver su descripcion en la localizacion El Arbol de la Vida, lugar
+		primer piso, fichero capilla1.c.
+
+
+    * Armas y aramaduras magicas.
+
+    	- Modelo
+
+            Descripcion:
+            Caracteristicas:
+            	Tamanyo:
+                Peso:
+                Tipo:
+                Danyo:
+                Esgrimida:
+                Valor:
+                Especial:
+
+
+        - Espada honorifica thiinkdil.
+
+	    Descripcion: Es una espada larga thiinkdil. En torno a su doble
+		hoja hay un ligero resplandor que se atenua cada vez que
+		acercas tu mano. Es uno de los mas brillantes trabajos que
+		has visto jamas, en lo que a metalurgia elfica thiinkdil se
+		refiere. Ves, que de vez en cuando, un destello repentino de
+                energia recorre la hoja desde la empunyadura hasta el final
+                de la hoja. Las filigranas que recubren la hoja destellan con
+		el reflejo de la luz. Justo en medio de la cruz hay una gran
+		piedra preciosa que va cambiando de color paulatinamente. Te
+		cuesta adivinar el tipo de material que esta recubierto el
+		mango, pero sabes que no es muy frecuente la forma que tiene.
+		Deberias tener cuidado al esgrimirla, no sabes lo que te
+		podria suceder.
+
+            Caracteristicas:
+            	Tamanyo: grande.
+                Peso: no mas de cinco kilos.
+                Tipo: cortadora.
+                Danyo: mucho.
+                Esgrimida: una mano.
+                Valor: al menos el triple que una espada larga thiinkdil.
+                Especial: solo pueden esgrimirla los elfos. Es como una
+                	espada larga thiinkdil, pero se puede esgrimir con
+                    una mano.
+
+                    Si es esgrimida por alguien que no sea elfo, recibe
+		una buena descarga de energia y seguidamente la bota al
+		suelo.(?o se destruye?) danyo(round(hp/4)+Nivel)
+
+                    Si es un elfo oscuro o caballero oscuro el que la esgrime
+		el danyo que se recibe se duplica y seguidamete la bota
+		al suelo.(?o se destruye?) danyo(round(hp/2)+Nivel)
+
+            Son espadas de gran tamanyo, solo dadas a los guardias de elite
+	o a los altos rangos de la jerarquia militar thiinkdil. Mas bien son
+	reliquias dadas de generacion en generacion a los merecedores de
+	tan preciado objeto. Es muy dificil obtener una espada asi por los
+	jugadores.
+
+
+
+        - Espada Sagrada Thiinkdil.
+
+            Descripcion: Es una espada honorifica thiinkdil. En torno a su
+		doble hoja hay un ligero resplandor que se atenua cada vez que
+		acercas tu mano. Es uno de los mas brillantes trabajos que 
+		has visto jamas, en lo que a metalurgia elfica thiinkdil
+		se refiere. Ves, que de vez en cuando, un destello repentino
+		de energia recorre la hoja desde la empunyadura hasta el final
+		de la hoja. Las filigranas que recubren la hoja destellan con
+		el reflejo de la luz. Justo en medio de la cruz hay una gran
+		piedra preciosa que va cambiando de color paulatinamente. Te
+		cuesta adivinar el tipo de material que esta recubierto el
+		mango, pero sabes que no es muy frecuente la forma que tiene.
+		Deberias tener cuidado al esgrimirla, no sabes lo que te
+		podria suceder. Hay algo escrito en runas comunes en su cruz.
+
+            Detalle(runas,cruz): Forjada en la era del caos, para luchar en
+            	contra de nuestros hermanos renegados Drows y esos diminutos
+		seres que se denominan a si mismos Enanos.
+
+            Caracteristicas:
+            	Tamanyo: grande.
+                Peso: no mas de cinco kilos.
+                Tipo: cortadora.
+                Danyo: especial.
+                Esgrimida: una mano.
+                Valor: muchisimo.
+                Especial: solo pueden esgrimirla los elfos que hayan hecho un
+		  quest puteadillo. Es como una espada larga thiinkdil, pero
+		  se puede esgrimir con una mano.
+
+	            Si es esgrimida por alguien que no sea elfo, recibe
+		una buena descarga de energia, y seguidamente la bota al
+		suelo (?o se destruye?). danyo(round(hp/4)+Nivel)
+
+                    Si es un elfo oscuro o un enano el que la esgrime el danyo
+		que se recibe se duplica y seguidamente la bota al suelo.
+		(?o se destruye?) danyo(round(hp/2)+Nivel)
+
+                    Le confiere al esgrimidor una alta resistecia a la magia.
+
+                Danyo Especial: esta magnifica arma se disenyo para exterminio
+		de elfos oscuros y enanos. Puede penetrar cualquier tipo
+		de proteccion.
+		Para reflejar esto a la hora de codificarle el danyo que
+		haria a cualquier raza, menos a las antes mencionadas
+		seria: danyo(danyo(espada honorifica)+ Nivelx4+ Ajustes).
+
+           	Por otro lado estaria el danyo que haria si el objetivo
+		del golpe es un elfo oscuro o un enano.	Segun se ve en la
+		siguente formula:
+
+       	danyo(Hp(objetivo)= Hp(actuales/2)-((espada honorifica)+ Ajustes))
+
+                    Explicacion: el danyo seria igual a devolverle al objetivo
+			la mitad de sus puntos de golpe actuales menos el
+			danyo del arma mas los ajustes.
+
+            		ALGORITMO
+
+                        Golpeas.
+                        ¨Es elfo oscuro o enano?.
+                        Si lo es, aplicar especial.
+                        especial( coger puntos de golpe actuales;
+				  dividirlos a la mitad;
+                                  quitarles el danyo de la espada honorifca;
+                                  quitarles el danyo de los ajustes;
+                                  devolver resultado al objetivo)
+                        Si no lo es, aplicar danyo.
+                        danyo( danyo(espada honorifica) + Nivelx4 + Ajustes).
+
+            Quest: La Bendicion del Penitente.
+
+			Ni mencionar que esta espada solo se puede conseguir
+		tras la ejecucion de un quest.
+
+
+
+        - Escudo honorifico thiinkdil.
+
+            Descripcion: Es un escudo de gran envergadura. Esta forjado en
+            	mas fino acero elfico que has visto jamas. Su aspecto es
+                pesado, pero las cientos de runas que hay por su superficie
+                hacen pensar todo lo contrario. De vez en cuando un repentino
+                destello de luz hace apartar la vista. Justo en el centro hay
+                una piedra preciosa del tamanyo de un punyo, perfectamente
+                engarzada y dotando al escudo un aire de gran magestuosidad.
+                Deberias tener cuidado al equipartelo, no sabes lo que te
+		podria suceder.
+
+            Caracteristicas:
+            	Tamanyo: grande.
+                Peso: no mas de cinco kilos.
+                Tipo: proteccion.
+                Danyo: medio.
+                Esgrimida: una mano.
+                Valor:al menos el triple que un escudo thiinkdil.
+                Especial: solo pueden esgrimirla los elfos. Es como un escudo
+                    thiinkdil pero de muchisima mas calida.
+
+                    Si es equipado por alguien que no sea elfo, recibe una
+		buena descarga de energia y seguidamente lo bota al suelo.
+		(?o se destruye?) danyo(round(hp/4)+Nivel)
+
+                    Si es un elfo oscuro o caballero oscuro el que lo equipa
+		el danyo que se recibe se duplica y seguidamete lo bota
+		al suelo.(?o se destruye?) danyo(round(hp/2)+Nivel)
+
+		    El escudo puede lanzar un conjuro de curacion menor al
+		portador. Tiene entre 10-15 cargas.(ADDACTION)
+
+                    Le confiere al portador una resistecia a la magia muy
+		pequenya.
+
+ 	           Son escudos de gran envergadura, solo dados a los guardias de
+		elite o a los altos rangos de la jerarquia militar thiinkdil.
+		Mas bien son  reliquias dadas de generacion en generacion a los
+		merecedores de tan prestigiado objeto. Es muy dificil obtener un
+		escudo asi por los jugadores.
+
+
+        - Placas Honorificas thiinkdil.
+
+            Descripcion: Es una aramadura de placas de campanya thiinkdil.
+            Caracteristicas:
+            	Tamanyo:
+                Peso:
+                Tipo: proteccion.
+                Danyo: muy alto.
+                Esgrimida:
+                Valor:
+                Especial: solo pueden ser llevadas por elfos, de alineamiento
+                	bueno.
+
+                    Le confiere al portador una alta resistecia a la magia.
+
+
+Magos.  (conjuradores, elementalistas, hechiceros, nigromantes)
+	* Varas y varitas.
+        * Salvia bendita.
+        Ver su descripcion en la localizacion El Arbol de la Vida, lugar
+	primer piso, fichero capilla1.c.
+
+       * Objetos magicos.
+
+Clerigos. (clerigos, druidas)
+	* Tunicas sagradas.
+	* Salvia bendita.
+    	Ver su descripcion en la localizacion El Arbol de la Vida, lugar
+	primer piso, fichero capilla1.c.
+
+        * Medallones Magicos.
+
+Bribones. (asesinos(ninjas), ladrones, bardos, piratas)
+	* Salvia bendita.
+    	Ver su descripcion en la localizacion El Arbol de la Vida, lugar
+	primer piso, fichero capilla1.c.
+        * Armas
+	* Instrumentos musicales.
+        * Obras de arte.
+
+Psionicos.
+	* Salvia bendita.
+   	Ver su descripcion en la localizacion El Arbol de la Vida, lugar
+	primer piso, fichero capilla1.c.
+
+
+DE TIPO EXPERIENCIA.
+
+DE TIPO QUEST.
+
+    - Modelo
+
+        Historia:
+        Pasos:
+        Objetos:
+        Dificultad:
+        Puntos de Quest:
+
+	- La Bendicion del Penitente.(Espada Sagrada)
+
+        Historia: durante los tiempos de guerra entre elfos y sus primos los
+        	elfos oscuros, aparecieron unas pocas espada de gran poder
+		entregadas solo a los elfos de mayor coraje y valentia. Fieles
+		debotos del dios elfo de la guerra <nombre>, fueron senyalados
+		por la mano de dicha divinidad para afrontar la mas dura prueba
+		de su existencia.
+
+		 Tras largos dias y noches de incesantesvisiones, emprendieron
+		en medio de las refriegas, la santa busqueda que se les habia
+		encomendado. Tuvieron que viajar hasta los retonyos de un gran
+		arbol, que por aquellos dias tan solo tenia unas decenas de
+		metros de altura. En los alrededores de la base se habian
+		asentado varios elfos comerciantes y viajeros de paso, que
+		disfrutaban del cobijo que les ofrecia dicho arbol. Ya en el
+		interior de ese arbol se encontraba el templo dedicado a la
+		suprema divinidad de la naturaleza <nombre>, y su extranyo
+ 		guardian, un elfo llamado Saviulas.
+
+            	En las entradas a su interior encontraron, grabadas en salvia
+            imperecedera, las claves de los designios marcados por su deidad
+            para encontrar el fin de su busqueda.
+
+            	Muy pocos lo consiguieron, pero gracias a ellos la balanza de
+            la victoria se declino hacia los elfos.
+
+            	Esto mismo ocurrio cuando estallo la guerra entre elfos y
+            enanos. Casi al borde del genocidio por parte de los enanos, la
+            divina presencia de la deida elfica <nombre> se manifesto a los
+            pocos elfos valerosos que quedaban, y tras mostrarles el camino
+            hacia la victoria, ofrecio las mismas condiciones de busqueda que
+            a los elfos de antanyo. Armados de un renovado valor, emprendieron
+            el mismo camino que sus antepasados.
+
+            	Gracias a esto, la balanza se volvio a equilibrar.
+
+                Todavia en la epoca actual estan dichas runas, en la base de
+            lo que hoy es conodico por el nombre de, El Arbol de la Vida.
+
+
+        Pasos: Hay que solucionar en un orden establecido una serie de
+            sub-quest para el termino satisfactorio del mismo. A continuacion
+            se dan el nombre, en orden de ejecucion, de dichos sub-quest.
+
+            	-Elfo Cautivo.
+
+
+        Objetos: al finalizar este quest se le dara como recompensa una obra
+        	de arte, en lo que a metalurgia se refiere, una Esapda Sagrada.
+
+        Dificultad:
+
+        Puntos de Quest: el total de puntos es la suma de los diferentes
+        	sub-quest de los que consta.
+
+
+    - Elfo Cautivo.
+
+        Historia:
+        Pasos:
+        Objetos:
+        Dificultad:
+        Puntos de Quest:
+	

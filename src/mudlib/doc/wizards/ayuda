@@ -1,0 +1,35 @@
+
+Escribe '[1mayuda <comando>[0m' para obtener ayuda especifica de un comando
+
+[1m----------------------------< COMANDOS GENERALES >----------------------------[0m
+breve         hora          email        ayuda        inventario   equipo
+matar         clave         oler         escuchar     habilidades  abandonar
+reiniciar     salvar        estado       parar        pagina       stty
+quien         coraje        alias        hacer        huir         comparar
+historico     color         salidas      charset      suicidar     fecha
+habilidades   conjuros      magia        seguir       mostrar
+
+[1m-----------------------------< COMANDOS DE WIZ >-----------------------------[0m
+xhelp         shutdown      espiar       regenerar    forzar       comandos
+modowiz       vis           invis        inwiz        trans        gente
+objetivo      titulo        falias       faccion      ls           lls
+tail          cat           pwd          fchk         type         more
+man           clone         ir           sharedips    msgs         parar
+casa          peso          tiempo       mortales     unchat       regenerar
+tester        untester
+
+[1m-------------------------< MANIPULACION DE OBJETOS >--------------------------[0m
+mirar         examinar      tirar        coger        dar          ponerse
+quitarse      equipar       empuñar      desempuñar   desequipar   lanzar
+
+[1m------------------------------< COMUNICACION >--------------------------------[0m
+conversar     acciones      decir        susurrar     telepatia    canales
+eco           jeco          weco         gritar       wgritar      ignorar
+designorar    ausente       canal        canales      cquien       informar
+bug           idea          mensajes     etel         rtel	       prompt
+
+[1m-------------------< INFORMACION ADICIONAL 'ayuda tema' >---------------------[0m
+transporte    cambios       bancos       calendario   creacion     gremios
+cronologia    demonios      necromancer  copyright    lista_conj   pkilling
+lista_hab
+[1m------------------------------------------------------------------------------[0m

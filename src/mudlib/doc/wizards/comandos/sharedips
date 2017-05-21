@@ -1,0 +1,13 @@
+[1mCOMANDO[0m
+  sharedips
+  sharedips ip
+
+[1mDESCRIPCIÓN[0m
+  Muestra los jugadores que están compartiendo IP. Si se usa el comando con
+  el argumento 'ip', se visualizan los jugadores que comparten dirección,
+  junto con la ip y el lugar de procedencia si se conoce.
+
+[1mEJEMPLOS[0m
+  sharedips
+  sharedips ip
+

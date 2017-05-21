@@ -1,0 +1,21 @@
+[1mCOMANDO[0m
+  magia 'conjuro' [<argumentos>]
+  magia info 'nombre conjuro'
+
+[1mDESCRIPCION[0m
+  Este es el comando principal para el uso de la magia en Simauria.
+  Para lanzar cualquier hechizo o conjuro (en el caso de que lo tengas
+  memorizado o escrito en algún lado) solo tienes que usar el comando
+  magia y posteriormente escribir entre comillas simples (') el nombre
+  del conjuro, todo ello dependiendo de si hace o no hace falta escribir
+  algún tipo de argumento detrás (como por ejemplo el objetivo).
+  Con magia info obtienes una breve descripción y uso del conjuro que
+  desees y recuerda que también debe ir entre comillas simples (').
+   
+[1mEJEMPLOS[0m
+  magia info 'luz cegadora'         : Obtiene información
+  magia 'luz cegadora' contra woo   : Lanza el hechizo contra woo
+  magia 'vision nocturna'           : Lanza el hechizo para que puedas ver
+
+[1mTEMAS RELACIONADOS[0m
+  memorizar, conjuros, habilidades

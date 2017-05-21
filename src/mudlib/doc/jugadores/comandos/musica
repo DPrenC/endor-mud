@@ -1,0 +1,24 @@
+[1mCOMANDO[0m
+  musica
+
+[1mDESCRIPCION[0m
+  Te permite gestionar los efectos musicales del mud. Puedes activarlos o
+desactivarlos, definir el formato de audio que utilizas, ajustar el
+volúmen, o activar y desactivar cualquier música de forma individual.
+  
+  Nota: Para que esta característica funcione, tu cliente de mud debe
+tener soporte para MSP (Mud Sound Protocol). Para más información a este
+respecto, consulta la documentación de tu cliente.
+
+[1mEJEMPLOS[0m
+musica activar: Activa los efectos musicales.
+musica desactivar: Desactiva los efectos musicales
+musica formato mp3: Ajusta el formato de audio a mp3.
+musica ultima deshabilitar: Deshabilitas la última música escuchada.
+musica deshabilitadas: Te muestra una lista de los sonidos deshabilitados.
+musica habilitar <numero>: habilitas el sonido con número <numero>. Los números
+aparecen en el listado de músicas deshabilitadas.
+
+
+[1mTEMAS RELACIONADOS[0m
+  sonido

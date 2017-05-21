@@ -1,0 +1,26 @@
+[1mCOMANDO[0m
+  falias [<alias> [<exp>]]
+
+[1mDESCRIPCION[0m
+  Te permite realizar alias de aquellos directorios y ficheros que más uses.
+  Sin argumentos el comando te visualiza todos los alias ya definidos.
+  Si solo le introduces el argumento <alias> te borrará ese alias en caso
+  de que existiera.
+  Con los dos argumentos establece <alias> de <exp>, pudiendo ser <exp> tanto
+  un fichero como un directorio.
+
+  NOTA: Estos alias no son accesibles desde los comandosX.
+   
+[1mEJEMPLOS[0m
+  (*)falias castillo /d/kenton/comun/habitacion/castillo/entrada.c
+       Establecido el alias 'castillo' como 
+       '//d/kenton/comun/habitacion/castillo/entrada.c'.
+  (*)falias
+       Existe 1 alias.
+       'castillo' = '//d/kenton/comun/habitacion/castillo/entrada.c'
+  (*)load castillo   // Carga la entrada.c del castillo de kenton
+  (*)falias castillo
+       'castillo' borrado.
+
+[1mTEMAS RELACIONADOS[0m
+  faccion, xhelp

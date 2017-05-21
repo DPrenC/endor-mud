@@ -1,0 +1,15 @@
+[1mCOMANDO[0m
+  memorizar <nombre_conjuro>
+  
+[1mDESCRIPCION[0m
+  Si dispones de un pergamino tienes dos opciones, o bien intentas hacer
+  el hechizo/conjuro (aunque no lo tengas memorizado) o bien lo intentas
+  memorizar, siempre y cuando tu gremio y tu nivel lo permita.
+  Para ello tienes que poner 'memorizar <nombre_conjuro>' y a diferencia
+  del comando magia va sin comillas simples.
+     
+[1mEJEMPLOS[0m
+  memorizar oscuridad             : Intentas memorizar el conjuro 'oscuridad'
+
+[1mTEMAS RELACIONADOS[0m
+  magia, conjuros, habilidades

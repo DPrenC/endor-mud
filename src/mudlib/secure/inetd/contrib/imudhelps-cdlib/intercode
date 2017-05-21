@@ -1,0 +1,21 @@
+NAME
+	intercode - send a message on the intermud code channel
+
+SYNOPSIS
+	intercode [message]
+	intercode :[message]
+
+DESCRIPTION
+	With this command you can send messages on the intermud wizard 
+        communication line. All such messages will be prependend with 
+        the string "[Intercode: <your-name>@<your-mud>]" in order for 
+	people to know who sent the message.
+	If you add : to the start of your message and you will emote
+	on the intermud channel.
+
+NOTA BENE
+	This channel is for coding queries only.
+
+SEE ALSO
+	wiz, busy, rwho, imuds, mudlist, gwiz, iwho, gtell, itell
+

@@ -1,0 +1,115 @@
+Quest: Busqueda de ingredientes para la curandera del bosque
+AUTOR : Angor@Simauria
+UPDATE: 08-03-99
+
+VALOR:
+QP= 12
+XP= 1000 
+
+GUION:
+La curandera del bosque de Talek necesita ingredientes para fabricar
+nuevas pociones. Recompensara con dos pociones curativas a quien se 
+los traiga.
+La idea que hay tras el quest es la de explorar la zona oeste del valle de
+Azzor.
+
+CODIGO:
+Los objetos y pnjs propios de este quest se encuentran reunidos en el 
+directorio "/d/akallab/comun/quest/curandera/". Los 'normales' y las
+habitaciones estan junto al resto del codigo del dominio.
+
+SOLUCION:
+Se va hasta la cabanya que hay en el bosque de Talek donde esta la
+curandera (cabanya.c). En los 'chats' de la curandera se informa al
+PJ de que la curandera se esta quedando sin ingredientes y que se
+pregunte para obtener mas detalles.
+
+>preguntar a curandera sobre ingredientes
+
+La curandera explica al PJ que se esta quedando sin ingredientes y que
+recompensara a quien se los consiga con dos pociones curativas. Da al PJ
+una lista (lista.c) con los ingredientes que necesita y le dice que 
+marcara en ella cada uno de los que consiga y le de.
+
+Los objetos pueden conseguirse uno a uno o todos de golpe. Una vez que
+se ha conseguido un determinado ingrediente se le da a la curandera con:
+
+>dar <ingrediente> a curandera 
+
+La curandera marcara en la lista que se ha entregado ese determinado
+ingrediente. Cuando se entregue el ultimo de los ingredientes la curandera
+agradecera la ayuda del PJ y le dara las dos pociones que le habia prometido
+como recomensa. Ademas le quitara y destruira la lista de ingredientes.
+
+Donde y como encontrar los ingredientes?
+
+hiedra:
+  donde:  En el bosque de Talek (bosque23.c)
+  como :  >coger hiedra 
+
+fruto de mandragora:
+  donde: En el cementerio de Narad (cement01.c)
+  como : >coger fruto   o   >coger mandragora
+
+lavanda 
+  donde: En el bosque de Talek (bosque61.c)
+  como : >coger lavanda
+
+romero:
+  donde: En el bosque de Talek (bosque04.c)
+  como : >coger romero
+
+tomillo:
+  donde: En el bosque de Talek (bosque40.c)
+  como : >coger tomillo
+
+miel del bosque
+ donde : En el bosque de Talek (bosque51.c)
+ como  : Hace falta una antorcha o un palo y un frasco vacio
+         a. La antorcha puede comprarse en cualquier tienda.
+         b. El palo puede conseguirse en el exterior de la cabanya
+            de la curandera (claro01.c)
+         c. El frasco puede comprarse en cualquier tienda
+         Con todo esto:
+         >encender palo   o   >encender antorcha
+         >expulsar abejas
+         >coger miel
+         (el frasco vacio se cambia por uno lleno de miel)
+ 
+salvado de trigo:
+  donde: En el molino de Gaddaro (molino.c)
+  como : En los campos de trigo de Gaddaro (campo00.c o campo01.c)
+         >coger trigo
+         (se coge un punyado de espigas de trigo)
+         En el molino de Gaddaro
+         >moler trigo   o   >moler espigas   o  >usar molino con trigo
+         (se cambia el trigo por harina y salvado)
+  
+frasco de agua cristalina:
+  donde: En las cataratas de Nurr
+  como : Hace falta un frasco vacio que puede conseguirse en cuaquier
+         tienda.
+         >coger agua   o   >llenar frasco 
+         (se cambia el frasco vacio por uno lleno de agua)
+
+una garra de oso gris:
+  donde: En la cueva del bosque de Talek (cueva.c)
+  como : >matar oso
+         >coger garra
+
+una pluma de cuervo:
+  donde: En el bosque de Talek
+  como : Hay que localizar a un cuervo en el bosque (en principio aparecen 
+         en bosque27.c y bosque77.c, pero se mueven y pueden acabar en
+         cualquier parte del bosque). Una vez encontrado:
+         >matar cuervo
+         >coger pluma
+
+una flor de Edelweiss:
+  donde: En el paso de Akkbar (akkbar12.c)
+  como: >coger edelweiss   o   >coger flor 
+
+algas:
+  donde: En el fondo del lago Darum
+  como: >coger algas
+        

@@ -1,0 +1,40 @@
+MAPA DEL CAMINO DEL NORTE
+    _
+   / \
+  ( N )
+   \_/
+                                      Torre-16-Torre
+                                             |
+                                            15
+                                           /
+                                         14
+                                        /
+                   20-19-18           13
+                   |       \         /
+               Kho-pingen  17      12
+                             \    /
+                             Cruce
+                               \
+                                11
+                                 \
+                                 10       Cueva de Kobolds
+                                  |      /
+                                  9    23
+                                  |     |
+                                  8-21-22
+                                 /
+                                7
+                               /
+                              6
+                              |
+                              5
+                               \
+                                4
+                                |
+                                3
+                               /
+                              2
+                              |
+                              1
+                              |
+                  Puerta Norte de Kha-annu

@@ -1,0 +1,28 @@
+La ayuda en Endor-Mud funciona usando el comando 'ayuda' seguido de aquello que necesites información, las opciones se muestran a acontinuación.
+
+    OPCIONES BASICAS:
+textos         hora          inventario   equipo
+matar         oler         escuchar     habilidades  desconectar
+conectados     quien         coraje        huir         compararse      salidas      fecha     robar
+conjuros      magia         seguir       memorizar    grupo
+finanzas      trivial       sonido       abrir        cerrar
+bloquear      desbloquear   llamar
+exit     ficha      vida       hab      poder       vigor     sal       est
+alcohol     sed      hambre       obj
+
+    COSAS QUE SE PUEDEN HACER CON LOS OBJETOS:
+mirar         examinar      tirar        coger        ponerse      quitarse
+equipar       desequipar    desempuñar   empuñar      dar          lanzar
+buscar      talar      trocear      cortar    mostrar
+inspeccionar      identificar      reconocer
+
+    PARA COMUNICARTE:
+conversar     acciones      decir        gritar       susurrar     telepatía
+canales       mensajes      ignorar      designorar   ausente
+canal         cquien        error          sugerencia         tel     -      --
+
+        OTRAS OPCIONES:
+email        clave         salvar        historico     color     cls
+reiniciar     parar        pagina       stty         alias        hacer
+charset      suicidar       cambios       transporte       prompt
+unalias     exit

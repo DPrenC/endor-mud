@@ -1,0 +1,39 @@
+   *************************************************************
+                   mREGLAS DEL BUEN MEMBER
+   *************************************************************
+ 
+
+    1.     Respetar la estructura de directorios. No se podrá 
+        poner un pnj en el directorio de objetos ni en ningún
+        directorio  de pnj  fuera de su zona. Ejemplo: un pnj
+        de    Valmar irá  en   /comun/pnj/valinor/valmar/  no   en
+        /comun/pnj/  ni  cosas  por  el estilo.  Esto se hace
+        para tener algo de orden. Dentro del directorio de la
+        zona se  pueden poner  subdirectorios a vuestro gusto
+        (bosque, casas, comercio,  sotano...). No hace  falta
+        crear  un  subdirectorio  para  un  solo archivo.  
+
+    2.     TODOS los archivos  deberán tener  cabecera con el 
+    	nombre del archivo, el autor, su fecha de creacion un 
+    	espacio reservado para apuntar futuras modificaciones 
+    	por bugs, typos y cambios de cualquier tipo.
+
+    3.     TODAS las alusiones a rutas  para enlazar o clonar
+        archivos  estarán  en función  de los defines.  Si se 
+        necesita la ruta de otro dominio consultad. Se podría
+        meter un define exclusivo para eso en el dominio y así
+        en caso de  cambios sería prácticamente  automático y 
+        no se tendrá que estar escarbando como un topo. Nunca
+        poner rutas relativas,  siempre completas  usando los
+        defines.
+
+    
+        
+    4.     En  los  path.h no debe, y  repito, no debe haber
+        defines. Sólo una referencia al path.h superior. Todas,
+        y repito, Todas las habitaciones  tienen que heredar
+        la habitación  estándar del dominio, o, en su defecto, 
+        una  habitación estándar  hecha para la zona la  cual 
+        debe heredar la habitación estándar del dominio. 
+        
+    [52m9.[0m     Evidentemente al que borre cosas vital

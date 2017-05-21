@@ -1,0 +1,5 @@
+MUDLINK is a network protocol between different types of muds.
+Originally it was designed for TinyMucks. The syntax is a bit
+strange, and it uses the MUDLINK player to talk to other muds.
+The MUDLINK player is called /secure/net/mudlink.c and is in
+this directory.

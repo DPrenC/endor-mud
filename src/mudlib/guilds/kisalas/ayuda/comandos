@@ -1,0 +1,22 @@
+INFORMACION ACERCA DE LOS COMANDOS ESPECIALES DE KISALAS
+--------------------------------------------------------
+
+Comando: gayuda [<tema>]'
+   Te muestra toda la información disponible sobre el gremio de Kisalas.
+
+Comando: gquien
+   Te muestra todas las kisalas conectadas en ese instante.
+
+Comando: ggritar <texto>
+   Contactas telepáticamente con todas las kisalas para decirles algo.
+
+Comando: identificar <nombre_planta>
+   Si tienes la habilidad de identificar plantas te informa que efectos tiene.
+
+Comando: enseñar '<nombre_hechizo>' a <jugador>
+   Intentas enseñar un determinado hechizo a otro jugador.
+
+Comando: hechizos
+   Te muestra todos los hechizos que tienes memorizados así como sus distintos
+   niveles personales.
+

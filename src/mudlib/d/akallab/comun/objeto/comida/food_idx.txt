@@ -1,0 +1,36 @@
+Tabla comparativa de los distintos alimentos:
+
+
+            Stuff Heal Weight Value
+----------------------------------- 
+bacalao        20   10    100    50
+bizcocho       31   10    100    50
+cardo           9    3     90    16
+cecina         18   10    100    45
+col            30    9    350    65
+espinacas       8    5     80    18
+lechuga        13    5    130    21
+limon           8    3     80    15
+manzana        10    5    100    20
+miel           20    8    150    50
+mojama         15    8    100    40
+naranja        10    5    100    25
+pan barra      20   10     75    25
+pan hogaza     60   35   1000   300
+pan molde      35   12    100    50
+panal de miel  10    5    100    30
+panecillo      10    5     50    30 
+pastas         25    5    100    40  
+patata         10    3     90    14
+pera            8    4     80    16
+platano        12    6    100    23
+rosquillas     15   10    100    60
+salmon ahumado 22   11    100    55
+uvas           11    6    120    32
+zanahoria       7    2     65    11
+
+
+
+
+
+

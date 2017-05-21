@@ -1,0 +1,32 @@
+[1mCOMANDO[0m
+  acciones
+  acción modo <acción>
+
+[1mDESCRIPCION[0m
+  Este comando te muestra todas las posibles acciones que puedes realizar
+  en Simauria. Existen acciones en las que hace falta un objetivo, por
+  ejemplo 'besar', si escribes el comando a secas te dará un mensaje como
+  'besar [objetivo]'. Luego existen otros que no es necesario introducir
+  un objetivo como el comando 'cavar' que serian visibles por todos aquellos
+  que se encuentren en tu misma habitación.
+  Además, en la mayoria de acciones se le puede introducir un texto añadido
+  al que te muestra la acción.
+
+  Con 'acción modo <acción>' te aparecerá por pantalla su uso y todos los
+  mensajes que tú y los otros van a ver.
+
+  Otra forma de realizar acciones es mediante 'accion', 'ac' y '.'.
+  Solo tienes que escribir '.te escupe'. Estos textos los verian todos los
+  que esten contigo en la habitación.
+
+  Puedes realizar acciones tanto a jugadores como a pnjs, pero cuidado, ya
+  que estos últimos pueden tener reacciones inesperadas :)
+
+[1mEJEMPLOS[0m
+  accion modo amar
+  besar jugador tiernamente ..... Besas a Jugador tiernamente.
+  cavar con alegria ............. Woo se pone a hacer una zanja con alegria.
+  .te mete el dedo en el ojo .... Woo te mete el dedo en el ojo.
+
+[1mTEMAS RELACIONADOS[0m
+  canal

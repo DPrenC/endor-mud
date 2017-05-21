@@ -1,0 +1,12 @@
+camisa.c
+capa.c
+casco.c
+coraza.c
+escudo.c
+guantes.c
+pantalon.c
+sombrero.c
+
+Revisado y aprobado por:
+
+Nemesis, Diox del Combate

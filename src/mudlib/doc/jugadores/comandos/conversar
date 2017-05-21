@@ -1,0 +1,13 @@
+[1mCOMANDO[0m
+  conversar
+
+[1mDESCRIPCION[0m
+  Con este comando todo lo que escribas aparecerá en la habitación como si
+  hubieras hecho un 'decir', ahorrandote el tener que ponerlo cada vez.
+  Puedes salir en cualquier momento escribiendo '**' o '.'
+
+  Si escribes '!<comando>' ejecutarás ese comando sin tener que abandonar
+  el modo de conversación
+
+[1mTEMAS RELACIONADOS[0m
+  decir, telepatia

@@ -1,0 +1,31 @@
+/*
+Fichero: arcon.c
+Autor: aule
+fecha: 18/07/2014
+Descripción: fichero base para los arcones, baúles y cofre de tamaño medio de Endor.
+*/
+
+#include "path.h"
+#include <lock.h>
+#include <properties.h>
+inherit "/obj/chest";
+
+create () {
+  object ob;
+  int cobre, plata;
+  ::create();
+  SetShort ("Un arcón de madera");
+  SetIntShort ("dentro de un arcón de madera");
+  SetLong ("Es un arcón de madera sencillo, con herrajes y clavos de bronce que recorren "
+  "sus ángulos, una tapa arqueada con bandas del mismo material y bisagras de hierro.\n"
+  "Da impresión de gran solidez y de poder contener gran cantidad de objetos.\n");
+  SetIntLong ("Te encuentras en el interior de un arcón de madera. No hay mucho "
+  "sitio para moverse y el lugar está oscuro y huele a madera barnizada hace mucho.\n");
+  SetPreContent ("En su interior puedes ver:\n");
+  SetValue (4000);
+  SetWeight (30000);
+  SetMaxIntWeight (120000); // 120 kg 
+  Set(P_NOGET,1);
+  AddId (({"arcón", "arcon", "cofre"}));
+  SetLockState (LOCK_OPEN);
+}

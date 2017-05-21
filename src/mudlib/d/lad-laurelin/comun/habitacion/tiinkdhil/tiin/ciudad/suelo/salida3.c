@@ -1,0 +1,28 @@
+/*
+DESCRIPCION  :
+FICHERO      : /d/lad-laurelin/comun/habitacion/tiinkdhil/
+NOTAS:
+MODIFICACION :
+*/
+
+#include "./path.h"
+
+#include <properties.h>
+#include <rooms.h>
+
+inherit ROOM;
+
+create() {
+  ::create();
+  SetIntShort("");
+  SetIntLong("");
+
+
+SetIntNoise("");
+SetIntSmell("");
+SetLocate("");
+SetIndoors (0); /* 0 exterior; 1 interior */
+
+AddExit("este",TBOSQUE("bosque201"));
+
+}

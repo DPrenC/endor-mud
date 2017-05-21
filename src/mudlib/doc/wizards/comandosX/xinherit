@@ -1,0 +1,15 @@
+SINOPSIS
+    xinherit <objeto> [funcion]
+
+DESCRIPCION
+    Visualiza todo el arbol de archivos heredados de un 'objeto' y tambien
+    todas las veces que encuentre la [funcion] dentro de cada uno de los
+    archivos. El arbol que devuelve es el del Driver, esto quiere decir
+    que solo devolvera una vez un archivo aunque este heredado en varios.
+    Es decir, si tenemos un objeto A que hereda un objeto B y C y el objeto B
+    hereda a su vez al C, al hacer 'xinherit A' solo devolvera una vez el
+    objeto C ya que el Driver solo lo hereda una vez.
+
+EJEMPLOS
+    xinherit $me
+    xinherit $me QueryStr

@@ -1,0 +1,13 @@
+SINOPSIS
+    xmove <objeto> into <objeto>
+
+DESCRIPCION
+    Mueve un objeto al interior de otro. En caso de fallo da el Error.
+
+EJEMPLOS
+      xmove $clone into $me
+      Si tu acabas de clonear un objeto pero no se ha movido a tu inventario
+      entonces podras ver la causa por la cual no lo ha hecho.
+
+      xmove woo into ^guybrush
+      Esta es una manera silenciosa de ir junto a otro PJ.

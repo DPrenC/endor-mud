@@ -1,0 +1,235 @@
+PROYECTO : Estructura del valle de Zarkam
+DOMINIO  : Akallab
+WIZARD   : Angor 
+CREACION : 27-05-97
+UPDATE   : 12-10-98
+
+VERSION DEFINITIVA [Angor@Simauria]
+9-03-02 [gw]Greywolf Añadida la cueva troll y modificados algunos errores
+
+---------------------------------------------------------------------------
+1. VALLE DE ZARKAM
+2. ZONA DE LOS CAMPOS DE CULTIVO 
+3. ZONA DEL DESFILADERO DE KUNTZ
+4. LA CUEVA TROLL
+--------------------------------------------------------------------------------
+1. VALLE DE ZARKAM
+                                                                  __   _    _      _   _     _  _
+                                            _       __  _     _  /  \ / \_ / \   _/ \_/ \  _/ \/ \_     _
+                                   _   _  _/ \_   _/  \/ \_  / \/_   \_ / \__  _/ \ / \_  / \    / \  _/ \
+    Cordillera     _     _       _/ \_/ \/ \ / \ / \   \ / \    / \  / \ _/  \/ \     / \            / \_
+    de Kova    _  / \_  / \_    / \ / \                                 / \   \                        / \
+         _  __/ \  _/ \ _ / \(13)desfiladero        :                                                   _
+       _/ \/  \  _/ \  / \    \  de Kuntz            :   bosque                        *               / \
+      / \ /    \/ \            12                     :                                *   río          _
+     _  __                      \                      :                              *  Zarmaii       /_\
+  __/ \/  \   _                  11                     '.                           *                _/ \
+ /  \ /    \_/ \           río   |                        /..                        *               / \
+/ _     m6 / \*********   Kuneii 10                 b4--b5   ''..                     **               _
+ / \_   _ \ **         ******    |                 /             ''...                  **       ..'' / \ 
+  _/ \_/ \ m5--m4--m3        *** 0f--b0--b1--b2--b3    *****          ''''.......         ** ..''   _
+ / \ / \  *  /^\     \          /  **********  \  *****    *****                 '''''''''' *      / \_
+      _***_           m2--m1   0e          *****3d**           ******                       *       _/ \
+  _  / \_/ \               \   |                  \                ******                  *       / \
+ / \ __/ \         Camino  m0--0d                  3c                   ***                *        _
+    /  \           de la       |                     \  .........          ***            *       _/ \
+  _/    \_         mina        0c   Sendero         ..3b     38  '''...      ****         *      / \  __
+ / \_   / \                    |    de los        :'    \     |        . ***********     **      _   /  \
+   / \                         0b   Craneos      :       3a--39--37  *****         ****  **     / \_/    \        
+ _  __  Montanyas              |                :                  \36_   :            *****     _/ \
+/ \/  \    de             .... 0a ..            :   campos      ***    \   '              ****  / \
+  /  _ \ Shojuna       .''     |    ''.         :     de      **        35 :                 ****_ Cataratas de Nurr
+ _  / \               :                :         :  cultivo   **          \                    _/ \ ****
+/_\                  :      ciudad      :         :          **         .' 34                 / \_  __
+/ \_                 :    de Zarkam     :          :        **        .'  /                  _  / \/  \
+ _/ \                 :                :            '''..  **     ..''  33  camino a        / \ _ /    \
+/ \                    :     |        :                   ** ...''      |   los campos      _  / \_
+ _                      ''.. 00 ....''                   *              32  de cultivo    _/ \ _ / \
+/ \                          |                          *  río          |                / \  / \
+                             01                       **  Kusaii        31          2e--30_(desfiladero) Paso de Akkbar
+                             |                       *                 /           /     / \_
+                             02                     *            29--2a--2b--2c--2d     /  _\\
+                            /                      *            /                        _/ \
+                           03                 24--25--26--27--28                        / \    Montanyas
+                           |                 /    *                                    _    _   Negras
+                Sendero    04--20--21--22--23    *            Camino                  / \_ / \
+                de los    /                      *            del Este                 _/ \
+                Craneos  05                    ** *                                  _/ \
+   _  __                 |                    *   *                                 / \_
+  / \/  \_               06                  *     *                                  / \
+    /   / \_            /  _  diente               *                                _
+     _  __/ \     _    07 / \ de Sharg              *                              / \
+    / \/  \_   __/ \_  |    _                       *
+      /   / \_/  \ / \ 08  / \_  __                *
+           / /    \_   |   __/ \/  \_
+                  / \  09 /  \ /   / \
+ 
+                  desfiladero 
+                 (Garganta de Sharg)  
+    
+
+Sendero de los Craneos 
+
+(0a) puerta_n.c (0b) cc_09.c    (0c) cc_10.c    (0d) cc_11.c    (0e) cc_12.c   
+(0f) cc_13.c    (10) cc_14.c    (11) cc_15.c    (12) cc_16.c    (13) kuntz_00.c  
+(00) puerta_s.c (01) cc_04.c    (02) cc_02.c    (03) cc_01.c    (04) cc_00.c   
+(05) cc_05.c    (06) cc_06.c    (07) cc_07.c    (08) cc_08.c    (09) sharg00.c 
+
+Camino del este 
+
+(20) ce_00.c    (21) ce_01.c    (22) ce_02.c    (23) ce_03.c    (24) ce_04.c       
+(25) ce_05.c    (26) ce_06.c    (27) ce_07.c    (28) ce_08.c    (29) ce_09.c        
+(2a) ce_10.c    (2b) ce_11.c    (2c) ce_12.c    (2c) ce_13.c    (2d) ce_14.c        
+(2e) ce_15.c    (30) akkbar00.c 
+
+Camino de la mina
+
+(m0) c_mina00.c (m1) c_mina01.c (m2) c_mina02.c (m3) c_mina03.c (m4) c_mina04.c    
+(m5) c_mina05.c (m6) c_mina06.c 
+
+Camino del bosque
+
+(b0) c_bosque00.c  (b1) c_bosque01.c   (b2) c_bosque02.c   (b3) c_bosque03.c
+(b4) c_bosque04.c  (b5) c_bosque05.c   
+
+---------------------------------------------------------------------------
+2. ZONA DE LOS CAMPOS DE CULTIVO
+
+      \
+       \  .........          
+       3b  c0--38--c1--h3        *******
+    :'    \|   |   | /   . ******
+   c2--c3--3a--39--37  *** h6     
+  :|   |   |   | /   \   / |      
+  :c4--c5--c6--h2 ***  36--c7
+  :|   |   |  /  *   / | \  
+   c8--c9--h1   *  h5--ca  35           
+    :  |   |   * / |   |   ' \
+     : cb--h0 *h4--cc--cd'    \
+      '''..  * |   |..''  
+           '*. ce--cf    
+           *
+
+
+Camino a traves de los campos
+
+(31) c_camp00.c (32) c_camp01.c (33) c_camp02.c (34) c_camp03.c (35) c_camp04.c    
+(36) c_camp05.c (37) c_camp06.c (38) c_camp07.c (39) c_camp08.c (3a) c_camp09.c     
+(3b) c_camp10.c (3c) c_camp11.c (3d) c_camp12.c   
+
+Campos y huerta
+
+(c0) campo_00.c (c1) campo_01.c (c2) campo_02.c (c3) campo_03.c (c4) campo_04.c 
+(c5) campo_05.c (c6) campo_06.c (c7) campo_07.c (c8) campo_08.c (c9) campo_09.c 
+(ca) campo_10.c (cb) campo_11.c (cc) campo_12.c (cd) campo_13.c (ce) campo_14.c 
+(cf) campo_15.c (h0) huerta00.c (h1) huerta01.c (h2) huerta02.c (h3) huerta03.c
+(h4) huerta04.c (h5) huerta05.c (h6) huerta06.c
+
+--------------------------------------------------------------------------------
+1.3 ZONA DEL DESFILADERO DE KUNTZ
+
+   Al valle de Akallab  
+  ( )  
+     \             :
+      k7--k6      :
+             \    :sima        
+              k5 :
+             /  :                  
+ A la (t1)--k4   :       
+ cueva       \  :
+ troll        k3==k2
+                 :   \
+                  :   k1
+                  :   |
+                 :    k0
+                        \
+                         (12) Sendero de los Craneos en el valle
+
+
+Camino a traves del desfiladero
+
+(k0) kuntz_00.c (k1) kuntz_01.c (k2) kuntz_02.c (k3) kuntz_03.c (k4) kuntz_04.c 
+(k5) kuntz_05.c (k6) kuntz_06.c (k7) kuntz_07.c
+
+--------------------------------------------------------------------------------
+1.4 LA CUEVA TROLL
+
+
+Planta 0
+
+
+                     t47          t41       t5
+                        \        /           \
+                         t42--t40>            t2     t0--(k4) Al desfiladero de
+                        /        \           / | \  /         kuntz
+                t46--t43<         t38--t39-t4-tm--t1
+                      |            |         \ | /
+                t45--t44         >t36--t37    t3 
+                        \        /             |
+                        <t34--t35             t6--t7 
+                        /        \           /  
+                     t33         t48        t8
+                    /                        |
+    t26     t24--t23          t16           t9 
+       \   /        \            \         / |
+        t25          t22          t14--t10--t11
+         |            |          /      |      \
+t32-t31 t27      t21-t20      t15      t13       t12
+   /   /                \      |
+t30-t28                  t19--t17
+       \                         \
+        t29                       t18
+                                                                                                                                         
+ (t0) galeria01.c  (t1) cueva01.c  (t2) cueva02.c (t3) cueva03.c (t4) cueva04.c
+ (t5) galeria02.c  (t6) galeria03.c  (t7) galeria16.c  (t8) galeria09.c
+ (t9) galeria10.c (t10) galeria13.c (t11) galeria11.c (t12) galeria12.c
+(t13) galeria14.c (t14) galeria15.c (t15) galeria18.c (t16) galeria17.c
+(t17) galeria19.c (t18) galeria20.c (t19) galeria21.c (t20) galeria22.c
+(t21) galeria23.c (t22) galeria24.c (t23) galeria25.c (t24) galeria26.c
+(t25) galeria27.c (t26) galeria29.c (t27) galeria28.c (t28) galeria30.c
+(t29) galeria31.c (t30) galeria32.c (t31) galeria33.c (t32) galeria34.c
+(t33) galeria04.c (t34) caverna03.c (t35) caverna02.c (t37) armeria0.c
+(t38) caverna00.c (t39) galeria00.c (t40) caverna07.c (t41) casa00.c
+(t42) caverna06.c (t43) caverna05.c (t44) caverna04.c (t45) casa02.c
+(t46) casa01.c    (t47) comedero0.c (t48) casa03.c
+
+
+Planta 1
+
+                  1t9          1t15
+                     \        /
+                      1t8--1t7
+                     /        \
+            1t10--1t1>         1t6--1t14
+                   |            |
+            1t11--1t2         <1t5--1t13
+                     \        /
+                      1t3--1t4
+                              \
+                               1t12
+
+(1t1) caverna21.c (1t2) caverna20.c (1t3) caverna19.c (1t4) caverna18.c
+(1t5) caverna17.c (1t6) caverna16.c (1t7) caverna23.c (1t8) caverna22.c
+(1t9) galeria07.c (1t10) casa06.c  (1t11) casa07.    (1t11) casa08.c 
+(1t13) galeria08.c  (1t14) cueva_chaman.c (1t15) templo.c
+
+Planta -1
+
+                  it9        
+                     \        
+                      it2--it1<
+                     / |    | \
+            it10--it3-s00--s01-it8--it15
+                   |            |
+            it11--it4-s02--s03-it7--it14
+                     \ |    | /
+                     >it5--it6
+                     /        \
+                 it12          it13
+
+
+(it1) caverna15.c (it2) caverna14.c (it3) caverna13.c (it4) caverna12.c
+(it5) caverna11.c (it6) caverna10.c (it7) caverna09.c (it8) caverna08.c
+(it9) alfareria.c (it10) casa04.c  (it11) comedero1.c (it12) guarderia.c
+(it13) galeria06.c (it14) armeria.c (it15) casa05.c (s00) suelo00.c
+(s01) suelo01.c (s02) suelo02.c (s03) suelo03.c
